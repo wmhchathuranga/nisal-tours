@@ -1,0 +1,77 @@
+/* Define a variable for the WhatsApp green color */
+:root {
+    --whatsapp-green: #25d366;
+}
+
+/* 1. Styling for the floating container */
+.book-now-floting {
+    /* Fixed position, typically on the bottom-right of the screen */
+    position: fixed;
+    bottom: 95px; /* Adjust as needed */
+    right: 25px;  /* Adjust as needed */
+    z-index: 9999; /* High z-index to ensure visibility */
+    /* Use 'fit-content' or a max-width to let the button define the size */
+    width: fit-content;
+    max-width: 90vw; /* Safety measure for small screens */
+    /* Remove any default padding/margin that might interfere */
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Styling to override the template structure and center the button */
+/* Ensure the inner containers don't add extra space or margin */
+.book-now-floting .col-12,
+.book-now-floting .form-group {
+    margin: 0 !important; /* Remove the mt-4 margin from the HTML */
+    padding: 0;
+}
+
+/* 3. Styling for the main button element */
+.book-now-floting .th-btn-whatsapp {
+    /* Visual styling to match the image */
+    background-color: var(--whatsapp-green);
+    color: #ffffff; /* White text color */
+    border: none;
+    
+    /* Make it wide and rounded, as in the image */
+    /* Use 'border-radius: 50px' for a pill shape on a 50px tall button */
+    border-radius: 50px; 
+    
+    /* Padding to create the large, elongated shape */
+    padding: 15px 30px; 
+    
+    /* Font style */
+    font-size: 18px; /* Slightly larger text */
+    font-weight: 600; /* Semi-bold */
+    text-transform: none; /* Ensure no unwanted uppercase from other CSS */
+    
+    /* Center text and ensure content is displayed inline */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Remove the w-100 class effect to allow padding to define width */
+    width: auto !important; 
+    max-width: 100%;
+    
+    /* Add a slight lift/shadow for better floating visual */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* 4. Styling for the WhatsApp icon */
+.book-now-floting .th-btn-whatsapp .fab {
+    /* Space between the text and the icon */
+    margin-left: 8px; /* Use margin-left since the icon is after the text */
+    margin-right: 0 !important; /* Override the me-2 from the HTML */
+    font-size: 20px; /* Slightly larger icon */
+    line-height: 1; /* Aligns the icon vertically */
+}
+
+/* Optional: Hover effect for a better user experience */
+.book-now-floting .th-btn-whatsapp:hover {
+    background-color: #1DA84E; /* Slightly darker green on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35); /* More prominent shadow on hover */
+}

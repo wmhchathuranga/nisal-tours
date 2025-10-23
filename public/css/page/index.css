@@ -1,0 +1,313 @@
+.tab-header {
+    position: relative;
+    /* background-color: var(--white-color);
+    border: 2px solid var(--theme-color); */
+    /* box-shadow: 0px 20px 20px rgba(204, 204, 204, 0.25); */
+    border-radius: 16px;
+    z-index: 3;
+    margin-top: -90px;
+    height: 85px;
+}
+
+@media (max-width: 1199px) {
+    .tab-header {
+        /* padding: 20px 20px; */
+    }
+}
+
+.tab-header li button {
+    border: 2px solid var(--theme-color) !important;
+    border-radius: 16px !important;
+    background-color: #ffff;
+}
+
+.tab-header li button.active {
+    color: #ffff !important;
+    background-color: var(--theme-color) !important;
+}
+
+.tab-header li button.active i {
+    color: #ffff !important;
+}
+
+.tab-header li button.active span {
+    color: var(--title-color) !important;
+}
+
+
+/* 1. Base transition for the column containers */
+.transition-col {
+    /* Apply transition to height, opacity, and transform for the smooth effect */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* 2. Style for the collapsed/inactive block */
+.block-collapsed {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    /* Moves the element out of view smoothly to the left */
+    transform: translateX(-100%);
+    /* Crucial addition: Explicitly zero out padding/margin to prevent jumps */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 3. Style for the active/expanded block */
+.block-active {
+    opacity: 1;
+    /* Set a large height to ensure the content fits */
+    max-height: 2000px;
+    transform: translateX(0);
+}
+
+
+/* =======================================================
+   SCROLL CONTAINER & BUTTONS 
+   ======================================================= */
+.vehicle-scroller-container {
+    position: relative; 
+    padding: 0 40px; 
+}
+
+/* Scroll Wrapper (Where the content actually scrolls) */
+.vehicle-selection-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* Hide the default scroll bar */
+    -ms-overflow-style: none;
+    /* scrollbar-width: none; */
+    scroll-behavior: smooth; /* Add smooth scrolling for button clicks */
+}
+
+
+/* Scroll Button Styling */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-btn:hover {
+    background-color: #0056b3;
+}
+
+.scroll-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+
+/* =======================================================
+   CARD & RADIO STYLING 
+   ======================================================= */
+.vehicle-radio {
+    display: none !important;
+}
+
+.vehicle-card-label {
+    flex-shrink: 0;
+    width: 160px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    padding: 0 !important;
+    border: 3px solid transparent; 
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.vehicle-tour-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.vehicle-img-area {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.vehicle-img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vehicle-content {
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.vehicle-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.vehicle-pax-info {
+    font-size: 0.9em;
+    color: #007bff;
+    font-weight: 500;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Selection Checkmark */
+.selection-checkmark {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+    color: #007bff;
+    background-color: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #007bff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Selection State */
+.vehicle-radio:checked + .vehicle-card-label {
+    border-color: #007bff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.vehicle-radio:checked + .vehicle-card-label .selection-checkmark {
+    opacity: 1;
+}
+
+/* Hiding the full overlay text as it is not needed with the checkmark */
+.selection-indicator-overlay {
+    display: none;
+}
+
+input[type="radio"] ~ label::before {
+    display: none !important;
+}
+
+/* =======================================================
+   PROFESSIONAL TYPOGRAPHY & LAYOUT
+   ======================================================= */
+.professional-label {
+    /* Use a slightly bolder font and larger size for the main label */
+    font-size: 1.35rem; 
+    font-weight: 600; /* Semi-bold */
+    color: #343a40; /* Darker text color */
+}
+
+/* Update Card dimensions and look */
+.vehicle-card-label {
+    width: 180px; /* Slightly wider cards for better visual weight */
+    border-radius: 12px; /* Softer rounded corners */
+}
+
+.vehicle-tour-card {
+    border: none; /* Remove default border, rely on subtle shadow */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Lighter, more modern shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vehicle-card-label:hover .vehicle-tour-card {
+    transform: translateY(-3px); /* Subtle lift on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-radio:checked + .vehicle-card-label {
+    border-color: #007bff;
+    box-shadow: 0 4px 18px rgba(0, 123, 255, 0.35); /* Stronger indicator */
+    transform: none; /* Prevent double-lift effect */
+}
+
+/* Image Area */
+.vehicle-img-area {
+    height: 110px; /* Slightly taller image area */
+    border-radius: 12px 12px 0 0;
+}
+
+/* Content & Typography */
+.professional-content {
+    padding: 12px 10px 15px; /* More vertical padding */
+}
+
+.vehicle-title {
+    font-size: 1.25em; /* Bigger title */
+    font-weight: 700; /* Bold title */
+    color: #212529; /* Very dark title */
+    margin-bottom: 3px;
+}
+
+.vehicle-subtitle {
+    font-size: 0.85em;
+    color: #6c757d; /* Muted subtitle */
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+/* Pax Info */
+.vehicle-pax-info {
+    font-size: 1.0em; /* Slightly larger Pax info */
+    color: #28a745; /* Changed color to a subtle green for capacity highlight */
+    font-weight: 600;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #f8f9fa; /* Separator line */
+}
+.vehicle-pax-info i {
+    font-size: 0.8em;
+    margin-right: 6px;
+}
+
+/* Selection Checkmark - Smaller and cleaner */
+.selection-checkmark {
+    top: 10px;
+    right: 10px;
+    font-size: 1.1em; /* Smaller icon */
+    color: white; /* White checkmark */
+    background-color: #007bff; /* Primary color background */
+    border: 2px solid #007bff; /* Match border color */
+    width: 24px; /* Smaller size */
+    height: 24px;
+}
