@@ -1,9 +1,9 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Tourm - Travel & Tour Booking Agency HTML Template - Home Travel</title>
-<meta name="author" content="Tourm">
-<meta name="description" content="Tourm - Travel & Tour Booking Agency HTML Template ">
-<meta name="keywords" content="Tourm - Travel & Tour Booking Agency HTML Template ">
+<title>Bitrae - Travel & Tour Booking Agency</title>
+<meta name="author" content="Bitrate">
+<meta name="description" content="Bitrate - Travel & Tour Booking Agency HTML Template ">
+<meta name="keywords" content="Bitrate - Travel & Tour Booking Agency HTML Template ">
 <meta name="robots" content="INDEX,FOLLOW">
 
 <!-- Mobile Specific Metas -->

@@ -5,7 +5,7 @@
             <div class="widget  ">
                 <div class="th-widget-about">
                     <div class="about-logo">
-                        <a href="{{ route('home') }}"><img src="assets/img/logo2.svg" alt="Tourm"></a>
+                        <a href="{{ route('home') }}"><img src="assets/img/logo2.svg" alt="Bitrate"></a>
                     </div>
                     <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately create interactive infrastructures</p>
                     <div class="th-social">
@@ -61,8 +61,8 @@
                             <img src="assets/img/icon/envelope.svg" alt="img">
                         </div>
                         <div class="details">
-                            <p><a href="mailto:mailinfo00@tourm.com" class="info-box_link">mailinfo00@tourm.com</a></p>
-                            <p><a href="mailto:support24@tourm.com" class="info-box_link">support24@tourm.com</a></p>
+                            <p><a href="mailto:mailinfo00@****" class="info-box_link">mailinfo00@****</a></p>
+                            <p><a href="mailto:support24@****" class="info-box_link">support24@****</a></p>
                         </div>
                     </div>
                     <div class="info-box_text">
@@ -88,12 +88,12 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="{{ route('home') }}"><img src="assets/img/logo2.svg" alt="Tourm"></a>
+                <a href="{{ route('home') }}"><img src="assets/img/logo2.svg" alt="Bitrate"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
-                    {{-- <li><a class="{{ $page == 'about' ? 'active' : ''}}" href="about.html">About Us</a></li> --}}
+                    {{-- <li><a class="{{ $page == 'about' ? 'active' : ''}}" href="#">About Us</a></li> --}}
                     <li><a class="{{ $page == 'contact' ? 'active' : ''}}" href="{{ route('contact') }}">Contact us</a></li>
                 </ul>
             </div>
@@ -111,14 +111,14 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo">
-                                <a href="{{ route('home') }}"><img src="assets/img/logo.svg" alt="Tourm"></a>
+                                <a href="{{ route('home') }}"><img src="assets/img/logo.svg" alt="Bitrate"></a>
                             </div>
                         </div>
                         <div class="col-auto me-xl-auto">
                             <nav class="main-menu d-none d-xl-inline-block">
                                 <ul>
                                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
-                                    {{-- <li><a href="about.html">About Us</a></li> --}}
+                                    {{-- <li><a href="#">About Us</a></li> --}}
                                     <li><a class="{{ $page == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact us</a></li>
                                 </ul>
                             </nav>
