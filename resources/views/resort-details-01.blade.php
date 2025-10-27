@@ -322,6 +322,56 @@ tour Area
                             </ul>
                         </div>
 
+                        <div class="container px-0 mb-30">
+                            <div id="form-block-3" class="transition-col">
+                                <div class="booking-form-wrap style2 bg-smoke p-4" style="border-radius: 8px;">
+                                    <div class="title-area text-center">
+                                        <h3 class="sec-title mb-30">Accommodation Quotation</h3>
+                                        </div>
+                                    
+                                    <form action="accommodation-quotation-handler.php" method="POST"
+                                        class="th-form">
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"
+                                                name="name" placeholder="Name*" required>
+                                            </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control"
+                                                name="pax" placeholder="Pax (Number of People)*" required min="1">
+                                            </div>
+                                        
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label for="arrival_date">Arrival Date*</label>
+                                                <input type="date" class="form-control"
+                                                    id="arrival_date" name="arrival_date" required>
+                                                </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="departure_date">Departure Date*</label>
+                                                <input type="date" class="form-control"
+                                                    id="departure_date" name="departure_date" required>
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="form-group mb-30">
+                                            
+                                            <textarea name="message" cols="30" rows="3" class="form-control"
+                                                placeholder="Specific Accommodation Requirements (e.g., room type, star rating, location preference)..."></textarea>
+                                            
+                                        </div>
+                                        
+                                        
+                                        <button type="submit"
+                                            class="th-btn-whatsapp w-100">
+                                            <i class="fab fa-whatsapp me-2"></i> Get Quotation
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                        </div>
+
+
                         {{-- <div class="widget  ">
                             <h3 class="widget_title">Recent Posts</h3>
                             <div class="recent-post-wrap">
@@ -415,8 +465,8 @@ tour Area
 
     {{-- book now floting --}}
     <div class="book-now-floting">
-        <div class="col-12 form-group mt-4">
-            <button class="th-btn-whatsapp w-100">Book Now <i class="fab fa-whatsapp me-2 text-white"></i></button>
+        <div class="w-100 h-100 form-group text-center mt-4">
+            <button class="th-btn-whatsapp w-100"><i class="fab fa-whatsapp text-white"></i></button>
         </div>
     </div>
 

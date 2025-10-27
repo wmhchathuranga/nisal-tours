@@ -7,15 +7,17 @@
 .book-now-floting {
     /* Fixed position, typically on the bottom-right of the screen */
     position: fixed;
-    bottom: 95px; /* Adjust as needed */
+    bottom: 115px; /* Adjust as needed */
     right: 25px;  /* Adjust as needed */
     z-index: 9999; /* High z-index to ensure visibility */
     /* Use 'fit-content' or a max-width to let the button define the size */
-    width: fit-content;
+    /* width: 50px; */
+    height: 50px;
     max-width: 90vw; /* Safety measure for small screens */
     /* Remove any default padding/margin that might interfere */
     padding: 0;
     margin: 0;
+    margin-right: 5px;
 }
 
 /* 2. Styling to override the template structure and center the button */
@@ -38,7 +40,8 @@
     border-radius: 50px; 
     
     /* Padding to create the large, elongated shape */
-    padding: 15px 30px; 
+    /* padding: 15px 30px;  */
+    padding: 12px; 
     
     /* Font style */
     font-size: 18px; /* Slightly larger text */
@@ -64,9 +67,9 @@
 /* 4. Styling for the WhatsApp icon */
 .book-now-floting .th-btn-whatsapp .fab {
     /* Space between the text and the icon */
-    margin-left: 8px; /* Use margin-left since the icon is after the text */
+    /* margin-left: 8px; */
     margin-right: 0 !important; /* Override the me-2 from the HTML */
-    font-size: 20px; /* Slightly larger icon */
+    font-size: 40px; /* Slightly larger icon */
     line-height: 1; /* Aligns the icon vertically */
 }
 
