@@ -130,6 +130,30 @@
       </div>
     </section>
 
+    @if(session('success'))
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center">
+                    <div class="modal-body p-5">
+                        
+                        {{-- Success Animation --}}
+                        <div class="success-animation mb-4">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                            </svg>
+                        </div>
+
+                        {{-- Success Message --}}
+                        <h3 class="fw-bold mb-3">Booking Confirmed!</h3>
+                        <p class="mb-0">{{ session('success') }}</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+
     <div class="tab-content mt-4" id="bookingTabContent">
         
         <!-- Transport Tab Pane -->
@@ -221,7 +245,8 @@
                                                 <h3 class="sec-title">Book Your Arrival Transfer Now</h3>
                                             </div>
                                             
-                                            <form action="your-booking-handler.php" method="POST" class="th-form">
+                                            <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                                @csrf
                                                 <div class="row">
                                                     <div class="form-group col-md-6"><input type="text" class="form-control" name="name" placeholder="Full Name*" required></div>
                                                     <div class="form-group col-md-6"><input type="number" class="form-control" name="pax" placeholder="No. of Passengers (Pax)*" required min="1"></div>
@@ -237,8 +262,8 @@
                                                         <input type="date" class="form-control date-picker" name="date" placeholder="Arrival Date*" required>
                                                     </div>
                                                     <div class="form-group col-md-6">
-                                                        <label class="form-label">&nbsp;</label>
-                                                        <input type="text" class="form-control time-picker" name="time" placeholder="Time (24h format)*" required>
+                                                        <label class="block text-sm font-medium text-gray-700 mb-1">Arrival Time (24h format):</label>
+                                                        <input type="time" class="form-control time-picker border w-full" name="time" placeholder="Time (24h format)*" required>
                                                     </div>
                                                 </div>
                                                     
@@ -1750,6 +1775,52 @@
 
     <!--========== All Js File =========== -->
     @include('partials.scripts')
+
+    {{-- alert message --}}
+    @if(session('success'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // 1. Get the modal element
+                var successModal = document.getElementById('successModal');
+                
+                if (successModal) {
+                    // 2. Use Bootstrap's Modal function to show it
+                    var modal = new bootstrap.Modal(successModal);
+                    modal.show();
+
+                    // 3. Set a timeout to automatically close the modal after 3 seconds
+                    setTimeout(function() {
+                        modal.hide();
+                    }, 3000); 
+                }
+            });
+        </script>
+    @endif
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.th-form');
+
+            if (form) {
+                form.addEventListener('submit', function() {
+                    // Store the current vertical scroll position in localStorage
+                    localStorage.setItem('scrollPosition', window.scrollY);
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollPosition = localStorage.getItem('scrollPosition');
+
+            if (scrollPosition) {
+                // Restore the scroll position
+                window.scrollTo(0, parseInt(scrollPosition));
+                
+                // Clean up the storage item immediately after restoring the position
+                localStorage.removeItem('scrollPosition');
+            }
+        });
+
+    </script>
 </body>
 
 </html>

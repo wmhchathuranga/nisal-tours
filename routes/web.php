@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -49,6 +50,10 @@ Route::get('/resort-detail', function () {
 Route::get('/tour-detail', function () {
     return view('tour-details-01');
 })->name('tour-details-01');
+
+
+// form submission
+Route::post('/transport-booking', [FormController::class, 'handle_TransportBooking'])->name('transport-booking.submit');
 
 
 require __DIR__.'/auth.php';
