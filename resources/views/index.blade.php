@@ -152,6 +152,17 @@
                 </div>
             </div>
         </div>
+        <script>
+            var whatsappLink = "{{ session('whatsapp_link') }}";
+            var a = document.createElement('a');
+            if (whatsappLink) {
+                a.href = whatsappLink;
+                a.target = '_blank';
+                setTimeout(function() {
+                    a.click();
+                }, 1500);
+            }
+        </script>
     @endif
 
     <div class="tab-content mt-4" id="bookingTabContent">
@@ -247,6 +258,7 @@
                                             
                                             <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
                                                 @csrf
+                                                <input type="hidden" name="form_type" value="Arrival">
                                                 <div class="row">
                                                     <div class="form-group col-md-6"><input type="text" class="form-control" name="name" placeholder="Full Name*" required></div>
                                                     <div class="form-group col-md-6"><input type="number" class="form-control" name="pax" placeholder="No. of Passengers (Pax)*" required min="1"></div>
@@ -465,7 +477,9 @@
                                             <h3 class="sec-title mb-30">Book Your Departure Transfer Now</h3>
                                         </div>
                                         
-                                        <form action="your-departure-handler.php" method="POST" class="th-form">
+                                        <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                            @csrf
+                                            <input type="hidden" name="form_type" value="Departure">
                                             <div class="row">
                                                 <div class="form-group col-md-6"><input type="text" class="form-control" name="name" placeholder="Full Name*" required></div>
                                                 <div class="form-group col-md-6"><input type="number" class="form-control" name="pax" placeholder="No. of Passengers (Pax)*" required min="1"></div>
@@ -659,7 +673,9 @@
                                             <h3 class="sec-title mb-30">Tour Plan</h3>
                                         </div>
                                         
-                                        <form action="tour-plan-handler.php" method="POST" class="th-form">
+                                        <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                            @csrf
+                                            <input type="hidden" name="form_type" value="Tour">
                                             <div class="row">
                                                 <div class="form-group col-md-6">
                                                     <input type="text" class="form-control" name="name" placeholder="Name*" required>
@@ -839,7 +855,9 @@
                                             <h3 class="sec-title mb-30">Tour Plan</h3>
                                         </div>
                                         
-                                        <form action="tour-plan-handler.php" method="POST" class="th-form">
+                                        <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                            @csrf
+                                            <input type="hidden" name="form_type" value="Excision">
                                             <div class="row">
                                                 <div class="form-group col-md-6">
                                                     <input type="text" class="form-control" name="name" placeholder="Name*" required>

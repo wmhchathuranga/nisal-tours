@@ -8,42 +8,111 @@ class FormController extends Controller
 {
     public function handle_TransportBooking(Request $request)
     {
-        // All form data is available in the $request object.
-        // You can use the `all()` method to get an array of all inputs:
-        $formData = $request->all();
+        // The business WhatsApp number to receive the messages
+        $whatsappNo = '+94751872961';
 
-        // --- Retrieving Specific Inputs ---
+        $form_type = $request->input('form_type');
+        $messageText = '';
+        $validatedData = [];
 
-        $name = $request->input('name'); // Full Name
-        $pax = $request->input('pax'); // No. of Passengers (Pax)
-        $flightNo = $request->input('flight_no'); // Flight No.
-        $arrivalDate = $request->input('date'); // Arrival Date
-        $time = $request->input('time'); // Time
-        $pickup = $request->input('pickup_address'); // Pickup Location
-        $dropoff = $request->input('drop_address'); // Drop-off Address
-        $largeLuggage = $request->input('luggage_large'); // No. of Large Bags
-        $smallLuggage = $request->input('luggage_small'); // No. of Small Bags
-        $vehicleType = $request->input('vehicle_type'); // Preferred Vehicle Type
-        $requirements = $request->input('special_requirements'); // Special Requirements
+        // --- Dynamic Validation and Message Generation based on Form Type ---
+        switch ($form_type) {
+            case 'Excision': // Matches the hidden field value in your first form (Quotation/Excursion)
 
-        // --- Example: Validation (Highly Recommended) ---
-        $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'pax' => 'required|integer|min:1',
-            'flight_no' => 'required|string|max:50',
-            // Add validation rules for all other fields
-        ]);
+                // 1. Validation for Excursion/Quotation Form
+                $validatedData = $request->validate([
+                    'name' => 'required|string|max:255',
+                    'pax' => 'required|integer|min:1',
+                    'date' => 'required|date',
+                    'vehicle_type' => 'required|string|max:50',
+                    'message' => 'nullable|string',
+                ]);
 
-        logger($formData);
+                // 2. Message generation for Excursion/Quotation
+                $messageText = "*NEW EXCURSION QUOTATION REQUEST* 🚐\n\n" .
+                    "*Client:* " . $validatedData['name'] . "\n" .
+                    "*Passengers (Pax):* " . $validatedData['pax'] . "\n" .
+                    "*Required Date:* " . $validatedData['date'] . "\n" .
+                    "*Preferred Vehicle:* " . ucfirst(str_replace('_', ' ', $validatedData['vehicle_type'])) . "\n\n" .
+                    "*Client Message:*\n" . ($validatedData['message'] ?: 'No specific message provided.');
+                break;
 
-        // --- Next Steps ---
+            case 'Arrival': // Assuming this is the type for your full booking form (Arrival Transfer)
 
-        // 1. **Process the data:** e.g., save to a database,
-        //    send an email, or call an external API.
-        //    Example: Booking::create($validatedData);
+                // 1. Validation for Arrival/Transport Booking
+                $validatedData = $request->validate([
+                    'name' => 'required|string|max:255',
+                    'pax' => 'required|integer|min:1',
+                    'flight_no' => 'required|string|max:50',
+                    'date' => 'required|date',
+                    'time' => 'required|date_format:H:i',
+                    'pickup_address' => 'required|string|max:255',
+                    'drop_address' => 'required|string|max:255',
+                    'luggage_large' => 'nullable|integer|min:0',
+                    'luggage_small' => 'nullable|integer|min:0',
+                    'vehicle_type' => 'required|string|max:50',
+                    'special_requirements' => 'nullable|string',
+                ]);
 
-        // 2. **Return a response:** Redirect back the user after successful submission.
-        // return redirect('/thank-you')->with('success', 'Your booking request has been submitted!');
-        return redirect()->back()->with('success', 'Your booking request has been submitted!');
+                // 2. Message generation for Arrival/Booking
+                $messageText = "*NEW ARRIVAL TRANSPORT BOOKING* ✈️\n\n" .
+                    "*Client:* " . $validatedData['name'] . "\n" .
+                    "*Passengers (Pax):* " . $validatedData['pax'] . "\n" .
+                    "*Flight No.:* " . $validatedData['flight_no'] . "\n\n" .
+                    "*Arrival Date/Time:* " . $validatedData['date'] . " at " . $validatedData['time'] . "\n" .
+                    "*Pickup:* " . $validatedData['pickup_address'] . "\n" .
+                    "*Drop-off:* " . $validatedData['drop_address'] . "\n\n" .
+                    "*Vehicle Type:* " . ucfirst(str_replace('_', ' ', $validatedData['vehicle_type'])) . "\n" .
+                    "*Bags:* Large (" . ($validatedData['luggage_large'] ?? 0) . "), Small (" . ($validatedData['luggage_small'] ?? 0) . ")\n\n" .
+                    "*Special Requirements:*\n" . ($validatedData['special_requirements'] ?: 'None');
+                break;
+
+            default:
+                // Handle unknown form types
+                logger('Unknown form type submitted: ' . $form_type);
+                return redirect()->back()->withErrors(['form_type' => 'Invalid form submission type.']);
+        }
+
+        // --- Common Logic for WhatsApp Redirection ---
+
+        // Error check just in case message generation failed
+        if (empty($messageText)) {
+            return redirect()->back()->withErrors(['message' => 'Failed to generate message content.']);
+        }
+
+        // URL-encode the message text
+        $encodedMessage = urlencode($messageText);
+
+        // Construct the WhatsApp API link
+        $whatsappLink = "https://wa.me/" . $whatsappNo . "?text=" . $encodedMessage;
+
+        logger('Generated WhatsApp Link: ' . $whatsappLink);
+
+        $script = "
+            <script>
+                var whatsappLink = '" . addslashes($whatsappLink) . "';
+                var newWindow = window.open(whatsappLink, '_blank');
+
+                if (newWindow) {
+                    // If successfully opened in a new tab, redirect the current window back to the form page
+                    setTimeout(function() {
+                        window.history.back();
+                    }, 500); // 500ms delay to allow the new tab to load
+                } else {
+                    // Fallback for pop-up blocked: update message and provide a clickable link
+                    document.getElementById('message').innerText = 'Your browser blocked the pop-up. Please click the button below.';
+                    document.getElementById('link').href = whatsappLink;
+                    document.getElementById('link').style.display = 'inline-block';
+                }
+            </script>
+            <div style='text-align:center; padding: 50px; font-family: sans-serif;'>
+                <h2 id='message'>Redirecting to WhatsApp...</h2>
+                <a id='link' href='#' style='display:none; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;'>
+                    Open WhatsApp Chat
+                </a>
+            </div>
+        ";
+
+        return redirect()->back()->with('success', 'Your booking request has been submitted!')->with('whatsapp_link', $whatsappLink);
     }
 }
