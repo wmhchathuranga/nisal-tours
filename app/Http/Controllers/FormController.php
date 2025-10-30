@@ -143,6 +143,12 @@ class FormController extends Controller
 
     public function handle_AccommodationBooking(Request $request)
     {
+        $baseUrl = env('APP_URL'); 
+        $image_links = [
+            '1' => $baseUrl . "/resort-detail",
+            '2' => $baseUrl . "/resort-detail",
+            '3' => $baseUrl . "/resort-detail",
+        ];
 
         $accommodation_id = $request->input('accommodation_id');
         $messageText = '';
@@ -160,7 +166,8 @@ class FormController extends Controller
         ]);
 
         // 2. Message generation for Accommodation Booking
-        $messageText = "*NEW ACCOMMODATION QUOTATION REQUEST* 🏨\n\n" .
+        $messageText = $image_links[$validatedData['accommodation_id']] . "\n" .
+            "*NEW ACCOMMODATION QUOTATION REQUEST* 🏨\n\n" .
             "*Client:* " . $validatedData['name'] . "\n" .
             "*Guests (Pax):* " . $validatedData['pax'] . "\n" .
             "*Preferred Accommodation ID:* " . $validatedData['accommodation_id'] . "\n\n" .

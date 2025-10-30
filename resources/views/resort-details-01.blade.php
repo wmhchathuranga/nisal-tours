@@ -5,6 +5,16 @@
     @include('partials.head')
 
     <link rel="stylesheet" href="{{ asset('css/page/resort-details.css') }}">
+
+    {{-- image --}}
+    <meta property="og:title" content="Wilpattu Safari Sri Lanka - Check Availability & Prices">
+    <meta property="og:description" content="Book your stay at Wilpattu Safari Sri Lanka for an unforgettable experience in Sri Lanka.">
+    
+    <meta property="og:image" content="{{ env('APP_URL') }}/assets/img/accommodation/arces.jpg">
+    
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+
 </head>
 
 <body>
@@ -58,6 +68,7 @@
         <script>
             var whatsappLink = "{{ session('whatsapp_link') }}";
             var a = document.createElement('a');
+            
             if (whatsappLink) {
                 a.href = whatsappLink;
                 a.target = '_blank';
@@ -66,6 +77,29 @@
                 }, 2500);
             }
         </script>
+
+    @else
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center">
+                    <div class="modal-body p-5">
+                        
+                        {{-- Success Animation --}}
+                        <div class="success-animation mb-4">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                            </svg>
+                        </div>
+
+                        {{-- Success Message --}}
+                        <h3 class="fw-bold mb-3">You can start conversation now!</h3>
+                        <p class="mb-0">{{ session('success') }}</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>    
     @endif
 
     <!--============================== tour Area ==============================-->
