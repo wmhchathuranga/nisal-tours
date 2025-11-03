@@ -328,7 +328,7 @@ input[type="radio"] ~ label::before {
     border-radius: 50%;
     display: block;
     stroke-width: 3; /* Increased thickness for visibility */
-    stroke: #4CAF50; /* Green color */
+    stroke: #ffffff; /* Green color */
     stroke-miterlimit: 10;
     margin: 10% auto;
     box-shadow: inset 0px 0px 0px #4CAF50;
@@ -371,4 +371,62 @@ input[type="radio"] ~ label::before {
     50% {
         transform: scale3d(1.1, 1.1, 1);
     }
+}
+
+
+
+
+/* ================================== */
+/* Feature Card 3 Styles for Tourm Template */
+/* ================================== */
+
+/* Container styling for the whole card */
+.feature-card-3 {
+    text-align: center; /* Center all contents within the card */
+    padding: 30px 15px;
+    border-radius: 10px;
+    /* Optional: Add a subtle hover effect for professionalism */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Optional Hover Effect */
+.feature-card-3:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Add a light shadow */
+}
+
+/* Icon Wrapper Styling */
+.feature-card-icon {
+    display: inline-block;
+    /* Make the icon container large and visually prominent */
+    width: 80px; 
+    height: 80px;
+    line-height: 80px; /* Vertically center the icon */
+    margin-bottom: 20px;
+    border-radius: 50%; /* Make it perfectly circular */
+    
+    /* BACKGROUND AND BORDER (Customize these colors to match your theme!) */
+    background-color: #f0f8ff; /* Light, subtle background */
+    border: 2px solid #54c1dc; /* Border color matching your button/theme blue */
+    color: #0c333a; /* Dark text color for contrast */
+}
+
+/* Styling the actual Font Awesome icon */
+.feature-card-icon i {
+    /* Increase icon size significantly */
+    font-size: 35px; 
+}
+
+/* Styling the title for emphasis */
+.feature-card-content .feature-card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0c333a; /* Use your primary heading color */
+}
+
+/* Styling the description text */
+.feature-card-content .feature-card-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #6c757d; /* Use a softer text color for body text */
 }

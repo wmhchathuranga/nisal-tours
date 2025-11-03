@@ -402,6 +402,7 @@
                                     <form action="{{ route('accommodation-booking.submit') }}" method="POST" class="th-form">
                                         @csrf
                                         <input type="hidden" name="accommodation_id" value="1">
+                                        <input type="hidden" name="accommodation_name" value="98 Acres Resort & Spa">
 
                                         <div class="form-group">
                                             <input type="text" class="form-control"

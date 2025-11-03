@@ -1522,6 +1522,120 @@
         </div>
     </div>
 
+    <!--======== Explore SriLanka =========-->
+    <section class="overflow-hidden space">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">Tropical Paradise Awaits</span>
+                <h2 class="sec-title">Explore Sri Lanka</h2>
+            </div>
+    
+            <div class="row gy-4 justify-content-center">
+    
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card">
+                        <div class="box-img global-img">
+                            <img style="height: 550px" src="assets/img/explore/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                        </div>
+                        <div class="destination-content pt-3">
+                            <h3 class="title"><a href="{{ route('tour-details-01') }}">Sigiriya</a></h3>
+                            <p class="destination-details">
+                                Towering over the plains, **Sigiriya Rock Fortress** is an ancient palace and a UNESCO World Heritage Site. Marvel at the spectacular frescoes and panoramic views from the summit, showcasing the ingenuity of ancient Sri Lankan architecture.
+                            </p>
+                            <a href="{{ route('tour-details-01') }}" class="th-btn style-border">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card">
+                        <div class="box-img global-img">
+                            <img style="height: 550px" src="assets/img/explore/galle_fort.jpg" alt="Galle Dutch Fort">
+                        </div>
+                        <div class="destination-content pt-3">
+                            <h3 class="title"><a href="{{ route('tour-details-01') }}">Galle Fort</a></h3>
+                            <p class="destination-details">
+                                Step back in time at **Galle Fort**, a beautifully preserved Historic Dutch-era fortress on the southern coast. Wander the narrow, cobbled streets, explore the ancient ramparts, and discover boutique shops and charming cafes within its walls.
+                            </p>
+                            <a href="{{ route('tour-details-01') }}" class="th-btn style-border">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card">
+                        <div class="box-img global-img">
+                            <img style="height: 550px" src="assets/img/explore/kandy.jpg" alt="Kandy Temple of the Tooth">
+                        </div>
+                        <div class="destination-content pt-3">
+                            <h3 class="title"><a href="{{ route('tour-details-01') }}">Kandy</a></h3>
+                            <p class="destination-details">
+                                Nestled among lush hills, **Kandy** is the cultural heart of the island and home to the sacred Temple of the Tooth Relic. Experience a cool climate, explore the serene lake, and witness the rich traditional arts and customs of the hill country.
+                            </p>
+                            <a href="{{ route('tour-details-01') }}" class="th-btn style-border">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="shape-mockup movingX d-none d-xl-block" data-bottom="10%" data-right="0%">
+                <img class="gmovingX" src="assets/img/shape/elements_1_4.svg" alt="shape">
+            </div>
+        </div>
+    </section>
+
+    <!--======== Discover Sri Lanka Wonders With a Trust =========-->
+    <div class="feature-area-3 space">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">Your Trusted Partner in Travel</span>
+                <h2 class="sec-title">Discover Sri Lanka Wonders With a Trust</h2>
+            </div>
+            
+                <div class="row justify-content-center gy-4">
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card-3">
+                            <div class="feature-card-icon">
+                                <i class="fas fa-car-side"></i> 
+                            </div>
+                            <div class="feature-card-content">
+                                <h4 class="feature-card-title">Premium Transport Service</h4>
+                                <p class="feature-card-text">
+                                    Travel in comfort and safety across the island with our **modern, air-conditioned fleet** and professional, trusted drivers, ensuring a smooth journey every time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card-3">
+                            <div class="feature-card-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <h4 class="feature-card-title">24/7 Dedicated Support</h4>
+                                <p class="feature-card-text">Travel with peace of mind knowing our dedicated support team is available around the clock to assist you with any emergency or query.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card-3">
+                            <div class="feature-card-icon">
+                                <i class="fas fa-shield-alt"></i> 
+                            </div>
+                            <div class="feature-card-content">
+                                <h4 class="feature-card-title">Flexible & Secure Booking</h4>
+                                <p class="feature-card-text">Enjoy hassle-free travel planning with our flexible cancellation policies and secure online payment gateway trusted by thousands of travelers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+        
     <!--========== Testimonial Area ============-->
     <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">

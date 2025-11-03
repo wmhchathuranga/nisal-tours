@@ -35,7 +35,7 @@ class FormController extends Controller
                 ]);
 
                 // 2. Message generation for Arrival/Booking
-                $messageText = "*NEW ARRIVAL TRANSPORT BOOKING* ✈️\n\n" .
+                $messageText = "*NEW ARRIVAL TRANSPORT BOOKING* \n\n" .
                     "*Client:* " . $validatedData['name'] . "\n" .
                     "*Passengers (Pax):* " . $validatedData['pax'] . "\n" .
                     "*Flight No.:* " . $validatedData['flight_no'] . "\n\n" .
@@ -65,7 +65,7 @@ class FormController extends Controller
                 ]);
 
                 // 2. Message generation for Departure Transfer Booking
-                $messageText = "*NEW DEPARTURE TRANSPORT BOOKING* 🛫\n\n" .
+                $messageText = "*NEW DEPARTURE TRANSPORT BOOKING* \n\n" .
                     "*Client:* " . $validatedData['name'] . "\n" .
                     "*Passengers (Pax):* " . $validatedData['pax'] . "\n" .
                     "*Flight/Train No.:* " . $validatedData['flight_no'] . "\n\n" .
@@ -89,7 +89,7 @@ class FormController extends Controller
                 ]);
 
                 // 2. Message generation for Excursion/Quotation
-                $messageText = "*NEW EXCURSION QUOTATION REQUEST* 🚐\n\n" .
+                $messageText = "*NEW EXCURSION QUOTATION REQUEST* \n\n" .
                     "*Client:* " . $validatedData['name'] . "\n" .
                     "*Passengers (Pax):* " . $validatedData['pax'] . "\n" .
                     "*Required Date:* " . $validatedData['date'] . "\n" .
@@ -109,7 +109,7 @@ class FormController extends Controller
                 ]);
 
                 // 2. Message generation for Tour Quotation
-                $messageText = "*NEW TOUR QUOTATION REQUEST* 🗺️\n\n" .
+                $messageText = "*NEW TOUR QUOTATION REQUEST* \n\n" .
                     "*Client:* " . $validatedData['name'] . "\n" .
                     "*Passengers (Pax):* " . $validatedData['pax'] . "\n\n" .
                     "*Stay Duration:* " . $validatedData['arrival_date'] . " to " . $validatedData['departure_date'] . "\n\n" .
@@ -151,6 +151,7 @@ class FormController extends Controller
         ];
 
         $accommodation_id = $request->input('accommodation_id');
+        $accommodation_name = $request->input('accommodation_name');
         $messageText = '';
         $validatedData = [];
 
@@ -160,6 +161,7 @@ class FormController extends Controller
             'pax' => 'required|integer|min:1',
             // accommodation_id is a key new field
             'accommodation_id' => 'required|integer|min:1',
+            'accommodation_name' => 'required|string|max:255',
             'arrival_date' => 'required|date',
             'departure_date' => 'required|date|after_or_equal:arrival_date',
             'message' => 'nullable|string',
@@ -167,10 +169,10 @@ class FormController extends Controller
 
         // 2. Message generation for Accommodation Booking
         $messageText = $image_links[$validatedData['accommodation_id']] . "\n" .
-            "*NEW ACCOMMODATION QUOTATION REQUEST* 🏨\n\n" .
-            "*Client:* " . $validatedData['name'] . "\n" .
+            "*NEW ACCOMMODATION QUOTATION REQUEST* \n\n" .
+            "*Name:* " . $validatedData['name'] . "\n" .
             "*Guests (Pax):* " . $validatedData['pax'] . "\n" .
-            "*Preferred Accommodation ID:* " . $validatedData['accommodation_id'] . "\n\n" .
+            "*location:* " . $validatedData['accommodation_name'] . "\n\n" .
             "*Stay Duration:* " . $validatedData['arrival_date'] . " to " . $validatedData['departure_date'] . "\n\n" .
             "*Specific Requirements:*\n" . ($validatedData['message'] ?: 'No specific requirements provided.');
 
