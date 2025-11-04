@@ -79,7 +79,7 @@ Contact Area
 Video Area
 ==============================-->
 
-    <div class="space-extra2-top space-extra2-bottom" data-bg-src="assets/img/hero/hero_bg_1_3.jpg">
+    <div class="space-extra2-top space-extra2-bottom" data-bg-src="assets/img/hero/hero_bg_3_3.jpg">
         <div class="container">
             <div class="row flex-row-reverse justify-content-center align-items-center">
                 <div class="col-lg-6">
