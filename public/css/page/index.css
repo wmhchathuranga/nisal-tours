@@ -492,7 +492,7 @@ input[type="radio"] ~ label::before {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     
     /* Remove the w-100 class effect to allow padding to define width */
-    width: auto !important; 
+    /* width: auto !important;  */
     max-width: 100%;
     
     /* Add a slight lift/shadow for better floating visual */

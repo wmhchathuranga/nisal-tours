@@ -144,7 +144,7 @@
 {{-- book now floting --}}
 <div class="book-now-floting">
     <div class="w-100 h-100 form-group text-center mt-4">
-        <a target="_blank" href="https://wa.me/+94777143999" class="th-btn-whatsapp w-100"><i class="fab fa-whatsapp text-white"></i></a>
+        <a target="_blank" href="https://wa.me/+94777143999" class="th-btn-whatsapp w-100"><i class="fab fa-whatsapp text-white position-absolute"></i></a>
     </div>
 </div>
 
