@@ -141,6 +141,13 @@
     </div>
 </footer>
 
+{{-- book now floting --}}
+<div class="book-now-floting">
+    <div class="w-100 h-100 form-group text-center mt-4">
+        <a target="_blank" href="https://wa.me/+94777143999" class="th-btn-whatsapp w-100"><i class="fab fa-whatsapp text-white"></i></a>
+    </div>
+</div>
+
 <div class="scroll-top">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"

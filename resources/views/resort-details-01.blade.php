@@ -10,9 +10,9 @@
     <meta property="og:title" content="Wilpattu Safari Sri Lanka - Check Availability & Prices">
     <meta property="og:description" content="Book your stay at Wilpattu Safari Sri Lanka for an unforgettable experience in Sri Lanka.">
     
-    <meta property="og:image" content="{{ env('APP_URL') }}/assets/img/accommodation/arces.jpg">
+    <meta property="og:image" content="{{ url()->previous() }}assets/img/accommodation/arces.jpg">
     
-    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:url" content="{{ url()->previous() }}">
     <meta property="og:type" content="website">
 
 </head>
@@ -534,13 +534,6 @@
 
     <!--============================== Footer Area ==============================-->
     @include('partials.footer')
-
-    {{-- book now floting --}}
-    <div class="book-now-floting">
-        <div class="w-100 h-100 form-group text-center mt-4">
-            <button class="th-btn-whatsapp w-100"><i class="fab fa-whatsapp text-white"></i></button>
-        </div>
-    </div>
 
     <!--========== All Js File =========== -->
     @include('partials.scripts')
