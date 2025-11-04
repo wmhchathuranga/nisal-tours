@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Bitrae - Travel & Tour Booking Agency</title>
+<title>Bitrate - Travel & Tour Booking Agency</title>
 <meta name="author" content="Novara">
 <meta name="description" content="Novara - Travel & Tour Booking Agency">
 <meta name="keywords" content="Novara - Travel & Tour Booking Agency">
