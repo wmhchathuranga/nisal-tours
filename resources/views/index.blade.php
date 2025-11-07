@@ -87,43 +87,97 @@
       <div class="container">
         <!-- Tab Header -->
         <div class="tab-header">
-            <ul class="nav nav-pills align-items-center h-100 gap-3" id="bookingTab" role="tablist">
+            <ul class="nav nav-pills align-items-center h-100" id="bookingTab" role="tablist">
       
-              <!-- Transport Tab -->
-              <li class="nav-item col-md-6 col-lg-4 text-center h-100" role="presentation">
-                <button 
-                  class="nav-link active d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
-                  id="transport-tab" 
-                  data-bs-toggle="pill" 
-                  data-bs-target="#transport" 
-                  type="button" 
-                  role="tab" 
-                  aria-controls="transport" 
-                  aria-selected="true">
-                    <div class="icon mb-2">
-                      <i class="fa-light fa-route fa-2x text-theme"></i>
-                    </div>
-                    <span class="fs-5 fw-bold text-dark">Transport Services</span>
-                </button>
-              </li>
-      
-              <!-- Accommodation Tab -->
-              <li class="nav-item col-md-6 col-lg-4 text-center h-100" role="presentation">
-                <button 
-                  class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
-                  id="accommodation-tab" 
-                  data-bs-toggle="pill" 
-                  data-bs-target="#accommodation" 
-                  type="button" 
-                  role="tab" 
-                  aria-controls="accommodation" 
-                  aria-selected="false">
-                    <div class="icon mb-2">
-                      <i class="fa-light fa-hotel fa-2x text-theme"></i>
-                    </div>
-                    <span class="fs-5 fw-bold text-dark">Accommodation</span>
-                </button>
-              </li>
+                <!-- Tour packages tab -->
+                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                  <button 
+                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
+                    id="tour-packages-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#tour-packages" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="tour-packages" 
+                    aria-selected="false">
+                      <div class="icon mb-2">
+                        <i class="fa-light fa-suitcase-rolling fa-2x text-theme"></i>
+                      </div>
+                      <span class="fs-5 fw-bold text-dark">Tour Packages</span>
+                  </button>
+                </li>
+
+                <!-- Customize Tour tab -->
+                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                  <button 
+                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
+                    id="customize-tour-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#customize-tour" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="customize-tour" 
+                    aria-selected="false">
+                      <div class="icon mb-2">
+                        <i class="fa-light fa-list-timeline fa-2x text-theme"></i>
+                      </div>
+                      <span class="fs-5 fw-bold text-dark">Customize Tour</span>
+                  </button>
+                </li>
+
+                <!-- Arrival Departure tab -->
+                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                  <button 
+                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
+                    id="transport-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#transport" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="transport" 
+                    aria-selected="false">
+                      <div class="icon mb-2">
+                        <i class="fa-light fa-plane-arrival fa-2x text-theme"></i>
+                      </div>
+                      <span class="fs-5 fw-bold text-dark">Arrival Departure</span>
+                  </button>
+                </li>
+                
+                <!-- Transport Tab -->
+                {{-- <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                  <button 
+                    class="nav-link active d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
+                    id="transport-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#transport" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="transport" 
+                    aria-selected="true">
+                      <div class="icon mb-2">
+                        <i class="fa-light fa-route fa-2x text-theme"></i>
+                      </div>
+                      <span class="fs-5 fw-bold text-dark">Transport Services</span>
+                  </button>
+                </li> --}}
+        
+                <!-- Accommodation Tab -->
+                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                  <button 
+                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
+                    id="accommodation-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#accommodation" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="accommodation" 
+                    aria-selected="false">
+                      <div class="icon mb-2">
+                        <i class="fa-light fa-hotel fa-2x text-theme"></i>
+                      </div>
+                      <span class="fs-5 fw-bold text-dark">Accommodation</span>
+                  </button>
+                </li>
       
             </ul>
         </div>
@@ -165,10 +219,263 @@
         </script>
     @endif
 
-    <div class="tab-content mt-4" id="bookingTabContent">
+    <div class="tab-content" id="bookingTabContent">
         
+        <!-- tour-packages Tab Pane -->
+        <div class="tab-pane fade show active" id="tour-packages" role="tabpanel" aria-labelledby="tour-packages-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
+            <section class="category-area2 bg-top-center position-relative overflow-hidden space space-extra-bottom">
+              <div class="container th-container">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                          <div class="title-area text-center">
+                              <span class="sub-title">Seamless Journeys</span>
+                              <h2 class="sec-title">Your Journey, Our Priority</h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container-fluid">
+                  <div class="slider-area tour-slider slider-drag-wrap">
+                      <div class="swiper categorySlider6" id="categorySlider9">
+                          <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/Yala-National-Park-Elephant-Tusker.jpg" alt="Image of a Leopard in Yala">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Yala National Park Safari</a></h3>
+                                              <p class="box-text">Leopard Territory: Full-day jeep safari for the highest chance of spotting the elusive Sri Lankan Leopard.</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/e6.jpg" alt="Image of Elephants in Udawalawe">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Udawalawe Elephant Safari</a></h3>
+                                              <p class="box-text">Wild Wheels: Guaranteed sightings of large herds of elephants and diverse birdlife in the southern plains.</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/elephants-mineriya-kaudula-cultural-triangle-sri-lanka.jpg" alt="Image of Elephant Gathering">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Minneriya/Kaudulla Gathering</a></h3>
+                                              <p class="box-text">The Great Gathering: Witness the world's largest gathering of Asian Elephants (seasonal) near Sigiriya.</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/A-man-at-the-top-of-Knuckles-Mountain-Range-the-Fascinating-Wonder-of-Nature-in-Sri-Lanka..jpg" alt="Image of Knuckles Mountain Range scenery">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Knuckles Off-Road Explorer</a></h3>
+                                              <p class="box-text">Rugged Landscapes: A thrilling 4x4 journey through remote villages and cloud forests in the Knuckles Range.</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/img_6098.jpg" alt="Image of a jeep on a rugged mountain road">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Devil's Staircase Challenge</a></h3>
+                                              <p class="box-text">Extreme Expedition: The ultimate high-elevation, off-road drive on one of Sri Lanka's most challenging trails (Belihuloya).</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/75.jpg" alt="Image of a bird on a lake in Bundala">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Bundala Coastal Bird Safari</a></h3>
+                                              <p class="box-text">Flamingo & Migratory Wonders: A unique jeep safari focusing on the coastal lagoons and endemic bird species.</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/d9.jpg" alt="Image of Elephants swimming in a reservoir">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Gal Oya Boat & Jeep Safari</a></h3>
+                                              <p class="box-text">Uncharted: Discover hidden trails and enjoy a boat safari to see elephants swimming between islands (unique to Sri Lanka).</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          
+                              <div class="swiper-slide">
+                                  <div class="category-card style4 single2">
+                                      <div class="box-img global-img">
+                                          <img src="assets/img/excision/Wilpattu-National-Park-hele-of-halve-dag-safari.jpg" alt="Image">
+                                      </div>
+                                      <div class="box-wrapp">
+                                          <div class="box-content">
+                                              <h3 class="box-title"><a href="destination.html">Wilpattu Safari</a></h3>
+                                              <p class="box-text">A safari in Wilpattu National Park, Sri Lanka's largest and one of its oldest national parks, offers a peaceful, less-crowded alternative to other popular parks.</p>
+                                          </div>
+                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          
+                          </div>
+                          <div class="th-swiper-custom">
+                              <button data-slider-prev="#categorySlider9" class="slider-arrow slider-prev"><img src="assets/img/icon/right-arrow.svg" alt=""></button>
+                              <div class="swiper-pagination"></div>
+                              <button data-slider-next="#categorySlider9" class="slider-arrow slider-next"><img src="assets/img/icon/left-arrow.svg" alt=""></button>
+                          </div>
+    
+                      </div>
+                  </div>
+              </div>
+            </section>
+        </div>
+
+        <!-- tour-packages Tab Pane -->
+        <div class="tab-pane fade show" id="customize-tour" role="tabpanel" aria-labelledby="customize-tour-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
+            <section class="category-area2 bg-top-center position-relative overflow-hidden space space-extra-bottom">
+                <div class="container" style="min-height: 700px;">
+                    <div class="row transition-col block-active" id="about-block-3">
+                        <div class="col-xl-6">
+                            <div class="img-box1">
+                                <div class="img1">
+                                    <img src="assets/img/normal/about_3_1.jpg" alt="About">
+                                </div>
+                                <div class="img2">
+                                    <img src="assets/img/normal/about_3_2.jpg" alt="About">
+                                </div>
+                                <div class="img3">
+                                    <img src="assets/img/normal/about_3_3.jpg" alt="About">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="ps-xl-4 ms-xl-2">
+                                <div class="title-area mb-20 pe-xl-5 me-xl-5">
+                                    <span class="sub-title style1 ">How It Works</span>
+                                    <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">Plan Your Trip With us</h2>
+        
+                                    <p class="sec-text mb-30">There are many variations of passages of available but the majority
+                                        have
+                                        suffered alteration in some form, by injected hum randomised words which don't look even
+                                        slightly.
+                                    </p>
+                                </div>
+                                <div class="about-item-wrap">
+                                    <div class="about-item">
+                                        <div class="about-item_img"><img src="assets/img/icon/map3.svg" alt=""></div>
+                                        <div class="about-item_centent">
+                                            <h5 class="box-title">Exclusive Trip</h5>
+                                            <p class="about-item_text">There are many variations of passages of available but the
+                                                majority.</p>
+                                        </div>
+                                    </div>
+                                    <div class="about-item">
+                                        <div class="about-item_img"><img src="assets/img/icon/guide.svg" alt=""></div>
+                                        <div class="about-item_centent">
+                                            <h5 class="box-title">Professional Guide</h5>
+                                            <p class="about-item_text">There are many variations of passages of available but the
+                                                majority.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-45">
+                                    <button id="show-form-btn" data-block="2" class="th-btn style3 th-icon">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="form-block-3" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
+                        <div class="booking-form-wrap style2 bg-smoke p-4">
+                            <div class="title-area text-center">
+                                <h3 class="sec-title mb-30">Tour Plan</h3>
+                            </div>
+                            
+                            <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                @csrf
+                                <input type="hidden" name="form_type" value="Tour">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" name="name" placeholder="Name*" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="number" class="form-control" name="pax" placeholder="Pax*" required min="1">
+                                    </div>
+                                </div>
+                    
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="arrival_date">Arrival Date</label>
+                                        <input type="date" class="form-control" name="arrival_date" placeholder="Arrival Date*" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="departure_date">Departure Date</label>
+                                        <input type="date" class="form-control" name="departure_date" placeholder="Departure Date*" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group mb-30">
+                                    <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Message..."></textarea>
+                                </div>
+                    
+                                <button type="submit" class="th-btn-whatsapp w-100" >
+                                    <i class="fab fa-whatsapp me-2"></i> Get Quotation
+                                </button>
+                                <button type="button" id="hide-form-btn" data-block="3" class="th-btn style-alt w-100 mt-2">
+                                    <i class="fas fa-arrow-left me-2"></i> How It Works
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </section>
+        </div>
+
         <!-- Transport Tab Pane -->
-        <div class="tab-pane fade show active" id="transport" role="tabpanel" aria-labelledby="transport-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
+        <div class="tab-pane fade show" id="transport" role="tabpanel" aria-labelledby="transport-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
             <section class="category-area2 bg-top-center position-relative overflow-hidden space space-extra-bottom">
               <div class="container th-container">
                   <div class="row justify-content-center">
@@ -184,8 +491,8 @@
                   <div class="nav nav-tabs tour-tabs style3" id="nav-tab" role="tablist">
                       <button class="nav-link th-btn active" id="nav-step-transport1-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport1" type="button">Arrival</button>
                       <button class="nav-link th-btn" id="nav-step-transport2-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport2" type="button">Departure</button>
-                      <button class="nav-link th-btn" id="nav-step-transport3-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport3" type="button">Tour</button>
-                      <button class="nav-link th-btn" id="nav-step-transport4-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport4" type="button">Excision</button>
+                      {{-- <button class="nav-link th-btn" id="nav-step-transport3-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport3" type="button">Tour</button>
+                      <button class="nav-link th-btn" id="nav-step-transport4-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport4" type="button">Excision</button> --}}
                   </div>
   
                      <div class="tab-content" id="nav-tabContent">
@@ -897,7 +1204,7 @@
                                       <div class="swiper-slide">
                                           <div class="tour-box th-ani gsap-cursor">
                                               <div class="tour-box_img global-img">
-                                                  <img style="height:274px;" src="assets/img/accommodation/arces.jpg" alt="98 Acres Resort & Spa">
+                                                  <img style="height:274px;" src="assets/img/accommodation/arces.png" alt="98 Acres Resort & Spa">
                                               </div>
                                               <div class="tour-content">
                                                   <h3 class="box-title mb-0"><a href="tour-details.html">98 Acres Resort & Spa</a></h3>

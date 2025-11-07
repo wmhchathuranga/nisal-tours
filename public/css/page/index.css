@@ -514,3 +514,16 @@ input[type="radio"] ~ label::before {
     background-color: #1DA84E; /* Slightly darker green on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35); /* More prominent shadow on hover */
 }
+
+
+
+
+.tab-content {
+    margin-top: 0px;
+}
+
+@media (max-width: 991px) {
+    .tab-content {
+        margin-top: 180px;
+    }
+}

@@ -10,7 +10,7 @@
     <meta property="og:title" content="Wilpattu Safari Sri Lanka - Check Availability & Prices">
     <meta property="og:description" content="Book your stay at Wilpattu Safari Sri Lanka for an unforgettable experience in Sri Lanka.">
     
-    <meta property="og:image" content="{{ url()->previous() }}assets/img/accommodation/arces.jpg">
+    <meta property="og:image" content="{{ url()->previous() }}assets/img/accommodation/arces.png">
     
     <meta property="og:url" content="{{ url()->previous() }}">
     <meta property="og:type" content="website">
@@ -108,7 +108,7 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="page-single">
-                        <div class="service-img global-img"><img src="assets/img/accommodation/arces.jpg" alt=""></div>
+                        <div class="service-img global-img"><img src="assets/img/accommodation/arces.png" alt=""></div>
                         <div class="page-content d-block">
                             <h3 class="box-title mt-20"><a href="resort-details.html">98 Acres Resort & Spa</a></h3>
                             <p class="blog-text mb-30">This luxury resort is set on a private island in the South Pacific.
