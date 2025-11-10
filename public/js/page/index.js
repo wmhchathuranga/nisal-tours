@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
         formBlock.classList.remove('d-none');
 
         // aboutblock get scrolled to top
-        aboutBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // aboutBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollTo({ top: aboutBlock.offsetTop + 600, behavior: 'smooth' });
 
         setTimeout(() => {
             aboutBlock.classList.add('d-none');
@@ -41,7 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
         formBlock.classList.add('block-collapsed');
         aboutBlock.classList.remove('d-none');
 
-        formBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // formBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollTo({ top: formBlock.offsetTop + 600, behavior: 'smooth' });
 
         setTimeout(() => {
             formBlock.classList.add('d-none');

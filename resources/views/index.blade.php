@@ -92,7 +92,7 @@
                 <!-- Tour packages tab -->
                 <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
                   <button 
-                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
+                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100 active" 
                     id="tour-packages-tab" 
                     data-bs-toggle="pill" 
                     data-bs-target="#tour-packages" 
