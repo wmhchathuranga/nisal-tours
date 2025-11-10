@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
         aboutBlock.classList.add('block-collapsed');
         formBlock.classList.remove('d-none');
 
+        // aboutblock get scrolled to top
+        aboutBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
         setTimeout(() => {
             aboutBlock.classList.add('d-none');
             formBlock.classList.remove('block-collapsed');
@@ -37,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
         formBlock.classList.remove('block-active');
         formBlock.classList.add('block-collapsed');
         aboutBlock.classList.remove('d-none');
+
+        formBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
         setTimeout(() => {
             formBlock.classList.add('d-none');

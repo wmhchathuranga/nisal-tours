@@ -523,7 +523,7 @@ input[type="radio"] ~ label::before {
 }
 
 @media (max-width: 991px) {
-    .tab-content {
+    .category-area2 {
         margin-top: 180px;
     }
 }

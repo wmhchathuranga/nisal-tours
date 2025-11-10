@@ -90,7 +90,7 @@
             <ul class="nav nav-pills align-items-center h-100" id="bookingTab" role="tablist">
       
                 <!-- Tour packages tab -->
-                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
                   <button 
                     class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
                     id="tour-packages-tab" 
@@ -108,7 +108,7 @@
                 </li>
 
                 <!-- Customize Tour tab -->
-                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
                   <button 
                     class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
                     id="customize-tour-tab" 
@@ -126,7 +126,7 @@
                 </li>
 
                 <!-- Arrival Departure tab -->
-                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
                   <button 
                     class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
                     id="transport-tab" 
@@ -144,7 +144,7 @@
                 </li>
                 
                 <!-- Transport Tab -->
-                {{-- <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                {{-- <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
                   <button 
                     class="nav-link active d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
                     id="transport-tab" 
@@ -162,7 +162,7 @@
                 </li> --}}
         
                 <!-- Accommodation Tab -->
-                <li class="nav-item col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
                   <button 
                     class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
                     id="accommodation-tab" 
@@ -371,11 +371,11 @@
             </section>
         </div>
 
-        <!-- tour-packages Tab Pane -->
+        <!-- customize tour Tab Pane -->
         <div class="tab-pane fade show" id="customize-tour" role="tabpanel" aria-labelledby="customize-tour-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
             <section class="category-area2 bg-top-center position-relative overflow-hidden space space-extra-bottom">
                 <div class="container" style="min-height: 700px;">
-                    <div class="row transition-col block-active" id="about-block-3">
+                    <div class="row transition-col block-active" id="about-block-1">
                         <div class="col-xl-6">
                             <div class="img-box1">
                                 <div class="img1">
@@ -420,13 +420,13 @@
                                     </div>
                                 </div>
                                 <div class="text-center mt-45">
-                                    <button id="show-form-btn" data-block="2" class="th-btn style3 th-icon">Book Now</button>
+                                    <button id="show-form-btn" class="th-btn style3 th-icon">Book Now</button>
                                 </div>
                             </div>
                         </div>
                     </div>
         
-                    <div id="form-block-3" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
+                    <div id="form-block-1" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
                         <div class="booking-form-wrap style2 bg-smoke p-4">
                             <div class="title-area text-center">
                                 <h3 class="sec-title mb-30">Tour Plan</h3>
@@ -462,7 +462,7 @@
                                 <button type="submit" class="th-btn-whatsapp w-100" >
                                     <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                 </button>
-                                <button type="button" id="hide-form-btn" data-block="3" class="th-btn style-alt w-100 mt-2">
+                                <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
                                     <i class="fas fa-arrow-left me-2"></i> How It Works
                                 </button>
                             </form>
@@ -500,7 +500,7 @@
                             <div class="about-area position-relative overflow-hidden" id="about-sec">
                                 <div class="container" style="min-height: 1100px;">
                                     
-                                    <div class="row transition-col block-active" id="about-block-1">
+                                    <div class="row transition-col block-active" id="about-block-2">
                                         <div class="col-xl-7">
                                             <div class="img-box2">
                                                 <div class="img1">
@@ -548,7 +548,7 @@
                                                             </div>
                                                             
                                                             <div class="text-center mt-45">
-                                                                <button id="show-form-btn" data-block="1" class="th-btn style3 th-icon">Book Now</button>
+                                                                <button id="show-form-btn" class="th-btn style3 th-icon">Book Now</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -557,7 +557,7 @@
                                         </div>
                                     </div>
                             
-                                    <div id="form-block-1" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
+                                    <div id="form-block-2" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
                                         <div class="booking-form-wrap style2 bg-smoke p-4">
                                             <div class="title-area text-center">
                                                 <h3 class="sec-title">Book Your Arrival Transfer Now</h3>
@@ -708,7 +708,7 @@
                                                      <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                                 </button>
                                                     
-                                                <button type="button" id="hide-form-btn" data-block="1" class="th-btn style-alt w-100 mt-2">
+                                                <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
                                                     <i class="fas fa-arrow-left me-2"></i> How It Works
                                                 </button>
                                             </form>
@@ -721,7 +721,7 @@
                         <div class="tab-pane fade" id="nav-step-transport2" role="tabpanel">
                             <div class="container" style="min-height: 1100px;">
                                 
-                                <div class="row transition-col block-active" id="about-block-2">
+                                <div class="row transition-col block-active" id="about-block-3">
                                     <div class="col-xl-7">
                                         <div class="img-box2">
                                             <div class="img1">
@@ -769,7 +769,7 @@
                                                         </div>
                                                             
                                                         <div class="text-center mt-45">
-                                                            <button id="show-form-btn" data-block="2" class="th-btn style3 th-icon">Book Now</button>
+                                                            <button id="show-form-btn" class="th-btn style3 th-icon">Book Now</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -778,7 +778,7 @@
                                     </div>
                                 </div>
                         
-                                <div id="form-block-2" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
+                                <div id="form-block-3" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
                                     <div class="booking-form-wrap style2 bg-smoke p-4">
                                         <div class="title-area text-center">
                                             <h3 class="sec-title mb-30">Book Your Departure Transfer Now</h3>
@@ -912,7 +912,7 @@
                                             <button type="submit" class="th-btn-whatsapp w-100" >
                                                 <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                             </button>
-                                            <button type="button" id="hide-form-btn" data-block="2" class="th-btn style-alt w-100 mt-2">
+                                            <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
                                                 <i class="fas fa-arrow-left me-2"></i> How It Works
                                             </button>
                                         </form>
@@ -921,7 +921,7 @@
 
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-step-transport3" role="tabpanel">
+                        {{-- <div class="tab-pane fade" id="nav-step-transport3" role="tabpanel">
                             <div class="container" style="min-height: 700px;">
                                 <div class="row transition-col block-active" id="about-block-3">
                                     <div class="col-xl-6">
@@ -968,7 +968,7 @@
                                                 </div>
                                             </div>
                                             <div class="text-center mt-45">
-                                                <button id="show-form-btn" data-block="2" class="th-btn style3 th-icon">Book Now</button>
+                                                <button id="show-form-btn" class="th-btn style3 th-icon">Book Now</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1010,7 +1010,7 @@
                                             <button type="submit" class="th-btn-whatsapp w-100" >
                                                 <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                             </button>
-                                            <button type="button" id="hide-form-btn" data-block="3" class="th-btn style-alt w-100 mt-2">
+                                            <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
                                                 <i class="fas fa-arrow-left me-2"></i> How It Works
                                             </button>
                                         </form>
@@ -1155,7 +1155,7 @@
                                 </div>
                             </div>
                             
-                        </div>
+                        </div> --}}
                   </div>
               </div>
             </section>
