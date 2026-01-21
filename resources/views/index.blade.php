@@ -241,7 +241,7 @@
                               <div class="swiper-slide">
                                   <div class="category-card style4 single2">
                                       <div class="box-img global-img">
-                                          <img src="assets/img/excision/Yala-National-Park-Elephant-Tusker.jpg" alt="Image of a Leopard in Yala">
+                                          <img src="{{ asset('assets/img/tour/tour-01/the-orphanage-was-founded.jpg') }}" alt="Image of a Leopard in Yala">
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
@@ -256,12 +256,14 @@
                               <div class="swiper-slide">
                                   <div class="category-card style4 single2">
                                       <div class="box-img global-img">
-                                          <img src="assets/img/excision/e6.jpg" alt="Image of Elephants in Udawalawe">
+                                          <img src="{{ asset('assets/img/tour/tour-02/madu-river-boat-ride.jpg') }}" alt="Image of Elephants in Udawalawe">
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
-                                              <h3 class="box-title"><a href="destination.html">Udawalawe Elephant Safari</a></h3>
-                                              <p class="box-text">Wild Wheels: Guaranteed sightings of large herds of elephants and diverse birdlife in the southern plains.</p>
+                                              <h3 class="box-title"><a href="destination.html">3 Days South Coast & Kandy Tour</a></h3>
+                                              <p class="box-text">Discover the beauty of Sri Lanka’s southern coast combined with the cultural charm
+                                                  of Kandy. This 3-day journey takes you through tranquil river safaris, historic
+                                                  colonial towns, sacred temples, and lush botanical gardens.</p>
                                           </div>
                                           <a href="{{ route('tour-details', ['tour_id' => '02']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
@@ -271,14 +273,16 @@
                               <div class="swiper-slide">
                                   <div class="category-card style4 single2">
                                       <div class="box-img global-img">
-                                          <img src="assets/img/excision/elephants-mineriya-kaudula-cultural-triangle-sri-lanka.jpg" alt="Image of Elephant Gathering">
+                                          <img src="{{ asset('assets/img/tour/tour-03/nuwara-eliya-tea.jpg') }}" alt="Image of Elephant Gathering">
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
-                                              <h3 class="box-title"><a href="destination.html">Minneriya/Kaudulla Gathering</a></h3>
-                                              <p class="box-text">The Great Gathering: Witness the world's largest gathering of Asian Elephants (seasonal) near Sigiriya.</p>
+                                              <h3 class="box-title"><a href="destination.html">6 Days Classic Sri Lanka Tour</a></h3>
+                                              <p class="box-text">Discover the best of Sri Lanka on this 6-day journey covering cultural heritage,
+                                                  scenic hill country, wildlife safaris, and beautiful coastal destinations.
+                                                  Ideal for travelers who want a balanced experience of nature and culture.</p>
                                           </div>
-                                          <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '03']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
