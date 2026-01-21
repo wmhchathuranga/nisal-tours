@@ -245,10 +245,10 @@
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
-                                              <h3 class="box-title"><a href="destination.html">Yala National Park Safari</a></h3>
-                                              <p class="box-text">Leopard Territory: Full-day jeep safari for the highest chance of spotting the elusive Sri Lankan Leopard.</p>
+                                              <h3 class="box-title"><a href="destination.html">Elephant orphanage or Safari</a></h3>
+                                              <p class="box-text">Experience the cultural heart of Sri Lanka on this carefully designed 3-day tour. Visit iconic landmarks such as the Elephant Orphanage, Sigiriya Lion Rock, and the sacred Temple of the Tooth Relic in Kandy while enjoying scenic landscapes and authentic village experiences.</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -263,7 +263,7 @@
                                               <h3 class="box-title"><a href="destination.html">Udawalawe Elephant Safari</a></h3>
                                               <p class="box-text">Wild Wheels: Guaranteed sightings of large herds of elephants and diverse birdlife in the southern plains.</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '02']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -278,7 +278,7 @@
                                               <h3 class="box-title"><a href="destination.html">Minneriya/Kaudulla Gathering</a></h3>
                                               <p class="box-text">The Great Gathering: Witness the world's largest gathering of Asian Elephants (seasonal) near Sigiriya.</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01', ['tour_id' => '01']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -293,7 +293,7 @@
                                               <h3 class="box-title"><a href="destination.html">Knuckles Off-Road Explorer</a></h3>
                                               <p class="box-text">Rugged Landscapes: A thrilling 4x4 journey through remote villages and cloud forests in the Knuckles Range.</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -308,7 +308,7 @@
                                               <h3 class="box-title"><a href="destination.html">Devil's Staircase Challenge</a></h3>
                                               <p class="box-text">Extreme Expedition: The ultimate high-elevation, off-road drive on one of Sri Lanka's most challenging trails (Belihuloya).</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -323,7 +323,7 @@
                                               <h3 class="box-title"><a href="destination.html">Bundala Coastal Bird Safari</a></h3>
                                               <p class="box-text">Flamingo & Migratory Wonders: A unique jeep safari focusing on the coastal lagoons and endemic bird species.</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -338,7 +338,7 @@
                                               <h3 class="box-title"><a href="destination.html">Gal Oya Boat & Jeep Safari</a></h3>
                                               <p class="box-text">Uncharted: Discover hidden trails and enjoy a boat safari to see elephants swimming between islands (unique to Sri Lanka).</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -353,7 +353,7 @@
                                               <h3 class="box-title"><a href="destination.html">Wilpattu Safari</a></h3>
                                               <p class="box-text">A safari in Wilpattu National Park, Sri Lanka's largest and one of its oldest national parks, offers a peaceful, less-crowded alternative to other popular parks.</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -1035,7 +1035,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Yala National Park Safari</a></h3>
                                                         <p class="box-text">Leopard Territory: Full-day jeep safari for the highest chance of spotting the elusive Sri Lankan Leopard.</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1050,7 +1050,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Udawalawe Elephant Safari</a></h3>
                                                         <p class="box-text">Wild Wheels: Guaranteed sightings of large herds of elephants and diverse birdlife in the southern plains.</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1065,7 +1065,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Minneriya/Kaudulla Gathering</a></h3>
                                                         <p class="box-text">The Great Gathering: Witness the world's largest gathering of Asian Elephants (seasonal) near Sigiriya.</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1080,7 +1080,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Knuckles Off-Road Explorer</a></h3>
                                                         <p class="box-text">Rugged Landscapes: A thrilling 4x4 journey through remote villages and cloud forests in the Knuckles Range.</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1095,7 +1095,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Devil's Staircase Challenge</a></h3>
                                                         <p class="box-text">Extreme Expedition: The ultimate high-elevation, off-road drive on one of Sri Lanka's most challenging trails (Belihuloya).</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1110,7 +1110,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Bundala Coastal Bird Safari</a></h3>
                                                         <p class="box-text">Flamingo & Migratory Wonders: A unique jeep safari focusing on the coastal lagoons and endemic bird species.</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1125,7 +1125,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Gal Oya Boat & Jeep Safari</a></h3>
                                                         <p class="box-text">Uncharted: Discover hidden trails and enjoy a boat safari to see elephants swimming between islands (unique to Sri Lanka).</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1140,7 +1140,7 @@
                                                         <h3 class="box-title"><a href="destination.html">Wilpattu Safari</a></h3>
                                                         <p class="box-text">A safari in Wilpattu National Park, Sri Lanka's largest and one of its oldest national parks, offers a peaceful, less-crowded alternative to other popular parks.</p>
                                                     </div>
-                                                    <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                                    <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1845,11 +1845,11 @@
                             <img style="height: 550px" src="assets/img/explore/sigiriya.jpg" alt="Sigiriya Rock Fortress">
                         </div>
                         <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details-01') }}">Sigiriya</a></h3>
+                            <h3 class="title"><a href="{{ route('tour-details') }}">Sigiriya</a></h3>
                             <p class="destination-details">
                                 Towering over the plains, **Sigiriya Rock Fortress** is an ancient palace and a UNESCO World Heritage Site. Marvel at the spectacular frescoes and panoramic views from the summit, showcasing the ingenuity of ancient Sri Lankan architecture.
                             </p>
-                            <a href="{{ route('tour-details-01') }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details') }}" class="th-btn style-border">View Tours</a>
                         </div>
                     </div>
                 </div>
@@ -1860,11 +1860,11 @@
                             <img style="height: 550px" src="assets/img/explore/galle_fort.jpg" alt="Galle Dutch Fort">
                         </div>
                         <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details-01') }}">Galle Fort</a></h3>
+                            <h3 class="title"><a href="{{ route('tour-details') }}">Galle Fort</a></h3>
                             <p class="destination-details">
                                 Step back in time at **Galle Fort**, a beautifully preserved Historic Dutch-era fortress on the southern coast. Wander the narrow, cobbled streets, explore the ancient ramparts, and discover boutique shops and charming cafes within its walls.
                             </p>
-                            <a href="{{ route('tour-details-01') }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details') }}" class="th-btn style-border">View Tours</a>
                         </div>
                     </div>
                 </div>
@@ -1875,11 +1875,11 @@
                             <img style="height: 550px" src="assets/img/explore/kandy.jpg" alt="Kandy Temple of the Tooth">
                         </div>
                         <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details-01') }}">Kandy</a></h3>
+                            <h3 class="title"><a href="{{ route('tour-details') }}">Kandy</a></h3>
                             <p class="destination-details">
                                 Nestled among lush hills, **Kandy** is the cultural heart of the island and home to the sacred Temple of the Tooth Relic. Experience a cool climate, explore the serene lake, and witness the rich traditional arts and customs of the hill country.
                             </p>
-                            <a href="{{ route('tour-details-01') }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details') }}" class="th-btn style-border">View Tours</a>
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ Breadcumb
 <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">3 Days Elephant orphanage or Safari</h1>
+            <h1 class="breadcumb-title">3 Days South Coast & Kandy Tour</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>3 Days Tour</li>
@@ -36,85 +36,93 @@ Tour Details Area
 <section class="space">
     <div class="container">
         <div class="row">
+
             <!-- LEFT CONTENT -->
             <div class="col-xxl-8 col-lg-7">
                 <div class="tour-page-single">
 
                     <!-- Slider -->
                     <div class="slider-area tour-slider1">
-                            <div class="swiper th-slider mb-4" id="tourSlider4" data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide h-100">
-                                        <div class="tour-slider-img" style="height: 450px;">
-                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/tour/tour-01/the-orphanage-was-founded.jpg') }}" alt="Wilpattu Safari Jeep">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide h-100">
-                                        <div class="tour-slider-img" style="height: 450px;">
-                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/tour/tour-01/sigirya-lion-rock.jpg') }}" alt="Wilpattu Leopard">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide h-100">
-                                        <div class="tour-slider-img" style="height: 450px;">
-                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/tour/tour-01/temple-sacred-tooth-relic-kandy-sri-lanka.jpg') }}" alt="Wilpattu Lake View">
-                                        </div>
+                        <div class="swiper th-slider mb-4" id="tourSlider5" data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide h-100">
+                                    <div class="tour-slider-img" style="height:450px;">
+                                        <img src="{{ asset('assets/img/tour/tour-02/madu-river-boat-ride.jpg') }}" alt="Madu River Boat Ride" style="width:100%; height:100%; object-fit:cover;">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper th-slider tour-thumb-slider" data-slider-options='{"effect":"slide","loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}},"autoplayDisableOnInteraction":"true"}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height: 100px;">
-                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/tour/tour-01/the-orphanage-was-founded.jpg') }}" alt="Image">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height: 100px;">
-                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/tour/tour-01/sigirya-lion-rock.jpg') }}" alt="Image">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height: 100px;">
-                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/tour/tour-01/temple-sacred-tooth-relic-kandy-sri-lanka.jpg') }}" alt="Image">
-                                        </div>
+
+                                <div class="swiper-slide h-100">
+                                    <div class="tour-slider-img" style="height:450px;">
+                                        <img src="{{ asset('assets/img/tour/tour-02/galle-dutch-fort.jpg') }}" alt="Galle Dutch Fort" style="width:100%; height:100%; object-fit:cover;">
                                     </div>
                                 </div>
+
+                                <div class="swiper-slide h-100">
+                                    <div class="tour-slider-img" style="height:450px;">
+                                        <img src="{{ asset('assets/img/tour/tour-02/temple-sacred-tooth-relic-kandy.jpg') }}" alt="Temple of Tooth Relic" style="width:100%; height:100%; object-fit:cover;">
+                                    </div>
+                                </div>
+
                             </div>
-                        
-                            <button data-slider-prev="#tourSlider4" class="slider-arrow style3 slider-prev"><img src="assets/img/icon/hero-arrow-left.svg" alt=""></button>
-                            <button data-slider-next="#tourSlider4" class="slider-arrow style3 slider-next"><img src="assets/img/icon/hero-arrow-right.svg" alt=""></button>
                         </div>
 
-                    <!-- Content -->
+                        <div class="swiper th-slider tour-thumb-slider" data-slider-options='{"effect":"slide","loop":true,"breakpoints":{"0":{"slidesPerView":2},"768":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'>
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/img/tour/tour-02/madu-river-boat-ride.jpg') }}" style="height:100px; width:100%; object-fit:cover;">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/img/tour/tour-02/galle-dutch-fort.jpg') }}" style="height:100px; width:100%; object-fit:cover;">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/img/tour/tour-02/temple-sacred-tooth-relic-kandy.jpg') }}" style="height:100px; width:100%; object-fit:cover;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button data-slider-prev="#tourSlider5" class="slider-arrow style3 slider-prev">
+                            <img src="assets/img/icon/hero-arrow-left.svg" alt="">
+                        </button>
+                        <button data-slider-next="#tourSlider5" class="slider-arrow style3 slider-next">
+                            <img src="assets/img/icon/hero-arrow-right.svg" alt="">
+                        </button>
+                    </div>
+
+                    <!-- CONTENT -->
                     <div class="page-content">
                         <div class="page-meta mb-5">
-                            <a class="page-tag" href="#">Cultural Tour</a>
+                            <a class="page-tag" href="#">Cultural & Coastal Tour</a>
                             <span class="ratting">
                                 <i class="fa-solid fa-star"></i>
-                                <span>4.8</span>
+                                <span>4.7</span>
                             </span>
                         </div>
 
-                        <h2 class="box-title">Elephant orphanage or Safari</h2>
+                        <h2 class="box-title">3 Days South Coast & Kandy Tour</h2>
                         <h4 class="tour-price"><span class="currency">$395.00</span> / Person</h4>
 
                         <p class="box-text mb-30">
-                            Experience the cultural heart of Sri Lanka on this carefully designed 3-day tour.
-                            Visit iconic landmarks such as the Elephant Orphanage, Sigiriya Lion Rock, and the
-                            sacred Temple of the Tooth Relic in Kandy while enjoying scenic landscapes and
-                            authentic village experiences.
+                            Discover the beauty of Sri Lanka’s southern coast combined with the cultural charm
+                            of Kandy. This 3-day journey takes you through tranquil river safaris, historic
+                            colonial towns, sacred temples, and lush botanical gardens.
                         </p>
 
                         <!-- Highlights -->
                         <h2 class="box-title">Tour Highlights</h2>
                         <div class="checklist mb-50">
                             <ul>
-                                <li>Visit Elephant Orphanage or Wildlife Safari</li>
-                                <li>Climb the iconic Sigiriya Lion Rock Fortress</li>
-                                <li>Traditional Sri Lankan Village Tour</li>
-                                <li>Spice Garden & Wood Carving Workshop</li>
-                                <li>Temple of the Tooth Relic in Kandy</li>
-                                <li>Royal Botanical Garden & Gem Museum</li>
+                                <li>Madu River Mangrove Boat Ride</li>
+                                <li>Visit Turtle Conservation Farm</li>
+                                <li>Explore Galle Dutch Fort</li>
+                                <li>Spice Garden & Gem Museum</li>
+                                <li>Temple of the Tooth Relic – Kandy</li>
+                                <li>Royal Botanical Garden</li>
+                                <li>Elephant Orphanage Visit</li>
                             </ul>
                         </div>
 
@@ -124,7 +132,7 @@ Tour Details Area
                             <div class="checklist style2">
                                 <ul>
                                     <li>Duration</li>
-                                    <li>Destination</li>
+                                    <li>Destinations</li>
                                     <li>Language</li>
                                     <li>Accommodation</li>
                                     <li>Transport</li>
@@ -133,7 +141,7 @@ Tour Details Area
                             <div class="checklist style2">
                                 <ul>
                                     <li>3 Days / 2 Nights</li>
-                                    <li>Habarana / Sigiriya / Kandy</li>
+                                    <li>Galle / Unawatuna / Kandy</li>
                                     <li>English</li>
                                     <li>3★ Hotels (Bed & Breakfast)</li>
                                     <li>Private A/C Vehicle</li>
@@ -182,10 +190,10 @@ Tour Details Area
                             <div class="tab-pane fade show active" id="day1">
                                 <div class="checklist mt-20">
                                     <ul>
-                                        <li>Arrival and welcome by chauffeur driver</li>
-                                        <li>Visit Elephant Orphanage or Safari</li>
-                                        <li>Transfer to Habarana / Sigiriya</li>
-                                        <li>Overnight stay at hotel</li>
+                                        <li>Madu River boat safari through mangroves</li>
+                                        <li>Visit Turtle Hatchery</li>
+                                        <li>Explore Galle Dutch Fort</li>
+                                        <li>Overnight stay in Galle or Unawatuna</li>
                                     </ul>
                                 </div>
                             </div>
@@ -193,11 +201,10 @@ Tour Details Area
                             <div class="tab-pane fade" id="day2">
                                 <div class="checklist mt-20">
                                     <ul>
-                                        <li>Climb Sigiriya Lion Rock</li>
-                                        <li>Traditional Village Tour</li>
                                         <li>Spice Garden visit</li>
-                                        <li>Wood Carving Workshop</li>
-                                        <li>Transfer to Kandy & overnight stay</li>
+                                        <li>Gem Museum exploration</li>
+                                        <li>Temple of the Tooth Relic – Kandy</li>
+                                        <li>Overnight stay in Kandy</li>
                                     </ul>
                                 </div>
                             </div>
@@ -205,9 +212,8 @@ Tour Details Area
                             <div class="tab-pane fade" id="day3">
                                 <div class="checklist mt-20">
                                     <ul>
-                                        <li>Visit Temple of the Tooth Relic</li>
-                                        <li>Gem Museum</li>
-                                        <li>Royal Botanical Garden</li>
+                                        <li>Royal Botanical Garden visit</li>
+                                        <li>Elephant Orphanage visit</li>
                                         <li>Departure to airport or next destination</li>
                                     </ul>
                                 </div>
@@ -215,14 +221,15 @@ Tour Details Area
                         </div>
 
                     </div>
-                    
                 </div>
             </div>
 
             <!-- RIGHT SIDEBAR -->
             <div class="col-xxl-4 col-lg-5">
+                {{-- Booking form same as previous tour --}}
                 @include('partials.tour-booking-form')
             </div>
+
         </div>
     </div>
 </section>

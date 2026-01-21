@@ -51,10 +51,8 @@ Route::get('/tour-detail', function () {
     $tour_id = request()->query('tour_id');
     $tour_blade = 'tour-details-' . $tour_id;
 
-    logger()->info('Tour ID: ' . $tour_blade);
-
     return view('tours/' . $tour_blade);
-})->name('tour-details-01');
+})->name('tour-details');
 
 
 // form submission
