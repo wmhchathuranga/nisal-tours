@@ -278,7 +278,7 @@
                                               <h3 class="box-title"><a href="destination.html">Minneriya/Kaudulla Gathering</a></h3>
                                               <p class="box-text">The Great Gathering: Witness the world's largest gathering of Asian Elephants (seasonal) near Sigiriya.</p>
                                           </div>
-                                          <a href="{{ route('tour-details-01') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details-01', ['tour_id' => '01']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>

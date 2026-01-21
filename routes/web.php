@@ -48,7 +48,12 @@ Route::get('/resort-detail', function () {
 
 //  tours
 Route::get('/tour-detail', function () {
-    return view('tour-details-01');
+    $tour_id = request()->query('tour_id');
+    $tour_blade = 'tour-details-' . $tour_id;
+
+    logger()->info('Tour ID: ' . $tour_blade);
+
+    return view('tours/' . $tour_blade);
 })->name('tour-details-01');
 
 
