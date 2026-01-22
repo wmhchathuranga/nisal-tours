@@ -1848,11 +1848,11 @@
                             <img style="height: 550px" src="assets/img/explore/sigiriya.jpg" alt="Sigiriya Rock Fortress">
                         </div>
                         <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details') }}">Sigiriya</a></h3>
+                            <h3 class="title"><a href="{{ route('tour-details', ['tour_id' => '01']) }}">Sigiriya</a></h3>
                             <p class="destination-details">
                                 Towering over the plains, **Sigiriya Rock Fortress** is an ancient palace and a UNESCO World Heritage Site. Marvel at the spectacular frescoes and panoramic views from the summit, showcasing the ingenuity of ancient Sri Lankan architecture.
                             </p>
-                            <a href="{{ route('tour-details') }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View Tours</a>
                         </div>
                     </div>
                 </div>
@@ -1863,11 +1863,11 @@
                             <img style="height: 550px" src="assets/img/explore/galle_fort.jpg" alt="Galle Dutch Fort">
                         </div>
                         <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details') }}">Galle Fort</a></h3>
+                            <h3 class="title"><a href="{{ route('tour-details', ['tour_id' => '01']) }}">Galle Fort</a></h3>
                             <p class="destination-details">
                                 Step back in time at **Galle Fort**, a beautifully preserved Historic Dutch-era fortress on the southern coast. Wander the narrow, cobbled streets, explore the ancient ramparts, and discover boutique shops and charming cafes within its walls.
                             </p>
-                            <a href="{{ route('tour-details') }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View Tours</a>
                         </div>
                     </div>
                 </div>
@@ -1878,11 +1878,11 @@
                             <img style="height: 550px" src="assets/img/explore/kandy.jpg" alt="Kandy Temple of the Tooth">
                         </div>
                         <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details') }}">Kandy</a></h3>
+                            <h3 class="title"><a href="{{ route('tour-details', ['tour_id' => '01']) }}">Kandy</a></h3>
                             <p class="destination-details">
                                 Nestled among lush hills, **Kandy** is the cultural heart of the island and home to the sacred Temple of the Tooth Relic. Experience a cool climate, explore the serene lake, and witness the rich traditional arts and customs of the hill country.
                             </p>
-                            <a href="{{ route('tour-details') }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View Tours</a>
                         </div>
                     </div>
                 </div>

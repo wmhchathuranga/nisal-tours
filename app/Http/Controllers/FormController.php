@@ -201,6 +201,11 @@ class FormController extends Controller
 
         logger('Generated WhatsApp Link: ' . $whatsappLink);
 
-        return redirect()->back()->with('success', 'Your booking request has been submitted!')->with('whatsapp_link', $whatsappLink);
+        // return redirect()->back()->with('success', 'Your booking request has been submitted!')->with('whatsapp_link', $whatsappLink);
+        return response()->json([
+            'success' => true,
+            'message' => 'Your booking request has been submitted!',
+            'whatsapp_link' => $whatsappLink
+        ]);
     }
 }

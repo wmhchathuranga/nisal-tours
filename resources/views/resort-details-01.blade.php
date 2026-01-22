@@ -41,66 +41,7 @@
             </div>
         </div>
     </div>
-    
 
-    @if(session('success'))
-        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-center">
-                    <div class="modal-body p-5">
-                        
-                        {{-- Success Animation --}}
-                        <div class="success-animation mb-4">
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                            </svg>
-                        </div>
-
-                        {{-- Success Message --}}
-                        <h3 class="fw-bold mb-3">You can start conversation now!</h3>
-                        <p class="mb-0">{{ session('success') }}</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            var whatsappLink = "{{ session('whatsapp_link') }}";
-            var a = document.createElement('a');
-            
-            if (whatsappLink) {
-                a.href = whatsappLink;
-                a.target = '_blank';
-                setTimeout(function() {
-                    a.click();
-                }, 2500);
-            }
-        </script>
-
-    @else
-        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-center">
-                    <div class="modal-body p-5">
-                        
-                        {{-- Success Animation --}}
-                        <div class="success-animation mb-4">
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                            </svg>
-                        </div>
-
-                        {{-- Success Message --}}
-                        <h3 class="fw-bold mb-3">You can start conversation now!</h3>
-                        <p class="mb-0">{{ session('success') }}</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>    
-    @endif
 
     <!--============================== tour Area ==============================-->
     <section class="space">
@@ -392,8 +333,12 @@
                             </ul>
                         </div>
 
+
                         <div class="container px-0 mb-30">
-                            <div id="form-block-3" class="transition-col">
+
+                            @include('partials.accommodation-booking-form', ['accommodation' => '98 Acres Resort & Spa'])
+
+                            {{-- <div id="form-block-3" class="transition-col">
                                 <div class="booking-form-wrap style2 bg-smoke p-4" style="border-radius: 8px;">
                                     <div class="title-area text-center">
                                         <h3 class="sec-title mb-30">Accommodation Quotation</h3>
@@ -403,7 +348,7 @@
                                         @csrf
                                         <input type="hidden" name="accommodation_id" value="1">
                                         <input type="hidden" name="accommodation_name" value="98 Acres Resort & Spa">
-
+    
                                         <div class="form-group">
                                             <input type="text" class="form-control"
                                                 name="name" placeholder="Name*" required>
@@ -437,10 +382,10 @@
                                         <button type="submit"
                                             class="th-btn-whatsapp w-100">
                                             <i class="fab fa-whatsapp me-2"></i> Get Quotation
-                                            </button>
+                                        </button>
                                     </form>
-                                    </div>
                                 </div>
+                            </div> --}}
                         </div>
 
 
@@ -538,51 +483,7 @@
     <!--========== All Js File =========== -->
     @include('partials.scripts')
 
-    {{-- alert message --}}
-    @if(session('success'))
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // 1. Get the modal element
-                var successModal = document.getElementById('successModal');
-                
-                if (successModal) {
-                    // 2. Use Bootstrap's Modal function to show it
-                    var modal = new bootstrap.Modal(successModal);
-                    modal.show();
-
-                    // 3. Set a timeout to automatically close the modal after 3 seconds
-                    setTimeout(function() {
-                        modal.hide();
-                    }, 3000); 
-                }
-            });
-        </script>
-    @endif
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.th-form');
-
-            if (form) {
-                form.addEventListener('submit', function() {
-                    // Store the current vertical scroll position in localStorage
-                    localStorage.setItem('scrollPosition', window.scrollY);
-                });
-            }
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const scrollPosition = localStorage.getItem('scrollPosition');
-
-            if (scrollPosition) {
-                // Restore the scroll position
-                window.scrollTo(0, parseInt(scrollPosition));
-                
-                // Clean up the storage item immediately after restoring the position
-                localStorage.removeItem('scrollPosition');
-            }
-        });
-
-    </script>
+    
 </body>
 
 </html>
