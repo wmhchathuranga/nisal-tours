@@ -227,7 +227,7 @@ Tour Details Area
             <!-- RIGHT SIDEBAR -->
             <div class="col-xxl-4 col-lg-5">
                 {{-- Booking form same as previous tour --}}
-                @include('partials.tour-booking-form')
+                @include('partials.tour-booking-form', ['tour' => '3 Days South Coast & Kandy Tour'])
             </div>
 
         </div>

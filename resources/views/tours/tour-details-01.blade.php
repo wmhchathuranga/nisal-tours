@@ -97,7 +97,7 @@ Tour Details Area
                             </span>
                         </div>
 
-                        <h2 class="box-title">Elephant orphanage or Safari</h2>
+                        <h2 class="box-title">3 Days Elephant orphanage or Safari</h2>
                         <h4 class="tour-price"><span class="currency">$395.00</span> / Person</h4>
 
                         <p class="box-text mb-30">

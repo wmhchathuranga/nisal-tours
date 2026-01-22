@@ -300,7 +300,7 @@ Tour Details Area
 
             <!-- RIGHT SIDEBAR -->
             <div class="col-xxl-4 col-lg-5">
-                @include('partials.tour-booking-form')
+                @include('partials.tour-booking-form', ['tour' => '10 Days Grand Sri Lanka Tour'])
             </div>
 
         </div>
