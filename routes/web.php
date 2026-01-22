@@ -56,7 +56,7 @@ Route::get('/tour-detail', function () {
 
 
 // form submission
-Route::post('/transport-booking', [FormController::class, 'handle_TransportBooking'])->name('transport-booking.submit');
+Route::post('/tour-booking', [FormController::class, 'handle_TourBooking'])->name('tour-booking.submit');
 Route::post('/accommodation-booking', [FormController::class, 'handle_AccommodationBooking'])->name('accommodation-booking.submit');
 
 

@@ -1,10 +1,10 @@
 <div id="form-block-3" class="transition-col">
     <div class="booking-form-wrap style2 bg-smoke p-4" style="border-radius: 8px;">
         <div class="title-area text-center">
-            <h3 class="sec-title mb-30">Excision Plan</h3>
+            <h3 class="sec-title mb-30">Tour Booking</h3>
         </div>
 
-        <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+        <form action="{{ route('tour-booking.submit') }}" method="POST" class="th-form">
             @csrf
             <input type="hidden" name="form_type" value="Excision">
             <div class="form-group">

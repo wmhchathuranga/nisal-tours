@@ -8,7 +8,7 @@ class FormController extends Controller
 {
     private $whatsappNo = '+94777143999';
 
-    public function handle_TransportBooking(Request $request)
+    public function handle_TourBooking(Request $request)
     {
 
         $form_type = $request->input('form_type');

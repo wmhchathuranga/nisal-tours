@@ -445,7 +445,7 @@
                                 <h3 class="sec-title mb-30">Tour Plan</h3>
                             </div>
                             
-                            <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                            <form action="{{ route('tour-booking.submit') }}" method="POST" class="th-form">
                                 @csrf
                                 <input type="hidden" name="form_type" value="Tour">
                                 <div class="row">
@@ -576,7 +576,7 @@
                                                 <h3 class="sec-title">Book Your Arrival Transfer Now</h3>
                                             </div>
                                             
-                                            <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                            <form action="{{ route('tour-booking.submit') }}" method="POST" class="th-form">
                                                 @csrf
                                                 <input type="hidden" name="form_type" value="Arrival">
                                                 <div class="row">
@@ -797,7 +797,7 @@
                                             <h3 class="sec-title mb-30">Book Your Departure Transfer Now</h3>
                                         </div>
                                         
-                                        <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                        <form action="{{ route('tour-booking.submit') }}" method="POST" class="th-form">
                                             @csrf
                                             <input type="hidden" name="form_type" value="Departure">
                                             <div class="row">
@@ -993,7 +993,7 @@
                                             <h3 class="sec-title mb-30">Tour Plan</h3>
                                         </div>
                                         
-                                        <form action="{{ route('transport-booking.submit') }}" method="POST" class="th-form">
+                                        <form action="{{ route('tour-booking.submit') }}" method="POST" class="th-form">
                                             @csrf
                                             <input type="hidden" name="form_type" value="Tour">
                                             <div class="row">
