@@ -114,10 +114,10 @@ class FormController extends Controller
 
                 // 2. Message generation for Tour Quotation
                 $messageText = "*NEW TOUR QUOTATION REQUEST* \n\n" .
-                    "*Client:* " . $validatedData['name'] . "\n" .
+                    "*Name:* " . $validatedData['name'] . "\n" .
                     "*Passengers (Pax):* " . $validatedData['pax'] . "\n\n" .
                     "*Stay Duration:* " . $validatedData['arrival_date'] . " to " . $validatedData['departure_date'] . "\n\n" .
-                    "*Client Message/Tour Idea:*\n" . ($validatedData['message'] ?: 'No specific message/tour idea provided.');
+                    "*Message/Tour Idea:*\n" . ($validatedData['message'] ?: 'No specific message/tour idea provided.');
                 break;
 
             default:

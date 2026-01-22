@@ -25,7 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // aboutblock get scrolled to top
         // aboutBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        window.scrollTo({ top: aboutBlock.offsetTop + 600, behavior: 'smooth' });
+        // window.scrollTo({ top: aboutBlock.offsetTop + 600, behavior: 'smooth' });
+        aboutBlock.offsetParent.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'   // 'center' or 'nearest' also work
+        });
 
         setTimeout(() => {
             aboutBlock.classList.add('d-none');
@@ -43,7 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
         aboutBlock.classList.remove('d-none');
 
         // formBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        window.scrollTo({ top: formBlock.offsetTop + 600, behavior: 'smooth' });
+        // window.scrollTo({ top: formBlock.offsetTop + 600, behavior: 'smooth' });
+        formBlock.offsetParent.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'   // 'center' or 'nearest' also work
+        });
 
         setTimeout(() => {
             formBlock.classList.add('d-none');
