@@ -290,14 +290,16 @@
                               <div class="swiper-slide">
                                   <div class="category-card style4 single2">
                                       <div class="box-img global-img">
-                                          <img src="assets/img/excision/A-man-at-the-top-of-Knuckles-Mountain-Range-the-Fascinating-Wonder-of-Nature-in-Sri-Lanka..jpg" alt="Image of Knuckles Mountain Range scenery">
+                                          <img src="{{ asset('assets/img/tour/tour-04/sigiriya-rock.jpg') }}" alt="Image of Knuckles Mountain Range scenery">
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
-                                              <h3 class="box-title"><a href="destination.html">Knuckles Off-Road Explorer</a></h3>
-                                              <p class="box-text">Rugged Landscapes: A thrilling 4x4 journey through remote villages and cloud forests in the Knuckles Range.</p>
+                                              <h3 class="box-title"><a href="destination.html">5 Days Cultural & Coastal Tour</a></h3>
+                                              <p class="box-text">This 5-day tour combines Sri Lanka’s cultural heritage, wildlife experiences,
+                                                  and beautiful southern coastline. Perfect for travelers who want history,
+                                                  nature, and relaxation in one unforgettable journey.</p>
                                           </div>
-                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '04']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -305,14 +307,17 @@
                               <div class="swiper-slide">
                                   <div class="category-card style4 single2">
                                       <div class="box-img global-img">
-                                          <img src="assets/img/excision/img_6098.jpg" alt="Image of a jeep on a rugged mountain road">
+                                          <img src="{{ asset('assets/img/tour/tour-05/anuradhapura.jpg') }}" alt="Image of a jeep on a rugged mountain road">
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
-                                              <h3 class="box-title"><a href="destination.html">Devil's Staircase Challenge</a></h3>
-                                              <p class="box-text">Extreme Expedition: The ultimate high-elevation, off-road drive on one of Sri Lanka's most challenging trails (Belihuloya).</p>
+                                              <h3 class="box-title"><a href="destination.html">10 Days Grand Sri Lanka Tour</a></h3>
+                                              <p class="box-text">Experience the ultimate Sri Lankan journey on this 10-day grand tour.
+                                                  Explore ancient kingdoms, scenic hill country, wildlife safaris,
+                                                  cultural landmarks, and relaxing coastal destinations in one
+                                                  unforgettable adventure.</p>
                                           </div>
-                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '05']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -320,14 +325,16 @@
                               <div class="swiper-slide">
                                   <div class="category-card style4 single2">
                                       <div class="box-img global-img">
-                                          <img src="assets/img/excision/75.jpg" alt="Image of a bird on a lake in Bundala">
+                                          <img src="{{ asset('assets/img/tour/tour-06/ella-train.jpg') }}" alt="Image of a bird on a lake in Bundala">
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
-                                              <h3 class="box-title"><a href="destination.html">Bundala Coastal Bird Safari</a></h3>
-                                              <p class="box-text">Flamingo & Migratory Wonders: A unique jeep safari focusing on the coastal lagoons and endemic bird species.</p>
+                                              <h3 class="box-title"><a href="destination.html">8 Days Cultural, Wildlife & Coastal Tour</a></h3>
+                                              <p class="box-text">This 8-day Sri Lanka tour blends cultural heritage, scenic hill country,
+                                                  wildlife safaris, and stunning coastal destinations. A perfect balance
+                                                  of adventure, nature, and relaxation.</p>
                                           </div>
-                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '06']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -335,14 +342,16 @@
                               <div class="swiper-slide">
                                   <div class="category-card style4 single2">
                                       <div class="box-img global-img">
-                                          <img src="assets/img/excision/d9.jpg" alt="Image of Elephants swimming in a reservoir">
+                                          <img src="{{ asset('assets/img/tour/tour-07/negombo.jpg') }}" alt="Image of Elephants swimming in a reservoir">
                                       </div>
                                       <div class="box-wrapp">
                                           <div class="box-content">
-                                              <h3 class="box-title"><a href="destination.html">Gal Oya Boat & Jeep Safari</a></h3>
-                                              <p class="box-text">Uncharted: Discover hidden trails and enjoy a boat safari to see elephants swimming between islands (unique to Sri Lanka).</p>
+                                              <h3 class="box-title"><a href="destination.html">13 Days Grand Sri Lanka Tour</a></h3>
+                                              <p class="box-text">This 13-day Sri Lanka tour offers a complete island experience, covering ancient
+                                                  kingdoms, sacred temples, hill country landscapes, wildlife safaris and pristine
+                                                  beaches, all with comfortable accommodation and a private chauffeur-driven vehicle.</p>
                                           </div>
-                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '07']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
@@ -357,7 +366,7 @@
                                               <h3 class="box-title"><a href="destination.html">Wilpattu Safari</a></h3>
                                               <p class="box-text">A safari in Wilpattu National Park, Sri Lanka's largest and one of its oldest national parks, offers a peaceful, less-crowded alternative to other popular parks.</p>
                                           </div>
-                                          <a href="{{ route('tour-details') }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                          <a href="{{ route('tour-details', ['tour_id' => '08']) }}" class="icon-btn"><i class="fa-solid fa-arrow-up-right"></i></a>
                                       </div>
                                   </div>
                               </div>
