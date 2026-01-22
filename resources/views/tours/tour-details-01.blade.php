@@ -15,6 +15,8 @@
 
 @include('partials.menu')
 
+
+
 <!--==============================
 Breadcumb
 ==============================-->
@@ -221,7 +223,7 @@ Tour Details Area
 
             <!-- RIGHT SIDEBAR -->
             <div class="col-xxl-4 col-lg-5">
-                @include('partials.tour-booking-form')
+                @include('partials.tour-booking-form', ['tour' => "3 Days Elephant orphanage or Safari"])
             </div>
         </div>
     </div>

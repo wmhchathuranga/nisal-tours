@@ -1,12 +1,25 @@
+@php
+    $tour = $tour ?? 'No Selected Tour';
+@endphp
+
 <div id="form-block-3" class="transition-col">
     <div class="booking-form-wrap style2 bg-smoke p-4" style="border-radius: 8px;">
         <div class="title-area text-center">
             <h3 class="sec-title mb-30">Tour Booking</h3>
         </div>
 
-        <form action="{{ route('tour-booking.submit') }}" method="POST" class="th-form">
+        <form class="th-form" id="tour-booking-form">
             @csrf
-            <input type="hidden" name="form_type" value="Excision">
+
+            <div class="form-group">
+                <label class="form-label mb-0 text-center">{{ $tour }}</label>
+                <input type="hidden" class="border-0 p-0 bg-transparent text-center" name="tour"
+                    value="{{ $tour }}">
+                <input type="hidden" name="form_type" value="Tour">
+                <input type="hidden" name="source_page" value="{{ url()->full() }}">
+                <input type="hidden" name="tour" value="{{ $tour }}">
+            </div>
+
             <div class="form-group">
                 <input type="text" class="form-control" name="name" placeholder="Name*" required>
             </div>
@@ -118,9 +131,77 @@
                 <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Message..."></textarea>
             </div>
 
-            <button type="submit" class="th-btn-whatsapp w-100">
+            <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100">
                 <i class="fab fa-whatsapp me-2"></i> Get Quotation
             </button>
         </form>
     </div>
 </div>
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+            <div class="modal-body p-5">
+
+                {{-- Success Animation --}}
+                <div class="success-animation mb-4">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                </div>
+
+                {{-- Success Message --}}
+                <h3 class="fw-bold mb-3">You can start conversation now!</h3>
+                <p class="mb-0" id="success-message"></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let tourBookingForm = document.getElementById('tour-booking-form');
+    tourBookingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let modal = document.getElementById('successModal');
+        let submitBtn = tourBookingForm.querySelector('#submit-btn');
+        let successMessageElem = document.getElementById('success-message');
+        let formData = new FormData(this);
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Please wait...';
+
+        fetch("{{ route('tour-booking.submit') }}", {
+                method: "POST",
+                headers: {
+                    "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
+                },
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = `<i class="fab fa-whatsapp me-2"></i> Get Quotation`;
+                    successMessageElem.textContent = data.message;
+                    let bootstrapModal = new bootstrap.Modal(modal);
+                    bootstrapModal.show();
+
+                    var whatsappLink = data.whatsapp_link;
+                    var a = document.createElement('a');
+                    if (whatsappLink) {
+                        a.href = whatsappLink;
+                        a.target = '_blank';
+                        setTimeout(function() {
+                            bootstrapModal.hide();
+                            tourBookingForm.reset();
+                            a.click();
+                        }, 2500);
+                    }
+                }
+            })
+            .catch(err => console.error(err));
+    });
+</script>

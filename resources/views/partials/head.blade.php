@@ -56,3 +56,6 @@
 <!-- Theme Custom CSS -->
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/page/index.css') }}">
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
+

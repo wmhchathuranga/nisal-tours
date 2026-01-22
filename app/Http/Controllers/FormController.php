@@ -77,10 +77,12 @@ class FormController extends Controller
                     "*Special Requirements:*\n" . ($validatedData['special_requirements'] ?: 'None');
                 break;
 
-            case 'Excision': // Matches the hidden field value in your first form (Quotation/Excursion)
+            case 'Tour': // Matches the hidden field value in your first form (Quotation/Excursion)
 
                 // 1. Validation for Excursion/Quotation Form
                 $validatedData = $request->validate([
+                    'source_page' => 'required|url',
+                    'tour' => 'required|string',
                     'name' => 'required|string|max:255',
                     'pax' => 'required|integer|min:1',
                     'date' => 'required|date',
@@ -89,15 +91,17 @@ class FormController extends Controller
                 ]);
 
                 // 2. Message generation for Excursion/Quotation
-                $messageText = "*NEW EXCURSION QUOTATION REQUEST* \n\n" .
-                    "*Client:* " . $validatedData['name'] . "\n" .
+                $messageText = $validatedData['source_page'] . "\n" .
+                    "*NEW TOUR QUOTATION REQUEST* \n\n" .
+                    $validatedData['tour'] . "\n\n" .
+                    "*Name:* " . $validatedData['name'] . "\n" .
                     "*Passengers (Pax):* " . $validatedData['pax'] . "\n" .
-                    "*Required Date:* " . $validatedData['date'] . "\n" .
-                    "*Preferred Vehicle:* " . ucfirst(str_replace('_', ' ', $validatedData['vehicle_type'])) . "\n\n" .
-                    "*Client Message:*\n" . ($validatedData['message'] ?: 'No specific message provided.');
+                    "*Date:* " . $validatedData['date'] . "\n" .
+                    "*Vehicle:* " . ucfirst(str_replace('_', ' ', $validatedData['vehicle_type'])) . "\n\n" .
+                    "*Message:*\n" . ($validatedData['message'] ?: 'No specific message provided.');
                 break;
 
-            case 'Tour': // Case for the Tour Quotation form
+            case 'Custom_Tour': // Case for the Tour Quotation form
 
                 // 1. Validation for Tour Quotation Form
                 $validatedData = $request->validate([
@@ -137,7 +141,13 @@ class FormController extends Controller
 
         logger('Generated WhatsApp Link: ' . $whatsappLink);
 
-        return redirect()->back()->with('success', 'Your booking request has been submitted!')->with('whatsapp_link', $whatsappLink);
+        // return back()->with('success', 'Your booking request has been submitted!')->with('whatsapp_link', $whatsappLink);
+        return response()->json([
+            'success' => true,
+            'message' => 'Your booking request has been submitted!',
+            'whatsapp_link' => $whatsappLink
+        ]);
+
     }
 
 
