@@ -82,91 +82,294 @@
     </div>
 
 
-    <!--======== Gallery Area =========-->
-    <div class="gallery-area space">
-        <div class="container th-container">
-            <div class="title-area text-center">
-                <span class="sub-title">Make Your Tour More Pleasure</span>
-                <h2 class="sec-title">Recent Gallery</h2>
-            </div>
-            <div class="row gy-10 gx-10 justify-content-center align-items-center">
-                <div class="col-md-6 col-lg-2">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <a href="assets/img/gallery/g1.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/g1.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <a href="assets/img/gallery/g2.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/g2.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <a href="assets/img/gallery/g3.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/g3.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <a href="assets/img/gallery/g4.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/g4.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <a href="assets/img/gallery/g5.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/g5.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <a href="assets/img/gallery/g6.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/g6.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <a href="assets/img/gallery/g7.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/g7.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="shape-mockup  d-none d-xl-block" data-top="-25%" data-left="0%">
-                <img src="assets/img/shape/line.png" alt="shape">
-            </div>
-            <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="-3%">
-                <img class="gmovingX" src="assets/img/shape/shape_4.png" alt="shape">
-            </div>
-        </div>
+    <!-- ======== Fixed Puzzle Gallery ======== -->
+    {{-- <div class="safe-gallery-wrapper">
+      <div class="safe-gallery-title">
+        <span>Make Your Tour More Fun</span>
+        <h2>Recent Gallery</h2>
+      </div>
+    
+      <div class="safe-gallery-area" id="safeGallery"></div>
     </div>
+    
+    <style>
+        /* Wrapper */
+        .safe-gallery-wrapper {
+          max-width: 1200px;
+          margin: auto;
+          padding: 20px;
+        }
+        
+        /* Title */
+        .safe-gallery-title {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .safe-gallery-title span {
+          font-size: 14px;
+          color: #777;
+        }
+        .safe-gallery-title h2 {
+          font-size: 32px;
+          margin: 5px 0;
+        }
+        
+        /* Gallery area */
+        .safe-gallery-area {
+          width: 100%;
+          height: 600px;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          gap: 3px;
+        }
+        
+        /* Boxes */
+        .safe-box {
+          position: relative;
+          overflow: hidden;
+          border-radius: 4px;
+          transition: all 0.8s ease;
+        }
+        
+        .safe-box img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          transition: transform 0.5s ease;
+        }
+        
+        .safe-box:hover img {
+          transform: scale(1.05);
+        }
+    </style>
+    
+    <script>
+        // Images
+        const images = [
+          "assets/img/gallery/g1.jpg",
+          "assets/img/gallery/g2.jpg",
+          "assets/img/gallery/g3.jpg",
+          "assets/img/gallery/g4.jpg",
+          "assets/img/gallery/g5.jpg",
+          "assets/img/gallery/g6.jpg",
+          "assets/img/gallery/g7.jpg"
+        ];
+        
+        // ✅ PRE-VALIDATED GAPLESS LAYOUTS (5x3 = 15 cells)
+        const layouts = [
+        
+          // ===== Layout 1 =====
+          [
+            [1,2,1,1], [3,1,1,2], [4,2,1,1],
+            [1,1,2,2], [2,1,2,1], [4,1,2,2], [5,1,2,1],
+            [2,2,3,1], [5,1,3,1]
+          ],
+        
+          // ===== Layout 2 =====
+          [
+            [1,1,1,2], [2,2,1,1], [4,2,1,2],
+            [2,1,2,2], [3,1,2,1],
+            [1,1,3,1], [3,2,3,1], [5,1,3,1]
+          ],
+        
+          // ===== Layout 3 =====
+          [
+            [1,2,1,2], [3,1,1,1], [4,2,1,1],
+            [3,1,2,2], [4,1,2,2], [5,1,2,1],
+            [1,1,3,1], [2,1,3,1], [5,1,3,1]
+          ]
+        
+        ];
+        
+        
+        const gallery = document.getElementById("safeGallery");
+        
+        // Shuffle helper
+        function shuffle(arr) {
+          return [...arr].sort(() => Math.random() - 0.5);
+        }
+        
+        // Render gallery
+        function renderGallery() {
+          gallery.innerHTML = "";
+          const layout = layouts[Math.floor(Math.random() * layouts.length)];
+          const imgs = shuffle(images);
+        
+          layout.forEach((l, i) => {
+            const box = document.createElement("div");
+            box.className = "safe-box overflow-hidden position-relative";
+            box.style.gridColumn = `${l[0]} / span ${l[1]}`;
+            box.style.gridRow = `${l[2]} / span ${l[3]}`;
+            box.innerHTML = `<img src="${imgs[i % imgs.length]}" />`;
+            gallery.appendChild(box);
+          });
+        }
+        
+        // Init + rotate every 5s
+        renderGallery();
+        setInterval(renderGallery, 5000);
+    </script> --}}
+
+
+    <div class="safe-gallery-wrapper space">
+        <div class="title-area text-center">
+          <span class="sub-title">Make Your Tour More Fun</span>
+          <h2 class="sec-title">Recent Gallery</h2>
+        </div>
+        <div class="safe-gallery-area" id="safeGallery"></div>
+    </div>
+
+    <style>
+        .safe-gallery-wrapper {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .safe-gallery-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .safe-gallery-title span {
+            font-size: 14px;
+            color: #777;
+        }
+        .safe-gallery-title h2 {
+            font-size: 32px;
+        }
+        .safe-gallery-area {
+            width: 100%;
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 4px;
+            position: relative;
+        }
+        .safe-box {
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .safe-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .safe-box:hover img {
+            transform: scale(1.06);
+        }
+    </style>
+    
+    <script>
+        // ===== IMAGES =====
+        const images = [
+            "assets/img/gallery/g1.jpg",
+            "assets/img/gallery/g2.jpg",
+            "assets/img/gallery/g3.jpg",
+            "assets/img/gallery/g4.jpg",
+            "assets/img/gallery/g5.jpg",
+            "assets/img/gallery/g6.jpg",
+            "assets/img/gallery/g7.jpg"
+        ];
+            
+        // ===== LAYOUTS (ALL 9 BOXES) =====
+        const layouts = [
+            [
+            [1,2,1,1],[3,1,1,2],[4,2,1,1],
+            [1,1,2,2],[2,1,2,1],[4,1,2,2],
+            [5,1,2,1],[2,2,3,1],[5,1,3,1]
+            ],
+            [
+            [1,1,1,2],[2,2,1,1],[4,2,1,2],
+            [2,1,2,2],[3,1,2,1],
+            [1,1,3,1],[3,1,3,1],[4,1,3,1],[5,1,3,1]
+            ],
+            [
+            [1,2,1,2],[3,1,1,1],[4,2,1,1],
+            [3,1,2,2],[4,1,2,2],
+            [5,1,2,1],[1,1,3,1],[2,1,3,1],[5,1,3,1]
+            ]
+        ];
+        
+        const gallery = document.getElementById("safeGallery");
+        const boxCount = 9;
+        
+        // shuffle helper
+        const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+        
+        // ===== CREATE BOXES ONCE =====
+        const boxes = [];
+        const shuffledImages = shuffle(images);
+        for (let i = 0; i < boxCount; i++) {
+            const box = document.createElement("div");
+            box.className = "safe-box";
+            box.innerHTML = `
+            <a href="${shuffledImages[i % shuffledImages.length]}" class="popup-image">
+                <img src="${shuffledImages[i % shuffledImages.length]}" alt="Gallery image">
+            </a>
+            `;
+            gallery.appendChild(box);
+            boxes.push(box);
+        }
+        
+        // ===== FLIP ANIMATION FUNCTION =====
+        function animateLayout(layout) {
+            if (!layout || layout.length !== boxCount) return;
+            
+            // FIRST: Capture old positions
+            const firstRects = boxes.map(b => b.getBoundingClientRect());
+            
+            // APPLY NEW LAYOUT
+            boxes.forEach((box, i) => {
+            const l = layout[i];
+            box.style.gridColumn = `${l[0]} / span ${l[1]}`;
+            box.style.gridRow = `${l[2]} / span ${l[3]}`;
+            });
+            
+            // LAST: Capture new positions
+            const lastRects = boxes.map(b => b.getBoundingClientRect());
+            
+            // INVERT + PLAY
+            boxes.forEach((box, i) => {
+            const dx = firstRects[i].left - lastRects[i].left;
+            const dy = firstRects[i].top - lastRects[i].top;
+            const dw = firstRects[i].width / lastRects[i].width;
+            const dh = firstRects[i].height / lastRects[i].height;
+            
+            // Remove any existing transition immediately
+            box.style.transition = 'none';
+            
+            // Set initial transform (inverted position)
+            box.style.transform = `translate(${dx}px, ${dy}px) scale(${dw}, ${dh})`;
+            
+            // Force a reflow to ensure the transform is applied
+            box.offsetHeight;
+            
+            // Add transition and animate to final position
+            box.style.transition = 'transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            box.style.transform = 'translate(0, 0) scale(1, 1)';
+            });
+        }
+        
+        // ===== INIT =====
+        let currentLayoutIndex = 0;
+        animateLayout(layouts[currentLayoutIndex]);
+        
+        // ===== ROTATE EVERY 5s - ALWAYS PICK A DIFFERENT LAYOUT =====
+        setInterval(() => {
+            // Get next layout index (different from current)
+            const availableIndices = layouts.map((_, i) => i).filter(i => i !== currentLayoutIndex);
+            currentLayoutIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+            
+            animateLayout(layouts[currentLayoutIndex]);
+        }, 10000);
+    </script>
+
+
+
+
 
     <!--======== Explore SriLanka =========-->
     <section class="overflow-hidden space">
@@ -188,7 +391,7 @@
                             <p class="destination-details">
                                 Towering over the plains, **Sigiriya Rock Fortress** is an ancient palace and a UNESCO World Heritage Site. Marvel at the spectacular frescoes and panoramic views from the summit, showcasing the ingenuity of ancient Sri Lankan architecture.
                             </p>
-                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View More</a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +406,7 @@
                             <p class="destination-details">
                                 Step back in time at **Galle Fort**, a beautifully preserved Historic Dutch-era fortress on the southern coast. Wander the narrow, cobbled streets, explore the ancient ramparts, and discover boutique shops and charming cafes within its walls.
                             </p>
-                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View More</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +421,7 @@
                             <p class="destination-details">
                                 Nestled among lush hills, **Kandy** is the cultural heart of the island and home to the sacred Temple of the Tooth Relic. Experience a cool climate, explore the serene lake, and witness the rich traditional arts and customs of the hill country.
                             </p>
-                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View Tours</a>
+                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View More</a>
                         </div>
                     </div>
                 </div>

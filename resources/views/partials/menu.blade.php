@@ -110,12 +110,12 @@
             <div class="menu-area">
                 <div class="container th-container">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
+                        <div class="col-auto position-absolute">
                             <div class="header-logo">
                                 <a href="{{ route('home') }}"><img src="assets/img/logo.svg" alt="Bitrate"></a>
                             </div>
                         </div>
-                        <div class="col-auto me-xl-auto">
+                        <div class="col-auto m-xl-auto ms-auto">
                             <nav class="main-menu d-none d-xl-inline-block">
                                 <ul>
                                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
