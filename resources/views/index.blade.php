@@ -271,7 +271,14 @@
             "assets/img/gallery/g4.jpg",
             "assets/img/gallery/g5.jpg",
             "assets/img/gallery/g6.jpg",
-            "assets/img/gallery/g7.jpg"
+            "assets/img/gallery/g7.jpg",
+            "assets/img/gallery/g8.jpg",
+            "assets/img/gallery/g9.jpg",
+            "assets/img/gallery/g10.jpg",
+            "assets/img/gallery/g11.jpg",
+            "assets/img/gallery/g12.jpg",
+            "assets/img/gallery/g13.jpg",
+            "assets/img/gallery/g14.jpg",
         ];
             
         // ===== LAYOUTS (ALL 9 BOXES) =====
