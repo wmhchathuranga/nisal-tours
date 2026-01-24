@@ -93,6 +93,7 @@
             <div class="th-mobile-menu">
                 <ul>
                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
+                    <li><a class="{{ $page == 'services' ? 'active' : ''}}" href="{{ route('services') }}">Services</a></li>
                     {{-- <li><a class="{{ $page == 'about' ? 'active' : ''}}" href="#">About Us</a></li> --}}
                     <li><a class="{{ $page == 'contact' ? 'active' : ''}}" href="{{ route('contact') }}">Contact us</a></li>
                 </ul>
@@ -118,6 +119,7 @@
                             <nav class="main-menu d-none d-xl-inline-block">
                                 <ul>
                                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
+                                    <li><a class="{{ $page == 'services' ? 'active' : ''}}" href="{{ route('services') }}">Services</a></li>
                                     {{-- <li><a href="#">About Us</a></li> --}}
                                     <li><a class="{{ $page == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact us</a></li>
                                 </ul>
