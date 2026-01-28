@@ -58,6 +58,15 @@ Route::get('/tour-detail', function () {
 })->name('tour-details');
 
 
+// documentry
+Route::get('/documentry', function () {
+    $doc_id = request()->query('doc_id');
+    $doc_blade = 'doc-' . $doc_id;
+
+    return view('documentry/' . $doc_blade);
+})->name('documentry');
+
+
 // form submission
 Route::post('/tour-booking', [FormController::class, 'handle_TourBooking'])->name('tour-booking.submit');
 Route::post('/accommodation-booking', [FormController::class, 'handle_AccommodationBooking'])->name('accommodation-booking.submit');

@@ -385,61 +385,134 @@
                 <span class="sub-title">Tropical Paradise Awaits</span>
                 <h2 class="sec-title">Explore Sri Lanka</h2>
             </div>
-    
-            <div class="row gy-4 justify-content-center">
-    
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <img style="height: 550px" src="assets/img/explore/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+
+            <!-- Slider Area -->
+            <div class="slider-area position-relative">
+                <div class="swiper th-slider explore-slider"
+                    data-slider-options='{
+                        "loop": true,
+                        "spaceBetween": 24,
+                        "autoplay": { "delay": 4000 },
+                        "navigation": {
+                            "nextEl": ".slider-next",
+                            "prevEl": ".slider-prev"
+                        },
+                        "breakpoints": {
+                            "0": { "slidesPerView": 1 },
+                            "576": { "slidesPerView": 1 },
+                            "768": { "slidesPerView": 2 },
+                            "992": { "slidesPerView": 3 }
+                        }
+                    }'>
+
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 01 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                        src="assets/img/explore/sigiriya.jpg"
+                                        alt="Sigiriya Rock Fortress">
+                                </div>
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '01']) }}">
+                                            Sigiriya Rock Fortress
+                                        </a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Sigiriya Rock Fortress is an ancient palace and UNESCO World Heritage Site,
+                                        famous for its frescoes and breathtaking summit views.
+                                    </p>
+                                    <a href="{{ route('documentry', ['doc_id' => '01']) }}"
+                                    class="th-btn style-border">View More</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details', ['tour_id' => '01']) }}">Sigiriya</a></h3>
-                            <p class="destination-details">
-                                Towering over the plains, **Sigiriya Rock Fortress** is an ancient palace and a UNESCO World Heritage Site. Marvel at the spectacular frescoes and panoramic views from the summit, showcasing the ingenuity of ancient Sri Lankan architecture.
-                            </p>
-                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View More</a>
+
+                        <!-- Slide 02 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                        src="assets/img/explore/galle_fort.jpg"
+                                        alt="Galle Fort">
+                                </div>
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '02']) }}">
+                                            Galle Fort
+                                        </a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        A beautifully preserved Dutch-era fortress with cobbled streets,
+                                        ramparts, cafes, and boutique shops.
+                                    </p>
+                                    <a href="{{ route('documentry', ['doc_id' => '02']) }}"
+                                    class="th-btn style-border">View More</a>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Slide 03 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                        src="assets/img/explore/kandy.jpg"
+                                        alt="Kandy">
+                                </div>
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '03']) }}">
+                                            Kandy – The Sacred Heart of Sri Lanka
+                                        </a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Home to the Temple of the Tooth Relic, Kandy blends cool-climate hills,
+                                        culture, and tradition.
+                                    </p>
+                                    <a href="{{ route('documentry', ['doc_id' => '03']) }}"
+                                    class="th-btn style-border">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 04 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                        src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
+                                        alt="Wilpattu National Park">
+                                </div>
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '04']) }}">
+                                            Wilpattu National Park
+                                        </a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Sri Lanka’s largest national park, famous for natural lakes,
+                                        leopards, and untouched wilderness.
+                                    </p>
+                                    <a href="{{ route('documentry', ['doc_id' => '04']) }}"
+                                    class="th-btn style-border">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-    
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <img style="height: 550px" src="assets/img/explore/galle_fort.jpg" alt="Galle Dutch Fort">
-                        </div>
-                        <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details', ['tour_id' => '01']) }}">Galle Fort</a></h3>
-                            <p class="destination-details">
-                                Step back in time at **Galle Fort**, a beautifully preserved Historic Dutch-era fortress on the southern coast. Wander the narrow, cobbled streets, explore the ancient ramparts, and discover boutique shops and charming cafes within its walls.
-                            </p>
-                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View More</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-card">
-                        <div class="box-img global-img">
-                            <img style="height: 550px" src="assets/img/explore/kandy.jpg" alt="Kandy Temple of the Tooth">
-                        </div>
-                        <div class="destination-content pt-3">
-                            <h3 class="title"><a href="{{ route('tour-details', ['tour_id' => '01']) }}">Kandy</a></h3>
-                            <p class="destination-details">
-                                Nestled among lush hills, **Kandy** is the cultural heart of the island and home to the sacred Temple of the Tooth Relic. Experience a cool climate, explore the serene lake, and witness the rich traditional arts and customs of the hill country.
-                            </p>
-                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="th-btn style-border">View More</a>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
-            <div class="shape-mockup movingX d-none d-xl-block" data-bottom="10%" data-right="0%">
-                <img class="gmovingX" src="assets/img/shape/elements_1_4.svg" alt="shape">
+
+                <!-- Navigation Arrows -->
+                <div class="slider-arrow slider-prev text-center"><i class="fal fa-long-arrow-left"></i></div>
+                <div class="slider-arrow slider-next text-center"><i class="fal fa-long-arrow-right"></i></div>
             </div>
         </div>
     </section>
+
 
     <!--======== Discover Sri Lanka Wonders With a Trust =========-->
     <div class="feature-area-3 space">
