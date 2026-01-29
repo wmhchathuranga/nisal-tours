@@ -260,6 +260,38 @@
         .safe-box:hover img {
             transform: scale(1.06);
         }
+
+
+        /* slider  */
+        /* 🔥 Force all swiper slides to equal height */
+        .explore-slider .swiper-wrapper {
+            align-items: stretch;
+        }
+        
+        .explore-slider .swiper-slide {
+            height: auto;
+            display: flex;
+        }
+        
+        /* Card fills slide */
+        .explore-slider .gallery-card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        /* Content fills remaining space */
+        .explore-slider .destination-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        
+        /* Button always at same bottom line */
+        .explore-slider .destination-content .th-btn-div {
+            margin-top: auto;
+        }
+
     </style>
     
     <script>
@@ -387,7 +419,7 @@
             </div>
 
             <!-- Slider Area -->
-            <div class="slider-area position-relative">
+            <div class="slider-area position-relative mb-4">
                 <div class="swiper th-slider explore-slider"
                     data-slider-options='{
                         "loop": true,
@@ -404,106 +436,311 @@
                             "992": { "slidesPerView": 3 }
                         }
                     }'>
-
+            
                     <div class="swiper-wrapper">
-
+            
                         <!-- Slide 01 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
+            
                                 <div class="box-img global-img">
                                     <img style="height:550px;object-fit:cover"
-                                        src="assets/img/explore/sigiriya.jpg"
-                                        alt="Sigiriya Rock Fortress">
+                                         src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                                         alt="Sigiriya Rock Fortress">
                                 </div>
+            
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '01']) }}">
                                             Sigiriya Rock Fortress
                                         </a>
                                     </h3>
+            
                                     <p class="destination-details">
                                         Sigiriya Rock Fortress is an ancient palace and UNESCO World Heritage Site,
                                         famous for its frescoes and breathtaking summit views.
                                     </p>
-                                    <a href="{{ route('documentry', ['doc_id' => '01']) }}"
-                                    class="th-btn style-border">View More</a>
+            
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '01']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+
+                                    </div>
                                 </div>
+            
                             </div>
                         </div>
-
+            
                         <!-- Slide 02 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
+            
                                 <div class="box-img global-img">
                                     <img style="height:550px;object-fit:cover"
-                                        src="assets/img/explore/galle_fort.jpg"
-                                        alt="Galle Fort">
+                                         src="{{ asset('assets/img/explore/galle_fort.jpg') }}"
+                                         alt="Galle Fort">
                                 </div>
+            
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '02']) }}">
                                             Galle Fort
                                         </a>
                                     </h3>
+            
                                     <p class="destination-details">
                                         A beautifully preserved Dutch-era fortress with cobbled streets,
                                         ramparts, cafes, and boutique shops.
                                     </p>
-                                    <a href="{{ route('documentry', ['doc_id' => '02']) }}"
-                                    class="th-btn style-border">View More</a>
+            
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '02']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
                                 </div>
+            
                             </div>
                         </div>
-
+            
                         <!-- Slide 03 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
+            
                                 <div class="box-img global-img">
                                     <img style="height:550px;object-fit:cover"
-                                        src="assets/img/explore/kandy.jpg"
-                                        alt="Kandy">
+                                         src="{{ asset('assets/img/explore/kandy.jpg') }}"
+                                         alt="Kandy">
                                 </div>
+            
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '03']) }}">
                                             Kandy – The Sacred Heart of Sri Lanka
                                         </a>
                                     </h3>
+            
                                     <p class="destination-details">
                                         Home to the Temple of the Tooth Relic, Kandy blends cool-climate hills,
                                         culture, and tradition.
                                     </p>
-                                    <a href="{{ route('documentry', ['doc_id' => '03']) }}"
-                                    class="th-btn style-border">View More</a>
+            
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '03']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
                                 </div>
+            
                             </div>
                         </div>
-
+            
                         <!-- Slide 04 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
+            
                                 <div class="box-img global-img">
                                     <img style="height:550px;object-fit:cover"
-                                        src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
-                                        alt="Wilpattu National Park">
+                                         src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
+                                         alt="Wilpattu National Park">
                                 </div>
+            
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '04']) }}">
                                             Wilpattu National Park
                                         </a>
                                     </h3>
+            
                                     <p class="destination-details">
                                         Sri Lanka’s largest national park, famous for natural lakes,
                                         leopards, and untouched wilderness.
                                     </p>
-                                    <a href="{{ route('documentry', ['doc_id' => '04']) }}"
-                                    class="th-btn style-border">View More</a>
+            
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '04']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
                                 </div>
+            
                             </div>
                         </div>
-
+            
                     </div>
+                </div>
+            
+                <!-- Navigation -->
+                <div class="slider-arrow slider-prev text-center">
+                    <i class="fal fa-long-arrow-left"></i>
+                </div>
+                <div class="slider-arrow slider-next text-center">
+                    <i class="fal fa-long-arrow-right"></i>
+                </div>
+            
+            </div>
+
+
+
+            <!-- Slider Area -->
+            <div class="slider-area position-relative">
+                <div class="swiper th-slider explore-slider"
+                    data-slider-options='{
+                        "loop": true,
+                        "spaceBetween": 24,
+                        "autoplay": { "delay": 5000 },
+                        "navigation": {
+                            "nextEl": ".slider-next",
+                            "prevEl": ".slider-prev"
+                        },
+                        "breakpoints": {
+                            "0": { "slidesPerView": 1 },
+                            "576": { "slidesPerView": 1 },
+                            "768": { "slidesPerView": 2 },
+                            "992": { "slidesPerView": 3 }
+                        }
+                    }'>
+
+                    <div class="swiper-wrapper">
+                        <!-- Slide 05 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                    
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                         src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
+                                         alt="Ella">
+                                </div>
+                    
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}">
+                                            Ella – Hill Country Escape
+                                        </a>
+                                    </h3>
+                    
+                                    <p class="destination-details">
+                                        Surrounded by misty mountains, Ella is famous for tea plantations,
+                                        waterfalls, hiking trails, and breathtaking views.
+                                    </p>
+                    
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                        <!-- Slide 06 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                    
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                         src="{{ asset('assets/img/explore/Yala National Park.jpg') }}"
+                                         alt="Yala National Park">
+                                </div>
+                    
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '06']) }}">
+                                            Yala National Park
+                                        </a>
+                                    </h3>
+                    
+                                    <p class="destination-details">
+                                        One of the best places in the world to spot leopards,
+                                        Yala offers thrilling safaris and rich wildlife.
+                                    </p>
+                    
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '06']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                        <!-- Slide 07 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                    
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                         src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
+                                         alt="Mirissa Beach">
+                                </div>
+                    
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '07']) }}">
+                                            Mirissa Beach
+                                        </a>
+                                    </h3>
+                    
+                                    <p class="destination-details">
+                                        A tropical beach paradise known for whale watching,
+                                        golden sands, and stunning sunsets.
+                                    </p>
+                    
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '07']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                        <!-- Slide 08 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                    
+                                <div class="box-img global-img">
+                                    <img style="height:550px;object-fit:cover"
+                                         src="{{ asset('assets/img/explore/nuwara eliya – little england.jpg') }}"
+                                         alt="Nuwara Eliya">
+                                </div>
+                    
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '08']) }}">
+                                            Nuwara Eliya – Little England
+                                        </a>
+                                    </h3>
+                    
+                                    <p class="destination-details">
+                                        Known for its cool climate and colonial charm,
+                                        Nuwara Eliya is surrounded by lush tea estates.
+                                    </p>
+                    
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '08']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                    </div>
+
                 </div>
 
                 <!-- Navigation Arrows -->
