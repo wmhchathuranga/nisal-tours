@@ -21,13 +21,13 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_1.jpg">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_2.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
                                 <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                    Natural Wonder of the world </h1>
+                                    Let’s make your best trip with us </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
@@ -38,13 +38,13 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_2.jpg">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_1.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
                                 <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                    Let’s make your best trip with us </h1>
+                                    Natural Wonder of the world </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
@@ -760,7 +760,6 @@
             </div>
             
                 <div class="row justify-content-center gy-4">
-                    
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card-3">
                             <div class="feature-card-icon">
@@ -769,7 +768,7 @@
                             <div class="feature-card-content">
                                 <h4 class="feature-card-title">Premium Transport Service</h4>
                                 <p class="feature-card-text">
-                                    Travel in comfort and safety across the island with our **modern, air-conditioned fleet** and professional, trusted drivers, ensuring a smooth journey every time.
+                                    Travel in comfort and safety across the island with our <strong>modern, air-conditioned fleet</strong> and professional, trusted drivers, ensuring a smooth journey every time.
                                 </p>
                             </div>
                         </div>
@@ -782,11 +781,13 @@
                             </div>
                             <div class="feature-card-content">
                                 <h4 class="feature-card-title">24/7 Dedicated Support</h4>
-                                <p class="feature-card-text">Travel with peace of mind knowing our dedicated support team is available around the clock to assist you with any emergency or query.</p>
+                                <p class="feature-card-text">
+                                    Travel with peace of mind knowing our dedicated support team is available around the clock to assist you with any emergency or query.
+                                </p>
                             </div>
                         </div>
                     </div>
-        
+                
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card-3">
                             <div class="feature-card-icon">
@@ -794,11 +795,31 @@
                             </div>
                             <div class="feature-card-content">
                                 <h4 class="feature-card-title">Flexible & Secure Booking</h4>
-                                <p class="feature-card-text">Enjoy hassle-free travel planning with our flexible cancellation policies and secure online payment gateway trusted by thousands of travelers.</p>
+                                <p class="feature-card-text">
+                                    Enjoy hassle-free travel planning with our flexible cancellation policies and secure online payment gateway trusted by thousands of travelers.
+                                </p>
                             </div>
                         </div>
                     </div>
+                
+                    <!-- New Card 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card-3">
+                            <div class="feature-card-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <h4 class="feature-card-title">Personalized Travel Experiences</h4>
+                                <p class="feature-card-text">
+                                    Create your dream itinerary with our customized travel plans, curated activities, and insider tips to explore the island like a local.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
                 </div>
+    
+
         </div>
     </div>
         
