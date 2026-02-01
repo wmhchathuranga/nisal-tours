@@ -21,25 +21,25 @@
                 <div class="recent-post-wrap">
                     <div class="recent-post">
                         <div class="media-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
+                            <a href="#"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
                         </div>
                         <div class="media-body">
                             <div class="recent-post-meta">
-                                <a href="blog.html"><i class="far fa-calendar"></i>24 Jun , 2025</a>
+                                <a href="#"><i class="far fa-calendar"></i>24 Jun , 2025</a>
                             </div>
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Where Vision Meets Concrete
+                            <h4 class="post-title"><a class="text-inherit" href="#">Where Vision Meets Concrete
                                     Reality</a></h4>
                         </div>
                     </div>
                     <div class="recent-post">
                         <div class="media-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
+                            <a href="#"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
                         </div>
                         <div class="media-body">
                             <div class="recent-post-meta">
-                                <a href="blog.html"><i class="far fa-calendar"></i>22 Jun , 2025</a>
+                                <a href="#"><i class="far fa-calendar"></i>22 Jun , 2025</a>
                             </div>
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Raising the Bar in Construction.</a></h4>
+                            <h4 class="post-title"><a class="text-inherit" href="#">Raising the Bar in Construction.</a></h4>
                         </div>
                     </div>
                 </div>

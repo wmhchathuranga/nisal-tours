@@ -29,12 +29,72 @@
     </div><!--==============================
 Contact Area
 ==============================-->
+
     <div class="space">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title">Get In Touch</span>
                 <h2 class="sec-title">Our Contact Information</h2>
             </div>
+
+            <div class="row">
+                <div class="space-extra2-bottom" 
+                    {{-- data-bg-src="assets/img/hero/hero_bg_3_3.jpg" --}}
+                    >
+                    <div class="container">
+                        <div class="row flex-row-reverse justify-content-center align-items-center">
+                            {{-- <div class="col-lg-6">
+                                <div class="video-box1">
+                                    <a href="https://www.youtube-nocookie.com/embed/OxFOuZCokLk?si=i-wpwrqSWKA0vaOR"
+                                        class="play-btn style2 popup-video"><i class="fa-sharp fa-solid fa-play"></i></a>
+                                </div>
+            
+                            </div> --}}
+                            <div class="col-lg-7">
+                                <div>
+                                    <form action="mail.php" method="POST" class="contact-form style2 ajax-contact">
+                                        <h3 class="sec-title mb-30 text-capitalize">Book a tour</h3>
+                                        <div class="row">
+                                            <div class="col-12 form-group">
+                                                <input type="text" class="form-control" name="name" id="name3"
+                                                    placeholder="First Name">
+                                                <img src="assets/img/icon/user.svg" alt="">
+                                            </div>
+                                            <div class="col-12 form-group">
+                                                <input type="email" class="form-control" name="email3" id="email3"
+                                                    placeholder="Your Mail">
+                                                <img src="assets/img/icon/mail.svg" alt="">
+                                            </div>
+                                            {{-- <div class="form-group col-12">
+                                                <select name="subject" id="subject" class="form-select nice-select">
+                                                    <option value="Select Tour Type" selected disabled>Select Tour Type
+                                                    </option>
+                                                    <option value="Africa Adventure">Africa Adventure</option>
+                                                    <option value="Africa Wild">Africa Wild</option>
+                                                    <option value="Asia">Asia</option>
+                                                    <option value="Scandinavia">Scandinavia</option>
+                                                    <option value="Western Europe">Western Europe</option>
+                                                </select>
+                                            </div> --}}
+                                            <div class="form-group col-12">
+                                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Your Message"></textarea>
+                                                <img src="assets/img/icon/chat.svg" alt="">
+                                            </div>
+                                            <div class="form-btn col-12 mt-24">
+                                                <button type="submit" class="th-btn-whatsapp">
+                                                    <i class="fab fa-whatsapp me-2 text-white"></i> Send message
+                                            </button>
+                                            </div>
+                                        </div>
+                                        <p class="form-messages mb-0 mt-3"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row gy-4 justify-content-center">
                 <div class="col-xl-4 col-lg-6">
                     <div class="about-contact-grid style2">
@@ -79,59 +139,7 @@ Contact Area
 Video Area
 ==============================-->
 
-    <div class="space-extra2-top space-extra2-bottom" data-bg-src="assets/img/hero/hero_bg_3_3.jpg">
-        <div class="container">
-            <div class="row flex-row-reverse justify-content-center align-items-center">
-                <div class="col-lg-6">
-                    <div class="video-box1">
-                        <a href="https://www.youtube-nocookie.com/embed/OxFOuZCokLk?si=i-wpwrqSWKA0vaOR"
-                            class="play-btn style2 popup-video"><i class="fa-sharp fa-solid fa-play"></i></a>
-                    </div>
-
-                </div>
-                <div class="col-lg-6">
-                    <div>
-                        <form action="mail.php" method="POST" class="contact-form style2 ajax-contact">
-                            <h3 class="sec-title mb-30 text-capitalize">Book a tour</h3>
-                            <div class="row">
-                                <div class="col-12 form-group">
-                                    <input type="text" class="form-control" name="name" id="name3"
-                                        placeholder="First Name">
-                                    <img src="assets/img/icon/user.svg" alt="">
-                                </div>
-                                <div class="col-12 form-group">
-                                    <input type="email" class="form-control" name="email3" id="email3"
-                                        placeholder="Your Mail">
-                                    <img src="assets/img/icon/mail.svg" alt="">
-                                </div>
-                                {{-- <div class="form-group col-12">
-                                    <select name="subject" id="subject" class="form-select nice-select">
-                                        <option value="Select Tour Type" selected disabled>Select Tour Type
-                                        </option>
-                                        <option value="Africa Adventure">Africa Adventure</option>
-                                        <option value="Africa Wild">Africa Wild</option>
-                                        <option value="Asia">Asia</option>
-                                        <option value="Scandinavia">Scandinavia</option>
-                                        <option value="Western Europe">Western Europe</option>
-                                    </select>
-                                </div> --}}
-                                <div class="form-group col-12">
-                                    <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Your Message"></textarea>
-                                    <img src="assets/img/icon/chat.svg" alt="">
-                                </div>
-                                <div class="form-btn col-12 mt-24">
-                                    <button type="submit" class="th-btn-whatsapp">
-                                        <i class="fab fa-whatsapp me-2 text-white"></i> Send message
-                                   </button>
-                                </div>
-                            </div>
-                            <p class="form-messages mb-0 mt-3"></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!--============================== Map Area ==============================-->
     {{-- <div class="">

@@ -947,7 +947,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Lunuganga Estate</a>
+                                                    <a href="{{ route('resort-details-01') }}">Lunuganga Estate</a>
                                                 </h3>
                                                 <span>Bentota</span>
                                                 <div class="tour-action mt-3">
@@ -969,7 +969,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">98 Acres Resort & Spa</a>
+                                                    <a href="{{ route('resort-details-01') }}">98 Acres Resort & Spa</a>
                                                 </h3>
                                                 <span>Ella</span>
                                                 <div class="tour-action mt-3">
@@ -991,7 +991,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Galle Fort Hotel</a>
+                                                    <a href="{{ route('resort-details-01') }}">Galle Fort Hotel</a>
                                                 </h3>
                                                 <span>Galle Fort</span>
                                                 <div class="tour-action mt-3">
@@ -1013,7 +1013,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">The Fortress Resort & Spa</a>
+                                                    <a href="{{ route('resort-details-01') }}">The Fortress Resort & Spa</a>
                                                 </h3>
                                                 <span>Koggala</span>
                                                 <div class="tour-action mt-3">
@@ -1035,7 +1035,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Santani Wellness Resort</a>
+                                                    <a href="{{ route('resort-details-01') }}">Santani Wellness Resort</a>
                                                 </h3>
                                                 <span>Kandy</span>
                                                 <div class="tour-action mt-3">
@@ -1057,7 +1057,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">The Grand Hotel</a>
+                                                    <a href="{{ route('resort-details-01') }}">The Grand Hotel</a>
                                                 </h3>
                                                 <span>Nuwara Eliya</span>
                                                 <div class="tour-action mt-3">
@@ -1079,7 +1079,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Jetwing Lagoon</a>
+                                                    <a href="{{ route('resort-details-01') }}">Jetwing Lagoon</a>
                                                 </h3>
                                                 <span>Negombo</span>
                                                 <div class="tour-action mt-3">
@@ -1101,7 +1101,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Uga Chena Huts</a>
+                                                    <a href="{{ route('resort-details-01') }}">Uga Chena Huts</a>
                                                 </h3>
                                                 <span>Yala National Park</span>
                                                 <div class="tour-action mt-3">
@@ -1131,7 +1131,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Ceylon Tea Trails</a>
+                                                    <a href="{{ route('resort-details-01') }}">Ceylon Tea Trails</a>
                                                 </h3>
                                                 <span>Central Highlands, Hatton</span>
                                                 <div class="tour-action mt-3">
@@ -1153,7 +1153,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Galle Face Hotel</a>
+                                                    <a href="{{ route('resort-details-01') }}">Galle Face Hotel</a>
                                                 </h3>
                                                 <span>Colombo</span>
                                                 <div class="tour-action mt-3">
@@ -1175,7 +1175,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Cape Weligama</a>
+                                                    <a href="{{ route('resort-details-01') }}">Cape Weligama</a>
                                                 </h3>
                                                 <span>Weligama</span>
                                                 <div class="tour-action mt-3">
@@ -1197,7 +1197,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Heritance Kandalama</a>
+                                                    <a href="{{ route('resort-details-01') }}">Heritance Kandalama</a>
                                                 </h3>
                                                 <span>Dambulla / Sigiriya</span>
                                                 <div class="tour-action mt-3">
@@ -1219,7 +1219,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Amangalla</a>
+                                                    <a href="{{ route('resort-details-01') }}">Amangalla</a>
                                                 </h3>
                                                 <span>Galle Fort</span>
                                                 <div class="tour-action mt-3">
@@ -1241,7 +1241,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Wild Coast Tented Lodge</a>
+                                                    <a href="{{ route('resort-details-01') }}">Wild Coast Tented Lodge</a>
                                                 </h3>
                                                 <span>Yala National Park</span>
                                                 <div class="tour-action mt-3">
@@ -1263,7 +1263,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Mahaweli Reach Hotel</a>
+                                                    <a href="{{ route('resort-details-01') }}">Mahaweli Reach Hotel</a>
                                                 </h3>
                                                 <span>Kandy</span>
                                                 <div class="tour-action mt-3">
@@ -1285,7 +1285,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Uga Jungle Beach</a>
+                                                    <a href="{{ route('resort-details-01') }}">Uga Jungle Beach</a>
                                                 </h3>
                                                 <span>Trincomalee</span>
                                                 <div class="tour-action mt-3">
@@ -1315,7 +1315,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">The Villa Bentota</a>
+                                                    <a href="{{ route('resort-details-01') }}">The Villa Bentota</a>
                                                 </h3>
                                                 <span>Bentota</span>
                                                 <div class="tour-action mt-3">
@@ -1337,7 +1337,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Palagama Beach Resort</a>
+                                                    <a href="{{ route('resort-details-01') }}">Palagama Beach Resort</a>
                                                 </h3>
                                                 <span>Kalpitiya</span>
                                                 <div class="tour-action mt-3">
@@ -1359,7 +1359,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Goatfell</a>
+                                                    <a href="{{ route('resort-details-01') }}">Goatfell</a>
                                                 </h3>
                                                 <span>Nuwara Eliya</span>
                                                 <div class="tour-action mt-3">
@@ -1381,7 +1381,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Uga Ulagalla</a>
+                                                    <a href="{{ route('resort-details-01') }}">Uga Ulagalla</a>
                                                 </h3>
                                                 <span>Anuradhapura</span>
                                                 <div class="tour-action mt-3">
@@ -1403,7 +1403,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Kayaam Wellness</a>
+                                                    <a href="{{ route('resort-details-01') }}">Kayaam Wellness</a>
                                                 </h3>
                                                 <span>Tangalle</span>
                                                 <div class="tour-action mt-3">
@@ -1425,7 +1425,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Kumu Beach</a>
+                                                    <a href="{{ route('resort-details-01') }}">Kumu Beach</a>
                                                 </h3>
                                                 <span>Balapitiya</span>
                                                 <div class="tour-action mt-3">
@@ -1447,7 +1447,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Tintagel Colombo</a>
+                                                    <a href="{{ route('resort-details-01') }}">Tintagel Colombo</a>
                                                 </h3>
                                                 <span>Colombo</span>
                                                 <div class="tour-action mt-3">
@@ -1469,7 +1469,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Le Grand Galle</a>
+                                                    <a href="{{ route('resort-details-01') }}">Le Grand Galle</a>
                                                 </h3>
                                                 <span>Galle</span>
                                                 <div class="tour-action mt-3">
@@ -1499,7 +1499,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Executive Suite</a>
+                                                    <a href="{{ route('resort-details-01') }}">Executive Suite</a>
                                                 </h3>
                                                 <span>Cinnamon Grand, Colombo</span>
                                                 <div class="tour-action mt-3">
@@ -1521,7 +1521,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Deluxe Ocean View</a>
+                                                    <a href="{{ route('resort-details-01') }}">Deluxe Ocean View</a>
                                                 </h3>
                                                 <span>Heritance, Negombo</span>
                                                 <div class="tour-action mt-3">
@@ -1543,7 +1543,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Jungle Cabana</a>
+                                                    <a href="{{ route('resort-details-01') }}">Jungle Cabana</a>
                                                 </h3>
                                                 <span>Uga Jungle Beach, Trincomalee</span>
                                                 <div class="tour-action mt-3">
@@ -1565,7 +1565,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Family Cottage</a>
+                                                    <a href="{{ route('resort-details-01') }}">Family Cottage</a>
                                                 </h3>
                                                 <span>Araliya Green City, Nuwara Eliya</span>
                                                 <div class="tour-action mt-3">
@@ -1587,7 +1587,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Cocoon Tent</a>
+                                                    <a href="{{ route('resort-details-01') }}">Cocoon Tent</a>
                                                 </h3>
                                                 <span>Wild Coast Tented Lodge, Yala</span>
                                                 <div class="tour-action mt-3">
@@ -1609,7 +1609,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Private Pool Villa</a>
+                                                    <a href="{{ route('resort-details-01') }}">Private Pool Villa</a>
                                                 </h3>
                                                 <span>Anantara Peace Haven, Tangalle</span>
                                                 <div class="tour-action mt-3">
@@ -1631,7 +1631,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Horizon Club Room</a>
+                                                    <a href="{{ route('resort-details-01') }}">Horizon Club Room</a>
                                                 </h3>
                                                 <span>Shangri-La, Colombo</span>
                                                 <div class="tour-action mt-3">
@@ -1653,7 +1653,7 @@
                                             </div>
                                             <div class="tour-content">
                                                 <h3 class="box-title mb-0">
-                                                    <a href="tour-details.html">Garden Room</a>
+                                                    <a href="{{ route('resort-details-01') }}">Garden Room</a>
                                                 </h3>
                                                 <span>Ceylon Tea Trails, Hatton</span>
                                                 <div class="tour-action mt-3">

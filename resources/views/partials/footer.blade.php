@@ -25,7 +25,7 @@
                     <div class="widget footer-widget">
                         <div class="th-widget-about">
                             <div class="about-logo">
-                                <a href="home-travel.html"><img src="assets/img/logo-white.svg" alt="Bitrate"></a>
+                                <a href="{{ route('home') }}"><img src="assets/img/logo-white.svg" alt="Bitrate"></a>
                             </div>
                             <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital
                                 model. Appropriately create interactive infrastructures</p>
@@ -123,7 +123,7 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-6">
-                    <p class="copyright-text">Copyright 2025 <a href="home-travel.html">Bitrate.lk</a>. All Rights
+                    <p class="copyright-text">Copyright 2025 <a href="{{ route('home') }}">Bitrate.lk</a>. All Rights
                         Reserved.</p>
                 </div>
                 {{-- <div class="col-md-6 text-end d-none d-md-block">

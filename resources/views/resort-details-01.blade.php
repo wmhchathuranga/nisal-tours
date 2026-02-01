@@ -35,7 +35,7 @@
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Resort Details</h1>
                 <ul class="breadcumb-menu">
-                    <li><a href="home-travel.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Resort Details</li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
                     <div class="page-single">
                         <div class="service-img global-img"><img src="assets/img/accommodation/arces.png" alt=""></div>
                         <div class="page-content d-block">
-                            <h3 class="box-title mt-20"><a href="resort-details.html">98 Acres Resort & Spa</a></h3>
+                            <h3 class="box-title mt-20">98 Acres Resort & Spa</h3>
                             <p class="blog-text mb-30">This luxury resort is set on a private island in the South Pacific.
                                 The overwater bungalows and beachfront villas offer stunning views of the turquoise lagoon
                                 and the surrounding mountains.
@@ -237,11 +237,11 @@
                             <h3 class="widget_title">Categories</h3>
                             <ul>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Wildlife Tours</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Wildlife Tours</a>
                                     <span>(2)</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Adventure Tours</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Adventure Tours</a>
                                     <span>(9)</span>
                                 </li>
                             </ul>
@@ -394,35 +394,35 @@
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
+                                        <a href="#"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Exploring The Green Spaces Of the island maldives</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Exploring The Green Spaces Of the island maldives</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><i class="fa-regular fa-calendar"></i>22/6/ 2025</a>
+                                            <a href="#"><i class="fa-regular fa-calendar"></i>22/6/ 2025</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
+                                        <a href="#"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Harmony With Nature Of Belgium Tour and travle</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Harmony With Nature Of Belgium Tour and travle</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><i class="fa-regular fa-calendar"></i>25/6/ 2025</a>
+                                            <a href="#"><i class="fa-regular fa-calendar"></i>25/6/ 2025</a>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
+                                        <a href="#"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Exploring The Green Spaces Of Realar Residence</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Exploring The Green Spaces Of Realar Residence</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><i class="fa-regular fa-calendar"></i>27/6/ 2025</a>
+                                            <a href="#"><i class="fa-regular fa-calendar"></i>27/6/ 2025</a>
                                         </div>
                                     </div>
                                 </div>
@@ -431,14 +431,14 @@
                         {{-- <div class="widget widget_tag_cloud  ">
                             <h3 class="widget_title">Popular Tags</h3>
                             <div class="tagcloud">
-                                <a href="blog.html">Tour</a>
-                                <a href="blog.html">Adventure</a>
-                                <a href="blog.html">Rent</a>
-                                <a href="blog.html">Innovate</a>
-                                <a href="blog.html">Hotel</a>
-                                <a href="blog.html">Modern</a>
-                                <a href="blog.html">Luxury</a>
-                                <a href="blog.html">Travel</a>
+                                <a href="#">Tour</a>
+                                <a href="#">Adventure</a>
+                                <a href="#">Rent</a>
+                                <a href="#">Innovate</a>
+                                <a href="#">Hotel</a>
+                                <a href="#">Modern</a>
+                                <a href="#">Luxury</a>
+                                <a href="#">Travel</a>
                             </div>
                         </div> --}}
                         <div class="widget widget_offer  " data-bg-src="assets/img/bg/widget_bg_1.jpg">

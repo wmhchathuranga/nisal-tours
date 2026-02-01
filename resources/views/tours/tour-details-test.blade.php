@@ -23,7 +23,7 @@
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Tour Details</h1>
                 <ul class="breadcumb-menu">
-                    <li><a href="home-travel.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Tour Details</li>
                 </ul>
             </div>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="page-content">
                             <div class="page-meta mb-45">
-                                <a class="page-tag" href="tour.html">Wildlife</a>
+                                <a class="page-tag">Wildlife</a>
                                 <span class="ratting"><i class="fa-sharp fa-solid fa-star"></i><span>4.9</span></span>
                             </div>
                             <h2 class="box-title">Wilpattu Safari Sri Lanka: The Land of the Spots and Leopards</h2>
@@ -343,27 +343,27 @@
                             <h3 class="widget_title">Safari Categories</h3>
                             <ul>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Wildlife Tours</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Wildlife Tours</a>
                                     <span>(12)</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Birdwatching</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Birdwatching</a>
                                     <span>(6)</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Adventure Tours</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Adventure Tours</a>
                                     <span>(8)</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Cultural Triangle</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Cultural Triangle</a>
                                     <span>(7)</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Beach Tours</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Beach Tours</a>
                                     <span>(4)</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><img src="assets/img/theme-img/map.svg" alt="">Hill Country</a>
+                                    <a href="#"><img src="assets/img/theme-img/map.svg" alt="">Hill Country</a>
                                     <span>(10)</span>
                                 </li>
                             </ul>
@@ -497,35 +497,35 @@
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
+                                        <a href="#"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Best time for Leopard sightings in Wilpattu</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Best time for Leopard sightings in Wilpattu</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><i class="fa-regular fa-calendar"></i>15/7/ 2025</a>
+                                            <a href="#"><i class="fa-regular fa-calendar"></i>15/7/ 2025</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
+                                        <a href="#"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Essential gear for a great Sri Lankan safari</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Essential gear for a great Sri Lankan safari</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><i class="fa-regular fa-calendar"></i>20/7/ 2025</a>
+                                            <a href="#"><i class="fa-regular fa-calendar"></i>20/7/ 2025</a>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
+                                        <a href="#"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Wilpattu vs Yala: Which park to choose?</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Wilpattu vs Yala: Which park to choose?</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><i class="fa-regular fa-calendar"></i>27/7/ 2025</a>
+                                            <a href="#"><i class="fa-regular fa-calendar"></i>27/7/ 2025</a>
                                         </div>
                                     </div>
                                 </div>
@@ -534,14 +534,14 @@
                         <div class="widget widget_tag_cloud  ">
                             <h3 class="widget_title">Popular Tags</h3>
                             <div class="tagcloud">
-                                <a href="blog.html">Safari</a>
-                                <a href="blog.html">Leopard</a>
-                                <a href="blog.html">Wilpattu</a>
-                                <a href="blog.html">Wildlife</a>
-                                <a href="blog.html">SriLanka</a>
-                                <a href="blog.html">Jeep</a>
-                                <a href="blog.html">Nature</a>
-                                <a href="blog.html">Adventure</a>
+                                <a href="#">Safari</a>
+                                <a href="#">Leopard</a>
+                                <a href="#">Wilpattu</a>
+                                <a href="#">Wildlife</a>
+                                <a href="#">SriLanka</a>
+                                <a href="#">Jeep</a>
+                                <a href="#">Nature</a>
+                                <a href="#">Adventure</a>
                             </div>
                         </div> --}}
                         {{-- <div class="widget widget_offer  " data-bg-src="assets/img/bg/widget_bg_1.jpg">

@@ -55,7 +55,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_3_3.jpg">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_3.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -576,12 +576,12 @@
                 </div>
             
                 <!-- Navigation -->
-                <div class="slider-arrow slider-prev text-center">
+                {{-- <div class="slider-arrow slider-prev text-center">
                     <i class="fal fa-long-arrow-left"></i>
                 </div>
                 <div class="slider-arrow slider-next text-center">
                     <i class="fal fa-long-arrow-right"></i>
-                </div>
+                </div> --}}
             
             </div>
 
@@ -744,8 +744,8 @@
                 </div>
 
                 <!-- Navigation Arrows -->
-                <div class="slider-arrow slider-prev text-center"><i class="fal fa-long-arrow-left"></i></div>
-                <div class="slider-arrow slider-next text-center"><i class="fal fa-long-arrow-right"></i></div>
+                {{-- <div class="slider-arrow slider-prev text-center"><i class="fal fa-long-arrow-left"></i></div>
+                <div class="slider-arrow slider-next text-center"><i class="fal fa-long-arrow-right"></i></div> --}}
             </div>
         </div>
     </section>
