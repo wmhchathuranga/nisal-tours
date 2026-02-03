@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div class="col-auto m-xl-auto ms-auto">
-                            <nav class="main-menu d-none d-xl-inline-block">
+                            <nav class="main-menu d-none d-xl-inline-block p-0">
                                 <ul>
                                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
                                     <li><a class="{{ $page == 'services' ? 'active' : ''}}" href="{{ route('services') }}">Services</a></li>

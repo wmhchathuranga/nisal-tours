@@ -292,6 +292,10 @@
             margin-top: auto;
         }
 
+        .destination-content .title {
+            font-size: 24px;
+        }
+
     </style>
     
     <script>
@@ -423,17 +427,18 @@
                 <div class="swiper th-slider explore-slider"
                     data-slider-options='{
                         "loop": true,
-                        "spaceBetween": 24,
+                        "spaceBetween": 20,
                         "autoplay": { "delay": 4000 },
                         "navigation": {
                             "nextEl": ".slider-next",
                             "prevEl": ".slider-prev"
                         },
                         "breakpoints": {
-                            "0": { "slidesPerView": 1 },
+                            "0":   { "slidesPerView": 1 },
                             "576": { "slidesPerView": 1 },
                             "768": { "slidesPerView": 2 },
-                            "992": { "slidesPerView": 3 }
+                            "992": { "slidesPerView": 3 },
+                            "1200": { "slidesPerView": 4 }
                         }
                     }'>
             
@@ -444,7 +449,7 @@
                             <div class="gallery-card">
             
                                 <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
+                                    <img style="height:400px;object-fit:cover"
                                          src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
                                          alt="Sigiriya Rock Fortress">
                                 </div>
@@ -478,7 +483,7 @@
                             <div class="gallery-card">
             
                                 <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
+                                    <img style="height:400px;object-fit:cover"
                                          src="{{ asset('assets/img/explore/galle_fort.jpg') }}"
                                          alt="Galle Fort">
                                 </div>
@@ -511,7 +516,7 @@
                             <div class="gallery-card">
             
                                 <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
+                                    <img style="height:400px;object-fit:cover"
                                          src="{{ asset('assets/img/explore/kandy.jpg') }}"
                                          alt="Kandy">
                                 </div>
@@ -544,7 +549,7 @@
                             <div class="gallery-card">
             
                                 <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
+                                    <img style="height:400px;object-fit:cover"
                                          src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
                                          alt="Wilpattu National Park">
                                 </div>
@@ -569,6 +574,39 @@
                                     </div>
                                 </div>
             
+                            </div>
+                        </div>
+
+                        <!-- Slide 05 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                    
+                                <div class="box-img global-img">
+                                    <img style="height:400px;object-fit:cover"
+                                         src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
+                                         alt="Ella">
+                                </div>
+                    
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}">
+                                            Ella – Hill Country Escape
+                                        </a>
+                                    </h3>
+                    
+                                    <p class="destination-details">
+                                        Surrounded by misty mountains, Ella is famous for tea plantations,
+                                        waterfalls, hiking trails, and breathtaking views.
+                                    </p>
+                    
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
+                                </div>
+                    
                             </div>
                         </div>
             
@@ -599,53 +637,22 @@
                             "prevEl": ".slider-prev"
                         },
                         "breakpoints": {
-                            "0": { "slidesPerView": 1 },
+                            "0":   { "slidesPerView": 1 },
                             "576": { "slidesPerView": 1 },
                             "768": { "slidesPerView": 2 },
-                            "992": { "slidesPerView": 3 }
+                            "992": { "slidesPerView": 3 },
+                            "1200": { "slidesPerView": 4 }
                         }
                     }'>
 
                     <div class="swiper-wrapper">
-                        <!-- Slide 05 -->
-                        <div class="swiper-slide">
-                            <div class="gallery-card">
-                    
-                                <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
-                                         alt="Ella">
-                                </div>
-                    
-                                <div class="destination-content pt-3">
-                                    <h3 class="title">
-                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}">
-                                            Ella – Hill Country Escape
-                                        </a>
-                                    </h3>
-                    
-                                    <p class="destination-details">
-                                        Surrounded by misty mountains, Ella is famous for tea plantations,
-                                        waterfalls, hiking trails, and breathtaking views.
-                                    </p>
-                    
-                                    <div class="th-btn-div">
-                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}"
-                                           class="th-btn style-border">
-                                            View More
-                                        </a>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        </div>
-                    
+                        
                         <!-- Slide 06 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
                     
                                 <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
+                                    <img style="height:400px;object-fit:cover"
                                          src="{{ asset('assets/img/explore/Yala National Park.jpg') }}"
                                          alt="Yala National Park">
                                 </div>
@@ -678,7 +685,7 @@
                             <div class="gallery-card">
                     
                                 <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
+                                    <img style="height:400px;object-fit:cover"
                                          src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
                                          alt="Mirissa Beach">
                                 </div>
@@ -711,7 +718,7 @@
                             <div class="gallery-card">
                     
                                 <div class="box-img global-img">
-                                    <img style="height:550px;object-fit:cover"
+                                    <img style="height:400px;object-fit:cover"
                                          src="{{ asset('assets/img/explore/nuwara eliya – little england.jpg') }}"
                                          alt="Nuwara Eliya">
                                 </div>
@@ -730,6 +737,71 @@
                     
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '08']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+
+                        <!-- Slide 09 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+            
+                                <div class="box-img global-img">
+                                    <img style="height:400px;object-fit:cover"
+                                         src="{{ asset('assets/img/explore/colombo-2.jpg') }}"
+                                         alt="Colombo">
+                                </div>
+            
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '09']) }}">
+                                            Colombo
+                                        </a>
+                                    </h3>
+            
+                                    <p class="destination-details">
+                                        The heart of Sri Lanka, Colombo is a bustling city with a rich history.
+                                    </p>
+            
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '09']) }}"
+                                           class="th-btn style-border">
+                                            View More
+                                        </a>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+
+                        <!-- Slide 10 -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                    
+                                <div class="box-img global-img">
+                                    <img style="height:400px;object-fit:cover"
+                                         src="{{ asset('assets/img/explore/horton-plains.jpg') }}"
+                                         alt="horton-plains">
+                                </div>
+                    
+                                <div class="destination-content pt-3">
+                                    <h3 class="title">
+                                        <a href="{{ route('documentry', ['doc_id' => '10']) }}">
+                                            Horton Plains National Park
+                                        </a>
+                                    </h3>
+                    
+                                    <p class="destination-details">
+                                        A UNESCO World Heritage Site, Horton Plains is home to
+                                        the largest wildlife reserve in Sri Lanka.
+                                    </p>
+                    
+                                    <div class="th-btn-div">
+                                        <a href="{{ route('documentry', ['doc_id' => '10']) }}"
                                            class="th-btn style-border">
                                             View More
                                         </a>
