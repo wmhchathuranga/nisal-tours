@@ -28,6 +28,17 @@
         .booking-form-wrap{
             border-radius: 20px
         }
+
+        .th-form .th-btn{
+            border-radius: 8px;
+        }
+        .th-form .th-btn-whatsapp{
+            border-radius: 8px;
+        }
+
+        .bg-smoke {
+            background-color: #79DAF0 !important;
+        }
     </style>
 
 
@@ -50,7 +61,7 @@
       <div class="container">
         <!-- Tab Header -->
         <div class="tab-header">
-            <ul class="nav nav-pills align-items-center h-100" id="bookingTab" role="tablist">
+            <ul class="nav nav-pills align-items-center h-100" id="bookingTab" role="tablist" style="scale: 0.8;">
       
                 <!-- Tour packages tab -->
                 <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
@@ -177,7 +188,7 @@
         
         <!-- tour-packages Tab Pane -->
         <div class="tab-pane fade show active" id="tour-packages" role="tabpanel" aria-labelledby="tour-packages-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
-            <section class="category-area2 bg-top-center position-relative overflow-hidden space space-extra-bottom">
+            <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
                 <div class="container th-container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -361,7 +372,7 @@
 
         <!-- customize tour Tab Pane -->
         <div class="tab-pane fade show" id="customize-tour" role="tabpanel" aria-labelledby="customize-tour-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
-            <section class="category-area2 bg-top-center position-relative overflow-hidden space space-extra-bottom">
+            <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
                 <div class="container" style="min-height: 700px;">
                     
                     <div class="row transition-col block-active" id="about-block-1">
@@ -448,12 +459,14 @@
                                     <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Message..."></textarea>
                                 </div>
                     
-                                <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
-                                    <i class="fab fa-whatsapp me-2"></i> Get Quotation
-                                </button>
-                                <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
-                                    <i class="fas fa-arrow-left me-2"></i> How It Works
-                                </button>
+                                <div class="d-flex justify-content-around gap-3">
+                                    <button type="button" id="hide-form-btn" class="th-btn style-alt w-100">
+                                        <i class="fas fa-arrow-left me-2"></i> How It Works
+                                    </button>
+                                    <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
+                                        <i class="fab fa-whatsapp me-2"></i> Get Quotation
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -464,7 +477,7 @@
 
         <!-- Transport Tab Pane -->
         <div class="tab-pane fade show" id="transport" role="tabpanel" aria-labelledby="transport-tab" style='background-image: url("assets/img/bg/line-pattern2.png");'>
-            <section class="category-area2 bg-top-center position-relative overflow-hidden space space-extra-bottom">
+            <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
               <div class="container th-container">
                   <div class="row justify-content-center">
                       <div class="col-lg-8">
@@ -692,13 +705,21 @@
                                                 <textarea name="special_requirements" id="special_requirements" cols="30" rows="3" class="form-control" placeholder="Special Requirements (Baby Seat, Wheelchair access, etc.)"></textarea>
                                             </div>
                                             
-                                            <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
+                                            <div class="d-flex justify-content-around gap-3">
+                                                <button type="button" id="hide-form-btn" class="th-btn style-alt w-100">
+                                                    <i class="fas fa-arrow-left me-2"></i> How It Works
+                                                </button>
+                                                <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
+                                                    <i class="fab fa-whatsapp me-2"></i> Get Quotation
+                                                </button>
+                                            </div>
+                                            {{-- <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
                                                  <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                             </button>
                                                 
                                             <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
                                                 <i class="fas fa-arrow-left me-2"></i> How It Works
-                                            </button>
+                                            </button> --}}
                                         </form>
                                     </div>
                                 </div>
@@ -896,12 +917,20 @@
                                                 <textarea name="special_requirements" cols="30" rows="3" class="form-control" placeholder="Special Requirements..."></textarea>
                                             </div>
                                             
-                                            <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
+                                            <div class="d-flex justify-content-around gap-3">
+                                                <button type="button" id="hide-form-btn" class="th-btn style-alt w-100">
+                                                    <i class="fas fa-arrow-left me-2"></i> How It Works
+                                                </button>
+                                                <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
+                                                    <i class="fab fa-whatsapp me-2"></i> Get Quotation
+                                                </button>
+                                            </div>
+                                            {{-- <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
                                                 <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                             </button>
                                             <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
                                                 <i class="fas fa-arrow-left me-2"></i> How It Works
-                                            </button>
+                                            </button> --}}
                                         </form>
                                     </div>
                                 </div>
@@ -915,7 +944,7 @@
   
         <!-- Accommodation Tab Pane -->
         <div class="tab-pane fade" id="accommodation" role="tabpanel" aria-labelledby="accommodation-tab">
-            <section class="tour-area3 position-relative bg-top-center overflow-hidden space" id="service-sec" data-bg-src="assets/img/bg/category_bg_1.png">
+            <section class="tour-area3 position-relative bg-top-center overflow-hidden space-extra-bottom" id="service-sec" data-bg-src="assets/img/bg/category_bg_1.png" style="background-repeat: repeat-y;">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">

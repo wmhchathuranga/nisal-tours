@@ -46,6 +46,7 @@
                             <ul class="menu">
 
                                 <li><a href="{{ route('home') }}">Home</a></li>
+                                <li><a href="{{ route('services') }}">Services</a></li>
                                 <li><a href="{{ route('contact') }}">Contact us</a></li>
                             </ul>
                         </div>

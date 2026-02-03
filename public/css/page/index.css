@@ -17,7 +17,7 @@
 
 .tab-header li button {
     border: 2px solid var(--theme-color) !important;
-    border-radius: 16px !important;
+    border-radius: 10px !important;
     background-color: #ffff;
 }
 

@@ -296,6 +296,10 @@
             font-size: 24px;
         }
 
+        .destination-content .th-btn {
+            padding: 10px 20px;
+        }
+
     </style>
     
     <script>
