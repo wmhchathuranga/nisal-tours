@@ -1,5 +1,48 @@
 <!--============================== Footer Area ==============================-->
 <footer class="footer-wrapper bg-title footer-layout2">
+
+<style>
+    .sidebar-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* adjust spacing if needed */
+    width: 100%;
+}
+
+.sidebar-gallery .gallery-thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 1.5; /* perfect square */
+    overflow: hidden;
+}
+
+.sidebar-gallery .gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Instagram icon overlay (optional polish) */
+.sidebar-gallery .gallery-btn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0,0,0,0.35); */
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sidebar-gallery .gallery-thumb:hover .gallery-btn {
+    opacity: 1;
+}
+
+</style>
+
     <div class="widget-area">
         <div class="container">
             {{-- <div class="newsletter-area">
@@ -92,27 +135,57 @@
                         <div class="sidebar-gallery">
                             <div class="gallery-thumb">
                                 <img src="assets/img/gallery/g1.jpg" alt="Gallery Image">
-                                <a target="_blank" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
                             </div>
                             <div class="gallery-thumb">
                                 <img src="assets/img/gallery/g2.jpg" alt="Gallery Image">
-                                <a target="_blank" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
                             </div>
                             <div class="gallery-thumb">
                                 <img src="assets/img/gallery/g3.jpg" alt="Gallery Image">
-                                <a target="_blank" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
                             </div>
                             <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g7.jpg" alt="Gallery Image">
-                                <a target="_blank" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                <img src="assets/img/gallery/g4.jpg" alt="Gallery Image">
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
                             </div>
                             <div class="gallery-thumb">
                                 <img src="assets/img/gallery/g5.jpg" alt="Gallery Image">
-                                <a target="_blank" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
                             </div>
                             <div class="gallery-thumb">
                                 <img src="assets/img/gallery/g6.jpg" alt="Gallery Image">
-                                <a target="_blank" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/g7.jpg" alt="Gallery Image">
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/g8.jpg" alt="Gallery Image">
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/g9.jpg" alt="Gallery Image">
+                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
+                                    {{-- <i class="fab fa-instagram"></i> --}}
+                                </a>
                             </div>
                         </div>
                     </div>

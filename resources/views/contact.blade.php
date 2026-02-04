@@ -7,6 +7,18 @@
 
 <body>
 
+    <style>
+        .contact-form .th-btn{
+            border-radius: 8px;
+        }
+        .contact-form .th-btn-whatsapp{
+            border-radius: 8px;
+        }
+        .bg-smoke {
+            background-color: #79DAF0 !important;
+        }
+    </style>
+
     @include('partials.loader')
     @php
         $page = 'contact';
@@ -52,7 +64,7 @@ Contact Area
                             </div> --}}
                             <div class="col-lg-7">
                                 <div>
-                                    <form action="mail.php" method="POST" class="contact-form style2 ajax-contact">
+                                    <form action="mail.php" method="POST" class="contact-form style2 ajax-contact bg-smoke">
                                         <h3 class="sec-title mb-30 text-capitalize">Book a tour</h3>
                                         <div class="row">
                                             <div class="col-12 form-group">
