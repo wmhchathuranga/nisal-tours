@@ -25,9 +25,7 @@
     @endphp
     @include('partials.menu')
 
-    <!--==============================
-    Breadcumb
-============================== -->
+    
     <div class="breadcumb-wrapper" style="background-position:center;" data-bg-src="{{ asset('assets/img/hero/hero_bg_3_5.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
@@ -38,9 +36,32 @@
                 </ul>
             </div>
         </div>
-    </div><!--==============================
-Contact Area
-==============================-->
+    </div>
+    
+
+    {{-- modal --}}
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body p-5">
+    
+                    {{-- Success Animation --}}
+                    <div class="success-animation mb-4">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+    
+                    {{-- Success Message --}}
+                    <h3 class="fw-bold mb-3">You can start conversation now!</h3>
+                    <p class="mb-0" id="success-message"></p>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="space">
         <div class="container">
@@ -64,7 +85,8 @@ Contact Area
                             </div> --}}
                             <div class="col-lg-7">
                                 <div>
-                                    <form action="mail.php" method="POST" class="contact-form style2 ajax-contact bg-smoke">
+                                    <form method="POST" action="{{ route('contactform.submit') }}" id="contact-form" class="contact-form style2 ajax-contact bg-smoke">
+                                        @csrf
                                         <h3 class="sec-title mb-30 text-capitalize">Book a tour</h3>
                                         <div class="row">
                                             <div class="col-12 form-group">
@@ -73,7 +95,7 @@ Contact Area
                                                 <img src="assets/img/icon/user.svg" alt="">
                                             </div>
                                             <div class="col-12 form-group">
-                                                <input type="email" class="form-control" name="email3" id="email3"
+                                                <input type="email" class="form-control" name="email" id="email"
                                                     placeholder="Your Mail">
                                                 <img src="assets/img/icon/mail.svg" alt="">
                                             </div>
@@ -93,12 +115,12 @@ Contact Area
                                                 <img src="assets/img/icon/chat.svg" alt="">
                                             </div>
                                             <div class="form-btn col-12 mt-24">
-                                                <button type="submit" class="th-btn-whatsapp">
+                                                <button type="submit" id="submit-btn" class="th-btn-whatsapp">
                                                     <i class="fab fa-whatsapp me-2 text-white"></i> Send message
                                             </button>
                                             </div>
                                         </div>
-                                        <p class="form-messages mb-0 mt-3"></p>
+                                        {{-- <p class="form-messages mb-0 mt-3"></p> --}}
                                     </form>
                                 </div>
                             </div>
@@ -147,10 +169,7 @@ Contact Area
                 </div>
             </div>
         </div>
-    </div><!--==============================
-Video Area
-==============================-->
-
+    </div>
     
 
     <!--============================== Map Area ==============================-->
@@ -172,6 +191,57 @@ Video Area
 
     <!--========== All Js File =========== -->
     @include('partials.scripts')
+
+
+    <script>
+
+        let contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let modal = document.getElementById('successModal');
+            let submitBtn = contactForm.querySelector('#submit-btn');
+            let successMessageElem = modal.querySelector('#success-message');
+            let formData = new FormData(this);
+    
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Please wait...';
+    
+            fetch("{{ route('contactform.submit') }}", {
+                    method: "POST",
+                    headers: {
+                        "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
+                    },
+                    body: formData
+                })
+                .then(res => res.json())
+                .then(data => {
+                    
+                    if (data.success) {
+    
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = `<i class="fab fa-whatsapp me-2"></i> Get Quotation`;
+                        
+                        successMessageElem.textContent = data.message;
+                        let bootstrapModal = new bootstrap.Modal(modal);
+                        bootstrapModal.show();
+    
+                        var whatsappLink = data.whatsapp_link;
+                        var a = document.createElement('a');
+                        if (whatsappLink) {
+                            a.href = whatsappLink;
+                            a.target = '_blank';
+                            setTimeout(function() {
+                                bootstrapModal.hide();
+                                contactForm.reset();
+                                a.click();
+                            }, 2500);
+                        }
+                    }
+                })
+                .catch(err => console.error(err));
+        });
+
+    </script>
 
 </body>
 

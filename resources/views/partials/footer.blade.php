@@ -1,47 +1,47 @@
 <!--============================== Footer Area ==============================-->
 <footer class="footer-wrapper bg-title footer-layout2">
 
-<style>
-    .sidebar-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px; /* adjust spacing if needed */
-    width: 100%;
-}
-
-.sidebar-gallery .gallery-thumb {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 2 / 1.5; /* perfect square */
-    overflow: hidden;
-}
-
-.sidebar-gallery .gallery-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Instagram icon overlay (optional polish) */
-.sidebar-gallery .gallery-btn {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background: rgba(0,0,0,0.35); */
-    color: #fff;
-    font-size: 18px;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.sidebar-gallery .gallery-thumb:hover .gallery-btn {
-    opacity: 1;
-}
-
-</style>
+    <style>
+        .sidebar-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px; /* adjust spacing if needed */
+            width: 100%;
+        }
+        
+        .sidebar-gallery .gallery-thumb {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 2 / 1.5; /* perfect square */
+            overflow: hidden;
+        }
+        
+        .sidebar-gallery .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Instagram icon overlay (optional polish) */
+        .sidebar-gallery .gallery-btn {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: rgba(0,0,0,0.35); */
+            color: #fff;
+            font-size: 18px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        
+        .sidebar-gallery .gallery-thumb:hover .gallery-btn {
+            opacity: 1;
+        }
+            
+    </style>
 
     <div class="widget-area">
         <div class="container">

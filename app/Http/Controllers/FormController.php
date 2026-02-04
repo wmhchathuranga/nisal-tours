@@ -208,4 +208,34 @@ class FormController extends Controller
             'whatsapp_link' => $whatsappLink
         ]);
     }
+
+    public function handle_contactform(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'message' => 'required|string',
+        ]);
+        logger('Contact form submitted');
+
+        $messageText = "*NEW CONTACT REQUEST* \n\n" .
+            "*Name:* " . $validatedData['name'] . "\n" .
+            "*Email:* " . $validatedData['email'] . "\n\n" .
+            "*Message:*\n" . $validatedData['message'];
+
+        // URL-encode the message text
+        $encodedMessage = urlencode($messageText);
+
+        // Construct the WhatsApp API link
+        $whatsappLink = "https://wa.me/" . $this->whatsappNo . "?text=" . $encodedMessage;
+
+        logger('Generated WhatsApp Link: ' . $whatsappLink);
+
+        // return redirect()->back()->with('success', 'Your contact request has been submitted!')->with('whatsapp_link', $whatsappLink);
+        return response()->json([
+            'success' => true,
+            'message' => 'Your contact request has been submitted!',
+            'whatsapp_link' => $whatsappLink
+        ]);
+    }
 }

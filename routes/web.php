@@ -69,6 +69,7 @@ Route::get('/documentry', function () {
 
 // form submission
 Route::post('/tour-booking', [FormController::class, 'handle_TourBooking'])->name('tour-booking.submit');
+Route::post('/cotactform-submit', [FormController::class, 'handle_contactform'])->name('contactform.submit');
 Route::post('/accommodation-booking', [FormController::class, 'handle_AccommodationBooking'])->name('accommodation-booking.submit');
 
 
