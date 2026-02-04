@@ -9525,7 +9525,7 @@ heding animation  end
   position: relative;
   background-color: var(--title-color);
   background-position: left top;
-  padding: 163px 0;
+  padding: 230px 0 130px 0;
   overflow: hidden;
   text-align: center;
 }

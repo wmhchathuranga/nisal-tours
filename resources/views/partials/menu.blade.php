@@ -103,7 +103,7 @@
     
     
     <!--======= Header Area ===============-->
-    <header class="th-header header-layout1">
+    <header class="th-header header-layout1 position-absolute w-100">
         
         <div class="sticky-wrapper">
             <!-- Main Menu Area -->
