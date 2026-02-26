@@ -17,7 +17,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/sajeevan-balachandran-X57L65eg4AY-unsplash.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Horton Plains National Park</h1>

@@ -17,7 +17,8 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+{{-- <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg"> --}}
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp6828536-sigiriya-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Sigiriya Rock Fortress</h1>

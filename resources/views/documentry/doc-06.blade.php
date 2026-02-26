@@ -17,7 +17,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/16713.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Yala National Park</h1>

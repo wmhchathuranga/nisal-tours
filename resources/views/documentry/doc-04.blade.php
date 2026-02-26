@@ -17,7 +17,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp6545035-desktop-sri-lanka-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Wilpattu National Park</h1>

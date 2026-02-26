@@ -17,7 +17,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp8780766-tea-estate-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Nuwara Eliya – Little England</h1>

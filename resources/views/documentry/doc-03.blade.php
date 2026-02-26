@@ -17,7 +17,8 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+{{-- <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg"> --}}
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp7478286-kandy-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Kandy</h1>

@@ -25,7 +25,8 @@
                         </div>
                         <div class="container">
                             <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span>
+                                {{-- <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span> --}}
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make unforgetable memories with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Let’s make your best trip with us </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -42,7 +43,7 @@
                         </div>
                         <div class="container">
                             <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make unforgetable memories with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Natural Wonder of the world </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -59,7 +60,7 @@
                         </div>
                         <div class="container">
                             <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make unforgetable memories with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Explore beauty of the whole world </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -72,11 +73,11 @@
                 </div>
 
             </div>
-            <div class="th-swiper-custom">
+            {{-- <div class="th-swiper-custom">
                 <button data-slider-prev="#heroSlide1" class="slider-arrow slider-prev"><img src="assets/img/icon/right-arrow.svg" alt=""></button>
                 <div class="slider-pagination"></div>
                 <button data-slider-next="#heroSlide1" class="slider-arrow slider-next"><img src="assets/img/icon/left-arrow.svg" alt=""></button>
-            </div>
+            </div> --}}
 
         </div>
     </div>
@@ -211,11 +212,12 @@
         renderGallery();
         setInterval(renderGallery, 5000);
     </script> --}}
-
+    
 
     <div class="safe-gallery-wrapper space">
         <div class="title-area text-center">
-          <span class="sub-title">Make Your Tour More Fun</span>
+          {{-- <span class="sub-title">Make Your Tour More Fun</span> --}}
+          <span class="sub-title">Explore the beauty of Sri lanka.</span>
           <h2 class="sec-title">Recent Gallery</h2>
         </div>
         <div class="safe-gallery-area" id="safeGallery"></div>
