@@ -43,7 +43,7 @@
 
 
     <!--======== / Hero Section ========-->
-    <div class="breadcumb-wrapper" style="background-position:center;" data-bg-src="{{ asset('assets/img/hero/hero_bg_3_4.jpg') }}">
+    <div class="breadcumb-wrapper" style="background-position:center;" data-bg-src="{{ asset('assets/img/bg/yves-alarie-yaGheETUSK4-unsplash.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Our Services</h1>
@@ -505,10 +505,10 @@
                                     <div class="col-xl-7">
                                         <div class="img-box2">
                                             <div class="img1">
-                                                <img style="width: 585px;" src="assets/img/normal/about_1_1.jpg" alt="About">
+                                                <img style="width: 585px;" src="assets/img/normal/about_12-2.jpg" alt="About">
                                             </div>
                                             <div class="img2">
-                                                <img style="width:393px;" src="assets/img/normal/about_1_2.jpg" alt="About">
+                                                <img style="width:393px;" src="assets/img/normal/file1.jpg" alt="About">
                                                 {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
                                             </div>
                                         </div>
@@ -733,10 +733,10 @@
                                     <div class="col-xl-7">
                                         <div class="img-box2">
                                             <div class="img1">
-                                                <img style="width: 585px;" src="assets/img/normal/about_2_1.jpg" alt="About">
+                                                <img style="width: 585px;" src="assets/img/normal/byeee.png" alt="About">
                                             </div>
                                             <div class="img2">
-                                                <img style="width:393px;" src="assets/img/normal/about_2_2.jpg" alt="About">
+                                                <img style="width:393px;" src="assets/img/normal/39330.jpg" alt="About">
                                                 {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
                                             </div>
                                         </div>
@@ -1015,7 +1015,7 @@
                                         <div class="tour-box th-ani gsap-cursor h-100">
                                             <div class="tour-box_img global-img">
                                                 <img class="img-fluid w-100" style="height:274px; object-fit:cover;"
-                                                     src="assets/img/accommodation/03.jpg"
+                                                     src="assets/img/accommodation/LK15001ADC-01-E.jpg"
                                                      alt="Galle Fort Hotel">
                                             </div>
                                             <div class="tour-content">
@@ -1037,7 +1037,7 @@
                                         <div class="tour-box th-ani gsap-cursor h-100">
                                             <div class="tour-box_img global-img">
                                                 <img class="img-fluid w-100" style="height:274px; object-fit:cover;"
-                                                     src="assets/img/accommodation/04.jpg"
+                                                     src="assets/img/accommodation/LK15007EF3-01-E.jpg"
                                                      alt="The Fortress Resort & Spa">
                                             </div>
                                             <div class="tour-content">
@@ -1059,7 +1059,7 @@
                                         <div class="tour-box th-ani gsap-cursor h-100">
                                             <div class="tour-box_img global-img">
                                                 <img class="img-fluid w-100" style="height:274px; object-fit:cover;"
-                                                     src="assets/img/accommodation/05.jpg"
+                                                     src="assets/img/accommodation/Untitled-design-3.jpg"
                                                      alt="Santani Wellness Resort">
                                             </div>
                                             <div class="tour-content">
@@ -1081,7 +1081,7 @@
                                         <div class="tour-box th-ani gsap-cursor h-100">
                                             <div class="tour-box_img global-img">
                                                 <img class="img-fluid w-100" style="height:274px; object-fit:cover;"
-                                                     src="assets/img/accommodation/06.jpg"
+                                                     src="assets/img/accommodation/LK15005A93-03-E.jpg"
                                                      alt="The Grand Hotel">
                                             </div>
                                             <div class="tour-content">
@@ -1103,7 +1103,7 @@
                                         <div class="tour-box th-ani gsap-cursor h-100">
                                             <div class="tour-box_img global-img">
                                                 <img class="img-fluid w-100" style="height:274px; object-fit:cover;"
-                                                     src="assets/img/accommodation/07.jpg"
+                                                     src="assets/img/accommodation/LK1500E888-11-E.jpg"
                                                      alt="Jetwing Lagoon">
                                             </div>
                                             <div class="tour-content">
@@ -1125,7 +1125,7 @@
                                         <div class="tour-box th-ani gsap-cursor h-100">
                                             <div class="tour-box_img global-img">
                                                 <img class="img-fluid w-100" style="height:274px; object-fit:cover;"
-                                                     src="assets/img/accommodation/08.jpg"
+                                                     src="assets/img/accommodation/blue-lagoon-1-1.jpg"
                                                      alt="Uga Chena Huts">
                                             </div>
                                             <div class="tour-content">

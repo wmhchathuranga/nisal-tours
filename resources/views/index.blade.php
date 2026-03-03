@@ -7,17 +7,18 @@
 
 <body>
 
-    @include('partials.loader') 
+    @include('partials.loader')
 
     @php
-        $page = 'home'
+        $page = 'home';
     @endphp
     @include('partials.menu')
 
 
     <!--======== / Hero Section ========-->
     <div class="th-hero-wrapper hero-1" id="hero">
-        <div class="swiper th-slider hero-slider-1" id="heroSlide1" data-slider-options='{"effect":"fade","menu": ["", "", ""],"heroSlide1": {"swiper-container": {"pagination": {"el": ".swiper-pagination", "clickable": true }}}}'>
+        <div class="swiper th-slider hero-slider-1" id="heroSlide1"
+            data-slider-options='{"effect":"fade","menu": ["", "", ""],"heroSlide1": {"swiper-container": {"pagination": {"el": ".swiper-pagination", "clickable": true }}}}'>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
@@ -26,7 +27,8 @@
                         <div class="container">
                             <div class="hero-style1">
                                 {{-- <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span> --}}
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make unforgetable memories with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make
+                                    unforgetable memories with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Let’s make your best trip with us </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -43,7 +45,8 @@
                         </div>
                         <div class="container">
                             <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make unforgetable memories with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make
+                                    unforgetable memories with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Natural Wonder of the world </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -60,7 +63,8 @@
                         </div>
                         <div class="container">
                             <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make unforgetable memories with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make
+                                    unforgetable memories with us</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Explore beauty of the whole world </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -82,6 +86,99 @@
         </div>
     </div>
 
+
+    <!--======== Discover Sri Lanka Wonders With a Trust =========-->
+    <div class="feature-area-3 space">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">Services That We Provide</span>
+                <h2 class="sec-title">Discover Sri Lanka Wonders With a Trust</h2>
+            </div>
+
+            <div class="row justify-content-center gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            {{-- <i class="fas fa-car-side"></i> --}}
+                            <i class="fa-light fa-suitcase-rolling"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Tour Packages</h4>
+                            {{-- <p class="feature-card-text">
+                                Travel in comfort and safety across the island with our <strong>modern, air-conditioned
+                                    fleet</strong> and professional, trusted drivers, ensuring a smooth journey every
+                                time.
+                            </p> --}}
+                            <p>Explore the island’s hidden treasures through our thoughtfully designed journeys,
+                                blending iconic landmarks with authentic local experiences.</p>
+                        </div>
+                        <div class="text-center mt-45">
+                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            {{-- <i class="fas fa-headset"></i> --}}
+                            <i class="fa-light fa-list-timeline"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Customize Tour</h4>
+                            <p class="feature-card-text">
+                                Design your own adventure with our flexible itineraries, tailored to match your unique
+                                interests, pace, and travel style.
+                            </p>
+                        </div>
+                        <div class="text-center mt-45">
+                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fa-light fa-plane-arrival"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Arrival Departure</h4>
+                            <p class="feature-card-text">
+                                Begin and end your journey with ease through our punctual airport transfers and seamless
+                                logistics for a stress-free transition.
+                            </p>
+                        </div>
+                        <div class="text-center mt-45">
+                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fa-light fa-hotel"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Accommodation</h4>
+                            <p class="feature-card-text">
+                                Find your perfect sanctuary with our handpicked stays, offering authentic hospitality
+                                and the ultimate comfort during your island escape.
+                            </p>
+                        </div>
+                        <div class="text-center mt-45">
+                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
 
     <!-- ======== Fixed Puzzle Gallery ======== -->
     {{-- <div class="safe-gallery-wrapper">
@@ -212,13 +309,13 @@
         renderGallery();
         setInterval(renderGallery, 5000);
     </script> --}}
-    
+
 
     <div class="safe-gallery-wrapper space">
         <div class="title-area text-center">
-          {{-- <span class="sub-title">Make Your Tour More Fun</span> --}}
-          <span class="sub-title">Explore the beauty of Sri lanka.</span>
-          <h2 class="sec-title">Recent Gallery</h2>
+            {{-- <span class="sub-title">Make Your Tour More Fun</span> --}}
+            <span class="sub-title">Explore the beauty of Sri lanka.</span>
+            <h2 class="sec-title">Recent Gallery</h2>
         </div>
         <div class="safe-gallery-area" id="safeGallery"></div>
     </div>
@@ -228,17 +325,21 @@
             max-width: 1200px;
             margin: auto;
         }
+
         .safe-gallery-title {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .safe-gallery-title span {
             font-size: 14px;
             color: #777;
         }
+
         .safe-gallery-title h2 {
             font-size: 32px;
         }
+
         .safe-gallery-area {
             width: 100%;
             height: 600px;
@@ -248,10 +349,12 @@
             gap: 4px;
             position: relative;
         }
+
         .safe-box {
             overflow: hidden;
             border-radius: 4px;
         }
+
         .safe-box img {
             width: 100%;
             height: 100%;
@@ -259,6 +362,7 @@
             display: block;
             transition: transform 0.4s ease;
         }
+
         .safe-box:hover img {
             transform: scale(1.06);
         }
@@ -269,26 +373,26 @@
         .explore-slider .swiper-wrapper {
             align-items: stretch;
         }
-        
+
         .explore-slider .swiper-slide {
             height: auto;
             display: flex;
         }
-        
+
         /* Card fills slide */
         .explore-slider .gallery-card {
             display: flex;
             flex-direction: column;
             width: 100%;
         }
-        
+
         /* Content fills remaining space */
         .explore-slider .destination-content {
             display: flex;
             flex-direction: column;
             flex: 1;
         }
-        
+
         /* Button always at same bottom line */
         .explore-slider .destination-content .th-btn-div {
             margin-top: auto;
@@ -301,9 +405,8 @@
         .destination-content .th-btn {
             padding: 10px 20px;
         }
-
     </style>
-    
+
     <script>
         // ===== IMAGES =====
         const images = [
@@ -322,32 +425,50 @@
             "assets/img/gallery/g13.jpg",
             "assets/img/gallery/g14.jpg",
         ];
-            
+
         // ===== LAYOUTS (ALL 9 BOXES) =====
         const layouts = [
             [
-            [1,2,1,1],[3,1,1,2],[4,2,1,1],
-            [1,1,2,2],[2,1,2,1],[4,1,2,2],
-            [5,1,2,1],[2,2,3,1],[5,1,3,1]
+                [1, 2, 1, 1],
+                [3, 1, 1, 2],
+                [4, 2, 1, 1],
+                [1, 1, 2, 2],
+                [2, 1, 2, 1],
+                [4, 1, 2, 2],
+                [5, 1, 2, 1],
+                [2, 2, 3, 1],
+                [5, 1, 3, 1]
             ],
             [
-            [1,1,1,2],[2,2,1,1],[4,2,1,2],
-            [2,1,2,2],[3,1,2,1],
-            [1,1,3,1],[3,1,3,1],[4,1,3,1],[5,1,3,1]
+                [1, 1, 1, 2],
+                [2, 2, 1, 1],
+                [4, 2, 1, 2],
+                [2, 1, 2, 2],
+                [3, 1, 2, 1],
+                [1, 1, 3, 1],
+                [3, 1, 3, 1],
+                [4, 1, 3, 1],
+                [5, 1, 3, 1]
             ],
             [
-            [1,2,1,2],[3,1,1,1],[4,2,1,1],
-            [3,1,2,2],[4,1,2,2],
-            [5,1,2,1],[1,1,3,1],[2,1,3,1],[5,1,3,1]
+                [1, 2, 1, 2],
+                [3, 1, 1, 1],
+                [4, 2, 1, 1],
+                [3, 1, 2, 2],
+                [4, 1, 2, 2],
+                [5, 1, 2, 1],
+                [1, 1, 3, 1],
+                [2, 1, 3, 1],
+                [5, 1, 3, 1]
             ]
         ];
-        
+
         const gallery = document.getElementById("safeGallery");
         const boxCount = 9;
-        
+
         // shuffle helper
         const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
-        
+
         // ===== CREATE BOXES ONCE =====
         const boxes = [];
         const shuffledImages = shuffle(images);
@@ -362,56 +483,56 @@
             gallery.appendChild(box);
             boxes.push(box);
         }
-        
+
         // ===== FLIP ANIMATION FUNCTION =====
         function animateLayout(layout) {
             if (!layout || layout.length !== boxCount) return;
-            
+
             // FIRST: Capture old positions
             const firstRects = boxes.map(b => b.getBoundingClientRect());
-            
+
             // APPLY NEW LAYOUT
             boxes.forEach((box, i) => {
-            const l = layout[i];
-            box.style.gridColumn = `${l[0]} / span ${l[1]}`;
-            box.style.gridRow = `${l[2]} / span ${l[3]}`;
+                const l = layout[i];
+                box.style.gridColumn = `${l[0]} / span ${l[1]}`;
+                box.style.gridRow = `${l[2]} / span ${l[3]}`;
             });
-            
+
             // LAST: Capture new positions
             const lastRects = boxes.map(b => b.getBoundingClientRect());
-            
+
             // INVERT + PLAY
             boxes.forEach((box, i) => {
-            const dx = firstRects[i].left - lastRects[i].left;
-            const dy = firstRects[i].top - lastRects[i].top;
-            const dw = firstRects[i].width / lastRects[i].width;
-            const dh = firstRects[i].height / lastRects[i].height;
-            
-            // Remove any existing transition immediately
-            box.style.transition = 'none';
-            
-            // Set initial transform (inverted position)
-            box.style.transform = `translate(${dx}px, ${dy}px) scale(${dw}, ${dh})`;
-            
-            // Force a reflow to ensure the transform is applied
-            box.offsetHeight;
-            
-            // Add transition and animate to final position
-            box.style.transition = 'transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-            box.style.transform = 'translate(0, 0) scale(1, 1)';
+                const dx = firstRects[i].left - lastRects[i].left;
+                const dy = firstRects[i].top - lastRects[i].top;
+                const dw = firstRects[i].width / lastRects[i].width;
+                const dh = firstRects[i].height / lastRects[i].height;
+
+                // Remove any existing transition immediately
+                box.style.transition = 'none';
+
+                // Set initial transform (inverted position)
+                box.style.transform = `translate(${dx}px, ${dy}px) scale(${dw}, ${dh})`;
+
+                // Force a reflow to ensure the transform is applied
+                box.offsetHeight;
+
+                // Add transition and animate to final position
+                box.style.transition = 'transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                box.style.transform = 'translate(0, 0) scale(1, 1)';
             });
         }
-        
+
         // ===== INIT =====
         let currentLayoutIndex = 0;
         animateLayout(layouts[currentLayoutIndex]);
-        
+
         // ===== ROTATE EVERY 5s - ALWAYS PICK A DIFFERENT LAYOUT =====
         setInterval(() => {
             // Get next layout index (different from current)
             const availableIndices = layouts.map((_, i) => i).filter(i => i !== currentLayoutIndex);
             currentLayoutIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
-            
+
             animateLayout(layouts[currentLayoutIndex]);
         }, 10000);
     </script>
@@ -447,178 +568,189 @@
                             "1200": { "slidesPerView": 4 }
                         }
                     }'>
-            
+
                     <div class="swiper-wrapper">
-            
+
                         <!-- Slide 01 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-            
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
-                                         alt="Sigiriya Rock Fortress">
+                                    <a href="{{ route('documentry', ['doc_id' => '01']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                                            alt="Sigiriya Rock Fortress">
+                                    </a>
                                 </div>
-            
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '01']) }}">
                                             Sigiriya Rock Fortress
                                         </a>
                                     </h3>
-            
+
                                     <p class="destination-details">
                                         Sigiriya Rock Fortress is an ancient palace and UNESCO World Heritage Site,
                                         famous for its frescoes and breathtaking summit views.
                                     </p>
-            
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '01']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
 
                                     </div>
                                 </div>
-            
+
                             </div>
                         </div>
-            
+
                         <!-- Slide 02 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-            
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/galle_fort.jpg') }}"
-                                         alt="Galle Fort">
+                                    <a href="{{ route('documentry', ['doc_id' => '02']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/galle_fort.jpg') }}" alt="Galle Fort">
+                                    </a>
                                 </div>
-            
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '02']) }}">
                                             Galle Fort
                                         </a>
                                     </h3>
-            
+
                                     <p class="destination-details">
                                         A beautifully preserved Dutch-era fortress with cobbled streets,
                                         ramparts, cafes, and boutique shops.
                                     </p>
-            
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '02']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-            
+
                             </div>
                         </div>
-            
+
                         <!-- Slide 03 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-            
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/kandy.jpg') }}"
-                                         alt="Kandy">
+                                    <a href="{{ route('documentry', ['doc_id' => '03']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/kandy.jpg') }}" alt="Kandy">
+                                    </a>
                                 </div>
-            
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '03']) }}">
                                             Kandy – The Sacred Heart of Sri Lanka
                                         </a>
                                     </h3>
-            
+
                                     <p class="destination-details">
                                         Home to the Temple of the Tooth Relic, Kandy blends cool-climate hills,
                                         culture, and tradition.
                                     </p>
-            
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '03']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-            
+
                             </div>
                         </div>
-            
+
                         <!-- Slide 04 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-            
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
-                                         alt="Wilpattu National Park">
+                                    <a href="{{ route('documentry', ['doc_id' => '04']) }}">
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
+                                            alt="Wilpattu National Park">
+                                    </a>
                                 </div>
-            
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '04']) }}">
                                             Wilpattu National Park
                                         </a>
                                     </h3>
-            
+
                                     <p class="destination-details">
                                         Sri Lanka’s largest national park, famous for natural lakes,
                                         leopards, and untouched wilderness.
                                     </p>
-            
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '04']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-            
+
                             </div>
                         </div>
 
                         <!-- Slide 05 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-                    
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
-                                         alt="Ella">
+                                    <a href="{{ route('documentry', ['doc_id' => '05']) }}">
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
+                                            alt="Ella">
+                                    </a>
                                 </div>
-                    
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '05']) }}">
                                             Ella – Hill Country Escape
                                         </a>
                                     </h3>
-                    
+
                                     <p class="destination-details">
                                         Surrounded by misty mountains, Ella is famous for tea plantations,
                                         waterfalls, hiking trails, and breathtaking views.
                                     </p>
-                    
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '05']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-                    
+
                             </div>
                         </div>
-            
+
                     </div>
                 </div>
-            
+
                 <!-- Navigation -->
                 {{-- <div class="slider-arrow slider-prev text-center">
                     <i class="fal fa-long-arrow-left"></i>
@@ -626,7 +758,7 @@
                 <div class="slider-arrow slider-next text-center">
                     <i class="fal fa-long-arrow-right"></i>
                 </div> --}}
-            
+
             </div>
 
 
@@ -652,171 +784,185 @@
                     }'>
 
                     <div class="swiper-wrapper">
-                        
+
                         <!-- Slide 06 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-                    
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/Yala National Park.jpg') }}"
-                                         alt="Yala National Park">
+                                    <a href="{{ route('documentry', ['doc_id' => '06']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/Yala National Park.jpg') }}"
+                                            alt="Yala National Park">
+                                    </a>
                                 </div>
-                    
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '06']) }}">
                                             Yala National Park
                                         </a>
                                     </h3>
-                    
+
                                     <p class="destination-details">
                                         One of the best places in the world to spot leopards,
                                         Yala offers thrilling safaris and rich wildlife.
                                     </p>
-                    
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '06']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-                    
+
                             </div>
                         </div>
-                    
+
                         <!-- Slide 07 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-                    
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
-                                         alt="Mirissa Beach">
+                                    <a href="{{ route('documentry', ['doc_id' => '07']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
+                                            alt="Mirissa Beach">
+                                    </a>
                                 </div>
-                    
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '07']) }}">
                                             Mirissa Beach
                                         </a>
                                     </h3>
-                    
+
                                     <p class="destination-details">
                                         A tropical beach paradise known for whale watching,
                                         golden sands, and stunning sunsets.
                                     </p>
-                    
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '07']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-                    
+
                             </div>
                         </div>
-                    
+
                         <!-- Slide 08 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-                    
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/nuwara eliya – little england.jpg') }}"
-                                         alt="Nuwara Eliya">
+                                    <a href="{{ route('documentry', ['doc_id' => '08']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/nuwara eliya – little england.jpg') }}"
+                                            alt="Nuwara Eliya">
+                                    </a>
                                 </div>
-                    
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '08']) }}">
                                             Nuwara Eliya – Little England
                                         </a>
                                     </h3>
-                    
+
                                     <p class="destination-details">
                                         Known for its cool climate and colonial charm,
                                         Nuwara Eliya is surrounded by lush tea estates.
                                     </p>
-                    
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '08']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-                    
+
                             </div>
                         </div>
 
                         <!-- Slide 09 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-            
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/colombo-2.jpg') }}"
-                                         alt="Colombo">
+                                    <a href="{{ route('documentry', ['doc_id' => '09']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/colombo-2.jpg') }}" alt="Colombo">
+                                    </a>
                                 </div>
-            
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '09']) }}">
                                             Colombo
                                         </a>
                                     </h3>
-            
+
                                     <p class="destination-details">
                                         The heart of Sri Lanka, Colombo is a bustling city with a rich history.
                                     </p>
-            
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '09']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-            
+
                             </div>
                         </div>
 
                         <!-- Slide 10 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
-                    
+
                                 <div class="box-img global-img">
-                                    <img style="height:400px;object-fit:cover"
-                                         src="{{ asset('assets/img/explore/horton-plains.jpg') }}"
-                                         alt="horton-plains">
+                                    <a href="{{ route('documentry', ['doc_id' => '10']) }}">
+
+                                        <img style="height:400px;object-fit:cover"
+                                            src="{{ asset('assets/img/explore/horton-plains.jpg') }}"
+                                            alt="horton-plains">
+                                    </a>
                                 </div>
-                    
+
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
                                         <a href="{{ route('documentry', ['doc_id' => '10']) }}">
                                             Horton Plains National Park
                                         </a>
                                     </h3>
-                    
+
                                     <p class="destination-details">
                                         A UNESCO World Heritage Site, Horton Plains is home to
                                         the largest wildlife reserve in Sri Lanka.
                                     </p>
-                    
+
                                     <div class="th-btn-div">
                                         <a href="{{ route('documentry', ['doc_id' => '10']) }}"
-                                           class="th-btn style-border">
+                                            class="th-btn style-border">
                                             View More
                                         </a>
                                     </div>
                                 </div>
-                    
+
                             </div>
                         </div>
-                    
+
                     </div>
 
                 </div>
@@ -829,78 +975,83 @@
     </section>
 
 
-    <!--======== Discover Sri Lanka Wonders With a Trust =========-->
+    {{-- <!--======== Discover Sri Lanka Wonders With a Trust =========-->
     <div class="feature-area-3 space">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title">Your Trusted Partner in Travel</span>
                 <h2 class="sec-title">Discover Sri Lanka Wonders With a Trust</h2>
             </div>
-            
-                <div class="row justify-content-center gy-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card-3">
-                            <div class="feature-card-icon">
-                                <i class="fas fa-car-side"></i> 
-                            </div>
-                            <div class="feature-card-content">
-                                <h4 class="feature-card-title">Premium Transport Service</h4>
-                                <p class="feature-card-text">
-                                    Travel in comfort and safety across the island with our <strong>modern, air-conditioned fleet</strong> and professional, trusted drivers, ensuring a smooth journey every time.
-                                </p>
-                            </div>
+
+            <div class="row justify-content-center gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Premium Transport Service</h4>
+                            <p class="feature-card-text">
+                                Travel in comfort and safety across the island with our <strong>modern, air-conditioned
+                                    fleet</strong> and professional, trusted drivers, ensuring a smooth journey every
+                                time.
+                            </p>
                         </div>
                     </div>
-                        
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card-3">
-                            <div class="feature-card-icon">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <div class="feature-card-content">
-                                <h4 class="feature-card-title">24/7 Dedicated Support</h4>
-                                <p class="feature-card-text">
-                                    Travel with peace of mind knowing our dedicated support team is available around the clock to assist you with any emergency or query.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card-3">
-                            <div class="feature-card-icon">
-                                <i class="fas fa-shield-alt"></i> 
-                            </div>
-                            <div class="feature-card-content">
-                                <h4 class="feature-card-title">Flexible & Secure Booking</h4>
-                                <p class="feature-card-text">
-                                    Enjoy hassle-free travel planning with our flexible cancellation policies and secure online payment gateway trusted by thousands of travelers.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <!-- New Card 4 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card-3">
-                            <div class="feature-card-icon">
-                                <i class="fas fa-map-marked-alt"></i>
-                            </div>
-                            <div class="feature-card-content">
-                                <h4 class="feature-card-title">Personalized Travel Experiences</h4>
-                                <p class="feature-card-text">
-                                    Create your dream itinerary with our customized travel plans, curated activities, and insider tips to explore the island like a local.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                
                 </div>
-    
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">24/7 Dedicated Support</h4>
+                            <p class="feature-card-text">
+                                Travel with peace of mind knowing our dedicated support team is available around the
+                                clock to assist you with any emergency or query.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Flexible & Secure Booking</h4>
+                            <p class="feature-card-text">
+                                Enjoy hassle-free travel planning with our flexible cancellation policies and secure
+                                online payment gateway trusted by thousands of travelers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Personalized Travel Experiences</h4>
+                            <p class="feature-card-text">
+                                Create your dream itinerary with our customized travel plans, curated activities, and
+                                insider tips to explore the island like a local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
-    </div>
-        
+    </div> --}}
+
     <!--========== Testimonial Area ============-->
     <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">
@@ -914,7 +1065,9 @@
                     <div class="testi-review" data-bg-src="assets/img/bg/map.png">
                         <div class="testi-box hover-item  item-active">
                             <div class="testi-box_content feature-card-active-wrap">
-                                <p class="testi-box_text">“A home that perfectly blends sustainability with luxury until discovered Ecoland Residence. The moment I stepped community, I knew it was where I wanted to live.”</p>
+                                <p class="testi-box_text">“A home that perfectly blends sustainability with luxury
+                                    until discovered Ecoland Residence. The moment I stepped community, I knew it was
+                                    where I wanted to live.”</p>
                                 <div class="testi-box_review">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -937,7 +1090,9 @@
 
                         <div class="testi-box hover-item  ">
                             <div class="testi-box_content feature-card-active-wrap">
-                                <p class="testi-box_text">“The home boasts sleek, contemporary architecture with clean lines and expansive windows, allowing natural light to flood the interiors It incorporates passive design principles”</p>
+                                <p class="testi-box_text">“The home boasts sleek, contemporary architecture with clean
+                                    lines and expansive windows, allowing natural light to flood the interiors It
+                                    incorporates passive design principles”</p>
                                 <div class="testi-box_review">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -960,7 +1115,9 @@
 
                         <div class="testi-box hover-item  ">
                             <div class="testi-box_content feature-card-active-wrap">
-                                <p class="testi-box_text">“Solar panels adorn the roof, harnessing renewable energy to power the home and even feed excess electricity back into the grid. High-performance insulation and triple-glazed”</p>
+                                <p class="testi-box_text">“Solar panels adorn the roof, harnessing renewable energy to
+                                    power the home and even feed excess electricity back into the grid. High-performance
+                                    insulation and triple-glazed”</p>
                                 <div class="testi-box_review">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -983,7 +1140,9 @@
 
                         <div class="testi-box hover-item  ">
                             <div class="testi-box_content feature-card-active-wrap">
-                                <p class="testi-box_text">A sophisticated rainwater harvesting system collects and filters rainwater for irrigation and non-potable uses, reducing reliance on municipal water sources. Greywater systems</p>
+                                <p class="testi-box_text">A sophisticated rainwater harvesting system collects and
+                                    filters rainwater for irrigation and non-potable uses, reducing reliance on
+                                    municipal water sources. Greywater systems</p>
                                 <div class="testi-box_review">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -1006,7 +1165,9 @@
 
                         <div class="testi-box hover-item  ">
                             <div class="testi-box_content feature-card-active-wrap">
-                                <p class="testi-box_text">Throughout the interior, eco-friendly materials like reclaimed wood, bamboo flooring, and recycled glass countertops create a luxurious yet sustainable ambiance.</p>
+                                <p class="testi-box_text">Throughout the interior, eco-friendly materials like
+                                    reclaimed wood, bamboo flooring, and recycled glass countertops create a luxurious
+                                    yet sustainable ambiance.</p>
                                 <div class="testi-box_review">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -1053,7 +1214,7 @@
         let bookingForms = document.querySelectorAll('.th-form');
 
         bookingForms.forEach(bookingForm => {
-            
+
             // let bookingForm = document.getElementById('custom-tour-booking-form');
             bookingForm.addEventListener('submit', function(e) {
                 e.preventDefault();
@@ -1061,10 +1222,10 @@
                 let submitBtn = bookingForm.querySelector('#submit-btn');
                 let successMessageElem = modal.querySelector('#success-message');
                 let formData = new FormData(this);
-        
+
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = 'Please wait...';
-        
+
                 fetch("{{ route('tour-booking.submit') }}", {
                         method: "POST",
                         headers: {
@@ -1075,13 +1236,13 @@
                     .then(res => res.json())
                     .then(data => {
                         if (data.success) {
-        
+
                             submitBtn.disabled = false;
                             submitBtn.innerHTML = `<i class="fab fa-whatsapp me-2"></i> Get Quotation`;
                             successMessageElem.textContent = data.message;
                             let bootstrapModal = new bootstrap.Modal(modal);
                             bootstrapModal.show();
-        
+
                             var whatsappLink = data.whatsapp_link;
                             var a = document.createElement('a');
                             if (whatsappLink) {
@@ -1099,7 +1260,6 @@
             });
 
         });
-
     </script>
 
 
