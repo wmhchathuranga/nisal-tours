@@ -113,7 +113,8 @@
                                 blending iconic landmarks with authentic local experiences.</p>
                         </div>
                         <div class="text-center mt-45">
-                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                                    class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +133,8 @@
                             </p>
                         </div>
                         <div class="text-center mt-45">
-                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                                    class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +152,8 @@
                             </p>
                         </div>
                         <div class="text-center mt-45">
-                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                                    class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +172,8 @@
                             </p>
                         </div>
                         <div class="text-center mt-45">
-                            <button id="show-form-btn" class="th-btn style3 th-icon">See more</button>
+                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                                    class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
                 </div>
