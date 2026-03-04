@@ -733,10 +733,10 @@
                                     <div class="col-xl-7">
                                         <div class="img-box2">
                                             <div class="img1">
-                                                <img style="width: 585px;" src="assets/img/normal/byeee.png" alt="About">
+                                                <img style="width: 585px;" src="assets/img/normal/byee2.png" alt="About">
                                             </div>
                                             <div class="img2">
-                                                <img style="width:393px;" src="assets/img/normal/39330.jpg" alt="About">
+                                                <img style="width:400px; height:300px;" src="assets/img/normal/39330.jpg" alt="About">
                                                 {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
                                             </div>
                                         </div>
