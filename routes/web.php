@@ -44,9 +44,33 @@ Route::get('/contact', function () {
 })->name('contact');
 
 // resorts
+// Resorts Dynamic Route
 Route::get('/resort-detail', function () {
-    return view('resort-details-01');
-})->name('resort-details-01');
+$resort_id = request()->query('id', '01'); 
+    
+    $resort_blade = 'resort-details-' . $resort_id;
+
+    return view($resort_blade);
+})->name('resort-details');
+// Route::get('/resort-detail', function () {
+//     return view('resort-details-01');
+// })->name('resort-details-01');
+
+// Route::get('/resort-detail-02', function () {
+//     return view('resort-details-02');
+// })->name('resort-details-02');
+
+// Route::get('/resort-detail-03', function () {
+//     return view('resort-details-03');
+// })->name('resort-details-03');
+
+// Route::get('/resort-detail-04', function () {
+//     return view('resort-details-04');
+// })->name('resort-details-04');
+
+// Route::get('/resort-detail-05', function () {
+//     return view('resort-details-05');
+// })->name('resort-details-05');
 
 
 //  tours
