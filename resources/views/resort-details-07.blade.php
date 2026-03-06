@@ -34,7 +34,7 @@
     <div class="breadcumb-wrapper " data-bg-src="assets/img/hero/hero_bg_3_3.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Resort Details</h1>
+                <h1 class="breadcumb-title">Jetwing Lagoon</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Resort Details</li>
@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="page-single">
-                        <div class="service-img global-img"><img src="assets/img/accommodation/arces.png"
+                        <div class="service-img global-img"><img src="assets/img/accommodation/LK1500E888-11-E.jpg"
                                 alt=""></div>
                         <div class="page-content d-block">
                             <h3 class="box-title mt-20">Jetwing Lagoon</h3>

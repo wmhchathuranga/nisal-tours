@@ -30,10 +30,10 @@
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/hero/hero_bg_3_3.jpg">
+    <div class="breadcumb-wrapper " data-bg-src="assets/img/accommodation/98/98-spa-2-scaled.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Resort Details</h1>
+                <h1 class="breadcumb-title">98 Acres Resort & Spa</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Resort Details</li>
