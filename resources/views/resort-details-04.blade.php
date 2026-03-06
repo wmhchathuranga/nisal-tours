@@ -100,8 +100,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 312px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/034.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/034.jpg"
+                                                src="assets/img/accommodation/koggala/the-fortress.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/koggala/the-fortress.jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
@@ -111,8 +111,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 536px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/56.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/56.jpg"
+                                                src="assets/img/accommodation/koggala/stilt-fisherman-sunset.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/koggala/stilt-fisherman-sunset.jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
@@ -122,8 +122,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 536px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/75.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/75.jpg"
+                                                src="assets/img/accommodation/koggala/the-sri-lankan-wedding.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/koggala/the-sri-lankan-wedding.jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
@@ -133,8 +133,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 312px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/1556.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/1556.jpg"
+                                                src="assets/img/accommodation/koggala/garden-view.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/koggala/garden-view.jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>

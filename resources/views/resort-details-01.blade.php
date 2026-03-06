@@ -77,32 +77,32 @@
                                 <div class="col-xxl-auto filter-item">
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
-                                            <img style="width: 312px;height:215px;" src="assets/img/accommodation/resort-01/034.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/034.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
+                                            <img style="width: 312px;height:215px;" src="assets/img/accommodation/98/SPA-2-scaled.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/98/SPA-2-scaled.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xxl-auto filter-item">
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
-                                            <img style="width: 536px;height:215px;" src="assets/img/accommodation/resort-01/56.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/56.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
+                                            <img style="width: 536px;height:215px;" src="assets/img/accommodation/98/royal-deluxe-scaled.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/98/royal-deluxe-scaled.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xxl-auto filter-item">
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
-                                            <img style="width: 536px;height:215px;" src="assets/img/accommodation/resort-01/75.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/75.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
+                                            <img style="width: 536px;height:215px;" src="assets/img/accommodation/98/surrounding-_DSC7914.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/98/surrounding-_DSC7914.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xxl-auto filter-item">
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
-                                            <img style="width: 312px;height:215px;" src="assets/img/accommodation/resort-01/1556.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/1556.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
+                                            <img style="width: 312px;height:215px;" src="assets/img/accommodation/98/98-spa-1-scaled.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/98/98-spa-1-scaled.jpg" class="icon-btn popup-image"><i class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
