@@ -31,7 +31,7 @@
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/hero/hero_bg_3_3.jpg">
+    <div class="breadcumb-wrapper " data-bg-src="assets/img/accommodation/jetwing/gallery-desktop-large-1.jpg">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Jetwing Lagoon</h1>
@@ -100,8 +100,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 312px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/034.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/034.jpg"
+                                                src="assets/img/accommodation/jetwing/caption (1).jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/jetwing/caption (1).jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
@@ -111,8 +111,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 536px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/56.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/56.jpg"
+                                                src="assets/img/accommodation/jetwing/caption (2).jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/jetwing/caption (2).jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
@@ -122,8 +122,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 536px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/75.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/75.jpg"
+                                                src="assets/img/accommodation/jetwing/caption.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/jetwing/caption.jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
@@ -133,8 +133,8 @@
                                     <div class="gallery-box style3">
                                         <div class="gallery-img global-img">
                                             <img style="width: 312px;height:215px;"
-                                                src="assets/img/accommodation/resort-01/1556.jpg" alt="gallery image">
-                                            <a href="assets/img/accommodation/resort-01/1556.jpg"
+                                                src="assets/img/accommodation/jetwing/gallery-desktop-large-1.jpg" alt="gallery image">
+                                            <a href="assets/img/accommodation/jetwing/gallery-desktop-large-1.jpg"
                                                 class="icon-btn popup-image"><i
                                                     class="fal fa-magnifying-glass-plus"></i></a>
                                         </div>
