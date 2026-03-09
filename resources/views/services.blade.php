@@ -1713,6 +1713,53 @@
 
 
     <script>
+
+        // URL එකේ 'tab' parameter එක තියෙනවද බලනවා
+        const urlParams = new URLSearchParams(window.location.search);
+        const activeTab = urlParams.get('tab');
+
+        if (activeTab === 'accommodation') {
+            // Accommodation tab එක select කරගන්නවා
+            const tabTrigger = document.querySelector('#accommodation-tab');
+            
+            if (tabTrigger) {
+                // Bootstrap tab එක active කරන function එක call කරනවා
+                const tab = new bootstrap.Tab(tabTrigger);
+                tab.show();
+                
+                // Aria-selected true වෙන්න මේකත් කරන්න
+                tabTrigger.setAttribute('aria-selected', 'true');
+            }
+        }
+        if (activeTab === 'customize-tour') {
+            // Customize Tour tab එක select කරගන්නවා
+            const tabTrigger = document.querySelector('#customize-tour-tab');
+            
+            if (tabTrigger) {
+                // Bootstrap tab එක active කරන function එක call කරනවා
+                const tab = new bootstrap.Tab(tabTrigger);
+                tab.show();
+                
+                // Aria-selected true වෙන්න මේකත් කරන්න
+                tabTrigger.setAttribute('aria-selected', 'true');
+            }
+        }
+        if (activeTab === 'arrival-tab') {
+            // Arrival tab එක select කරගන්නවා
+            const tabTrigger = document.querySelector('#transport-tab');
+            
+            if (tabTrigger) {
+                // Bootstrap tab එක active කරන function එක call කරනවා
+                const tab = new bootstrap.Tab(tabTrigger);
+                tab.show();
+                
+                // Aria-selected true වෙන්න මේකත් කරන්න
+                tabTrigger.setAttribute('aria-selected', 'true');
+            }
+        }
+
+
+
         let bookingForms = document.querySelectorAll('.th-form');
 
         bookingForms.forEach(bookingForm => {

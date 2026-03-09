@@ -19,7 +19,7 @@
     <div class="th-hero-wrapper hero-1" id="hero">
         <div class="swiper th-slider hero-slider-1" id="heroSlide1"
             data-slider-options='{"effect":"fade","menu": ["", "", ""],"heroSlide1": {"swiper-container": {"pagination": {"el": ".swiper-pagination", "clickable": true }}}}'>
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper mb-5">
                 <div class="swiper-slide">
                     <div class="hero-inner">
                         <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_2.jpg">
@@ -88,7 +88,7 @@
 
 
     <!--======== Discover Sri Lanka Wonders With a Trust =========-->
-    <div class="feature-area-3 space">
+    <div class="feature-area-3 mt-5 mb-5">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title">Services That We Provide</span>
@@ -133,7 +133,7 @@
                             </p>
                         </div>
                         <div class="text-center mt-45">
-                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                            <a href="{{ route('services', ['tab' => 'customize-tour']) }}"><button id="show-form-btn"
                                     class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                             </p>
                         </div>
                         <div class="text-center mt-45">
-                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                            <a href="{{ route('services', ['tab' => 'accommodation']) }}"><button id="show-form-btn"
                                     class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                             </p>
                         </div>
                         <div class="text-center mt-45">
-                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                            <a href="{{ route('services', ['tab' => 'arrival-tab']) }}"><button id="show-form-btn"
                                     class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                             </p>
                         </div>
                         <div class="text-center mt-45">
-                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                            <a href="{{ route('services', ['tab' => 'arrival-tab']) }}"><button id="show-form-btn"
                                     class="th-btn style3 th-icon">See more</button></a>
                         </div>
                     </div>
