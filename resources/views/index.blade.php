@@ -139,25 +139,6 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card-3">
-                        <div class="feature-card-icon">
-                            <i class="fa-light fa-plane-arrival"></i>
-                        </div>
-                        <div class="feature-card-content">
-                            <h4 class="feature-card-title">Arrival Departure</h4>
-                            <p class="feature-card-text">
-                                Begin and end your journey with ease through our punctual airport transfers and seamless
-                                logistics for a stress-free transition.
-                            </p>
-                        </div>
-                        <div class="text-center mt-45">
-                            <a href="{{ route('services') }}"><button id="show-form-btn"
-                                    class="th-btn style3 th-icon">See more</button></a>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- New Card 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-card-3">
@@ -169,6 +150,44 @@
                             <p class="feature-card-text">
                                 Find your perfect sanctuary with our handpicked stays, offering authentic hospitality
                                 and the ultimate comfort during your island escape.
+                            </p>
+                        </div>
+                        <div class="text-center mt-45">
+                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                                    class="th-btn style3 th-icon">See more</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fa-light fa-plane-arrival"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title">Arrival</h4>
+                            <p class="feature-card-text">
+                                Welcome to your perfect getaway. Take a deep breath, leave the world behind, and let the
+                                peace of nature refresh your soul from the moment you arrive.
+                            </p>
+                        </div>
+                        <div class="text-center mt-45">
+                            <a href="{{ route('services') }}"><button id="show-form-btn"
+                                    class="th-btn style3 th-icon">See more</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-3">
+                        <div class="feature-card-icon">
+                            <i class="fa-light fa-plane-departure"></i>
+                        </div>
+                        <div class="feature-card-content">
+                            <h4 class="feature-card-title"> Departure</h4>
+                            <p class="feature-card-text">
+                                Take the peace of nature back home with you. We hope your stay was filled with beautiful
+                                moments, and we look forward to welcoming you back soon.
                             </p>
                         </div>
                         <div class="text-center mt-45">
