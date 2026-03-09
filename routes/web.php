@@ -48,7 +48,7 @@ Route::get('/contact', function () {
 Route::get('/resort-detail', function () {
 $resort_id = request()->query('id', '01'); 
     
-    $resort_blade = 'resort-details-' . $resort_id;
+    $resort_blade = 'resorts.resort-details-' . $resort_id;
 
     return view($resort_blade);
 })->name('resort-details');
