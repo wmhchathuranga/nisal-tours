@@ -99,23 +99,6 @@
                   </button>
                 </li>
 
-                <!-- Arrival Departure tab -->
-                <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-                  <button 
-                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
-                    id="transport-tab" 
-                    data-bs-toggle="pill" 
-                    data-bs-target="#transport" 
-                    type="button" 
-                    role="tab" 
-                    aria-controls="transport" 
-                    aria-selected="false">
-                      <div class="icon mb-2">
-                        <i class="fa-light fa-plane-arrival fa-2x text-theme"></i>
-                      </div>
-                      <span class="fs-5 fw-bold text-dark">Arrival Departure</span>
-                  </button>
-                </li>
                 
                 <!-- Transport Tab -->
                 {{-- <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
@@ -150,6 +133,24 @@
                         <i class="fa-light fa-hotel fa-2x text-theme"></i>
                       </div>
                       <span class="fs-5 fw-bold text-dark">Accommodation</span>
+                  </button>
+                </li>
+
+                  <!-- Arrival Departure tab -->
+                <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                  <button 
+                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
+                    id="transport-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#transport" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="transport" 
+                    aria-selected="false">
+                      <div class="icon mb-2">
+                        <i class="fa-light fa-plane-arrival fa-2x text-theme"></i>
+                      </div>
+                      <span class="fs-5 fw-bold text-dark">Arrival Departure</span>
                   </button>
                 </li>
       
