@@ -524,7 +524,7 @@
                     <div class="swiper-slide story-slide"
                         style="background-image: url('{{ asset('assets/img/explore/sigiriya.jpg') }}');">
                         <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-fort-awesome me-1"></i> Heritage</span>
+                            <span class="story-tag"><i class="fa-light fa-fort me-1"></i> Heritage</span>
                             <h3>Sigiriya Rock</h3>
                             <p>The majestic Lion Rock, an ancient palace and fortress standing tall above the jungle,
                                 boasting incredible ancient engineering.</p>
