@@ -506,10 +506,10 @@
                                     <div class="col-xl-7">
                                         <div class="img-box2">
                                             <div class="img1">
-                                                <img style="width: 585px;" src="assets/img/normal/about_12-2.jpg" alt="About">
+                                                <img style="width: 585px;" src="assets/img/normal/WhatsApp-Image-2024-06-12-at-1sdfsd5.53.54_86a7873012.jpg" alt="About">
                                             </div>
                                             <div class="img2">
-                                                <img style="width:393px;" src="assets/img/normal/file1.jpg" alt="About">
+                                                <img style="width:393px;" src="assets/img/normal/maxresdefault (1).jpg" alt="About">
                                                 {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
                                             </div>
                                         </div>
@@ -801,7 +801,7 @@
                                                 <div class="form-group col-md-6"><input type="number" class="form-control" name="pax" placeholder="No. of Passengers (Pax)*" required min="1"></div>
                                             </div>
                                             <div class="row">
-                                                <div class="form-group col-md-4"><input type="text" class="form-control" name="flight_no" placeholder="Flight/Train No.*" required></div>
+                                                <div class="form-group col-md-4"><input type="text" class="form-control" name="flight_no" placeholder="Flight No.*" required></div>
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-6">
@@ -809,7 +809,7 @@
                                                     <input type="date" class="form-control date-picker" name="date" placeholder="Departure Date*" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label class="form-label">&nbsp;</label>
+                                                    <label class="form-label">Departure Time:</label>
                                                     <input type="time" class="form-control time-picker" name="time" placeholder="Time (24h format)*" required>
                                                 </div>
                                             </div>

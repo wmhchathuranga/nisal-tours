@@ -86,6 +86,8 @@
         </div>
     </div>
 
+    {{-- about us section --}}
+
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -262,12 +264,13 @@
         </div>
     </section>
 
+    {{-- end of about us section --}}
 
     <!--======== Discover Sri Lanka Wonders With a Trust =========-->
     {{-- <div class="feature-area-3 mt-5 mb-5">
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title" style="font-size: 4rem">Why You Must Choose Us</span>
+                <span class="sub-title" style="font-size: 4rem">What is Sri lanka</span>
             </div>
 
             <div class="row justify-content-center gy-4">
@@ -373,6 +376,227 @@
 
         </div>
     </div> --}}
+
+    <style>
+        /* Scoped Styles: Meke thiyena ewa wena kohetat balapanne na */
+        .sri-lanka-story-section {
+            padding: 80px 0;
+            background-color: #0c1524;
+            /* Elegant deep background for contrast */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sri-lanka-story-section .sec-title {
+            color: #ffffff;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .sri-lanka-story-section .sub-title {
+            color: #10b981;
+            /* Emerald green accent */
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Swiper Carousel Customization */
+        .story-swiper {
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        .story-slide {
+            background-position: center;
+            background-size: cover;
+            width: 350px;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            position: relative;
+            display: flex;
+            /* Fixes alignment */
+        }
+
+        /* Gradient overlay to make text readable */
+        .story-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            transition: all 0.4s ease;
+        }
+
+        .swiper-slide-active .story-overlay {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .story-tag {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: max-content;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .story-slide h3 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .story-slide p {
+            font-size: 0.9rem;
+            color: #d1d5db;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Pagination dots color */
+        .story-swiper .swiper-pagination-bullet {
+            background: #ffffff;
+            opacity: 0.5;
+        }
+
+        .story-swiper .swiper-pagination-bullet-active {
+            background: #10b981;
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .story-slide {
+                width: 280px;
+                height: 420px;
+            }
+
+            .sri-lanka-story-section .sec-title {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+
+    <section class="sri-lanka-story-section">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">The Pearl of the Indian Ocean</span>
+                <h2 class="sec-title" style="font-family: 'Playfair Display', serif;">What is Sri Lanka?</h2>
+                <p class="text-white mx-auto"
+                    style="max-width: 900px; color: #d1d5db; margin: 0 auto; line-height: 1.8; font-size: 1.2rem; text-align: center;">
+                    Nestled in the heart of the Indian Ocean, Sri Lanka is a tropical jewel where unparalleled
+                    geographical diversity meets a profound 2,500-year-old legacy. Within a matter of hours, you can
+                    journey from sun-kissed golden shores and vibrant coral reefs to the mist-shrouded peaks and emerald
+                    tea estates of the central highlands. It is an island where ancient history breathes through the
+                    monumental ruins of Sigiriya and the intricate craftsmanship of Embekke, while the rhythmic beat of
+                    traditional drums echoes its vibrant culture. From untamed wildlife to warm, welcoming smiles, Sri
+                    Lanka is not just a destination-it is an unforgettable feeling.
+                </p>
+            </div>
+
+            <div class="swiper story-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide story-slide"
+                        style="background-image: url('{{ asset('assets/img/bg/AdobeStock_633483820.jpeg') }}');">
+                        <div class="story-overlay">
+                            <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
+                            <h3>Emerald Hills</h3>
+                            <p>Endless rolling hills covered in world-famous Ceylon tea, wrapped in morning mist in
+                                places like Nuwara Eliya and Ella.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide story-slide"
+                        style="background-image: url('{{ asset('assets/img/explore/sigiriya.jpg') }}');">
+                        <div class="story-overlay">
+                            <span class="story-tag"><i class="fa-light fa-fort-awesome me-1"></i> Heritage</span>
+                            <h3>Sigiriya Rock</h3>
+                            <p>The majestic Lion Rock, an ancient palace and fortress standing tall above the jungle,
+                                boasting incredible ancient engineering.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide story-slide"
+                        style="background-image: url('{{ asset('assets/img/explore/kandy.jpg') }}');">
+                        <div class="story-overlay">
+                            <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
+                            <h3>Ancient Artistry</h3>
+                            <p>Discover centuries-old intricate wood carvings at Embekke and the living traditions of
+                                the sacred city of Kandy.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide story-slide"
+                        style="background-image: url('{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}');">
+                        <div class="story-overlay">
+                            <span class="story-tag"><i class="fa-light fa-water me-1"></i> Marine Life</span>
+                            <h3>Vibrant Coral Reefs</h3>
+                            <p>Dive into the colorful underwater worlds of Pigeon Island and Hikkaduwa, teeming with
+                                exotic marine biodiversity.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide story-slide"
+                        style="background-image: url('{{ asset('assets/img/explore/Yala National Park.jpg') }}');">
+                        <div class="story-overlay">
+                            <span class="story-tag"><i class="fa-light fa-camera me-1"></i> Wildlife</span>
+                            <h3>Untamed Wilderness</h3>
+                            <p>Experience thrilling safaris in Yala and Wilpattu, home to majestic elephants, elusive
+                                leopards, and exotic birds.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination story-swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait for existing theme scripts to load, then initialize our custom Story Carousel
+            if (typeof Swiper !== 'undefined') {
+                var storySwiper = new Swiper(".story-swiper", {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    initialSlide: 1, // Starts at the 2nd image (Sigiriya)
+                    coverflowEffect: {
+                        rotate: 20,
+                        stretch: 0,
+                        depth: 200,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    autoplay: {
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".story-swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            }
+        });
+    </script>
+
 
     <!-- ======== Fixed Puzzle Gallery ======== -->
     {{-- <div class="safe-gallery-wrapper">
