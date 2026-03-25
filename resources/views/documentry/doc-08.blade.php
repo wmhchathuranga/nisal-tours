@@ -48,7 +48,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/nuwara eliya – little england.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/Po4.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Nuwara Eliya Landscape">
                                     </div>
@@ -56,7 +56,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/123915899_1789279167901829_2310814119958175871_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/1492680858_places_to_visit_in_nuwara_eliya_cover_page.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Nuwara Eliya Landscape">
                                     </div>
@@ -64,7 +64,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/481281960_940585051580432_7693049892894760360_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/LK951R0000-10-E_4fb5ce5e-c060-481b-9ee3-429c7a3a7b72.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Tea Plantation">
                                     </div>
@@ -72,7 +72,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/483567094_10212911253172391_2944520306870981252_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/image-result-for-nuwara-eliya-by-train-2.jpeg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Gregory Lake">
                                     </div>
@@ -80,7 +80,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/483649632_10212911256332470_3398724623747307803_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/360_F_1868951359_i1hmSMALGnWoC8fHz89H7Lf6HhjzB3Oj.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Victoria Park">
                                     </div>
@@ -104,7 +104,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/nuwara eliya – little england.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/Po4.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Nuwara Eliya Landscape">
                                     </div>
@@ -112,7 +112,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/123915899_1789279167901829_2310814119958175871_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/1492680858_places_to_visit_in_nuwara_eliya_cover_page.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Nuwara Eliya Landscape">
                                     </div>
@@ -120,7 +120,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/481281960_940585051580432_7693049892894760360_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/LK951R0000-10-E_4fb5ce5e-c060-481b-9ee3-429c7a3a7b72.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Tea Plantation">
                                     </div>
@@ -128,7 +128,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/483567094_10212911253172391_2944520306870981252_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/image-result-for-nuwara-eliya-by-train-2.jpeg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Gregory Lake">
                                     </div>
@@ -136,7 +136,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-08/483649632_10212911256332470_3398724623747307803_n.jpg') }}"
+                                        <img src="{{ asset('assets/img/documentary/doc-08/360_F_1868951359_i1hmSMALGnWoC8fHz89H7Lf6HhjzB3Oj.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Victoria Park">
                                     </div>

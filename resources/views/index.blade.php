@@ -88,7 +88,7 @@
 
 
     <!--======== Discover Sri Lanka Wonders With a Trust =========-->
-    <div class="feature-area-3 mt-5 mb-5">
+    {{-- <div class="feature-area-3 mt-5 mb-5">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title">Services That We Provide</span>
@@ -99,16 +99,12 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-card-3">
                         <div class="feature-card-icon">
-                            {{-- <i class="fas fa-car-side"></i> --}}
+                            
                             <i class="fa-light fa-suitcase-rolling"></i>
                         </div>
                         <div class="feature-card-content">
                             <h4 class="feature-card-title">Tour Packages</h4>
-                            {{-- <p class="feature-card-text">
-                                Travel in comfort and safety across the island with our <strong>modern, air-conditioned
-                                    fleet</strong> and professional, trusted drivers, ensuring a smooth journey every
-                                time.
-                            </p> --}}
+                            
                             <p>Explore the island’s hidden treasures through our thoughtfully designed journeys,
                                 blending iconic landmarks with authentic local experiences.</p>
                         </div>
@@ -122,7 +118,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-card-3">
                         <div class="feature-card-icon">
-                            {{-- <i class="fas fa-headset"></i> --}}
+                           
                             <i class="fa-light fa-list-timeline"></i>
                         </div>
                         <div class="feature-card-content">
@@ -201,7 +197,7 @@
 
 
         </div>
-    </div>
+    </div> --}}
 
     <!-- ======== Fixed Puzzle Gallery ======== -->
     {{-- <div class="safe-gallery-wrapper">
@@ -334,9 +330,8 @@
     </script> --}}
 
 
-    <div class="safe-gallery-wrapper space">
+    {{-- <div class="safe-gallery-wrapper space">
         <div class="title-area text-center">
-            {{-- <span class="sub-title">Make Your Tour More Fun</span> --}}
             <span class="sub-title">Explore the beauty of Sri lanka.</span>
             <h2 class="sec-title">Recent Gallery</h2>
         </div>
@@ -558,7 +553,7 @@
 
             animateLayout(layouts[currentLayoutIndex]);
         }, 10000);
-    </script>
+    </script> --}}
 
 
 
@@ -843,12 +838,12 @@
                             </div>
                         </div>
 
-                        <!-- Slide 05 -->
+                        <!-- Slide 12 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
 
                                 <div class="box-img global-img">
-                                    <a href="{{ route('documentry', ['doc_id' => '05']) }}">
+                                    <a href="{{ route('documentry', ['doc_id' => '12']) }}">
                                         <img style="height:400px;object-fit:cover"
                                             src="{{ asset('assets/img/explore/chathuraanuradha-buddha-7490716_1280.jpg') }}"
                                             alt="Ella">
@@ -857,7 +852,7 @@
 
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
-                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}">
+                                        <a href="{{ route('documentry', ['doc_id' => '12']) }}">
                                             Polonnaruwa
                                         </a>
                                     </h3>
@@ -868,7 +863,7 @@
                                     </p>
 
                                     <div class="th-btn-div">
-                                        <a href="{{ route('documentry', ['doc_id' => '05']) }}"
+                                        <a href="{{ route('documentry', ['doc_id' => '12']) }}"
                                             class="th-btn style-border">
                                             View More
                                         </a>
@@ -883,7 +878,7 @@
                             <div class="gallery-card">
 
                                 <div class="box-img global-img">
-                                    <a href="{{ route('documentry', ['doc_id' => '11']) }}">
+                                    <a href="{{ route('documentry', ['doc_id' => '13']) }}">
 
                                         <img style="height:400px;object-fit:cover"
                                             src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
@@ -893,7 +888,7 @@
 
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
-                                        <a href="{{ route('documentry', ['doc_id' => '11']) }}">
+                                        <a href="{{ route('documentry', ['doc_id' => '13']) }}">
                                             Jaffna
                                         </a>
                                     </h3>
@@ -904,7 +899,7 @@
                                     </p>
 
                                     <div class="th-btn-div">
-                                        <a href="{{ route('documentry', ['doc_id' => '11']) }}"
+                                        <a href="{{ route('documentry', ['doc_id' => '13']) }}"
                                             class="th-btn style-border">
                                             View More
                                         </a>
@@ -963,7 +958,7 @@
 
                                 <div class="destination-content pt-3">
                                     <h3 class="title">
-                                        <a href="{{ route('documentry', ['doc_id' => '09']) }}">
+                                        <a href="{{ route('documentry', ['doc_id' => '14']) }}">
                                             Pidurangala Rock
                                         </a>
                                     </h3>
@@ -974,7 +969,7 @@
                                     </p>
 
                                     <div class="th-btn-div">
-                                        <a href="{{ route('documentry', ['doc_id' => '09']) }}"
+                                        <a href="{{ route('documentry', ['doc_id' => '14']) }}"
                                             class="th-btn style-border">
                                             View More
                                         </a>
@@ -984,7 +979,7 @@
                             </div>
                         </div>
 
-                        <!-- Slide 09 -->
+                        <!-- Slide 14 -->
                         <div class="swiper-slide">
                             <div class="gallery-card">
 
