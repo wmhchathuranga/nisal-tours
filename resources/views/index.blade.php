@@ -86,25 +86,200 @@
         </div>
     </div>
 
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            /* Dark Blue/Grey */
+            --accent-color: #0c333a;
+            /* Adventure Orange */
+            --text-muted: #7f8c8d;
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .about-section {
+            padding: 80px 10%;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        /* Image Side */
+        .about-image {
+            flex: 1;
+            min-width: 400px;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Content Side */
+        .about-content {
+            flex: 1;
+            min-width: 400px;
+        }
+
+        .about-content span {
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin: 10px 0 20px;
+            line-height: 1.2;
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 15px;
+            border-radius: 12px;
+            transition: background 0.3s;
+        }
+
+        .feature-item:hover {
+            background: var(--bg-light);
+        }
+
+        .feature-item i {
+            font-size: 24px;
+            color: var(--accent-color);
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .feature-item h4 {
+            margin: 0 0 5px;
+            color: var(--primary-color);
+            font-size: 18px;
+        }
+
+        .feature-item p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 40px 5%;
+            }
+
+            .about-image,
+            .about-content {
+                min-width: 100%;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <section class="about-section">
+        <div class="about-image">
+            <img src="{{ asset('assets/img/bg/AdobeStock_633483820.jpeg') }}" alt="Sri Lanka Tea Plantation">
+        </div>
+
+        <div class="about-content">
+            <span class="sub-title"
+                style="font-size: 3rem ; color: #113D48 ; margin-bottom: 1.5rem; font-weight: 400;">About Us</span>
+            <h2>Discover Sri Lanka’s Wonders With Your Ultimate Travel Partner</h2>
+            <p>
+                At Novara Holidays, we believe that travel is more than just visiting places-it's about creating stories
+                that last a lifetime. With over a decade of experience, we specialize in crafting personalized journeys
+                across the pearl of the Indian Ocean.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-light fa-suitcase-rolling"></i>
+                    <div>
+                        <h4>Customized Tours</h4>
+                        <p>Tailor-made itineraries that match your rhythm and interests.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fa-light fa-map-location-dot"></i>
+                    <div>
+                        <h4>Local Expertise</h4>
+                        <p>Certified guides who know every hidden gem in Sri Lanka.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fa-light fa-shield-check"></i>
+                    <div>
+                        <h4>Safe & Secure</h4>
+                        <p>Your safety is our priority with 24/7 on-ground support.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fa-light fa-hand-holding-heart"></i>
+                    <div>
+                        <h4>Authentic Experience</h4>
+                        <p>Go beyond tourism and connect with the local soul.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--======== Discover Sri Lanka Wonders With a Trust =========-->
     {{-- <div class="feature-area-3 mt-5 mb-5">
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title">Services That We Provide</span>
-                <h2 class="sec-title">Discover Sri Lanka Wonders With a Trust</h2>
+                <span class="sub-title" style="font-size: 4rem">Why You Must Choose Us</span>
             </div>
 
             <div class="row justify-content-center gy-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-card-3">
                         <div class="feature-card-icon">
-                            
+
                             <i class="fa-light fa-suitcase-rolling"></i>
                         </div>
                         <div class="feature-card-content">
                             <h4 class="feature-card-title">Tour Packages</h4>
-                            
+
                             <p>Explore the island’s hidden treasures through our thoughtfully designed journeys,
                                 blending iconic landmarks with authentic local experiences.</p>
                         </div>
@@ -118,7 +293,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-card-3">
                         <div class="feature-card-icon">
-                           
+
                             <i class="fa-light fa-list-timeline"></i>
                         </div>
                         <div class="feature-card-content">
