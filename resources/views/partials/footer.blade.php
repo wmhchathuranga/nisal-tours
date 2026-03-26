@@ -1,5 +1,5 @@
 <!--============================== Footer Area ==============================-->
-<footer class="footer-wrapper bg-title footer-layout2">
+<footer class="footer-wrapper bg-title footer-layout2 ">
 
     <style>
         .sidebar-gallery {
@@ -43,7 +43,7 @@
             
     </style>
 
-    <div class="widget-area">
+    <div class="widget-area" style="background: #0c1524;">
         <div class="container">
             {{-- <div class="newsletter-area">
                     <div class="newsletter-top">
@@ -193,7 +193,7 @@
             </div>
         </div>
     </div>
-    <div class="copyright-wrap">
+    <div class="copyright-wrap" style="background-color:#070e1a ">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-6">
