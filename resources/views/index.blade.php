@@ -316,34 +316,26 @@
     <section class="sri-lanka-story-section">
         <div class="container">
             <div class="title-area text-center">
-                <h2 class="sub-title" style="font-size: 2.5rem; color: #ffffff; padding: 20px 0;">Why Sri Lanka... <span
+                <h2 class="sub-title" style="font-size: 2.5rem; color: #ffffff; padding: 20px 0;text-align: center;">Why Sri Lanka... <span
                         style="font-size: 4rem">?</span> </h2>
-                <span class="sub-title">(The Pearl of the Indian Ocean)</span>
-                <p class="text-white mx-auto"
-                    style="max-width: 900px; color: #d1d5db; margin: 0 auto; line-height: 1.5; font-size: 1.2rem; text-align: center;">
+                <span class="sub-title">The Pearl of the Indian Ocean</span>
+                <p class="text-white mx-auto " style="text-align: justify;text-indent: 250px;"
+                    >
                     Because nowhere else on Earth can you experience so much magic, diversity, and adventure packed into
                     one breathtaking island.
-
-                    The true beauty of Sri Lanka lies in its vast variety. Start your journey on our sun-drenched,
+                    Start your journey on our sun-drenched,
                     palm-fringed shores-whether you are chasing the perfect surf break in the lively waters of Arugam
                     Bay, swimming with sea turtles in Unawatuna, or watching majestic blue whales glide off the coast of
                     Mirissa.
-
                     Venture inland, and within just a few hours, the tropical heat gives way to the cool, misty tea
                     hills of the central highlands. Take the world-famous, incredibly scenic train ride to Ella, hike
                     through the emerald valleys of Horton Plains, and wake up to the rolling, romantic landscapes of
                     Nuwara Eliya. Every turn reveals a new natural wonder.
-
                     For history and culture lovers, stepping into Sri Lanka is like stepping back in time. Conquer the
                     monumental rock fortress of Sigiriya (the 8th wonder of the world), cycle through the sacred,
                     2,500-year-old ruins of Anuradhapura and Polonnaruwa, and discover the spiritual heart of the island
                     in Kandy. Feel the pulse of our vibrant culture alive with rhythmic traditional drums, colorful
                     festivals, and the irresistible flavors of rich, spicy local cuisine.
-
-                    If it's a thrill you seek, Sri Lanka is a wildlife paradise. Experience the heart-pounding
-                    excitement of a safari as you witness hundreds of wild elephants gathering at Minneriya or
-                    Udawalawe, and spot elusive leopards prowling through the untamed wilderness of Yala National Park.
-
                     Wrapped in ancient legends and enriched by the warmest, most welcoming smiles that make you feel
                     instantly at home, this island is a treasure trove of experiences. Sri Lanka is more than just a
                     holiday getaway-it’s an unforgettable adventure you simply must feel for yourself.
@@ -585,6 +577,7 @@
         .feature-item:hover {
             background: var(--bg-light);
             color: var(--primary-color);
+            cursor: pointer;
         }
 
         /* Box ekama hover weddi H4 eke paata wenas kirima */
@@ -642,25 +635,25 @@
         </div>
 
         <div class="about-content">
-            <span class="sub-title"
+            <span class="sub-title text-center"
                 style="font-size: 3rem ; color: #113D48 ; margin-bottom: 1.5rem; font-weight: 400;">Why Us <span
                     style="font-size: 4rem; font-weight: 400; margin-bottom: 1.5rem;">?</span></span>
-            <h2>Discover Sri Lanka’s Wonders With Your Ultimate Travel Partner</h2>
+            <h2 class="text-center">Discover Sri Lanka’s Wonders With Your Ultimate Travel Partner</h2>
             {{-- <p>
                 At Novara Holidays, we believe that travel is more than just visiting places-it's about creating stories
                 that last a lifetime. With over a decade of experience, we specialize in crafting personalized journeys
                 across the pearl of the Indian Ocean.
             </p> --}}
-            <p>Selecting the right travel partner makes all the difference between a simple trip and a lifetime of
+            <p class="" style="text-align: justify; text-indent: 200px;">Selecting the right travel partner makes all the difference between a simple trip and a lifetime of
                 memories. At Novara Holidays, we don’t just provide a vehicle; we provide a complete, worry-free travel
                 experience tailored just for you.
 
-                Unmatched Expertise & Protection
+                Unmatched Expertise & Protection:
                 With years of experience in the industry, we understand the pulse of every traveler. Your safety is our
                 top priority, which is why we offer personal coverage and end-to-end protection throughout your entire
                 journey. From the moment you land until the moment you leave, you are under our care.
 
-                The Gold Standard of Service
+                The Gold Standard of Service:
                 Expert Drivers: Our team consists of highly skilled, professional drivers who aren't just experts on the
                 road, but also friendly guides who know the hidden gems of every destination.
 
@@ -669,11 +662,6 @@
 
                 Responsible & Reliable: We take full responsibility for your tour, ensuring every detail is handled with
                 precision so you can relax and enjoy.
-
-                All-in-One Solution
-                Why go through the hassle of multiple bookings? At Novara Holidays, you get excellent service and
-                everything you need for your tour—all in one place. We offer a seamless, "one-stop-shop" experience that
-                guarantees convenience, luxury, and peace of mind.
 
                 Experience the best. Choose Novara Holidays for a journey as extraordinary as you are.</p>
 
