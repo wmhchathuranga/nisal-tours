@@ -316,11 +316,12 @@
     <section class="sri-lanka-story-section">
         <div class="container">
             <div class="title-area text-center">
-                <h2 class="sub-title" style="font-size: 2.5rem; color: #ffffff; padding: 20px 0;text-align: center;">Why Sri Lanka... <span
-                        style="font-size: 4rem">?</span> </h2>
+                <h2 class="sub-title" style="font-size: 2.5rem; color: #ffffff; padding: 20px 0;text-align: center;">Sri
+                    Lanka...
+                    {{-- <span style="font-size: 4rem">?</span>  --}}
+                </h2>
                 <span class="sub-title">The Pearl of the Indian Ocean</span>
-                <p class="text-white mx-auto " style="text-align: justify;text-indent: 250px;"
-                    >
+                <p class="text-white mx-auto " style="text-align: justify;text-indent: 250px;">
                     Because nowhere else on Earth can you experience so much magic, diversity, and adventure packed into
                     one breathtaking island.
                     Start your journey on our sun-drenched,
@@ -644,7 +645,8 @@
                 that last a lifetime. With over a decade of experience, we specialize in crafting personalized journeys
                 across the pearl of the Indian Ocean.
             </p> --}}
-            <p class="" style="text-align: justify; text-indent: 200px;">Selecting the right travel partner makes all the difference between a simple trip and a lifetime of
+            <p class="" style="text-align: justify; text-indent: 200px;">Selecting the right travel partner
+                makes all the difference between a simple trip and a lifetime of
                 memories. At Novara Holidays, we don’t just provide a vehicle; we provide a complete, worry-free travel
                 experience tailored just for you.
 
@@ -665,7 +667,7 @@
 
                 Experience the best. Choose Novara Holidays for a journey as extraordinary as you are.</p>
 
-            <div class="features-grid">
+            {{-- <div class="features-grid">
                 <div class="feature-item">
                     <i class="fa-light fa-suitcase-rolling"></i>
                     <div>
@@ -697,12 +699,266 @@
                         <p>Go beyond tourism and connect with the local soul.</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
     {{-- end of about us section --}}
+    <style>
+        /* Isolated Scoped CSS for Accordion Section */
+        .wcu-section {
+            padding: 10px;
+            padding-bottom: 40px;
+            /* Idapatha adu kala */
+            display: flex;
+            flex-direction: column;
+            /* Title eka udata ganna */
+            align-items: center;
+            background-color: transparent;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
 
+        .wcu-section *,
+        .wcu-section *::before,
+        .wcu-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* FAQ Title Styling */
+        .wcu-main-title {
+            text-align: center;
+            width: 100%;
+            color: #242D40;
+            font-size: 36px;
+            font-weight: 700;
+            /* margin-bottom: 40px; */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .wcu-container {
+            max-width: 1400px;
+            /* Ida madi nisa max-width eka vedi kala */
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        /* Accordion Styles */
+        .wcu-accordion-wrapper {
+            flex: 1.2;
+            /* Accordion ekata thawa ida dunna */
+        }
+
+        .wcu-accordion-item {
+            background-color: #242D40;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .wcu-accordion-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .wcu-accordion-header:hover {
+            background-color: #2A354A;
+        }
+
+        .wcu-icon-box {
+            background-color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .wcu-icon-box i {
+            color: #242D40;
+            font-size: 18px;
+        }
+
+        .wcu-header-text {
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 600;
+            flex: 1;
+            margin: 0;
+        }
+
+        .wcu-arrow-icon {
+            color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .wcu-accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #242D40;
+        }
+
+        .wcu-desc-text {
+            color: #a0aabf;
+            padding: 0 25px 20px 80px;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Active State */
+        .wcu-accordion-item.active .wcu-arrow-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Image Styles - Custom Mask Shape */
+        .wcu-image-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .wcu-masked-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            /* Thawa lassanata mask eka shape kala */
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            position: relative;
+            z-index: 2;
+            display: block;
+            transition: border-radius 1s ease-in-out;
+        }
+
+        /* Image ekata podi animation ekak */
+        .wcu-masked-image:hover {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .wcu-container {
+                flex-direction: column-reverse;
+                /* Mobile wala accordion eka udata ganna */
+                gap: 30px;
+            }
+
+            .wcu-main-title {
+                font-size: 28px;
+            }
+
+            .wcu-desc-text {
+                padding-left: 25px;
+            }
+        }
+    </style>
+
+    <section class="wcu-section">
+        <h2 class="wcu-main-title">FAQ</h2>
+
+        <div class="wcu-container">
+            <div class="wcu-accordion-wrapper">
+                <div class="wcu-accordion">
+                    <div class="wcu-accordion-item">
+                        <div class="wcu-accordion-header">
+                            <div class="wcu-icon-box"><i class="fa-solid fa-suitcase-rolling"></i></div>
+                            <h3 class="wcu-header-text">Customized Tours</h3>
+                            <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
+                        </div>
+                        <div class="wcu-accordion-content">
+                            <p class="wcu-desc-text">We design personalized itineraries tailored to your unique
+                                interests, budget, and travel style, ensuring a trip that is perfectly yours.</p>
+                        </div>
+                    </div>
+
+                    <div class="wcu-accordion-item">
+                        <div class="wcu-accordion-header">
+                            <div class="wcu-icon-box"><i class="fa-solid fa-map-marked-alt"></i></div>
+                            <h3 class="wcu-header-text">Local Expertise</h3>
+                            <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
+                        </div>
+                        <div class="wcu-accordion-content">
+                            <p class="wcu-desc-text">Travel with confidence alongside our experienced local guides who
+                                know the hidden gems, culture, and history of the destination better than anyone.</p>
+                        </div>
+                    </div>
+
+                    <div class="wcu-accordion-item">
+                        <div class="wcu-accordion-header">
+                            <div class="wcu-icon-box"><i class="fa-solid fa-shield"></i></div>
+                            <h3 class="wcu-header-text">Safe & Secure</h3>
+                            <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
+                        </div>
+                        <div class="wcu-accordion-content">
+                            <p class="wcu-desc-text">Your well-being is our top priority. We guarantee reliable
+                                transportation, trusted accommodations, and 24/7 support throughout your journey.</p>
+                        </div>
+                    </div>
+
+                    <div class="wcu-accordion-item">
+                        <div class="wcu-accordion-header">
+                            <div class="wcu-icon-box"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <h3 class="wcu-header-text">Authentic Experience</h3>
+                            <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
+                        </div>
+                        <div class="wcu-accordion-content">
+                            <p class="wcu-desc-text">Go beyond the typical tourist spots. We connect you with local
+                                traditions, real communities, and genuine culinary experiences for an unforgettable
+                                adventure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wcu-image-wrapper">
+                <img src="{{ asset('assets/img/2148434727.jpg') }}" alt="Customer Support Agent"
+                    class="wcu-masked-image">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const accordionItems = document.querySelectorAll(".wcu-accordion-item");
+
+            accordionItems.forEach((item) => {
+                const header = item.querySelector(".wcu-accordion-header");
+
+                header.addEventListener("click", () => {
+                    const isActive = item.classList.contains("active");
+
+                    // Close all items first
+                    accordionItems.forEach((otherItem) => {
+                        otherItem.classList.remove("active");
+                        otherItem.querySelector(".wcu-accordion-content").style.maxHeight =
+                            0;
+                    });
+
+                    // If it wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add("active");
+                        const content = item.querySelector(".wcu-accordion-content");
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+        });
+    </script>
 
     <!-- ======== Fixed Puzzle Gallery ======== -->
     {{-- <div class="safe-gallery-wrapper">
@@ -1059,10 +1315,6 @@
             animateLayout(layouts[currentLayoutIndex]);
         }, 10000);
     </script> --}}
-
-
-
-
 
     <!--======== Explore SriLanka =========-->
     {{-- <section class="overflow-hidden space" style="background-color: #0c1524;">
@@ -2213,7 +2465,8 @@
 
             <div class="row" id="explore-grid">
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="mountains religion ">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
                     <div class="explore-custom-card">
                         <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
                             alt="Sigiriya Rock Fortress">
@@ -2247,7 +2500,8 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="city religion mountains">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="city religion mountains">
                     <div class="explore-custom-card">
                         <img class="bg-image" src="{{ asset('assets/img/explore/kandy.jpg') }}" alt="Kandy">
                         <div class="destination-content">
@@ -2259,6 +2513,24 @@
                                 tradition.
                             </p>
                             <a href="{{ route('documentry', ['doc_id' => '03']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}"
+                            alt="Unawatuna Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '04']) }}">Unawatuna Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Nestled on the Southern coast, Unawatuna is a picturesque beach famous for its calm
+                                turquoise waters, vibrant nightlife, and coral reefs.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '04']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -2276,6 +2548,40 @@
                                 trails, and breathtaking views.
                             </p>
                             <a href="{{ route('documentry', ['doc_id' => '05']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}"
+                            alt="Trincomalee">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '06']) }}">Trincomalee</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for its stunning natural deep-water harbor, Trincomalee boasts pristine
+                                white-sand beaches, historic colonial forts, and whale watching.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '06']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
+                            alt="Mirissa Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '07']) }}">Mirissa Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A tropical beach paradise known for whale watching, golden sands, and stunning sunsets.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '07']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -2299,6 +2605,37 @@
                     </div>
                 </div>
 
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="city ayuruwedic">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/colombo-2.jpg') }}" alt="Colombo">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Colombo</a>
+                            </h3>
+                            <p class="destination-details">
+                                The heart of Sri Lanka, Colombo is a bustling city with a rich history.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="forest">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/31.jpg') }}" alt="Sinharaja">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '10']) }}">Sinharaja</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site and global biodiversity hotspot, Sinharaja Forest Reserve
+                                is the country's last major untouched tropical rainforest.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '10']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="religion city">
                     <div class="explore-custom-card">
                         <img class="bg-image"
@@ -2318,7 +2655,8 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="religion city ayuruwedic forest">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion city ayuruwedic forest">
                     <div class="explore-custom-card">
                         <img class="bg-image"
                             src="{{ asset('assets/img/explore/chathuraanuradha-buddha-7490716_1280.jpg') }}"
@@ -2354,22 +2692,10 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="city ayuruwedic">
-                    <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/colombo-2.jpg') }}" alt="Colombo">
-                        <div class="destination-content">
-                            <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Colombo</a>
-                            </h3>
-                            <p class="destination-details">
-                                The heart of Sri Lanka, Colombo is a bustling city with a rich history.
-                            </p>
-                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="mountains ayuruwedic">
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains ayuruwedic">
                     <div class="explore-custom-card">
                         <img class="bg-image"
                             src="{{ asset('assets/img/explore/pexels-al-moatasem-alaa-el-din-445873-1139429.jpg') }}"
@@ -2387,72 +2713,76 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="religion forest mountains ayuruwedic">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion forest mountains ayuruwedic">
                     <div class="explore-custom-card">
                         <img class="bg-image"
                             src="{{ asset('assets/img/explore/pexels-dimath-dayananda-245054507-17092145.jpg') }}"
                             alt="Mihintale">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Mihintale</a>
+                                <a href="{{ route('documentry', ['doc_id' => '15']) }}">Mihintale</a>
                             </h3>
                             <p class="destination-details">
                                 Mihintale is an ancient Buddhist site located in the Anuradhapura District, known for
                                 its historical significance and beautiful surroundings.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '15']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="religion forest ayuruwedic">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion forest ayuruwedic">
                     <div class="explore-custom-card">
                         <img class="bg-image" src="{{ asset('assets/img/explore/pexels-kawshika-11013741.jpg') }}"
                             alt="Katharagama">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Katharagama</a>
+                                <a href="{{ route('documentry', ['doc_id' => '16']) }}">Katharagama</a>
                             </h3>
                             <p class="destination-details">
                                 A deeply venerated pilgrimage town, Katharagama unites multiple faiths who gather to
                                 seek blessings at the sacred Katharagama Devalaya.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '16']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="religion ayuruwedic">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion ayuruwedic">
                     <div class="explore-custom-card">
                         <img class="bg-image"
                             src="{{ asset('assets/img/explore/free-photo-of-dambulla-cave-temple-complex-in-sri-lanka.jpeg') }}"
                             alt="Dambulla">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Dambulla</a>
+                                <a href="{{ route('documentry', ['doc_id' => '17']) }}">Dambulla</a>
                             </h3>
                             <p class="destination-details">
                                 A UNESCO World Heritage Site, Dambulla is renowned for the magnificent Golden Temple and
                                 the largest, best-preserved ancient cave temple complex.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '17']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="mountains religion">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion">
                     <div class="explore-custom-card">
                         <img class="bg-image" src="{{ asset('assets/img/explore/1774253054527.jpeg') }}"
                             alt="Sri Paada">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Sri Paada (Adam's Peak)</a>
+                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Sri Paada (Adam's Peak)</a>
                             </h3>
                             <p class="destination-details">
                                 A majestic, conical mountain renowned for the sacred footprint at its peak, an ancient
                                 pilgrimage site that rewards climbers with a sunrise.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '18']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -2464,29 +2794,13 @@
                             alt="Weligama">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '11']) }}">Weligama</a>
+                                <a href="{{ route('documentry', ['doc_id' => '19']) }}">Weligama</a>
                             </h3>
                             <p class="destination-details">
                                 Weligama is a coastal town in the Southern Province of Sri Lanka, known for its
                                 beautiful beaches and relaxed atmosphere.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '11']) }}" class="glass-btn">View More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
-                    <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
-                            alt="Mirissa Beach">
-                        <div class="destination-content">
-                            <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '07']) }}">Mirissa Beach</a>
-                            </h3>
-                            <p class="destination-details">
-                                A tropical beach paradise known for whale watching, golden sands, and stunning sunsets.
-                            </p>
-                            <a href="{{ route('documentry', ['doc_id' => '07']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '19']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -2498,49 +2812,13 @@
                             alt="Arugam Bay">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Arugam Bay</a>
+                                <a href="{{ route('documentry', ['doc_id' => '20']) }}">Arugam Bay</a>
                             </h3>
                             <p class="destination-details">
                                 Arugam Bay is a popular destination for surfers and nature lovers, known for its
                                 pristine beaches and vibrant marine life.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
-                    <div class="explore-custom-card">
-                        <img class="bg-image"
-                            src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}"
-                            alt="Trincomalee">
-                        <div class="destination-content">
-                            <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '06']) }}">Trincomalee</a>
-                            </h3>
-                            <p class="destination-details">
-                                Famous for its stunning natural deep-water harbor, Trincomalee boasts pristine
-                                white-sand beaches, historic colonial forts, and whale watching.
-                            </p>
-                            <a href="{{ route('documentry', ['doc_id' => '06']) }}" class="glass-btn">View More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
-                    <div class="explore-custom-card">
-                        <img class="bg-image"
-                            src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}"
-                            alt="Unawatuna Beach">
-                        <div class="destination-content">
-                            <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '04']) }}">Unawatuna Beach</a>
-                            </h3>
-                            <p class="destination-details">
-                                Nestled on the Southern coast, Unawatuna is a picturesque beach famous for its calm
-                                turquoise waters, vibrant nightlife, and coral reefs.
-                            </p>
-                            <a href="{{ route('documentry', ['doc_id' => '04']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '20']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -2552,13 +2830,13 @@
                             alt="Hikkaduwa Beach">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '04']) }}">Hikkaduwa Beach</a>
+                                <a href="{{ route('documentry', ['doc_id' => '21']) }}">Hikkaduwa Beach</a>
                             </h3>
                             <p class="destination-details">
                                 A lively coastal hub, Hikkaduwa is celebrated for its dynamic surf scene, colorful
                                 marine sanctuary, and highly energetic beachside nightlife.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '04']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '21']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -2569,13 +2847,13 @@
                             alt="Yala National Park">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '06']) }}">Yala National Park</a>
+                                <a href="{{ route('documentry', ['doc_id' => '22']) }}">Yala National Park</a>
                             </h3>
                             <p class="destination-details">
                                 One of the best places in the world to spot leopards, Yala offers thrilling safaris and
                                 rich wildlife.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '06']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '22']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -2586,50 +2864,37 @@
                             alt="Wilpattu National Park">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '04']) }}">Wilpattu National Park</a>
+                                <a href="{{ route('documentry', ['doc_id' => '23']) }}">Wilpattu National Park</a>
                             </h3>
                             <p class="destination-details">
                                 Sri Lanka’s largest national park, famous for natural lakes, leopards, and untouched
                                 wilderness.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '04']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '23']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="forest mountains ayuruwedic ">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="forest mountains ayuruwedic ">
                     <div class="explore-custom-card">
                         <img class="bg-image" src="{{ asset('assets/img/explore/horton-plains.jpg') }}"
                             alt="Horton Plains">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '10']) }}">Horton Plains National
+                                <a href="{{ route('documentry', ['doc_id' => '24']) }}">Horton Plains National
                                     Park</a>
                             </h3>
                             <p class="destination-details">
                                 A UNESCO World Heritage Site, Horton Plains is home to the largest wildlife reserve in
                                 Sri Lanka.
                             </p>
-                            <a href="{{ route('documentry', ['doc_id' => '10']) }}" class="glass-btn">View More</a>
+                            <a href="{{ route('documentry', ['doc_id' => '24']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="forest">
-                    <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/31.jpg') }}" alt="Sinharaja">
-                        <div class="destination-content">
-                            <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '10']) }}">Sinharaja</a>
-                            </h3>
-                            <p class="destination-details">
-                                A UNESCO World Heritage Site and global biodiversity hotspot, Sinharaja Forest Reserve
-                                is the country's last major untouched tropical rainforest.
-                            </p>
-                            <a href="{{ route('documentry', ['doc_id' => '10']) }}" class="glass-btn">View More</a>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
         </div>
@@ -2668,41 +2933,42 @@
         });
     </script> --}}
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const filterBtns = document.querySelectorAll('.glass-filter-btn');
-        const items = document.querySelectorAll('.explore-item');
+        document.addEventListener("DOMContentLoaded", function() {
+            const filterBtns = document.querySelectorAll('.glass-filter-btn');
+            const items = document.querySelectorAll('.explore-item');
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                // 1. Remove 'active' class from all buttons and add to the clicked one
-                filterBtns.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // 1. Remove 'active' class from all buttons and add to the clicked one
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
 
-                // 2. Get the filter category
-                const filterValue = this.getAttribute('data-filter');
+                    // 2. Get the filter category
+                    const filterValue = this.getAttribute('data-filter');
 
-                // 3. Show/Hide items based on category (UPDATE KARAPU KALLA)
-                items.forEach(item => {
-                    // Card eke thiyena categories tika gannawa (e.g., "city religion")
-                    const itemCategories = item.getAttribute('data-category'); 
-                    
-                    // Space eken wen karala array ekak hadagena, eke ape filterValue eka thiyenawada balanawa
-                    if (filterValue === 'all' || itemCategories.split(' ').includes(filterValue)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
+                    // 3. Show/Hide items based on category (UPDATE KARAPU KALLA)
+                    items.forEach(item => {
+                        // Card eke thiyena categories tika gannawa (e.g., "city religion")
+                        const itemCategories = item.getAttribute('data-category');
+
+                        // Space eken wen karala array ekak hadagena, eke ape filterValue eka thiyenawada balanawa
+                        if (filterValue === 'all' || itemCategories.split(' ').includes(
+                                filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
                 });
             });
-        });
 
-        // 4. Page load weddima active button eka auto click karanna
-        const defaultActiveBtn = document.querySelector('.glass-filter-btn.active');
-        if (defaultActiveBtn) {
-            defaultActiveBtn.click();
-        }
-    });
-</script>
+            // 4. Page load weddima active button eka auto click karanna
+            const defaultActiveBtn = document.querySelector('.glass-filter-btn.active');
+            if (defaultActiveBtn) {
+                defaultActiveBtn.click();
+            }
+        });
+    </script>
 
     {{-- <section class="overflow-hidden space" style="background-color: #0c1524;">
         <div class="container">

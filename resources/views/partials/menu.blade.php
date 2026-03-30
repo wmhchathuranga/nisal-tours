@@ -94,8 +94,8 @@
                 <ul>
                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
                     <li><a class="{{ $page == 'services' ? 'active' : ''}}" href="{{ route('services') }}">Services</a></li>
-                    {{-- <li><a class="{{ $page == 'about' ? 'active' : ''}}" href="#">About Us</a></li> --}}
-                    <li><a class="{{ $page == 'contact' ? 'active' : ''}}" href="{{ route('contact') }}">Contact us</a></li>
+                    <li><a class="{{ $page == 'contact' ? 'active' : ''}}" href="{{ route('contact') }}">Contact</a></li>
+                    <li><a class="{{ $page == 'about' ? 'active' : ''}}" href="{{ route('about') }}">About Us</a></li>
                 </ul>
             </div>
         </div>
@@ -120,8 +120,8 @@
                                 <ul>
                                     <li><a class="{{ $page == 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a></li>
                                     <li><a class="{{ $page == 'services' ? 'active' : ''}}" href="{{ route('services') }}">Services</a></li>
-                                    {{-- <li><a href="#">About Us</a></li> --}}
-                                    <li><a class="{{ $page == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact us</a></li>
+                                    <li><a class="{{ $page == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
+                                    <li><a class="{{ $page == 'about' ? 'active' : ''}}" href="{{ route('about') }}">About Us</a></li>
                                 </ul>
                             </nav>
                             <button type="button" class="th-menu-toggle d-block d-xl-none"><i class="far fa-bars"></i></button>

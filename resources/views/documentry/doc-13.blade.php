@@ -45,21 +45,21 @@
                                         <div class="tour-slider-img" style="height:480px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/ajai-s-nCsyGOSclNU-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Polonnaruwa Vatadage">
+                                                alt="Nallur Kandaswamy Temple">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/eshan-malaviarachchi-Z3XO2B2Db7Q-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Gal Viharaya">
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Jaffna Fort">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/nawartha-nirmal-AzmbS0KNgQ8-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Rankoth Vehera">
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Jaffna Public Library">
                                         </div>
                                     </div>
 
@@ -67,7 +67,7 @@
                                         <div class="tour-slider-img" style="height:480px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/nilantha-sanjeewa-hhr4Xkl5tQQ-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Royal Palace Ruins">
+                                                alt="Casuarina Beach">
                                         </div>
                                     </div>
 
@@ -75,7 +75,7 @@
                                         <div class="tour-slider-img" style="height:480px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/shavin-peiries-zNGqymM2TnY-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Lankatilaka Viharaya">
+                                                alt="Delft Island">
                                         </div>
                                     </div>
 
@@ -136,27 +136,23 @@
                         <div class="page-content">
 
                             <div class="page-meta mb-30">
-                                <a class="page-tag" href="#">UNESCO World Heritage</a>
+                                <a class="page-tag" href="#">Cultural Heritage</a>
                                 <span class="ratting">
-                                    <i class="fa-solid fa-vihara"></i>
-                                    <span>Ancient Kingdom</span>
+                                    <i class="fa-solid fa-om"></i>
+                                    <span>Northern Capital</span>
                                 </span>
                             </div>
 
                             <h2 class="box-title mb-20">
-                                Polonnaruwa – The Glorious Medieval Capital
+                                Jaffna – The Vibrant Heart of the North
                             </h2>
 
                             <p class="box-text mb-30">
-                                Also a UNESCO World Heritage Site, Polonnaruwa showcases the monumental ruins of Sri
-                                Lanka's second ancient kingdom. Flourishing in the 11th and 12th centuries, it remains
-                                one of the best-planned archaeological relic sites in the country.
+                                Located at the northernmost tip of Sri Lanka, Jaffna is a city steeped in rich Hindu-Tamil culture, colonial history, and unique traditions. Having flourished under the ancient Jaffna Kingdom, it remains a resilient and fascinating destination.
                             </p>
 
                             <p class="box-text mb-40">
-                                The city is renowned for its magnificent royal palaces, intricately carved stone
-                                shrines, and the massive artificial lake, Parakrama Samudraya, built by King
-                                Parakramabahu I.
+                                The region is renowned for its magnificent, colorful Kovils, the historic star-shaped Jaffna Fort built by the Portuguese and later expanded by the Dutch, and its distinctly unique, spicy culinary flavors.
                             </p>
 
                             <h3 class="box-title">Key Facts</h3>
@@ -172,11 +168,11 @@
                                 </div>
                                 <div class="checklist style2">
                                     <ul>
-                                        <li>North Central Province</li>
-                                        <li>11th - 13th Century</li>
-                                        <li>Gal Viharaya, Vatadage</li>
-                                        <li>Tropical, Warm & Dry</li>
-                                        <li>Cycling Tours, Photography, History Walks</li>
+                                        <li>Northern Province</li>
+                                        <li>Pre-colonial to Colonial Era</li>
+                                        <li>Nallur Temple, Jaffna Fort</li>
+                                        <li>Tropical, Warm & Sunny</li>
+                                        <li>Cultural Tours, Island Hopping, Cuisine Exploring</li>
                                     </ul>
                                 </div>
                             </div>
@@ -184,27 +180,24 @@
                             <h3 class="box-title">Historical Landmarks</h3>
                             <div class="checklist mb-50">
                                 <ul>
-                                    <li>Gal Viharaya (Spectacular rock-cut Buddha statues)</li>
-                                    <li>The Sacred Quadrangle (Dalada Maluva)</li>
-                                    <li>Royal Palace of King Parakramabahu</li>
-                                    <li>Lankatilaka Viharaya</li>
-                                    <li>Parakrama Samudraya (The Sea of Parakrama)</li>
+                                    <li>Nallur Kandaswamy Kovil (The most significant Hindu temple)</li>
+                                    <li>Jaffna Public Library (A striking symbol of cultural pride)</li>
+                                    <li>Jaffna Fort (Historic coastal fortress)</li>
+                                    <li>Nagadeepa Purana Viharaya (Sacred Buddhist site)</li>
+                                    <li>Delft Island (Known for wild ponies and coral walls)</li>
                                 </ul>
                             </div>
 
-                            <h3 class="box-title">Visiting Polonnaruwa</h3>
+                            <h3 class="box-title">Visiting Jaffna</h3>
                             <p class="box-text mb-50">
-                                The ancient city of Polonnaruwa is relatively compact, making it a fantastic place to
-                                explore by bicycle. Just like in Anuradhapura, make sure to wear comfortable, modest
-                                clothing (preferably white) and easily removable footwear, as the stone paths at the
-                                temples can get quite warm.
+                                Traveling to Jaffna is an experience in itself, especially via the scenic Yal Devi train route. When visiting Hindu temples, remember that men are often required to remove their shirts before entering the inner sanctums, and modest dress is expected for everyone. Don't forget to try the famous Jaffna Crab Curry!
                             </p>
 
                             <h3 class="box-title">Location Map</h3>
                             <div class="mb-10">
                                 <div class="ratio ratio-16x9 rounded overflow-hidden">
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.23847936162!2d80.32420455!3d7.93965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afd16fbc1e4d6f5%3A0x7f6c7e8a7c5e3b0!2sPolonnaruwa!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
+                                        src="https://maps.google.com/maps?q=Jaffna,+Sri+Lanka&t=&z=11&ie=UTF8&iwloc=&output=embed"
                                         style="border:0;" allowfullscreen="" loading="lazy">
                                     </iframe>
                                 </div>
