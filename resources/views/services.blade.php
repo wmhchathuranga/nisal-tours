@@ -207,29 +207,277 @@
                 <div class="container py-4">
                     <div class="row g-4">
 
+                        <style>
+                            .glass-filter-btn {
+                                background: rgba(255, 255, 255, 0.08);
+                                backdrop-filter: blur(12px);
+                                -webkit-backdrop-filter: blur(12px);
+                                border: 1px solid rgba(255, 255, 255, 0.2);
+                                color: #b0b0b0;
+                                padding: 10px 24px;
+                                border-radius: 30px;
+                                font-size: 15px;
+                                font-weight: 600;
+                                cursor: pointer;
+                                transition: all 0.3s ease;
+                                display: inline-flex;
+                                align-items: center;
+                                gap: 8px;
+                            }
+
+                            .glass-filter-btn i {
+                                font-size: 14px;
+                            }
+
+                            .glass-filter-btn:hover {
+                                background: rgba(255, 255, 255, 0.2);
+                                color: #ffffff;
+                                transform: translateY(-2px);
+                            }
+
+                            /* Active State for Filter Button */
+                            .glass-filter-btn.active {
+                                background: rgba(255, 255, 255, 0.3);
+                                border-color: #ffffff;
+                                color: #ffffff;
+                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                            }
+
+                            /* Custom Styles for Background Image Card */
+                            .explore-custom-card {
+                                position: relative;
+                                border-radius: 24px;
+                                overflow: hidden;
+                                height: 500px;
+                                /* Adjust height if needed */
+                                display: flex;
+                                align-items: end;
+                                justify-content: center;
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            }
+
+                            .explore-custom-card:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+                            }
+
+                            /* Background Image setup */
+                            .explore-custom-card .bg-image {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                z-index: 1;
+                                transition: transform 0.5s ease;
+                            }
+
+                            .explore-custom-card:hover .bg-image {
+                                transform: scale(1.05);
+                                /* Slight zoom on hover */
+                            }
+
+                            /* Dark gradient overlay so text is readable */
+                            .explore-custom-card::after {
+                                content: '';
+                                position: absolute;
+                                inset: 0;
+                                /* background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.85) 100%); */
+                                z-index: 2;
+                            }
+
+                            /* Center Content Area */
+                            .explore-custom-card .destination-content {
+                                position: relative;
+                                z-index: 3;
+                                text-align: left;
+                                padding: 24px;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                            }
+
+                            .explore-custom-card .title {
+                                margin-bottom: 12px;
+                            }
+
+                            .explore-custom-card .title a {
+                                color: #ffffff;
+                                font-size: 24px;
+                                font-weight: 700;
+                                text-decoration: none;
+                                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                            }
+
+                            .explore-custom-card .destination-details {
+                                color: #e6e6e6;
+                                font-size: 15px;
+                                line-height: 1.5;
+                                margin-bottom: 20px;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+                            }
+
+                            .destination-content a {
+                                align-self: flex-end;
+                            }
+
+                            /* Glassmorphism View More Button (Matches old badge style) */
+                            .explore-custom-card .glass-btn {
+                                background: rgba(255, 255, 255, 0.15);
+                                backdrop-filter: blur(10px);
+                                -webkit-backdrop-filter: blur(10px);
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                color: #ffffff;
+                                padding: 8px 24px;
+                                border-radius: 30px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                text-decoration: none;
+                                display: inline-block;
+                                transition: all 0.3s ease;
+                            }
+
+                            .explore-custom-card .glass-btn:hover {
+                                background: rgba(255, 255, 255, 0.3);
+                                border-color: #ffffff;
+                                color: #ffffff;
+                            }
+                        </style>
+
                         <!-- Card 01 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}">
-                                <div class="category-card style1 single2 h-100">
-                                    <div class="box-img global-img" style="height:250px; overflow:hidden;">
-                                        <img src="{{ asset('assets/img/tour/tour-01/the-orphanage-was-founded.jpg') }}"
-                                            class="w-100 h-100 object-fit-cover" alt="">
-                                    </div>
-                                    <div class="box-wrapp">
-                                        <div class="box-content">
-                                            <h3 class="box-title">Elephant Orphanage or Safari</h3>
-                                            <p class="box-text">
-                                                Experience the cultural heart of Sri Lanka with iconic landmarks and
-                                                authentic village life.
-                                            </p>
-                                        </div>
-                                    </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                            data-category="mountains religion ">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-01/the-orphanage-was-founded.jpg') }}"
+                                    alt="Sigiriya Rock Fortress">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '01']) }}">Elephant Orphanage
+                                            or Safari</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Experience the cultural heart of Sri Lanka with iconic landmarks and
+                                        authentic village life.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '01']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-02/madu-river-boat-ride2.jpg') }}" alt="3 Days South Coast & Kandy Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '02']) }}">3 Days South Coast & Kandy Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Discover southern coast beauty combined with cultural charm and sacred temples.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '02']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-03/nuwara-eliya-tea.jpg') }}" alt="6 Days Classic Sri Lanka Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '03']) }}">6 Days Classic Sri Lanka Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        A balanced journey of culture, hill country, wildlife, and coastal destinations.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '03']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-04/sigiriya-rock.jpg') }}" alt="5 Days Cultural & Coastal Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '04']) }}">5 Days Cultural & Coastal Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Perfect mix of Sri Lanka’s heritage, wildlife, and beautiful southern beaches.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '04']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-05/anuradhapura.jpg') }}" alt="10 Days Grand Sri Lanka Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '05']) }}">10 Days Grand Sri Lanka Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Explore ancient kingdoms, hill country, wildlife safaris, and coastal relaxation.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '05']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-06/ella-train.jpg') }}" alt="8 Days Cultural, Wildlife & Coastal Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '06']) }}">8 Days Cultural, Wildlife & Coastal Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        A perfect balance of adventure, nature, and relaxation across Sri Lanka.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '06']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-07/negombo.jpg') }}" alt="13 Days Grand Sri Lanka Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '07']) }}">13 Days Grand Sri Lanka Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        A complete island experience with culture, wildlife, and pristine beaches.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '07']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-08/pigeon-island.jpg') }}" alt="15 Days Grand Sri Lanka Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '08']) }}">15 Days Grand Sri Lanka Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        This 15-day Sri Lanka tour offers a deep exploration of the island with comfort and expert guidance.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '08']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Card 02 -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        {{-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <a href="{{ route('tour-details', ['tour_id' => '02']) }}">
                                 <div class="category-card style1 single2 h-100">
                                     <div class="box-img global-img" style="height:250px; overflow:hidden;">
@@ -372,7 +620,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>

@@ -732,14 +732,12 @@
             color: #242D40;
             font-size: 36px;
             font-weight: 700;
-            /* margin-bottom: 40px; */
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .wcu-container {
             max-width: 1400px;
-            /* Ida madi nisa max-width eka vedi kala */
             width: 100%;
             display: flex;
             align-items: center;
@@ -749,11 +747,10 @@
         /* Accordion Styles */
         .wcu-accordion-wrapper {
             flex: 1.2;
-            /* Accordion ekata thawa ida dunna */
         }
 
         .wcu-accordion-item {
-            background-color: #242D40;
+            background-color: #4bc5e0;
             border-radius: 12px;
             margin-bottom: 15px;
             overflow: hidden;
@@ -770,7 +767,7 @@
         }
 
         .wcu-accordion-header:hover {
-            background-color: #2A354A;
+            background-color: #3accec;
         }
 
         .wcu-icon-box {
@@ -807,11 +804,11 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            background-color: #242D40;
+            background-color: #65d1e9;
         }
 
         .wcu-desc-text {
-            color: #a0aabf;
+            color: #121213;
             padding: 0 25px 20px 80px;
             font-size: 15px;
             line-height: 1.6;
@@ -837,7 +834,6 @@
             height: auto;
             aspect-ratio: 1/1;
             object-fit: cover;
-            /* Thawa lassanata mask eka shape kala */
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
             position: relative;
             z-index: 2;
@@ -845,7 +841,6 @@
             transition: border-radius 1s ease-in-out;
         }
 
-        /* Image ekata podi animation ekak */
         .wcu-masked-image:hover {
             border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
         }
@@ -854,7 +849,6 @@
         @media (max-width: 992px) {
             .wcu-container {
                 flex-direction: column-reverse;
-                /* Mobile wala accordion eka udata ganna */
                 gap: 30px;
             }
 
@@ -874,7 +868,7 @@
         <div class="wcu-container">
             <div class="wcu-accordion-wrapper">
                 <div class="wcu-accordion">
-                    <div class="wcu-accordion-item">
+                    <div class="wcu-accordion-item active">
                         <div class="wcu-accordion-header">
                             <div class="wcu-icon-box"><i class="fa-solid fa-suitcase-rolling"></i></div>
                             <h3 class="wcu-header-text">Customized Tours</h3>
@@ -882,7 +876,11 @@
                         </div>
                         <div class="wcu-accordion-content">
                             <p class="wcu-desc-text">We design personalized itineraries tailored to your unique
-                                interests, budget, and travel style, ensuring a trip that is perfectly yours.</p>
+                                interests, budget, and travel style, ensuring a trip that is perfectly yours.
+                                Whether you're a first-time visitor or a seasoned traveler, our expert team curates
+                                every detail of your journey—from transportation and accommodations to exclusive access
+                                to hidden gems and local experiences that most tourists never discover.
+                            </p>
                         </div>
                     </div>
 
@@ -893,8 +891,14 @@
                             <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
                         </div>
                         <div class="wcu-accordion-content">
-                            <p class="wcu-desc-text">Travel with confidence alongside our experienced local guides who
-                                know the hidden gems, culture, and history of the destination better than anyone.</p>
+                            <p class="wcu-desc-text">Travel with confidence alongside our passionate and highly
+                                experienced local guides. They are not just guides; they are storytellers who know the
+                                hidden gems, deep-rooted culture, and fascinating history of the destination better than
+                                anyone else. With our insider knowledge, you will skip the crowded tourist traps and
+                                discover the true heartbeat of the places you visit, getting recommendations and
+                                insights that only a true local can provide.
+
+                            </p>
                         </div>
                     </div>
 
@@ -905,8 +909,12 @@
                             <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
                         </div>
                         <div class="wcu-accordion-content">
-                            <p class="wcu-desc-text">Your well-being is our top priority. We guarantee reliable
-                                transportation, trusted accommodations, and 24/7 support throughout your journey.</p>
+                            <p class="wcu-desc-text">Your well-being and peace of mind are our absolute top priorities.
+                                From the moment you arrive until you head back home, we take care of all the complex
+                                logistics. We guarantee carefully vetted, reliable transportation, highly trusted
+                                accommodations, and strict safety standards. Plus, our dedicated support team is
+                                available 24/7 throughout your entire journey, so you can completely relax and enjoy
+                                your trip knowing you are always in safe hands.</p>
                         </div>
                     </div>
 
@@ -917,9 +925,13 @@
                             <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
                         </div>
                         <div class="wcu-accordion-content">
-                            <p class="wcu-desc-text">Go beyond the typical tourist spots. We connect you with local
-                                traditions, real communities, and genuine culinary experiences for an unforgettable
-                                adventure.</p>
+                            <p class="wcu-desc-text">We invite you to go far beyond the typical sightseeing spots and
+                                truly immerse yourself in the destination. Our tours are specially designed to connect
+                                you deeply with rich local traditions, welcoming communities, and genuine,
+                                mouth-watering culinary experiences. Whether it's sharing a home-cooked meal with a
+                                local family or participating in a traditional craft, we provide meaningful, immersive
+                                moments that turn a simple vacation into an unforgettable, once-in-a-lifetime adventure.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -935,6 +947,14 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const accordionItems = document.querySelectorAll(".wcu-accordion-item");
+
+            // Initialize the active item on load
+            accordionItems.forEach(item => {
+                if (item.classList.contains('active')) {
+                    let content = item.querySelector('.wcu-accordion-content');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
 
             accordionItems.forEach((item) => {
                 const header = item.querySelector(".wcu-accordion-header");
@@ -3640,6 +3660,198 @@
         </div>
     </div> --}}
 
+    <style>
+        /* --- New Section Button Styles (Responsive & Left Aligned) --- */
+        .eco-section-btn {
+            background-color: #0b5e65;
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 28px;
+            margin-left: 2%;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 8px 25px rgba(11, 94, 101, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            /* Phone eke responsive wenna */
+            max-width: 100%;
+        }
+
+        .eco-section-btn:hover {
+            background-color: #f58a2c;
+            box-shadow: 0 10px 30px rgba(245, 138, 44, 0.4);
+            transform: translateY(-4px);
+            color: #ffffff;
+        }
+
+        /* --- SUPER HIGH Z-INDEX FOR MODAL TO ALWAYS BE ON TOP --- */
+        .eco-custom-modal-wrapper {
+            z-index: 999999 !important;
+        }
+
+        .modal-backdrop {
+            z-index: 999998 !important;
+            /* Modal eke kalu background eka */
+        }
+
+        /* --- Modal Base Styles (Kalin tika ehemamai) --- */
+        .eco-custom-modal-content {
+            border: none;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .eco-custom-modal-header {
+            background-color: #f8fafb;
+            border-bottom: 1px solid #e9ecef;
+            padding: 20px 30px;
+        }
+
+        .eco-custom-modal-header .modal-title {
+            color: #0b5e65;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .eco-custom-modal-body {
+            padding: 20px 30px;
+            background-color: #ffffff;
+        }
+
+        /* --- Form Elements Styles --- */
+        .eco-custom-form-group {
+            margin-bottom: 20px;
+        }
+
+        .eco-custom-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            display: block;
+            text-align: left;
+        }
+
+        .eco-custom-input {
+            border-radius: 12px !important;
+            border: 1px solid #dce1e6 !important;
+            padding: 12px 18px !important;
+            font-size: 1rem !important;
+            color: #555 !important;
+            transition: all 0.3s ease !important;
+            background-color: #fbfdff !important;
+        }
+
+        .eco-custom-input:focus {
+            border-color: #0b5e65 !important;
+            box-shadow: 0 0 0 4px rgba(11, 94, 101, 0.1) !important;
+            background-color: #ffffff !important;
+        }
+
+        /* --- Image Upload Area Styles --- */
+        .eco-img-upload-wrapper {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .eco-img-preview {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px dashed #0b5e65;
+            background-color: #f0f5f6;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .eco-img-preview:hover {
+            background-color: #e4edf0;
+            border-color: #f58a2c;
+        }
+
+        .eco-img-preview i {
+            font-size: 30px;
+            color: #0b5e65;
+            transition: 0.3s;
+        }
+
+        .eco-img-preview:hover i {
+            color: #f58a2c;
+        }
+
+        .eco-img-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .eco-upload-text {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        /* --- Submit Button --- */
+        .eco-custom-submit-btn {
+            background-color: #0b5e65;
+            color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            padding: 14px 40px;
+            font-size: 1.1rem;
+            /* font-weight: 600; */
+            transition: all 0.3s ease;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .eco-custom-submit-btn:hover {
+            background-color: #f58a2c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(245, 138, 44, 0.3);
+        }
+
+        /* --- Star Rating Styles --- */
+        .eco-star-rating-container {
+            display: flex;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .eco-star-rating-container .eco-star {
+            font-size: 24px;
+            color: #dce1e6;
+            /* Default gray color */
+            cursor: pointer;
+            transition: color 0.2s ease-in-out, transform 0.2s ease;
+        }
+
+        /* Hover wela thiyeddith, Click karala select unamath enna one color eka */
+        .eco-star-rating-container .eco-star.active {
+            color: #f58a2c;
+            /* Theme orange color */
+        }
+
+        /* Podi pop effect ekak hover karaddi */
+        .eco-star-rating-container .eco-star:hover {
+            transform: scale(1.1);
+        }
+    </style>
     <!--========== Testimonial Area ============-->
     <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">
@@ -3789,7 +4001,145 @@
                 <img src="assets/img/shape/shape_2_2.png" alt="shape">
             </div>
         </div>
+
+        <div class="row mt-4 mt-md-5">
+            <div class="col-12 text-start">
+                <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
+                    <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                </button>
+            </div>
+        </div>
+        <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="-9%">
+            <img class="gmovingX" src="assets/img/shape/shape_7.png" alt="shape">
+        </div>
+        </div>
     </section>
+
+    <!--========== Testimonial form model============-->
+    {{-- <button class="eco-custom-fab" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
+        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+    </button> --}}
+
+    <div class="modal fade eco-custom-modal-wrapper" id="ecoTestimonialModal" tabindex="-1"
+        aria-labelledby="ecoTestimonialModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content eco-custom-modal-content">
+                <div class="modal-header eco-custom-modal-header">
+                    <h5 class="modal-title" id="ecoTestimonialModalLabel">What's Your Experience?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body eco-custom-modal-body">
+                    <form id="ecoTestimonialForm">
+
+                        <div class="eco-img-upload-wrapper">
+                            <label for="ecoProfileUpload" class="eco-img-preview" id="ecoImgContainer">
+                                <i class="fa-solid fa-camera"></i>
+                                <img id="ecoPreviewImg" src="" alt="Profile Preview" style="display: none;">
+                            </label>
+                            <input type="file" id="ecoProfileUpload" class="d-none" accept="image/*">
+                            <p class="eco-upload-text">Upload Profile Picture</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 eco-custom-form-group">
+                                <label class="eco-custom-label">Full Name</label>
+                                <input type="text" class="form-control eco-custom-input"
+                                    placeholder="e.g. Michel Carlos" required>
+                            </div>
+
+                            <div class="col-md-6 eco-custom-form-group">
+                                <label class="eco-custom-label">Country</label>
+                                <input type="text" class="form-control eco-custom-input"
+                                    placeholder="e.g. Sri Lanka" required>
+                            </div>
+
+                            <div class="col-md-12 eco-custom-form-group">
+                                <label class="eco-custom-label">Phone Number</label>
+                                <input type="tel" class="form-control eco-custom-input"
+                                    placeholder="e.g. +94 77 123 4567" required>
+                            </div>
+
+                            <div class="col-md-12 eco-custom-form-group">
+                                <label class="eco-custom-label">Rate Your Experience</label>
+                                <div class="eco-star-rating-container">
+                                    <i class="fa-solid fa-star eco-star" data-rating="1"></i>
+                                    <i class="fa-solid fa-star eco-star" data-rating="2"></i>
+                                    <i class="fa-solid fa-star eco-star" data-rating="3"></i>
+                                    <i class="fa-solid fa-star eco-star" data-rating="4"></i>
+                                    <i class="fa-solid fa-star eco-star" data-rating="5"></i>
+
+                                    <input type="hidden" name="user_rating" id="ecoRatingInput" value="0"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 eco-custom-form-group">
+                                <label class="eco-custom-label">Your Experience</label>
+                                <textarea class="form-control eco-custom-input" rows="4" placeholder="Tell us about your amazing experience..."
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <button type="submit" class="eco-custom-submit-btn">
+                                Submit Testimonial <i class="fa-solid fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('ecoProfileUpload').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imgElement = document.getElementById('ecoPreviewImg');
+                    imgElement.src = e.target.result;
+                    imgElement.style.display = 'block'; // Show the image
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+        // --- Star Rating Logic ---
+        const stars = document.querySelectorAll('.eco-star');
+        const ratingInput = document.getElementById('ecoRatingInput');
+
+        stars.forEach(star => {
+            // Mouse eka tharu uda geniyaddi
+            star.addEventListener('mouseover', function() {
+                const rating = this.getAttribute('data-rating');
+                highlightEcoStars(rating);
+            });
+
+            // Mouse eka tharu walin aath karaddi (kalin select karapu gaanatama gennanna)
+            star.addEventListener('mouseout', function() {
+                highlightEcoStars(ratingInput.value);
+            });
+
+            // Tharuwa click kalama value eka hidden input ekata daanna
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                ratingInput.value = rating; // Set hidden input value
+                highlightEcoStars(rating);
+            });
+        });
+
+        // Tharu highlight karana function eka
+        function highlightEcoStars(rating) {
+            stars.forEach(star => {
+                if (star.getAttribute('data-rating') <= rating) {
+                    star.classList.add('active'); // Paata wenas karanna
+                } else {
+                    star.classList.remove('active'); // Paata ain karanna
+                }
+            });
+        }
+    </script>
+
 
     <!--========== Footer Area ==========-->
     @include('partials.footer')
