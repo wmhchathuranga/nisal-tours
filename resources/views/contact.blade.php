@@ -26,7 +26,7 @@
     @include('partials.menu')
 
     
-    <div class="breadcumb-wrapper" style="background-position:center;" data-bg-src="{{ asset('assets/img/hero/hero_bg_3_5.jpg') }}">
+    <div class="breadcumb-wrapper" style="background-position:center;" data-bg-src="{{ asset('assets/img/hero/3232.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Contact Us</h1>
