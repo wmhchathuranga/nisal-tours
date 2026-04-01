@@ -145,10 +145,11 @@
 
                     <!--  Departure tab -->
                     <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
+                        
                         <button
                             class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100"
-                            id="departure-tab" data-bs-toggle="pill" data-bs-target="#departure" type="button"
-                            role="tab" aria-controls="departure" aria-selected="false">
+                            id="transport-tab" data-bs-toggle="pill" data-bs-target="#transport2" type="button"
+                            role="tab" aria-controls="transport2" aria-selected="false">
                             <div class="icon mb-2">
                                 <i class="fa-light fa-plane-departure fa-2x text-theme"></i>
                             </div>
@@ -761,10 +762,10 @@
                 </div>
                 <div class="container-fluid">
                     <div class="nav nav-tabs tour-tabs style3" id="nav-tab" role="tablist">
-                        <button class="nav-link th-btn active" id="nav-step-transport1-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-step-transport1" type="button">Arrival</button>
-                        <button class="nav-link th-btn" id="nav-step-transport2-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-step-transport2" type="button">Departure</button>
+                        {{-- <button class="nav-link th-btn active" id="nav-step-transport1-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-step-transport1" type="button">Arrival</button> --}}
+                        {{-- <button class="nav-link th-btn" id="nav-step-transport2-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-step-transport2" type="button">Departure</button> --}}
                         {{-- <button class="nav-link th-btn" id="nav-step-transport3-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport3" type="button">Tour</button>
                       <button class="nav-link th-btn" id="nav-step-transport4-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport4" type="button">Excision</button> --}}
                     </div>
@@ -1059,7 +1060,327 @@
 
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-step-transport2" role="tabpanel">
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- departure Tab Pane -->
+        <div class="tab-pane fade show" id="transport2" role="tabpanel" aria-labelledby="transport-tab"
+            style='background-image: url("assets/img/bg/line-pattern2.png");'>
+            <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
+                <div class="container th-container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="title-area text-center">
+                                <span class="sub-title">Seamless Journeys</span>
+                                <h2 class="sec-title">Your Journey, Our Priority</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="nav nav-tabs tour-tabs style3" id="nav-tab" role="tablist">
+                        {{-- <button class="nav-link th-btn active" id="nav-step-transport1-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-step-transport1" type="button">Arrival</button> --}}
+                        {{-- <button class="nav-link th-btn" id="nav-step-transport2-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-step-transport2" type="button">Departure</button> --}}
+                        {{-- <button class="nav-link th-btn" id="nav-step-transport3-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport3" type="button">Tour</button>
+                      <button class="nav-link th-btn" id="nav-step-transport4-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport4" type="button">Excision</button> --}}
+                    </div>
+
+                    <div class="tab-content" id="nav-tabContent">
+
+                        {{-- <div class="tab-pane fade active show" id="nav-step-transport1" role="tabpanel">
+                            <div class="container" style="min-height: 1100px;">
+
+                                <div class="row transition-col block-active" id="about-block-2">
+                                    <div class="col-xl-7">
+                                        <div class="img-box2">
+                                            <div class="img1">
+                                                <img style="width: 585px;"
+                                                    src="assets/img/normal/WhatsApp-Image-2024-06-12-at-1sdfsd5.53.54_86a7873012.jpg"
+                                                    alt="About">
+                                            </div>
+                                            <div class="img2">
+                                                <img style="width:393px;"
+                                                    src="assets/img/normal/maxresdefault (1).jpg" alt="About">
+                                                <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="row">
+                                            <div id="arrival-content-wrapper" class="row w-100 mx-auto">
+                                                <div class="col-xl-12 transition-col">
+                                                    <div class="pe-xl-5">
+                                                        <div class="title-area mb-20 text-center text-xl-start">
+                                                            <span class="sub-title style1 ">How It Works</span>
+                                                            <h2 class="sec-title mb-20">Your Hassle-Free Arrival in 3
+                                                                Easy Steps</h2>
+                                                        </div>
+                                                        <p class="sec-text mb-30 text-center text-xl-start">From
+                                                            booking to boarding, we make your transfer experience simple
+                                                            and transparent.</p>
+
+                                                        <div class="about-item-wrap">
+                                                            <div class="about-item style2">
+                                                                <div class="about-item_img"><img
+                                                                        src="assets/img/icon/about_1_11.svg"
+                                                                        alt="Book Icon"></div>
+                                                                <div class="about-item_centent">
+                                                                    <h5 class="box-title">Book & Track</h5>
+                                                                    <p class="about-item_text">Provide your flight
+                                                                        number during booking. We monitor arrivals in
+                                                                        real-time, guaranteeing your driver is ready
+                                                                        when you land, regardless of delays.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="about-item style2">
+                                                                <div class="about-item_img"><img
+                                                                        src="assets/img/icon/about_1_22.svg"
+                                                                        alt="Meet Icon"></div>
+                                                                <div class="about-item_centent">
+                                                                    <h5 class="box-title">Meet & Greet</h5>
+                                                                    <p class="about-item_text">Look for your dedicated
+                                                                        driver upon clearing baggage claim. They will be
+                                                                        holding a personalized sign for immediate,
+                                                                        stress-free assistance.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="about-item style2">
+                                                                <div class="about-item_img"><img
+                                                                        src="assets/img/icon/about_1_33.svg"
+                                                                        alt="Transfer Icon"></div>
+                                                                <div class="about-item_centent">
+                                                                    <h5 class="box-title">Direct Transfer</h5>
+                                                                    <p class="about-item_text">Relax in a high-quality
+                                                                        vehicle. Your driver handles the luggage and
+                                                                        takes you straight to your stop, ensuring your
+                                                                        vacation starts instantly.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="text-center mt-45">
+                                                            <button id="show-form-btn"
+                                                                class="th-btn style3 th-icon">Book Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="form-block-2" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
+                                    <div class="booking-form-wrap style2 bg-smoke p-5">
+                                        <div class="title-area text-center">
+                                            <h3 class="sec-title">Book Your Arrival Transfer Now</h3>
+                                        </div>
+
+                                        <form class="th-form">
+                                            @csrf
+                                            <input type="hidden" name="form_type" value="Arrival">
+                                            <div class="row">
+                                                <div class="form-group col-md-6"><input type="text"
+                                                        class="form-control" name="name" placeholder="Full Name*"
+                                                        required></div>
+                                                <div class="form-group col-md-6"><input type="number"
+                                                        class="form-control" name="pax"
+                                                        placeholder="No. of Passengers (Pax)*" required
+                                                        min="1"></div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-group col-md-4"><input type="text"
+                                                        class="form-control" name="flight_no"
+                                                        placeholder="Flight No.*" required></div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label class="form-label">Arrival Date:</label>
+                                                    <input type="date" class="form-control date-picker"
+                                                        name="date" placeholder="Arrival Date*" required>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="block text-sm font-medium text-gray-700 mb-1">Arrival
+                                                        Time (24h format):</label>
+                                                    <input type="time"
+                                                        class="form-control time-picker border w-full" name="time"
+                                                        placeholder="Time (24h format)*" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-30">
+                                                <input type="text" class="form-control" name="pickup_address"
+                                                    value="Bandaranaike International Airport (BIA)"
+                                                    placeholder="Pickup Location*" readonly>
+                                            </div>
+
+                                            <div class="form-group mb-30">
+                                                <input type="text" class="form-control" name="drop_address"
+                                                    placeholder="Drop-off Address (Hotel Name/Location)*" required>
+                                            </div>
+
+                                            <div class="form-group mb-30">
+                                                <label class="form-label mb-3">Luggage Details:</label>
+                                                <div class="row">
+                                                    <div class="col-6"><input type="number" class="form-control"
+                                                            name="luggage_large" placeholder="No. of Large Bags (L)"
+                                                            min="0"></div>
+                                                    <div class="col-6"><input type="number" class="form-control"
+                                                            name="luggage_small" placeholder="No. of Small Bags (S)"
+                                                            min="0"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-30">
+                                                <label class="form-label mb-3">Preferred Vehicle Type:</label>
+                                                <select name="vehicle_type" class="form-select" required>
+                                                    <option value="" disabled selected>Select Vehicle...</option>
+                                                    <option value="car">Car (1-2 Pax)</option>
+                                                    <option value="van_small">Van (3-5 Pax)</option>
+                                                    <option value="van_large">Large Van (6-8 Pax)</option>
+                                                    <option value="bus">Mini Bus (9-15 Pax)</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group mb-30 vehicle-selector">
+                                                <label class="form-label mb-3 **professional-label**">Preferred Vehicle
+                                                    Type:</label>
+
+                                                <div class="vehicle-scroller-container">
+                                                    <button type="button" class="scroll-btn scroll-left"
+                                                        id="scroll-left-btn" aria-label="Scroll left">
+                                                        <i class="fa-solid fa-chevron-left"></i>
+                                                    </button>
+
+                                                    <div class="vehicle-selection-wrapper pb-4" id="vehicle-scroller">
+
+                                                        <input type="radio" id="vehicle-car" name="vehicle_type"
+                                                            value="car" class="vehicle-radio" hidden required
+                                                            checked>
+                                                        <label for="vehicle-car" class="vehicle-card-label">
+                                                            <div class="tour-box vehicle-tour-card">
+                                                                <div class="tour-box_img vehicle-img-area">
+                                                                    <img src="assets/img/vehicle/car01.jpg"
+                                                                        alt="Car Image">
+                                                                    <div class="selection-checkmark"><i
+                                                                            class="fa-solid fa-check"></i></div>
+                                                                </div>
+                                                                <div class="vehicle-content **professional-content**">
+                                                                    <h3 class="box-title vehicle-title">Car</h3>
+                                                                    <p class="vehicle-subtitle">Honda Civic</p>
+                                                                    <div class="vehicle-pax-info">
+                                                                        <i class="fa-solid fa-user-group"></i> 1-2 Pax
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+
+                                                        <input type="radio" id="vehicle-van-small"
+                                                            name="vehicle_type" value="van_small"
+                                                            class="vehicle-radio" hidden>
+                                                        <label for="vehicle-van-small" class="vehicle-card-label">
+                                                            <div class="tour-box vehicle-tour-card">
+                                                                <div class="tour-box_img vehicle-img-area">
+                                                                    <img src="assets/img/vehicle/van01.jpg"
+                                                                        alt="Small Van Image">
+                                                                    <div class="selection-checkmark"><i
+                                                                            class="fa-solid fa-check"></i></div>
+                                                                </div>
+                                                                <div class="vehicle-content **professional-content**">
+                                                                    <h3 class="box-title vehicle-title">Van</h3>
+                                                                    <p class="vehicle-subtitle">Toyota Hiace</p>
+                                                                    <div class="vehicle-pax-info">
+                                                                        <i class="fa-solid fa-user-group"></i> 3-5 Pax
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+
+                                                        <input type="radio" id="vehicle-van-large"
+                                                            name="vehicle_type" value="van_large"
+                                                            class="vehicle-radio" hidden>
+                                                        <label for="vehicle-van-large" class="vehicle-card-label">
+                                                            <div class="tour-box vehicle-tour-card">
+                                                                <div class="tour-box_img vehicle-img-area">
+                                                                    <img src="assets/img/vehicle/van02.jpg"
+                                                                        alt="Large Van Image">
+                                                                    <div class="selection-checkmark"><i
+                                                                            class="fa-solid fa-check"></i></div>
+                                                                </div>
+                                                                <div class="vehicle-content **professional-content**">
+                                                                    <h3 class="box-title vehicle-title">Large Van</h3>
+                                                                    <p class="vehicle-subtitle">Mercedes Sprinter</p>
+                                                                    <div class="vehicle-pax-info">
+                                                                        <i class="fa-solid fa-user-group"></i> 6-8 Pax
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+
+                                                        <input type="radio" id="vehicle-bus-1" name="vehicle_type"
+                                                            value="bus1" class="vehicle-radio" hidden>
+                                                        <label for="vehicle-bus-1" class="vehicle-card-label">
+                                                            <div class="tour-box vehicle-tour-card">
+                                                                <div class="tour-box_img vehicle-img-area">
+                                                                    <img src="assets/img/vehicle/bus01.jpg"
+                                                                        alt="Mini Bus Image">
+                                                                    <div class="selection-checkmark"><i
+                                                                            class="fa-solid fa-check"></i></div>
+                                                                </div>
+                                                                <div class="vehicle-content **professional-content**">
+                                                                    <h3 class="box-title vehicle-title">Mini Bus</h3>
+                                                                    <p class="vehicle-subtitle">Mitsubishi Fuso</p>
+                                                                    <div class="vehicle-pax-info">
+                                                                        <i class="fa-solid fa-user-group"></i> 9-15 Pax
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+
+                                                    </div>
+
+                                                    <button type="button" class="scroll-btn scroll-right"
+                                                        id="scroll-right-btn" aria-label="Scroll right">
+                                                        <i class="fa-solid fa-chevron-right"></i>
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-4">
+                                                <textarea name="special_requirements" id="special_requirements" cols="30" rows="3" class="form-control"
+                                                    placeholder="Special Requirements (Baby Seat, Wheelchair access, etc.)"></textarea>
+                                            </div>
+
+                                            <div class="d-flex justify-content-around gap-3">
+                                                <button type="button" id="hide-form-btn"
+                                                    class="th-btn style-alt w-100">
+                                                    <i class="fas fa-arrow-left me-2"></i> How It Works
+                                                </button>
+                                                <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100">
+                                                    <i class="fab fa-whatsapp me-2"></i> Get Quotation
+                                                </button>
+                                            </div>
+                                            <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
+                                                 <i class="fab fa-whatsapp me-2"></i> Get Quotation
+                                            </button>
+                                                
+                                            <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
+                                                <i class="fas fa-arrow-left me-2"></i> How It Works
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> --}}
+                        <div class="tab-pane fade active show" id="nav-step-transport2" role="tabpanel">
                             <div class="container" style="min-height: 1100px;">
 
                                 <div class="row transition-col block-active" id="about-block-3">
