@@ -38,7 +38,6 @@
         </div>
     </div>
     
-
     {{-- modal --}}
     <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -68,6 +67,7 @@
         .wcu-section {
             padding: 10px;
             padding-bottom: 40px;
+            padding-top: 40px;
             /* Idapatha adu kala */
             display: flex;
             flex-direction: column;
@@ -93,6 +93,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
+            margin-bottom: 30px;
         }
 
         .wcu-container {
@@ -338,7 +339,6 @@
             });
         });
     </script>
-
 
     <div class="space">
         <div class="container">
