@@ -91,7 +91,7 @@
             color: #242D40;
             font-size: 36px;
             font-weight: 700;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             letter-spacing: 1px;
             margin-bottom: 30px;
         }
@@ -169,7 +169,7 @@
 
         .wcu-desc-text {
             color: #121213;
-            padding: 0 25px 20px 80px;
+            padding: 20px 80px;
             font-size: 15px;
             line-height: 1.6;
             margin: 0;
@@ -223,7 +223,7 @@
     </style>
 
     <section class="wcu-section">
-        <h2 class="wcu-main-title">FAQ</h2>
+        <h2 class="sec-title">Frequently Asked Questions</h2>
 
         <div class="wcu-container">
             <div class="wcu-accordion-wrapper">
@@ -238,7 +238,7 @@
                             <p class="wcu-desc-text">We design personalized itineraries tailored to your unique
                                 interests, budget, and travel style, ensuring a trip that is perfectly yours.
                                 Whether you're a first-time visitor or a seasoned traveler, our expert team curates
-                                every detail of your journey—from transportation and accommodations to exclusive access
+                                every detail of your journey-from transportation and accommodations to exclusive access
                                 to hidden gems and local experiences that most tourists never discover.
                             </p>
                         </div>
@@ -447,7 +447,6 @@
             </div>
         </div>
     </div>
-    
 
     <!--============================== Map Area ==============================-->
     {{-- <div class="">
@@ -463,7 +462,6 @@
         </div>
     </div> --}}
     
-
     @include('partials.footer')
 
     <!--========== All Js File =========== -->

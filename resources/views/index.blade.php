@@ -86,7 +86,6 @@
         </div>
     </div>
 
-    
     <!--======== Discover Sri Lanka Wonders With a Trust =========-->
     {{-- <div class="feature-area-3 mt-5 mb-5">
         <div class="container">
@@ -831,7 +830,6 @@
         renderGallery();
         setInterval(renderGallery, 5000);
     </script> --}}
-
 
     {{-- <div class="safe-gallery-wrapper space">
         <div class="title-area text-center">
@@ -2642,38 +2640,6 @@
         </div>
     </section>
 
-    {{-- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const filterBtns = document.querySelectorAll('.glass-filter-btn');
-            const items = document.querySelectorAll('.explore-item');
-
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // 1. Remove 'active' class from all buttons and add to the clicked one
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-
-                    // 2. Get the filter category
-                    const filterValue = this.getAttribute('data-filter');
-
-                    // 3. Show/Hide items based on category
-                    items.forEach(item => {
-                        if (filterValue === 'all' || item.getAttribute('data-category') ===
-                            filterValue) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-            // 4. active and trigger click on the default active button to show initial items
-            const defaultActiveBtn = document.querySelector('.glass-filter-btn.active');
-            if (defaultActiveBtn) {
-                defaultActiveBtn.click();
-            }
-        });
-    </script> --}}
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const filterBtns = document.querySelectorAll('.glass-filter-btn');
@@ -3724,7 +3690,7 @@
         </div>
 
         <div class="row mt-4 mt-md-5">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center mt-5">
                 <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
                     <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
                 </button>
@@ -3752,35 +3718,41 @@
                 <div class="modal-body eco-custom-modal-body">
                     <form id="ecoTestimonialForm">
 
-                        <div class="eco-img-upload-wrapper">
+                        <div class="eco-img-upload-wrapper text-center mb-3">
                             <label for="ecoProfileUpload" class="eco-img-preview" id="ecoImgContainer">
                                 <i class="fa-solid fa-camera"></i>
-                                <img id="ecoPreviewImg" src="" alt="Profile Preview" style="display: none;">
+                                <img id="ecoPreviewImg" src="" alt="Profile Preview"
+                                    style="display: none; max-width: 100px; border-radius: 50%;">
                             </label>
-                            <input type="file" id="ecoProfileUpload" class="d-none" accept="image/*">
+                            <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none"
+                                accept="image/*">
                             <p class="eco-upload-text">Upload Profile Picture</p>
+                            <span class="text-danger small error-text" id="error-profile_picture"></span>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 eco-custom-form-group">
+                            <div class="col-md-6 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Full Name</label>
-                                <input type="text" class="form-control eco-custom-input"
-                                    placeholder="e.g. Michel Carlos" required>
+                                <input type="text" id="full_name" name="full_name"
+                                    class="form-control eco-custom-input" placeholder="e.g. Michel Carlos">
+                                <span class="text-danger small error-text" id="error-full_name"></span>
                             </div>
 
-                            <div class="col-md-6 eco-custom-form-group">
+                            <div class="col-md-6 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Country</label>
-                                <input type="text" class="form-control eco-custom-input"
-                                    placeholder="e.g. Sri Lanka" required>
+                                <input type="text" id="country" name="country"
+                                    class="form-control eco-custom-input" placeholder="e.g. Sri Lanka">
+                                <span class="text-danger small error-text" id="error-country"></span>
                             </div>
 
-                            <div class="col-md-12 eco-custom-form-group">
+                            <div class="col-md-12 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Phone Number</label>
-                                <input type="tel" class="form-control eco-custom-input"
-                                    placeholder="e.g. +94 77 123 4567" required>
+                                <input type="tel" id="phone_number" name="phone_number"
+                                    class="form-control eco-custom-input" placeholder="e.g. +94 77 123 4567">
+                                <span class="text-danger small error-text" id="error-phone_number"></span>
                             </div>
 
-                            <div class="col-md-12 eco-custom-form-group">
+                            <div class="col-md-12 eco-custom-form-group d-flex flex-column align-items-center mb-3">
                                 <label class="eco-custom-label">Rate Your Experience</label>
                                 <div class="eco-star-rating-container">
                                     <i class="fa-solid fa-star eco-star" data-rating="1"></i>
@@ -3788,21 +3760,21 @@
                                     <i class="fa-solid fa-star eco-star" data-rating="3"></i>
                                     <i class="fa-solid fa-star eco-star" data-rating="4"></i>
                                     <i class="fa-solid fa-star eco-star" data-rating="5"></i>
-
-                                    <input type="hidden" name="user_rating" id="ecoRatingInput" value="0"
-                                        required>
+                                    <input type="hidden" name="user_rating" id="ecoRatingInput" value="0">
                                 </div>
+                                <span class="text-danger small error-text" id="error-user_rating"></span>
                             </div>
 
-                            <div class="col-md-12 eco-custom-form-group">
+                            <div class="col-md-12 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Your Experience</label>
-                                <textarea class="form-control eco-custom-input" rows="4" placeholder="Tell us about your amazing experience..."
-                                    required></textarea>
+                                <textarea class="form-control eco-custom-input" id="experience" rows="4"
+                                    placeholder="Tell us about your amazing experience..." name="experience"></textarea>
+                                <span class="text-danger small error-text" id="error-experience"></span>
                             </div>
                         </div>
 
                         <div class="text-center mt-3">
-                            <button type="submit" class="eco-custom-submit-btn">
+                            <button type="submit" class="eco-custom-submit-btn btn btn-primary" id="submitBtn">
                                 Submit Testimonial <i class="fa-solid fa-paper-plane ms-2"></i>
                             </button>
                         </div>
@@ -3813,6 +3785,7 @@
     </div>
 
     <script>
+        // --- Image Preview Logic ---
         document.getElementById('ecoProfileUpload').addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
@@ -3820,54 +3793,121 @@
                 reader.onload = function(e) {
                     const imgElement = document.getElementById('ecoPreviewImg');
                     imgElement.src = e.target.result;
-                    imgElement.style.display = 'block'; // Show the image
+                    imgElement.style.display = 'block';
                 }
                 reader.readAsDataURL(file);
             }
         });
+
         // --- Star Rating Logic ---
         const stars = document.querySelectorAll('.eco-star');
         const ratingInput = document.getElementById('ecoRatingInput');
 
         stars.forEach(star => {
-            // Mouse eka tharu uda geniyaddi
             star.addEventListener('mouseover', function() {
-                const rating = this.getAttribute('data-rating');
-                highlightEcoStars(rating);
+                highlightEcoStars(this.getAttribute('data-rating'));
             });
 
-            // Mouse eka tharu walin aath karaddi (kalin select karapu gaanatama gennanna)
             star.addEventListener('mouseout', function() {
                 highlightEcoStars(ratingInput.value);
             });
 
-            // Tharuwa click kalama value eka hidden input ekata daanna
             star.addEventListener('click', function() {
-                const rating = this.getAttribute('data-rating');
-                ratingInput.value = rating; // Set hidden input value
-                highlightEcoStars(rating);
+                ratingInput.value = this.getAttribute('data-rating');
+                highlightEcoStars(this.getAttribute('data-rating'));
+                document.getElementById('error-user_rating').innerText = ''; // Clear error if selected
             });
         });
 
-        // Tharu highlight karana function eka
         function highlightEcoStars(rating) {
             stars.forEach(star => {
                 if (star.getAttribute('data-rating') <= rating) {
-                    star.classList.add('active'); // Paata wenas karanna
+                    star.style.color = '#ffc107'; // Add active star color
                 } else {
-                    star.classList.remove('active'); // Paata ain karanna
+                    star.style.color = '#ccc'; // Add inactive star color
                 }
             });
         }
+
+        // --- Form Submit & AJAX Logic ---
+        document.getElementById('ecoTestimonialForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Submitting... <i class="fa-solid fa-spinner fa-spin ms-2"></i>';
+
+            // Clear previous errors
+            document.querySelectorAll('.error-text').forEach(el => el.innerText = '');
+
+            let formData = new FormData(this);
+
+            fetch('{{ route('testimonials.store') }}', {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Accept': 'application/json' // Aniwarya Laravel validation JSON widiyata ganna
+                    },
+                    body: formData
+                })
+                .then(async response => {
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        // Laravel Validation Error Code eka 422
+                        if (response.status === 422) {
+                            let errors = data.errors;
+                            for (const key in errors) {
+                                if (errors.hasOwnProperty(key)) {
+                                    document.getElementById(`error-${key}`).innerText = errors[key][0];
+                                }
+                            }
+                        } else {
+                            Swal.fire('Error!', 'Something went wrong on the server.', 'error');
+                        }
+                        throw new Error('Validation or Server Error');
+                    }
+                    return data;
+                })
+                .then(data => {
+                    if (data.success) {
+
+                        // 1. Modal eka wahaama close kirima (Bootstrap 5 Safer method)
+                        let modalElement = document.getElementById('ecoTestimonialModal');
+                        let modalInstance = bootstrap.Modal.getInstance(modalElement) || new bootstrap.Modal(
+                            modalElement);
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+
+                        // 2. Form Reset kirima
+                        document.getElementById('ecoTestimonialForm').reset();
+
+                        // 3. Image & Stars Reset kirima
+                        document.getElementById('ecoPreviewImg').style.display = 'none';
+                        document.getElementById('ecoPreviewImg').src = '';
+                        ratingInput.value = 0;
+                        highlightEcoStars(0);
+
+                        // 4. SweetAlert Success Message (Modal eka close unata passe display we)
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Thank You!',
+                            text: 'Your testimonial has been added successfully.',
+                            confirmButtonColor: '#3085d6'
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                })
+                .finally(() => {
+                    // Button eka ayeth parana thathwayata genima
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Submit Testimonial <i class="fa-solid fa-paper-plane ms-2"></i>';
+                });
+        });
     </script>
-
-
-    <!--========== Footer Area ==========-->
-    @include('partials.footer')
-
-    <!--========== All Js File =========== -->
-    @include('partials.scripts')
-
 
     <script>
         let bookingForms = document.querySelectorAll('.th-form');
@@ -3921,6 +3961,11 @@
         });
     </script>
 
+    <!--========== Footer Area ==========-->
+    @include('partials.footer')
+
+    <!--========== All Js File =========== -->
+    @include('partials.scripts')
 
 </body>
 

@@ -6,7 +6,29 @@ use App\Livewire\Settings\Password;
 use App\Livewire\Settings\TwoFactor;
 use App\Livewire\Settings\Appearance;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\TestimonialController;
+
+/*testimonial routes*/
+
+// Auth Routes
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Admin Routes (IsAdmin Middleware eken protect karala thiyenne)
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
+    Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
+});
+
+Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
+Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
+Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
+Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
 Route::get('/', function () {
     return view('index');
@@ -100,4 +122,4 @@ Route::post('/cotactform-submit', [FormController::class, 'handle_contactform'])
 Route::post('/accommodation-booking', [FormController::class, 'handle_AccommodationBooking'])->name('accommodation-booking.submit');
 
 
-require __DIR__.'/auth.php';
+//require __DIR__.'/auth.php';
