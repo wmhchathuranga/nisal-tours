@@ -16,8 +16,8 @@ class Testimonial extends Model
         'rating',
         'experience',
         'profile_picture',
-        'latitude',
-        'longitude',
+        'top_pos',
+        'left_pos',
         'is_approved'
     ];
 }

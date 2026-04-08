@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Testimonial;
 use Laravel\Fortify\Features;
 use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\Password;
@@ -10,7 +11,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\TestimonialController;
 
-/*testimonial routes*/
+/* testimonial routes */
 
 // Auth Routes
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
@@ -31,7 +32,9 @@ Route::post('/testimonials/store', [TestimonialController::class, 'store'])->nam
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
 Route::get('/', function () {
-    return view('index');
+    $testimonials = Testimonial::latest()->take(10)->get();
+
+    return view('index', compact('testimonials'));
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
@@ -57,7 +60,6 @@ Route::middleware(['auth'])->group(function () {
         ->name('two-factor.show');
 });
 
-
 Route::get('/services', function () {
     return view('services');
 })->name('services');
@@ -71,9 +73,9 @@ Route::get('/about', function () {
 // resorts
 // Resorts Dynamic Route
 Route::get('/resort-detail', function () {
-$resort_id = request()->query('id', '01'); 
-    
-    $resort_blade = 'resorts.resort-details-' . $resort_id;
+    $resort_id = request()->query('id', '01');
+
+    $resort_blade = 'resorts.resort-details-'.$resort_id;
 
     return view($resort_blade);
 })->name('resort-details');
@@ -97,29 +99,25 @@ $resort_id = request()->query('id', '01');
 //     return view('resort-details-05');
 // })->name('resort-details-05');
 
-
 //  tours
 Route::get('/tour-detail', function () {
     $tour_id = request()->query('tour_id');
-    $tour_blade = 'tour-details-' . $tour_id;
+    $tour_blade = 'tour-details-'.$tour_id;
 
-    return view('tours/' . $tour_blade);
+    return view('tours/'.$tour_blade);
 })->name('tour-details');
-
 
 // documentry
 Route::get('/documentry', function () {
     $doc_id = request()->query('doc_id');
-    $doc_blade = 'doc-' . $doc_id;
+    $doc_blade = 'doc-'.$doc_id;
 
-    return view('documentry/' . $doc_blade);
+    return view('documentry/'.$doc_blade);
 })->name('documentry');
-
 
 // form submission
 Route::post('/tour-booking', [FormController::class, 'handle_TourBooking'])->name('tour-booking.submit');
 Route::post('/cotactform-submit', [FormController::class, 'handle_contactform'])->name('contactform.submit');
 Route::post('/accommodation-booking', [FormController::class, 'handle_AccommodationBooking'])->name('accommodation-booking.submit');
 
-
-//require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';

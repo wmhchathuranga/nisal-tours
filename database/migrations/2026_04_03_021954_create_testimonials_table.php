@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-       Schema::create('testimonials', function (Blueprint $table) {
+        Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
             $table->string('full_name');
             $table->string('country');
@@ -19,14 +19,12 @@ return new class extends Migration
             $table->integer('rating')->default(5);
             $table->text('experience');
             $table->string('profile_picture')->nullable();
-            
-            // Map eke pennanna coordinates
-            $table->decimal('latitude', 10, 8)->nullable(); 
-            $table->decimal('longitude', 11, 8)->nullable();
-            
-            // Spam awoth block karanna status ekak thiyaganna eka hodai
-            $table->boolean('is_approved')->default(true); 
-            
+
+            $table->string('top_pos')->nullable();
+            $table->string('left_pos')->nullable();
+
+            $table->boolean('is_approved')->default(true);
+
             $table->timestamps();
         });
     }
