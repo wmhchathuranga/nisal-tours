@@ -22,15 +22,15 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
+            'mobile_no' => 'required|string|max:15',
             'password' => 'required|string|min:8|confirmed',
-            'role' => 'required|in:admin,user'
         ]);
 
         User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'mobile_no' => $request->mobile_no,
             'password' => Hash::make($request->password),
-            'role' => $request->role,
         ]);
 
         return redirect()->route('login')->with('success', 'Registration successful! Please login.');

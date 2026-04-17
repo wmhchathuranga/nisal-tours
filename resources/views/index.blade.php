@@ -14,7 +14,6 @@
     @endphp
     @include('partials.menu')
 
-
     <!--======== / Hero Section ========-->
     <div class="th-hero-wrapper hero-1" id="hero">
         <div class="swiper th-slider hero-slider-1" id="heroSlide1"
@@ -1499,9 +1498,15 @@
 
         <div class="row mt-4 mt-md-5">
             <div class="col-12 text-center mt-5">
-                <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
-                    <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
-                </button>
+                @auth
+                    <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
+                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                    </button>
+                @else
+                    <button class="eco-section-btn" onclick="requireLogin()">
+                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                    </button>
+                @endauth
             </div>
         </div>
 
@@ -1590,6 +1595,25 @@
     </div>
 
     <script>
+        //require login
+        function requireLogin() {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Login Required!',
+                text: 'Meka fill karanna mulinma login wela inna oone boss!',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Login Now',
+                cancelButtonText: 'Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Oyage login page eke link ekata meka wenas karanna
+                    window.location.href = "{{ route('login') }}";
+                }
+            });
+        }
+
         // --- Image Preview Logic ---
         document.getElementById('ecoProfileUpload').addEventListener('change', function(event) {
             const file = event.target.files[0];

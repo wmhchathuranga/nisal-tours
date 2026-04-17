@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('top_pos')->nullable();
             $table->string('left_pos')->nullable();
 
-            $table->boolean('is_approved')->default(true);
+            $table->boolean('is_approved')->default(false);
 
             $table->timestamps();
         });

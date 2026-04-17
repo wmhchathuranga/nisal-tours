@@ -68,20 +68,31 @@ class TestimonialController extends Controller
     public function index()
     {
 
-        $testimonials = \App\Models\Testimonial::latest()->get();
+      $testimonials = Testimonial::latest()->get();
 
+        // Eka home view ekata pass karanawa
         return view('testimonials', compact('testimonials'));
     }
 
     public function updateStatus(Request $request, $id)
     {
-        $testimonial = \App\Models\Testimonial::findOrFail($id);
+       // 1. Database eken testimonial record eka hoyagannawa
+    $testimonial = Testimonial::findOrFail($id);
 
-        $testimonial->is_approved = $request->status;
-        $testimonial->save();
+    // 2. Button eken apu value eka (1 hari 0 hari) is_approved column ekata danawa
+    // $request->status kiyanne ara JS eken apu 1 or 0 eka
+    $testimonial->is_approved = $request->status;
 
-        return redirect()->back()->with('success', 'Status updated successfully!');
+    // 3. Eka DB ekata save karanawa!
+    $testimonial->save();
+
+    // 4. AJAX ekata ok kiyala message eka yawanawa
+    return response()->json([
+        'success' => true,
+        'new_status' => $testimonial->is_approved
+    ]);
     }
+    
 
     public function getMapData()
     {

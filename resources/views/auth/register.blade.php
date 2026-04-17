@@ -111,8 +111,10 @@
     <style>
         :root {
             /* Novara Holidays Brand Colors based on the image */
-            --primary-color: #1a2b3c; /* Dark text color for headings */
-            --accent-color: #00a8b5; /* The Cyan/Teal brand color */
+            --primary-color: #1a2b3c;
+            /* Dark text color for headings */
+            --accent-color: #00a8b5;
+            /* The Cyan/Teal brand color */
             --accent-hover: #008b96;
             --text-muted: #6c757d;
             --bg-light: #f4f7f6;
@@ -279,6 +281,9 @@
 <body>
 
     <div class="auth-card" style="max-width: 500px;">
+        <div class="brand-logo">
+            <span>✈</span> Novara Holidays
+        </div>
         <span>Join Us</span>
         <h2>Create Account</h2>
 
@@ -296,10 +301,10 @@
             </div>
 
             <div class="form-group">
-                <select name="role" class="form-control" required>
-                    <option value="user">Traveler (Normal User)</option>
-                    <option value="admin">System Admin</option>
-                </select>
+                <input type="text" name="mobile_no" class="form-control" placeholder="Mobile Number" required>
+                @error('mobile_no')
+                    <div class="error-msg">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">

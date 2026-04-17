@@ -21,21 +21,32 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Admin Routes (IsAdmin Middleware eken protect karala thiyenne)
-Route::middleware(['auth', 'admin'])->group(function () {
+Route::middleware(['auth', 'is_admin'])->group(function () {
+
+    // Me athulata dana ooonama route ekakata yanna puluwan Admin kenekta witharai!
+    // Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
+
 });
 
-Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
-Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
+// Route::middleware(['auth', 'admin'])->group(function () {
+//     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
+//     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
+// });
+
+// Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
+// Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
 Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
 Route::get('/', function () {
-    $testimonials = Testimonial::latest()->take(10)->get();
+    $testimonials = Testimonial::where('is_approved', 1)->latest()->take(10)->get();
 
     return view('index', compact('testimonials'));
 })->name('home');
+
+Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
