@@ -1532,7 +1532,7 @@
                             <label for="ecoProfileUpload" class="eco-img-preview" id="ecoImgContainer">
                                 <i class="fa-solid fa-camera"></i>
                                 <img id="ecoPreviewImg" src="" alt="Profile Preview"
-                                    style="display: none; max-width: 100px; border-radius: 50%;">
+                                    style="display: none; max-width: 200px; border-radius: 50%;">
                             </label>
                             <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none"
                                 accept="image/*">
@@ -1600,7 +1600,7 @@
             Swal.fire({
                 icon: 'warning',
                 title: 'Login Required!',
-                text: 'Meka fill karanna mulinma login wela inna oone boss!',
+                text: 'Login first to share your experience.',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
@@ -1675,7 +1675,7 @@
                     method: 'POST',
                     headers: {
                         'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                        'Accept': 'application/json' // Aniwarya Laravel validation JSON widiyata ganna
+                        'Accept': 'application/json' 
                     },
                     body: formData
                 })
@@ -1740,7 +1740,6 @@
 
     <script>
         let bookingForms = document.querySelectorAll('.th-form');
-
         bookingForms.forEach(bookingForm => {
 
             // let bookingForm = document.getElementById('custom-tour-booking-form');

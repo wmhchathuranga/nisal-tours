@@ -56,6 +56,7 @@ class TestimonialController extends Controller
             'profile_picture' => $imagePath,
             'top_pos' => $top_pos,
             'left_pos' => $left_pos,
+            'is_approved' => 0,
         ]);
 
         return response()->json([

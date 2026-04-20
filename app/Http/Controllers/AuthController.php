@@ -47,7 +47,7 @@ class AuthController extends Controller
             
             // Admin nam admin dashboard ekata, nattam home ekata
             if (Auth::user()->role === 'admin') {
-                return redirect()->route('admin.testimonials.index');
+                return redirect()->route('home');
             }
             return redirect('/');
         }

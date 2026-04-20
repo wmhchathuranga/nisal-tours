@@ -122,7 +122,7 @@
                 <div class="info-box_text">
                     <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img"></div>
                     <div class="details">
-                        <p>789 Inner Lane, Holy park, California, USA</p>
+                        <p>789 Inner Lane, Holy park, California, USA</p>jki89
                     </div>
                 </div>
             </div>
@@ -157,7 +157,11 @@
                     <a href="{{ route('login') }}" class="custom-auth-btn btn-login-custom">Login</a>
                     <a href="{{ route('register') }}" class="custom-auth-btn btn-register-custom">Register</a>
                 @else
-                    <a href="{{ route('dashboard') }}" class="custom-auth-btn btn-login-custom">Dashboard</a>
+                    @if (auth()->user()->role === 'admin')
+                        <a href="{{ route('admin.testimonials.index') }}"
+                            class="custom-auth-btn btn-login-custom">Dashboard</a>
+                    @endif
+
                     <form method="POST" action="{{ route('logout') }}" style="display: flex; flex-direction: column;">
                         @csrf
                         <button type="submit" class="custom-auth-btn btn-register-custom w-100">Logout</button>
@@ -206,7 +210,10 @@
                                 <a href="{{ route('register') }}"
                                     class="custom-auth-btn btn-register-custom">Register</a>
                             @else
-                                <a href="{{ route('home') }}" class="custom-auth-btn btn-login-custom">Dashboard</a>
+                                @if (auth()->user()->role === 'admin')
+                                    <a href="{{ route('admin.testimonials.index') }}"
+                                        class="custom-auth-btn btn-login-custom">Dashboard</a>
+                                @endif
                                 <form method="POST" action="{{ route('logout') }}" style="margin: 0;">
                                     @csrf
                                     <button type="submit" class="custom-auth-btn btn-register-custom">Logout</button>

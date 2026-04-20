@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     @include('partials.head')
+    @include('partials.head')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Testimonials</title>
@@ -113,11 +113,18 @@
 
     <div class="container mt-5 mb-5">
 
-        <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
-                <h3 class="fw-bold mb-0 text-dark"><i class="fa-solid fa-map-location-dot text-primary me-2"></i> Manage
-                    Experiences</h3>
+                <h3 class="fw-bold mb-0 text-dark">
+                    <i class="fa-solid fa-map-location-dot text-primary me-2"></i> Manage Experiences
+                </h3>
                 <p class="text-muted small mt-1 mb-0">Review and approve user testimonials for the map.</p>
+            </div>
+            
+            <div>
+                <a href="{{ url('/') }}" class="btn btn-light border shadow-sm px-4 rounded-pill fw-semibold text-dark">
+                    <i class="fa-solid fa-house me-2 text-primary"></i> Home 
+                </a>
             </div>
         </div>
 
