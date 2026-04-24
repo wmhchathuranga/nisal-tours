@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     @include('partials.head')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Novara Holidays</title>
+    <title>Forgot Password - Novara Holidays</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Novara Holidays Brand Colors based on the image */
             --primary-color: #1a2b3c;
-            /* Dark text color for headings */
             --accent-color: #00a8b5;
-            /* The Cyan/Teal brand color */
             --accent-hover: #008b96;
             --text-muted: #6c757d;
             --bg-light: #f4f7f6;
@@ -21,7 +17,6 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            /* Travel vibe එකට ගැලපෙන අඳුරු පසුබිම් පින්තූරයක් */
             background: linear-gradient(rgba(26, 43, 60, 0.75), rgba(26, 43, 60, 0.75)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop') center/cover no-repeat fixed;
             margin: 0;
             display: flex;
@@ -42,7 +37,6 @@
             overflow: hidden;
         }
 
-        /* Top accent border */
         .auth-card::before {
             content: '';
             position: absolute;
@@ -53,7 +47,6 @@
             background: var(--accent-color);
         }
 
-        /* Logo Area Inside Card */
         .brand-logo {
             font-size: 20px;
             font-weight: 700;
@@ -67,10 +60,7 @@
             letter-spacing: 1px;
         }
 
-        .brand-logo span {
-            color: var(--accent-color);
-            font-size: 24px;
-        }
+        .brand-logo span { color: var(--accent-color); font-size: 24px; }
 
         .auth-card .sub-title {
             color: var(--accent-color);
@@ -84,15 +74,19 @@
 
         .auth-card h2 {
             color: var(--primary-color);
-            margin: 0 0 35px;
+            margin: 0 0 15px;
             font-size: 26px;
             font-weight: 700;
         }
 
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
+        .info-text {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 25px;
+            line-height: 1.5;
         }
+
+        .form-group { margin-bottom: 20px; text-align: left; }
 
         .form-control {
             width: 100%;
@@ -105,10 +99,6 @@
             box-sizing: border-box;
             transition: all 0.3s ease;
             background-color: #f9fafb;
-        }
-
-        .form-control::placeholder {
-            color: #a0aec0;
         }
 
         .form-control:focus {
@@ -129,7 +119,7 @@
             font-size: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-top: 15px;
+            margin-top: 10px;
             box-shadow: 0 4px 12px rgba(0, 168, 181, 0.3);
         }
 
@@ -139,53 +129,28 @@
             box-shadow: 0 6px 15px rgba(0, 168, 181, 0.4);
         }
 
-        .auth-links {
-            margin-top: 25px;
-            font-size: 14px;
-            color: var(--text-muted);
-        }
+        .auth-links { margin-top: 25px; font-size: 14px; color: var(--text-muted); }
+        .auth-links a { color: var(--accent-color); text-decoration: none; font-weight: 600; transition: color 0.3s; }
+        .auth-links a:hover { color: var(--primary-color); }
 
-        .auth-links a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .auth-links a:hover {
-            color: var(--primary-color);
-        }
-
-        .error-msg {
-            color: #e74c3c;
-            font-size: 13px;
-            margin-top: 6px;
-            text-align: left;
-            display: block;
-        }
+        .error-msg { color: #e74c3c; font-size: 13px; margin-top: 6px; text-align: left; display: block; }
 
         .alert-success {
-            color: #008b96;
-            background: rgba(0, 168, 181, 0.1);
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-weight: 500;
-            font-size: 14px;
+            color: #008b96; background: rgba(0, 168, 181, 0.1); padding: 12px;
+            border-radius: 8px; margin-bottom: 20px; font-weight: 500; font-size: 14px;
             border: 1px solid rgba(0, 168, 181, 0.2);
         }
     </style>
 </head>
-
 <body>
-
     <div class="auth-card">
         <div class="brand-logo">
             <span>✈</span> Novara Holidays
         </div>
 
-        <span class="sub-title">Welcome Back</span>
-        <h2>Login to Account</h2>
+        <span class="sub-title">Account Recovery</span>
+        <h2>Forgot Password?</h2>
+        <p class="info-text">No problem. Just let us know your email address and we will email you a password reset link.</p>
 
         @if (session('success'))
             <div class="alert-success">
@@ -193,37 +158,22 @@
             </div>
         @endif
 
-        
-
-        <form action="{{ route('login') }}" method="POST">
+        <form action="{{ route('password.email') }}" method="POST">
             @csrf
             <div class="form-group">
                 <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                    placeholder="Email Address" value="{{ old('email') }}" >
+                    placeholder="Enter your email address" value="{{ old('email') }}" required autofocus>
                 @error('email')
                     <div class="error-msg">{{ $message }}</div>
                 @enderror
             </div>
 
-            <div class="form-group">
-                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
-                    placeholder="Password" >
-                @error('password')
-                    <div class="error-msg">{{ $message }}</div>
-                @enderror
-            </div>
-
-            <button type="submit" class="auth-btn">Login</button>
+            <button type="submit" class="auth-btn">Email Password Reset Link</button>
         </form>
 
         <div class="auth-links">
-            Don't have an account? <a href="{{ route('register') }}">Register here</a>
-        </div>
-        <div class="auth-links">
-            <a href="{{ route('password.request') }}">Forgot Password?</a>
+            Remembered your password? <a href="{{ route('login') }}">Back to Login</a>
         </div>
     </div>
-
 </body>
-
 </html>

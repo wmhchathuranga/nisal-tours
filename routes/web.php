@@ -1,18 +1,44 @@
 <?php
 
+use App\Models\User;
 use App\Models\Testimonial;
 use Laravel\Fortify\Features;
 use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\TwoFactor;
+use Illuminate\Support\Facades\Auth;
 use App\Livewire\Settings\Appearance;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\EmailController;
+use App\Http\Controllers\PasswordController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TestimonialController;
 
-/* testimonial routes */
+//email verification test route
+// Route::get('/send-mail',[EmailController::class,'sendTestEmail'])->name('send-mail');
 
+Route::get('/forgot-password', [PasswordController::class, 'requestForm'])->name('password.request');
+
+Route::post('/forgot-password', [PasswordController::class, 'sendEmail'])->name('password.email');
+
+Route::get('/reset-password/{token}', [PasswordController::class, 'resetForm'])->name('password.reset');
+
+Route::post('/reset-password', [PasswordController::class, 'updatePassword'])->name('password.update');
+
+Route::get('/test-verify-email', function () {
+    $user = User::first();
+
+    if ($user) {
+        $user->sendEmailVerificationNotification();
+        return 'Test email eka yawwa machan! Mailtrap inbox eka check karala balanna.';
+    }
+
+    return 'Database eke users la kauruth na. Mulin dummy user kenek database ekata danna.';
+});
+/* testimonial routes */
+Auth::routes(['verify' => true]);
 // Auth Routes
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
@@ -20,23 +46,18 @@ Route::get('/register', [AuthController::class, 'showRegister'])->name('register
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Admin Routes (IsAdmin Middleware eken protect karala thiyenne)
+Route::get('/verify-email/{id}', [AuthController::class, 'verifyEmail'])
+    ->name('verify.email')
+    ->middleware('signed');
+
+// IsAdmin middleware
 Route::middleware(['auth', 'is_admin'])->group(function () {
 
-    // Me athulata dana ooonama route ekakata yanna puluwan Admin kenekta witharai!
-    // Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
 
 });
 
-// Route::middleware(['auth', 'admin'])->group(function () {
-//     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
-//     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
-// });
-
-// Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
-// Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
 Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 

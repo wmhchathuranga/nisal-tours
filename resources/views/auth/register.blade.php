@@ -289,31 +289,42 @@
 
         <form action="{{ route('register') }}" method="POST">
             @csrf
+
             <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
+                    placeholder="Full Name" value="{{ old('name') }}" >
+                @error('name')
+                    <div class="error-msg">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
-                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
+                    placeholder="Email Address" value="{{ old('email') }}" >
                 @error('email')
                     <div class="error-msg">{{ $message }}</div>
                 @enderror
             </div>
 
             <div class="form-group">
-                <input type="text" name="mobile_no" class="form-control" placeholder="Mobile Number" required>
+                <input type="number" name="mobile_no" class="form-control @error('mobile_no') is-invalid @enderror"
+                    placeholder="Mobile Number" value="{{ old('mobile_no') }}" >
                 @error('mobile_no')
                     <div class="error-msg">{{ $message }}</div>
                 @enderror
             </div>
 
             <div class="form-group">
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
+                    placeholder="Password" >
+                @error('password')
+                    <div class="error-msg">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
                 <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password"
-                    required>
+                    >
             </div>
 
             <button type="submit" class="auth-btn">Register</button>

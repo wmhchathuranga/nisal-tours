@@ -158,7 +158,7 @@
                     <a href="{{ route('register') }}" class="custom-auth-btn btn-register-custom">Register</a>
                 @else
                     @if (auth()->user()->role === 'admin')
-                        <a href="{{ route('admin.testimonials.index') }}"
+                        <a href="{{ route('admin.testimonials.index') }}" target="_blank"
                             class="custom-auth-btn btn-login-custom">Dashboard</a>
                     @endif
 
@@ -211,7 +211,7 @@
                                     class="custom-auth-btn btn-register-custom">Register</a>
                             @else
                                 @if (auth()->user()->role === 'admin')
-                                    <a href="{{ route('admin.testimonials.index') }}"
+                                    <a href="{{ route('admin.testimonials.index') }}" target="_blank"
                                         class="custom-auth-btn btn-login-custom">Dashboard</a>
                                 @endif
                                 <form method="POST" action="{{ route('logout') }}" style="margin: 0;">

@@ -34,18 +34,25 @@ class TestimonialController extends Controller
             'India' => ['top' => 50, 'left' => 70],
             'Russia' => ['top' => 25, 'left' => 65],
             'Sri Lanka' => ['top' => 55, 'left' => 71],
+            'Canada' => ['top' => 20, 'left' => 15],
+            'Brazil' => ['top' => 65, 'left' => 30],
+            'South Africa' => ['top' => 80, 'left' => 52],
+            'Japan' => ['top' => 40, 'left' => 88],
+            'China' => ['top' => 40, 'left' => 75],
         ];
 
         $country = $request->country;
 
         if (array_key_exists($country, $countryLocations)) {
-            $top_pos = $countryLocations[$country]['top'];
-            $left_pos = $countryLocations[$country]['left'];
+            $top_pos = $countryLocations[$country]['top'] + rand(-4, 4);
+            $left_pos = $countryLocations[$country]['left'] + rand(-4, 4);
         } else {
-            $randomLocation = $countryLocations[array_rand($countryLocations)];
-            $top_pos = $randomLocation['top'];
-            $left_pos = $randomLocation['left'];
+            $top_pos = rand(20, 80);
+            $left_pos = rand(10, 90);
         }
+
+        $top_pos = max(5, min(95, $top_pos));
+        $left_pos = max(5, min(95, $left_pos));
 
         $testimonial = Testimonial::create([
             'full_name' => $request->full_name,
@@ -69,31 +76,25 @@ class TestimonialController extends Controller
     public function index()
     {
 
-      $testimonials = Testimonial::latest()->get();
+        $testimonials = Testimonial::latest()->get();
 
-        // Eka home view ekata pass karanawa
         return view('testimonials', compact('testimonials'));
     }
 
     public function updateStatus(Request $request, $id)
     {
-       // 1. Database eken testimonial record eka hoyagannawa
-    $testimonial = Testimonial::findOrFail($id);
-
-    // 2. Button eken apu value eka (1 hari 0 hari) is_approved column ekata danawa
-    // $request->status kiyanne ara JS eken apu 1 or 0 eka
-    $testimonial->is_approved = $request->status;
-
-    // 3. Eka DB ekata save karanawa!
-    $testimonial->save();
-
-    // 4. AJAX ekata ok kiyala message eka yawanawa
-    return response()->json([
-        'success' => true,
-        'new_status' => $testimonial->is_approved
-    ]);
+        
+        $testimonial = Testimonial::findOrFail($id);
+        
+        $testimonial->is_approved = $request->status;
+        
+        $testimonial->save();
+        
+        return response()->json([
+            'success' => true,
+            'new_status' => $testimonial->is_approved,
+        ]);
     }
-    
 
     public function getMapData()
     {
