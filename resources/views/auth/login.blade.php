@@ -21,7 +21,6 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            /* Travel vibe එකට ගැලපෙන අඳුරු පසුබිම් පින්තූරයක් */
             background: linear-gradient(rgba(26, 43, 60, 0.75), rgba(26, 43, 60, 0.75)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop') center/cover no-repeat fixed;
             margin: 0;
             display: flex;
@@ -192,8 +191,6 @@
                 {{ session('success') }}
             </div>
         @endif
-
-        
 
         <form action="{{ route('login') }}" method="POST">
             @csrf
