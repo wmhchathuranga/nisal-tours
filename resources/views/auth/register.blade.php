@@ -7,10 +7,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Novara Holidays</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    {{-- <style>
+        /* Login eke thiyena CSS tikama meke danna */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #0c333a;
+            --text-muted: #7f8c8d;
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-light);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .auth-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .auth-card span {
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        .auth-card h2 {
+            color: var(--primary-color);
+            margin: 10px 0 30px;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .auth-btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .auth-btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        .auth-links {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .auth-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .error-msg {
+            color: #e74c3c;
+            font-size: 13px;
+            margin-top: 5px;
+            text-align: left;
+        }
+    </style> --}}
     <style>
         :root {
-            var(--primary-color): #1a2b3c;
+            /* Novara Holidays Brand Colors based on the image */
+            --primary-color: #1a2b3c;
+            /* Dark text color for headings */
             --accent-color: #00a8b5;
+            /* The Cyan/Teal brand color */
             --accent-hover: #008b96;
             --text-muted: #6c757d;
             --bg-light: #f4f7f6;
@@ -18,13 +122,13 @@
 
         body {
             font-family: 'Poppins', sans-serif;
+            /* Travel vibe එකට ගැලපෙන අඳුරු පසුබිම් පින්තූරයක් */
             background: linear-gradient(rgba(26, 43, 60, 0.75), rgba(26, 43, 60, 0.75)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop') center/cover no-repeat fixed;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 20px 0;
+            height: 100vh;
         }
 
         .auth-card {
@@ -36,8 +140,10 @@
             max-width: 420px;
             text-align: center;
             position: relative;
+            overflow: hidden;
         }
 
+        /* Top accent border */
         .auth-card::before {
             content: '';
             position: absolute;
@@ -48,10 +154,11 @@
             background: var(--accent-color);
         }
 
+        /* Logo Area Inside Card */
         .brand-logo {
             font-size: 20px;
             font-weight: 700;
-            color: #1a2b3c;
+            color: var(--primary-color);
             margin-bottom: 25px;
             display: flex;
             align-items: center;
@@ -77,7 +184,7 @@
         }
 
         .auth-card h2 {
-            color: #1a2b3c;
+            color: var(--primary-color);
             margin: 0 0 35px;
             font-size: 26px;
             font-weight: 700;
@@ -86,7 +193,6 @@
         .form-group {
             margin-bottom: 20px;
             text-align: left;
-            position: relative; /* Tooltip eka thiyaganna meka one */
         }
 
         .form-control {
@@ -147,12 +253,27 @@
             transition: color 0.3s;
         }
 
+        .auth-links a:hover {
+            color: var(--primary-color);
+        }
+
         .error-msg {
             color: #e74c3c;
             font-size: 13px;
             margin-top: 6px;
             text-align: left;
             display: block;
+        }
+
+        .alert-success {
+            color: #008b96;
+            background: rgba(0, 168, 181, 0.1);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            border: 1px solid rgba(0, 168, 181, 0.2);
         }
 
         /* --- Floating Password Policy Styles (Aluth tika) --- */
@@ -244,10 +365,10 @@
         <div class="brand-logo">
             <span>✈</span> Novara Holidays
         </div>
-        <span class="sub-title">Join Us</span>
+        <span>Join Us</span>
         <h2>Create Account</h2>
 
-        <form action="{{ route('register') }}" method="POST">
+       <form action="{{ route('register') }}" method="POST">
             @csrf
 
             <div class="form-group">
@@ -305,6 +426,7 @@
         </div>
     </div>
 
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const passwordInput = document.getElementById('password');
@@ -354,3 +476,12 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
