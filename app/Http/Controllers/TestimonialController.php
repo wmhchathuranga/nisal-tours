@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class TestimonialController extends Controller
 {
     public function store(Request $request)
     {
         $request->validate([
-            'full_name' => 'required|string|max:255',
+            // 'full_name' => 'required|string|max:255',
             'country' => 'required|string|max:255',
-            'phone_number' => 'nullable|string|max:20',
+            // 'phone_number' => 'nullable|string|max:20',
             'user_rating' => 'required|integer|min:1|max:5',
             'experience' => 'required|string',
             'profile_picture' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048', // Max 2MB
@@ -54,10 +54,13 @@ class TestimonialController extends Controller
         $top_pos = max(5, min(95, $top_pos));
         $left_pos = max(5, min(95, $left_pos));
 
+        // $testimonial = new Testimonial();
+
         $testimonial = Testimonial::create([
-            'full_name' => $request->full_name,
+            'full_name' => Auth::user()->name,
             'country' => $request->country,
-            'phone_number' => $request->phone_number,
+            'phone_number' => Auth::user()->mobile_no,
+            'user_id' => Auth::id(),
             'rating' => $request->user_rating,
             'experience' => $request->experience,
             'profile_picture' => $imagePath,
@@ -83,13 +86,13 @@ class TestimonialController extends Controller
 
     public function updateStatus(Request $request, $id)
     {
-        
+
         $testimonial = Testimonial::findOrFail($id);
-        
+
         $testimonial->is_approved = $request->status;
-        
+
         $testimonial->save();
-        
+
         return response()->json([
             'success' => true,
             'new_status' => $testimonial->is_approved,

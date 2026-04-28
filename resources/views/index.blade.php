@@ -1541,26 +1541,31 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 eco-custom-form-group mb-3">
+                            @auth
+                                <input type="hidden" name="full_name" value="{{ auth()->user()->name }}">
+                                <input type="hidden" name="phone_number"
+                                    value="{{ auth()->user()->phone_number ?? '' }}">
+                            @endauth
+                            {{-- <div class="col-md-6 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Full Name</label>
                                 <input type="text" id="full_name" name="full_name"
                                     class="form-control eco-custom-input" placeholder="e.g. Michel Carlos">
                                 <span class="text-danger small error-text" id="error-full_name"></span>
-                            </div>
+                            </div> --}}
 
-                            <div class="col-md-6 eco-custom-form-group mb-3">
+                            <div class="col-md-12 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Country</label>
                                 <input type="text" id="country" name="country"
                                     class="form-control eco-custom-input" placeholder="e.g. Sri Lanka">
                                 <span class="text-danger small error-text" id="error-country"></span>
                             </div>
 
-                            <div class="col-md-12 eco-custom-form-group mb-3">
+                            {{-- <div class="col-md-12 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Phone Number</label>
                                 <input type="tel" id="phone_number" name="phone_number"
                                     class="form-control eco-custom-input" placeholder="e.g. +94 77 123 4567">
                                 <span class="text-danger small error-text" id="error-phone_number"></span>
-                            </div>
+                            </div> --}}
 
                             <div class="col-md-12 eco-custom-form-group d-flex flex-column align-items-center mb-3">
                                 <label class="eco-custom-label">Rate Your Experience</label>
@@ -1675,7 +1680,7 @@
                     method: 'POST',
                     headers: {
                         'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                        'Accept': 'application/json' 
+                        'Accept': 'application/json'
                     },
                     body: formData
                 })
