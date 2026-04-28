@@ -122,7 +122,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            /* Travel vibe එකට ගැලපෙන අඳුරු පසුබිම් පින්තූරයක් */
+            /* Travel vibe */
             background: linear-gradient(rgba(26, 43, 60, 0.75), rgba(26, 43, 60, 0.75)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop') center/cover no-repeat fixed;
             margin: 0;
             display: flex;
@@ -276,10 +276,10 @@
             border: 1px solid rgba(0, 168, 181, 0.2);
         }
 
-        /* --- Floating Password Policy Styles (Aluth tika) --- */
+        /* --- Floating Password Policy Styles  --- */
         .password-policy {
             position: absolute;
-            top: 100%; /* Input eken pahala */
+            top: 100%;
             left: 0;
             width: 100%;
             margin-top: 12px;
@@ -288,10 +288,10 @@
             border-radius: 8px;
             border: 1px solid #e1e5eb;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            z-index: 10; /* Anith element walata uda pennanna */
+            z-index: 10;
             text-align: left;
             font-size: 12px;
-            
+
             /* Hidden by default with smooth fade */
             visibility: hidden;
             opacity: 0;
@@ -299,7 +299,7 @@
             transition: all 0.3s ease;
         }
 
-        /* Tooltip Arrow (Uda thiyena podi katuwa) */
+        /* Tooltip Arrow*/
         .password-policy::before {
             content: '';
             position: absolute;
@@ -331,7 +331,8 @@
             padding: 0;
             margin: 0;
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Columns 2kata kedil lassnata pennanwa */
+            grid-template-columns: 1fr 1fr;
+            /* Columns  */
             gap: 5px;
         }
 
@@ -356,6 +357,31 @@
         .password-policy li.valid::before {
             content: "✓";
         }
+
+        /* --- Password wrapper for eye icon --- */
+        .password-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .password-wrapper .form-control {
+            padding-right: 45px;
+            /* Leave space for the eye icon so text doesn't overlap */
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            color: #a0aec0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-password:hover {
+            color: var(--accent-color);
+        }
     </style>
 </head>
 
@@ -368,7 +394,7 @@
         <span>Join Us</span>
         <h2>Create Account</h2>
 
-       <form action="{{ route('register') }}" method="POST">
+        <form action="{{ route('register') }}" method="POST">
             @csrf
 
             <div class="form-group">
@@ -396,12 +422,16 @@
             </div>
 
             <div class="form-group">
-                <input type="password" id="password" name="password" class="form-control @error('password') is-invalid @enderror"
-                    placeholder="Password">
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password"
+                        class="form-control @error('password') is-invalid @enderror" placeholder="Password">
+                    <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i>
+                </div>
+
                 @error('password')
                     <div class="error-msg">{{ $message }}</div>
                 @enderror
-                
+
                 <div id="password-policy" class="password-policy">
                     <p>Password requirements:</p>
                     <ul>
@@ -415,7 +445,11 @@
             </div>
 
             <div class="form-group">
-                <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password">
+                <div class="password-wrapper">
+                    <input type="password" id="password_confirmation" name="password_confirmation" class="form-control"
+                        placeholder="Confirm Password">
+                    <i class="fa-regular fa-eye-slash toggle-password" id="toggleConfirmPassword"></i>
+                </div>
             </div>
 
             <button type="submit" class="auth-btn">Register</button>
@@ -426,9 +460,44 @@
         </div>
     </div>
 
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+
+            // --- Password Show/Hide Logic (Hold to Show) ---
+            function setupPasswordToggle(inputId, toggleIconId) {
+                const passwordInput = document.getElementById(inputId);
+                const toggleIcon = document.getElementById(toggleIconId);
+
+
+                const showPassword = function(e) {
+                    e.preventDefault();
+                    passwordInput.setAttribute('type', 'text');
+                    toggleIcon.classList.remove('fa-eye-slash');
+                    toggleIcon.classList.add('fa-eye');
+                };
+
+
+                const hidePassword = function() {
+                    passwordInput.setAttribute('type', 'password');
+                    toggleIcon.classList.remove('fa-eye');
+                    toggleIcon.classList.add('fa-eye-slash');
+                };
+
+                // --- PC / Laptops 
+                toggleIcon.addEventListener('mousedown', showPassword);
+                toggleIcon.addEventListener('mouseup', hidePassword);
+                toggleIcon.addEventListener('mouseleave', hidePassword);
+
+                // --- Mobile Phones
+                toggleIcon.addEventListener('touchstart', showPassword);
+                toggleIcon.addEventListener('touchend', hidePassword);
+                toggleIcon.addEventListener('touchcancel', hidePassword);
+            }
+
+            // Initialize both password fields
+            setupPasswordToggle('password', 'togglePassword');
+            setupPasswordToggle('password_confirmation', 'toggleConfirmPassword');
+
             const passwordInput = document.getElementById('password');
             const policyBox = document.getElementById('password-policy');
 
@@ -457,10 +526,13 @@
                 updateRule(ruleLower, /[a-z]/.test(val));
                 updateRule(ruleNumber, /[0-9]/.test(val));
                 updateRule(ruleSpecial, /[!@#$%^&*(),.?":{}|<>]/.test(val));
-                
+
                 // Hide policy box automatically if EVERYTHING is valid
-                if (val.length >= 8 && /[A-Z]/.test(val) && /[a-z]/.test(val) && /[0-9]/.test(val) && /[!@#$%^&*(),.?":{}|<>]/.test(val)) {
-                    setTimeout(() => { policyBox.classList.remove('show'); }, 1000); // Hide after 1 sec
+                if (val.length >= 8 && /[A-Z]/.test(val) && /[a-z]/.test(val) && /[0-9]/.test(val) &&
+                    /[!@#$%^&*(),.?":{}|<>]/.test(val)) {
+                    setTimeout(() => {
+                        policyBox.classList.remove('show');
+                    }, 1000); // Hide after 1 sec
                 }
             });
 
@@ -473,15 +545,7 @@
             }
         });
     </script>
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-

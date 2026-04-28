@@ -206,9 +206,9 @@
 
                         <div class="desktop-auth-wrap d-none d-xl-flex gap-3">
                             @guest
-                                <a href="{{ route('login') }}" class="custom-auth-btn btn-login-custom">Login</a>
-                                <a href="{{ route('register') }}"
-                                    class="custom-auth-btn btn-register-custom">Register</a>
+                                <a href="{{ route('login') }}" class="custom-auth-btn btn-register-custom">Login</a>
+                                {{-- <a href="{{ route('register') }}"
+                                    class="custom-auth-btn btn-register-custom">Register</a> --}}
                             @else
                                 @if (auth()->user()->role === 'admin')
                                     <a href="{{ route('admin.testimonials.index') }}" target="_blank"

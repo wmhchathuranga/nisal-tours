@@ -173,6 +173,30 @@
             font-size: 14px;
             border: 1px solid rgba(0, 168, 181, 0.2);
         }
+
+        /* --- Password wrapper for eye icon --- */
+        .password-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .password-wrapper .form-control {
+            padding-right: 45px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            color: #a0aec0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-password:hover {
+            color: #00a8b5;
+        }
     </style>
 </head>
 
@@ -194,17 +218,22 @@
 
         <form action="{{ route('login') }}" method="POST">
             @csrf
+
             <div class="form-group">
                 <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                    placeholder="Email Address" value="{{ old('email') }}" >
+                    placeholder="Email Address" value="{{ old('email') }}">
                 @error('email')
                     <div class="error-msg">{{ $message }}</div>
                 @enderror
             </div>
 
             <div class="form-group">
-                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
-                    placeholder="Password" >
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password"
+                        class="form-control @error('password') is-invalid @enderror" placeholder="Password">
+                    <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i>
+                </div>
+
                 @error('password')
                     <div class="error-msg">{{ $message }}</div>
                 @enderror
@@ -221,6 +250,38 @@
         </div>
     </div>
 
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const passwordInput = document.getElementById('password');
+        const toggleIcon = document.getElementById('togglePassword');
+
+        const showPassword = function(e) {
+            e.preventDefault(); 
+            passwordInput.setAttribute('type', 'text');
+            toggleIcon.classList.remove('fa-eye-slash');
+            toggleIcon.classList.add('fa-eye');
+        };
+
+        const hidePassword = function() {
+            passwordInput.setAttribute('type', 'password');
+            toggleIcon.classList.remove('fa-eye');
+            toggleIcon.classList.add('fa-eye-slash');
+        };
+
+        toggleIcon.addEventListener('mousedown', showPassword);
+        
+        toggleIcon.addEventListener('mouseup', hidePassword);
+        
+        toggleIcon.addEventListener('mouseleave', hidePassword);
+
+        toggleIcon.addEventListener('touchstart', showPassword);
+        
+        toggleIcon.addEventListener('touchend', hidePassword);
+        
+        toggleIcon.addEventListener('touchcancel', hidePassword);
+    });
+</script>
 </body>
 
 </html>
