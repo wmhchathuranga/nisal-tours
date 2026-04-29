@@ -12,12 +12,20 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TestimonialController;
 
 //email verification test route
 // Route::get('/send-mail',[EmailController::class,'sendTestEmail'])->name('send-mail');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::post('/profile/password', [ProfileController::class, 'updatePassword'])->name('profile.password');
+    Route::post('/profile/image/delete', [ProfileController::class, 'deleteImage'])->name('profile.image.delete');
+});
 
 Route::get('/forgot-password', [PasswordController::class, 'requestForm'])->name('password.request');
 

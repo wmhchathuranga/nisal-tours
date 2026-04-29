@@ -26,7 +26,6 @@
         border-color: #9ca3af;
     }
 
-    /* Oyalage theme eke thiyena blue color eka mekata damma (Novara Holidays logo color) */
     .btn-register-custom {
         background-color: #1db1d0;
         color: #ffffff !important;
@@ -48,6 +47,72 @@
         padding: 25px 20px;
         border-top: 1px solid #e5e7eb;
         margin-top: 15px;
+    }
+
+    /* --- Custom Profile Dropdown Styles --- */
+
+    .custom-profile-dropdown .profile-trigger-img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    /* Green active dot eka */
+    .custom-profile-dropdown .status-dot {
+        width: 12px;
+        height: 12px;
+        transform: translate(10%, 10%);
+    }
+
+    .custom-profile-dropdown .dropdown-toggle::after {
+        display: none;
+    }
+
+    /* Dropdown box eke design eka */
+    .custom-profile-dropdown .dropdown-menu {
+        width: 280px;
+        border-radius: 12px;
+        padding: 0;
+        margin-top: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .custom-profile-dropdown .dropdown-header-custom {
+        background-color: #f8f9fc;
+        /* Light grey */
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .custom-profile-dropdown .profile-header-img {
+        width: 52px;
+        height: 52px;
+        object-fit: cover;
+    }
+
+    .custom-profile-dropdown .dropdown-item {
+        padding: 12px 20px;
+        transition: background-color 0.2s ease;
+        color: #333;
+    }
+
+    .custom-profile-dropdown .dropdown-item:hover {
+        background-color: #f3f4f6;
+    }
+
+    .custom-profile-dropdown .logout-btn {
+        color: #e74c3c !important;
+    }
+
+    .custom-profile-dropdown .logout-btn:hover {
+        background-color: #fdf3f2;
+        color: #c0392b !important;
+    }
+
+    .custom-profile-dropdown .logout-btn i {
+        color: inherit;
     }
 </style>
 
@@ -207,17 +272,64 @@
                         <div class="desktop-auth-wrap d-none d-xl-flex gap-3">
                             @guest
                                 <a href="{{ route('login') }}" class="custom-auth-btn btn-register-custom">Login</a>
-                                {{-- <a href="{{ route('register') }}"
-                                    class="custom-auth-btn btn-register-custom">Register</a> --}}
                             @else
                                 @if (auth()->user()->role === 'admin')
                                     <a href="{{ route('admin.testimonials.index') }}" target="_blank"
                                         class="custom-auth-btn btn-login-custom">Dashboard</a>
                                 @endif
-                                <form method="POST" action="{{ route('logout') }}" style="margin: 0;">
-                                    @csrf
-                                    <button type="submit" class="custom-auth-btn btn-register-custom">Logout</button>
-                                </form>
+                                <div class="dropdown custom-profile-dropdown">
+                                    <a href="#"
+                                        class="dropdown-toggle d-flex align-items-center text-decoration-none"
+                                        id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="position-relative">
+                                            {{-- <img src="{{ auth()->user()->profile_photo ? asset(auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
+                                                alt="Profile" class="rounded-circle profile-trigger-img"> --}}
+                                            <img src="{{ auth()->user()->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
+                                                alt="Profile" class="rounded-circle profile-trigger-img">
+                                            <span
+                                                class="position-absolute bottom-0 end-0 bg-success border border-2 border-white rounded-circle status-dot"></span>
+                                        </div>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0"
+                                        aria-labelledby="profileDropdown">
+
+                                        <li class="dropdown-header-custom">
+                                            <div class="d-flex align-items-center justify-content-start gap-3">
+                                                {{-- <img src="{{ auth()->user()->profile_photo ? asset(auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
+                                                    alt="Profile" class="rounded-circle profile-header-img me-3"> --}}
+                                                <img src="{{ auth()->user()->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
+                                                    alt="Profile" class="rounded-circle profile-trigger-img">
+                                                <div>
+                                                    <span class="mb-0 text-center text-dark">{{ auth()->user()->name }}</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <a href="{{ route('profile.edit') }}">
+                                                <span class="dropdown-item d-flex align-items-center "> <i
+                                                        class="fa-regular fa-user-circle me-3 fs-5 text-muted"></i>Profile
+                                                    Settings</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr class="dropdown-divider my-1">
+                                        </li>
+
+                                        <li>
+                                            <form method="POST" action="{{ route('logout') }}">
+                                                @csrf
+                                                <button type="submit"
+                                                    class="dropdown-item d-flex align-items-center text-danger logout-btn">
+                                                    <i class="fa-solid fa-arrow-right-from-bracket me-3 fs-5"></i>
+                                                    <span class="fw-light">Sign Out</span>
+                                                </button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
                             @endguest
                         </div>
 

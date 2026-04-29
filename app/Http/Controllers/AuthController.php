@@ -26,6 +26,9 @@ class AuthController extends Controller
 
     public function register(Request $request)
     {
+
+        $photoPath = null;
+
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -38,13 +41,20 @@ class AuthController extends Controller
                     ->mixedCase()
                     ->symbols(),
             ],
+            'profile_photo' => 'required|max:2048',
         ]);
+
+        if (request()->hasFile('profile_photo')) {
+
+            $photoPath = request()->file('profile_photo')->store('profile_photo', 'public');
+        }
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'mobile_no' => $request->mobile_no,
             'password' => Hash::make($request->password),
+            'profile_photo' => $photoPath,
         ]);
 
         $url = URL::signedRoute('verify.email', ['id' => $user->id]);

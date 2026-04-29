@@ -1276,7 +1276,7 @@
             /* Modal eke kalu background eka */
         }
 
-        /* --- Modal Base Styles (Kalin tika ehemamai) --- */
+        /* --- Modal Base Styles --- */
         .eco-custom-modal-content {
             border: none;
             border-radius: 24px;
@@ -1288,12 +1288,17 @@
             background-color: #f8fafb;
             border-bottom: 1px solid #e9ecef;
             padding: 20px 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
         }
 
         .eco-custom-modal-header .modal-title {
             color: #0b5e65;
             font-weight: 700;
             font-size: 1.5rem;
+            text-align: center;
         }
 
         .eco-custom-modal-body {
@@ -1432,6 +1437,7 @@
     </style>
 
     <!--========== Testimonial Area ============-->
+    
     <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">
             <div class="title-area text-center">
@@ -1496,24 +1502,25 @@
             </div>
         </div>
 
-        <div class="row mt-4 mt-md-5">
-            <div class="col-12 text-center mt-5">
-                @auth
-                    <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
-                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
-                    </button>
-                @else
-                    <button class="eco-section-btn" onclick="requireLogin()">
-                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
-                    </button>
-                @endauth
-            </div>
-        </div>
 
         <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="-9%">
             <img class="gmovingX" src="assets/img/shape/shape_7.png" alt="shape">
         </div>
+
     </section>
+    <div class="row mt-4 mt-md-5">
+        <div class="col-12 text-center " style="height: 5rem">
+            @auth
+                <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
+                    <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                </button>
+            @else
+                <button class="eco-section-btn" onclick="requireLogin()">
+                    <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                </button>
+            @endauth
+        </div>
+    </div>
 
     <!--========== Testimonial form model============-->
 
@@ -1522,8 +1529,8 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content eco-custom-modal-content">
                 <div class="modal-header eco-custom-modal-header">
-                    <h5 class="modal-title" id="ecoTestimonialModalLabel">What's Your Experience?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="ecoTestimonialModalLabel">How was your Experience?</h5>
+                    {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
                 </div>
                 <div class="modal-body eco-custom-modal-body">
                     <form id="ecoTestimonialForm">
@@ -1541,17 +1548,31 @@
                         </div>
 
                         <div class="row">
-                            @auth
+                            {{-- @auth
                                 <input type="hidden" name="full_name" value="{{ auth()->user()->name }}">
                                 <input type="hidden" name="phone_number"
                                     value="{{ auth()->user()->phone_number ?? '' }}">
+                            @endauth --}}
+
+                            @auth
+                                <div class="col-md-6 eco-custom-form-group mb-3">
+                                    <label class="eco-custom-label">Full Name</label>
+                                    <input type="text" id="full_name" name="full_name"
+                                        value="{{ auth()->user()->name }}" class="form-control eco-custom-input"
+                                        placeholder="e.g. Michel Carlos" disabled>
+                                    <span class="text-danger small error-text" id="error-full_name"></span>
+                                </div>
                             @endauth
-                            {{-- <div class="col-md-6 eco-custom-form-group mb-3">
-                                <label class="eco-custom-label">Full Name</label>
-                                <input type="text" id="full_name" name="full_name"
-                                    class="form-control eco-custom-input" placeholder="e.g. Michel Carlos">
-                                <span class="text-danger small error-text" id="error-full_name"></span>
-                            </div> --}}
+
+                            @auth
+                                <div class="col-md-6 eco-custom-form-group mb-3">
+                                    <label class="eco-custom-label">Phone Number</label>
+                                    <input type="number" id="phone_number" name="phone_number"
+                                        value="{{ auth()->user()->mobile_no }}" class="form-control eco-custom-input"
+                                        disabled>
+                                    <span class="text-danger small error-text" id="error-phone_number"></span>
+                                </div>
+                            @endauth
 
                             <div class="col-md-12 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Country</label>
@@ -1560,12 +1581,7 @@
                                 <span class="text-danger small error-text" id="error-country"></span>
                             </div>
 
-                            {{-- <div class="col-md-12 eco-custom-form-group mb-3">
-                                <label class="eco-custom-label">Phone Number</label>
-                                <input type="tel" id="phone_number" name="phone_number"
-                                    class="form-control eco-custom-input" placeholder="e.g. +94 77 123 4567">
-                                <span class="text-danger small error-text" id="error-phone_number"></span>
-                            </div> --}}
+
 
                             <div class="col-md-12 eco-custom-form-group d-flex flex-column align-items-center mb-3">
                                 <label class="eco-custom-label">Rate Your Experience</label>

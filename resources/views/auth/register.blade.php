@@ -382,6 +382,74 @@
         .toggle-password:hover {
             color: var(--accent-color);
         }
+
+        .profile-photo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .photo-preview-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #ddd;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        #photoPreview{
+            
+        }
+
+        .photo-preview-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .upload-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .upload-overlay label {
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .upload-overlay:hover {
+            background: rgba(0, 0, 0, 0.8);
+            height: 40px;
+            /* Hover karaddi poddak udata enna */
+        }
+
+        /* Aligning the error message properly under the image */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-2 {
+            margin-top: 8px;
+        }
     </style>
 </head>
 
@@ -394,8 +462,24 @@
         <span>Join Us</span>
         <h2>Create Account</h2>
 
-        <form action="{{ route('register') }}" method="POST">
+        <form action="{{ route('register') }}" enctype="multipart/form-data" method="POST">
             @csrf
+
+            <div class="form-group profile-photo-section">
+                <div class="photo-preview-container">
+                    <img id="photoPreview" src="{{ asset('assets/img/imagePreview.png') }}" alt="Profile Preview">
+                    <div class="upload-overlay">
+                        <label for="profile_photo" title="Upload Photo">
+                            <i class="fa-solid fa-camera"></i>
+                        </label>
+                        <input type="file" id="profile_photo" name="profile_photo" accept="image/*"
+                            class="@error('profile_photo') is-invalid @enderror" hidden>
+                    </div>
+                </div>
+                @error('profile_photo')
+                    <div class="error-msg text-center mt-2">{{ $message }}</div>
+                @enderror
+            </div>
 
             <div class="form-group">
                 <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
@@ -462,6 +546,22 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+
+            const profileInput = document.getElementById('profile_photo');
+            const photoPreview = document.getElementById('photoPreview');
+
+            profileInput.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    // File type eka image ekakda kiyala podi validation ekak
+                    if (file.type.match('image.*')) {
+                        photoPreview.src = URL.createObjectURL(file);
+                    } else {
+                        alert('Please select a valid image file.');
+                        profileInput.value = ''; // Reset input
+                    }
+                }
+            });
 
             // --- Password Show/Hide Logic (Hold to Show) ---
             function setupPasswordToggle(inputId, toggleIconId) {
