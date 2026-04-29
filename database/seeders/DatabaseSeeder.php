@@ -6,6 +6,8 @@ use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Database\Seeders\AdminUserSeeder;
+use Database\Seeders\CountrySeeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,6 +21,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             AdminUserSeeder::class,
         ]);
+        $this->call([
+            CountrySeeder::class,
+        ]);
+
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
