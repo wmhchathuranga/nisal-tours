@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Country;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -79,8 +80,11 @@ class TestimonialController extends Controller
     public function index()
     {
 
-        $testimonials = Testimonial::latest()->get();
-
+        $testimonials = Testimonial::latest('created_at')->get();
+        foreach ($testimonials as $testimonial) {
+            $country = Country::where('id', $testimonial->country)->first();
+            $testimonial->country = $country->name;
+        }
         return view('testimonials', compact('testimonials'));
     }
 
@@ -101,7 +105,7 @@ class TestimonialController extends Controller
 
     public function getMapData()
     {
-        $testimonials = Testimonial::where('is_approved', true)->get();
+        $testimonials = Testimonial::where('is_approved', '=', true)->get();
 
         return response()->json($testimonials);
     }

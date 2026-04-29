@@ -1,20 +1,21 @@
 <?php
 
-use App\Models\User;
-use App\Models\Testimonial;
-use Laravel\Fortify\Features;
-use App\Livewire\Settings\Profile;
-use App\Livewire\Settings\Password;
-use App\Livewire\Settings\TwoFactor;
-use Illuminate\Support\Facades\Auth;
-use App\Livewire\Settings\Appearance;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\FormController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TestimonialController;
+use App\Livewire\Settings\Appearance;
+use App\Livewire\Settings\Password;
+use App\Livewire\Settings\Profile;
+use App\Livewire\Settings\TwoFactor;
+use App\Models\Country;
+use App\Models\Testimonial;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use Laravel\Fortify\Features;
 
 //email verification test route
 // Route::get('/send-mail',[EmailController::class,'sendTestEmail'])->name('send-mail');
@@ -28,7 +29,7 @@ Route::get('/reset-password/{token}', [PasswordController::class, 'resetForm'])-
 Route::post('/reset-password', [PasswordController::class, 'updatePassword'])->name('password.update');
 
 Route::get('/test-verify-email', function () {
-    $user = User::first();
+    $user = User::first(1);
 
     if ($user) {
         $user->sendEmailVerificationNotification();
@@ -55,16 +56,15 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
-
 });
 
 Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
 Route::get('/', function () {
-    $testimonials = Testimonial::where('is_approved', 1)->latest()->take(10)->get();
-
-    return view('index', compact('testimonials'));
+    $testimonials = Testimonial::all()->where('is_approved', true);
+    $countries = Country::orderBy('name', 'asc')->get();
+    return view('index', compact('testimonials', 'countries'));
 })->name('home');
 
 Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
@@ -107,7 +107,7 @@ Route::get('/about', function () {
 Route::get('/resort-detail', function () {
     $resort_id = request()->query('id', '01');
 
-    $resort_blade = 'resorts.resort-details-'.$resort_id;
+    $resort_blade = 'resorts.resort-details-' . $resort_id;
 
     return view($resort_blade);
 })->name('resort-details');
@@ -134,17 +134,17 @@ Route::get('/resort-detail', function () {
 //  tours
 Route::get('/tour-detail', function () {
     $tour_id = request()->query('tour_id');
-    $tour_blade = 'tour-details-'.$tour_id;
+    $tour_blade = 'tour-details-' . $tour_id;
 
-    return view('tours/'.$tour_blade);
+    return view('tours/' . $tour_blade);
 })->name('tour-details');
 
 // documentry
 Route::get('/documentry', function () {
     $doc_id = request()->query('doc_id');
-    $doc_blade = 'doc-'.$doc_id;
+    $doc_blade = 'doc-' . $doc_id;
 
-    return view('documentry/'.$doc_blade);
+    return view('documentry/' . $doc_blade);
 })->name('documentry');
 
 // form submission

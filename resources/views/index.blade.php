@@ -1441,12 +1441,10 @@
 
             <div class="row justify-content-center">
                 <div class="col-xl-12">
-                    <div class="testi-review" data-bg-src="assets/img/bg/map.png"
-                        style="position: relative; min-height: 500px;">
+                    <div class="testi-review" data-bg-src="assets/img/bg/map.png">
 
                         @foreach ($testimonials as $index => $testi)
-                            <div class="testi-box hover-item {{ $index == 0 ? 'item-active' : '' }}"
-                                style="position: absolute; top: {{ $testi->top_pos }}%; left: {{ $testi->left_pos }}%;">
+                            <div class="testi-box hover-item {{ $index == 0 ? 'item-active' : '' }}">
 
                                 <div class="testi-box_content feature-card-active-wrap">
                                     <p class="testi-box_text">“{{ $testi->experience }}”</p>
@@ -1555,8 +1553,18 @@
 
                             <div class="col-md-12 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Country</label>
-                                <input type="text" id="country" name="country"
-                                    class="form-control eco-custom-input" placeholder="e.g. Sri Lanka">
+
+                                <select id="country_id" name="country" class="form-control eco-custom-input">
+                                    <option value="">Select Country</option>
+
+                                    @foreach ($countries as $country)
+                                        <option value="{{ $country->id }}" data-lat="{{ $country->latitude }}"
+                                            data-lng="{{ $country->longitude }}">
+                                            {{ $country->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+
                                 <span class="text-danger small error-text" id="error-country"></span>
                             </div>
 
