@@ -60,7 +60,7 @@
             border: none;
             padding: 10px 25px;
             border-radius: 8px;
-            font-weight: 600;
+            /* font-weight: 600; */
         }
 
         .btn-accent:hover {
