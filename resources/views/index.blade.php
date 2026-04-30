@@ -1260,7 +1260,7 @@
         }
 
         .eco-section-btn:hover {
-            background-color: #f58a2c;
+            background-color: #1ca8cb;
             box-shadow: 0 10px 30px rgba(245, 138, 44, 0.4);
             transform: translateY(-4px);
             color: #ffffff;
@@ -1404,7 +1404,7 @@
         }
 
         .eco-custom-submit-btn:hover {
-            background-color: #f58a2c;
+            background-color: #1ca8cb;
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(245, 138, 44, 0.3);
         }
@@ -1437,7 +1437,7 @@
     </style>
 
     <!--========== Testimonial Area ============-->
-    
+
     <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">
             <div class="title-area text-center">
@@ -1536,15 +1536,23 @@
                     <form id="ecoTestimonialForm">
 
                         <div class="eco-img-upload-wrapper text-center mb-3">
-                            <label for="ecoProfileUpload" class="eco-img-preview" id="ecoImgContainer">
+                            {{-- <label for="ecoProfileUpload" class="eco-img-preview" id="ecoImgContainer">
                                 <i class="fa-solid fa-camera"></i>
                                 <img id="ecoPreviewImg" src="" alt="Profile Preview"
                                     style="display: none; max-width: 200px; border-radius: 50%;">
                             </label>
-                            <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none"
-                                accept="image/*">
                             <p class="eco-upload-text">Upload Profile Picture</p>
-                            <span class="text-danger small error-text" id="error-profile_picture"></span>
+                            <span class="text-danger small error-text" id="error-profile_picture"></span> --}}
+                            <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none" value="{{ old('profile_photo') }}"
+                                accept="image/*">
+                            @if (auth()->user()->profile_photo)
+                                <img src="{{ asset('storage/' . auth()->user()->profile_photo) }}"
+                                    alt="Profile Picture" class="rounded-circle"
+                                    style="width: 150px; height: 150px; object-fit: cover;">
+                            @else
+                                <img src="{{ asset('images/default-avatar.png') }}" alt="Default Profile Picture"
+                                    class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                            @endif
                         </div>
 
                         <div class="row">
@@ -1922,12 +1930,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     </div> --}}
+
     <!-- ======== Fixed Puzzle Gallery ======== -->
     {{-- <div class="safe-gallery-wrapper">
       <div class="safe-gallery-title">

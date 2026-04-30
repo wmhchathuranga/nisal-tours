@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Overview - Manage Testimonials</title>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,11 +23,13 @@
         .page-header {
             margin-bottom: 2rem;
         }
+
         .page-title {
             font-weight: 700;
             font-size: 1.5rem;
             color: #1a1d20;
         }
+
         .page-subtitle {
             color: #8c9097;
             font-size: 0.9rem;
@@ -45,18 +47,21 @@
             border: 1px solid #f0f2f5;
             height: 100%;
         }
+
         .stat-title {
             font-size: 0.85rem;
             color: #8c9097;
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
+
         .stat-value {
             font-size: 1.8rem;
             font-weight: 700;
             color: #212529;
             margin: 0;
         }
+
         .stat-icon {
             width: 50px;
             height: 50px;
@@ -66,9 +71,21 @@
             justify-content: center;
             font-size: 1.2rem;
         }
-        .icon-pink { background-color: #ffeef3; color: #ff4d85; }
-        .icon-blue { background-color: #eef5ff; color: #3b82f6; }
-        .icon-green { background-color: #eefdf4; color: #10b981; }
+
+        .icon-pink {
+            background-color: #ffeef3;
+            color: #ff4d85;
+        }
+
+        .icon-blue {
+            background-color: #eef5ff;
+            color: #3b82f6;
+        }
+
+        .icon-green {
+            background-color: #eefdf4;
+            color: #10b981;
+        }
 
         /* Main Table Card */
         .main-card {
@@ -83,6 +100,7 @@
         .table-custom {
             margin-bottom: 0;
         }
+
         .table-custom th {
             font-weight: 600;
             text-transform: capitalize;
@@ -92,6 +110,7 @@
             border-bottom: 1px solid #f0f2f5;
             padding: 1.2rem 1rem;
         }
+
         .table-custom td {
             vertical-align: middle;
             border-bottom: 1px solid #f9fafc;
@@ -99,6 +118,7 @@
             color: #495057;
             font-size: 0.9rem;
         }
+
         .table-custom tbody tr:hover {
             background-color: #fcfcfd;
         }
@@ -113,8 +133,18 @@
             align-items: center;
             gap: 4px;
         }
-        .bg-success-soft { background-color: #eefdf4; color: #10b981; border: 1px solid #d1fae5; }
-        .bg-danger-soft { background-color: #fef2f2; color: #ef4444; border: 1px solid #fee2e2; }
+
+        .bg-success-soft {
+            background-color: #eefdf4;
+            color: #10b981;
+            border: 1px solid #d1fae5;
+        }
+
+        .bg-danger-soft {
+            background-color: #fef2f2;
+            color: #ef4444;
+            border: 1px solid #fee2e2;
+        }
 
         /* Action Buttons */
         .action-btn {
@@ -128,20 +158,43 @@
             border: none;
             font-size: 0.85rem;
         }
-        .btn-accept { background-color: #eefdf4; color: #10b981; }
-        .btn-accept:hover:not(:disabled) { background-color: #10b981; color: #fff; }
-        .btn-decline { background-color: #fef2f2; color: #ef4444; }
-        .btn-decline:hover:not(:disabled) { background-color: #ef4444; color: #fff; }
-        .action-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        .btn-accept {
+            background-color: #eefdf4;
+            color: #10b981;
+        }
+
+        .btn-accept:hover:not(:disabled) {
+            background-color: #10b981;
+            color: #fff;
+        }
+
+        .btn-decline {
+            background-color: #fef2f2;
+            color: #ef4444;
+        }
+
+        .btn-decline:hover:not(:disabled) {
+            background-color: #ef4444;
+            color: #fff;
+        }
+
+        .action-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
 
         /* User Profile Image */
         .user-avatar {
-            width: 40px; height: 40px; 
-            object-fit: cover; 
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
             border-radius: 10px;
         }
+
         .user-avatar-placeholder {
-            width: 40px; height: 40px; 
+            width: 40px;
+            height: 40px;
             border-radius: 10px;
             background-color: #f3f4f6;
             color: #9ca3af;
@@ -162,8 +215,10 @@
                 <p class="page-subtitle mb-0">Welcome back, here's how your user experiences are performing.</p>
             </div>
             <div>
-                <a href="{{ url('/') }}" class="btn btn-white border bg-white shadow-sm px-4 rounded-pill fw-medium text-dark" style="font-size: 0.9rem;">
-                    <i class="fa-solid fa-house me-2 text-muted"></i> Home 
+                <a href="{{ url('/') }}"
+                    class="btn btn-white border bg-white shadow-sm px-4 rounded-pill fw-medium text-dark"
+                    style="font-size: 0.9rem;">
+                    <i class="fa-solid fa-house me-2 text-muted"></i> Home
                 </a>
             </div>
         </div>
@@ -234,7 +289,8 @@
                                     <td class="ps-4 fw-medium text-muted">{{ $loop->iteration }}</td>
                                     <td>
                                         @if ($testimonial->profile_picture)
-                                            <img src="{{ asset('storage/' . $testimonial->profile_picture) }}" alt="Profile" class="user-avatar shadow-sm">
+                                            <img src="{{ asset('storage/' . $testimonial->profile_picture) }}"
+                                                alt="Profile" class="user-avatar shadow-sm">
                                         @else
                                             <div class="user-avatar-placeholder shadow-sm">
                                                 <i class="fa-solid fa-user"></i>
@@ -244,26 +300,32 @@
                                     <td>
                                         <div class="fw-semibold text-dark">{{ $testimonial->full_name }}</div>
                                         <div class="text-muted" style="font-size: 0.8rem;">
-                                            <i class="fa-solid fa-location-dot me-1 text-primary" style="opacity: 0.7;"></i>{{ $testimonial->country }}
+                                            <i class="fa-solid fa-location-dot me-1 text-primary"
+                                                style="opacity: 0.7;"></i>{{ $testimonial->country }}
                                         </div>
                                     </td>
                                     <td>
-                                        <span class="d-inline-block text-truncate text-secondary" style="max-width: 280px;" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ $testimonial->experience }}">
+                                        <span class="d-inline-block text-truncate text-secondary"
+                                            style="max-width: 280px;" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="{{ $testimonial->experience }}">
                                             {{ $testimonial->experience }}
                                         </span>
                                     </td>
                                     <td>
                                         <span class="text-warning" style="font-size: 0.85rem;">
                                             @for ($i = 1; $i <= 5; $i++)
-                                                <i class="fa-{{ $i <= $testimonial->rating ? 'solid' : 'regular' }} fa-star"></i>
+                                                <i
+                                                    class="fa-{{ $i <= $testimonial->rating ? 'solid' : 'regular' }} fa-star"></i>
                                             @endfor
                                         </span>
                                     </td>
                                     <td id="status-container-{{ $testimonial->id }}">
                                         @if ($testimonial->is_approved)
-                                            <span class="status-badge bg-success-soft"><i class="fa-solid fa-check-circle"></i> Approved</span>
+                                            <span class="status-badge bg-success-soft"><i
+                                                    class="fa-solid fa-check-circle"></i> Approved</span>
                                         @else
-                                            <span class="status-badge bg-danger-soft"><i class="fa-solid fa-eye-slash"></i> Hidden</span>
+                                            <span class="status-badge bg-danger-soft"><i
+                                                    class="fa-solid fa-eye-slash"></i> Hidden</span>
                                         @endif
                                     </td>
                                     <td class="text-center pe-4">
@@ -290,11 +352,14 @@
                                 <tr>
                                     <td colspan="7" class="text-center py-5">
                                         <div class="text-muted">
-                                            <div class="mb-3 d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: #f3f4f6; border-radius: 50%;">
-                                                <i class="fa-regular fa-folder-open" style="font-size: 2rem; color: #9ca3af;"></i>
+                                            <div class="mb-3 d-inline-flex align-items-center justify-content-center"
+                                                style="width: 80px; height: 80px; background: #f3f4f6; border-radius: 50%;">
+                                                <i class="fa-regular fa-folder-open"
+                                                    style="font-size: 2rem; color: #9ca3af;"></i>
                                             </div>
                                             <h5 class="fw-medium text-dark">No experiences shared yet</h5>
-                                            <p class="small mb-0">When users submit testimonials, they will appear here.</p>
+                                            <p class="small mb-0">When users submit testimonials, they will appear
+                                                here.</p>
                                         </div>
                                     </td>
                                 </tr>
@@ -347,15 +412,17 @@
                 .then(data => {
                     if (data.success) {
                         if (data.new_status == 1) {
-                            statusContainer.innerHTML = '<span class="status-badge bg-success-soft"><i class="fa-solid fa-check-circle"></i> Approved</span>';
+                            statusContainer.innerHTML =
+                                '<span class="status-badge bg-success-soft"><i class="fa-solid fa-check-circle"></i> Approved</span>';
                             acceptBtn.disabled = true;
                             declineBtn.disabled = false;
                         } else {
-                            statusContainer.innerHTML = '<span class="status-badge bg-danger-soft"><i class="fa-solid fa-eye-slash"></i> Hidden</span>';
+                            statusContainer.innerHTML =
+                                '<span class="status-badge bg-danger-soft"><i class="fa-solid fa-eye-slash"></i> Hidden</span>';
                             acceptBtn.disabled = false;
                             declineBtn.disabled = true;
                         }
-                        
+
                         // Optional: Reload page to update top stats counts if needed
                         // location.reload();
                     } else {

@@ -17,7 +17,7 @@ class TestimonialController extends Controller
             // 'phone_number' => 'nullable|string|max:20',
             'user_rating' => 'required|integer|min:1|max:5',
             'experience' => 'required|string',
-            'profile_picture' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048', // Max 2MB
+            'profile_picture' => 'image|mimes:jpeg,png,jpg,webp|max:2048', // Max 2MB
         ]);
 
         $imagePath = null;

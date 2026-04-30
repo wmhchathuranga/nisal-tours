@@ -30,7 +30,7 @@
             border-radius: 10px;
             margin-bottom: 5px;
             border: none !important;
-            
+
         }
 
         .nav-pills .nav-link.active {
@@ -88,7 +88,17 @@
 
 <body>
     <div class="container py-5">
-        <h2 class="mb-4 fw-bold text-dark"><i class="fa-solid fa-gears me-2 text-accent"></i> Account Settings</h2>
+        <div class="d-flex justify-content-between align-items-center page-header">
+            <h2 class="mb-4 fw-bold text-dark"><i class="fa-solid fa-gears me-2 text-accent"></i> Account Settings</h2>
+            <div>
+                <a href="{{ url('/') }}"
+                    class="btn btn-white border bg-white shadow-sm px-4 rounded-pill fw-medium text-dark"
+                    style="font-size: 0.9rem;">
+                    <i class="fa-solid fa-house me-2 text-muted"></i> Home
+                </a>
+            </div>
+
+        </div>
 
         @if (session('success'))
             <div class="alert alert-success border-0 shadow-sm mb-4">{{ session('success') }}</div>
