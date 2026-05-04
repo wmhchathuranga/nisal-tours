@@ -1579,19 +1579,10 @@
             gap: 25px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             height: 100%;
+            min-height: auto;
         }
 
         /* Avatar Wrapper (Fixed for squash issue) */
-        .nh-avatar-wrap {
-            position: relative;
-            flex: 0 0 120px;
-            width: 120px;
-            height: 120px;
-            min-width: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
         .nh-curve-border {
             position: absolute;
@@ -1604,6 +1595,16 @@
             transform: rotate(-45deg);
         }
 
+        /* .nh-avatar-wrap {
+            position: relative;
+            flex: 0 0 120px;
+            width: 120px;
+            height: 120px;
+            min-width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .nh-img {
             width: 110px;
             height: 110px;
@@ -1611,6 +1612,29 @@
             border-radius: 50%;
             object-fit: cover;
             z-index: 2;
+        } */
+
+        .nh-img {
+            width: 110px;
+            height: 110px;
+            min-width: 110px;
+            min-height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 2;
+            flex-shrink: 0;
+        }
+
+        .nh-avatar-wrap {
+            position: relative;
+            flex: 0 0 120px;
+            width: 120px;
+            height: 120px;
+            min-width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
         }
 
         /* Content Area (Fixed for text overflow) */
