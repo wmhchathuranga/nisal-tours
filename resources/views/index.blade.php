@@ -1536,7 +1536,7 @@
         }
 
         .nh-testimonial-section .container {
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 0 auto;
             position: relative;
             z-index: 10;
@@ -1701,11 +1701,13 @@
         }
 
         .nh-nav-prev {
-            left: -20px !important;
+            top: 75%;
+            left: -10px !important;
         }
 
         .nh-nav-next {
-            right: -20px !important;
+            top: 75%;
+            right: -10px !important;
         }
 
         /* Responsive tweaks */
@@ -1806,9 +1808,9 @@
 
                 </div>
 
-                <div class="swiper-button-next nh-nav-next"></div>
-                <div class="swiper-button-prev nh-nav-prev"></div>
             </div>
+            <div class="swiper-button-next nh-nav-next"></div>
+            <div class="swiper-button-prev nh-nav-prev"></div>
         </div>
     </section>
 
