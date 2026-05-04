@@ -3,6 +3,9 @@
 
 <head>
     @include('partials.head')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -86,7 +89,7 @@
     </div>
 
     <style>
-        /* Scoped Styles: Meke thiyena ewa wena kohetat balapanne na */
+        /* Scoped Styles */
         .sri-lanka-story-section {
             padding: 80px 0;
             background-color: #0c1524;
@@ -1438,7 +1441,7 @@
 
     <!--========== Testimonial Area ============-->
 
-    <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
+    {{-- <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title">Testimonial</span>
@@ -1507,7 +1510,308 @@
             <img class="gmovingX" src="assets/img/shape/shape_7.png" alt="shape">
         </div>
 
+    </section> --}}
+
+    <style>
+        /* Section Background & Overlay */
+        .nh-testimonial-section {
+            position: relative;
+            padding: 100px 0;
+            background-image: url('{{ asset('assets/img/2149153258.jpg') }}');
+            /* මෙතනට ඔයාගේ background image path එක දෙන්න */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .nh-testimonial-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(30, 41, 65, 0.85);
+            /* Dark blue transparency */
+        }
+
+        .nh-testimonial-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+            padding: 0 40px;
+        }
+
+        /* Titles */
+        .nh-text-center {
+            text-align: center;
+        }
+
+        .nh-badge {
+            display: inline-block;
+            background: #13b5b1;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .nh-main-title {
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 50px;
+        }
+
+        /* Testimonial Card */
+        .nh-card {
+            background: #ffffff;
+            border-radius: 100px;
+            /* Pill shape */
+            display: flex;
+            align-items: center;
+            padding: 15px 30px 15px 15px;
+            gap: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        /* Avatar Wrapper (Fixed for squash issue) */
+        .nh-avatar-wrap {
+            position: relative;
+            flex: 0 0 120px;
+            width: 120px;
+            height: 120px;
+            min-width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nh-curve-border {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border: 3px solid #13b5b1;
+            border-radius: 50%;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            transform: rotate(-45deg);
+        }
+
+        .nh-img {
+            width: 110px;
+            height: 110px;
+            min-width: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 2;
+        }
+
+        /* Content Area (Fixed for text overflow) */
+        .nh-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .nh-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .nh-name {
+            color: #1a237e;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .nh-desig {
+            color: #13b5b1;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nh-text {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-style: italic;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .nh-rating {
+            color: #13b5b1;
+            font-size: 14px;
+        }
+
+        /* Swiper Custom Navigation */
+        .nh-relative-wrap {
+            position: relative;
+        }
+
+        .nh-nav-next,
+        .nh-nav-prev {
+            width: 45px !important;
+            height: 45px !important;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nh-nav-next::after,
+        .nh-nav-prev::after {
+            font-size: 18px !important;
+            color: #13b5b1;
+            font-weight: bold;
+        }
+
+        .nh-nav-prev {
+            left: -20px !important;
+        }
+
+        .nh-nav-next {
+            right: -20px !important;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .nh-card {
+                flex-direction: column;
+                border-radius: 30px;
+                text-align: center;
+                padding: 30px 20px;
+            }
+
+            .nh-header {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .nh-quote {
+                display: none;
+            }
+        }
+    </style>
+
+    <section class="nh-testimonial-section">
+        <div class="container">
+            <div class="nh-title-wrap nh-text-center">
+                <div class="nh-badge">
+                    <i class="fa-solid fa-plane"></i> TESTIMONIALS
+                </div>
+                <h2 class="nh-main-title">What Our Customers Are Saying<br>About Us?</h2>
+            </div>
+
+            <div class="swiper nh-swiper nh-relative-wrap">
+                <div class="swiper-wrapper">
+
+                    @foreach ($testimonials as $testi)
+                        @php
+                            $linkedUser = \App\Models\User::where('name', $testi->full_name)->first();
+                        @endphp
+                        <div class="swiper-slide">
+                            <div class="nh-card">
+                                <div class="nh-avatar-wrap">
+                                    <div class="nh-curve-border"></div>
+                                    {{-- @if ($testi->profile_picture)
+                                        <img src="{{ asset('storage/' . $testi->profile_picture) }}"
+                                            alt="{{ $testi->full_name }}" class="nh-img">
+                                    @else
+                                        <img src="{{ auth()->user()?->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : asset('assets/img/testimonial/default_avatar.png') }}"
+                                            alt="{{ $testi->full_name }}" class="nh-img">
+                                    @endif --}}
+                                    @if ($testi->profile_picture)
+                                        <img src="{{ asset('storage/' . $testi->profile_picture) }}"
+                                            alt="{{ $testi->full_name }}" class="nh-img">
+                                    @elseif ($linkedUser && $linkedUser->profile_photo)
+                                        <img src="{{ asset('storage/' . $linkedUser->profile_photo) }}"
+                                            alt="{{ $testi->full_name }}" class="nh-img">
+                                    @else
+                                        <img src="{{ asset('assets/img/testimonial/default_avatar.png') }}"
+                                            alt="{{ $testi->full_name }}" class="nh-img">
+                                    @endif
+                                </div>
+
+                                <div class="nh-content">
+                                    <div class="nh-header">
+                                        <div class="nh-user-info">
+                                            <h3 class="nh-name">{{ $testi->full_name }}</h3>
+                                            <span class="nh-desig">{{ $testi->country }}</span>
+                                        </div>
+                                        <div class="nh-quote">
+                                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                                stroke="#13b5b1" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path
+                                                    d="M10 11h-4a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h3a3 3 0 0 1 3 3v6a6 6 0 0 1 -6 6h-1">
+                                                </path>
+                                                <path
+                                                    d="M19 11h-4a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h3a3 3 0 0 1 3 3v6a6 6 0 0 1 -6 6h-1">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <p class="nh-text">"{{ $testi->experience }}"</p>
+
+                                    <div class="nh-rating">
+                                        @for ($i = 0; $i < $testi->rating; $i++)
+                                            <i class="fa-solid fa-star"></i>
+                                        @endfor
+
+                                        @for ($i = $testi->rating; $i < 5; $i++)
+                                            <i class="fa-regular fa-star"></i>
+                                        @endfor
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+
+                <div class="swiper-button-next nh-nav-next"></div>
+                <div class="swiper-button-prev nh-nav-prev"></div>
+            </div>
+        </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper = new Swiper(".nh-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".nh-nav-next",
+                    prevEl: ".nh-nav-prev",
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    }
+                }
+            });
+        });
+    </script>
+
     <div class="row mt-4 mt-md-5">
         <div class="col-12 text-center " style="height: 5rem">
             @auth
@@ -1543,16 +1847,26 @@
                             </label>
                             <p class="eco-upload-text">Upload Profile Picture</p>
                             <span class="text-danger small error-text" id="error-profile_picture"></span> --}}
-                            <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none" value="{{ old('profile_photo') }}"
-                                accept="image/*">
-                            @if (auth()->user()->profile_photo)
-                                <img src="{{ asset('storage/' . auth()->user()->profile_photo) }}"
+                            <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none"
+                                value="{{ old('profile_photo') }}" accept="image/*">
+                            {{-- @if (auth()->user()?->profile_photo)
+                                <img src="{{ auth()->user()->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
                                     alt="Profile Picture" class="rounded-circle"
                                     style="width: 150px; height: 150px; object-fit: cover;">
                             @else
-                                <img src="{{ asset('images/default-avatar.png') }}" alt="Default Profile Picture"
+                                <img src="{{ 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}" alt="Default Profile Picture"
                                     class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-                            @endif
+                            @endif --}}
+                            @auth
+                                @if (auth()->user()->profile_photo)
+                                    <img src="{{ asset('storage/' . auth()->user()->profile_photo) }}"
+                                        alt="Profile Picture" class="rounded-circle"
+                                        style="width: 150px; height: 150px; object-fit: cover;">
+                                @else
+                                    <img src="{{ 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
+                                        class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                                @endif
+                            @endauth
                         </div>
 
                         <div class="row">
@@ -1576,20 +1890,35 @@
                                 <div class="col-md-6 eco-custom-form-group mb-3">
                                     <label class="eco-custom-label">Phone Number</label>
                                     <input type="number" id="phone_number" name="phone_number"
-                                        value="{{ auth()->user()->mobile_no }}" class="form-control eco-custom-input"
-                                        disabled>
+                                        value="{{ auth()->user()->mobile_no }}" style=""
+                                        class="form-control eco-custom-input" disabled>
                                     <span class="text-danger small error-text" id="error-phone_number"></span>
                                 </div>
                             @endauth
 
-                            <div class="col-md-12 eco-custom-form-group mb-3">
+                            {{-- <div class="col-md-12 eco-custom-form-group mb-3">
                                 <label class="eco-custom-label">Country</label>
                                 <input type="text" id="country" name="country"
                                     class="form-control eco-custom-input" placeholder="e.g. Sri Lanka">
                                 <span class="text-danger small error-text" id="error-country"></span>
+                            </div> --}}
+
+                            <div class="col-md-12 eco-custom-form-group mb-3">
+                                <label class="eco-custom-label">Country</label>
+
+                                <select id="country_id" name="country" class="form-control eco-custom-input">
+                                    <option value="">Select Country</option>
+
+                                    @foreach ($countries as $country)
+                                        <option value="{{ $country->id }}" data-lat="{{ $country->latitude }}"
+                                            data-lng="{{ $country->longitude }}">
+                                            {{ $country->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+
+                                <span class="text-danger small error-text" id="error-country"></span>
                             </div>
-
-
 
                             <div class="col-md-12 eco-custom-form-group d-flex flex-column align-items-center mb-3">
                                 <label class="eco-custom-label">Rate Your Experience</label>
@@ -1622,6 +1951,16 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 
     <script>
         //require login

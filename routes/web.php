@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use App\Models\Country;
 use App\Models\Testimonial;
 use Laravel\Fortify\Features;
 use App\Livewire\Settings\Profile;
@@ -35,16 +36,7 @@ Route::get('/reset-password/{token}', [PasswordController::class, 'resetForm'])-
 
 Route::post('/reset-password', [PasswordController::class, 'updatePassword'])->name('password.update');
 
-Route::get('/test-verify-email', function () {
-    $user = User::first();
 
-    if ($user) {
-        $user->sendEmailVerificationNotification();
-        return 'Test email eka yawwa machan! Mailtrap inbox eka check karala balanna.';
-    }
-
-    return 'Database eke users la kauruth na. Mulin dummy user kenek database ekata danna.';
-});
 /* testimonial routes */
 Auth::routes(['verify' => true]);
 // Auth Routes
@@ -70,9 +62,9 @@ Route::post('/testimonials/store', [TestimonialController::class, 'store'])->nam
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
 Route::get('/', function () {
-    $testimonials = Testimonial::where('is_approved', 1)->latest()->take(10)->get();
-
-    return view('index', compact('testimonials'));
+     $testimonials = Testimonial::all()->where('is_approved', true);
+    $countries = Country::orderBy('name', 'asc')->get();
+    return view('index', compact('testimonials', 'countries'));
 })->name('home');
 
 Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
