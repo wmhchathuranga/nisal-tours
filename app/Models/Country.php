@@ -17,6 +17,16 @@ class Country extends Model
         'flag',
     ];
 
+    protected $appends = ['flag_url'];
+
+    public function getFlagUrlAttribute()
+    {
+        if ($this->code) {
+            return 'https://flagcdn.com/w40/' . strtolower($this->code) . '.png';
+        }
+        return null;
+    }
+
     /**
      * Relationships
      */

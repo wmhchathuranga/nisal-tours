@@ -28,6 +28,8 @@ class TestimonialController extends Controller
         $selectedCountry = Country::find($request->country);
         $countryName = $selectedCountry ? $selectedCountry->name : '';
 
+        $countryFlag = $selectedCountry ? $selectedCountry->flag : null;
+
         // Default positions
         $top_pos = rand(20, 80);
         $left_pos = rand(10, 90);
@@ -53,9 +55,9 @@ class TestimonialController extends Controller
         $testimonial = Testimonial::create([
             'full_name' => Auth::user()->name,
             'country' => $countryName,
-            'phone_number' => Auth::user()->mobile_no, // Ensure 'mobile_no' exists in users table
-            // 'user_id' => Auth::id(), // <--- Table එකේ නැති නිසා මේක අයින් කළා.
-            'rating' => $request->user_rating, // Code eke 'user_rating', Table eke 'rating'. Me mapping eka hari.
+            'phone_number' => Auth::user()->mobile_no, 
+            'flag' => $countryFlag,
+            'rating' => $request->user_rating, 
             'experience' => $request->experience,
             'profile_picture' => $imagePath,
             'top_pos' => $top_pos,
