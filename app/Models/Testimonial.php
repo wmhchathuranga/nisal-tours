@@ -12,12 +12,13 @@ class Testimonial extends Model
     protected $fillable = [
         'full_name',
         'country',
+        'code',
         'phone_number',
         'rating',
         'experience',
         'profile_picture',
         'top_pos',
         'left_pos',
-        'is_approved'
+        'is_approved',
     ];
 }

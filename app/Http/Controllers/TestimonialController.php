@@ -55,6 +55,7 @@ class TestimonialController extends Controller
         $testimonial = Testimonial::create([
             'full_name' => Auth::user()->name,
             'country' => $countryName,
+            'code' => $request->code,
             'phone_number' => Auth::user()->mobile_no, 
             'flag' => $countryFlag,
             'rating' => $request->user_rating, 

@@ -1441,7 +1441,7 @@
         }
     </style>
 
-    <!--========== Testimonial Area ============-->
+
 
     {{-- <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">
@@ -1513,6 +1513,8 @@
         </div>
 
     </section> --}}
+
+    <!--========== Testimonial Area ============-->
 
     <style>
         /* Section Background & Overlay */
@@ -1760,8 +1762,21 @@
                                     <div class="nh-header">
                                         <div class="nh-user-info">
                                             <h3 class="nh-name">{{ $testi->full_name }}</h3>
-                                            <span class="nh-desig">{{ $testi->country }}</span>
+
+                                            <span class="nh-desig"
+                                                style="display: flex; align-items: center; gap: 8px;">
+
+                                                @if (isset($testi->code))
+                                                    <img src="https://flagcdn.com/w20/{{ strtolower($testi->code) }}.png"
+                                                        alt="flag"
+                                                        style="width: 20px; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                                @endif
+
+                                                <span>{{ $testi->country }}</span>
+
+                                            </span>
                                         </div>
+
                                         <div class="nh-quote">
                                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
                                                 stroke="#13b5b1" stroke-width="1.5" stroke-linecap="round"
@@ -1853,23 +1868,9 @@
                     <form id="ecoTestimonialForm">
 
                         <div class="eco-img-upload-wrapper text-center mb-3">
-                            {{-- <label for="ecoProfileUpload" class="eco-img-preview" id="ecoImgContainer">
-                                <i class="fa-solid fa-camera"></i>
-                                <img id="ecoPreviewImg" src="" alt="Profile Preview"
-                                    style="display: none; max-width: 200px; border-radius: 50%;">
-                            </label>
-                            <p class="eco-upload-text">Upload Profile Picture</p>
-                            <span class="text-danger small error-text" id="error-profile_picture"></span> --}}
                             <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none"
                                 value="{{ old('profile_photo') }}" accept="image/*">
-                            {{-- @if (auth()->user()?->profile_photo)
-                                <img src="{{ auth()->user()->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
-                                    alt="Profile Picture" class="rounded-circle"
-                                    style="width: 150px; height: 150px; object-fit: cover;">
-                            @else
-                                <img src="{{ 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}" alt="Default Profile Picture"
-                                    class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-                            @endif --}}
+                           
                             @auth
                                 @if (auth()->user()->profile_photo)
                                     <img src="{{ asset('storage/' . auth()->user()->profile_photo) }}"
@@ -1883,11 +1884,7 @@
                         </div>
 
                         <div class="row">
-                            {{-- @auth
-                                <input type="hidden" name="full_name" value="{{ auth()->user()->name }}">
-                                <input type="hidden" name="phone_number"
-                                    value="{{ auth()->user()->phone_number ?? '' }}">
-                            @endauth --}}
+                           
 
                             @auth
                                 <div class="col-md-6 eco-custom-form-group mb-3">
@@ -1909,28 +1906,81 @@
                                 </div>
                             @endauth
 
-                            {{-- <div class="col-md-12 eco-custom-form-group mb-3">
-                                <label class="eco-custom-label">Country</label>
-                                <input type="text" id="country" name="country"
-                                    class="form-control eco-custom-input" placeholder="e.g. Sri Lanka">
-                                <span class="text-danger small error-text" id="error-country"></span>
-                            </div> --}}
-
-                            <div class="col-md-12 eco-custom-form-group mb-3">
+                        
+                            <div class="col-md-12 eco-custom-form-group mb-3" style="position: relative;">
                                 <label class="eco-custom-label">Country</label>
 
-                                <select id="country_id" name="country" class="form-control eco-custom-input">
-                                    <option value="">Select Country</option>
+                                <input type="hidden" id="country_id" name="country" value="">
+                                <input type="hidden" id="country_code_input" name="code" value="">
+
+                                <div id="country_custom_select" class="form-control eco-custom-input"
+                                    style="cursor: pointer; display: flex; align-items: center; justify-content: space-between; height: auto; min-height: 45px;"
+                                    onclick="toggleCountryDropdown()">
+                                    <span id="country_selected_text"
+                                        style="display: flex; align-items: center; color: #6c757d;">
+                                        Select Country
+                                    </span>
+                                    <span style="font-size: 12px; color: #6c757d;">▼</span>
+                                </div>
+
+                                <ul id="country_dropdown_list"
+                                    style="display: none; position: absolute; top: 100%; left: 15px; width: calc(100% - 30px); max-height: 250px; overflow-y: auto; background: #fff; border: 1px solid #ced4da; border-radius: 4px; z-index: 1000; padding: 0; margin-top: 2px; list-style: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                                     @foreach ($countries as $country)
-                                        <option value="{{ $country->id }}" data-lat="{{ $country->latitude }}"
-                                            data-lng="{{ $country->longitude }}"
-                                            data-flag="{{ $country->flag_url }}"> {{ $country->name }}
-                                        </option>
+                                        @php
+                                            $flagCode = strtolower($country->code);
+                                        @endphp
+
+                                        <li style="padding: 10px 15px; cursor: pointer; display: flex; align-items: center; border-bottom: 1px solid #eee;"
+                                            onclick="selectCountryItem('{{ $country->id }}', '{{ $country->name }}', '{{ $flagCode }}', '{{ $country->latitude }}', '{{ $country->longitude }}')"
+                                            onmouseover="this.style.backgroundColor='#f3f4f6'"
+                                            onmouseout="this.style.backgroundColor='transparent'">
+
+                                            <img src="https://flagcdn.com/w40/{{ $flagCode }}.png"
+                                                alt="flag"
+                                                style="width: 24px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+
+                                            <span style="color: #333;">{{ $country->name }}</span>
+                                        </li>
                                     @endforeach
-                                </select>
+                                </ul>
 
                                 <span class="text-danger small error-text" id="error-country"></span>
                             </div>
+
+                            <script>
+                                function toggleCountryDropdown() {
+                                    const list = document.getElementById("country_dropdown_list");
+                                    list.style.display = list.style.display === "none" ? "block" : "none";
+                                }
+
+                                document.getElementById("country_code_input").value = flagCode.toUpperCase();
+
+                                function selectCountryItem(id, name, flagCode, lat, lng) {
+                                    const input = document.getElementById("country_id");
+                                    input.value = id;
+                                    input.setAttribute('data-lat', lat);
+                                    input.setAttribute('data-lng', lng);
+
+                                    input.dispatchEvent(new Event('change'));
+
+                                    const btnText = document.getElementById("country_selected_text");
+                                    btnText.innerHTML = `
+            <img src="https://flagcdn.com/w40/${flagCode}.png" style="width: 24px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);"> 
+            <span style="color: #495057;">${name}</span>
+        `;
+
+                                    document.getElementById("country_dropdown_list").style.display = "none";
+                                }
+
+                                document.addEventListener('click', function(event) {
+                                    const customSelect = document.getElementById("country_custom_select");
+                                    const list = document.getElementById("country_dropdown_list");
+
+                                    if (customSelect && list && !customSelect.contains(event.target) && !list.contains(event.target)) {
+                                        list.style.display = "none";
+                                    }
+                                });
+                            </script>
 
                             <div class="col-md-12 eco-custom-form-group d-flex flex-column align-items-center mb-3">
                                 <label class="eco-custom-label">Rate Your Experience</label>
@@ -1964,13 +2014,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 
     <script>
         $(document).ready(function() {
