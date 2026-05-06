@@ -1953,15 +1953,15 @@
                                     list.style.display = list.style.display === "none" ? "block" : "none";
                                 }
 
-                                document.getElementById("country_code_input").value = flagCode.toUpperCase();
 
                                 function selectCountryItem(id, name, flagCode, lat, lng) {
                                     const input = document.getElementById("country_id");
                                     input.value = id;
                                     input.setAttribute('data-lat', lat);
                                     input.setAttribute('data-lng', lng);
-
                                     input.dispatchEvent(new Event('change'));
+                                    
+                                    document.getElementById("country_code_input").value = flagCode.toUpperCase();
 
                                     const btnText = document.getElementById("country_selected_text");
                                     btnText.innerHTML = `
