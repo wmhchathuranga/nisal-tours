@@ -1583,7 +1583,7 @@
             gap: 25px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             height: 100%;
-            min-height: auto;
+            max-height: 180px;
         }
 
         /* Avatar Wrapper (Fixed for squash issue) */
@@ -1660,6 +1660,7 @@
             max-height: 120px;
             overflow-y: auto;
             padding-right: 10px;
+            max-height: 60px;
         }
 
         .nh-rating {
@@ -1717,6 +1718,21 @@
                 display: none;
             }
         }
+
+        /* Custom Scrollbar for .nh-text */
+        .nh-text::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .nh-text::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .nh-text::-webkit-scrollbar-thumb {
+            background: #13b5b1;
+            border-radius: 10px;
+        }
     </style>
 
     <section class="nh-testimonial-section">
@@ -1739,13 +1755,6 @@
                             <div class="nh-card">
                                 <div class="nh-avatar-wrap">
                                     <div class="nh-curve-border"></div>
-                                    {{-- @if ($testi->profile_picture)
-                                        <img src="{{ asset('storage/' . $testi->profile_picture) }}"
-                                            alt="{{ $testi->full_name }}" class="nh-img">
-                                    @else
-                                        <img src="{{ auth()->user()?->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : asset('assets/img/testimonial/default_avatar.png') }}"
-                                            alt="{{ $testi->full_name }}" class="nh-img">
-                                    @endif --}}
                                     @if ($testi->profile_picture)
                                         <img src="{{ asset('storage/' . $testi->profile_picture) }}"
                                             alt="{{ $testi->full_name }}" class="nh-img">
@@ -1815,30 +1824,6 @@
         </div>
     </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var swiper = new Swiper(".nh-swiper", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: ".nh-nav-next",
-                    prevEl: ".nh-nav-prev",
-                },
-                breakpoints: {
-                    992: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
-                    }
-                }
-            });
-        });
-    </script>
-
     <div class="row mt-4 mt-md-5">
         <div class="col-12 text-center " style="height: 5rem">
             @auth
@@ -1870,7 +1855,7 @@
                         <div class="eco-img-upload-wrapper text-center mb-3">
                             <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none"
                                 value="{{ old('profile_photo') }}" accept="image/*">
-                           
+
                             @auth
                                 @if (auth()->user()->profile_photo)
                                     <img src="{{ asset('storage/' . auth()->user()->profile_photo) }}"
@@ -1884,7 +1869,7 @@
                         </div>
 
                         <div class="row">
-                           
+
 
                             @auth
                                 <div class="col-md-6 eco-custom-form-group mb-3">
@@ -1906,7 +1891,7 @@
                                 </div>
                             @endauth
 
-                        
+
                             <div class="col-md-12 eco-custom-form-group mb-3" style="position: relative;">
                                 <label class="eco-custom-label">Country</label>
 
@@ -1947,40 +1932,7 @@
                                 <span class="text-danger small error-text" id="error-country"></span>
                             </div>
 
-                            <script>
-                                function toggleCountryDropdown() {
-                                    const list = document.getElementById("country_dropdown_list");
-                                    list.style.display = list.style.display === "none" ? "block" : "none";
-                                }
 
-
-                                function selectCountryItem(id, name, flagCode, lat, lng) {
-                                    const input = document.getElementById("country_id");
-                                    input.value = id;
-                                    input.setAttribute('data-lat', lat);
-                                    input.setAttribute('data-lng', lng);
-                                    input.dispatchEvent(new Event('change'));
-                                    
-                                    document.getElementById("country_code_input").value = flagCode.toUpperCase();
-
-                                    const btnText = document.getElementById("country_selected_text");
-                                    btnText.innerHTML = `
-            <img src="https://flagcdn.com/w40/${flagCode}.png" style="width: 24px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);"> 
-            <span style="color: #495057;">${name}</span>
-        `;
-
-                                    document.getElementById("country_dropdown_list").style.display = "none";
-                                }
-
-                                document.addEventListener('click', function(event) {
-                                    const customSelect = document.getElementById("country_custom_select");
-                                    const list = document.getElementById("country_dropdown_list");
-
-                                    if (customSelect && list && !customSelect.contains(event.target) && !list.contains(event.target)) {
-                                        list.style.display = "none";
-                                    }
-                                });
-                            </script>
 
                             <div class="col-md-12 eco-custom-form-group d-flex flex-column align-items-center mb-3">
                                 <label class="eco-custom-label">Rate Your Experience</label>
@@ -2014,6 +1966,67 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper = new Swiper(".nh-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".nh-nav-next",
+                    prevEl: ".nh-nav-prev",
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        function toggleCountryDropdown() {
+            const list = document.getElementById("country_dropdown_list");
+            list.style.display = list.style.display === "none" ? "block" : "none";
+        }
+
+
+        function selectCountryItem(id, name, flagCode, lat, lng) {
+            const input = document.getElementById("country_id");
+            input.value = id;
+            input.setAttribute('data-lat', lat);
+            input.setAttribute('data-lng', lng);
+            input.dispatchEvent(new Event('change'));
+
+            document.getElementById("country_code_input").value = flagCode.toUpperCase();
+
+            const btnText = document.getElementById("country_selected_text");
+            btnText.innerHTML = `
+            <img src="https://flagcdn.com/w40/${flagCode}.png" style="width: 24px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);"> 
+            <span style="color: #495057;">${name}</span>
+        `;
+
+            document.getElementById("country_dropdown_list").style.display = "none";
+        }
+
+        document.addEventListener('click', function(event) {
+            const customSelect = document.getElementById("country_custom_select");
+            const list = document.getElementById("country_dropdown_list");
+
+            if (customSelect && list && !customSelect.contains(event.target) && !list.contains(event.target)) {
+                list.style.display = "none";
+            }
+        });
+    </script>
 
     <script>
         $(document).ready(function() {
