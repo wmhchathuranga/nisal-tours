@@ -61,7 +61,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
-Route::get('/', function () {
+Route::get('/', function () { 
      $testimonials = Testimonial::all()->where('is_approved', true);
     $countries = Country::orderBy('name', 'asc')->get();
     return view('index', compact('testimonials', 'countries'));

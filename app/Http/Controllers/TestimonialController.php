@@ -76,7 +76,8 @@ class TestimonialController extends Controller
     public function index()
     {
 
-        $testimonials = Testimonial::latest()->get();
+        // $testimonials = Testimonial::latest()->get();
+        $testimonials = Testimonial::with('user')->get();
 
         return view('testimonials', compact('testimonials'));
     }
