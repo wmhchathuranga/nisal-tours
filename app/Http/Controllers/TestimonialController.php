@@ -77,7 +77,7 @@ class TestimonialController extends Controller
     {
 
         // $testimonials = Testimonial::latest()->get();
-        $testimonials = Testimonial::with('user')->get();
+        $testimonials = Testimonial::with('user')->latest()->get();
 
         return view('testimonials', compact('testimonials'));
     }
