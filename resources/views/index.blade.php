@@ -1786,7 +1786,7 @@
                                             </span>
                                         </div>
 
-                                        <div class="nh-quote">
+                                        {{-- <div class="nh-quote">
                                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
                                                 stroke="#13b5b1" stroke-width="1.5" stroke-linecap="round"
                                                 stroke-linejoin="round">
@@ -1797,7 +1797,7 @@
                                                     d="M19 11h-4a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h3a3 3 0 0 1 3 3v6a6 6 0 0 1 -6 6h-1">
                                                 </path>
                                             </svg>
-                                        </div>
+                                        </div> --}}
                                     </div>
 
                                     <p class="nh-text">"{{ $testi->experience }}"</p>
