@@ -186,10 +186,10 @@
 
         /* User Profile Image */
         .user-avatar {
-            width: 40px;
-            height: 40px;
+            max-width: 50px;
+            max-height: 50px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 50px;
         }
 
         .user-avatar-placeholder {
