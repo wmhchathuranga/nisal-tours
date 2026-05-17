@@ -755,20 +755,22 @@
 
             <div class="explore-filter-bar mb-5 text-center">
                 {{-- <button class="glass-filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> All</button> --}}
-                <button class="glass-filter-btn active" data-filter="city"><i class="fas fa-city"></i>
-                    Cities</button>
-                <button class="glass-filter-btn" data-filter="religion"><i class="fas fa-om"></i> Religious
-                    Places</button>
-                <button class="glass-filter-btn" data-filter="beach"><i class="fas fa-umbrella-beach"></i>
+                <button class="glass-filter-btn active" data-filter="rocks-mountains"><i
+                        class="fa-duotone fa-mountains"></i>
+                    Rocks & Mountains</button>
+                <button class="glass-filter-btn" data-filter="historical-religious"><i class="fas fa-om"></i>
+                    Historical & Religious Places</button>
+                <button class="glass-filter-btn" data-filter="beaches"><i class="fas fa-umbrella-beach"></i>
                     Beaches</button>
-                <button class="glass-filter-btn" data-filter="forest"><i class="fas fa-tree"></i> Forests</button>
-                <button class="glass-filter-btn" data-filter="mountains"><i class="fa-duotone fa-mountains"></i>
-                    Mountains</button>
-                <button class="glass-filter-btn" data-filter="ayuruwedic"><i class="fa-duotone fa-leaf"></i>
-                    Ayuruwedic</button>
+                <button class="glass-filter-btn" data-filter="safari"><i class="fas fa-umbrella-beach"></i>
+                    Safari</button>
+                <button class="glass-filter-btn" data-filter="activities"><i class="fa-duotone fa-city"></i>
+                    Activities</button>
+                {{-- <button class="glass-filter-btn" data-filter="ayuruwedic"><i class="fa-duotone fa-leaf"></i>
+                    Ayuruwedic</button> --}}
             </div>
 
-            <div class="row" id="explore-grid">
+            {{-- <div class="row" id="explore-grid">
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="mountains religion ">
@@ -784,6 +786,125 @@
                                 its frescoes and breathtaking summit views.
                             </p>
                             <a href="{{ route('documentry', ['doc_id' => '01']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '25']) }}">Pidurangala</a>
+                            </h3>
+                            <p class="destination-details">
+                                pidurangala desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '25']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '26']) }}">Ella rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                Ella rock desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '26']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '26']) }}">Mathale aluviharaya</a>
+                            </h3>
+                            <p class="destination-details">
+                                Mathale aluviharaya desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '26']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '27']) }}">Dabulla cave Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                Dabulla cave Temple desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '27']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '28']) }}">Ravena cave </a>
+                            </h3>
+                            <p class="destination-details">
+                                Ravena cave desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '28']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '29']) }}">Piduruthalagala</a>
+                            </h3>
+                            <p class="destination-details">
+                                Piduruthalagala desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '29']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '30']) }}">Lipton Seat</a>
+                            </h3>
+                            <p class="destination-details">
+                                Lipton Seat desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '30']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -1201,7 +1322,804 @@
 
 
 
+            </div> --}}
+            <div class="row" id="explore-grid">
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Lion Rock">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '01']) }}">Sigiriya Lion Rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                Sigiriya Rock Fortress is an ancient palace and UNESCO World Heritage Site, famous for
+                                its frescoes and breathtaking summit views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '01']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-al-moatasem-alaa-el-din-445873-1139429.jpg') }}"
+                            alt="Pidurangala Rock">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '14']) }}">Pidurangala</a>
+                            </h3>
+                            <p class="destination-details">
+                                A prominent rock formation near Sigiriya offering breathtaking panoramic views of the
+                                surrounding landscape.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '14']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
+                            alt="Ella Rock">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '05']) }}">Ella Rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for hiking trails and breathtaking views of the lush green hill country.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '05']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/aluwihare/caption (1).jpg') }}"
+                            alt="Mathale Aluviharaya">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '27']) }}">Mathale Aluviharaya</a>
+                            </h3>
+                            <p class="destination-details">
+                                A historic rock temple in Matale where the Pali Canon was first written down entirely on
+                                ola leaves.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '27']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="rocks-mountains historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/free-photo-of-dambulla-cave-temple-complex-in-sri-lanka.jpeg') }}"
+                            alt="Dambulla Cave Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '17']) }}">Dambulla Cave Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site renowned for its magnificent ancient cave temple complex
+                                and statues.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '17']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/Ravana cave/cave-after-excavations.jpg') }}"
+                            alt="Ravana Cave">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '28']) }}">Ravana Cave</a>
+                            </h3>
+                            <p class="destination-details">
+                                A popular historic cave located near Ella, deeply connected to the Ramayana legend.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '28']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/1774253054527.jpeg') }}"
+                            alt="Adams Peak">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Adams Peak (Sri Paada)</a>
+                            </h3>
+                            <p class="destination-details">
+                                A majestic, conical mountain renowned for the sacred footprint at its peak and beautiful
+                                sunrise views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '18']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/Piduruthalagala/20160408-160954-largejpg.jpg') }}"
+                            alt="Piduruthalagala">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '29']) }}">Piduruthalagala</a>
+                            </h3>
+                            <p class="destination-details">
+                                The highest mountain in Sri Lanka, offering a cool climate and dense forest reserves.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '29']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/lipton seat/lupton-seat-sunrise.jpg') }}"
+                            alt="Lipton Seat">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '30']) }}">Lipton Seat</a>
+                            </h3>
+                            <p class="destination-details">
+                                A famous viewpoint in Haputale, overlooking endless tea estates and stunning mountain
+                                valleys.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '30']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/horton-plains.jpg') }}"
+                            alt="Horton Plains">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '10']) }}">Horton Plains</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site home to unique highland wildlife and the famous World's End
+                                drop.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '10']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/ishan-kahapola-arachchi-fQe-2x2YflU-unsplash.jpg') }}"
+                            alt="Anuradhapura">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '11']) }}">Anuradhapura</a>
+                            </h3>
+                            <p class="destination-details">
+                                An ancient city with well-preserved ruins of palaces, giant stupas, and rich Buddhist
+                                history.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '11']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/chathuraanuradha-buddha-7490716_1280.jpg') }}"
+                            alt="Polonnaruwa">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '12']) }}">Polonnaruwa</a>
+                            </h3>
+                            <p class="destination-details">
+                                The second most ancient of Sri Lanka's kingdoms, featuring majestic statues and ancient
+                                architecture.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '12']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-dimath-dayananda-245054507-17092145.jpg') }}"
+                            alt="Mihintale">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '15']) }}">Mihintale</a>
+                            </h3>
+                            <p class="destination-details">
+                                The cradle of Buddhism in Sri Lanka, offering a grand stairway and peaceful mountain
+                                setting.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '15']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/Aukana/avukana-es-una-obra-maestra.jpg') }}"
+                            alt="Aukana">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '31']) }}">Aukana</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for the magnificent Aukana Buddha statue, carved directly out of a large granite
+                                rock face.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '31']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/kandy.jpg') }}" alt="Kandy Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '03']) }}">Kandy Temple (Dalada
+                                    Maligawa)</a>
+                            </h3>
+                            <p class="destination-details">
+                                Home to the sacred Temple of the Tooth Relic, blending cool-climate hills with deep
+                                cultural traditions.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '03']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/nallur/nallur-kovil-in-the-evening.jpg') }}"
+                            alt="Nallur Temple / Kovil">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '32']) }}">Nallur Temple / Kovil</a>
+                            </h3>
+                            <p class="destination-details">
+                                One of the most significant Hindu temples in Jaffna, deeply rooted in the culture of
+                                Northern Sri Lanka.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '32']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/koneshwaram/koneshwaram-temple-known.jpg') }}"
+                            alt="Koneswaram Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '33']) }}">Koneswaram Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                A classical-medieval Hindu temple complex in Trincomalee, offering stunning coastal
+                                views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '33']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/seetha amman/Seetha-Amman-Kovil-from-outside.jpg') }}"
+                            alt="Seetha Amman Kovil Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '34']) }}">Seetha Amman Kovil</a>
+                            </h3>
+                            <p class="destination-details">
+                                A vibrant temple in Nuwara Eliya associated with the Ramayana trail and Princess Seetha.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '34']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/munneswaram/munneswaram-devasthanam.jpg') }}"
+                            alt="Munneswaram Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '35']) }}">Munneswaram Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                A significant regional Hindu temple complex in Chilaw, venerated by multiple faiths.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '35']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/galle_fort.jpg') }}"
+                            alt="Galle Dutch Fort">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '02']) }}">Galle Dutch Fort</a>
+                            </h3>
+                            <p class="destination-details">
+                                A beautifully preserved Dutch-era fortress by the beach with cobbled streets, ramparts,
+                                cafes, and boutique shops.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '02']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
+                            alt="Jaffna Dutch Fort">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '13']) }}">Jaffna Dutch Fort</a>
+                            </h3>
+                            <p class="destination-details">
+                                A historical stronghold in the Northern Province showcasing rich heritage and colonial
+                                architecture.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '13']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/Yala National Park.jpg') }}"
+                            alt="Yala National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '06']) }}">Yala National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                One of the best places in the world to spot leopards, offering thrilling safaris and
+                                rich wildlife.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '06']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/udawalawe/3b.jpg') }}"
+                            alt="Udawalawe National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '36']) }}">Udawalawe National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                Renowned for its large population of majestic wild elephants and incredible jeep safari
+                                experiences.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '36']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/minneriya/elephant-safari-jeep.jpg') }}"
+                            alt="Minneriya National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '37']) }}">Minneriya National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for the "Elephant Gathering," the largest gathering of wild elephants in Asia.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '37']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
+                            alt="Wilpattu National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '04']) }}">Wilpattu National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                Sri Lanka’s largest national park, famous for natural lakes (villus), leopards, and
+                                untouched wilderness.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '04']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
+                            alt="Mirissa Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '07']) }}">Mirissa Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A tropical beach paradise known for whale watching, golden sands, and stunning sunsets.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '07']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/360_F_217638969_rfRP2xj50HvZweJiRct8SWjXmG6OfydM.jpg') }}"
+                            alt="Arugam Bay Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '20']) }}">Arugam Bay Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A popular destination for surfers and nature lovers, known for its pristine waves and
+                                beach vibe.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '20']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}"
+                            alt="Unawatuna Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '23']) }}">Unawatuna Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Nestled on the Southern coast, famous for calm turquoise waters, vibrant nightlife, and
+                                coral reefs.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '23']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                            alt="Bentota Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '38']) }}">Bentota Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Renowned for golden sands and thrilling water sports options along the Bentota River and
+                                sea.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '38']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}"
+                            alt="Trincomalee & Nilaveli Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '50']) }}">Trincomalee & Nilaveli
+                                    Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Boasts pristine white-sand beaches, clear shallow waters, and access to the stunning
+                                Pigeon Island.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '50']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-genine-alyssa-pedreno-andrada-1263127-2932486.jpg') }}"
+                            alt="Weligama Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '19']) }}">Weligama Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A coastal town known for beautiful sandy sweeps, perfect beginner surfing waves, and
+                                stilt fishermen.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '19']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/10302182-Tourists-at-Hikkaduwa-beach-with-palm-trees-Sri-Lanka.jpg') }}"
+                            alt="Hikkaduwa Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '21']) }}">Hikkaduwa Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Celebrated for its dynamic surf scene, colorful marine sanctuary, and energetic
+                                beachside nightlife.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '21']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                            alt="Pasikuda Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '39']) }}">Pasikuda Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A stunning east-coast beach famous for its extremely shallow shoreline, perfect for safe
+                                sea bathing.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '39']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1544085311-11a028465b03?auto=format&fit=crop&w=600&q=80"
+                            alt="Madu River Boat Ride">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '41']) }}">Madu River Boat Ride</a>
+                            </h3>
+                            <p class="destination-details">
+                                A relaxing boat safari through mangrove forests, visiting small island villages and
+                                cinnamon plantations.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '41']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/village tour/caption (3).jpg') }}"
+                            alt="Village Tour - Sigiriya & Habarana">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '42']) }}">Village Tour - Sigiriya /
+                                    Habarana</a>
+                            </h3>
+                            <p class="destination-details">
+                                Experience traditional Sri Lankan rural life, local cooking, and bullock cart rides in
+                                the village.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '42']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?auto=format&fit=crop&w=600&q=80"
+                            alt="Water Rafting">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '43']) }}">Water Rafting</a>
+                            </h3>
+                            <p class="destination-details">
+                                Thrilling white-water rafting experiences usually enjoyed on the Kelani River in
+                                Kitulgala.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '43']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/whale watching/83.jpg') }}"
+                            alt="Whale Watching">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '44']) }}">Whale Watching</a>
+                            </h3>
+                            <p class="destination-details">
+                                Head out to the deep seas off Mirissa or Trincomalee to spot majestic blue whales and
+                                dolphins.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '44']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80"
+                            alt="Snorkeling / Diving">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '45']) }}">Snorkeling & Diving</a>
+                            </h3>
+                            <p class="destination-details">
+                                Explore vibrant underwater coral gardens and historical shipwrecks around the coastal
+                                belt.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '45']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80"
+                            alt="Coral Watching">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '46']) }}">Coral Watching</a>
+                            </h3>
+                            <p class="destination-details">
+                                Take a glass-bottom boat ride in Hikkaduwa or Pigeon Island to witness colorful coral
+                                reefs safely.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '46']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=600&q=80"
+                            alt="Surfing">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '47']) }}">Surfing</a>
+                            </h3>
+                            <p class="destination-details">
+                                Catch some of the world's best waves at surf spots like Arugam Bay, Weligama, and
+                                Hikkaduwa.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '47']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                            alt="Pigeon Island">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '48']) }}">Pigeon Island</a>
+                            </h3>
+                            <p class="destination-details">
+                                A marine national park near Trincomalee offering some of the best snorkeling with sharks
+                                and turtles.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '48']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/colombo-2.jpg') }}" alt="Colombo">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Colombo City</a>
+                            </h3>
+                            <p class="destination-details">
+                                The heart of Sri Lanka, a bustling commercial capital with shopping, street food, and
+                                rich history.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div> --}}
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category=" safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/31.jpg') }}" alt="Sinharaja">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '49']) }}">Sinharaja Forest</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site and global biodiversity hotspot, ideal for nature treks.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '49']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/pexels-kawshika-11013741.jpg') }}"
+                            alt="Katharagama">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '16']) }}">Katharagama</a>
+                            </h3>
+                            <p class="destination-details">
+                                A deeply venerated pilgrimage town uniting multiple faiths seeking blessings at the
+                                sacred Devalaya.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '16']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/nuwara eliya – little england.jpg') }}"
+                            alt="Nuwara Eliya">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '08']) }}">Nuwara Eliya</a>
+                            </h3>
+                            <p class="destination-details">
+                                Known as 'Little England' for its cool climate, colonial charm, and surrounding lush tea
+                                estates.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '08']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </section>
 
@@ -1441,8 +2359,6 @@
         }
     </style>
 
-
-
     {{-- <section class="testimonial-area2 overflow-hidden space" id="testi-sec">
         <div class="container">
             <div class="title-area text-center">
@@ -1522,7 +2438,6 @@
             position: relative;
             padding: 100px 0;
             background-image: url('{{ asset('assets/img/2149153258.jpg') }}');
-            /* මෙතනට ඔයාගේ background image path එක දෙන්න */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -1592,7 +2507,7 @@
             position: absolute;
             width: 140px;
             height: 140px;
-            border: 3px solid #13b5b1;
+            /* border: 3px solid #13b5b1; */
             border-radius: 50%;
             border-right-color: transparent;
             border-bottom-color: transparent;
@@ -1777,7 +2692,7 @@
 
 
                                                 <span>{{ $testi->country }}</span>
-                                                
+
                                                 @if (isset($testi->code))
                                                     <img src="https://flagcdn.com/w20/{{ strtolower($testi->code) }}.png"
                                                         alt="flag"

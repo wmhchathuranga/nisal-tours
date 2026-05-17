@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    @include('partials.head')
+</head>
+
+<body>
+
+@include('partials.loader')
+
+@php
+    $page = 'documentary';
+@endphp
+
+@include('partials.menu')
+
+<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1590462080373-ee6512fb7e93?auto=format&fit=crop&w=1920&q=80">
+    <div class="container">
+        <div class="breadcumb-content">
+            <h1 class="breadcumb-title">Aluviharaya Rock Temple</h1>
+            <ul class="breadcumb-menu">
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li>Documentary</li>
+                <li>Aluviharaya</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="space">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="tour-page-single">
+
+                    <div class="slider-area tour-slider1 mb-40">
+                        <div class="swiper th-slider mb-4" id="tourSlider4" data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tour-slider-img" style="height:480px;">
+                                        <img src="https://images.unsplash.com/photo-1620087799427-0da5f061e389?auto=format&fit=crop&w=1200&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Aluviharaya Temple">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-content">
+                        <div class="page-meta mb-30">
+                            <a class="page-tag" href="#">Historical & Religious</a>
+                            <span class="ratting">
+                                <i class="fa-solid fa-dharmachakra"></i>
+                                <span>Sacred Site</span>
+                            </span>
+                        </div>
+
+                        <h2 class="box-title mb-20">Mathale Aluviharaya – The Cradle of the Written Pali Canon</h2>
+
+                        <p class="box-text mb-30">
+                            The Matale Aluviharaya is a sacred Buddhist rock temple of immense historical importance. It was here, during the 1st century BC, that the Pali Canon (Tripitaka) was first committed to writing on ola (palm) leaves, ensuring the preservation of the Buddha's teachings.
+                        </p>
+
+                        <h3 class="box-title">Key Facts</h3>
+                        <div class="destination-checklist mb-50">
+                            <div class="checklist style2">
+                                <ul>
+                                    <li>Location</li>
+                                    <li>Era</li>
+                                    <li>Significance</li>
+                                </ul>
+                            </div>
+                            <div class="checklist style2">
+                                <ul>
+                                    <li>Matale, Central Province</li>
+                                    <li>1st Century BC (King Walagamba)</li>
+                                    <li>First writing of the Tripitaka</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="box-title">Location Map</h3>
+                        <div class="ratio ratio-16x9 rounded overflow-hidden">
+                            <iframe src="https://maps.google.com/maps?q=Aluviharaya+Rock+Cave+Temple&t=&z=14&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@include('partials.footer')
+@include('partials.scripts')
+
+</body>
+</html>

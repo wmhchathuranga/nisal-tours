@@ -26,8 +26,6 @@ class Testimonial extends Model
 public function user()
 {
     // return $this->belongsTo(User::class, 'user_id'); 
-    // user_id eka nethuwa full_name ekenma link wenawa nam: 
     return $this->belongsTo(User::class, 'full_name', 'name');
-    // (Habayi user_id eken link karana eka thama standard widiha)
 }
 }

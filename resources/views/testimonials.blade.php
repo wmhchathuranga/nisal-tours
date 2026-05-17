@@ -291,9 +291,9 @@
                                         {{-- @if ($testimonial->profile_picture)
                                             <img src="{{ asset('storage/' . $testimonial->profile_picture) }}"
                                                 alt="Profile" class="user-avatar shadow-sm"> --}}
-                                                @if ($testimonial->user && $testimonial->user->profile_photo)
-                <img src="{{ asset('storage/' . $testimonial->user->profile_photo) }}"
-                    alt="{{ $testimonial->full_name }}" class="user-avatar shadow-sm">
+                                        @if ($testimonial->user && $testimonial->user->profile_photo)
+                                            <img src="{{ asset('storage/' . $testimonial->user->profile_photo) }}"
+                                                alt="{{ $testimonial->full_name }}" class="user-avatar shadow-sm">
                                         @else
                                             <div class="user-avatar-placeholder shadow-sm">
                                                 <i class="fa-solid fa-user"></i>

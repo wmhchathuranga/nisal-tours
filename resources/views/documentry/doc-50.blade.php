@@ -14,14 +14,14 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Unawatuna Beach</h1>
+            <h1 class="breadcumb-title">Trincomalee & Nilaveli Beach</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Unawatuna</li>
+                <li>Trincomalee</li>
             </ul>
         </div>
     </div>
@@ -40,16 +40,16 @@
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}"
+                                        <img src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
-                                             alt="Unawatuna Beach">
+                                             alt="Nilaveli Beach">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80"
+                                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
                                              style="width:100%;height:100%;object-fit:cover;"
-                                             alt="Unawatuna Coast">
+                                             alt="Trincomalee Coast">
                                     </div>
                                 </div>
 
@@ -60,12 +60,12 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height: 200px;">
-                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}" alt="Image">
+                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}" alt="Image">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height: 200px;">
-                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80" alt="Image">
+                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -75,21 +75,21 @@
                     <div class="page-content">
 
                         <div class="page-meta mb-30">
-                            <a class="page-tag" href="#">Beaches & Nightlife</a>
+                            <a class="page-tag" href="#">Beaches & Nature</a>
                             <span class="ratting">
                                 <i class="fa-solid fa-umbrella-beach"></i>
-                                <span>Vibrant Coastline</span>
+                                <span>Pristine White Sands</span>
                             </span>
                         </div>
 
-                        <h2 class="box-title mb-20">Unawatuna Beach – A Tropical Paradise on the Southern Coast</h2>
+                        <h2 class="box-title mb-20">Trincomalee & Nilaveli Beach – The Jewel of the East Coast</h2>
 
                         <p class="box-text mb-30">
-                            Nestled beautifully on the southern coast of Sri Lanka, Unawatuna is a world-famous banana-shaped beach known for its calm turquoise waters, golden sands, and spectacular coral reefs. It is one of the most popular coastal destinations, offering a perfect mix of relaxation, water sports, and a lively beachside nightlife.
+                            Trincomalee, situated on the northeast coast of Sri Lanka, is home to some of the most breathtaking natural harbors and pristine beaches in the world. Among them, Nilaveli Beach stands out as a paradise of soft white sands and shallow turquoise waters, offering an ideal setting for pure relaxation and coastal adventure.
                         </p>
 
                         <p class="box-text mb-40">
-                            The protective offshore reef makes swimming remarkably safe throughout most of the year. Beyond the main beach stretch, visitors can hike up to the Japanese Peace Pagoda for a stunning sunset view or explore the hidden shores of Jungle Beach nearby.
+                            The calm sea during the seasonal months provides excellent conditions for swimming, snorkeling, and scuba diving. Nilaveli is also the primary launch point for short boat rides to the famous Pigeon Island National Park, where marine enthusiasts can swim alongside diverse coral reefs and sea turtles.
                         </p>
 
                         <h3 class="box-title">Key Facts</h3>
@@ -98,14 +98,14 @@
                                 <ul>
                                     <li>Location</li>
                                     <li>Famous For</li>
-                                    <li>Activities</li>
+                                    <li>Best Time to Visit</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
-                                    <li>Galle District, Southern Province</li>
-                                    <li>Calm bay, coral reefs, and beach cafes</li>
-                                    <li>Snorkeling, scuba diving, boat tours</li>
+                                    <li>Trincomalee District, Eastern Province</li>
+                                    <li>White sand beaches, marine life, and whale watching</li>
+                                    <li>May to September</li>
                                 </ul>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
                             <iframe
-                                src="https://maps.google.com/maps?q=Pidurangala+Rock&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                src="https://maps.google.com/maps?q=Ella+Rock&t=&z=14&ie=UTF8&iwloc=&output=embed"
                                 style="border:0;"
                                 allowfullscreen=""
                                 loading="lazy"
