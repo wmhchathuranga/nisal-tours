@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1574068595914-5f532a24564c?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/seetha amman/2023-01-02.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Seetha Amman Kovil</h1>
@@ -33,17 +33,103 @@
             <div class="col-xl-10">
                 <div class="tour-page-single">
 
-                    <div class="slider-area tour-slider1 mb-40">
-                        <div class="swiper th-slider mb-4" id="tourSlider4" data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height:480px;">
-                                        <img src="https://images.unsplash.com/photo-1574068595914-5f532a24564c?auto=format&fit=crop&w=1200&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Seetha Amman Temple">
+                   <div class="slider-area tour-slider1 mb-40">
+                            <div class="swiper th-slider mb-4" id="tourSlider13"
+                                data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/seetha amman/2023-01-02.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Leopard resting on a tree in Yala">
+                                        </div>
                                     </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/seetha amman/image0791.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Wild Elephants roaming">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/seetha amman/ramayana-tour-of-sri-lanka-4-days-40.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/seetha amman/Seetha-Amman-Kovil-from-outside.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Sloth Bear sighting in the wild">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/seetha amman/temple_aCnsilre_202501121610200.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Patanangala Beach inside the park">
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+
+                            <div class="swiper th-slider tour-thumb-slider"
+                                data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/seetha amman/2023-01-02.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/seetha amman/image0791.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/seetha amman/ramayana-tour-of-sri-lanka-4-days-40.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/seetha amman/Seetha-Amman-Kovil-from-outside.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/seetha amman/temple_aCnsilre_202501121610200.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <button data-slider-prev="#tourSlider13" class="slider-arrow style3 slider-prev">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-left.svg') }}" alt="">
+                            </button>
+
+                            <button data-slider-next="#tourSlider13" class="slider-arrow style3 slider-next">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-right.svg') }}" alt="">
+                            </button>
                         </div>
-                    </div>
 
                     <div class="page-content">
                         <div class="page-meta mb-30">

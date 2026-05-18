@@ -34,36 +34,102 @@
                 <div class="tour-page-single">
 
                     <div class="slider-area tour-slider1 mb-40">
-                        <div class="swiper th-slider mb-4" id="tourSlider4" data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height:480px;">
-                                        <img src="https://images.unsplash.com/photo-1526055530856-11f71a0628e9?auto=format&fit=crop&w=1200&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Ella Rock Hike">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height:480px;">
-                                        <img src="https://images.unsplash.com/photo-1598114006198-6395b0f4477c?auto=format&fit=crop&w=1200&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Ella View">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="swiper th-slider mb-4" id="tourSlider13"
+                                data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
+                                <div class="swiper-wrapper">
 
-                        <div class="swiper th-slider tour-thumb-slider" data-slider-options='{"effect":"slide","loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}},"autoplayDisableOnInteraction":"true"}'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height: 200px;">
-                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1526055530856-11f71a0628e9?auto=format&fit=crop&w=600&q=80" alt="Image">
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (1).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Leopard resting on a tree in Yala">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height: 200px;">
-                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1598114006198-6395b0f4477c?auto=format&fit=crop&w=600&q=80" alt="Image">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}')"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Wild Elephants roaming">
+                                        </div>
                                     </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Sloth Bear sighting in the wild">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Patanangala Beach inside the park">
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+
+                            <div class="swiper th-slider tour-thumb-slider"
+                                data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <button data-slider-prev="#tourSlider13" class="slider-arrow style3 slider-prev">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-left.svg') }}" alt="">
+                            </button>
+
+                            <button data-slider-next="#tourSlider13" class="slider-arrow style3 slider-next">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-right.svg') }}" alt="">
+                            </button>
                         </div>
-                    </div>
 
                     <div class="page-content">
                         <div class="page-meta mb-30">
