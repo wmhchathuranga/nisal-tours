@@ -17,10 +17,10 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/1618.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/documentary/doc-05/ella-4788958_19201.jpg">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Ella – Hill Country Escape</h1>
+            <h1 class="breadcumb-title">Ella Rock</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>

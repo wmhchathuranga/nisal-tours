@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-13/ajai-s-m2dn48-TLAw-unsplash.jpg') }}">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Gemini_Generated_Image_fa7hppfa7hppfa7h.png') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Jaffna</h1>

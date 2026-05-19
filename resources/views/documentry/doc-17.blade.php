@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-17/agnieszka-stankiewicz-kiU3ELLWmMk-unsplash.jpg') }}">
+    <div class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/documentary/doc-17/agnieszka-stankiewicz-kiU3ELLWmMk-unsplash.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Dambulla Cave Temple</h1>
@@ -40,29 +41,7 @@
                             <div class="swiper th-slider mb-4" id="tourSlider13"
                                 data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
                                 <div class="swiper-wrapper">
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-17/dylan-shaw-smUAKwMT8XA-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Dambulla Golden Temple">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-17/matt-dany-1ul4-hqm48M-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Ancient Cave Interior">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-17/matt-dany-gd4EvBgnozA-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Magnificent Ceiling Frescoes">
-                                        </div>
-                                    </div>
-
+                                    
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
                                             <img src="{{ asset('assets/img/documentary/doc-17/secret-travel-guide-eDmGBJDmo04-unsplash.jpg') }}"
@@ -73,7 +52,33 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-17/sander-traa-2vNC1J_TafQ-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-17/photo6jpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Dambulla Golden Temple">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-17/matt-dany-1ul4-hqm48M-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Ancient Cave Interior">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-17/matt-dany-gd4EvBgnozA-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Magnificent Ceiling Frescoes">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-17/dambulla-cave-temple (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="View from Dambulla Rock">
                                         </div>
@@ -86,26 +91,48 @@
                                 data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
                                 <div class="swiper-wrapper">
 
+                                     <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-17/secret-travel-guide-eDmGBJDmo04-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Reclining Buddha Statue">
+                                        </div>
+                                    </div>
+                                    
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-17/dylan-shaw-smUAKwMT8XA-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
+                                            <img src="{{ asset('assets/img/documentary/doc-17/photo6jpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Dambulla Golden Temple">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/documentary/doc-17/matt-dany-1ul4-hqm48M-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Ancient Cave Interior">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/documentary/doc-17/matt-dany-gd4EvBgnozA-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Magnificent Ceiling Frescoes">
                                         </div>
                                     </div>
+
+
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-17/dambulla-cave-temple (1).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="View from Dambulla Rock">
+                                        </div>
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -134,11 +161,17 @@
                             </h2>
 
                             <p class="box-text mb-30">
-                                Located in the central part of Sri Lanka, the Dambulla Cave Temple (also known as the Golden Temple of Dambulla) is the largest and best-preserved cave temple complex in the country. It has been a sacred pilgrimage site for over 22 centuries and is a highly celebrated UNESCO World Heritage site.
+                                Located in the central part of Sri Lanka, the Dambulla Cave Temple (also known as the
+                                Golden Temple of Dambulla) is the largest and best-preserved cave temple complex in the
+                                country. It has been a sacred pilgrimage site for over 22 centuries and is a highly
+                                celebrated UNESCO World Heritage site.
                             </p>
 
                             <p class="box-text mb-40">
-                                The complex comprises five main caves situated under a massive overhanging rock. Inside, visitors will find over 150 stunning Buddha statues, figures of Sri Lankan kings, and intricate ceiling frescoes covering 2,100 square meters that vividly depict the life of the Buddha and historic events.
+                                The complex comprises five main caves situated under a massive overhanging rock. Inside,
+                                visitors will find over 150 stunning Buddha statues, figures of Sri Lankan kings, and
+                                intricate ceiling frescoes covering 2,100 square meters that vividly depict the life of
+                                the Buddha and historic events.
                             </p>
 
                             <h3 class="box-title">Key Facts</h3>
@@ -167,7 +200,8 @@
                             <div class="checklist mb-50">
                                 <ul>
                                     <li>Devaraja Lena (Cave of the Divine King - features a 14m reclining Buddha)</li>
-                                    <li>Maharaja Lena (Cave of the Great Kings - the largest and most impressive cave)</li>
+                                    <li>Maharaja Lena (Cave of the Great Kings - the largest and most impressive cave)
+                                    </li>
                                     <li>Maha Alut Viharaya (Great New Monastery)</li>
                                     <li>Spectacular 2,000-year-old ceiling and wall frescoes</li>
                                     <li>The Golden Temple and massive golden Buddha statue at the base</li>
@@ -176,7 +210,12 @@
 
                             <h3 class="box-title">Visiting Dambulla</h3>
                             <p class="box-text mb-50">
-                                The climb to the caves takes about 10 to 15 minutes via a stone staircase that offers beautiful views of the surrounding flatlands and Sigiriya rock in the distance. As this is a highly venerated site, visitors must wear modest clothing covering their shoulders and knees. You will need to remove your shoes and hats before entering the sacred cave area. Be mindful of the resident monkeys along the path, and try to visit early in the morning or late afternoon to avoid the midday heat.
+                                The climb to the caves takes about 10 to 15 minutes via a stone staircase that offers
+                                beautiful views of the surrounding flatlands and Sigiriya rock in the distance. As this
+                                is a highly venerated site, visitors must wear modest clothing covering their shoulders
+                                and knees. You will need to remove your shoes and hats before entering the sacred cave
+                                area. Be mindful of the resident monkeys along the path, and try to visit early in the
+                                morning or late afternoon to avoid the midday heat.
                             </p>
 
                             <h3 class="box-title">Location Map</h3>

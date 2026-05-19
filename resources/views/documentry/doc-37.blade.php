@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1558904541-efa843a96f0f?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/16713.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Minneriya National Park</h1>

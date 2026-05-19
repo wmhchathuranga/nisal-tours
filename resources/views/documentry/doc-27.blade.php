@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1590462080373-ee6512fb7e93?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/aluwihare/caption4.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Aluviharaya Rock Temple</h1>
@@ -63,7 +63,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="{{ asset('assets/img/aluwihare/caption4.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>

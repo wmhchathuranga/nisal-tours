@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/31.jpg') }}">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp6545035-desktop-sri-lanka-wallpapers.jpg">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Sinharaja Forest Reserve</h1>
@@ -35,88 +35,99 @@
                 <div class="col-xl-10">
                     <div class="tour-page-single">
 
-                       <div class="slider-area tour-slider1 mb-40">
+                        <div class="slider-area tour-slider1 mb-40">
                             <div class="swiper th-slider mb-4" id="tourSlider13"
                                 data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Leopard resting on a tree in Yala">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9b/6e/ff/oriental-dwarf-kingfisher.jpg?w=1000&h=-1&s=1"
+                                                style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}')"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/33/2b/5e/explore-sinharaja-rain.jpg?w=1000&h=-1&s=1"
+                                                style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e4/ef/ee/sinharaja-forest-reserve.jpg?w=1000&h=-1&s=1"
+                                                style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Sloth Bear sighting in the wild">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3a/40/18/poisonous-snakes.jpg?w=1000&h=-1&s=1"
+                                                style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Patanangala Beach inside the park">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/b9/be/8b/caption.jpg?w=1000&h=-1&s=1"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/d8/81/70/the-trails-of-sinharaja.jpg?w=1000&h=-1&s=1"
+                                                style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
 
+                            <!-- Thumbnails -->
                             <div class="swiper th-slider tour-thumb-slider"
                                 data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9b/6e/ff/oriental-dwarf-kingfisher.jpg?w=1000&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/33/2b/5e/explore-sinharaja-rain.jpg?w=1000&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e4/ef/ee/sinharaja-forest-reserve.jpg?w=1000&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3a/40/18/poisonous-snakes.jpg?w=1000&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/b9/be/8b/caption.jpg?w=1000&h=-1&s=1"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/d8/81/70/the-trails-of-sinharaja.jpg?w=1000&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -124,12 +135,13 @@
                                 </div>
                             </div>
 
+                            <!-- Arrows -->
                             <button data-slider-prev="#tourSlider13" class="slider-arrow style3 slider-prev">
-                                <img src="{{ asset('assets/img/icon/hero-arrow-left.svg') }}" alt="">
+                                <img src="assets/img/icon/hero-arrow-left.svg" alt="">
                             </button>
 
                             <button data-slider-next="#tourSlider13" class="slider-arrow style3 slider-next">
-                                <img src="{{ asset('assets/img/icon/hero-arrow-right.svg') }}" alt="">
+                                <img src="assets/img/icon/hero-arrow-right.svg" alt="">
                             </button>
                         </div>
 

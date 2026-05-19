@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1588614959060-4d144f28b2ea?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/16713.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Udawalawe National Park</h1>
@@ -50,7 +50,7 @@
                                         <div class="tour-slider-img" style="height:480px;">
                                             <img src="{{ asset('assets/img/udawalawe/25.jpg') }}')"
                                                 style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
+                                                >
                                         </div>
                                     </div>
 
@@ -166,7 +166,7 @@
 
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.3980352514!2d80.7554907!3d7.9620701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sPidurangala%20Rock!5e0!3m2!1sen!2slk!4v16" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                           <iframe src="https://maps.google.com/maps?q=Udawalawe%20National%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>

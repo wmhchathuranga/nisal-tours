@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1544085311-11a028465b03?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/White-Water-Rafting-1920x600-1.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Madu River Safari</h1>
@@ -40,7 +40,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/81/a4/bd/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -48,7 +48,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}')"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/ef/a9/43/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -56,14 +56,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5b/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5a/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -71,7 +71,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/59/caption.jpg?w=1100&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -86,35 +86,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/81/a4/bd/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/ef/a9/43/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5b/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5a/caption.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/59/caption.jpg?w=1100&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@
 
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://maps.google.com/maps?q=Pidurangala%20Rock&t=&z=15&ie=UTF8&iwloc=&output=embed0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://maps.google.com/maps?q=Madu%20Ganga&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>

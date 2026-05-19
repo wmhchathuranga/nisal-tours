@@ -40,7 +40,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                            <img src="https://dan.org/wp-content/uploads/2022/04/D2-iStock-647358754.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -48,7 +48,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}')"
+                                            <img src="https://www.incredibleindia-tourism.org/images/adventure-tours/scuba-diving.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -56,14 +56,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="https://img.activityjapan.com/wi/snorkeling_howto_thumb.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                            <img src="https://www.deepbluedivecenter.com/wp-content/uploads/peope-snorkeling-underwater.png"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -71,7 +71,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                            <img src="https://www.diveholics.com/wp-content/uploads/2024/03/snorkeling-experience-BG.webp"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -86,35 +86,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                            <img src="https://dan.org/wp-content/uploads/2022/04/D2-iStock-647358754.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}"
+                                            <img src="https://www.incredibleindia-tourism.org/images/adventure-tours/scuba-diving.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="https://img.activityjapan.com/wi/snorkeling_howto_thumb.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                            <img src="https://www.deepbluedivecenter.com/wp-content/uploads/peope-snorkeling-underwater.png"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                            <img src="https://www.diveholics.com/wp-content/uploads/2024/03/snorkeling-experience-BG.webp"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -164,10 +164,10 @@
                             </div>
                         </div>
 
-                        <h3 class="box-title">Location Map</h3>
+                        {{-- <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
                             <iframe src="https://maps.google.com/maps?q=Pidurangala%20Rock&t=&z=15&ie=UTF8&iwloc=&output=embed4" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>

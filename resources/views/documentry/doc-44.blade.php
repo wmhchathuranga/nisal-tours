@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1565805562002-39c8907361c4?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/21514946501.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Whale Watching</h1>
@@ -40,7 +40,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137010-11-E.jpg?v=1713776621"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -48,7 +48,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}')"
+                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137750-11-E.jpg?v=1714627490"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -56,14 +56,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="https://www.srilankaclassytours.com/medias/activity/big/147/1.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                            <img src="https://flashpackatforty.com/wp-content/gallery/mirissa-whale-watching/mirissa-whale-and-boat-long.jpg?t=1553533516"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -71,7 +71,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                            <img src="https://reefandrainforest.b-cdn.net/wp-content/uploads/2016/04/Sri-Lanka-Tours-_Blue-whale-Snorkelling-1920x1280.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -86,35 +86,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
+                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137010-11-E.jpg?v=1713776621"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}"
+                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137750-11-E.jpg?v=1714627490"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
+                                            <img src="https://www.srilankaclassytours.com/medias/activity/big/147/1.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (5).jpg') }}"
+                                            <img src="https://flashpackatforty.com/wp-content/gallery/mirissa-whale-watching/mirissa-whale-and-boat-long.jpg?t=1553533516"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                            <img src="https://reefandrainforest.b-cdn.net/wp-content/uploads/2016/04/Sri-Lanka-Tours-_Blue-whale-Snorkelling-1920x1280.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -164,10 +164,10 @@
                             </div>
                         </div>
 
-                        <h3 class="box-title">Location Map</h3>
+                        {{-- <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
                             <iframe src="https://maps.google.com/maps?q=Pidurangala%20Rock&t=&z=15&ie=UTF8&iwloc=&output=embed3" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>

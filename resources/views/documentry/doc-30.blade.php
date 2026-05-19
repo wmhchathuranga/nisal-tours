@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1601004868079-05244cefbac8?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/liptonseat/lupton-seat-sunrise.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Lipton Seat</h1>
@@ -40,7 +40,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/lipton seat/haputale-to-lipton-seat.jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/haputale-to-lipton-seat.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -48,7 +48,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/lipton seat/lupton-seat-now (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-now (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -56,14 +56,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/lipton seat/lupton-seat-sunrise.jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-sunrise.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/lipton seat/lupton-seat-tuk-tuk-safari (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-tuk-tuk-safari (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -71,7 +71,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/lipton seat/visit-liptons-seat-tuk (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/visit-liptons-seat-tuk (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -86,35 +86,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/lipton seat/lupton-seat-now (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-now (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/lipton seat/lupton-seat-sunrise.jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-sunrise.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/lipton seat/lupton-seat-tuk-tuk-safari (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-tuk-tuk-safari (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/lipton seat/visit-liptons-seat-tuk (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/visit-liptons-seat-tuk (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/lipton seat/visit-liptons-seat-tuk.jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/visit-liptons-seat-tuk.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

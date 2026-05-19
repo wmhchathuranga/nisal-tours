@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1599827361661-0df8e7e1a384?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Ravanacave/20190724-124751-largejpg.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Ravana Cave</h1>
@@ -40,7 +40,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/111-largejpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/photo1jpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -48,7 +48,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/Ravana assets/img/Ravana cave/20190724-124751-largejpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/20190724-124751-largejpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -56,14 +56,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/cave-after-excavations.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/cave-after-excavations.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/Ravana assets/img/Ravana cave/cup-of-tea-on-the-way.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/cup-of-tea-on-the-way.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -71,7 +71,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/hike-to-the-cave.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/hike-to-the-cave.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -86,35 +86,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/111-largejpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/photo1jpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/20190724-124751-largejpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/20190724-124751-largejpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/cave-after-excavations.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/cave-after-excavations.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/cup-of-tea-on-the-way.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/cup-of-tea-on-the-way.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Ravana cave/hike-to-the-cave.jpg') }}"
+                                            <img src="{{ asset('assets/img/Ravanacave/hike-to-the-cave.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

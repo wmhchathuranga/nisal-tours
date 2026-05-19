@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-18/www.cctsrilanka.com-Sri-Pada-Adams-Peak.jpg') }}">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-18/climbing-adams-peak-cloud-blanket-12.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Sri Paada (Adam's Peak)</h1>

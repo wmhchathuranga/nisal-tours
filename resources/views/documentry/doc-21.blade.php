@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-14/anil-reddy-r-vUs1jhhLA-unsplash.jpg') }}">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Hikkaduwa Beach</h1>
@@ -43,7 +43,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-7AHS4Zpuilg-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ee/0a/71/photo8jpg.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Surfing at Hikkaduwa">
                                         </div>
@@ -51,21 +51,21 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-pv-2hRmoJRU-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/aa/08/07/caption.jpg?w=900&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Hikkaduwa Coral Reef">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/hashan-dharmarathna-il7CUBPzCR0-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/0b/a3/d9/aerial-view-hikka-tranz.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Sea Turtles in Hikkaduwa">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/joost-broeker-ag0s4Ft8YpM-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/f4/ba/f3/neil-took-us-to-such.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Hikkaduwa Beach Bars and Nightlife">
                                         </div>
@@ -73,7 +73,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/oliver-frsh-IahPBkd8W5M-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a3/1a/4f/snorchlovani.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sunset at Narigama Beach">
                                         </div>
@@ -88,35 +88,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/anil-reddy-r-vUs1jhhLA-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/76/8c/a9/photo4jpg.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-7AHS4Zpuilg-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ee/0a/71/photo8jpg.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/hashan-dharmarathna-il7CUBPzCR0-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/0b/a3/d9/aerial-view-hikka-tranz.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/joost-broeker-ag0s4Ft8YpM-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/f4/ba/f3/neil-took-us-to-such.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/oliver-frsh-IahPBkd8W5M-unsplash.jpg') }}"
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a3/1a/4f/snorchlovani.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

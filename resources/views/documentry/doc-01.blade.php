@@ -21,7 +21,7 @@ Breadcumb
 <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp6828612-sigiriya-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Sigiriya Rock Fortress</h1>
+            <h1 class="breadcumb-title">Sigiriya Lion Rock</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>

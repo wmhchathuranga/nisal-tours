@@ -758,13 +758,13 @@
                 <button class="glass-filter-btn active" data-filter="rocks-mountains"><i
                         class="fa-duotone fa-mountains"></i>
                     Rocks & Mountains</button>
-                <button class="glass-filter-btn" data-filter="historical-religious"><i class="fas fa-om"></i>
+                <button class="glass-filter-btn" data-filter="historical-religious"><i class="fas fa-church"></i>
                     Historical & Religious Places</button>
                 <button class="glass-filter-btn" data-filter="beaches"><i class="fas fa-umbrella-beach"></i>
                     Beaches</button>
-                <button class="glass-filter-btn" data-filter="safari"><i class="fas fa-umbrella-beach"></i>
+                <button class="glass-filter-btn" data-filter="safari"><i class="fas fa-paw"></i>
                     Safari</button>
-                <button class="glass-filter-btn" data-filter="activities"><i class="fa-duotone fa-city"></i>
+                <button class="glass-filter-btn" data-filter="activities"><i class="fa-duotone fa-person-walking"></i>
                     Activities</button>
                 {{-- <button class="glass-filter-btn" data-filter="ayuruwedic"><i class="fa-duotone fa-leaf"></i>
                     Ayuruwedic</button> --}}
@@ -1414,7 +1414,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/Ravana cave/cave-after-excavations.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/Ravanacave/cave-after-excavations.jpg') }}"
                             alt="Ravana Cave">
                         <div class="destination-content">
                             <h3 class="title">
@@ -1464,7 +1464,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/lipton seat/lupton-seat-sunrise.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/liptonseat/lupton-seat-sunrise.jpg') }}"
                             alt="Lipton Seat">
                         <div class="destination-content">
                             <h3 class="title">
@@ -1911,7 +1911,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="https://images.unsplash.com/photo-1544085311-11a028465b03?auto=format&fit=crop&w=600&q=80"
+                            src="https://campwale.com/cdn/shop/files/speedboatridepawnalakelonavala.jpg?v=1693820020"
                             alt="Madu River Boat Ride">
                         <div class="destination-content">
                             <h3 class="title">

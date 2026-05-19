@@ -15,14 +15,14 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-14/anil-reddy-r-vUs1jhhLA-unsplash.jpg') }}">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Arugam Bay</h1>
+                <h1 class="breadcumb-title">Arugam Bay Beach</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Arugam Bay</li>
+                    <li>Arugam Bay Beach</li>       
                 </ul>
             </div>
         </div>
@@ -43,7 +43,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-7AHS4Zpuilg-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/djordje-djordjevic-2DsY9_JfEfE-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Surfing at Main Point">
                                         </div>
@@ -51,21 +51,21 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-pv-2hRmoJRU-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/emily-goodhart-Ffe6eAVn6ko-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Elephant Rock View">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/hashan-dharmarathna-il7CUBPzCR0-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/etienne-boulanger-5e2KVwyojpc-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Kumana National Park Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/joost-broeker-ag0s4Ft8YpM-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/isuru-ranasinha-aksPgTprHlo-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Pottuvil Lagoon">
                                         </div>
@@ -73,7 +73,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/oliver-frsh-IahPBkd8W5M-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/junaideen-jr-YpBQ8TyCEyU-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Relaxing on A-Bay Beach">
                                         </div>
@@ -88,35 +88,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/anil-reddy-r-vUs1jhhLA-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/djordje-djordjevic-2DsY9_JfEfE-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-7AHS4Zpuilg-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/emily-goodhart-Ffe6eAVn6ko-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/hashan-dharmarathna-il7CUBPzCR0-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/etienne-boulanger-5e2KVwyojpc-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/joost-broeker-ag0s4Ft8YpM-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/isuru-ranasinha-aksPgTprHlo-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-14/oliver-frsh-IahPBkd8W5M-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-20/junaideen-jr-YpBQ8TyCEyU-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

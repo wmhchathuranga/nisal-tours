@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Unawatuna Beach</h1>
@@ -35,42 +35,101 @@
                 <div class="tour-page-single">
 
                     <div class="slider-area tour-slider1 mb-40">
-                        <div class="swiper th-slider mb-4" id="tourSlider4" data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
-                            <div class="swiper-wrapper">
+                            <div class="swiper th-slider mb-4" id="tourSlider13"
+                                data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
+                                <div class="swiper-wrapper">
 
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}"
-                                             style="width:100%;height:100%;object-fit:cover;"
-                                             alt="Unawatuna Beach">
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/unawatuna/20190407-165442-largejpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Trekking Trail to World's End">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height:480px;">
-                                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80"
-                                             style="width:100%;height:100%;object-fit:cover;"
-                                             alt="Unawatuna Coast">
-                                    </div>
-                                </div>
 
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/unawatuna/unawatuna-beach (1).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Baker's Falls Pathway">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/unawatuna/photo0jpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Montane Cloud Forest">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/unawatuna/unawatuna-beach.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Sambar Deer Grazing">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:480px;">
+                                            <img src="{{ asset('assets/img/unawatuna/20190224-063129-largejpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Panoramic Viewpoint">
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="swiper th-slider tour-thumb-slider" data-slider-options='{"effect":"slide","loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}},"autoplayDisableOnInteraction":"true"}'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height: 200px;">
-                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}" alt="Image">
+                            <div class="swiper th-slider tour-thumb-slider"
+                                data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/unawatuna/20190407-165442-largejpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height: 200px;">
-                                        <img style="width: 100%; height: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80" alt="Image">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/unawatuna/unawatuna-beach (1).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
                                     </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/unawatuna/unawatuna-beach.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/unawatuna/unawatuna-beach.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/unawatuna/20190224-063129-largejpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+
+                            <button data-slider-prev="#tourSlider13" class="slider-arrow style3 slider-prev">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-left.svg') }}" alt="">
+                            </button>
+
+                            <button data-slider-next="#tourSlider13" class="slider-arrow style3 slider-next">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-right.svg') }}" alt="">
+                            </button>
                         </div>
-                    </div>
 
                     <div class="page-content">
 

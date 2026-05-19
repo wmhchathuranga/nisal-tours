@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="https://images.unsplash.com/photo-1604113885542-0352ff1500da?auto=format&fit=crop&w=1920&q=80">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Gemini_Generated_Image_1n8qjy1n8qjy1n8q.png') }}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Aukana Buddha Statue</h1>
