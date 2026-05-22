@@ -142,29 +142,68 @@
 
                         <h2 class="box-title mb-20">Bentota Beach – Sun, Sand, and Thrilling Watersports</h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            Located on the southwestern coast of Sri Lanka, Bentota is the prime destination for water sports enthusiasts. Nestled between the calm waters of the Bentota River and the rolling waves of the Indian Ocean, it offers everything from jet skiing and windsurfing to relaxed river safaris.
+                            Situated along the sun-kissed southwestern coastline of Sri Lanka, Bentota is the ultimate coastal paradise for travelers seeking a perfect mix of laid-back luxury and high-adrenaline adventure. The town boasts a highly unique geographical location; it sits on a narrow strip of golden sand flanked by the roaring, deep blue waves of the Indian Ocean on one side, and the calm, emerald waters of the Bentota Ganga (river) on the other. 
                         </p>
 
+                        <p class="box-text mb-30">
+                            Widely recognized as the undisputed "Water Sports Capital" of Sri Lanka, the tranquil Bentota lagoon provides the perfect, safe environment for an endless array of aquatic thrills throughout the year. From tearing across the water on a high-speed jet ski and wakeboarding, to balancing on a windsurf board or taking a hilarious bumpy ride on a banana boat with friends, Bentota delivers an action-packed tropical getaway like no other.
+                        </p>
+
+                        <p class="box-text mb-40">
+                            But Bentota isn't purely about adrenaline. It is also home to some of the most luxurious, world-class beach resorts in the country, many of which were designed by Sri Lanka's legendary architect, Geoffrey Bawa. Whether you want to sip a fresh king coconut under a swaying palm tree, explore deeply mystical mangrove forests on a river boat, or simply watch a glorious golden sunset melting into the ocean, Bentota offers a truly complete beach holiday experience.
+                        </p>
+
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
                                 <ul>
                                     <li>Location</li>
-                                    <li>Popular Activities</li>
+                                    <li>Main Attraction</li>
+                                    <li>Best Time to Visit</li>
+                                    <li>Climate</li>
+                                    <li>Vibe</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
                                     <li>Galle District, Southern Province</li>
-                                    <li>Jet Skiing, River Safaris, Surfing</li>
+                                    <li>Water Sports & River Safaris</li>
+                                    <li>November to April</li>
+                                    <li>Tropical, Warm & Sunny</li>
+                                    <li>Adventure, Luxury & Family-Friendly</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights & Activities</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>Bentota Lagoon Watersports:</strong> The absolute best spot in the country for jet skiing, waterskiing, wakeboarding, windsurfing, and tube rides in safe, calm waters.</li>
+                                <li><strong>Madu Ganga River Safari:</strong> A fascinating boat ride through dense mangrove tunnels, featuring ancient island temples, cinnamon peeling demonstrations, and natural fish spas.</li>
+                                <li><strong>Kosgoda Turtle Hatcheries:</strong> Located just a few minutes down the coast, these vital conservation centers let you safely observe and release baby sea turtles into the ocean.</li>
+                                <li><strong>Brief Garden & Lunuganga:</strong> The incredibly beautiful, lush country estates and architectural masterpieces designed by the famous Bawa brothers (Geoffrey and Bevis).</li>
+                                <li><strong>Golden Sandy Beaches:</strong> Miles of pristine, palm-fringed, wide golden beaches perfect for sunbathing, swimming, and romantic evening strolls.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting Info -->
+                        <h3 class="box-title">Visiting Bentota</h3>
+                        <p class="box-text mb-30">
+                            The absolute best time to visit Bentota for ocean swimming and beach lounging is during the dry season, from November to April, when the Indian Ocean is as calm as a swimming pool and the skies are crystal clear. However, because the Bentota lagoon is sheltered, the thrilling river-based water sports can be enjoyed almost year-round, regardless of the coastal monsoon winds.
+                        </p>
+
+                        <p class="box-text mb-50">
+                            Getting to Bentota is incredibly easy; it takes just over an hour from Colombo via the Southern Expressway. Alternatively, taking the scenic coastal train from Colombo offers breathtaking views of the ocean right beside the railway tracks. When booking water sports, always use certified operators along the lagoon who provide proper life jackets and adhere to strict safety standards. The town also offers a fantastic array of local seafood restaurants where you can enjoy freshly caught crab, prawns, and fish straight from the ocean!
+                        </p>
+
+                        <!-- Map -->
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.3980352514!2d80.7554907!3d7.9620701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sPidurangala%20Rock!5e0!3m2!1sen!2slk!4v18" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://maps.google.com/maps?q=Bentota+Beach+Sri+Lanka&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>

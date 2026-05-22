@@ -246,7 +246,7 @@ Documentary Details Area
                     </div>
 
                     <!-- Content -->
-                    <div class="page-content">
+                   <div class="page-content">
 
                         <!-- Meta -->
                         <div class="page-meta mb-30">
@@ -264,13 +264,11 @@ Documentary Details Area
 
                         <!-- Intro -->
                         <p class="box-text mb-30">
-                            Yala National Park is Sri Lanka’s most famous wildlife sanctuary and is known for
-                            having one of the highest leopard densities in the world.
+                            Yala National Park is Sri Lanka’s most legendary wildlife sanctuary, globally renowned for boasting one of the highest densities of leopards found anywhere in the world. Located in the island’s southeastern corner, this vast wilderness is a place of profound natural drama, where ancient rock formations, sprawling dry monsoon forests, and open plains meet the turquoise waters of the Indian Ocean.
                         </p>
 
                         <p class="box-text mb-40">
-                            Located in the island’s southeastern region, Yala combines dry forests, grasslands,
-                            lagoons, and coastline into a diverse and dramatic ecosystem.
+                            For wildlife enthusiasts, Yala is a bucket-list destination. It is a land of untamed beauty, where elusive leopards prowl through the scrub, massive herds of elephants wander across open grasslands, and rare sloth bears forage in the forest undergrowth. It is not just a park; it is a complex, thriving ecosystem that offers a raw and unforgettable encounter with nature in its most powerful state.
                         </p>
 
                         <!-- Key Facts -->
@@ -287,11 +285,11 @@ Documentary Details Area
                             </div>
                             <div class="checklist style2">
                                 <ul>
-                                    <li>Southern Province</li>
+                                    <li>Southern/Uva Province</li>
                                     <li>1938</li>
                                     <li>978 km²</li>
                                     <li>High Leopard Density</li>
-                                    <li>Leopards, Elephants</li>
+                                    <li>Leopards, Elephants, Sloth Bears</li>
                                 </ul>
                             </div>
                         </div>
@@ -299,28 +297,29 @@ Documentary Details Area
                         <!-- Landscape -->
                         <h3 class="box-title">Landscape & Ecosystem</h3>
                         <p class="box-text mb-40">
-                            Yala’s landscape ranges from dry monsoon forests and open plains to coastal dunes
-                            and freshwater lagoons, supporting an extraordinary range of wildlife.
+                            Yala’s unique geography is what makes it so special. It encompasses a massive array of habitats, ranging from dense, dark dry-monsoon forests and expansive thorny scrublands to open parklands, freshwater lagoons, and stunning rocky coastal dunes. This diversity is what allows Yala to support such a staggering variety of wildlife throughout the year.
                         </p>
 
                         <!-- Wildlife -->
                         <h3 class="box-title">Wildlife Highlights</h3>
                         <div class="checklist mb-50">
                             <ul>
-                                <li>Sri Lankan Leopard</li>
-                                <li>Asian Elephant</li>
-                                <li>Sloth Bear</li>
-                                <li>Spotted Deer & Buffalo</li>
-                                <li>Birds & Reptiles</li>
+                                <li><strong>Sri Lankan Leopard:</strong> The ultimate apex predator of the park and the star attraction of every safari.</li>
+                                <li><strong>Asian Elephant:</strong> Large, impressive herds frequently seen near the tanks and watering holes.</li>
+                                <li><strong>Sloth Bear:</strong> A shy and elusive inhabitant that is most commonly spotted when the Palu trees are in fruit.</li>
+                                <li><strong>Spotted Deer & Water Buffalo:</strong> Ubiquitous across the park, forming the primary prey base for the park's carnivores.</li>
+                                <li><strong>Birds & Reptiles:</strong> Home to over 200 bird species, including the Sri Lankan Junglefowl, and large populations of mugger crocodiles in the lagoons.</li>
                             </ul>
                         </div>
 
                         <!-- Visiting -->
                         <h3 class="box-title">Visiting Yala</h3>
+                        <p class="box-text mb-30">
+                            The best time to visit Yala is during the dry season (February to June), when the jungle thins out and animals are forced to congregate around the remaining water sources, making them much easier to spot. Jeep safaris (early morning or late afternoon) are the only way to explore the park, providing safe and intimate encounters while strictly following park conservation rules.
+                        </p>
+                        
                         <p class="box-text mb-50">
-                            The best time to visit Yala is during the dry season when animals gather around
-                            water sources. Jeep safaris provide close encounters while following strict
-                            conservation rules.
+                            When visiting Yala, patience is key. The elusive leopard does not follow a schedule, and the thrill of the safari is the anticipation. Always choose a registered jeep and a professional tracker who understands animal behavior; they are experts at reading the signs of the jungle-like the alarm calls of langur monkeys-to locate the predators hidden in the thick brush.
                         </p>
 
                         <!-- Map -->

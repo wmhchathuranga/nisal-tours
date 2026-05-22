@@ -146,7 +146,7 @@
                             </button>
                         </div>
 
-                        <div class="page-content">
+                       <div class="page-content">
 
                             <div class="page-meta mb-30">
                                 <a class="page-tag" href="#">UNESCO World Heritage</a>
@@ -160,20 +160,20 @@
                                 Dambulla – The Magnificent Cave Temple Complex
                             </h2>
 
+                            <!-- Intro -->
                             <p class="box-text mb-30">
-                                Located in the central part of Sri Lanka, the Dambulla Cave Temple (also known as the
-                                Golden Temple of Dambulla) is the largest and best-preserved cave temple complex in the
-                                country. It has been a sacred pilgrimage site for over 22 centuries and is a highly
-                                celebrated UNESCO World Heritage site.
+                                The Dambulla Cave Temple, also famously known as the Golden Temple of Dambulla, stands as an awe-inspiring testament to Sri Lanka's rich spiritual heritage and ancient artistic brilliance. Perched high on a massive granite outcrop in the heart of the island's Cultural Triangle, it is not merely a temple, but a breathtaking living museum of Buddhist art. Recognized globally as a highly celebrated UNESCO World Heritage site, it has drawn millions of devoted pilgrims and fascinated travelers for over 22 centuries.
+                            </p>
+
+                            <p class="box-text mb-30">
+                                The true magic of Dambulla lies hidden beneath a towering, overhanging rock face that shelters five magnificently carved main caves. Stepping into the cool, dimly lit caverns feels like entering entirely another realm. You are immediately surrounded by an astonishing collection of over 150 meticulously crafted Buddha statues, alongside towering figures of ancient Sri Lankan kings and revered Hindu deities. The sheer scale of devotion and craftsmanship carved into the solid stone is nothing short of miraculous.
                             </p>
 
                             <p class="box-text mb-40">
-                                The complex comprises five main caves situated under a massive overhanging rock. Inside,
-                                visitors will find over 150 stunning Buddha statues, figures of Sri Lankan kings, and
-                                intricate ceiling frescoes covering 2,100 square meters that vividly depict the life of
-                                the Buddha and historic events.
+                                Perhaps the most spellbinding feature of the complex is the intricate tapestry of vibrant frescoes that blanket over 2,100 square meters of the undulating cave ceilings and rugged walls. Painted with natural, plant-based pigments that have defied the test of time, these murals vividly narrate the story of the Buddha's life, his epic battles against the demon Mara, and landmark events in Sinhalese history. The seamless blend of natural rock formations with profound artistic expression makes Dambulla an unforgettable spiritual and visual journey.
                             </p>
 
+                            <!-- Key Facts -->
                             <h3 class="box-title">Key Facts</h3>
                             <div class="destination-checklist mb-50">
                                 <div class="checklist style2">
@@ -196,35 +196,33 @@
                                 </div>
                             </div>
 
+                            <!-- Highlights -->
                             <h3 class="box-title">Highlights & Landmarks</h3>
                             <div class="checklist mb-50">
                                 <ul>
-                                    <li>Devaraja Lena (Cave of the Divine King - features a 14m reclining Buddha)</li>
-                                    <li>Maharaja Lena (Cave of the Great Kings - the largest and most impressive cave)
-                                    </li>
-                                    <li>Maha Alut Viharaya (Great New Monastery)</li>
-                                    <li>Spectacular 2,000-year-old ceiling and wall frescoes</li>
-                                    <li>The Golden Temple and massive golden Buddha statue at the base</li>
+                                    <li><strong>Devaraja Lena (Cave of the Divine King):</strong> Dominated by a breathtaking 14-meter-long reclining Buddha carved entirely out of the solid rock, accompanied by ancient shrines.</li>
+                                    <li><strong>Maharaja Lena (Cave of the Great Kings):</strong> The largest and most spectacular cave in the complex, featuring over 50 statues, royal figures, and a sacred water spring constantly dripping from the ceiling.</li>
+                                    <li><strong>Maha Alut Viharaya (Great New Monastery):</strong> Constructed in the 18th century, showcasing a massive seated Buddha and ceiling frescoes bursting with vibrant Kandyan-era artistic flair.</li>
+                                    <li><strong>Spectacular Ancient Frescoes:</strong> Over 2,100 square meters of mesmerizing, colorful murals that perfectly follow the natural contours of the rock, depicting deep Buddhist mythology.</li>
+                                    <li><strong>The Golden Temple Base:</strong> A striking modern addition at the foot of the hill, featuring a colossal golden Buddha statue overlooking the valley and a fascinating Buddhist museum.</li>
                                 </ul>
                             </div>
 
+                            <!-- Visiting Info -->
                             <h3 class="box-title">Visiting Dambulla</h3>
-                            <p class="box-text mb-50">
-                                The climb to the caves takes about 10 to 15 minutes via a stone staircase that offers
-                                beautiful views of the surrounding flatlands and Sigiriya rock in the distance. As this
-                                is a highly venerated site, visitors must wear modest clothing covering their shoulders
-                                and knees. You will need to remove your shoes and hats before entering the sacred cave
-                                area. Be mindful of the resident monkeys along the path, and try to visit early in the
-                                morning or late afternoon to avoid the midday heat.
+                            <p class="box-text mb-30">
+                                Reaching the majestic caves requires a moderately steep, 10 to 15-minute climb up a scenic stone stairway. Along the way, you are rewarded with sweeping, panoramic views of the surrounding lush flatlands, with the iconic Sigiriya Rock Fortress visible in the hazy distance. Because this is an active and highly venerated religious site, strict dress codes apply-both men and women must wear modest clothing that fully covers the shoulders and knees. 
                             </p>
 
+                            <p class="box-text mb-50">
+                                Upon reaching the summit courtyard, you will need to remove your shoes and hats before entering the sacred cave shrines. It is highly recommended to wear thick socks, as the sun-baked stone courtyard can get incredibly hot during the day. Visiting early in the morning or late in the afternoon is the best way to avoid the midday heat and enjoy a tranquil, uncrowded experience. Also, be mindful of the playful resident macaque monkeys along the path-while photogenic, it is best not to feed them or carry visible food.
+                            </p>
+
+                            <!-- Map -->
                             <h3 class="box-title">Location Map</h3>
                             <div class="mb-10">
                                 <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.23847936162!2d80.32420455!3d7.93965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afd16fbc1e4d6f5%3A0x7f6c7e8a7c5e3b0!2sPolonnaruwa!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
-                                        style="border:0;" allowfullscreen="" loading="lazy">
-                                    </iframe>
+                                   <iframe src="https://maps.google.com/maps?q=Dambulla%20Cave%20Temple&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
 

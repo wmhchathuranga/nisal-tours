@@ -190,7 +190,7 @@
 
                             <h3 class="box-title">Visiting Arugam Bay</h3>
                             <p class="box-text mb-50">
-                                The best time to hit the waves in Arugam Bay is during the European summer (May to September), when the rest of the island experiences the monsoon. The town consists essentially of one long road running parallel to the beach, filled with surf shops, reggae bars, and amazing seafood spots. Getting around is super easy—just strap your surfboard to the roof of a local tuk-tuk to explore the various breaks like Peanut Farm or Panama. Keep an eye out, as it’s not uncommon to see wild elephants crossing the roads just outside town!
+                                The best time to hit the waves in Arugam Bay is during the European summer (May to September), when the rest of the island experiences the monsoon. The town consists essentially of one long road running parallel to the beach, filled with surf shops, reggae bars, and amazing seafood spots. Getting around is super easy-just strap your surfboard to the roof of a local tuk-tuk to explore the various breaks like Peanut Farm or Panama. Keep an eye out, as it’s not uncommon to see wild elephants crossing the roads just outside town!
                             </p>
 
                             <h3 class="box-title">Location Map</h3>

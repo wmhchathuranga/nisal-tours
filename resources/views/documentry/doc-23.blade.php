@@ -131,7 +131,7 @@
                             </button>
                         </div>
 
-                    <div class="page-content">
+                   <div class="page-content">
 
                         <div class="page-meta mb-30">
                             <a class="page-tag" href="#">Beaches & Nightlife</a>
@@ -143,36 +143,61 @@
 
                         <h2 class="box-title mb-20">Unawatuna Beach – A Tropical Paradise on the Southern Coast</h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            Nestled beautifully on the southern coast of Sri Lanka, Unawatuna is a world-famous banana-shaped beach known for its calm turquoise waters, golden sands, and spectacular coral reefs. It is one of the most popular coastal destinations, offering a perfect mix of relaxation, water sports, and a lively beachside nightlife.
+                            Nestled beautifully on the southern coast of Sri Lanka just a short drive from the historic city of Galle, Unawatuna is a world-famous, crescent-shaped bay known for its calm turquoise waters, golden sands, and vibrant atmosphere. It is one of the most popular coastal destinations in the country, offering a perfect, harmonious mix of serene relaxation, adventurous water sports, and a legendary beachside nightlife that keeps the energy going until the early hours.
                         </p>
 
                         <p class="box-text mb-40">
-                            The protective offshore reef makes swimming remarkably safe throughout most of the year. Beyond the main beach stretch, visitors can hike up to the Japanese Peace Pagoda for a stunning sunset view or explore the hidden shores of Jungle Beach nearby.
+                            The protective offshore reef makes swimming remarkably safe and pleasant throughout most of the year, creating a large, natural swimming pool effect. Beyond the main sandy stretch, Unawatuna is a gateway to adventure-you can hike up to the Japanese Peace Pagoda for a stunning sunset panorama over the ocean, snorkel in vibrant, shallow coral reefs, or discover the secluded, lush shores of Jungle Beach tucked away just around the headland.
                         </p>
 
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
                                 <ul>
                                     <li>Location</li>
+                                    <li>Best Time to Visit</li>
                                     <li>Famous For</li>
+                                    <li>Climate</li>
                                     <li>Activities</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
                                     <li>Galle District, Southern Province</li>
-                                    <li>Calm bay, coral reefs, and beach cafes</li>
-                                    <li>Snorkeling, scuba diving, boat tours</li>
+                                    <li>November to April</li>
+                                    <li>Calm bay, coral reefs, beach cafes</li>
+                                    <li>Tropical, Warm & Sunny</li>
+                                    <li>Snorkeling, Diving, Nightlife, Hiking</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights & Landmarks</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>The Main Bay:</strong> A iconic banana-shaped beach lined with coconut palms, perfect for sunbathing and swimming in calm water.</li>
+                                <li><strong>Jungle Beach:</strong> A stunning, secluded cove accessible by a short jungle trek, ideal for those seeking privacy and clear snorkeling water.</li>
+                                <li><strong>Japanese Peace Pagoda:</strong> A massive white stupa perched on a hill, offering breathtaking views of the Galle coastline and the deep blue sea.</li>
+                                <li><strong>Coral Reefs:</strong> Shallow, accessible reefs right off the beach, perfect for snorkelers to see colorful tropical fish and rays.</li>
+                                <li><strong>Beachside Nightlife:</strong> As the sun sets, the beach transforms with colorful lights, music, and sand-side restaurants serving fresh seafood and cocktails.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting -->
+                        <h3 class="box-title">Visiting Unawatuna</h3>
+                        <p class="box-text mb-50">
+                            The best time to visit Unawatuna is between November and April when the southern monsoon subsides, the sea is at its calmest, and the weather is perfectly sunny. Since Unawatuna is very close to Galle Fort, many travelers enjoy spending their days on the beach and their evenings exploring the historic Dutch architecture and shopping in the Fort. Don't forget to carry some sunscreen and comfortable walking shoes if you plan to hike up to the Peace Pagoda!
+                        </p>
+
+                        <!-- Location Map -->
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
                             <iframe
-                                src="https://maps.google.com/maps?q=Pidurangala+Rock&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                src="https://www.google.com/maps?q=Unawatuna+Beach+Sri+Lanka&output=embed"
                                 style="border:0;"
                                 allowfullscreen=""
                                 loading="lazy"

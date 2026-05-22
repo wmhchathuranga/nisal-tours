@@ -142,29 +142,68 @@
 
                         <h2 class="box-title mb-20">Pasikuda – The Shallow Blue Waters of the East Coast</h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            Pasikuda is famous for having one of the longest stretches of shallow reef coastlines in the world. Visitors can wade hundreds of meters into the sea because the water is relatively shallow and the currents are incredibly weak, making it a perfectly safe and beautiful beach destination.
+                            Tucked away on the sun-drenched eastern coast of Sri Lanka in the Batticaloa District, Pasikuda (also spelled Passikudah) is an absolute tropical paradise renowned for its pristine, picture-perfect horseshoe-shaped bay. Unlike the deep, rolling waves of the southern and western coasts, Pasikuda boasts one of the longest stretches of shallow reef coastlines in the entire world, making it a highly sought-after destination for beach lovers and families.
                         </p>
 
+                        <p class="box-text mb-30">
+                            The most magical feature of Pasikuda is its incredibly calm and shallow water. Because the bay is protected by an offshore reef, the ocean currents are exceptionally weak. Visitors can literally wade hundreds of meters out into the crystal-clear, warm turquoise sea with the water barely reaching their chest. It feels like stepping into a massive, natural saltwater swimming pool with a floor of soft, powder-white sand.
+                        </p>
+
+                        <p class="box-text mb-40">
+                            Over the recent years, Pasikuda has transformed into a premier luxury destination. The palm-fringed coastline is now dotted with world-class boutique hotels and resorts offering unparalleled relaxation. Whether you want to snorkel among vibrant coral gardens, sail on a luxury catamaran at sunset, or simply float weightlessly in the calm blue waters, Pasikuda delivers the ultimate laid-back tropical holiday experience.
+                        </p>
+
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
                                 <ul>
                                     <li>Location</li>
                                     <li>Specialty</li>
+                                    <li>Best Time to Visit</li>
+                                    <li>Climate</li>
+                                    <li>Vibe</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
                                     <li>Batticaloa District, Eastern Province</li>
                                     <li>Extremely shallow, swimmable ocean</li>
+                                    <li>May to September (East Coast Season)</li>
+                                    <li>Tropical, Very Warm & Sunny</li>
+                                    <li>Luxury, Relaxation & Family-Friendly</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights & Activities</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>The Shallow Bay:</strong> Walk out safely into the ocean for hundreds of meters in incredibly calm, warm, and crystal-clear turquoise waters.</li>
+                                <li><strong>Pasikuda Reef:</strong> A vibrant offshore coral reef that is perfect for snorkeling and observing colorful tropical fish and marine life.</li>
+                                <li><strong>Water Sports:</strong> Excellent conditions for windsurfing, paddleboarding, and kayaking without the threat of strong waves or undertows.</li>
+                                <li><strong>Luxury Resorts:</strong> Indulge in high-end spas, beachfront infinity pools, and world-class seafood dining right on the sand.</li>
+                                <li><strong>Kalkudah Beach:</strong> Located just south of Pasikuda, this sweeping, deserted beach offers a much quieter, untouched coastal experience for nature lovers.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting Info -->
+                        <h3 class="box-title">Visiting Pasikuda</h3>
+                        <p class="box-text mb-30">
+                            Because Sri Lanka experiences two distinct monsoons, the absolute best time to visit the East Coast (including Pasikuda) is between May and September. During these months, the sea is as flat as glass, the skies are brilliant blue, and the weather is gloriously sunny. In contrast, from November to February, the bay can get quite choppy and rainy due to the North-Eastern monsoon.
+                        </p>
+
+                        <p class="box-text mb-50">
+                            Pasikuda is located about 300 kilometers from Colombo. You can reach it via a scenic drive through the country, by taking the train to nearby Valaichchenai or Batticaloa, or even by booking a quick domestic flight or sea-plane. The sun here on the east coast is notoriously strong, so packing high-SPF reef-safe sunscreen, a wide-brimmed hat, and sunglasses is highly recommended for long days lounging in the shallow waters.
+                        </p>
+
+                        <!-- Map -->
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.3980352514!2d80.7554907!3d7.9620701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sPidurangala%20Rock!5e0!3m2!1sen!2slk!4v19" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://maps.google.com/maps?q=Pasikuda+Beach+Sri+Lanka&t=&z=14&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>

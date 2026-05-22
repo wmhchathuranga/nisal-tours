@@ -135,75 +135,84 @@
 
                         <div class="page-content">
 
-                            <div class="page-meta mb-30">
-                                <a class="page-tag" href="#">UNESCO World Heritage Site</a>
-                                <span class="ratting">
-                                    <i class="fa-solid fa-mountain"></i>
-                                    <span>Highland Plateau</span>
-                                </span>
-                            </div>
+                        <!-- Meta -->
+                        <div class="page-meta mb-30">
+                            <a class="page-tag" href="#">UNESCO World Heritage Site</a>
+                            <span class="ratting">
+                                <i class="fa-solid fa-mountain"></i>
+                                <span>Highland Plateau</span>
+                            </span>
+                        </div>
 
-                            <h2 class="box-title mb-20">
-                                Horton Plains – The Mist-Shrouded Plateau
-                            </h2>
+                        <!-- Title -->
+                        <h2 class="box-title mb-20">
+                            Horton Plains – The Mist-Shrouded Plateau
+                        </h2>
 
-                            <p class="box-text mb-30">
-                                A key component of Sri Lanka's Central Highlands UNESCO World Heritage Site, Horton Plains National Park is a windswept plateau recognized for its unique montane grasslands and cloud forests. Situated at an elevation of over 2,100 meters, it offers a stark, cold, and misty contrast to the tropical lowlands.
-                            </p>
+                        <!-- Intro -->
+                        <p class="box-text mb-30">
+                            Horton Plains National Park is a key component of Sri Lanka's Central Highlands UNESCO World Heritage Site. It is a windswept, ethereal plateau recognized for its rare montane grasslands and ancient cloud forests. Situated at an elevation of over 2,100 meters, the park offers a stark, cold, and mystical contrast to the tropical warmth of the lowlands, often shrouded in a thick, magical blanket of rolling mist.
+                        </p>
 
-                            <p class="box-text mb-40">
-                                This sensitive ecosystem is the birthplace of major Sri Lankan rivers and is renowned for its dramatic landscape, particularly the iconic vertical precipice known as World’s End, and the majestic cascades of Baker's Falls.
-                            </p>
+                        <p class="box-text mb-40">
+                            This incredibly sensitive and protected ecosystem acts as the "water tower" of the island, serving as the birthplace for many of Sri Lanka's major rivers. The landscape here is dramatic and sweeping-ranging from vast, undulating fields of yellow-gold grass to gnarled, dwarfed trees covered in hanging lichen. It is a legendary destination for trekkers who seek the breathtaking, dizzying heights of World's End and the raw, natural power of Baker's Falls.
+                        </p>
 
-                            <h3 class="box-title">Key Facts</h3>
-                            <div class="destination-checklist mb-50">
-                                <div class="checklist style2">
-                                    <ul>
-                                        <li>Province</li>
-                                        <li>Ecosystem</li>
-                                        <li>Famous Landmarks</li>
-                                        <li>Climate</li>
-                                        <li>Activities</li>
-                                    </ul>
-                                </div>
-                                <div class="checklist style2">
-                                    <ul>
-                                        <li>Central Province</li>
-                                        <li>Montane Cloud Forest & Grassland</li>
-                                        <li>World's End, Baker's Falls</li>
-                                        <li>Cool, Misty & Windy</li>
-                                        <li>Trekking, Photography, Birdwatching</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <h3 class="box-title">Highland Highlights</h3>
-                            <div class="checklist mb-50">
+                        <!-- Key Facts -->
+                        <h3 class="box-title">Key Facts</h3>
+                        <div class="destination-checklist mb-50">
+                            <div class="checklist style2">
                                 <ul>
-                                    <li>World's End (Great & Mini) – Drop of nearly 900 meters</li>
-                                    <li>Baker’s Falls – Scenic waterfall named after Sir Samuel Baker</li>
-                                    <li>Patna Grasslands (Wet Patna) – Rolling open fields</li>
-                                    <li>Montane Cloud Forest – Unique Dwarfed Trees and Lichens</li>
-                                    <li>Chimney Pool and River Catchment Areas</li>
+                                    <li>Province</li>
+                                    <li>Ecosystem</li>
+                                    <li>Famous Landmarks</li>
+                                    <li>Climate</li>
+                                    <li>Activities</li>
                                 </ul>
                             </div>
-
-                            <h3 class="box-title">Visiting Horton Plains</h3>
-                            <p class="box-text mb-50">
-                                Exploring Horton Plains involves a circular trekking trail of approximately 9 kilometers, which visitors can navigate on foot. Due to early morning mist that often obscures the panoramic views at World’s End, it is highly recommended to start the hike early (around 6:00 AM). Visitors must bring warm clothing as the plateau gets significantly cold before sunrise. Plastic materials are strictly prohibited inside the park to protect this sensitive biodiversity hotspot.
-                            </p>
-
-                            <h3 class="box-title">Location Map</h3>
-                            <div class="mb-10">
-                                <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.23847936162!2d80.32420455!3d7.93965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afd16fbc1e4d6f5%3A0x7f6c7e8a7c5e3b0!2sPolonnaruwa!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
-                                        style="border:0;" allowfullscreen="" loading="lazy">
-                                    </iframe>
-                                </div>
+                            <div class="checklist style2">
+                                <ul>
+                                    <li>Central Province</li>
+                                    <li>Montane Cloud Forest & Grassland</li>
+                                    <li>World's End, Baker's Falls</li>
+                                    <li>Cool, Misty & Windy</li>
+                                    <li>Trekking, Photography, Birdwatching</li>
+                                </ul>
                             </div>
-
                         </div>
+
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highland Highlights</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>World's End:</strong> The park’s most iconic feature-a sheer vertical drop of nearly 900 meters offering dizzying, panoramic views of the tea estates and coastal lowlands below.</li>
+                                <li><strong>Baker’s Falls:</strong> A breathtaking, wide cascade named after Sir Samuel Baker, set amidst a backdrop of vibrant, lush greenery.</li>
+                                <li><strong>Patna Grasslands:</strong> Vast, rolling open fields that create a unique, moody landscape, particularly beautiful during the early morning hours.</li>
+                                <li><strong>Montane Cloud Forest:</strong> Walk through rare, ancient forests where dwarfed, moss-covered trees create a scene straight out of a fantasy novel.</li>
+                                <li><strong>Endemic Wildlife:</strong> Home to unique residents like the Sambar Deer, Purple-faced Leaf Monkey, and the elusive Sri Lankan Leopard.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting -->
+                        <h3 class="box-title">Visiting Horton Plains</h3>
+                        <p class="box-text mb-50">
+                            Exploring Horton Plains involves a circular trekking trail of approximately 9 kilometers. Because the thick morning mist often rolls in by 10:00 AM and completely obscures the view at World's End, it is highly recommended to start your hike as early as possible (ideally by 6:00 AM). You must bring warm clothing, as the temperature on the plateau can drop drastically before sunrise. Please remember that plastic materials are strictly prohibited inside the park to protect this sensitive UNESCO-listed biodiversity hotspot; kindly carry your water in reusable bottles.
+                        </p>
+
+                        <!-- Map -->
+                        <h3 class="box-title">Location Map</h3>
+                        <div class="mb-10">
+                            <div class="ratio ratio-16x9 rounded overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps?q=Horton+Plains+National+Park+Sri+Lanka&output=embed"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
                     </div>
                 </div>
 

@@ -131,7 +131,7 @@
                         </button>
                     </div>
 
-                    <div class="page-content">
+                   <div class="page-content">
 
                         <div class="page-meta mb-30">
                             <a class="page-tag" href="#">UNESCO World Heritage</a>
@@ -145,14 +145,20 @@
                             Anuradhapura – The Sacred Ancient Capital
                         </h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            A UNESCO World Heritage Site, Anuradhapura is Sri Lanka's first ancient capital. Founded in the 4th century BC, it is renowned for its well-preserved ruins, giant stupas, and deep Buddhist heritage that spans over two millennia.
+                            Anuradhapura stands as a majestic testament to Sri Lanka's glorious ancient civilization. Serving as the island's very first capital, established around the 4th century BC, this sprawling UNESCO World Heritage Site is a living museum of profound historical and spiritual magnitude. For over a millennium, it was the beating heart of Sinhalese royal power and Buddhist culture before falling to foreign invasions and eventually being swallowed by the dense jungle for centuries.
+                        </p>
+
+                        <p class="box-text mb-30">
+                            Today, the sacred city is globally renowned for its impeccably preserved ruins, gigantic stupas (dagobas) that once rivaled the pyramids of Egypt in sheer scale, and its deeply rooted Buddhist heritage. Wandering through this vast complex, you will encounter towering brick monuments, intricately carved moonstones, and the remnants of grand monastic palaces that reflect the immense devotion and unparalleled architectural genius of ancient Sri Lankan kings.
                         </p>
 
                         <p class="box-text mb-40">
-                            The city is home to some of the most sacred Buddhist sites in the world, featuring monumental architectural wonders and advanced ancient irrigation systems that still function today.
+                            Beyond its spiritual significance, Anuradhapura is an absolute marvel of ancient engineering. The city is sustained by a vast, sophisticated network of man-made reservoirs (wewas) and advanced irrigation canals built over two thousand years ago. Astonishingly, these ancient waterways still function today, providing life to the surrounding farmlands and maintaining the serene, lush environment that makes exploring this ancient capital such a deeply moving and fascinating experience.
                         </p>
 
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
@@ -169,39 +175,41 @@
                                     <li>North Central Province</li>
                                     <li>377 BC</li>
                                     <li>Ruwanwelisaya, Sri Maha Bodhi</li>
-                                    <li>Tropical & Warm</li>
+                                    <li>Tropical, Warm & Dry</li>
                                     <li>Historical Tours, Pilgrimage, Cycling</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Historical & Sacred Sites -->
                         <h3 class="box-title">Historical & Sacred Sites</h3>
                         <div class="checklist mb-50">
                             <ul>
-                                <li>Jaya Sri Maha Bodhi (The oldest historically documented tree)</li>
-                                <li>Ruwanwelisaya Stupa</li>
-                                <li>Jetavanaramaya & Abhayagiri Dagoba</li>
-                                <li>Isurumuniya Rock Temple</li>
-                                <li>Twin Ponds (Kuttam Pokuna)</li>
+                                <li><strong>Jaya Sri Maha Bodhi:</strong> The sacred fig tree grown from a southern branch of the original Bodhi tree under which Lord Buddha attained enlightenment. It is the oldest historically documented, human-planted tree in the world.</li>
+                                <li><strong>Ruwanwelisaya Stupa:</strong> A colossal, brilliant white hemispherical dome built by King Dutugemunu, serving as one of the most venerated and architecturally stunning Buddhist monuments on earth.</li>
+                                <li><strong>Jetavanaramaya & Abhayagiri Dagoba:</strong> Towering ancient brick structures that were once among the absolute tallest structures in the ancient world, representing the heights of ancient Sinhalese engineering.</li>
+                                <li><strong>Isurumuniya Rock Temple:</strong> A beautiful, rock-hewn temple famous for its intricate, masterful ancient stone carvings, particularly the world-renowned "Isurumuniya Lovers."</li>
+                                <li><strong>Twin Ponds (Kuttam Pokuna):</strong> Exquisitely designed ancient bathing pools for monks, showcasing incredibly advanced hydrological engineering and stunning granite architecture.</li>
                             </ul>
                         </div>
 
+                        <!-- Visiting -->
                         <h3 class="box-title">Visiting Anuradhapura</h3>
-                        <p class="box-text mb-50">
-                            Early morning or late afternoon visits are highly recommended. Because you must remove your shoes when entering sacred areas, the stone pathways and sand can get very hot during the midday sun. Wearing white clothing is customary and respectful when visiting these religious sites.
+                        <p class="box-text mb-30">
+                            Exploring the vast, sprawling ruins of Anuradhapura is best done by renting a bicycle or hiring a local Tuk-Tuk, as the sacred sites are spread across a massive geographical area. The tropical climate here is famously warm and dry, so early morning or late afternoon visits are highly recommended to avoid the punishing midday heat. 
                         </p>
 
+                        <p class="box-text mb-50">
+                            Because this is a highly venerated, active pilgrimage destination, strict dress codes apply. Visitors must wear modest clothing that fully covers their shoulders and knees. Wearing all-white attire is customary and deeply appreciated by the locals. You must remove your shoes and hats before entering the sandy courtyards of the sacred shrines, so bringing a pair of thick, dark socks is a fantastic idea to protect your feet from the scorching hot stone pathways during the day.
+                        </p>
+
+                        <!-- Map -->
                         <h3 class="box-title">Location Map</h3>
                         <div class="mb-10">
                             <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.23847936162!2d80.32420455!3d8.33498875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc89c313a2a683%3A0x6a15777a82c4bd88!2sAnuradhapura!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
-                                    style="border:0;"
-                                    allowfullscreen=""
-                                    loading="lazy">
-                                </iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.23847936162!2d80.32420455!3d8.33498875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc89c313a2a683%3A0x6a15777a82c4bd88!2sAnuradhapura!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
-                        </div>
+                        </div>  
 
                     </div>
                 </div>

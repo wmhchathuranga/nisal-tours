@@ -141,7 +141,7 @@ Documentary Details Area
                     </div>
 
                     <!-- Content -->
-                    <div class="page-content">
+                   <div class="page-content">
 
                         <!-- Meta -->
                         <div class="page-meta mb-30">
@@ -159,13 +159,11 @@ Documentary Details Area
 
                         <!-- Intro -->
                         <p class="box-text mb-30">
-                            Colombo is Sri Lanka’s vibrant capital city, blending colonial heritage,
-                            modern skyscrapers, bustling markets, and a scenic oceanfront.
+                            Colombo is the pulsing heart of Sri Lanka, a city where the echoes of colonial history seamlessly blend with the fast-paced energy of a modern metropolis. As the commercial capital, it is a fascinating tapestry of cultures, religions, and architectural styles, featuring everything from grand 19th-century colonial buildings and serene Buddhist temples to glittering high-rise glass skyscrapers and chaotic, vibrant street markets.
                         </p>
 
                         <p class="box-text mb-40">
-                            From historic temples to lively streets and luxury shopping districts,
-                            Colombo represents the dynamic spirit of modern Sri Lanka.
+                            The city offers a unique experience that feels both familiar and exotic. Whether you are walking along the windy Galle Face Green during sunset, exploring the narrow, packed streets of Pettah, or dining in a chic rooftop restaurant overlooking the Indian Ocean, Colombo represents the dynamic, evolving spirit of modern Sri Lanka.
                         </p>
 
                         <!-- Key Facts -->
@@ -183,10 +181,10 @@ Documentary Details Area
                             <div class="checklist style2">
                                 <ul>
                                     <li>Western Province</li>
-                                    <li>Over 5 Million (Metro)</li>
-                                    <li>Galle Face, Lotus Tower</li>
-                                    <li>Tropical</li>
-                                    <li>Sightseeing, Shopping, Dining</li>
+                                    <li>Over 5 Million (Metro area)</li>
+                                    <li>Galle Face, Lotus Tower, Gangaramaya</li>
+                                    <li>Tropical (Warm & Humid)</li>
+                                    <li>Sightseeing, Shopping, Dining, Nightlife</li>
                                 </ul>
                             </div>
                         </div>
@@ -195,20 +193,18 @@ Documentary Details Area
                         <h3 class="box-title">Top Attractions</h3>
                         <div class="checklist mb-50">
                             <ul>
-                                <li>Galle Face Green</li>
-                                <li>Gangaramaya Temple</li>
-                                <li>Pettah Floating Market</li>
-                                <li>Lotus Tower</li>
-                                <li>Independence Memorial Hall</li>
+                                <li><strong>Galle Face Green:</strong> The city's famous oceanside urban park, a social hub for street food lovers, kite flyers, and evening strollers.</li>
+                                <li><strong>Gangaramaya Temple:</strong> An iconic, architecturally eclectic temple filled with thousands of statues and relics, blending Sri Lankan, Thai, and Chinese styles.</li>
+                                <li><strong>Pettah Market:</strong> A bustling, sensory-overload labyrinth of streets where you can find absolutely anything, from fresh spices and textiles to electronics.</li>
+                                <li><strong>Lotus Tower:</strong> South Asia's tallest tower, offering breathtaking, futuristic panoramic views of the entire city skyline and the ocean.</li>
+                                <li><strong>Independence Memorial Hall:</strong> A stunning, grand open-air monument built to commemorate Sri Lanka's independence from British rule.</li>
                             </ul>
                         </div>
 
                         <!-- Visiting -->
                         <h3 class="box-title">Visiting Colombo</h3>
                         <p class="box-text mb-50">
-                            Colombo can be visited year-round. Evenings at Galle Face,
-                            cultural visits to temples, and city shopping experiences make
-                            it a must-see destination.
+                            Colombo is a vibrant, year-round destination. For the best experience, try to explore the city in the early mornings or late afternoons to avoid the peak tropical heat. Whether it's shopping for authentic souvenirs at Barefoot, exploring the city’s colonial history on a walking tour, or enjoying the world-class nightlife and diverse international cuisine, Colombo is the perfect starting or ending point for any Sri Lankan journey.
                         </p>
 
                         <!-- Map -->

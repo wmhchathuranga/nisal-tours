@@ -133,77 +133,85 @@
                             </button>
                         </div>
 
-                        <div class="page-content">
+                       <div class="page-content">
 
-                            <div class="page-meta mb-30">
-                                <a class="page-tag" href="#">Cultural Heritage</a>
-                                <span class="ratting">
-                                    <i class="fa-solid fa-om"></i>
-                                    <span>Northern Capital</span>
-                                </span>
-                            </div>
+                        <div class="page-meta mb-30">
+                            <a class="page-tag" href="#">Cultural Heritage</a>
+                            <span class="ratting">
+                                <i class="fa-solid fa-om"></i>
+                                <span>Northern Capital</span>
+                            </span>
+                        </div>
 
-                            <h2 class="box-title mb-20">
-                                Jaffna – The Vibrant Heart of the North
-                            </h2>
+                        <h2 class="box-title mb-20">
+                            Jaffna – The Vibrant Heart of the North
+                        </h2>
 
-                            <p class="box-text mb-30">
-                                Located at the northernmost tip of Sri Lanka, Jaffna is a city steeped in rich Hindu-Tamil culture, colonial history, and unique traditions. Having flourished under the ancient Jaffna Kingdom, it remains a resilient and fascinating destination.
-                            </p>
+                        <!-- Intro -->
+                        <p class="box-text mb-30">
+                            Jaffna, located at the northernmost tip of Sri Lanka, is a city steeped in a unique and profoundly rich heritage. With its vibrant Hindu-Tamil culture, deeply layered colonial history, and resilient spirit, Jaffna offers a travel experience unlike any other in the country. Once the seat of the powerful Jaffna Kingdom, the city has blossomed into a fascinating destination where ancient traditions meet a modern, evolving identity.
+                        </p>
 
-                            <p class="box-text mb-40">
-                                The region is renowned for its magnificent, colorful Kovils, the historic star-shaped Jaffna Fort built by the Portuguese and later expanded by the Dutch, and its distinctly unique, spicy culinary flavors.
-                            </p>
+                        <p class="box-text mb-40">
+                            The region is famously adorned with magnificent, towering Kovils (Hindu temples) that burst with vibrant colors and intricate carvings. Beyond the spiritual landmarks, the historic star-shaped Jaffna Fort-a legacy of Portuguese and later Dutch colonial architectural prowess-stands as a silent witness to the island's maritime history. To visit Jaffna is to indulge in its distinctly spicy, flavor-packed culinary traditions, especially the legendary Jaffna Crab Curry, which is considered a must-try for every food lover.
+                        </p>
 
-                            <h3 class="box-title">Key Facts</h3>
-                            <div class="destination-checklist mb-50">
-                                <div class="checklist style2">
-                                    <ul>
-                                        <li>Province</li>
-                                        <li>Era</li>
-                                        <li>Famous Landmarks</li>
-                                        <li>Climate</li>
-                                        <li>Activities</li>
-                                    </ul>
-                                </div>
-                                <div class="checklist style2">
-                                    <ul>
-                                        <li>Northern Province</li>
-                                        <li>Pre-colonial to Colonial Era</li>
-                                        <li>Nallur Temple, Jaffna Fort</li>
-                                        <li>Tropical, Warm & Sunny</li>
-                                        <li>Cultural Tours, Island Hopping, Cuisine Exploring</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <h3 class="box-title">Historical Landmarks</h3>
-                            <div class="checklist mb-50">
+                        <!-- Key Facts -->
+                        <h3 class="box-title">Key Facts</h3>
+                        <div class="destination-checklist mb-50">
+                            <div class="checklist style2">
                                 <ul>
-                                    <li>Nallur Kandaswamy Kovil (The most significant Hindu temple)</li>
-                                    <li>Jaffna Public Library (A striking symbol of cultural pride)</li>
-                                    <li>Jaffna Fort (Historic coastal fortress)</li>
-                                    <li>Nagadeepa Purana Viharaya (Sacred Buddhist site)</li>
-                                    <li>Delft Island (Known for wild ponies and coral walls)</li>
+                                    <li>Province</li>
+                                    <li>Era</li>
+                                    <li>Famous Landmarks</li>
+                                    <li>Climate</li>
+                                    <li>Activities</li>
                                 </ul>
                             </div>
-
-                            <h3 class="box-title">Visiting Jaffna</h3>
-                            <p class="box-text mb-50">
-                                Traveling to Jaffna is an experience in itself, especially via the scenic Yal Devi train route. When visiting Hindu temples, remember that men are often required to remove their shirts before entering the inner sanctums, and modest dress is expected for everyone. Don't forget to try the famous Jaffna Crab Curry!
-                            </p>
-
-                            <h3 class="box-title">Location Map</h3>
-                            <div class="mb-10">
-                                <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                    <iframe
-                                        src="https://maps.google.com/maps?q=Jaffna,+Sri+Lanka&t=&z=11&ie=UTF8&iwloc=&output=embed"
-                                        style="border:0;" allowfullscreen="" loading="lazy">
-                                    </iframe>
-                                </div>
+                            <div class="checklist style2">
+                                <ul>
+                                    <li>Northern Province</li>
+                                    <li>Pre-colonial to Colonial Era</li>
+                                    <li>Nallur Temple, Jaffna Fort</li>
+                                    <li>Tropical, Warm & Sunny</li>
+                                    <li>Cultural Tours, Island Hopping, Cuisine</li>
+                                </ul>
                             </div>
-
                         </div>
+
+                        <!-- Historical Landmarks -->
+                        <h3 class="box-title">Historical Landmarks</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>Nallur Kandaswamy Kovil:</strong> The spiritual heart of Jaffna, renowned for its majestic gold-plated tower and deeply moving daily ceremonies.</li>
+                                <li><strong>Jaffna Public Library:</strong> A striking, white-washed colonial-style building that symbolizes the city's intellectual and cultural resilience.</li>
+                                <li><strong>Jaffna Fort:</strong> An massive, star-shaped coastal fortress that offers stunning sunset views over the Jaffna lagoon.</li>
+                                <li><strong>Nagadeepa Purana Viharaya:</strong> A highly sacred Buddhist temple situated on an island, accessible only by a scenic boat ride.</li>
+                                <li><strong>Delft Island:</strong> A mysterious, rugged island famous for its wild ponies, ancient coral-stone walls, and a massive baobab tree.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting Info -->
+                        <h3 class="box-title">Visiting Jaffna</h3>
+                        <p class="box-text mb-30">
+                            Traveling to Jaffna is a highlight of any Sri Lankan trip, especially if you take the scenic Yal Devi train route from Colombo, which offers beautiful glimpses of the northern landscape. When visiting the temples, always remember to respect local customs: men must remove their shirts before entering the inner sanctum, and all visitors should dress modestly, covering shoulders and knees.
+                        </p>
+                        
+                        <p class="box-text mb-50">
+                            The climate in Jaffna is consistently warm and dry, so light, breathable clothing and a hat are essential. Be sure to explore the local markets for fresh mangoes and Palmyra-based products. And of course, treat your taste buds to the world-famous, fiery-spicy Jaffna Crab Curry-it is the quintessential flavor of the North!
+                        </p>
+
+                        <h3 class="box-title">Location Map</h3>
+                        <div class="mb-10">
+                            <div class="ratio ratio-16x9 rounded overflow-hidden">
+                                <iframe
+                                    src="https://maps.google.com/maps?q=Jaffna,+Sri+Lanka&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                                    style="border:0;" allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
                     </div>
                 </div>
 

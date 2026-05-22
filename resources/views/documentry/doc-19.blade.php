@@ -133,77 +133,87 @@
                             </button>
                         </div>
 
-                        <div class="page-content">
+                       <div class="page-content">
 
-                            <div class="page-meta mb-30">
-                                <a class="page-tag" href="#">Beaches & Surfing</a>
-                                <span class="ratting">
-                                    <i class="fa-solid fa-water"></i>
-                                    <span>Surfer's Paradise</span>
-                                </span>
-                            </div>
+                        <!-- Meta -->
+                        <div class="page-meta mb-30">
+                            <a class="page-tag" href="#">Beaches & Surfing</a>
+                            <span class="ratting">
+                                <i class="fa-solid fa-water"></i>
+                                <span>Surfer's Paradise</span>
+                            </span>
+                        </div>
 
-                            <h2 class="box-title mb-20">
-                                Weligama – The Surfing Capital of the South
-                            </h2>
+                        <!-- Title -->
+                        <h2 class="box-title mb-20">
+                            Weligama – The Surfing Capital of the South
+                        </h2>
 
-                            <p class="box-text mb-30">
-                                Located on the picturesque southern coast of Sri Lanka, Weligama (literally translating to "Sandy Village") is a vibrant beach town famous for its wide, sweeping bay. It has become one of the most popular destinations in the country for surfing, offering a laid-back tropical vibe and golden sunsets.
-                            </p>
+                        <!-- Intro -->
+                        <p class="box-text mb-30">
+                            Weligama, which literally translates to "Sandy Village," is one of Sri Lanka’s most inviting coastal destinations. Situated on the southern coast, it has transformed into a vibrant, bohemian haven for surfers, digital nomads, and beach lovers alike. The town is famous for its long, wide, and sweeping golden bay, which acts as a natural magnet for anyone looking to enjoy the sun, sand, and the rhythmic pulse of the Indian Ocean.
+                        </p>
 
-                            <p class="box-text mb-40">
-                                The town is perfectly suited for both beginners looking to catch their first wave and experienced surfers enjoying the reef breaks. Beyond the surf, Weligama is iconic for the picturesque Taprobane Island, delicious fresh seafood, and the traditional stilt fishermen dotted along the shallow waters.
-                            </p>
+                        <p class="box-text mb-40">
+                            What sets Weligama apart is its incredibly beginner-friendly surf. The bay features a long, sandy-bottomed break, making it one of the safest and most enjoyable places on the island to learn how to stand on a board for the very first time. Beyond the waves, Weligama offers a blend of authentic island life and modern traveler comforts, characterized by its iconic Taprobane Island, the distinct silhouettes of stilt fishermen at sunset, and an endless array of delicious local street food and seafood.
+                        </p>
 
-                            <h3 class="box-title">Key Facts</h3>
-                            <div class="destination-checklist mb-50">
-                                <div class="checklist style2">
-                                    <ul>
-                                        <li>Province</li>
-                                        <li>Best Time to Visit</li>
-                                        <li>Famous For</li>
-                                        <li>Climate</li>
-                                        <li>Activities</li>
-                                    </ul>
-                                </div>
-                                <div class="checklist style2">
-                                    <ul>
-                                        <li>Southern Province</li>
-                                        <li>November to April (South Coast Season)</li>
-                                        <li>Surfing, Taprobane Island, Seafood</li>
-                                        <li>Tropical, Warm & Sunny</li>
-                                        <li>Surfing, Snorkeling, Beach Hopping</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <h3 class="box-title">Highlights & Landmarks</h3>
-                            <div class="checklist mb-50">
+                        <!-- Key Facts -->
+                        <h3 class="box-title">Key Facts</h3>
+                        <div class="destination-checklist mb-50">
+                            <div class="checklist style2">
                                 <ul>
-                                    <li>Weligama Bay (A safe, sandy-bottomed beach ideal for learning to surf)</li>
-                                    <li>Taprobane Island (A tiny, lush private island featuring a beautiful white villa)</li>
-                                    <li>Kushtarajagala Statue (An ancient 8th-9th century rock carving of a Bodhisattva)</li>
-                                    <li>Stilt Fishermen (A unique, traditional Sri Lankan fishing method)</li>
-                                    <li>Proximity to Mirissa (Perfect for whale watching and vibrant nightlife)</li>
+                                    <li>Province</li>
+                                    <li>Best Time to Visit</li>
+                                    <li>Famous For</li>
+                                    <li>Climate</li>
+                                    <li>Activities</li>
                                 </ul>
                             </div>
-
-                            <h3 class="box-title">Visiting Weligama</h3>
-                            <p class="box-text mb-50">
-                                Weligama is the ultimate chill destination. The beach is lined with surf schools where you can easily rent a board or book a lesson for a few hours. After a session in the water, you can explore the bustling coastal road packed with trendy cafes, local roti shops, and fresh seafood restaurants. The atmosphere is extremely relaxed, making it a great place to unwind, meet fellow travelers, and enjoy the tropical south coast lifestyle.
-                            </p>
-
-                            <h3 class="box-title">Location Map</h3>
-                            <div class="mb-10">
-                                <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.23847936162!2d80.32420455!3d7.93965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afd16fbc1e4d6f5%3A0x7f6c7e8a7c5e3b0!2sPolonnaruwa!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
-                                        style="border:0;" allowfullscreen="" loading="lazy">
-                                    </iframe>
-                                </div>
+                            <div class="checklist style2">
+                                <ul>
+                                    <li>Southern Province</li>
+                                    <li>November to April</li>
+                                    <li>Surfing, Taprobane Island, Seafood</li>
+                                    <li>Tropical, Warm & Sunny</li>
+                                    <li>Surfing, Snorkeling, Beach Hopping</li>
+                                </ul>
                             </div>
-
                         </div>
+
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights & Landmarks</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>Weligama Bay:</strong> A massive, protected bay with soft sandy floors, providing the perfect conditions for surf lessons.</li>
+                                <li><strong>Taprobane Island:</strong> An enchanting, tiny private island sitting just offshore, crowned by a colonial-era white villa and lush greenery.</li>
+                                <li><strong>Kushtarajagala Statue:</strong> An ancient, mysterious rock carving of a Bodhisattva dating back to the 8th or 9th century, tucked away near the main road.</li>
+                                <li><strong>Stilt Fishermen:</strong> Witness the iconic Sri Lankan traditional fishing method, where locals perch on wooden poles set in the shallow waters.</li>
+                                <li><strong>Proximity to Mirissa:</strong> Only a few minutes away from the whale-watching hub of Mirissa, offering the best of both worlds.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting -->
+                        <h3 class="box-title">Visiting Weligama</h3>
+                        <p class="box-text mb-50">
+                            Weligama is the ultimate "chill" destination. The main beach is packed with dozens of surf schools, so you don't need to bring your own gear-you can simply rent a board or book a lesson on the spot. After a morning in the water, explore the coastal road filled with trendy cafes, local roti shops, and fresh seafood restaurants. The vibe is laid-back, the people are friendly, and the sunsets over the bay are truly spectacular. Whether you're here to ride the waves or just relax with a book in a hammock, Weligama captures the essence of the southern coast.
+                        </p>
+
+                        <!-- Map -->
+                        <h3 class="box-title">Location Map</h3>
+                        <div class="mb-10">
+                            <div class="ratio ratio-16x9 rounded overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps?q=Weligama+Beach+Sri+Lanka&output=embed"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
                     </div>
                 </div>
 

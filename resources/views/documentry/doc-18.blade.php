@@ -133,14 +133,20 @@
                                 Sri Paada (Adam's Peak) – The Sacred Mountain
                             </h2>
 
+                            <!-- Intro -->
                             <p class="box-text mb-30">
-                                Located in the central highlands of Sri Lanka, Sri Paada (Adam's Peak) is a 2,243-meter tall conical mountain. It holds profound spiritual significance for four major religions, making it a powerful symbol of unity and devotion. Buddhists believe the footprint mark at the summit belongs to Lord Buddha, Hindus to Lord Shiva, and Christians and Muslims to Adam.
+                                Located in the lush central highlands of Sri Lanka, Sri Paada (Adam's Peak) is a majestic 2,243-meter tall conical mountain that stands as a profound symbol of spiritual unity and devotion. Unlike any other mountain in the world, it is deeply revered by followers of four major religions. Buddhists refer to it as 'Sri Paada', believing the giant footprint at the summit is that of Lord Buddha, left during his third historic visit to the island. Hindus know it as 'Shiva Pada', representing the creative dance of Lord Shiva. Meanwhile, Christians and Muslims believe it is the exact spot where Adam first set foot on earth after being exiled from the Garden of Eden.
+                            </p>
+
+                            <p class="box-text mb-30">
+                                The mountain is completely surrounded by the magnificent Peak Wilderness Sanctuary, a vast, dense tropical rainforest that is home to incredible biodiversity, including elusive leopards, elephants, and rare endemic birds. The air here is crisp, and the imposing peak is almost always shrouded in a thick, rolling veil of mystical white mist, adding to the deeply spiritual and otherworldly atmosphere of the entire region.
                             </p>
 
                             <p class="box-text mb-40">
-                                The journey to the summit is a deeply cultural and spiritual experience. The grueling night climb is ultimately rewarded by the spectacular 'Ira Sevaya' (the sunrise) and the mountain's perfect, mystical triangular shadow cast over the surrounding misty plains at dawn.
+                                Embarking on the journey to the summit is a deeply cultural, physically demanding, and spiritually rewarding experience. Pilgrims refer to this sacred climb as "Karunawa" (a journey of compassion), constantly exchanging blessings of "Saman Devi Pihitai" (May the God Saman protect you) with fellow climbers along the way. The grueling night climb, navigating thousands of steep stone steps, is ultimately rewarded by the spectacular 'Ira Sevaya'-a breathtaking sunrise that bathes the sky in vivid colors. Shortly after, the mountain casts a perfect, mystical triangular shadow over the surrounding misty plains, a phenomenon that defies pure geological explanation and leaves every traveler in absolute awe.
                             </p>
 
+                            <!-- Key Facts -->
                             <h3 class="box-title">Key Facts</h3>
                             <div class="destination-checklist mb-50">
                                 <div class="checklist style2">
@@ -163,30 +169,35 @@
                                 </div>
                             </div>
 
+                            <!-- Highlights -->
                             <h3 class="box-title">Highlights & Landmarks</h3>
                             <div class="checklist mb-50">
                                 <ul>
-                                    <li>The Sacred Footprint Shrine at the summit</li>
-                                    <li>Ira Sevaya (The breathtaking sunrise view)</li>
-                                    <li>Makara Thorana (The traditional archway at the start of Hatton route)</li>
-                                    <li>Seetha Gangula (The icy cold stream for ritual cleansing)</li>
-                                    <li>Sama Ceitya (Japanese Peace Pagoda on the trail)</li>
-                                    <li>Bhagava Lena (Cave where King Nissanka Malla inscribed his visit)</li>
+                                    <li><strong>The Sacred Footprint Shrine:</strong> The ultimate destination at the summit where devotees pray and ring the bell to signify the number of times they have completed the pilgrimage.</li>
+                                    <li><strong>Ira Sevaya (The Sunrise):</strong> The glorious and breathtaking sunrise viewed from the peak, often accompanied by the rhythmic chanting of Buddhist monks.</li>
+                                    <li><strong>The Triangular Shadow:</strong> A perfect, eerie geometric shadow cast by the irregular mountain onto the clouds and plains immediately after dawn.</li>
+                                    <li><strong>Makara Thorana:</strong> The grand, beautifully carved traditional dragon archway marking the beginning of the popular Hatton-Nallathanniya route.</li>
+                                    <li><strong>Seetha Gangula:</strong> An icy cold, crystal-clear mountain stream where pilgrims perform traditional ritual cleansing before continuing their ascent.</li>
+                                    <li><strong>Sama Ceitya (Japanese Peace Pagoda):</strong> A tranquil, stark white stupa built by a Japanese monk, offering a peaceful resting spot on the trail.</li>
+                                    <li><strong>Bhagava Lena:</strong> A historic cave just beneath the summit where King Nissanka Malla famously inscribed a record of his pilgrimage centuries ago.</li>
                                 </ul>
                             </div>
 
+                            <!-- Visiting Info -->
                             <h3 class="box-title">Visiting Sri Paada</h3>
-                            <p class="box-text mb-50">
-                                The official pilgrimage season begins on the Unduvap Poya day in December and ends on Vesak Poya in May. During this time, the path is illuminated, and small stalls provide tea and snacks along the way. The hike involves climbing around 5,500 steps, usually starting at midnight to reach the peak by dawn. Dress warmly in layers, as it gets freezing cold and windy at the top, but you will sweat during the climb. Climbing out of season is possible but challenging due to heavy rain, leeches, and lack of lit pathways.
+                            <p class="box-text mb-30">
+                                The official and safest pilgrimage season begins on the Unduvap Poya day in December and concludes on the Vesak Poya day in May. During these vibrant months, the entire pathway is beautifully illuminated with a continuous string of lights that looks like a glowing necklace draped over the mountain. The trail is lined with small, bustling stalls providing hot tea, snacks, and herbal remedies to rejuvenate weary climbers. The most popular route from Hatton involves climbing around 5,500 incredibly steep steps.
                             </p>
 
+                            <p class="box-text mb-50">
+                                Most travelers begin their ascent around midnight to reach the peak just in time for the 6:00 AM dawn. It is highly recommended to dress strategically in layers; while you will sweat profusely during the intense climb, the summit is notoriously freezing, windy, and exposed. Climbing out of season (June to November) is possible for hardcore adventurers but is generally not recommended for regular tourists due to torrential rains, extreme winds, aggressive leeches, unlit pathways, and the occasional presence of wild elephants crossing the trails.
+                            </p>
+
+                            <!-- Map -->
                             <h3 class="box-title">Location Map</h3>
                             <div class="mb-10">
                                 <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.23847936162!2d80.32420455!3d7.93965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afd16fbc1e4d6f5%3A0x7f6c7e8a7c5e3b0!2sPolonnaruwa!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
-                                        style="border:0;" allowfullscreen="" loading="lazy">
-                                    </iframe>
+                                    <iframe src="https://maps.google.com/maps?q=Adam's%20Peak&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
 

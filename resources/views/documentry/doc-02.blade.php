@@ -228,15 +228,11 @@ Documentary Details Area
 
                         <!-- Intro -->
                         <p class="box-text mb-30">
-                            Galle Fort is the finest surviving example of a fortified city built by Europeans
-                            in South and Southeast Asia. Located on Sri Lanka’s southern coast, it represents
-                            centuries of maritime history, cultural fusion, and colonial influence.
+                            Galle Fort is arguably the finest and most well-preserved example of a fortified city built by European colonial powers in South and Southeast Asia. Perched dramatically on the southern tip of Sri Lanka, this architectural masterpiece represents centuries of maritime history, global trade, and an incredible fusion of colonial and Sri Lankan culture. Walking through its ancient stone gates feels like stepping back in time to an era of spice trading and colonial exploration.
                         </p>
 
                         <p class="box-text mb-40">
-                            Originally built by the Portuguese in the 16th century and later expanded by the
-                            Dutch, Galle Fort stands today as a vibrant, living monument where history and
-                            modern life coexist.
+                            Initially established by the Portuguese in 1588 and later significantly expanded and fortified by the Dutch in the 17th century, the fort is a massive granite-walled enclosure jutting into the Indian Ocean. Unlike most colonial fortresses that have become empty ruins, Galle Fort is a thriving, "living" monument. Today, its narrow, cobblestone streets are filled with elegant boutique hotels, vibrant art galleries, trendy cafés, and historic residences, where history and modern life coexist in a beautiful, harmonious blend.
                         </p>
 
                         <!-- Key Facts -->
@@ -254,8 +250,8 @@ Documentary Details Area
                             <div class="checklist style2">
                                 <ul>
                                     <li>Southern Province, Sri Lanka</li>
-                                    <li>1588</li>
-                                    <li>Portuguese & Dutch</li>
+                                    <li>1588 (Portuguese Origins)</li>
+                                    <li>Portuguese, Dutch, British</li>
                                     <li>Ramparts, Lighthouse, Old Town</li>
                                     <li>World Heritage Site (1988)</li>
                                 </ul>
@@ -265,43 +261,33 @@ Documentary Details Area
                         <!-- History -->
                         <h3 class="box-title">Historical Background</h3>
                         <p class="box-text mb-30">
-                            Galle Fort was first fortified by the Portuguese after their arrival in Sri Lanka.
-                            The Dutch later transformed it into a powerful administrative and military center,
-                            constructing massive ramparts, bastions, and drainage systems.
+                            The history of Galle Fort is a tale of shifting empires. After the Portuguese initially fortified the peninsula to control the spice trade, the Dutch VOC (Dutch East India Company) arrived in 1640 and embarked on a massive reconstruction. They built the iconic star-shaped bastions, intricate drainage systems, and thick stone ramparts that still shield the fort today.
                         </p>
 
                         <p class="box-text mb-40">
-                            Under British rule, the fort retained its importance as a trading port. Unlike many
-                            colonial sites, Galle Fort has remained continuously inhabited, preserving its
-                            historic character.
+                            When the British took control in 1796, they wisely chose to leave most of the Dutch architecture intact rather than destroying it. This decision preserved the unique "Dutch-Colonial" aesthetic that defines the fort today. It has survived over 400 years of turbulent history, including the 2004 tsunami, which the fort's ancient ramparts helped buffer, protecting much of the interior city.
                         </p>
 
                         <!-- Highlights -->
                         <h3 class="box-title">Architectural & Cultural Highlights</h3>
                         <div class="checklist mb-50">
                             <ul>
-                                <li>Stone ramparts overlooking the Indian Ocean</li>
-                                <li>Historic Dutch Reformed Church</li>
-                                <li>Iconic Galle Lighthouse</li>
-                                <li>Narrow streets with colonial houses</li>
-                                <li>Museums, cafés, and art galleries</li>
+                                <li><strong>The Ramparts:</strong> Walk along the massive stone walls at sunset for stunning, panoramic views of the Indian Ocean and the cricket stadium.</li>
+                                <li><strong>Galle Lighthouse:</strong> An iconic, stark-white lighthouse standing against the blue sea, which is one of the most photographed spots in the entire country.</li>
+                                <li><strong>Dutch Reformed Church:</strong> A historic building dating back to 1755, famous for its unique floor paved with tombstones from the old Dutch cemetery.</li>
+                                <li><strong>Old Town Streets:</strong> Explore narrow, grid-patterned streets named after Dutch concepts (like Pedlar Street and Church Street), packed with charming colonial houses.</li>
+                                <li><strong>Maritime & National Museums:</strong> Excellent locations to explore ancient maps, colonial-era artifacts, and the rich naval history of the southern coast.</li>
                             </ul>
                         </div>
 
-                        <!-- Cultural Importance -->
-                        <h3 class="box-title">Cultural & Global Importance</h3>
-                        <p class="box-text mb-40">
-                            Galle Fort represents a unique blend of European architectural styles with South
-                            Asian traditions. It is a living heritage site that showcases the impact of global
-                            trade, colonialism, and cultural exchange.
-                        </p>
-
                         <!-- Visiting Info -->
                         <h3 class="box-title">Galle Fort Today</h3>
+                        <p class="box-text mb-30">
+                            Today, Galle Fort is Sri Lanka’s most atmospheric destination. The best way to experience it is simply to wander-get lost in the tiny alleyways, chat with local antique shop owners, or pick up a unique handmade souvenir from one of the many art galleries. The fort is also a fantastic place for foodies, offering everything from authentic Sri Lankan hoppers and spicy curries to high-end fusion cuisine and artisanal gelato.
+                        </p>
+                        
                         <p class="box-text mb-50">
-                            Today, Galle Fort is one of Sri Lanka’s most atmospheric destinations. Visitors can
-                            walk along the ramparts, explore museums, enjoy seaside sunsets, and experience a
-                            historic city that continues to thrive.
+                            If you are visiting in the afternoon, make sure to walk up to the ramparts around 5:30 PM. Watching the sun dip below the Indian Ocean while local youth play cricket and travelers gather to socialize is the quintessential Galle experience. Remember that the fort is a heritage zone, so please keep the area clean and respect the privacy of the people who live in the historic colonial houses.
                         </p>
 
                         <!-- Map View -->
@@ -317,7 +303,6 @@ Documentary Details Area
                                 </iframe>
                             </div>
                         </div>
-                        
 
                     </div>
                 </div>

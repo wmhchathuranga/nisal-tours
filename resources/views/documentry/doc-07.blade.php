@@ -182,7 +182,7 @@ Documentary Details Area
                     </div>
 
                     <!-- Content -->
-                    <div class="page-content">
+                   <div class="page-content">
 
                         <!-- Meta -->
                         <div class="page-meta mb-30">
@@ -200,13 +200,11 @@ Documentary Details Area
 
                         <!-- Intro -->
                         <p class="box-text mb-30">
-                            Mirissa Beach is one of Sri Lanka’s most popular beach destinations, famous for
-                            its golden sands, turquoise waters, and relaxed coastal atmosphere.
+                            Mirissa is widely regarded as one of the most vibrant and visually stunning coastal towns in Sri Lanka. Nestled along the southern coast, it is a perfect blend of a sleepy fishing village and a trendy, bohemian traveler's paradise. With its iconic crescent-shaped beach, swaying palm trees, and clear turquoise waters, Mirissa offers an incredible escape for anyone looking to soak up the sun and enjoy the rhythmic pulse of the Indian Ocean.
                         </p>
 
                         <p class="box-text mb-40">
-                            Located along the island’s southern coast, Mirissa is also the country’s top
-                            spot for whale and dolphin watching.
+                            Beyond being a postcard-perfect beach, Mirissa is globally famous as Sri Lanka’s premier hub for whale and dolphin watching. Every morning, boats set sail into the deep blue, offering travelers the chance to witness the ocean’s greatest giants in their natural habitat. Whether you’re chasing adventures on the high seas or just looking to lounge in a hammock with a book, Mirissa is a place that stays in your heart long after you leave.
                         </p>
 
                         <!-- Key Facts -->
@@ -225,9 +223,9 @@ Documentary Details Area
                                 <ul>
                                     <li>Southern Province</li>
                                     <li>November – April</li>
-                                    <li>Whale Watching</li>
-                                    <li>Sunsets & Beaches</li>
-                                    <li>Swimming, Surfing</li>
+                                    <li>Whale & Dolphin Watching</li>
+                                    <li>Sunsets & Beach Vibe</li>
+                                    <li>Swimming, Surfing, Snorkeling</li>
                                 </ul>
                             </div>
                         </div>
@@ -236,20 +234,18 @@ Documentary Details Area
                         <h3 class="box-title">Things to Do</h3>
                         <div class="checklist mb-50">
                             <ul>
-                                <li>Whale & Dolphin Watching</li>
-                                <li>Relaxing on the Beach</li>
-                                <li>Surfing & Snorkeling</li>
-                                <li>Visit Coconut Tree Hill</li>
-                                <li>Beachside Cafés</li>
+                                <li><strong>Whale & Dolphin Watching:</strong> Sail out at sunrise to catch sightings of Blue Whales, Sperm Whales, and pods of playful Spinner Dolphins.</li>
+                                <li><strong>Coconut Tree Hill:</strong> Hike up this famous headland for the most iconic, panoramic photo opportunity in Mirissa overlooking the ocean.</li>
+                                <li><strong>Parrot Rock:</strong> A small, rocky island accessible by wading through the water at low tide, offering a great view of the entire coastline.</li>
+                                <li><strong>Surfing & Snorkeling:</strong> Enjoy beginner-friendly surf breaks or explore the shallow rocky reefs along the beach for snorkeling.</li>
+                                <li><strong>Beachside Dining:</strong> Spend your evenings at one of the many restaurants right on the sand, enjoying fresh seafood and vibrant island music.</li>
                             </ul>
                         </div>
 
                         <!-- Visiting -->
                         <h3 class="box-title">Visiting Mirissa</h3>
                         <p class="box-text mb-50">
-                            Mirissa offers a perfect mix of relaxation and adventure. Early morning boat
-                            trips provide unforgettable whale sightings, while evenings are ideal for
-                            enjoying sunsets by the sea.
+                            Mirissa is the ideal spot to disconnect and unwind. The early morning whale-watching trips are a "must-do," but be prepared to head out before dawn to catch the best sightings. Evenings in Mirissa are all about the beach lifestyle-find a cozy chair at a café, order a fresh king coconut or a cocktail, and watch as the sun paints the sky in shades of gold and violet.
                         </p>
 
                         <!-- Map -->

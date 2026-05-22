@@ -190,7 +190,7 @@
 
                             <h3 class="box-title">Visiting Hikkaduwa</h3>
                             <p class="box-text mb-50">
-                                Hikkaduwa is incredibly accessible from Colombo via the Southern Expressway. The main Galle Road runs right parallel to the beach, lined with PADI dive centers, surf schools, and souvenir shops. If you aren't a confident swimmer, you can easily hire a glass-bottom boat to witness the colorful corals and marine life without getting wet. Don't miss the magical experience of seeing the giant green turtles that swim right up to the shallow waters—just remember to treat them with respect and not to touch or ride them!
+                                Hikkaduwa is incredibly accessible from Colombo via the Southern Expressway. The main Galle Road runs right parallel to the beach, lined with PADI dive centers, surf schools, and souvenir shops. If you aren't a confident swimmer, you can easily hire a glass-bottom boat to witness the colorful corals and marine life without getting wet. Don't miss the magical experience of seeing the giant green turtles that swim right up to the shallow waters-just remember to treat them with respect and not to touch or ride them!
                             </p>
 
                             <h3 class="box-title">Location Map</h3>

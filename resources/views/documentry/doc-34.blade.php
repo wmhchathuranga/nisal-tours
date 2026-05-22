@@ -131,7 +131,7 @@
                             </button>
                         </div>
 
-                    <div class="page-content">
+                  <div class="page-content">
                         <div class="page-meta mb-30">
                             <a class="page-tag" href="#">Mythology & Religion</a>
                             <span class="ratting">
@@ -142,29 +142,70 @@
 
                         <h2 class="box-title mb-20">Seetha Amman Kovil – A Mythological Journey in Nuwara Eliya</h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            Located in Sita Eliya, a few kilometers from Nuwara Eliya, the colorful Seetha Amman Kovil marks the exact spot where Princess Sita is believed to have been held captive by King Ravana in the Ramayana epic. The stream beside the temple is said to be where she bathed.
+                            Set against the breathtaking, misty backdrop of thick pine forests and rolling tea estates in Sita Eliya, just a few kilometers away from the Nuwara Eliya town, the vibrant Seetha Amman Kovil is a site of immense mythological importance. According to the grand Indian epic, the Ramayana, this exact location is believed to be the legendary "Ashoka Vatika" – the beautiful forest where the demon-king Ravana held Princess Sita captive after abducting her from India.
                         </p>
 
+                        <p class="box-text mb-30">
+                            The temple itself is a striking visual marvel, featuring highly detailed, colorful South Indian Dravidian architecture that stands out beautifully against the chilly, green highland environment. A pristine, bubbling mountain stream runs directly right beside the temple, which is historically believed to be the exact river where Princess Sita bathed and offered her daily prayers to Lord Rama, waiting for her rescue.
+                        </p>
+
+                        <p class="box-text mb-40">
+                            For millions of Hindu devotees and mythology enthusiasts around the world, this temple is one of the most sacred stops on the Sri Lankan Ramayana Trail. It is entirely unique, being the only Hindu temple in the world that is solely dedicated to Princess Sita. Whether you are a deeply spiritual pilgrim or a traveler fascinated by ancient mythology, the quiet, echoing hills of Sita Eliya offer an incredibly moving and mysterious atmosphere.
+                        </p>
+
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
                                 <ul>
                                     <li>Location</li>
                                     <li>Significance</li>
+                                    <li>Deities</li>
+                                    <li>Climate</li>
+                                    <li>Activities</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
                                     <li>Sita Eliya, Nuwara Eliya</li>
                                     <li>Major site on the Ramayana Trail</li>
+                                    <li>Sita, Rama, Lakshmana, Hanuman</li>
+                                    <li>Cool, Misty & Often Chilly</li>
+                                    <li>Pilgrimage, Photography, Mythology Tours</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights & Mythological Landmarks</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>Hanuman's Footprints:</strong> Giant, deep circular depressions on the rock face near the stream, believed to be the footprints of the monkey-god Hanuman when he leaped into Sri Lanka to rescue Sita.</li>
+                                <li><strong>The Seetha River:</strong> The crystal-clear, icy mountain stream flowing next to the temple where Sita bathed and spent her days in sorrow.</li>
+                                <li><strong>The Sacred Shrines:</strong> Beautifully adorned statues of Lord Rama, Sita, Lakshmana, and Hanuman inside the vibrant temple halls.</li>
+                                <li><strong>Ashoka Vatika:</strong> The surrounding lush green forest area which is believed to be the ancient pleasure garden of King Ravana.</li>
+                                <li><strong>Colorful Dravidian Architecture:</strong> The temple’s striking, brightly painted outer Gopuram (tower) filled with intricate sculptures of Hindu deities.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting Info -->
+                        <h3 class="box-title">Visiting Seetha Amman Kovil</h3>
+                        <p class="box-text mb-30">
+                            The temple is conveniently located right along the main Nuwara Eliya - Badulla highway, making it an extremely easy stop if you are traveling towards Hakgala Botanical Gardens or Ella. The climate here is typical of Nuwara Eliya-often chilly, misty, and prone to sudden light showers, so bringing a warm sweater or a light jacket is highly recommended. 
+                        </p>
+
+                        <p class="box-text mb-50">
+                            As this is a venerated Hindu place of worship, a modest dress code is required. Visitors should wear clothing that covers their shoulders and knees. You will need to take off your shoes before entering the temple, and the tiled floor can sometimes be quite cold due to the highland weather, so wearing socks is a good idea. The temple priests are very welcoming and often offer a small holy thread (pooja) or blessing to visitors regardless of their religion.
+                        </p>
+
+                        <!-- Map -->
                         <h3 class="box-title">Location Map</h3>
-                        <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.3980352514!2d80.7554907!3d7.9620701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sPidurangala%20Rock!5e0!3m2!1sen!2slk!4v14" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="mb-10">
+                            <div class="ratio ratio-16x9 rounded overflow-hidden">
+                                <iframe src="https://maps.google.com/maps?q=Seetha+Amman+Temple+Nuwara+Eliya&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
 
                     </div>

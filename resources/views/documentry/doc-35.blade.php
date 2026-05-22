@@ -131,7 +131,7 @@
                             </button>
                         </div>
 
-                    <div class="page-content">
+                   <div class="page-content">
                         <div class="page-meta mb-30">
                             <a class="page-tag" href="#">Historical & Religious</a>
                             <span class="ratting">
@@ -142,10 +142,20 @@
 
                         <h2 class="box-title mb-20">Munneswaram Temple – A Spiritual Journey for Multiple Faiths</h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            Located in Chilaw, Munneswaram is an important regional Hindu temple complex that has been in existence since at least 1000 CE. It is deeply connected to the Ramayana epic and is venerated by both Hindus and Buddhists, known for its grand annual festival that lasts for 27 days.
+                            Situated in the coastal town of Chilaw, the Munneswaram Temple is a magnificent and deeply historic religious complex that serves as a shining beacon of interfaith harmony in Sri Lanka. Dating back over a thousand years, it is one of the five ancient "Iswarams" (temples dedicated to Lord Shiva) on the island. What makes this temple truly exceptional is that it is highly venerated not only by Hindus but also by Buddhists and local Catholics, creating a uniquely diverse and unifying spiritual atmosphere.
                         </p>
 
+                        <p class="box-text mb-30">
+                            The temple's origins are deeply intertwined with the ancient Indian epic, the Ramayana. According to legend, after Lord Rama defeated the demon-king Ravana to rescue Princess Sita, he was afflicted by the "Brahmahathi Dosham" (a severe karmic curse for killing a Brahmin). It is believed that Lord Rama stopped at Munneswaram, where he prayed to Lord Shiva and was advised to build several Lingams to absolve himself of the curse. This profound mythological connection makes it an essential pilgrimage site on the Sri Lankan Ramayana Trail.
+                        </p>
+
+                        <p class="box-text mb-40">
+                            The vast complex actually consists of five distinct temples, including a central shrine dedicated to Lord Shiva, and others dedicated to Ganesha, Ayyanayake, and Goddess Kali. The vibrant energy of Munneswaram peaks during its spectacular annual festival, a grand 27-day celebration filled with colorful processions, traditional music, and immense devotion, attracting hundreds of thousands of pilgrims from all corners of the country.
+                        </p>
+
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
@@ -153,20 +163,47 @@
                                     <li>Location</li>
                                     <li>Primary Deity</li>
                                     <li>Significance</li>
+                                    <li>Major Event</li>
+                                    <li>Climate</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
                                     <li>Chilaw, North Western Province</li>
-                                    <li>Lord Shiva</li>
-                                    <li>Ramayana Trail & Annual Festival</li>
+                                    <li>Lord Shiva (Munneswarar)</li>
+                                    <li>Ramayana Trail & Interfaith Shrine</li>
+                                    <li>27-Day Annual Festival (Aug/Sept)</li>
+                                    <li>Tropical, Warm & Humid</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights & Shrines</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>The Main Shiva Shrine:</strong> The ancient, intricately carved heart of the complex where Lord Shiva is worshipped as Munneswarar alongside Goddess Amman.</li>
+                                <li><strong>The Kali Temple:</strong> A powerful and widely visited shrine dedicated to Goddess Kali, famous for deeply passionate rituals and blessings.</li>
+                                <li><strong>Ramayana Connection:</strong> Stand in the exact location where Lord Rama is believed to have sought refuge and prayed to Lord Shiva over millennia ago.</li>
+                                <li><strong>Buddhist Viharaya:</strong> A serene Buddhist temple located right within the complex, beautifully symbolizing the religious coexistence unique to this site.</li>
+                                <li><strong>The Annual Mahotsavam:</strong> A massive 27-day festival held in August/September, featuring chariot processions, fire-walking, and traditional Hindu ceremonies.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting Info -->
+                        <h3 class="box-title">Visiting Munneswaram</h3>
+                        <p class="box-text mb-30">
+                            The temple is easily accessible from the main Colombo-Puttalam highway, making it a perfect cultural stop if you are heading towards Kalpitiya or Wilpattu. It is open throughout the year, but visiting during the daily Pooja (prayer) times in the morning or evening offers the most vibrant and spiritually uplifting experience. The climate in Chilaw is generally warm, so bringing a bottle of water and dressing comfortably is advised.
+                        </p>
+
+                        <p class="box-text mb-50">
+                            As this is a deeply sacred space for multiple religions, visitors must dress modestly. Clothing that covers the shoulders and extends below the knees is required. You will need to remove your shoes before entering the inner temple courtyards. The atmosphere here is extremely welcoming, and the temple priests are known for offering blessings to everyone, regardless of their personal faith or background.
+                        </p>
+
+                        <!-- Map -->
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.3980352514!2d80.7554907!3d7.9620701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sPidurangala%20Rock!5e0!3m2!1sen!2slk!4v15" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://maps.google.com/maps?q=Munneswaram+Temple+Chilaw&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>

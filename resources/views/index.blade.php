@@ -212,7 +212,7 @@
                     {{-- <span style="font-size: 4rem">?</span>  --}}
                 </h2>
                 <span class="sub-title">The Pearl of the Indian Ocean</span>
-                <p class="text-white mx-auto " style="text-align: justify;text-indent: 250px;">
+                <p class="text-white mx-auto " style="text-align: center;text-indent: 250px;">
                     Because nowhere else on Earth can you experience so much magic, diversity, and adventure packed into
                     one breathtaking island.
                     Start your journey on our sun-drenched,
@@ -762,7 +762,7 @@
                     Historical & Religious Places</button>
                 <button class="glass-filter-btn" data-filter="beaches"><i class="fas fa-umbrella-beach"></i>
                     Beaches</button>
-                <button class="glass-filter-btn" data-filter="safari"><i class="fas fa-paw"></i>
+                <button class="glass-filter-btn" data-filter="safari"><i class="fas fa-truck-monster"></i>
                     Safari</button>
                 <button class="glass-filter-btn" data-filter="activities"><i class="fa-duotone fa-person-walking"></i>
                     Activities</button>
@@ -1893,7 +1893,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f3/photo3jpg.jpg?w=1000&h=-1&s=1"
                             alt="Pasikuda Beach">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2000,7 +2000,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80"
+                            src="{{ asset('assets/img/2151443699.jpg') }}"
                             alt="Coral Watching">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2885,6 +2885,18 @@
 
 
     <script>
+//         $(document).ready(function() {
+//     const savedFilter = localStorage.getItem('activeTab');
+
+//     if (savedFilter) {
+//         $('.glass-filter-btn').removeClass('active');
+
+//         const targetBtn = $(`.glass-filter-btn[data-filter="${savedFilter}"]`);
+//         targetBtn.addClass('active');
+
+        
+//     }
+// });
         document.addEventListener("DOMContentLoaded", function() {
             var swiper = new Swiper(".nh-swiper", {
                 slidesPerView: 1,
@@ -3178,6 +3190,23 @@
             });
 
         });
+        $(document).ready(function() {
+    // Save karapu value eka ganna
+    const savedFilter = localStorage.getItem('activeTab');
+
+    if (savedFilter) {
+        // 1. Serama buttons walin 'active' class eka ain karanna
+        $('.glass-filter-btn').removeClass('active');
+
+        // 2. Save karapu button ekata 'active' class eka add karanna
+        const targetBtn = $(`.glass-filter-btn[data-filter="${savedFilter}"]`);
+        targetBtn.addClass('active');
+
+        // 3. Filter logic eka run karanna (oya usage eka anuwa meka wenas wewi)
+        // eg: targetBtn.trigger('click'); 
+        // nathnam oyaaga filter function eka call karanna: filterItems(savedFilter);
+    }
+});
     </script>
 
     <!--========== Footer Area ==========-->

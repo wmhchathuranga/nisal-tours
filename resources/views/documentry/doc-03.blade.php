@@ -159,7 +159,7 @@ Documentary Details Area
                     </div>
 
                     <!-- Content -->
-                    <div class="page-content">
+                   <div class="page-content">
 
                         <!-- Meta -->
                         <div class="page-meta mb-30">
@@ -177,14 +177,11 @@ Documentary Details Area
 
                         <!-- Intro -->
                         <p class="box-text mb-30">
-                            Kandy is the last royal capital of Sri Lanka and one of the country’s most sacred
-                            and culturally significant cities. Nestled among misty hills, it has long been
-                            a center of religion, governance, and tradition.
+                            Gracefully nestled amidst the mist-shrouded peaks of the central highlands, Kandy is the undisputed cultural and spiritual capital of Sri Lanka. Serving as the last glorious stronghold of the Sinhalese kings, this universally celebrated UNESCO World Heritage City is a living, breathing museum of ancient traditions, royal architecture, and profound Buddhist devotion. Built around the serene, tree-lined Kandy Lake (Kiri Muhuda), the city offers a cool, refreshing climate that contrasts beautifully with the tropical heat of the coastal plains.
                         </p>
 
                         <p class="box-text mb-40">
-                            Best known as the home of the Temple of the Sacred Tooth Relic, Kandy remains a
-                            living symbol of Sri Lanka’s Buddhist heritage and royal legacy.
+                            At the very core of Kandy's identity is the legendary Temple of the Sacred Tooth Relic (Sri Dalada Maligawa). This spectacular golden-roofed palace houses the most venerated Buddhist relic in the world-a sacred tooth of the Lord Buddha. For centuries, Kandy has stood as a beacon of Sri Lankan identity, perfectly preserving its unique art, music, dance, and architectural heritage against the relentless tides of time.
                         </p>
 
                         <!-- Key Facts -->
@@ -213,41 +210,35 @@ Documentary Details Area
                         <!-- History -->
                         <h3 class="box-title">Historical Background</h3>
                         <p class="box-text mb-30">
-                            Kandy rose to prominence in the 15th century and became the final stronghold of
-                            the Sinhalese monarchy. Protected by natural terrain, it resisted European
-                            colonial powers for centuries.
+                            Rising to power in the 15th century, the Kandyan Kingdom became the ultimate symbol of Sinhalese resistance and independence. Naturally fortified by treacherous mountain passes, dense jungles, and winding rivers, Kandy fiercely and successfully repelled multiple invasions by the Portuguese and the Dutch for over three hundred years. The Kandyan kings were brilliant tacticians who used the rugged terrain and guerrilla warfare to protect their sacred highland empire.
                         </p>
 
                         <p class="box-text mb-40">
-                            In 1815, Kandy fell to the British, marking the end of Sri Lanka’s monarchy.
-                            Despite this, the city preserved its spiritual importance and cultural traditions.
+                            However, the glorious era of the Sinhalese monarchy tragically came to an end in 1815. Following internal betrayals and the signing of the Kandyan Convention, the kingdom finally ceded to the British Empire. Despite losing its political independence, Kandy stubbornly held onto its soul. The city meticulously preserved its sacred rituals, traditional crafts, and religious ceremonies, ensuring that the ancient heartbeat of Sri Lanka continued to echo through the mountains.
                         </p>
 
                         <!-- Highlights -->
                         <h3 class="box-title">Cultural & Architectural Highlights</h3>
                         <div class="checklist mb-50">
                             <ul>
-                                <li>Temple of the Sacred Tooth Relic</li>
-                                <li>Kandy Lake and royal palace complex</li>
-                                <li>Annual Esala Perahera festival</li>
-                                <li>Traditional Kandyan dance</li>
-                                <li>Colonial and Kandyan architecture</li>
+                                <li><strong>Temple of the Sacred Tooth Relic:</strong> The spiritual crown jewel of Kandy, featuring stunning wooden carvings, painted ceilings, and the heavily guarded golden casket containing the sacred tooth.</li>
+                                <li><strong>Kandy Lake (Kiri Muhuda):</strong> A highly picturesque, artificial lake built by the last king of Kandy, Sri Wickrama Rajasinghe, perfect for scenic, peaceful evening strolls.</li>
+                                <li><strong>Royal Palace Complex & Magul Maduwa:</strong> The historic remnants of the monarchy, including the ancient Audience Hall with its breathtaking, intricately carved wooden pillars.</li>
+                                <li><strong>Bahirawakanda Vihara:</strong> A towering, pristine white Buddha statue situated on a hill overlooking the city, offering magnificent panoramic views of the entire Kandy valley.</li>
+                                <li><strong>Peradeniya Royal Botanical Gardens:</strong> Located just outside the city, this sprawling 147-acre garden is world-renowned for its orchid house, giant bamboo, and majestic Javan fig tree.</li>
                             </ul>
                         </div>
 
                         <!-- Cultural Importance -->
                         <h3 class="box-title">Cultural & Religious Importance</h3>
                         <p class="box-text mb-40">
-                            Kandy is one of the most sacred Buddhist cities in the world. The annual Esala
-                            Perahera, featuring dancers, drummers, and adorned elephants, is among Asia’s
-                            grandest religious festivals.
+                            Kandy is widely considered one of the most sacred Buddhist pilgrimage destinations on the planet. This deep spiritual devotion reaches its absolute pinnacle in July or August with the spectacular 'Esala Perahera'. This magnificent, centuries-old festival spans over ten days and transforms the city streets into a vibrant display of devotion. Featuring hundreds of brilliantly adorned elephants, mesmerising fire-breathers, acrobats, whip-crackers, and traditional Kandyan drummers moving to ancient rhythms, it is easily one of the grandest and most colorful religious pageants in all of Asia.
                         </p>
 
                         <!-- Visiting Info -->
                         <h3 class="box-title">Kandy Today</h3>
                         <p class="box-text mb-50">
-                            Today, Kandy blends spirituality, history, and modern life. Visitors can explore
-                            sacred temples, scenic viewpoints, museums, and vibrant cultural performances.
+                            Today, Kandy seamlessly weaves its majestic history into the fabric of modern, bustling city life. Travelers can spend their days wandering through vibrant local markets filled with spices and brassware, enjoying peaceful hikes in the Udawatta Kele Sanctuary (a historic forest reserve located just behind the temple), or watching a thrilling, acrobatic Kandyan cultural dance show in the evening. When visiting the Temple of the Tooth and other sacred sites, remember that strict dress codes apply-modest clothing covering the shoulders and knees is mandatory, and wearing white is highly appreciated.
                         </p>
 
                         <!-- Map View -->

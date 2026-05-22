@@ -142,10 +142,20 @@
 
                         <h2 class="box-title mb-20">Mathale Aluviharaya – The Cradle of the Written Pali Canon</h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            The Matale Aluviharaya is a sacred Buddhist rock temple of immense historical importance. It was here, during the 1st century BC, that the Pali Canon (Tripitaka) was first committed to writing on ola (palm) leaves, ensuring the preservation of the Buddha's teachings.
+                            The Matale Aluviharaya is not just a temple; it is a monumental cornerstone of global Buddhist heritage. Nestled securely among massive, breathtaking rock formations in the central hills of Sri Lanka, this sacred rock cave temple holds immense historical and spiritual importance. It offers visitors a profound glimpse into the ancient traditions and the unyielding dedication of early Buddhist monks.
                         </p>
 
+                        <p class="box-text mb-30">
+                            Historically, this sacred site played an unprecedented role in the preservation of the Buddha's teachings. During the turbulent reign of King Walagamba in the 1st century BC, the island was ravaged by severe famine and foreign invasions. Realizing that the oral tradition of passing down the Dhamma was at risk of being lost forever, a great council of enlightened monks gathered at Aluviharaya. Here, for the very first time, the entire Pali Canon (Tripitaka) was meticulously committed to writing on ola (palm) leaves, ensuring its survival for future generations.
+                        </p>
+
+                        <p class="box-text mb-40">
+                            Today, walking through the peaceful, shadowed pathways of Aluviharaya feels like taking a step back in time. The complex features a series of fascinating rock-cave shrines, ancient Brahmi inscriptions, and vibrant Kandyan-era frescoes. Whether you are a history enthusiast, a spiritual seeker, or a lover of ancient architecture, Aluviharaya offers a deeply moving and visually stunning experience that resonates with centuries of unwavering faith.
+                        </p>
+
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
@@ -153,6 +163,7 @@
                                     <li>Location</li>
                                     <li>Era</li>
                                     <li>Significance</li>
+                                    <li>Architecture</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
@@ -160,10 +171,30 @@
                                     <li>Matale, Central Province</li>
                                     <li>1st Century BC (King Walagamba)</li>
                                     <li>First writing of the Tripitaka</li>
+                                    <li>Natural Rock Caves & Shrines</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>The Tripitaka Cave:</strong> The historic focal point where monks inscribed the sacred Pali Canon onto palm leaves over two millennia ago.</li>
+                                <li><strong>Rock Cave Shrines:</strong> A series of spectacular caves housing magnificent reclining Buddha statues and intricate lotus-patterned ceilings.</li>
+                                <li><strong>Kandyan Era Frescoes:</strong> Beautifully preserved, vibrant ancient murals that visually narrate the Jataka tales (past lives of the Buddha).</li>
+                                <li><strong>The Purgatory Cave:</strong> A fascinating, albeit graphic, cave depicting the Buddhist realms of hell (Naraka) and the karmic consequences of worldly sins.</li>
+                                <li><strong>Ola Leaf Library & Museum:</strong> A dedicated space demonstrating the ancient, meticulous art of preparing and writing on ola leaves using a metal stylus.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting Info -->
+                        <h3 class="box-title">Visiting Aluviharaya</h3>
+                        <p class="box-text mb-50">
+                            Aluviharaya is located just a few kilometers north of Matale town and makes for an excellent stop if you are traveling between Kandy and Dambulla. As this is a highly venerated active Buddhist site, visitors must adhere to a respectful dress code-shoulders and knees must be fully covered, and wearing white is highly appreciated. You will need to remove your shoes before entering the sacred cave areas, so slip-on footwear is recommended. The temple is open daily, and early mornings or late afternoons offer the most serene atmosphere for exploration.
+                        </p>
+
+                        <!-- Map -->
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
                             <iframe src="https://maps.google.com/maps?q=Aluviharaya+Rock+Cave+Temple&t=&z=14&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

@@ -133,7 +133,7 @@
                             </button>
                         </div>
 
-                        <div class="page-content">
+                       <div class="page-content">
                             <div class="page-meta mb-30">
                                 <a class="page-tag" href="#">Leisure Activity</a>
                                 <span class="ratting">
@@ -144,33 +144,65 @@
 
                             <h2 class="box-title mb-20">Coral Watching – See the Reefs Without Getting Wet</h2>
 
+                            <!-- Intro -->
                             <p class="box-text mb-30">
-                                If you want to experience the beauty of Sri Lanka's marine sanctuaries without swimming,
-                                coral watching in a glass-bottom boat is the perfect activity. It's highly popular among
-                                families and offers a crystal-clear view of the bustling coral ecosystems directly
-                                beneath your feet.
+                                If you want to experience the breathtaking beauty of Sri Lanka's vibrant marine sanctuaries but prefer to stay completely dry, coral watching in a traditional glass-bottom boat is the absolute perfect activity. It is a fantastic, highly inclusive adventure that allows non-swimmers, young children, and elderly travelers to witness the hidden wonders of the ocean without needing to put on a snorkel or diving gear.
                             </p>
 
+                            <p class="box-text mb-30">
+                                These specially designed motorboats feature large, transparent glass panels built directly into the hull. As the boat glides gently over the shallow coastal reefs, you get a crystal-clear, magnified view of the bustling aquatic ecosystems directly beneath your feet. It literally feels like looking into a massive, natural, open-ocean aquarium safely from the comfort of your seat.
+                            </p>
+
+                            <p class="box-text mb-40">
+                                The Hikkaduwa Marine National Park on the south coast and Pigeon Island National Park on the east coast are the two most famous hotspots for this relaxing activity. Drift over massive brain corals, watch schools of neon-colored tropical fish darting around, and if you are lucky, you might even see a giant sea turtle swimming right below the glass!
+                            </p>
+
+                            <!-- Key Facts -->
                             <h3 class="box-title">Key Facts</h3>
                             <div class="destination-checklist mb-50">
                                 <div class="checklist style2">
                                     <ul>
                                         <li>Best Locations</li>
                                         <li>Ideal For</li>
+                                        <li>Duration</li>
+                                        <li>Marine Life</li>
                                     </ul>
                                 </div>
                                 <div class="checklist style2">
                                     <ul>
-                                        <li>Hikkaduwa Marine Park, Pigeon Island</li>
+                                        <li>Hikkaduwa (South), Trincomalee (East)</li>
                                         <li>Families, Non-swimmers, Kids</li>
+                                        <li>30 to 45 Minutes</li>
+                                        <li>Corals, Sea Turtles, Tropical Fish</li>
                                     </ul>
                                 </div>
                             </div>
 
+                            <!-- Highlights -->
+                            <h3 class="box-title">Highlights & Marine Life</h3>
+                            <div class="checklist mb-50">
+                                <ul>
+                                    <li><strong>Hikkaduwa Marine Sanctuary:</strong> Float over one of Sri Lanka's most famous protected coral reefs, featuring diverse coral species like brain corals and branching staghorn corals.</li>
+                                    <li><strong>Close Encounters:</strong> Spot incredibly colorful marine life including parrotfish, butterflyfish, clownfish, and friendly sea turtles swimming naturally in the wild.</li>
+                                    <li><strong>Family Friendly:</strong> Completely safe, secure, and comfortable for all ages, making it the absolute best way to introduce young kids to the magic of the ocean.</li>
+                                    <li><strong>Local Guides:</strong> The friendly boat operators often point out hidden creatures, explain the different types of corals, and know exactly where the turtles like to hang out.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Visiting Info -->
+                            <h3 class="box-title">Visiting & Practical Info</h3>
+                            <p class="box-text mb-30">
+                                The absolute best time to take a glass-bottom boat ride is early in the morning, around 8:00 AM to 10:00 AM. During this time, the sunlight hits the water at the perfect angle, significantly improving underwater visibility, and the ocean surface is usually at its calmest. When the sea is rough, the water can get slightly murky with stirred-up sand, which reduces visibility.
+                            </p>
+
+                            <p class="box-text mb-50">
+                                Even though the boats usually have a canopy to provide shade, the glare reflecting off the water can still be quite bright. Wearing sunglasses and applying sunscreen is highly recommended. Life jackets are provided by the boat operators and must be worn during the ride. Just head over to the main beach area in Hikkaduwa or Nilaveli (for Pigeon Island), and you will find plenty of registered boats lined up and ready to take you on a quick, magical tour of the reefs!
+                            </p>
+
                             {{-- <h3 class="box-title">Location Map</h3>
                             <div class="ratio ratio-16x9 rounded overflow-hidden">
                                 <iframe
-                                    src="https://maps.google.com/maps?q=Pidurangala%20Rock&t=&z=15&ie=UTF8&iwloc=&output=embed5"
+                                    src="https://maps.google.com/maps?q=Hikkaduwa+Marine+National+Park&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div> --}}
 

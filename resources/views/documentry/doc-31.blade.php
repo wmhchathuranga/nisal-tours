@@ -142,10 +142,20 @@
 
                         <h2 class="box-title mb-20">Aukana – A Masterpiece of Ancient Stone Carving</h2>
 
+                        <!-- Intro -->
                         <p class="box-text mb-30">
-                            The Aukana Buddha statue is an awe-inspiring, 12-meter-tall standing Buddha carved directly out of a large granite rock face. Dating back to the 5th century during the reign of King Dhatusena, it remains one of the best-preserved ancient statues in Sri Lanka.
+                            Standing in silent, breathtaking majesty near the massive Kala Wewa reservoir, the Aukana Buddha Statue is universally regarded as one of the most perfectly proportioned and stunning ancient stone carvings in Sri Lanka. Sculpted entirely out of a single, sheer granite rock face during the 5th-century reign of King Dhatusena, this colossal 12-meter (39-foot) standing Buddha is a supreme masterclass in ancient Sinhalese stonemasonry, engineering, and artistic devotion.
                         </p>
 
+                        <p class="box-text mb-30">
+                            What makes Aukana truly spellbinding is its staggering level of architectural precision. According to local legend and architectural studies, the statue is balanced so flawlessly that a single drop of rainwater falling from the Buddha's nose would drop straight down and land exactly in the tiny space between the toes. The statue’s robe is carved with incredibly fine, symmetrical pleats that cling gracefully to the body, beautifully reflecting the influence of the ancient Amaravati school of art.
+                        </p>
+
+                        <p class="box-text mb-40">
+                            The name "Aukana" translates to "sun-eating" or "facing the sun," and true to its name, the magnificent statue directly faces the east. Watching the golden rays of the early morning sunrise illuminate the serene, expressionless face of the Buddha is a deeply moving, spiritual experience that leaves every traveler, historian, and pilgrim in absolute awe of Sri Lanka's glorious ancient heritage.
+                        </p>
+
+                        <!-- Key Facts -->
                         <h3 class="box-title">Key Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
@@ -153,20 +163,47 @@
                                     <li>Location</li>
                                     <li>Height</li>
                                     <li>Era</li>
+                                    <li>Posture / Mudra</li>
+                                    <li>Activities</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
                                     <li>Kekirawa, North Central Province</li>
-                                    <li>~12 Meters (39 ft)</li>
-                                    <li>5th Century AD</li>
+                                    <li>Approx. 12 Meters (39 ft)</li>
+                                    <li>5th Century AD (King Dhatusena)</li>
+                                    <li>Ashirvada Mudra (Blessing)</li>
+                                    <li>Pilgrimage, Photography, History Tours</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Highlights -->
+                        <h3 class="box-title">Highlights & Architectural Marvels</h3>
+                        <div class="checklist mb-50">
+                            <ul>
+                                <li><strong>The Perfect Proportions:</strong> Marvel at the absolute precision of the carving, where a vertical line dropped from the nose aligns perfectly with the space between the feet.</li>
+                                <li><strong>The Intricate Robe:</strong> Observe the deeply carved, flawless, and tightly clinging pleats of the robe, showcasing unparalleled ancient craftsmanship.</li>
+                                <li><strong>The Ashirvada Mudra:</strong> The statue's right hand is raised sideways in a unique, graceful gesture of blessing, while the left hand elegantly grasps the robe at the shoulder.</li>
+                                <li><strong>The Lotus Pedestal:</strong> The beautifully carved double-petal lotus pedestal at the feet, which was added slightly later to complete the divine appearance.</li>
+                                <li><strong>Proximity to Kala Wewa:</strong> Located right next to the massive Kala Wewa reservoir, another magnificent engineering triumph of the very same king, King Dhatusena.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Visiting Info -->
+                        <h3 class="box-title">Visiting Aukana</h3>
+                        <p class="box-text mb-30">
+                            To truly experience the magic of the Aukana statue, you must aim to visit just before sunrise. As the sun peeks over the horizon, its very first golden rays strike the ancient stone, beautifully highlighting the intricate details, the wavy pleats, and the peaceful expression of the Buddha. The site is relatively quiet and much less crowded compared to the major ruins of Anuradhapura or Polonnaruwa, offering a very peaceful and deeply personal historical experience.
+                        </p>
+
+                        <p class="box-text mb-50">
+                            As this is an incredibly sacred site for Buddhists, visitors must strictly adhere to the dress code. Modest clothing covering the shoulders and knees is mandatory, and wearing light, white clothing is highly encouraged and respected. You will need to remove your shoes and hats before stepping onto the sacred temple grounds. Bringing a pair of dark socks is highly recommended if you are visiting later in the day, as the sun-baked sand around the statue can become searingly hot to walk on.
+                        </p>
+
+                        <!-- Map -->
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.3980352514!2d80.7554907!3d7.9620701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sPidurangala%20Rock!5e0!3m2!1sen!2slk!4v11" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://maps.google.com/maps?q=Avukana%20Buddha%20Statue&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>

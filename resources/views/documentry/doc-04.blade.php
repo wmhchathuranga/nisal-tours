@@ -243,7 +243,7 @@ Documentary Details Area
                         <!-- Landscape -->
                         <h3 class="box-title">Landscape & Ecosystem</h3>
                         <p class="box-text mb-30">
-                            The defining feature of Wilpattu is its network of villus — shallow natural lakes
+                            The defining feature of Wilpattu is its network of villus - shallow natural lakes
                             that collect rainwater and support diverse wildlife throughout the year.
                         </p>
 
