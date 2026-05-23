@@ -199,12 +199,12 @@
                                 Even though the boats usually have a canopy to provide shade, the glare reflecting off the water can still be quite bright. Wearing sunglasses and applying sunscreen is highly recommended. Life jackets are provided by the boat operators and must be worn during the ride. Just head over to the main beach area in Hikkaduwa or Nilaveli (for Pigeon Island), and you will find plenty of registered boats lined up and ready to take you on a quick, magical tour of the reefs!
                             </p>
 
-                            {{-- <h3 class="box-title">Location Map</h3>
+                            <h3 class="box-title">Location Map</h3>
                             <div class="ratio ratio-16x9 rounded overflow-hidden">
                                 <iframe
                                     src="https://maps.google.com/maps?q=Hikkaduwa+Marine+National+Park&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                            </div> --}}
+                            </div>
 
                         </div>
                     </div>

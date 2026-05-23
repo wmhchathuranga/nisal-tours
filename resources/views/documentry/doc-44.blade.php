@@ -200,10 +200,17 @@
                             Even if you do not typically suffer from motion sickness, the deep ocean swells can be quite unpredictable and choppy. It is highly recommended to take sea sickness medication about 30 minutes before boarding the boat. Lastly, always ensure you book your tour with a certified, eco-friendly, and ethical whale-watching operator who strictly follows international wildlife distance regulations to ensure the whales are not chased, stressed, or harassed.
                         </p>
 
-                        {{-- <h3 class="box-title">Location Map</h3>
+                        <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://maps.google.com/maps?q=Mirissa+Whale+Watching&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div> --}}
+<iframe 
+  src="https://maps.google.com/maps?q=Mirissa,+Sri+Lanka&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+  width="100%" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>                        </div>
 
                     </div>
                 </div>

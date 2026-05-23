@@ -200,10 +200,18 @@
                             You are guaranteed to get completely wet, so bringing appropriate swimwear, light quick-dry clothing (like board shorts and t-shirts), and a towel or a fresh change of clothes is absolutely essential. Do not wear flip-flops, as the river currents will easily wash them away; instead, wear secure water shoes or strapped sandals. All registered rafting operators provide high-quality safety gear, including helmets and life jackets, and a thorough safety briefing is conducted by experienced river guides before you hit the water.
                         </p>
 
-                        {{-- <h3 class="box-title">Location Map</h3>
+                        <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://maps.google.com/maps?q=Kitulgala+White+Water+Rafting&t=&z=14&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div> --}}
+                           <iframe 
+  src="https://maps.google.com/maps?q=Kelani+River,+Sri+Lanka&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+  width="100%" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+                        </div>
 
                     </div>
                 </div>

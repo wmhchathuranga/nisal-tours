@@ -200,10 +200,10 @@
                             When exploring these fragile underwater ecosystems, strict eco-friendly practices must be observed. <strong>Never</strong> stand on, touch, or break the corals, as they take decades to grow and are highly sensitive. Avoid touching sea turtles or chasing marine life. Furthermore, please ensure that you only use "reef-safe" sunscreen (without Oxybenzone or Octinoxate) before getting into the water, as standard sunscreens cause severe coral bleaching and long-term damage to the reefs.
                         </p>
 
-                        {{-- <h3 class="box-title">Location Map</h3>
+                        <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
                             <iframe src="https://maps.google.com/maps?q=Hikkaduwa+Coral+Sanctuary&t=&z=14&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div> --}}
+                        </div>
 
                     </div>
                 </div>

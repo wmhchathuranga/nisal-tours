@@ -200,10 +200,18 @@
                             Since this tour involves getting on and off carts, boats, and walking through agricultural fields, it is highly recommended to wear very comfortable, light cotton clothing and easy slip-on sandals. Don't forget to pack a good mosquito repellent, a hat, and sunscreen. Most importantly, bring a big appetite! The village ladies love to feed their guests, and the food is so delicious that you will definitely want second and third servings.
                         </p>
 
-                        {{-- <h3 class="box-title">Location Map</h3>
+                        <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">
-                            <iframe src="https://maps.google.com/maps?q=Habarana+Sri+Lanka&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div> --}}
+                            <iframe 
+  src="https://maps.google.com/maps?q=Habarana,+Sri+Lanka&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+  width="100%" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+                        </div>
 
                     </div>
                 </div>
