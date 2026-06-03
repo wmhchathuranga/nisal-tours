@@ -236,7 +236,7 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/bg/AdobeStock_633483820.jpeg') }}');">
+                        style="background-image: url('{{ asset('assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.webp') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
                             <h3>Emerald Hills</h3>
@@ -256,7 +256,7 @@
                     </div>
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/kandy.jpg') }}');">
+                        style="background-image: url('{{ asset('assets/img/explore/1000_F_364951258_xLzCW41kr5AV7OXdVv49ufv6u0XL3nqq.jpg') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
                             <h3>Ancient Artistry</h3>
@@ -266,7 +266,7 @@
                     </div>
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}');">
+                        style="background-image: url('{{ asset('assets/img/explore/ocean-reef.jpg') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-water me-1"></i> Marine Life</span>
                             <h3>Vibrant Coral Reefs</h3>
@@ -286,7 +286,7 @@
                     </div>
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/bg/AdobeStock_633483820.jpeg') }}');">
+                        style="background-image: url('{{ asset('assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.webp') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
                             <h3>Emerald Hills</h3>
@@ -306,7 +306,7 @@
                     </div>
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/kandy.jpg') }}');">
+                        style="background-image: url('{{ asset('assets/img/explore/1000_F_364951258_xLzCW41kr5AV7OXdVv49ufv6u0XL3nqq.jpg') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
                             <h3>Ancient Artistry</h3>
@@ -316,7 +316,7 @@
                     </div>
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}');">
+                        style="background-image: url('{{ asset('assets/img/explore/ocean-reef.jpg') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-water me-1"></i> Marine Life</span>
                             <h3>Vibrant Coral Reefs</h3>
