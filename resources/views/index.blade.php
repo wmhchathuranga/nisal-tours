@@ -26,8 +26,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg"
-                            data-bg-src="assets/img/hero/1_nz4yQ6UA4FwF6tzR2NKC3g.webp">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/1_nz4yQ6UA4FwF6tzR2NKC3g.webp">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -64,7 +63,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/sebastian-latorre-qI6aWFDs7pY-unsplash.jpg">
+                        <div class="th-hero-bg"
+                            data-bg-src="assets/img/hero/sebastian-latorre-qI6aWFDs7pY-unsplash.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -93,6 +93,64 @@
 
     <style>
         /* Scoped Styles */
+
+        /* Wrapper styling to give room for the arrows so they don't overlap the first/last slides */
+        .story-swiper-wrapper {
+            position: relative;
+            padding: 0 40px;
+        }
+
+        /* Base styling for professional looking arrows */
+        .story-arrow-prev,
+        .story-arrow-next {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Adjusting the default swiper icon sizes inside the arrows */
+        .story-arrow-prev:after,
+        .story-arrow-next:after {
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        /* Hover effects matching the theme */
+        .story-arrow-prev:hover,
+        .story-arrow-next:hover {
+            /* background: #00d2ff; */
+            /* color: #000000; */
+            transform: scale(1.1);
+            /* border-color: #00d2ff; */
+        }
+
+        /* Positioning them outside the inner swiper track */
+        .story-arrow-prev {
+            left: -20px;
+        }
+
+        .story-arrow-next {
+            right: -20px;
+        }
+
+        /* Mobile Responsiveness: Hide arrows on small screens, rely on touch swipe */
+        @media (max-width: 768px) {
+            .story-swiper-wrapper {
+                padding: 0 10px;
+            }
+
+            .story-arrow-prev,
+            .story-arrow-next {
+                display: none;
+            }
+        }
+
         .sri-lanka-story-section {
             padding: 80px 0;
             background-color: #0c1524;
@@ -214,131 +272,157 @@
                 </h2>
                 <span class="sub-title">The Pearl of the Indian Ocean</span>
                 <p class="text-white mx-auto " style="text-align: center;text-indent: 250px;">
-                    Discover a land where extraordinary diversity unfolds within a single island. Sri Lanka offers an unparalleled blend of pristine beaches, lush mountains, ancient heritage, vibrant culture, and unforgettable wildlife experiences making it one of the world’s most captivating travel destinations.
+                    Discover a land where extraordinary diversity unfolds within a single island. Sri Lanka offers an
+                    unparalleled blend of pristine beaches, lush mountains, ancient heritage, vibrant culture, and
+                    unforgettable wildlife experiences making it one of the world’s most captivating travel
+                    destinations.
 
-Begin your journey along our sun-kissed coastline, where golden beaches meet the turquoise waters of the Indian Ocean. Surf the renowned waves of Arugam Bay, swim alongside sea turtles in Unawatuna, or witness magnificent blue whales off the shores of Mirissa.
+                    Begin your journey along our sun-kissed coastline, where golden beaches meet the turquoise waters of
+                    the Indian Ocean. Surf the renowned waves of Arugam Bay, swim alongside sea turtles in Unawatuna, or
+                    witness magnificent blue whales off the shores of Mirissa.
 
-Travel inland and experience a remarkable transformation of scenery. Within just a few hours, tropical landscapes give way to cool mist-covered mountains and endless tea plantations. Embark on the world-famous scenic train journey to Ella, explore the breathtaking beauty of Horton Plains National Park, and unwind amidst the charming colonial atmosphere of Nuwara Eliya.
+                    Travel inland and experience a remarkable transformation of scenery. Within just a few hours,
+                    tropical landscapes give way to cool mist-covered mountains and endless tea plantations. Embark on
+                    the world-famous scenic train journey to Ella, explore the breathtaking beauty of Horton Plains
+                    National Park, and unwind amidst the charming colonial atmosphere of Nuwara Eliya.
 
-For history and culture enthusiasts, Sri Lanka offers a journey through more than two millennia of civilization. Ascend the iconic Sigiriya, explore the sacred ancient cities of Anuradhapura and Polonnaruwa, and experience the spiritual and cultural heritage of Kandy, home to some of the island’s most treasured traditions.
+                    For history and culture enthusiasts, Sri Lanka offers a journey through more than two millennia of
+                    civilization. Ascend the iconic Sigiriya, explore the sacred ancient cities of Anuradhapura and
+                    Polonnaruwa, and experience the spiritual and cultural heritage of Kandy, home to some of the
+                    island’s most treasured traditions.
 
-Beyond its landscapes and monuments, Sri Lanka captivates visitors with its rich cultural heritage, colorful festivals, rhythmic traditional performances, and world-renowned cuisine. Above all, it is the warmth and hospitality of its people that leave a lasting impression, welcoming every traveler with genuine smiles and unforgettable experiences.
+                    Beyond its landscapes and monuments, Sri Lanka captivates visitors with its rich cultural heritage,
+                    colorful festivals, rhythmic traditional performances, and world-renowned cuisine. Above all, it is
+                    the warmth and hospitality of its people that leave a lasting impression, welcoming every traveler
+                    with genuine smiles and unforgettable experiences.
 
-Whether you seek adventure, relaxation, wildlife, culture, or luxury, Sri Lanka offers a unique journey unlike anywhere else in the world.
+                    Whether you seek adventure, relaxation, wildlife, culture, or luxury, Sri Lanka offers a unique
+                    journey unlike anywhere else in the world.
 
-Come and experience the wonder of Sri Lanka - where every destination tells a story, and every moment becomes a cherished memory.
+                    Come and experience the wonder of Sri Lanka - where every destination tells a story, and every
+                    moment becomes a cherished memory.
 
                 </p>
             </div>
+            <div class="story-swiper-wrapper position-relative">
 
-            <div class="swiper story-swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper story-swiper">
+                    <div class="swiper-wrapper">
 
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.webp') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
-                            <h3>Emerald Hills</h3>
-                            <p>Endless rolling hills covered in world-famous Ceylon tea, wrapped in morning mist in
-                                places like Nuwara Eliya and Ella.</p>
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.webp') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
+                                <h3>Emerald Hills</h3>
+                                <p>Endless rolling hills covered in world-famous Ceylon tea, wrapped in morning mist in
+                                    places like Nuwara Eliya and Ella.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/sigiriya.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-fort me-1"></i> Heritage</span>
+                                <h3>Sigiriya Rock</h3>
+                                <p>The majestic Lion Rock, an ancient palace and fortress standing tall above the
+                                    jungle,
+                                    boasting incredible ancient engineering.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/HD-wallpaper-dalada-maligawa-buddha-iphone-kandy-lanka-mobile-srilanka-srilankan-temple.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
+                                <h3>Ancient Artistry</h3>
+                                <p>Discover centuries-old intricate wood carvings at Embekke and the living traditions
+                                    of
+                                    the sacred city of Kandy.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/ocean-reef.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-water me-1"></i> Marine Life</span>
+                                <h3>Vibrant Coral Reefs</h3>
+                                <p>Dive into the colorful underwater worlds of Pigeon Island and Hikkaduwa, teeming with
+                                    exotic marine biodiversity.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/Yala National Park.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-camera me-1"></i> Wildlife</span>
+                                <h3>Untamed Wilderness</h3>
+                                <p>Experience thrilling safaris in Yala and Wilpattu, home to majestic elephants,
+                                    elusive
+                                    leopards, and exotic birds.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.webp') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
+                                <h3>Emerald Hills</h3>
+                                <p>Endless rolling hills covered in world-famous Ceylon tea, wrapped in morning mist in
+                                    places like Nuwara Eliya and Ella.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/sigiriya.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-fort me-1"></i> Heritage</span>
+                                <h3>Sigiriya Rock</h3>
+                                <p>The majestic Lion Rock, an ancient palace and fortress standing tall above the
+                                    jungle,
+                                    boasting incredible ancient engineering.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/HD-wallpaper-dalada-maligawa-buddha-iphone-kandy-lanka-mobile-srilanka-srilankan-temple.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
+                                <h3>Ancient Artistry</h3>
+                                <p>Discover centuries-old intricate wood carvings at Embekke and the living traditions
+                                    of
+                                    the sacred city of Kandy.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/ocean-reef.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-water me-1"></i> Marine Life</span>
+                                <h3>Vibrant Coral Reefs</h3>
+                                <p>Dive into the colorful underwater worlds of Pigeon Island and Hikkaduwa, teeming with
+                                    exotic marine biodiversity.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/Yala National Park.jpg') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-camera me-1"></i> Wildlife</span>
+                                <h3>Untamed Wilderness</h3>
+                                <p>Experience thrilling safaris in Yala and Wilpattu, home to majestic elephants,
+                                    elusive
+                                    leopards, and exotic birds.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/sigiriya.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-fort me-1"></i> Heritage</span>
-                            <h3>Sigiriya Rock</h3>
-                            <p>The majestic Lion Rock, an ancient palace and fortress standing tall above the jungle,
-                                boasting incredible ancient engineering.</p>
-                        </div>
-                    </div>
 
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/HD-wallpaper-dalada-maligawa-buddha-iphone-kandy-lanka-mobile-srilanka-srilankan-temple.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
-                            <h3>Ancient Artistry</h3>
-                            <p>Discover centuries-old intricate wood carvings at Embekke and the living traditions of
-                                the sacred city of Kandy.</p>
-                        </div>
-                    </div>
 
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/ocean-reef.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-water me-1"></i> Marine Life</span>
-                            <h3>Vibrant Coral Reefs</h3>
-                            <p>Dive into the colorful underwater worlds of Pigeon Island and Hikkaduwa, teeming with
-                                exotic marine biodiversity.</p>
-                        </div>
-                    </div>
 
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/Yala National Park.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-camera me-1"></i> Wildlife</span>
-                            <h3>Untamed Wilderness</h3>
-                            <p>Experience thrilling safaris in Yala and Wilpattu, home to majestic elephants, elusive
-                                leopards, and exotic birds.</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.webp') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
-                            <h3>Emerald Hills</h3>
-                            <p>Endless rolling hills covered in world-famous Ceylon tea, wrapped in morning mist in
-                                places like Nuwara Eliya and Ella.</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/sigiriya.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-fort me-1"></i> Heritage</span>
-                            <h3>Sigiriya Rock</h3>
-                            <p>The majestic Lion Rock, an ancient palace and fortress standing tall above the jungle,
-                                boasting incredible ancient engineering.</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/HD-wallpaper-dalada-maligawa-buddha-iphone-kandy-lanka-mobile-srilanka-srilankan-temple.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
-                            <h3>Ancient Artistry</h3>
-                            <p>Discover centuries-old intricate wood carvings at Embekke and the living traditions of
-                                the sacred city of Kandy.</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/ocean-reef.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-water me-1"></i> Marine Life</span>
-                            <h3>Vibrant Coral Reefs</h3>
-                            <p>Dive into the colorful underwater worlds of Pigeon Island and Hikkaduwa, teeming with
-                                exotic marine biodiversity.</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/Yala National Park.jpg') }}');">
-                        <div class="story-overlay">
-                            <span class="story-tag"><i class="fa-light fa-camera me-1"></i> Wildlife</span>
-                            <h3>Untamed Wilderness</h3>
-                            <p>Experience thrilling safaris in Yala and Wilpattu, home to majestic elephants, elusive
-                                leopards, and exotic birds.</p>
-                        </div>
-                    </div>
+                    {{-- <div class="swiper-pagination story-swiper-pagination"></div> --}}
                 </div>
-
-                
-
-
-                {{-- <div class="swiper-pagination story-swiper-pagination"></div> --}}
+                <div class="swiper-button-prev story-arrow-prev"></div>
+                <div class="swiper-button-next story-arrow-next"></div>
             </div>
         </div>
     </section>
@@ -370,11 +454,15 @@ Come and experience the wonder of Sri Lanka - where every destination tells a st
                         el: ".story-swiper-pagination",
                         clickable: true,
                     },
+                    
+                    navigation: {
+                        nextEl: '.story-arrow-next',
+                        prevEl: '.story-arrow-prev',
+                    },
                 });
             }
         });
     </script>
-
     {{-- about us section --}}
 
     <style>
