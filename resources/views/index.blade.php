@@ -26,7 +26,8 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/chathura-anuradha-subasinghe-40uQmE9Zq8g-unsplash.jpg">
+                        <div class="th-hero-bg"
+                            data-bg-src="assets/img/hero/chathura-anuradha-subasinghe-40uQmE9Zq8g-unsplash.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -213,24 +214,21 @@
                 </h2>
                 <span class="sub-title">The Pearl of the Indian Ocean</span>
                 <p class="text-white mx-auto " style="text-align: center;text-indent: 250px;">
-                    Because nowhere else on Earth can you experience so much magic, diversity, and adventure packed into
-                    one breathtaking island.
-                    Start your journey on our sun-drenched,
-                    palm-fringed shores-whether you are chasing the perfect surf break in the lively waters of Arugam
-                    Bay, swimming with sea turtles in Unawatuna, or watching majestic blue whales glide off the coast of
-                    Mirissa.
-                    Venture inland, and within just a few hours, the tropical heat gives way to the cool, misty tea
-                    hills of the central highlands. Take the world-famous, incredibly scenic train ride to Ella, hike
-                    through the emerald valleys of Horton Plains, and wake up to the rolling, romantic landscapes of
-                    Nuwara Eliya. Every turn reveals a new natural wonder.
-                    For history and culture lovers, stepping into Sri Lanka is like stepping back in time. Conquer the
-                    monumental rock fortress of Sigiriya (the 8th wonder of the world), cycle through the sacred,
-                    2,500-year-old ruins of Anuradhapura and Polonnaruwa, and discover the spiritual heart of the island
-                    in Kandy. Feel the pulse of our vibrant culture alive with rhythmic traditional drums, colorful
-                    festivals, and the irresistible flavors of rich, spicy local cuisine.
-                    Wrapped in ancient legends and enriched by the warmest, most welcoming smiles that make you feel
-                    instantly at home, this island is a treasure trove of experiences. Sri Lanka is more than just a
-                    holiday getaway-it’s an unforgettable adventure you simply must feel for yourself.
+                    Sri Lanka is a beautiful island packed with fun, magic, and different things to do. Start your trip
+                    on our sunny beaches. You can surf the great waves in Arugam Bay, swim with sea turtles in
+                    Unawatuna, or watch huge blue whales in Mirissa.
+
+                    Travel away from the beach, and in just a few hours, the hot weather turns into cool, foggy hills
+                    where tea grows. Take the famous, beautiful train ride to Ella, hike through the green valleys of
+                    Horton Plains, and wake up to the pretty hills of Nuwara Eliya. Everywhere you look, there is
+                    something beautiful to see in nature.
+
+                    If you love history, visiting Sri Lanka is like going back in time. Climb the huge rock of Sigiriya
+                    (often called the 8th wonder of the world), ride a bike through the very old ruins of Anuradhapura
+                    and Polonnaruwa, and visit Kandy to see the island's important temples. Enjoy our lively culture
+                    with traditional drums, fun festivals, and tasty, spicy local food. With old stories and friendly,
+                    smiling people who make you feel right at home, this island is full of great experiences. Sri Lanka
+                    is more than just a normal vacation-it is an adventure you will never forget.
                 </p>
             </div>
 
@@ -764,7 +762,8 @@
                     Beaches</button>
                 <button class="glass-filter-btn" data-filter="safari"><i class="fas fa-truck-monster"></i>
                     Safari</button>
-                <button class="glass-filter-btn" data-filter="activities"><i class="fa-duotone fa-person-walking"></i>
+                <button class="glass-filter-btn" data-filter="activities"><i
+                        class="fa-duotone fa-person-walking"></i>
                     Activities</button>
                 {{-- <button class="glass-filter-btn" data-filter="ayuruwedic"><i class="fa-duotone fa-leaf"></i>
                     Ayuruwedic</button> --}}
@@ -1999,9 +1998,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image"
-                            src="{{ asset('assets/img/2151443699.jpg') }}"
-                            alt="Coral Watching">
+                        <img class="bg-image" src="{{ asset('assets/img/2151443699.jpg') }}" alt="Coral Watching">
                         <div class="destination-content">
                             <h3 class="title">
                                 <a href="{{ route('documentry', ['doc_id' => '46']) }}">Coral Watching</a>
@@ -2885,18 +2882,18 @@
 
 
     <script>
-//         $(document).ready(function() {
-//     const savedFilter = localStorage.getItem('activeTab');
+        //         $(document).ready(function() {
+        //     const savedFilter = localStorage.getItem('activeTab');
 
-//     if (savedFilter) {
-//         $('.glass-filter-btn').removeClass('active');
+        //     if (savedFilter) {
+        //         $('.glass-filter-btn').removeClass('active');
 
-//         const targetBtn = $(`.glass-filter-btn[data-filter="${savedFilter}"]`);
-//         targetBtn.addClass('active');
+        //         const targetBtn = $(`.glass-filter-btn[data-filter="${savedFilter}"]`);
+        //         targetBtn.addClass('active');
 
-        
-//     }
-// });
+
+        //     }
+        // });
         document.addEventListener("DOMContentLoaded", function() {
             var swiper = new Swiper(".nh-swiper", {
                 slidesPerView: 1,
@@ -3191,22 +3188,22 @@
 
         });
         $(document).ready(function() {
-    // Save karapu value eka ganna
-    const savedFilter = localStorage.getItem('activeTab');
+            // Save karapu value eka ganna
+            const savedFilter = localStorage.getItem('activeTab');
 
-    if (savedFilter) {
-        // 1. Serama buttons walin 'active' class eka ain karanna
-        $('.glass-filter-btn').removeClass('active');
+            if (savedFilter) {
+                // 1. Serama buttons walin 'active' class eka ain karanna
+                $('.glass-filter-btn').removeClass('active');
 
-        // 2. Save karapu button ekata 'active' class eka add karanna
-        const targetBtn = $(`.glass-filter-btn[data-filter="${savedFilter}"]`);
-        targetBtn.addClass('active');
+                // 2. Save karapu button ekata 'active' class eka add karanna
+                const targetBtn = $(`.glass-filter-btn[data-filter="${savedFilter}"]`);
+                targetBtn.addClass('active');
 
-        // 3. Filter logic eka run karanna (oya usage eka anuwa meka wenas wewi)
-        // eg: targetBtn.trigger('click'); 
-        // nathnam oyaaga filter function eka call karanna: filterItems(savedFilter);
-    }
-});
+                // 3. Filter logic eka run karanna (oya usage eka anuwa meka wenas wewi)
+                // eg: targetBtn.trigger('click'); 
+                // nathnam oyaaga filter function eka call karanna: filterItems(savedFilter);
+            }
+        });
     </script>
 
     <!--========== Footer Area ==========-->
