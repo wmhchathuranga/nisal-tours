@@ -1681,7 +1681,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/kandy.jpg') }}" alt="Kandy Temple">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/1000_F_364951258_xLzCW41kr5AV7OXdVv49ufv6u0XL3nqq.jpg') }}" alt="Kandy Temple">
                         <div class="destination-content">
                             <h3 class="title">
                                 <a href="{{ route('documentry', ['doc_id' => '03']) }}">Kandy Temple (Dalada
