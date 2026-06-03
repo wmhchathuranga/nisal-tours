@@ -26,7 +26,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/1_nz4yQ6UA4FwF6tzR2NKC3g.webp">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/pexels-rajee-kumar-1029496084-33130315.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -363,6 +363,16 @@
                         </div>
 
                         <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/demodara-nine-arch-bridge-ella-sri-lanka_131985-429.avif') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-landmark me-1"></i> Iconic Landmark</span>
+                                <h3>Architectural Marvel</h3>
+                                <p>Witness the stunning Nine Arches Bridge in Ella, a spectacular colonial-era railway
+                                    viaduct hidden amidst lush green tea plantations.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide story-slide"
                             style="background-image: url('{{ asset('assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.webp') }}');">
                             <div class="story-overlay">
                                 <span class="story-tag"><i class="fa-light fa-leaf me-1"></i> Nature</span>
@@ -414,6 +424,17 @@
                                     leopards, and exotic birds.</p>
                             </div>
                         </div>
+
+                        <div class="swiper-slide story-slide"
+                            style="background-image: url('{{ asset('assets/img/explore/demodara-nine-arch-bridge-ella-sri-lanka_131985-429.avif') }}');">
+                            <div class="story-overlay">
+                                <span class="story-tag"><i class="fa-light fa-landmark me-1"></i> Iconic
+                                    Landmark</span>
+                                <h3>Architectural Marvel</h3>
+                                <p>Witness the stunning Nine Arches Bridge in Ella, a spectacular colonial-era railway
+                                    viaduct hidden amidst lush green tea plantations.</p>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -454,7 +475,7 @@
                         el: ".story-swiper-pagination",
                         clickable: true,
                     },
-                    
+
                     navigation: {
                         nextEl: '.story-arrow-next',
                         prevEl: '.story-arrow-prev',
