@@ -27,7 +27,7 @@
                 <div class="swiper-slide">
                     <div class="hero-inner">
                         <div class="th-hero-bg"
-                            data-bg-src="assets/img/hero/chathura-anuradha-subasinghe-40uQmE9Zq8g-unsplash.jpg">
+                            data-bg-src="assets/img/hero/1_nz4yQ6UA4FwF6tzR2NKC3g.webp">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/wp4359143-sri-lanka-4k-wallpapers.jpg">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/sebastian-latorre-qI6aWFDs7pY-unsplash.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -214,21 +214,20 @@
                 </h2>
                 <span class="sub-title">The Pearl of the Indian Ocean</span>
                 <p class="text-white mx-auto " style="text-align: center;text-indent: 250px;">
-                    Sri Lanka is a beautiful island packed with fun, magic, and different things to do. Start your trip
-                    on our sunny beaches. You can surf the great waves in Arugam Bay, swim with sea turtles in
-                    Unawatuna, or watch huge blue whales in Mirissa.
+                    Discover a land where extraordinary diversity unfolds within a single island. Sri Lanka offers an unparalleled blend of pristine beaches, lush mountains, ancient heritage, vibrant culture, and unforgettable wildlife experiences making it one of the world’s most captivating travel destinations.
 
-                    Travel away from the beach, and in just a few hours, the hot weather turns into cool, foggy hills
-                    where tea grows. Take the famous, beautiful train ride to Ella, hike through the green valleys of
-                    Horton Plains, and wake up to the pretty hills of Nuwara Eliya. Everywhere you look, there is
-                    something beautiful to see in nature.
+Begin your journey along our sun-kissed coastline, where golden beaches meet the turquoise waters of the Indian Ocean. Surf the renowned waves of Arugam Bay, swim alongside sea turtles in Unawatuna, or witness magnificent blue whales off the shores of Mirissa.
 
-                    If you love history, visiting Sri Lanka is like going back in time. Climb the huge rock of Sigiriya
-                    (often called the 8th wonder of the world), ride a bike through the very old ruins of Anuradhapura
-                    and Polonnaruwa, and visit Kandy to see the island's important temples. Enjoy our lively culture
-                    with traditional drums, fun festivals, and tasty, spicy local food. With old stories and friendly,
-                    smiling people who make you feel right at home, this island is full of great experiences. Sri Lanka
-                    is more than just a normal vacation-it is an adventure you will never forget.
+Travel inland and experience a remarkable transformation of scenery. Within just a few hours, tropical landscapes give way to cool mist-covered mountains and endless tea plantations. Embark on the world-famous scenic train journey to Ella, explore the breathtaking beauty of Horton Plains National Park, and unwind amidst the charming colonial atmosphere of Nuwara Eliya.
+
+For history and culture enthusiasts, Sri Lanka offers a journey through more than two millennia of civilization. Ascend the iconic Sigiriya, explore the sacred ancient cities of Anuradhapura and Polonnaruwa, and experience the spiritual and cultural heritage of Kandy, home to some of the island’s most treasured traditions.
+
+Beyond its landscapes and monuments, Sri Lanka captivates visitors with its rich cultural heritage, colorful festivals, rhythmic traditional performances, and world-renowned cuisine. Above all, it is the warmth and hospitality of its people that leave a lasting impression, welcoming every traveler with genuine smiles and unforgettable experiences.
+
+Whether you seek adventure, relaxation, wildlife, culture, or luxury, Sri Lanka offers a unique journey unlike anywhere else in the world.
+
+Come and experience the wonder of Sri Lanka - where every destination tells a story, and every moment becomes a cherished memory.
+
                 </p>
             </div>
 
@@ -256,7 +255,7 @@
                     </div>
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/1000_F_364951258_xLzCW41kr5AV7OXdVv49ufv6u0XL3nqq.jpg') }}');">
+                        style="background-image: url('{{ asset('assets/img/explore/HD-wallpaper-dalada-maligawa-buddha-iphone-kandy-lanka-mobile-srilanka-srilankan-temple.jpg') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
                             <h3>Ancient Artistry</h3>
@@ -306,7 +305,7 @@
                     </div>
 
                     <div class="swiper-slide story-slide"
-                        style="background-image: url('{{ asset('assets/img/explore/1000_F_364951258_xLzCW41kr5AV7OXdVv49ufv6u0XL3nqq.jpg') }}');">
+                        style="background-image: url('{{ asset('assets/img/explore/HD-wallpaper-dalada-maligawa-buddha-iphone-kandy-lanka-mobile-srilanka-srilankan-temple.jpg') }}');">
                         <div class="story-overlay">
                             <span class="story-tag"><i class="fa-light fa-gavel me-1"></i> Craftsmanship</span>
                             <h3>Ancient Artistry</h3>
@@ -336,7 +335,7 @@
                     </div>
                 </div>
 
-
+                
 
 
                 {{-- <div class="swiper-pagination story-swiper-pagination"></div> --}}
