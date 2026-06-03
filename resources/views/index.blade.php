@@ -26,7 +26,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_2.jpg">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/chathura-anuradha-subasinghe-40uQmE9Zq8g-unsplash.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_3.jpg">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/wp4359143-sri-lanka-4k-wallpapers.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
