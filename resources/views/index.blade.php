@@ -629,7 +629,7 @@
 
     <section class="about-section">
         <div class="about-image">
-            <img src="{{ asset('assets/img/bg/AdobeStock_633483820.jpeg') }}" alt="Sri Lanka Tea Plantation">
+            <img src="{{ asset('assets/img/bg/wp8780766-tea-estate-wallpapers.jpg') }}" style="width: 150%; height: 150%; object-fit: cover; " alt="Sri Lanka Tea Plantation">
         </div>
 
         <div class="about-content">
@@ -1469,7 +1469,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/explore/steptodown.com175855.jpg') }}"
                             alt="Ella Rock">
                         <div class="destination-content">
                             <h3 class="title">

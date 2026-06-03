@@ -17,14 +17,14 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/documentary/doc-05/ella-4788958_19201.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/explore/steptodown.com923176.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Ella Rock</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Ella</li>
+                <li>Ella Rock</li>
             </ul>
         </div>
     </div>
@@ -234,77 +234,76 @@ Documentary Details Area
 
                         <!-- Meta -->
                         <div class="page-meta mb-30">
-                            <a class="page-tag" href="#">Hill Country</a>
+                            <a class="page-tag" href="#">Trekking & Hiking</a>
                             <span class="ratting">
                                 <i class="fa-solid fa-mountain"></i>
-                                <span>Nature Escape</span>
+                                <span>Mountain Summit</span>
                             </span>
                         </div>
 
                         <!-- Title -->
                         <h2 class="box-title mb-20">
-                            Ella – A Scenic Hill Country Retreat
+                            Ella Rock – The Ultimate Highland Trek
                         </h2>
 
                         <!-- Intro -->
                         <p class="box-text mb-30">
-                            Ella is a charming hill town nestled deep within Sri Lanka’s central highlands, globally renowned for its wonderfully cool climate, ever-present misty mountain peaks, and absolutely breathtaking panoramic landscapes. It is not just a travel destination; it is an entirely different world. As you ascend into the Uva Province, the heavy tropical heat of the coast is instantly replaced by a crisp, refreshing mountain breeze, setting the perfect tone for a tranquil and rejuvenating escape.
+                            Towering majestically over the picturesque village of Ella, Ella Rock is one of Sri Lanka’s most rewarding and famous hiking destinations. Unlike the gentle slopes of nearby viewpoints, the trek to the summit of Ella Rock is a thrilling adventure that demands a bit of stamina but promises unparalleled rewards. Standing at the edge of the cliff, you are treated to a jaw-dropping, sweeping panorama of the famous Ella Gap, plunging valleys, and distant mountain ranges that feel like the top of the world.
                         </p>
 
                         <p class="box-text mb-30">
-                            Often described as a little piece of paradise on earth, Ella feels exactly like stepping into a living postcard. The town is completely surrounded by endless, rolling carpets of lush green tea plantations, deep plunging valleys, and majestic pine forests. Everywhere you look, you are greeted by the sight of cascading waterfalls, vibrant wildflowers, and towering green peaks that seem to seamlessly blend into the dramatic, cloud-filled skies above. 
+                            The journey to the summit is just as mesmerizing as the destination itself. The hike kicks off with a unique, scenic walk along the active railway tracks—a quintessential Sri Lankan experience. As you diverge from the tracks, the trail weaves through peaceful rural farming communities, cascading waterfalls, vast green tea plantations, and eventually into a dense, fragrant eucalyptus and pine forest. The steep, final ascent through the trees builds anticipation before finally opening up to the dramatic, unobstructed summit.
                         </p>
 
                         <p class="box-text mb-40">
-                            Beyond its undeniable natural beauty, Ella offers the absolute perfect blend of laid-back relaxation and thrilling outdoor adventure. Whether your ideal day involves conquering world-class hiking trails at sunrise, exploring iconic colonial-era landmarks hidden in the jungle, or simply sitting on a quiet balcony sipping a freshly brewed cup of world-renowned Ceylon tea while gazing out at the magnificent Ella Gap, this highland retreat promises a truly unforgettable, soul-soothing experience for every type of traveler.
+                            Completing the Ella Rock hike is an absolute must-do for nature lovers and thrill-seekers visiting the Hill Country. Taking roughly 3 to 4 hours for a round trip, it provides the perfect mix of physical challenge and serene natural beauty. Standing on the rocky precipice as the morning mist clears away, looking straight across at Little Adam's Peak, is an unforgettable experience that perfectly captures the untamed spirit of Sri Lanka's highlands.
                         </p>
 
                         <!-- Key Facts -->
-                        <h3 class="box-title">Key Facts</h3>
+                        <h3 class="box-title">Key Trail Facts</h3>
                         <div class="destination-checklist mb-50">
                             <div class="checklist style2">
                                 <ul>
                                     <li>Location</li>
-                                    <li>Elevation</li>
-                                    <li>Climate</li>
-                                    <li>Main Attractions</li>
-                                    <li>Best For</li>
+                                    <li>Summit Elevation</li>
+                                    <li>Hike Duration</li>
+                                    <li>Difficulty Level</li>
+                                    <li>Best Time to Hike</li>
                                 </ul>
                             </div>
                             <div class="checklist style2">
                                 <ul>
-                                    <li>Badulla District, Uva Province</li>
-                                    <li>1,041 m (3,415 ft)</li>
-                                    <li>Cool, Misty & Invigorating</li>
-                                    <li>Nine Arch Bridge & Ella Rock</li>
-                                    <li>Hiking, Photography & Nature</li>
+                                    <li>Starts from Ella / Kithalella Station</li>
+                                    <li>Approx. 1,350 m (4,430 ft)</li>
+                                    <li>3 - 4 Hours (Round trip)</li>
+                                    <li>Moderate to Challenging</li>
+                                    <li>Early Morning (6:00 AM - 8:00 AM)</li>
                                 </ul>
                             </div>
                         </div>
 
                         <!-- Landscape -->
-                        <h3 class="box-title">Landscape & Scenery</h3>
+                        <h3 class="box-title">The Trail & Scenery</h3>
                         <p class="box-text mb-40">
-                            The geographical beauty of Ella is defined by its dramatically rolling hills, plunging deep valleys, and vast, vibrant green tea estates that seem to stretch on forever. The famous "Ella Gap" offers a stunning vantage point that, on a clear day, allows you to see all the way across the southern plains to the coast. Whether you are embarking on early morning sunrise hikes as the mist slowly clears, or taking in the scenery from a hillside café, the dramatic landscape makes Ella undeniably one of Sri Lanka’s most enchanting and photogenic destinations.
+                            The route to Ella Rock is beautifully diverse. You will transition from the flat, open spaces of the railway line to narrow dirt paths cutting through tall mana grass. As you gain elevation, the landscape transforms into a cool, shaded canopy of tall pine and eucalyptus trees. The summit itself is a dramatic, rocky outcrop with a sheer drop, offering a breathtaking 360-degree vantage point. From here, you can gaze directly down into the Ella Gap, across to Little Adam’s Peak, and on clear days, all the way to the southern plains of the island.
                         </p>
 
                         <!-- Highlights -->
-                        <h3 class="box-title">Highlights</h3>
+                        <h3 class="box-title">Trail Highlights</h3>
                         <div class="checklist mb-50">
                             <ul>
-                                <li><strong>Nine Arch Bridge:</strong> The iconic colonial-era railway bridge hidden deep in the lush jungle.</li>
-                                <li><strong>Little Adam’s Peak:</strong> A rewarding yet accessible sunrise hike offering 360-degree panoramic views.</li>
-                                <li><strong>Ella Rock:</strong> A challenging, scenic trek through local villages and pine forests with spectacular summit vistas.</li>
-                                <li><strong>Ravana Falls:</strong> A massive, multi-tiered cascading waterfall steeped in ancient Ramayana legends.</li>
-                                <li><strong>Lipton's Seat:</strong> A spectacular viewpoint offering a glimpse into the rich history of Ceylon tea.</li>
-                                <li><strong>Scenic Tea Estates:</strong> Endless trails through terraced tea plantations perfect for peaceful strolls.</li>
+                                <li><strong>The Railway Walk:</strong> A unique start to the journey, walking alongside the scenic tracks from Ella to Kithalella station.</li>
+                                <li><strong>Kithalella Waterfall:</strong> A serene, hidden cascade you pass shortly after leaving the railway tracks.</li>
+                                <li><strong>Tea Estates & Villages:</strong> Trekking through authentic rural landscapes and vibrant green tea bushes.</li>
+                                <li><strong>The Pine Forest:</strong> A steep but deeply atmospheric woodland climb that provides much-needed shade before the summit.</li>
+                                <li><strong>The Summit View:</strong> The ultimate reward—standing on the dramatic cliff edge with uninterrupted views of the Ella Gap.</li>
                             </ul>
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Ella</h3>
+                        <h3 class="box-title">Tips for the Hike</h3>
                         <p class="box-text mb-50">
-                            Ella is a fantastic destination that can be visited year-round, though the absolute best weather typically falls between January and May when the skies are clearest. Early mornings are highly recommended for outdoor activities and hiking to avoid the thick afternoon mist and occasional rain showers. Getting there is half the magic; the famous train ride from Kandy or Nanu Oya to Ella weaves through majestic clouds, dense pine forests, and historic tea factories, and is widely celebrated by travelers and photographers as one of the most beautifully scenic rail journeys in the entire world.
+                            To get the most out of your Ella Rock adventure, it is highly recommended to start your hike early in the morning, ideally around 6:00 AM or 7:00 AM. This helps you beat the midday tropical heat and reach the summit before the afternoon mist completely covers the sweeping views. Since the trail can sometimes be confusing with multiple branching paths made by farmers, using an offline map (like Maps.me) or hiring a local guide is a smart idea. Don't forget to wear proper hiking shoes, carry plenty of water, and bring some salt or balm, as leeches can be present during the rainy season!
                         </p>
 
                         <!-- Map -->
@@ -312,7 +311,7 @@ Documentary Details Area
                         <div class="mb-10">
                             <div class="ratio ratio-16x9 rounded overflow-hidden">
                                 <iframe
-                                    src="https://www.google.com/maps?q=Ella+Sri+Lanka&output=embed"
+                                    src="https://www.google.com/maps?q=Ella+Rock+Sri+Lanka&output=embed"
                                     style="border:0;"
                                     allowfullscreen
                                     loading="lazy">
