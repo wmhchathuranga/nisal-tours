@@ -232,10 +232,10 @@ Documentary Details Area
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Nuwara Eliya</h3>
+                        {{-- <h3 class="box-title">Visiting Nuwara Eliya</h3>
                         <p class="box-text mb-30">
                             Nuwara Eliya can be visited year-round, but the town truly comes alive during the "April Season" (Wasantha Udanaya). During this time, the weather is beautifully crisp, flowers are in full bloom, and the city hosts lively events, horse races, and motor crosses. However, if you prefer a quieter, more tranquil experience, visiting between December and March offers great weather with far fewer crowds. 
-                        </p>
+                        </p> --}}
                         
                         <p class="box-text mb-50">
                             Because the temperature can drop significantly, especially at night (sometimes close to freezing), it is essential to pack warm clothing, including thick jackets, sweaters, and comfortable walking shoes. The most magical way to reach Nuwara Eliya is by taking the world-famous scenic train ride from Kandy or Ella, getting off at the nearby Nanu Oya railway station, and taking a short, winding drive into the city.

@@ -236,10 +236,10 @@ Documentary Details Area
                         </p>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Kandy Today</h3>
+                        {{-- <h3 class="box-title">Kandy Today</h3>
                         <p class="box-text mb-50">
                             Today, Kandy seamlessly weaves its majestic history into the fabric of modern, bustling city life. Travelers can spend their days wandering through vibrant local markets filled with spices and brassware, enjoying peaceful hikes in the Udawatta Kele Sanctuary (a historic forest reserve located just behind the temple), or watching a thrilling, acrobatic Kandyan cultural dance show in the evening. When visiting the Temple of the Tooth and other sacred sites, remember that strict dress codes apply-modest clothing covering the shoulders and knees is mandatory, and wearing white is highly appreciated.
-                        </p>
+                        </p> --}}
 
                         <!-- Map View -->
                         <h3 class="box-title">Location Map</h3>

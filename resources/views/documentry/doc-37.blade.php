@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Minneriya</h3>
+                        {{-- <h3 class="box-title">Visiting Minneriya</h3>
                         <p class="box-text mb-30">
                             To experience the absolute best of the Elephant Gathering, you must time your safari perfectly. The ultimate time to enter the park is in the late afternoon, around 3:00 PM. As the intense midday heat begins to cool, the elephant herds slowly emerge from the thick jungle shade and make their way to the grassy reservoir banks to bathe and eat. Staying until 6:00 PM allows you to witness a glorious, golden sunset behind hundreds of silhouettes of wild elephants.
                         </p>
 
                         <p class="box-text mb-50">
                             You will need to hire a registered 4x4 safari jeep from the park entrance or the nearby town of Habarana. Because you will be driving through dry, open plains, it can get incredibly dusty and windy. Wearing sunglasses, a secure hat, and comfortable cotton clothing is highly recommended. Please remember to respect the wildlife-never encourage your driver to get too close to the elephant herds, especially the highly protective mothers with their tiny calves.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

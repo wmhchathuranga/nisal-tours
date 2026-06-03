@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Lipton Seat</h3>
+                        {{-- <h3 class="box-title">Visiting Lipton Seat</h3>
                         <p class="box-text mb-30">
                             Timing is absolutely everything when visiting Lipton Seat. You must aim to reach the summit by 6:00 AM or 6:30 AM at the latest. After 8:00 AM, a thick blanket of white mist usually rolls in very quickly from the valleys, completely obscuring the spectacular views. You can reach the top by hiring a local Tuk-Tuk from Haputale town, which takes you on a thrilling, bumpy ride through the narrow estate roads. 
                         </p>
                         
                         <p class="box-text mb-50">
                             For the more adventurous, you can take a Tuk-Tuk up to the Dambatenne Tea Factory and hike the remaining 7 kilometers to the summit. The hike is moderately challenging but deeply rewarding, offering crisp mountain air and stunning photo opportunities. Make sure to wear warm clothing, as the early morning winds at this altitude can be piercingly cold. There is a small entrance fee to access the viewpoint, which goes towards the maintenance of the estate.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

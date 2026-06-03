@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Seetha Amman Kovil</h3>
+                        {{-- <h3 class="box-title">Visiting Seetha Amman Kovil</h3>
                         <p class="box-text mb-30">
                             The temple is conveniently located right along the main Nuwara Eliya - Badulla highway, making it an extremely easy stop if you are traveling towards Hakgala Botanical Gardens or Ella. The climate here is typical of Nuwara Eliya-often chilly, misty, and prone to sudden light showers, so bringing a warm sweater or a light jacket is highly recommended. 
                         </p>
 
                         <p class="box-text mb-50">
                             As this is a venerated Hindu place of worship, a modest dress code is required. Visitors should wear clothing that covers their shoulders and knees. You will need to take off your shoes before entering the temple, and the tiled floor can sometimes be quite cold due to the highland weather, so wearing socks is a good idea. The temple priests are very welcoming and often offer a small holy thread (pooja) or blessing to visitors regardless of their religion.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

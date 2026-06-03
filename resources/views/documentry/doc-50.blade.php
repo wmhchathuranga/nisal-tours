@@ -194,14 +194,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Trincomalee</h3>
+                        {{-- <h3 class="box-title">Visiting Trincomalee</h3>
                         <p class="box-text mb-30">
                             The best time to visit the East Coast is during the dry season, from May to September. During these months, the ocean is calm, the skies are brilliant blue, and the weather is perfect for all marine activities. From November to March, the region experiences the North-Eastern monsoon, which brings rougher seas and higher chances of rain, making it less ideal for beach activities.
                         </p>
 
                         <p class="box-text mb-50">
                             Trincomalee is easily accessible via the main highway from Colombo, or by taking a scenic domestic flight or seaplane for a faster, more luxurious arrival. The sun in Trinco can be extremely intense, so ensure you have strong sunscreen, a good hat, and UV-protection sunglasses. Whether you choose to stay at a luxury beach resort in Nilaveli or a cozy boutique guesthouse in Trinco town, you are guaranteed a memorable coastal escape.
-                        </p>
+                        </p> --}}
 
                         <!-- Location Map -->
                         <h3 class="box-title">Location Map</h3>

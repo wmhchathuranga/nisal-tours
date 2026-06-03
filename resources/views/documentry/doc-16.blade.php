@@ -178,10 +178,10 @@
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Kataragama</h3>
+                        {{-- <h3 class="box-title">Visiting Kataragama</h3>
                         <p class="box-text mb-50">
                             When visiting Kataragama, it is customary to bathe in the Menik Ganga to purify oneself before entering the main temple complex. As this is a highly revered sacred site, visitors are required to dress modestly-shoulders and knees must be covered, and white clothing is traditionally preferred. Please ensure you remove your shoes before entering any shrine area. Small stalls outside the complex sell beautifully arranged *puja* trays with fruits and flowers for offerings. Be prepared for a deep spiritual atmosphere, and if visiting during the Esala festival, expect the city to be packed with thousands of devout pilgrims.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

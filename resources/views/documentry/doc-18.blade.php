@@ -184,14 +184,14 @@
                             </div>
 
                             <!-- Visiting Info -->
-                            <h3 class="box-title">Visiting Sri Paada</h3>
+                            {{-- <h3 class="box-title">Visiting Sri Paada</h3>
                             <p class="box-text mb-30">
                                 The official and safest pilgrimage season begins on the Unduvap Poya day in December and concludes on the Vesak Poya day in May. During these vibrant months, the entire pathway is beautifully illuminated with a continuous string of lights that looks like a glowing necklace draped over the mountain. The trail is lined with small, bustling stalls providing hot tea, snacks, and herbal remedies to rejuvenate weary climbers. The most popular route from Hatton involves climbing around 5,500 incredibly steep steps.
                             </p>
 
                             <p class="box-text mb-50">
                                 Most travelers begin their ascent around midnight to reach the peak just in time for the 6:00 AM dawn. It is highly recommended to dress strategically in layers; while you will sweat profusely during the intense climb, the summit is notoriously freezing, windy, and exposed. Climbing out of season (June to November) is possible for hardcore adventurers but is generally not recommended for regular tourists due to torrential rains, extreme winds, aggressive leeches, unlit pathways, and the occasional presence of wild elephants crossing the trails.
-                            </p>
+                            </p> --}}
 
                             <!-- Map -->
                             <h3 class="box-title">Location Map</h3>

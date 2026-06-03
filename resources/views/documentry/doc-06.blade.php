@@ -313,10 +313,10 @@ Documentary Details Area
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Yala</h3>
+                        {{-- <h3 class="box-title">Visiting Yala</h3>
                         <p class="box-text mb-30">
                             The best time to visit Yala is during the dry season (February to June), when the jungle thins out and animals are forced to congregate around the remaining water sources, making them much easier to spot. Jeep safaris (early morning or late afternoon) are the only way to explore the park, providing safe and intimate encounters while strictly following park conservation rules.
-                        </p>
+                        </p> --}}
                         
                         <p class="box-text mb-50">
                             When visiting Yala, patience is key. The elusive leopard does not follow a schedule, and the thrill of the safari is the anticipation. Always choose a registered jeep and a professional tracker who understands animal behavior; they are experts at reading the signs of the jungle-like the alarm calls of langur monkeys-to locate the predators hidden in the thick brush.

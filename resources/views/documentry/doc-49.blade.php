@@ -206,14 +206,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Sinharaja</h3>
+                        {{-- <h3 class="box-title">Visiting Sinharaja</h3>
                         <p class="box-text mb-30">
                             Because Sinharaja is a primary rainforest, it experiences frequent rainfall throughout the year, which is what keeps it so lush and green. The best time to visit is during the "dryer" months (January to March or August to September), though you should always be prepared for sudden tropical showers. 
                         </p>
 
                         <p class="box-text mb-50">
                             Trekking in Sinharaja is a very physical, earthy experience. It is absolutely essential to wear high-quality, comfortable trekking shoes with a good grip (the trails can be very slippery and muddy). You must wear long trousers and long-sleeved shirts, not only to protect yourself from scratches but also to prevent leeches-a common but harmless part of the rainforest experience. Always hire a knowledgeable local guide at the entrance gate; they have an incredible ability to spot well-camouflaged snakes, chameleons, and birds that you would otherwise never notice in the dense greenery!
-                        </p>
+                        </p> --}}
 
                         <!-- Location Map -->
                         <h3 class="box-title">Location Map</h3>

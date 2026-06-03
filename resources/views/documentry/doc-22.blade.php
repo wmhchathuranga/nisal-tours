@@ -194,10 +194,10 @@
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Yala</h3>
+                        {{-- <h3 class="box-title">Visiting Yala</h3>
                         <p class="box-text mb-50">
                             To experience Yala, you need to book a guided jeep safari, usually departing from Tissamaharama or Palatupana. The best times for wildlife viewing are early morning (starting at 6 AM) and late afternoon when the animals are most active. It gets very dusty and hot, so wear comfortable, earthy-toned clothing and bring plenty of water. Remember to maintain silence so you don't startle the animals, and always follow your tracker's instructions. Note that the park (especially Block 1) usually closes for a month around September for drought rehabilitation.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

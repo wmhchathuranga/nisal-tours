@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Munneswaram</h3>
+                        {{-- <h3 class="box-title">Visiting Munneswaram</h3>
                         <p class="box-text mb-30">
                             The temple is easily accessible from the main Colombo-Puttalam highway, making it a perfect cultural stop if you are heading towards Kalpitiya or Wilpattu. It is open throughout the year, but visiting during the daily Pooja (prayer) times in the morning or evening offers the most vibrant and spiritually uplifting experience. The climate in Chilaw is generally warm, so bringing a bottle of water and dressing comfortably is advised.
                         </p>
 
                         <p class="box-text mb-50">
                             As this is a deeply sacred space for multiple religions, visitors must dress modestly. Clothing that covers the shoulders and extends below the knees is required. You will need to remove your shoes before entering the inner temple courtyards. The atmosphere here is extremely welcoming, and the temple priests are known for offering blessings to everyone, regardless of their personal faith or background.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

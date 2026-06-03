@@ -196,10 +196,10 @@
                             </div>
 
                             <!-- Visiting Info -->
-                            <h3 class="box-title">Visiting Polonnaruwa</h3>
+                            {{-- <h3 class="box-title">Visiting Polonnaruwa</h3>
                             <p class="box-text mb-30">
                                 Because the archaeological park is relatively compact and wonderfully flat, the absolute best way to explore the ancient city is by renting a bicycle. Pedaling along the shaded, tree-lined ancient pathways from one monumental ruin to the next is a truly magical experience. The climate here in the dry zone is very hot and sunny, so it is highly recommended to start your tour early in the morning, around 7:30 AM, or later in the afternoon to avoid the intense midday heat.
-                            </p>
+                            </p> --}}
 
                             <p class="box-text mb-50">
                                 As with all sacred sites in Sri Lanka, modest attire is strictly required-shoulders and knees must be fully covered, and wearing light, white clothing is ideal for both respect and the heat. You will be frequently taking off your shoes at temple entrances, so bringing slip-on sandals and a pair of thick dark socks will save your feet from the scorching hot stone floors. Also, be mindful of the large troops of photogenic, yet mischievous, Toque Macaque monkeys (famous from the documentary "Monkey Kingdom") that call these ruins home!

@@ -190,14 +190,14 @@
                             </div>
 
                             <!-- Visiting Info -->
-                            <h3 class="box-title">Visiting & Practical Info</h3>
+                            {{-- <h3 class="box-title">Visiting & Practical Info</h3>
                             <p class="box-text mb-30">
                                 The absolute best time to take a glass-bottom boat ride is early in the morning, around 8:00 AM to 10:00 AM. During this time, the sunlight hits the water at the perfect angle, significantly improving underwater visibility, and the ocean surface is usually at its calmest. When the sea is rough, the water can get slightly murky with stirred-up sand, which reduces visibility.
                             </p>
 
                             <p class="box-text mb-50">
                                 Even though the boats usually have a canopy to provide shade, the glare reflecting off the water can still be quite bright. Wearing sunglasses and applying sunscreen is highly recommended. Life jackets are provided by the boat operators and must be worn during the ride. Just head over to the main beach area in Hikkaduwa or Nilaveli (for Pigeon Island), and you will find plenty of registered boats lined up and ready to take you on a quick, magical tour of the reefs!
-                            </p>
+                            </p> --}}
 
                             <h3 class="box-title">Location Map</h3>
                             <div class="ratio ratio-16x9 rounded overflow-hidden">

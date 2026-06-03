@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting & Practical Info</h3>
+                        {{-- <h3 class="box-title">Visiting & Practical Info</h3>
                         <p class="box-text mb-30">
                             You absolutely do not need to bring your own heavy surfboard to Sri Lanka. Every single surfing town on the island is packed with highly affordable board rental shacks offering hundreds of options, from massive soft-top longboards for beginners to sleek, high-performance shortboards for the pros. If you want to learn, local, ISA-certified surf instructors are available everywhere and are incredibly friendly, patient, and highly skilled at getting you standing on the board in just one lesson.
                         </p>
 
                         <p class="box-text mb-50">
                             Because you will be spending hours in the water under the tropical sun, packing a good quality, tight-fitting UV rash guard and highly water-resistant, reef-safe zinc sunscreen is absolutely essential to avoid severe sunburns. The ocean water is beautifully warm year-round, so you can completely leave your thick wetsuits at home-board shorts or a swimsuit are all you need to hit the waves!
-                        </p>
+                        </p> --}}
 
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">

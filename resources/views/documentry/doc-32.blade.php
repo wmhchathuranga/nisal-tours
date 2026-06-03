@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Nallur Kovil</h3>
+                        {{-- <h3 class="box-title">Visiting Nallur Kovil</h3>
                         <p class="box-text mb-30">
                             Visiting the Nallur Kovil is a deeply spiritual experience, but it requires strict adherence to traditional Hindu temple customs. The dress code here is non-negotiable: Men must absolutely remove their shirts and any upper garments before entering the sacred inner courtyards. Women must wear modest clothing that fully covers their shoulders and legs, such as a saree, shalwar kameez, or a long dress. 
                         </p>
                         
                         <p class="box-text mb-50">
                             You must leave your footwear at the designated stalls outside before stepping onto the temple grounds. Photography inside the main shrine areas is strictly prohibited, allowing devotees to pray in absolute peace and privacy. The temple is especially vibrant during the daily Poojas (prayer sessions), accompanied by the powerful sounds of traditional Nadaswaram music and Thavil drumming. The Jaffna climate can be intensely hot, so visiting during the early morning or late evening Poojas is highly recommended.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

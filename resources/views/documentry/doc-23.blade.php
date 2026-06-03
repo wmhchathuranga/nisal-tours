@@ -188,10 +188,10 @@
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Unawatuna</h3>
+                        {{-- <h3 class="box-title">Visiting Unawatuna</h3>
                         <p class="box-text mb-50">
                             The best time to visit Unawatuna is between November and April when the southern monsoon subsides, the sea is at its calmest, and the weather is perfectly sunny. Since Unawatuna is very close to Galle Fort, many travelers enjoy spending their days on the beach and their evenings exploring the historic Dutch architecture and shopping in the Fort. Don't forget to carry some sunscreen and comfortable walking shoes if you plan to hike up to the Peace Pagoda!
-                        </p>
+                        </p> --}}
 
                         <!-- Location Map -->
                         <h3 class="box-title">Location Map</h3>

@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting & Practical Info</h3>
+                        {{-- <h3 class="box-title">Visiting & Practical Info</h3>
                         <p class="box-text mb-30">
                             To experience the clearest water and avoid the heavy midday crowds, it is highly recommended to catch one of the very first boats heading to the island around 8:00 AM. Since it is a protected national park, you must purchase an entrance ticket at the wildlife office on Nilaveli Beach before boarding your boat. High-quality snorkeling gear (masks, snorkels, and fins) can be easily rented from your boat operator or the dive shops along the beach.
                         </p>
 
                         <p class="box-text mb-50">
                             When exploring the reef, absolute care must be taken to protect this fragile ecosystem. <strong>Do not</strong> stand on, kick, or touch the live corals, as they break easily and take decades to recover. Never chase, corner, or attempt to touch the sharks or turtles. Additionally, because the island has very little natural shade and the sun is fiercely strong, applying a thick layer of "reef-safe" sunscreen and wearing a UV-protective rash guard is essential to prevent severe sunburns while floating face-down in the water.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

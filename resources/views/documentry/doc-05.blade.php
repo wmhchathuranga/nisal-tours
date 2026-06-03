@@ -301,10 +301,10 @@ Documentary Details Area
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Tips for the Hike</h3>
+                        {{-- <h3 class="box-title">Tips for the Hike</h3>
                         <p class="box-text mb-50">
                             To get the most out of your Ella Rock adventure, it is highly recommended to start your hike early in the morning, ideally around 6:00 AM or 7:00 AM. This helps you beat the midday tropical heat and reach the summit before the afternoon mist completely covers the sweeping views. Since the trail can sometimes be confusing with multiple branching paths made by farmers, using an offline map (like Maps.me) or hiring a local guide is a smart idea. Don't forget to wear proper hiking shoes, carry plenty of water, and bring some salt or balm, as leeches can be present during the rainy season!
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

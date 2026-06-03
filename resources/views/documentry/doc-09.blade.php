@@ -202,10 +202,10 @@ Documentary Details Area
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Colombo</h3>
+                        {{-- <h3 class="box-title">Visiting Colombo</h3>
                         <p class="box-text mb-50">
                             Colombo is a vibrant, year-round destination. For the best experience, try to explore the city in the early mornings or late afternoons to avoid the peak tropical heat. Whether it's shopping for authentic souvenirs at Barefoot, exploring the city’s colonial history on a walking tour, or enjoying the world-class nightlife and diverse international cuisine, Colombo is the perfect starting or ending point for any Sri Lankan journey.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Piduruthalagala</h3>
+                        {{-- <h3 class="box-title">Visiting Piduruthalagala</h3>
                         <p class="box-text mb-30">
                             Since the summit is an active high-security military zone, strict protocols must be followed. Visitors are completely restricted from walking or trekking up the mountain; you must travel in a private vehicle (cars, vans, or buses). At the military checkpoint located at the base of the mountain, you will be required to present valid identification-Sri Lankans must carry their National Identity Card (NIC), and foreign travelers must present their original Passports to gain entry. 
                         </p>
 
                         <p class="box-text mb-50">
                             The weather at the top is notoriously unpredictable and can change in minutes. Even if the sun is shining in Nuwara Eliya town, the summit can be incredibly windy, misty, and freezing cold. It is highly recommended to wear thick winter jackets, beanies, and gloves. Be mindful that stepping out of the designated visitor areas or taking photographs of specific military installations is strictly prohibited. The best time to visit is early in the morning when the sky is clearest before the afternoon mist rolls in.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

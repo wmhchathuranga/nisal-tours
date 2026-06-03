@@ -243,10 +243,10 @@ Documentary Details Area
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Mirissa</h3>
+                        {{-- <h3 class="box-title">Visiting Mirissa</h3>
                         <p class="box-text mb-50">
                             Mirissa is the ideal spot to disconnect and unwind. The early morning whale-watching trips are a "must-do," but be prepared to head out before dawn to catch the best sightings. Evenings in Mirissa are all about the beach lifestyle-find a cozy chair at a café, order a fresh king coconut or a cocktail, and watch as the sun paints the sky in shades of gold and violet.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

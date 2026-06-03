@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Koneswaram</h3>
+                        {{-- <h3 class="box-title">Visiting Koneswaram</h3>
                         <p class="box-text mb-30">
                             Because Trincomalee can get intensely hot during the day, the absolute best time to visit Koneswaram is during the early morning hours or late in the afternoon just before sunset. The sunset views over the harbor from the temple courtyard are truly spectacular. The pathway to the top is lined with small, vibrant stalls selling everything from traditional Hindu offerings and fresh fruit to unique seashell souvenirs.
                         </p>
 
                         <p class="box-text mb-50">
                             As this is a sacred Hindu temple, a respectful dress code must be strictly followed. Visitors are required to wear clothing that covers their shoulders and knees. You will need to leave your shoes at the designated counter near the top before stepping onto the temple courtyard. Keep a very close eye on your belongings and offerings, as the resident troops of monkeys are notorious for boldly snatching food and flower garlands right out of visitors' hands!
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

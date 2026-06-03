@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Bentota</h3>
+                        {{-- <h3 class="box-title">Visiting Bentota</h3>
                         <p class="box-text mb-30">
                             The absolute best time to visit Bentota for ocean swimming and beach lounging is during the dry season, from November to April, when the Indian Ocean is as calm as a swimming pool and the skies are crystal clear. However, because the Bentota lagoon is sheltered, the thrilling river-based water sports can be enjoyed almost year-round, regardless of the coastal monsoon winds.
                         </p>
 
                         <p class="box-text mb-50">
                             Getting to Bentota is incredibly easy; it takes just over an hour from Colombo via the Southern Expressway. Alternatively, taking the scenic coastal train from Colombo offers breathtaking views of the ocean right beside the railway tracks. When booking water sports, always use certified operators along the lagoon who provide proper life jackets and adhere to strict safety standards. The town also offers a fantastic array of local seafood restaurants where you can enjoy freshly caught crab, prawns, and fish straight from the ocean!
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

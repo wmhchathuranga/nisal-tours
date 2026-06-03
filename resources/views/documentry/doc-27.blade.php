@@ -189,10 +189,10 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Aluviharaya</h3>
+                        {{-- <h3 class="box-title">Visiting Aluviharaya</h3>
                         <p class="box-text mb-50">
                             Aluviharaya is located just a few kilometers north of Matale town and makes for an excellent stop if you are traveling between Kandy and Dambulla. As this is a highly venerated active Buddhist site, visitors must adhere to a respectful dress code-shoulders and knees must be fully covered, and wearing white is highly appreciated. You will need to remove your shoes before entering the sacred cave areas, so slip-on footwear is recommended. The temple is open daily, and early mornings or late afternoons offer the most serene atmosphere for exploration.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

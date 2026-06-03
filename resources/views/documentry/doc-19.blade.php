@@ -194,10 +194,10 @@
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Weligama</h3>
+                        {{-- <h3 class="box-title">Visiting Weligama</h3>
                         <p class="box-text mb-50">
                             Weligama is the ultimate "chill" destination. The main beach is packed with dozens of surf schools, so you don't need to bring your own gear-you can simply rent a board or book a lesson on the spot. After a morning in the water, explore the coastal road filled with trendy cafes, local roti shops, and fresh seafood restaurants. The vibe is laid-back, the people are friendly, and the sunsets over the bay are truly spectacular. Whether you're here to ride the waves or just relax with a book in a hammock, Weligama captures the essence of the southern coast.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

@@ -192,10 +192,10 @@
         </ul>
     </div>
 
-    <h3 class="box-title">Visiting Pidurangala</h3>
+    {{-- <h3 class="box-title">Visiting Pidurangala</h3>
     <p class="box-text mb-50">
         Embarking on the Pidurangala hike is a highly rewarding experience that typically takes about 30 to 45 minutes, depending on your fitness level and pace. The journey is as cultural as it is physical; because the trailhead passes directly through a revered Buddhist temple grounds, visitors are strictly required to dress modestly, ensuring shoulders and knees are covered (sarongs are usually available to borrow at the ticket counter). The path begins with a moderate ascent via uneven stone steps shaded by a dense jungle canopy. However, the final stretch is where the real adventure begin-requiring a bit of strategic rock scrambling and boulder crawling to hoist yourself onto the top plateau. We highly recommend starting your trek early in the morning to catch a mesmerizing sunrise over Sigiriya, or in the late afternoon for a golden-hour sunset. Don't forget to wear sturdy footwear, apply sunscreen, and bring plenty of water!
-    </p>
+    </p> --}}
 
     <h3 class="box-title">Location Map</h3>
     <div class="mb-10">

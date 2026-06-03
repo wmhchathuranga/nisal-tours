@@ -273,12 +273,12 @@ Documentary Details Area
                         </p>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Wilpattu</h3>
+                        {{-- <h3 class="box-title">Visiting Wilpattu</h3>
                         <p class="box-text mb-50">
                             The best time to visit Wilpattu is during the dry season when animals gather near
                             villus. Jeep safaris offer visitors a chance to explore the park while maintaining
                             strict conservation guidelines.
-                        </p>
+                        </p> --}}
 
                         <!-- Map View -->
                         <h3 class="box-title">Location Map</h3>

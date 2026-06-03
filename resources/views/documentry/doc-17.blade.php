@@ -209,14 +209,14 @@
                             </div>
 
                             <!-- Visiting Info -->
-                            <h3 class="box-title">Visiting Dambulla</h3>
+                            {{-- <h3 class="box-title">Visiting Dambulla</h3>
                             <p class="box-text mb-30">
                                 Reaching the majestic caves requires a moderately steep, 10 to 15-minute climb up a scenic stone stairway. Along the way, you are rewarded with sweeping, panoramic views of the surrounding lush flatlands, with the iconic Sigiriya Rock Fortress visible in the hazy distance. Because this is an active and highly venerated religious site, strict dress codes apply-both men and women must wear modest clothing that fully covers the shoulders and knees. 
                             </p>
 
                             <p class="box-text mb-50">
                                 Upon reaching the summit courtyard, you will need to remove your shoes and hats before entering the sacred cave shrines. It is highly recommended to wear thick socks, as the sun-baked stone courtyard can get incredibly hot during the day. Visiting early in the morning or late in the afternoon is the best way to avoid the midday heat and enjoy a tranquil, uncrowded experience. Also, be mindful of the playful resident macaque monkeys along the path-while photogenic, it is best not to feed them or carry visible food.
-                            </p>
+                            </p> --}}
 
                             <!-- Map -->
                             <h3 class="box-title">Location Map</h3>

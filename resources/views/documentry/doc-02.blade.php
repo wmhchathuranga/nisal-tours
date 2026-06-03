@@ -281,14 +281,14 @@ Documentary Details Area
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Galle Fort Today</h3>
+                        {{-- <h3 class="box-title">Galle Fort Today</h3>
                         <p class="box-text mb-30">
                             Today, Galle Fort is Sri Lanka’s most atmospheric destination. The best way to experience it is simply to wander-get lost in the tiny alleyways, chat with local antique shop owners, or pick up a unique handmade souvenir from one of the many art galleries. The fort is also a fantastic place for foodies, offering everything from authentic Sri Lankan hoppers and spicy curries to high-end fusion cuisine and artisanal gelato.
                         </p>
                         
                         <p class="box-text mb-50">
                             If you are visiting in the afternoon, make sure to walk up to the ramparts around 5:30 PM. Watching the sun dip below the Indian Ocean while local youth play cricket and travelers gather to socialize is the quintessential Galle experience. Remember that the fort is a heritage zone, so please keep the area clean and respect the privacy of the people who live in the historic colonial houses.
-                        </p>
+                        </p> --}}
 
                         <!-- Map View -->
                         <h3 class="box-title">Location Map</h3>

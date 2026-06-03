@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Udawalawe</h3>
+                        {{-- <h3 class="box-title">Visiting Udawalawe</h3>
                         <p class="box-text mb-30">
                             To get the absolute most out of your Udawalawe experience, it is highly recommended to book a 4x4 Jeep safari during the early morning (starting around 6:00 AM) or late afternoon (around 3:00 PM). During these cooler hours, the animals are much more active, and the elephants frequently come out of the scrub to the reservoir to drink and bathe. The midday tropical sun can be incredibly harsh, causing most animals to retreat deep into the shade.
                         </p>
 
                         <p class="box-text mb-50">
                             Because the park features open dirt plains, it can get very dusty and hot during the bumpy jeep ride. Make sure to wear light, comfortable cotton clothing, apply plenty of sunscreen, and bring a hat and sunglasses to protect yourself from the wind and dust. Bringing a pair of binoculars and a camera with a good zoom lens is a great idea. As with all national parks in Sri Lanka, strict ethical guidelines apply-do not feed the animals, avoid loud noises, and ensure you take all your plastic waste back out with you.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

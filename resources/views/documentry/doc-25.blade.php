@@ -141,14 +141,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Pidurangala</h3>
+                        {{-- <h3 class="box-title">Visiting Pidurangala</h3>
                         <p class="box-text mb-30">
                             Because Pidurangala is an active sacred monastery site, it is <strong>crucial to dress modestly</strong>. Both men and women should have their shoulders and knees covered; carrying a sarong or scarf to wrap around you when entering the temple section is highly recommended. 
                         </p>
                         
                         <p class="box-text mb-50">
                             The best time to start the climb is about an hour before sunrise or sunset. If you plan to go for the sunrise, carry a good flashlight (or use your phone), as the path through the forest can be quite dark in the early morning. Wear comfortable, sturdy shoes with a good grip, as the rocks at the top can be uneven. Always bring plenty of water and be sure to take all your trash back down with you to keep this beautiful heritage site clean!
-                        </p>
+                        </p> --}}
 
                         <h3 class="box-title">Location Map</h3>
                         <div class="ratio ratio-16x9 rounded overflow-hidden">

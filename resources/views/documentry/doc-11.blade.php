@@ -194,10 +194,10 @@
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Anuradhapura</h3>
+                        {{-- <h3 class="box-title">Visiting Anuradhapura</h3>
                         <p class="box-text mb-30">
                             Exploring the vast, sprawling ruins of Anuradhapura is best done by renting a bicycle or hiring a local Tuk-Tuk, as the sacred sites are spread across a massive geographical area. The tropical climate here is famously warm and dry, so early morning or late afternoon visits are highly recommended to avoid the punishing midday heat. 
-                        </p>
+                        </p> --}}
 
                         <p class="box-text mb-50">
                             Because this is a highly venerated, active pilgrimage destination, strict dress codes apply. Visitors must wear modest clothing that fully covers their shoulders and knees. Wearing all-white attire is customary and deeply appreciated by the locals. You must remove your shoes and hats before entering the sandy courtyards of the sacred shrines, so bringing a pair of thick, dark socks is a fantastic idea to protect your feet from the scorching hot stone pathways during the day.

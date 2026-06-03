@@ -192,10 +192,10 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Jaffna</h3>
+                        {{-- <h3 class="box-title">Visiting Jaffna</h3>
                         <p class="box-text mb-30">
                             Traveling to Jaffna is a highlight of any Sri Lankan trip, especially if you take the scenic Yal Devi train route from Colombo, which offers beautiful glimpses of the northern landscape. When visiting the temples, always remember to respect local customs: men must remove their shirts before entering the inner sanctum, and all visitors should dress modestly, covering shoulders and knees.
-                        </p>
+                        </p> --}}
                         
                         <p class="box-text mb-50">
                             The climate in Jaffna is consistently warm and dry, so light, breathable clothing and a hat are essential. Be sure to explore the local markets for fresh mangoes and Palmyra-based products. And of course, treat your taste buds to the world-famous, fiery-spicy Jaffna Crab Curry-it is the quintessential flavor of the North!

@@ -219,10 +219,10 @@ Documentary Details Area
                             </div>
 
                             <!-- Visiting -->
-                            <h3 class="box-title">Visiting Horton Plains</h3>
+                            {{-- <h3 class="box-title">Visiting Horton Plains</h3>
                             <p class="box-text mb-30">
                                 Exploring Horton Plains requires completing a stunning 9-kilometer (5.6 miles) circular trek that typically takes about 3 to 4 hours at a comfortable pace. Timing is the most critical factor here. You must aim to enter the park by 6:00 AM to reach World’s End before 9:00 AM. Shortly after this time, a thick, impenetrable wall of white mist rolls up from the valley below, completely obscuring the spectacular drop and the panoramic view.
-                            </p>
+                            </p> --}}
 
                             <p class="box-text mb-50">
                                 The weather is highly variable; early mornings are usually freezing with biting winds, but it can get quite hot and sunny by midday, so dressing in easily removable layers is highly recommended. Good hiking shoes are a must as the path can be rocky, wet, and uneven near Baker's Falls. Most importantly, the park enforces an extremely strict <strong>zero-plastic policy</strong>. At the entrance, wildlife officers will thoroughly check your bags and remove any polythene, plastic wrappers, or non-biodegradable items, ensuring this pristine environment remains completely untouched.

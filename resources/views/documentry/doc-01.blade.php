@@ -257,10 +257,10 @@ Documentary Details Area
         Sigiriya is widely considered by historians and archaeologists as one of the finest surviving examples of first-millennium ancient urban planning in the world. The site's layout combines concepts of symmetry and asymmetry to intentionally interlock the man-made geometrical forms with the natural surroundings. Its sophisticated hydraulic system-consisting of canals, lakes, dams, bridges, and underground water pumps-still magically functions during the rainy season. This seamless fusion of nature, architecture, and breathtaking art makes Sigiriya a timeless monument, deeply admired by global travelers and scholars alike.
     </p>
 
-    <h3 class="box-title">Visiting Sigiriya Today</h3>
+    {{-- <h3 class="box-title">Visiting Sigiriya Today</h3>
     <p class="box-text mb-50">
         Today, Sigiriya holds the title of being one of Sri Lanka’s most iconic and visited landmarks, drawing history enthusiasts, nature lovers, and adventure seekers from across the globe. Visitors embark on an unforgettable journey, climbing approximately 1,200 steps through terraced gardens, past the dazzling frescoes, and between the colossal paws of the ancient lion carving to reach the flat-topped summit. Exploring the sprawling gardens and standing amidst the palace ruins at the peak offers a profound, living testament to the grandeur of ancient Sri Lankan civilization.
-    </p>
+    </p> --}}
 
     <h3 class="box-title">Location Map</h3>
     <div class="">

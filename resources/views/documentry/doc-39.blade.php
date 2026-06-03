@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Pasikuda</h3>
+                        {{-- <h3 class="box-title">Visiting Pasikuda</h3>
                         <p class="box-text mb-30">
                             Because Sri Lanka experiences two distinct monsoons, the absolute best time to visit the East Coast (including Pasikuda) is between May and September. During these months, the sea is as flat as glass, the skies are brilliant blue, and the weather is gloriously sunny. In contrast, from November to February, the bay can get quite choppy and rainy due to the North-Eastern monsoon.
                         </p>
 
                         <p class="box-text mb-50">
                             Pasikuda is located about 300 kilometers from Colombo. You can reach it via a scenic drive through the country, by taking the train to nearby Valaichchenai or Batticaloa, or even by booking a quick domestic flight or sea-plane. The sun here on the east coast is notoriously strong, so packing high-SPF reef-safe sunscreen, a wide-brimmed hat, and sunglasses is highly recommended for long days lounging in the shallow waters.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

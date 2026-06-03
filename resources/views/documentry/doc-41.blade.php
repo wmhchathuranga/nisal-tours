@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Madu River</h3>
+                        {{-- <h3 class="box-title">Visiting Madu River</h3>
                         <p class="box-text mb-30">
                             The Madu River boat safaris are available year-round, but the absolute best time to embark on the journey is either early in the morning (around 8:00 AM) or late in the afternoon (around 4:00 PM). During these times, the tropical sun is much less intense, the lighting for photography is beautiful, and the river wildlife is significantly more active. 
                         </p>
 
                         <p class="box-text mb-50">
                             Life jackets are provided by the boat operators and must be worn at all times for safety. Since the boat ride exposes you to the sun when you are not inside the mangrove tunnels, bringing a good pair of sunglasses, a wide-brimmed hat, and applying sunscreen is highly recommended. Along the journey, local vendors on small canoes might paddle up to your boat to sell fresh, sweet king coconuts-an incredibly refreshing way to stay hydrated during the tour!
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

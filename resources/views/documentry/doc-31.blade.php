@@ -191,14 +191,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting Aukana</h3>
+                        {{-- <h3 class="box-title">Visiting Aukana</h3>
                         <p class="box-text mb-30">
                             To truly experience the magic of the Aukana statue, you must aim to visit just before sunrise. As the sun peeks over the horizon, its very first golden rays strike the ancient stone, beautifully highlighting the intricate details, the wavy pleats, and the peaceful expression of the Buddha. The site is relatively quiet and much less crowded compared to the major ruins of Anuradhapura or Polonnaruwa, offering a very peaceful and deeply personal historical experience.
                         </p>
 
                         <p class="box-text mb-50">
                             As this is an incredibly sacred site for Buddhists, visitors must strictly adhere to the dress code. Modest clothing covering the shoulders and knees is mandatory, and wearing light, white clothing is highly encouraged and respected. You will need to remove your shoes and hats before stepping onto the sacred temple grounds. Bringing a pair of dark socks is highly recommended if you are visiting later in the day, as the sun-baked sand around the statue can become searingly hot to walk on.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

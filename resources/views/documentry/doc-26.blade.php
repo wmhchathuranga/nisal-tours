@@ -187,14 +187,14 @@
                         </div>
 
                         <!-- Visiting Info -->
-                        <h3 class="box-title">Visiting & Practical Info</h3>
+                        {{-- <h3 class="box-title">Visiting & Practical Info</h3>
                         <p class="box-text mb-30">
                             Starting your hike early in the morning is absolutely critical. Not only does it help you avoid the intense midday sun and the heat that makes the steep climb much harder, but you are also much more likely to catch clear, mist-free views from the summit before the afternoon clouds roll in. 
                         </p>
 
                         <p class="box-text mb-50">
                             The trail can be tricky to navigate as there are several turn-offs, particularly near the railway line and the forest entrance. If you are not confident in your sense of direction, hiring a local guide is a smart and highly recommended option; they know the path perfectly and can show you shortcuts and safer routes. Wear sturdy hiking shoes with a good grip, carry plenty of water, and apply mosquito repellent, as the forested parts of the trek can be quite humid.
-                        </p>
+                        </p> --}}
 
                         <!-- Location Map -->
                         <h3 class="box-title">Location Map</h3>

@@ -194,10 +194,10 @@
                         </div>
 
                         <!-- Visiting -->
-                        <h3 class="box-title">Visiting Horton Plains</h3>
+                        {{-- <h3 class="box-title">Visiting Horton Plains</h3>
                         <p class="box-text mb-50">
                             Exploring Horton Plains involves a circular trekking trail of approximately 9 kilometers. Because the thick morning mist often rolls in by 10:00 AM and completely obscures the view at World's End, it is highly recommended to start your hike as early as possible (ideally by 6:00 AM). You must bring warm clothing, as the temperature on the plateau can drop drastically before sunrise. Please remember that plastic materials are strictly prohibited inside the park to protect this sensitive UNESCO-listed biodiversity hotspot; kindly carry your water in reusable bottles.
-                        </p>
+                        </p> --}}
 
                         <!-- Map -->
                         <h3 class="box-title">Location Map</h3>

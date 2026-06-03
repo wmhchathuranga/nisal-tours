@@ -196,14 +196,14 @@
                             </div>
 
                             <!-- Visiting Info -->
-                            <h3 class="box-title">Visiting Ravana Cave</h3>
+                            {{-- <h3 class="box-title">Visiting Ravana Cave</h3>
                             <p class="box-text mb-30">
                                 The journey to Ravana Cave is an adventurous trek located just about 2 kilometers from the main Ella town. The climb involves navigating a steep pathway of roughly 650 to 700 uneven steps carved into the hillside. Because the ascent can be quite physically demanding, a reasonable level of fitness is required. It is absolutely essential to wear sturdy shoes with an excellent grip, as the path can become incredibly slippery, especially inside the cave and after rain.
                             </p>
 
                             <p class="box-text mb-50">
                                 Make sure to bring plenty of drinking water, as the humidity during the climb will quickly make you thirsty. Flashlights or phone torches are highly recommended if you wish to peer into the darker recesses of the cave. Try to plan your visit during the early morning or late afternoon to escape the harsh midday sun, and strictly avoid the hike during heavy monsoon rains due to the risk of slippery paths and leeches. Keep an eye out for the local monkeys, and as always, avoid feeding them or leaving plastic waste behind in this sacred and historic forest.
-                            </p>
+                            </p> --}}
 
                             <!-- Map -->
                             <h3 class="box-title">Location Map</h3>
