@@ -17,11 +17,11 @@
 <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/aluwihare/caption4.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Aluviharaya Rock Temple</h1>
+            <h1 class="breadcumb-title">Mathale Aluviharaya</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Aluviharaya</li>
+                <li>Mathale Aluviharaya</li>
             </ul>
         </div>
     </div>

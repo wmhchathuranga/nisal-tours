@@ -20,7 +20,7 @@ Breadcumb
 <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp8780766-tea-estate-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Nuwara Eliya – Little England</h1>
+            <h1 class="breadcumb-title">Nuwara Eliya</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>

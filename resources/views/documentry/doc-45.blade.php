@@ -23,7 +23,7 @@
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Snorkeling</li>
+                    <li>Snorkeling & Diving</li>
                 </ul>
             </div>
         </div>
@@ -142,7 +142,7 @@
                                 </span>
                             </div>
 
-                            <h2 class="box-title mb-20">Snorkeling & Scuba Diving – Discover the Underwater World</h2>
+                            <h2 class="box-title mb-20">Snorkeling & Diving – Discover the Underwater World</h2>
 
                             <!-- Intro -->
                             <p class="box-text mb-30">

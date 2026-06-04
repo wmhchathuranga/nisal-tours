@@ -22,7 +22,7 @@
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Hikkaduwa</li>
+                    <li>Hikkaduwa Beach</li>
                 </ul>
             </div>
         </div>
@@ -144,7 +144,7 @@
                             </div>
 
                             <h2 class="box-title mb-20">
-                                Hikkaduwa – The Vibrant Beach & Coral Sanctuary
+                                Hikkaduwa Beach – The Vibrant Beach & Coral Sanctuary
                             </h2>
 
                             <p class="box-text mb-30">

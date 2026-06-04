@@ -20,11 +20,11 @@ Breadcumb
 <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/3007.jpg">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Galle Fort</h1>
+            <h1 class="breadcumb-title">Galle Dutch Fort</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Galle Fort</li>
+                <li>Galle Dutch Fort</li>
             </ul>
         </div>
     </div>
@@ -223,7 +223,7 @@ Documentary Details Area
 
                         <!-- Title -->
                         <h2 class="box-title mb-20">
-                            Galle Fort – A Living Colonial Heritage
+                            Galle Dutch Fort – A Living Colonial Heritage
                         </h2>
 
                         <!-- Intro -->

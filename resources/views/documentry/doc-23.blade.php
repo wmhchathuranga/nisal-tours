@@ -21,7 +21,7 @@
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Unawatuna</li>
+                <li>Unawatuna Beach</li>
             </ul>
         </div>
     </div>

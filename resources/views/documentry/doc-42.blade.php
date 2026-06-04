@@ -22,7 +22,7 @@
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Village Tour</li>
+                    <li>Traditional Village Tour</li>
                 </ul>
             </div>
         </div>
@@ -141,7 +141,7 @@
                                 </span>
                             </div>
 
-                            <h2 class="box-title mb-20">Village Tour – Experience the Heart of Sri Lanka</h2>
+                            <h2 class="box-title mb-20">Traditional Village Tour – Experience the Heart of Sri Lanka</h2>
 
                             <!-- Intro -->
                             <p class="box-text mb-30">

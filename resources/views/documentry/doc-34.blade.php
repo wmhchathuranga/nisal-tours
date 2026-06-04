@@ -21,7 +21,7 @@
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Seetha Amman</li>
+                <li>Seetha Amman Kovil</li>
             </ul>
         </div>
     </div>

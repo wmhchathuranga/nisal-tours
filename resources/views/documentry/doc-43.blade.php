@@ -18,7 +18,7 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/White-Water-Rafting-1920x600-1.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">White Water Rafting</h1>
+                <h1 class="breadcumb-title">Water Rafting</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>

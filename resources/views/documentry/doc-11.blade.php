@@ -17,7 +17,7 @@
 <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-11/chathura-anuradha-subasinghe-_M4yPHONK58-unsplash.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Anuradhapura Ancient City</h1>
+            <h1 class="breadcumb-title">Anuradhapura </h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>

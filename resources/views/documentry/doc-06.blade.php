@@ -24,7 +24,7 @@ Breadcumb
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Yala</li>
+                <li>Yala National Park</li>
             </ul>
         </div>
     </div>

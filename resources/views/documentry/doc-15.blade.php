@@ -18,7 +18,7 @@
     <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-15/vlada-XO_CWSR5bZ8-unsplash.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Mihintale sacred mountain</h1>
+                <h1 class="breadcumb-title">Mihintale</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
@@ -189,9 +189,9 @@
                                 The climb up the 1,840 steps takes about 30 to 45 minutes depending on your pace. Because the region's tropical sun can heat the stone pathways to blistering temperatures, it is highly recommended to visit early in the morning before 8:00 AM, or late in the afternoon to witness a glorious sunset. As a highly sacred Buddhist site, strict modesty is required-shoulders and knees must be fully covered, and wearing white clothing is considered the most respectful attire.
                             </p> --}}
 
-                            <p class="box-text mb-50">
+                            {{-- <p class="box-text mb-50">
                                 You will need to remove your shoes and hats before entering the upper sacred terraces, so bringing a pair of thick, dark socks is a very smart way to protect your feet from the hot sand and stone. Mihintale transforms into an incredibly magical place during the full moon day of June (Poson Poya), when thousands of white-clad pilgrims gather to celebrate the introduction of Buddhism, illuminating the entire mountain with thousands of oil lamps and colorful lanterns. Watch out for the playful resident monkeys, and avoid carrying food openly!
-                            </p>
+                            </p> --}}
 
                             <!-- Map -->
                             <h3 class="box-title">Location Map</h3>

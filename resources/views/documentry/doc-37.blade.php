@@ -21,7 +21,7 @@
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Minneriya</li>
+                <li>Minneriya National Park</li>
             </ul>
         </div>
     </div>

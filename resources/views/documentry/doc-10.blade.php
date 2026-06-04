@@ -21,7 +21,7 @@ Breadcumb
     <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/sajeevan-balachandran-X57L65eg4AY-unsplash.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Horton Plains National Park</h1>
+                <h1 class="breadcumb-title">Horton Plains </h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>

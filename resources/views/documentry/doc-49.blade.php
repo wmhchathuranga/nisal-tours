@@ -18,11 +18,11 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp6545035-desktop-sri-lanka-wallpapers.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Sinharaja Forest Reserve</h1>
+                <h1 class="breadcumb-title">Sinharaja Forest</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Sinharaja</li>
+                    <li>Sinharaja Forest</li>
                 </ul>
             </div>
         </div>
@@ -155,7 +155,7 @@
                             </span>
                         </div>
 
-                        <h2 class="box-title mb-20">Sinharaja Forest Reserve – The Last Untouched Rainforest</h2>
+                        <h2 class="box-title mb-20">Sinharaja Forest – The Last Untouched Rainforest</h2>
 
                         <!-- Intro -->
                         <p class="box-text mb-30">

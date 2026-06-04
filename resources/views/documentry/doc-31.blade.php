@@ -17,7 +17,7 @@
 <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Gemini_Generated_Image_1n8qjy1n8qjy1n8q.png') }}">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Aukana Buddha Statue</h1>
+            <h1 class="breadcumb-title">Aukana</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>

@@ -18,11 +18,11 @@
     <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Gemini_Generated_Image_fa7hppfa7hppfa7h.png') }}">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Jaffna</h1>
+                <h1 class="breadcumb-title">Jaffna Dutch Fort</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Jaffna</li>
+                    <li>Jaffna Dutch Fort</li>
                 </ul>
             </div>
         </div>
@@ -144,7 +144,7 @@
                         </div>
 
                         <h2 class="box-title mb-20">
-                            Jaffna – The Vibrant Heart of the North
+                            Jaffna Dutch Fort – The Vibrant Heart of the North
                         </h2>
 
                         <!-- Intro -->

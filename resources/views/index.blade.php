@@ -1456,7 +1456,7 @@
                             alt="Pidurangala Rock">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '14']) }}">Pidurangala</a>
+                                <a href="{{ route('documentry', ['doc_id' => '14']) }}">Pidurangala Rock</a>
                             </h3>
                             <p class="destination-details">
                                 A prominent rock formation near Sigiriya offering breathtaking panoramic views of the
@@ -1681,11 +1681,10 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/1000_F_364951258_xLzCW41kr5AV7OXdVv49ufv6u0XL3nqq.jpg') }}" alt="Kandy Temple">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/Gemini_Generated_Image_4et0lc4et0lc4et0.png') }}" alt="Kandy Temple">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '03']) }}">Kandy Temple (Dalada
-                                    Maligawa)</a>
+                                <a href="{{ route('documentry', ['doc_id' => '03']) }}">Kandy </a>
                             </h3>
                             <p class="destination-details">
                                 Home to the sacred Temple of the Tooth Relic, blending cool-climate hills with deep
@@ -1703,7 +1702,7 @@
                             alt="Nallur Temple / Kovil">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '32']) }}">Nallur Temple / Kovil</a>
+                                <a href="{{ route('documentry', ['doc_id' => '32']) }}">Nallur Kandaswamy Kovil</a>
                             </h3>
                             <p class="destination-details">
                                 One of the most significant Hindu temples in Jaffna, deeply rooted in the culture of
@@ -1769,7 +1768,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
-                    data-category="historical-religious beaches">
+                    data-category="historical-religious ">
                     <div class="explore-custom-card">
                         <img class="bg-image" src="{{ asset('assets/img/explore/galle_fort.jpg') }}"
                             alt="Galle Dutch Fort">
@@ -2022,7 +2021,7 @@
                             alt="Madu River Boat Ride">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '41']) }}">Madu River Boat Ride</a>
+                                <a href="{{ route('documentry', ['doc_id' => '41']) }}">Madu River Safari</a>
                             </h3>
                             <p class="destination-details">
                                 A relaxing boat safari through mangrove forests, visiting small island villages and
@@ -2039,8 +2038,7 @@
                             alt="Village Tour - Sigiriya & Habarana">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '42']) }}">Village Tour - Sigiriya /
-                                    Habarana</a>
+                                <a href="{{ route('documentry', ['doc_id' => '42']) }}">Traditional Village Tour </a>
                             </h3>
                             <p class="destination-details">
                                 Experience traditional Sri Lankan rural life, local cooking, and bullock cart rides in
@@ -2187,7 +2185,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                {{-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious">
                     <div class="explore-custom-card">
                         <img class="bg-image" src="{{ asset('assets/img/explore/pexels-kawshika-11013741.jpg') }}"
@@ -2203,12 +2201,12 @@
                             <a href="{{ route('documentry', ['doc_id' => '16']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="{{ asset('assets/img/explore/nuwara eliya – little england.jpg') }}"
+                            src="{{ asset('assets/img/explore/1333687-nuwara-eliya-tea-estate.webp') }}"
                             alt="Nuwara Eliya">
                         <div class="destination-content">
                             <h3 class="title">

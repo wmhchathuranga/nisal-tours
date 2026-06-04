@@ -21,7 +21,7 @@
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Pasikuda</li>
+                <li>Pasikuda Beach</li>
             </ul>
         </div>
     </div>
@@ -140,7 +140,7 @@
                             </span>
                         </div>
 
-                        <h2 class="box-title mb-20">Pasikuda – The Shallow Blue Waters of the East Coast</h2>
+                        <h2 class="box-title mb-20">Pasikuda Beach – The Shallow Blue Waters of the East Coast</h2>
 
                         <!-- Intro -->
                         <p class="box-text mb-30">

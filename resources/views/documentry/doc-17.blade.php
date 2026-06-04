@@ -23,7 +23,7 @@
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Dambulla</li>
+                    <li>Dambulla Cave Temple</li>
                 </ul>
             </div>
         </div>

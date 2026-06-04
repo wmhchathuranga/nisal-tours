@@ -18,11 +18,11 @@
     <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-19/vecteezy_waves-and-strong-sea-winds-swept-the-rocks-and-shoals-waves_5516173.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Weligama</h1>
+                <h1 class="breadcumb-title">Weligama Beach</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Weligama</li>
+                    <li>Weligama Beach</li>
                 </ul>
             </div>
         </div>
@@ -146,7 +146,7 @@
 
                         <!-- Title -->
                         <h2 class="box-title mb-20">
-                            Weligama – The Surfing Capital of the South
+                            Weligama Beach – The Surfing Capital of the South
                         </h2>
 
                         <!-- Intro -->

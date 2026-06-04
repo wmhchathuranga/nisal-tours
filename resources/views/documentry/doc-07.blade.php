@@ -24,7 +24,7 @@ Breadcumb
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Mirissa</li>
+                <li>Mirissa Beach</li>
             </ul>
         </div>
     </div>

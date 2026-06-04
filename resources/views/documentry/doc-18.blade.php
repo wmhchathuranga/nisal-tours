@@ -18,11 +18,11 @@
     <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-18/climbing-adams-peak-cloud-blanket-12.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Sri Paada (Adam's Peak)</h1>
+                <h1 class="breadcumb-title">Adams Peak (Sri Paada)</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Sri Paada</li>
+                    <li>Adams Peak (Sri Paada)</li>
                 </ul>
             </div>
         </div>
@@ -130,7 +130,7 @@
                             </div>
 
                             <h2 class="box-title mb-20">
-                                Sri Paada (Adam's Peak) – The Sacred Mountain
+                                Adams Peak (Sri Paada) – The Sacred Mountain
                             </h2>
 
                             <!-- Intro -->

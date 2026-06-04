@@ -22,7 +22,7 @@
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Trincomalee</li>
+                    <li>Trincomalee & Nilaveli Beach</li>
                 </ul>
             </div>
         </div>

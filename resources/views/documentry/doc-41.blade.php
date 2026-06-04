@@ -21,7 +21,7 @@
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>Documentary</li>
-                <li>Madu River</li>
+                <li>Madu River Safari</li>
             </ul>
         </div>
     </div>
@@ -140,7 +140,7 @@
                             </span>
                         </div>
 
-                        <h2 class="box-title mb-20">Madu River Boat Ride – A Journey Through the Mangroves</h2>
+                        <h2 class="box-title mb-20">Madu River Safari – A Journey Through the Mangroves</h2>
 
                         <!-- Intro -->
                         <p class="box-text mb-30">

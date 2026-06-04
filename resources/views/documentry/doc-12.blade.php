@@ -18,7 +18,7 @@
     <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-12/unpd-polonnaruwa-3608331_1280.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Polonnaruwa Ancient City</h1>
+                <h1 class="breadcumb-title">Polonnaruwa</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
