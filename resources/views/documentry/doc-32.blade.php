@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Gemini_Generated_Image_fa7hppfa7hppfa7h.png') }}">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Nallur-Kandaswamy-Kovil_1920x700.jpg') }}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Nallur Kandaswamy Kovil</h1>
@@ -40,7 +40,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-in-the-evening.jpg') }}"
+                                            <img src="{{ asset('assets/img/nallur/20190727-160854-largejpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -48,22 +48,22 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-jaffnamost.jpg') }}')"
+                                            <img src="{{ asset('assets/img/nallur/fb-img-1614586156093.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
+                                                alt="">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/nallur/photo0jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-in-the-evening.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/nallur/fb-img-1614586156093.jpg') }}"
+                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-jaffnamost.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -86,6 +86,20 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/nallur/20190727-160854-largejpg.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/nallur/fb-img-1614586156093.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/nallur/nallur-kovil-in-the-evening.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
@@ -101,20 +115,6 @@
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/nallur/nallur-kovil.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/nallur/fb-img-1614586156093.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-in-the-evening.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

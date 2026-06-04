@@ -14,7 +14,7 @@
 
 @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Gemini_Generated_Image_fa7hppfa7hppfa7h.png') }}">
+<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Gemini_Generated_Image_e8aa5pe8aa5pe8aa.png') }}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Koneswaram Temple</h1>
@@ -56,14 +56,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/koneshwaram/caption.jpg') }}"
+                                            <img src="{{ asset('assets/img/koneshwaram/koneswaram-temple (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/koneshwaram/koneshwaram-temple-known.jpg') }}"
+                                            <img src="{{ asset('assets/img/koneshwaram/view-from-temple.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -100,7 +100,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/koneshwaram/caption.jpg') }}"
+                                            <img src="{{ asset('assets/img/koneshwaram/koneswaram-temple (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
