@@ -16,7 +16,7 @@
     @include('partials.menu')
 
     <div class="breadcumb-wrapper"
-        data-bg-src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80">
+        data-bg-src="https://www.talesofceylon.com/wp-content/uploads/2019/10/The-Best-Diving-and-Snorkeling-Sites-in-Sri-Lanka_1920x700.jpg">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Snorkeling & Diving</h1>

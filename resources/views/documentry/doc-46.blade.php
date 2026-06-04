@@ -42,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://dan.org/wp-content/uploads/2022/04/D2-iStock-647358754.jpg"
+                                            <img src="https://www.unawatunadiving.com/unawatuna/wp-content/uploads/2019/05/Snorkelers_2.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>

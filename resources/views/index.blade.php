@@ -1541,7 +1541,7 @@
                             alt="Adams Peak">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Adams Peak (Sri Paada)</a>
+                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Adams Peak <br> (Sri Paada)</a>
                             </h3>
                             <p class="destination-details">
                                 A majestic, conical mountain renowned for the sacred footprint at its peak and beautiful
