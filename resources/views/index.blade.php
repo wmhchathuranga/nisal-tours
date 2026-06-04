@@ -2203,7 +2203,7 @@
                     </div>
                 </div> --}}
 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                {{-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
                     <div class="explore-custom-card">
                         <img class="bg-image"
                             src="{{ asset('assets/img/explore/1333687-nuwara-eliya-tea-estate.webp') }}"
@@ -2219,7 +2219,7 @@
                             <a href="{{ route('documentry', ['doc_id' => '08']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
 
