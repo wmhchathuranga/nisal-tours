@@ -1789,7 +1789,7 @@
                     data-category="historical-religious">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
+                            src="{{ asset('assets/img/explore/486314011_1069794258509992_3944470451120740398_n.jpg') }}"
                             alt="Jaffna Dutch Fort">
                         <div class="destination-content">
                             <h3 class="title">
