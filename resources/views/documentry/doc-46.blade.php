@@ -16,7 +16,7 @@
     @include('partials.menu')
 
     <div class="breadcumb-wrapper"
-        data-bg-src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80">
+        data-bg-src="{{ asset('assets/img/coral/7128-banner.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Coral Watching</h1>

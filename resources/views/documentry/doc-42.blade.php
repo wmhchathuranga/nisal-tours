@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/943.jpg">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/whale/Gemini_Generated_Image_kqbqs3kqbqs3kqbq.png">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Traditional Village Tour</h1>

@@ -1698,7 +1698,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/nallur/nallur-kovil-in-the-evening.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/nallur/ranjith-jayadevan-39gmCU3tKRY-unsplash.jpg') }}"
                             alt="Nallur Temple / Kovil">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2034,7 +2034,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/village tour/caption (3).jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/village tour/Elephant_ride_sigiriya-768x512.jpg') }}"
                             alt="Village Tour - Sigiriya & Habarana">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2052,7 +2052,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?auto=format&fit=crop&w=600&q=80"
+                            src="{{ asset('assets/img/rafting/ec.jpg') }}"
                             alt="Water Rafting">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2069,7 +2069,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/whale watching/83.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/whale watching/08.jpg') }}"
                             alt="Whale Watching">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2087,7 +2087,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80"
+                            src="{{ asset('assets/img/coral/sri-lanka-diving-travel.jpg') }}"
                             alt="Snorkeling / Diving">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2104,7 +2104,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/2151443699.jpg') }}" alt="Coral Watching">
+                        <img class="bg-image" src="{{ asset('assets/img/coral/35862889_m.jpg') }}" alt="Coral Watching">
                         <div class="destination-content">
                             <h3 class="title">
                                 <a href="{{ route('documentry', ['doc_id' => '46']) }}">Coral Watching</a>
@@ -2121,7 +2121,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=600&q=80"
+                            src="https://images.tpn.to/sq/gi/in/fp/content.jpg"
                             alt="Surfing">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2139,7 +2139,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
                         <img class="bg-image"
-                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                            src="https://sandee.com/_next/image?url=https%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNpFEFnwggrg3IW7Ae8n0So7aprWh0EnL819w-U%3Ds1600-k-no&w=3840&q=75"
                             alt="Pigeon Island">
                         <div class="destination-content">
                             <h3 class="title">
