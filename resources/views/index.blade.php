@@ -1698,7 +1698,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/nallur/ranjith-jayadevan-39gmCU3tKRY-unsplash.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
                             alt="Nallur Temple / Kovil">
                         <div class="destination-content">
                             <h3 class="title">
