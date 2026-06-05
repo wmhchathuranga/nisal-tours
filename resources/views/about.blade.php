@@ -256,14 +256,25 @@
                     <div class="about-content">
                         <span class="badge bg-smoke text-dark px-3 py-2 mb-3 text-uppercase fw-bold">Our Story</span>
                         <h2 class="fw-bold mb-4 display-6">Discover The World With Our Passionate Team</h2>
-                        <p class="mb-4 text-muted" style="line-height: 1.8;">We believe that travel is not just about
-                            visiting new places, but about experiencing them deeply. Our journey started with a simple
-                            passion for exploring hidden gems and sharing those unforgettable moments with fellow
-                            travelers.</p>
-                        <p class="mb-4 text-muted" style="line-height: 1.8;">Whether you are looking for a relaxing
-                            beach getaway, a thrilling mountain trek, or a deep cultural immersion, our dedicated team
-                            is here to craft the perfect itinerary just for you.</p>
-
+                        <p class="mb-4 text-muted" style="line-height: 1.8;">At Novara Holidays, we believe travel is
+                            more than simply visiting new places — it is about creating meaningful experiences,
+                            unforgettable memories, and genuine connections with people and culture.</p>
+                        <p class="mb-4 text-muted" style="line-height: 1.8;">Our journey began with a deep passion for
+                            exploring the hidden beauty of Sri Lanka and sharing those extraordinary experiences with
+                            travelers from around the world. From golden beaches and misty mountains to ancient cities
+                            and wildlife adventures, we are proud to help visitors discover the true heart of Sri Lanka.
+                        </p>
+                        <p class="mb-4 text-muted" style="line-height: 1.8;">Whether you are planning a relaxing beach
+                            holiday, a scenic hill country escape, an exciting wildlife safari, or a rich cultural
+                            journey, our dedicated team is committed to creating the perfect travel experience tailored
+                            to your interests, comfort, and budget.</p>
+                        <p class="mb-4 text-muted" style="line-height: 1.8;">From the moment you arrive at the airport
+                            until your departure, we take care of every detail to ensure your journey is smooth, safe,
+                            and stress-free. With experienced local drivers, personalised itineraries, comfortable
+                            transport, and friendly support throughout your stay, we aim to make every tour memorable
+                            and enjoyable.</p>
+                        <p class="mb-4 text-muted" style="line-height: 1.8;">At Novara Holidays, we don’t just organise
+                            tours — we create experiences that stay with you for a lifetime.</p>
                         <div class="row mb-4">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
@@ -292,52 +303,111 @@
 
 
             <div class="row mt-5 pt-5 border-top">
-                <div class="col-12 text-center mb-5">
-                    <span class="badge bg-smoke text-dark px-3 py-2 mb-3 text-uppercase fw-bold">Why Choose Us</span>
-                    <h2 class="fw-bold">We Make Your Travel Unforgettable</h2>
-                    <p class="text-muted mt-2 mx-auto" style="max-width: 600px;">We go above and beyond to ensure your
-                        journey is safe, enjoyable, and completely stress-free.</p>
-                </div>
+    <div class="col-12 text-center mb-5">
+        <h2 class="fw-bold" style="color: #05264E;">
+            We Make Your Travel Unforgettable
+        </h2>
+        <p class="text-muted mt-2 mx-auto" style="max-width: 600px;">
+            We go above and beyond to ensure your journey is safe, enjoyable, and completely stress-free.
+        </p>
+    </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card">
-                        <div class="card-body">
-                            <div class="icon-box mb-4 rounded-circle bg-smoke text-dark fs-3">
-                                <i class="fas fa-globe-asia"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">Diverse Destinations</h4>
-                            <p class="text-muted mb-0">From bustling modern cities to pristine serene landscapes, we
-                                offer a wide range of destinations to suit every traveler's unique taste.</p>
-                        </div>
-                    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-globe-americas"></i>
                 </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card">
-                        <div class="card-body">
-                            <div class="icon-box mb-4 rounded-circle bg-smoke text-dark fs-3">
-                                <i class="fas fa-map-marked-alt"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">Expert Local Guides</h4>
-                            <p class="text-muted mb-0">Our local guides are passionate experts who bring the rich
-                                culture, deep history, and raw beauty of each location to life.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card">
-                        <div class="card-body">
-                            <div class="icon-box mb-4 rounded-circle bg-smoke text-dark fs-3">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">Safe & Secure</h4>
-                            <p class="text-muted mb-0">Your safety is our top priority. We ensure secure bookings,
-                                reliable transport, and on-ground support throughout your trip.</p>
-                        </div>
-                    </div>
-                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">Diverse Destinations</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">From bustling modern cities to pristine serene landscapes, we offer a wide range of destinations to suit every traveler's unique taste.</p>
             </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">Expert Local Guides</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">Our local guides are passionate experts who bring the rich culture, deep history, and raw beauty of each location to life.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">Safe & Secure</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">Your safety is our top priority. We ensure secure bookings, reliable transport, and on-ground support throughout your trip.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">Comfortable Transport</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">Travel in comfort with our modern, well-maintained vehicles and professional chauffeurs who prioritize your convenience.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">Custom Itineraries</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">Every traveler is unique. We create personalized itineraries tailored to your interests, budget, and schedule.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">Best Price Guarantee</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">We offer competitive prices with no hidden costs, ensuring you get the best value for a premium travel experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">24/7 Travel Support</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">Our dedicated support team is available 24/7 to assist you before, during, and after your journey.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4 feature-card" style="border-radius: 15px;">
+            <div class="card-body p-0">
+                <div class="icon-box mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #6AD4EE; color: #05264E; font-size: 28px;">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="fw-bold mb-3" style="color: #05264E;">Memorable Experiences</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">We don't just plan trips; we create unforgettable memories that you'll cherish for a lifetime.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
         </div>
     </div>
