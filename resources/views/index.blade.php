@@ -2780,7 +2780,7 @@
                                         <img src="{{ asset('storage/' . $linkedUser->profile_photo) }}"
                                             alt="{{ $testi->full_name }}" class="nh-img">
                                     @else
-                                        <img src="{{ asset('assets/img/testimonial/default_avatar.png') }}"
+                                        <img src="{{ asset('assets/img/testimonial/testi-img-2_1.jpg') }}"
                                             alt="{{ $testi->full_name }}" class="nh-img">
                                     @endif
                                 </div>
