@@ -41,7 +41,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://www.themiracleisland.com/images/sri-lanka-travel-ideas/rural-escapes-in-sri-lanka/slider1.jpg"
+                                            <img src="{{ asset('assets/img/villageTour/7e.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -49,7 +49,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://tourismdevelopmentesoft.wordpress.com/wp-content/uploads/2019/01/heeloya-village-1024x768.jpg"
+                                            <img src="{{ asset('assets/img/villageTour/bd.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -57,14 +57,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://www.quotatrip.com/api/media/trip_day/d3cd85d1-cc0b-45ed-8995-b76149cac9a4/5941b7e1ccea8714d683f0e7baea0c7a?w=800&h=800&fm=webp&q=60&fit=crop"
+                                            <img src="{{ asset('assets/img/villageTour/caption.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://www.srilankanexpeditions.com/images/destinations-in-sri-lanka/best-things-to-do-in-meemure/best-things-to-do-in-meemure-02.jpg"
+                                            <img src="{{ asset('assets/img/villageTour/KandySigiriya2-DayPrivateTourwithDeluxeAccommodation.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -72,7 +72,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://media.istockphoto.com/id/1215582509/photo/a-dutch-canal.jpg?s=612x612&w=0&k=20&c=gQiqDdCppERziDqkdtWjqiAzmlat4U0wwby0aSpZ38M="
+                                            <img src="{{ asset('assets/img/villageTour/sigiriya-001.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -87,35 +87,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.themiracleisland.com/images/sri-lanka-travel-ideas/rural-escapes-in-sri-lanka/slider1.jpg"
+                                            <img src="{{ asset('assets/img/villageTour/7e.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://tourismdevelopmentesoft.wordpress.com/wp-content/uploads/2019/01/heeloya-village-1024x768.jpg"
+                                            <img src="{{ asset('assets/img/villageTour/bd.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.quotatrip.com/api/media/trip_day/d3cd85d1-cc0b-45ed-8995-b76149cac9a4/5941b7e1ccea8714d683f0e7baea0c7a?w=800&h=800&fm=webp&q=60&fit=crop"
+                                            <img src="{{ asset('assets/img/villageTour/caption.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.srilankanexpeditions.com/images/destinations-in-sri-lanka/best-things-to-do-in-meemure/best-things-to-do-in-meemure-02.jpg"
+                                            <img src="{{ asset('assets/img/villageTour/KandySigiriya2-DayPrivateTourwithDeluxeAccommodation.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://media.istockphoto.com/id/1215582509/photo/a-dutch-canal.jpg?s=612x612&w=0&k=20&c=gQiqDdCppERziDqkdtWjqiAzmlat4U0wwby0aSpZ38M="
+                                            <img src="{{ asset('assets/img/villageTour/sigiriya-001.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
