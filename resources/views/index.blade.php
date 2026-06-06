@@ -26,7 +26,8 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/pexels-rajee-kumar-1029496084-33130315.jpg">
+                        <div class="th-hero-bg"
+                            data-bg-src="assets/img/hero/pexels-rajee-kumar-1029496084-33130315.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -484,9 +485,10 @@
             }
         });
     </script>
+
     {{-- about us section --}}
 
-    <style>
+   <style>
         :root {
             --primary-color: #2c3e50;
             /* Dark Blue/Grey */
@@ -502,8 +504,15 @@
             background-color: #fff;
         }
 
+        /* Main Heading Wrapper for "Why Us ?" */
+        .main-heading-wrapper {
+            text-align: center;
+            padding: 60px 10% 10px; /* Uda idan loku gap eka */
+        }
+
+        /* Gaps adu kara (padding 80px idan 40px walata adu kala) */
         .about-section {
-            padding: 80px 10%;
+            padding: 40px 10%; 
             display: flex;
             align-items: center;
             gap: 50px;
@@ -534,14 +543,6 @@
             min-width: 400px;
         }
 
-        .about-content span {
-            color: var(--accent-color);
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 2px;
-            font-size: 14px;
-        }
-
         .about-content h2 {
             font-size: 36px;
             color: var(--primary-color);
@@ -553,12 +554,13 @@
             color: var(--text-muted);
             line-height: 1.6;
             margin-bottom: 30px;
+            text-align: justify; /* Text lassanata block wenna */
         }
 
-        /* Features Grid */
+        /* Features Grid - Pahalata list wenna haduwa */
         .features-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column; /* Box thuna pahalata enna */
             gap: 20px;
         }
 
@@ -578,7 +580,6 @@
             cursor: pointer;
         }
 
-        /* Box ekama hover weddi H4 eke paata wenas kirima */
         .feature-item:hover h4 {
             color: var(--accent-color);
             transition: color 0.3s ease;
@@ -600,7 +601,6 @@
 
         .feature-item h4 {
             margin: 0 0 5px;
-            /* color: var(--primary-color); */
             color: var(--bg-light);
             font-size: 18px;
         }
@@ -608,98 +608,96 @@
         .feature-item p {
             font-size: 13px;
             margin: 0;
+            color: var(--text-muted);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .about-section {
-                padding: 40px 5%;
+                padding: 30px 5%; /* Mobile gap eka */
             }
 
             .about-image,
             .about-content {
                 min-width: 100%;
             }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 
+    <div class="main-heading-wrapper">
+        <span class="sub-title text-center" style="font-size: 3rem; color: #113D48; margin-bottom: 0.5rem; font-weight: 400; display: block;">
+            WHY US <span style="font-size: 4rem; font-weight: 400;">?</span>
+        </span>
+    </div>
+
     <section class="about-section">
         <div class="about-image">
-            <img src="{{ asset('assets/img/bg/wp8780766-tea-estate-wallpapers.jpg') }}" style="width: 150%; height: 150%; object-fit: cover; " alt="Sri Lanka Tea Plantation">
+            <img src="{{ asset('assets/img/bg/wp8780766-tea-estate-wallpapers.jpg') }}"
+                style="height: 100%; object-fit: cover;" alt="Sri Lanka Tea Plantation">
         </div>
 
         <div class="about-content">
-            <span class="sub-title text-center"
-                style="font-size: 3rem ; color: #113D48 ; margin-bottom: 1.5rem; font-weight: 400;">Why Us <span
-                    style="font-size: 4rem; font-weight: 400; margin-bottom: 1.5rem;">?</span></span>
             <h2 class="text-center">Discover Sri Lanka’s Wonders With Your Ultimate Travel Partner</h2>
-            {{-- <p>
-                At Novara Holidays, we believe that travel is more than just visiting places-it's about creating stories
-                that last a lifetime. With over a decade of experience, we specialize in crafting personalized journeys
-                across the pearl of the Indian Ocean.
-            </p> --}}
-            <p class="" style="text-align: justify; text-indent: 200px;">Selecting the right travel partner
-                makes all the difference between a simple trip and a lifetime of
-                memories. At Novara Holidays, we don’t just provide a vehicle; we provide a complete, worry-free travel
-                experience tailored just for you.
+            <p>Choosing the right travel partner can make the difference between an ordinary trip and a lifetime of unforgettable memories. At Novara Holidays, we do more than simply provide transport - we create complete, worry-free travel experiences tailored to your needs.</p>
+        </div>
+    </section>
 
-                Unmatched Expertise & Protection:
-                With years of experience in the industry, we understand the pulse of every traveler. Your safety is our
-                top priority, which is why we offer personal coverage and end-to-end protection throughout your entire
-                journey. From the moment you land until the moment you leave, you are under our care.
+    <section class="about-section">
+        <div class="about-content">
+            <h2 class="text-center">Unmatched Expertise & Care</h2>
+            <p>With years of experience in the tourism industry, we understand what travelers truly value: comfort, safety, reliability, and authentic experiences. Your safety and peace of mind is our top priorities. From the moment you arrive in Sri Lanka until your departure, our team is there to support and assist you throughout your journey.</p>
+        </div>
 
-                The Gold Standard of Service:
-                Expert Drivers: Our team consists of highly skilled, professional drivers who aren't just experts on the
-                road, but also friendly guides who know the hidden gems of every destination.
+        <div class="about-image">
+            <img src="{{ asset('assets/img/3192.jpg') }}"
+                style="height: 100%; object-fit: cover;" alt="Sri Lanka Tea Plantation">
+        </div>
+    </section>
 
-                Luxury Fleet: Travel in style and comfort with our wide range of luxury vehicles, maintained to the
-                highest standards for a smooth and premium ride.
+    <section class="about-section">
+        <div class="about-image">
+            <img src="{{ asset('assets/img/Hospitality_Trends_Sri_Lanka.jpeg') }}"
+                style="height: 100%; object-fit: cover;" alt="Sri Lanka Tea Plantation">
+        </div>
 
-                Responsible & Reliable: We take full responsibility for your tour, ensuring every detail is handled with
-                precision so you can relax and enjoy.
+        <div class="about-content">
+            <h2 class="text-center">The Gold Standard of Service</h2>
+            <p>With years of experience in the tourism industry, we understand what travelers truly value: comfort, safety, reliability, and authentic experiences. Your safety and peace of mind is our top priorities. From the moment you arrive in Sri Lanka until your departure, our team is there to support and assist you throughout your journey.</p>
 
-                Experience the best. Choose Novara Holidays for a journey as extraordinary as you are.</p>
-
-            {{-- <div class="features-grid">
+            <div class="features-grid">
                 <div class="feature-item">
                     <i class="fa-light fa-suitcase-rolling"></i>
                     <div>
-                        <h4>Customized Tours</h4>
-                        <p>Tailor-made itineraries that match your rhythm and interests.</p>
+                        <h4>Expert Drivers & Local Knowledge</h4>
+                        <p>Our professional drivers are highly experienced, friendly, and knowledgeable. Beyond safe driving, they help you discover the hidden gems, culture, and beauty of Sri Lanka.</p>
                     </div>
                 </div>
 
                 <div class="feature-item">
                     <i class="fa-light fa-map-location-dot"></i>
                     <div>
-                        <h4>Local Expertise</h4>
-                        <p>Certified guides who know every hidden gem in Sri Lanka.</p>
+                        <h4>Luxury & Comfortable Vehicles</h4>
+                        <p>Travel in comfort and style with our carefully maintained fleet of modern vehicles, designed to provide a smooth, relaxing, and enjoyable journey.</p>
                     </div>
                 </div>
 
                 <div class="feature-item">
                     <i class="fa-light fa-shield-check"></i>
                     <div>
-                        <h4>Safe & Secure</h4>
-                        <p>Your safety is our priority with 24/7 on-ground support.</p>
+                        <h4>Reliable & Hassle-Free Travel</h4>
+                        <p>We take full responsibility for organizing your tour with attention to every detail, allowing you to relax and enjoy your holiday stress-free.</p>
                     </div>
                 </div>
-
-                <div class="feature-item">
-                    <i class="fa-light fa-hand-holding-heart"></i>
-                    <div>
-                        <h4>Authentic Experience</h4>
-                        <p>Go beyond tourism and connect with the local soul.</p>
-                    </div>
-                </div>
-            </div> --}}
+            </div>
         </div>
     </section>
 
+    <section class="about-section">
+        <div class="about-content" style="text-align: center; width: 100%;">
+            <h2>Experience Sri Lanka with Confidence</h2>
+            <p style="text-align: center;">Choose Novara Holidays for a memorable travel experience built on trust, comfort, and genuine Sri Lankan hospitality.</p>
+        </div>
+    </section>
     <style>
         /* Filter Bar Styles (Glassmorphism) */
         .explore-filter-bar {
@@ -1541,7 +1539,8 @@
                             alt="Adams Peak">
                         <div class="destination-content">
                             <h3 class="title">
-                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Adams Peak <br> (Sri Paada)</a>
+                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Adams Peak <br> (Sri
+                                    Paada)</a>
                             </h3>
                             <p class="destination-details">
                                 A majestic, conical mountain renowned for the sacred footprint at its peak and beautiful
@@ -1681,7 +1680,9 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/Gemini_Generated_Image_4et0lc4et0lc4et0.png') }}" alt="Kandy Temple">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/Gemini_Generated_Image_4et0lc4et0lc4et0.png') }}"
+                            alt="Kandy Temple">
                         <div class="destination-content">
                             <h3 class="title">
                                 <a href="{{ route('documentry', ['doc_id' => '03']) }}">Kandy </a>
@@ -1698,7 +1699,8 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
                             alt="Nallur Temple / Kovil">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2034,7 +2036,8 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/village tour/Elephant_ride_sigiriya-768x512.jpg') }}"
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/village tour/Elephant_ride_sigiriya-768x512.jpg') }}"
                             alt="Village Tour - Sigiriya & Habarana">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2051,9 +2054,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image"
-                            src="{{ asset('assets/img/rafting/ec.jpg') }}"
-                            alt="Water Rafting">
+                        <img class="bg-image" src="{{ asset('assets/img/rafting/ec.jpg') }}" alt="Water Rafting">
                         <div class="destination-content">
                             <h3 class="title">
                                 <a href="{{ route('documentry', ['doc_id' => '43']) }}">Water Rafting</a>
@@ -2086,8 +2087,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image"
-                            src="{{ asset('assets/img/coral/sri-lanka-diving-travel.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/coral/sri-lanka-diving-travel.jpg') }}"
                             alt="Snorkeling / Diving">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2104,7 +2104,8 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/coral/35862889_m.jpg') }}" alt="Coral Watching">
+                        <img class="bg-image" src="{{ asset('assets/img/coral/35862889_m.jpg') }}"
+                            alt="Coral Watching">
                         <div class="destination-content">
                             <h3 class="title">
                                 <a href="{{ route('documentry', ['doc_id' => '46']) }}">Coral Watching</a>
@@ -2120,9 +2121,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image"
-                            src="https://images.tpn.to/sq/gi/in/fp/content.jpg"
-                            alt="Surfing">
+                        <img class="bg-image" src="https://images.tpn.to/sq/gi/in/fp/content.jpg" alt="Surfing">
                         <div class="destination-content">
                             <h3 class="title">
                                 <a href="{{ route('documentry', ['doc_id' => '47']) }}">Surfing</a>
