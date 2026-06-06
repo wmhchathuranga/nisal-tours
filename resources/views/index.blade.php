@@ -2341,7 +2341,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/coral/sri-lanka-diving-travel.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
                             alt="Snorkeling / Diving">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2358,7 +2358,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/coral/35862889_m.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/coral/Gemini_Generated_Image_tyi9z1tyi9z1tyi9.png') }}"
                             alt="Coral Watching">
                         <div class="destination-content">
                             <h3 class="title">

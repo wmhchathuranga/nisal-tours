@@ -42,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_391028845_20200214153654.jpg"
+                                            <img src="{{ asset('assets/img/coral/35862889_m.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -50,7 +50,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/coral/Coral-Reef-in-Hikkaduwa.webp') }}"
+                                            <img src="{{ asset('assets/img/coral/Gemini_Generated_Image_4ltgoh4ltgoh4ltg.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -58,14 +58,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/coral/LK76BS4AAD-03-E.webp') }}"
+                                            <img src="{{ asset('assets/img/coral/zHawksbill-shutterstock_1753161572.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/coral/Image-62-795x596.jpg') }}"
+                                            <img src="{{ asset('assets/img/coral/Image-110-795x447.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -73,7 +73,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/coral/PYYrE049pNee.jpg') }}"
+                                            <img src="{{ asset('assets/img/coral/Gemini_Generated_Image_tyi9z1tyi9z1tyi9.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -88,35 +88,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_391028845_20200214153654.jpg"
+                                            <img src="{{ asset('assets/img/coral/35862889_m.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/coral/Coral-Reef-in-Hikkaduwa.webp') }}"
+                                            <img src="{{ asset('assets/img/coral/Gemini_Generated_Image_4ltgoh4ltgoh4ltg.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/coral/LK76BS4AAD-03-E.webp') }}"
+                                            <img src="{{ asset('assets/img/coral/zHawksbill-shutterstock_1753161572.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/coral/Image-62-795x596.jpg') }}"
+                                            <img src="{{ asset('assets/img/coral/Image-110-795x447.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/coral/PYYrE049pNee.jpg') }}"
+                                            <img src="{{ asset('assets/img/coral/Gemini_Generated_Image_tyi9z1tyi9z1tyi9.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

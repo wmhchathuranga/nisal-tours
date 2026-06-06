@@ -42,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://dan.org/wp-content/uploads/2022/04/D2-iStock-647358754.jpg"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-elaine-bernadine-castro-1263177-2403840.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -50,7 +50,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://www.incredibleindia-tourism.org/images/adventure-tours/scuba-diving.jpg"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-gabriela-carrillo-611004983-18834847.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -58,14 +58,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://img.activityjapan.com/wi/snorkeling_howto_thumb.jpg"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://www.deepbluedivecenter.com/wp-content/uploads/peope-snorkeling-underwater.png"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-leticia-azevedo-95410198-13024204.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -73,7 +73,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="https://www.diveholics.com/wp-content/uploads/2024/03/snorkeling-experience-BG.webp"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-shutter-speed-4050076.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -88,35 +88,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dan.org/wp-content/uploads/2022/04/D2-iStock-647358754.jpg"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-elaine-bernadine-castro-1263177-2403840.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.incredibleindia-tourism.org/images/adventure-tours/scuba-diving.jpg"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-gabriela-carrillo-611004983-18834847.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://img.activityjapan.com/wi/snorkeling_howto_thumb.jpg"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.deepbluedivecenter.com/wp-content/uploads/peope-snorkeling-underwater.png"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-leticia-azevedo-95410198-13024204.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.diveholics.com/wp-content/uploads/2024/03/snorkeling-experience-BG.webp"
+                                            <img src="{{ asset('assets/img/snorkeling/pexels-shutter-speed-4050076.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

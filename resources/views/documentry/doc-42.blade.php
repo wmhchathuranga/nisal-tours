@@ -41,7 +41,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/villageTour/7e.jpg') }}"
+                                            <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_2eqnhw2eqnhw2eqn.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -49,7 +49,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/villageTour/bd.jpg') }}"
+                                            <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_3wyzr33wyzr33wyz.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -57,14 +57,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/villageTour/caption.jpg') }}"
+                                            <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_4ye77a4ye77a4ye7.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/villageTour/KandySigiriya2-DayPrivateTourwithDeluxeAccommodation.jpg') }}"
+                                            <img src="{{ asset('assets/img/villageTour/caption.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -87,14 +87,21 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/villageTour/7e.jpg') }}"
+                                            <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_2eqnhw2eqnhw2eqn.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/villageTour/bd.jpg') }}"
+                                            <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_3wyzr33wyzr33wyz.png') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_4ye77a4ye77a4ye7.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -102,13 +109,6 @@
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/villageTour/caption.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/villageTour/KandySigiriya2-DayPrivateTourwithDeluxeAccommodation.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
