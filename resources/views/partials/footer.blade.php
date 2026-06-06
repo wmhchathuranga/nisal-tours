@@ -104,8 +104,8 @@
                                     <img src="assets/img/icon/phone.svg" alt="img">
                                 </div>
                                 <div class="details">
-                                    <p><a href="tel:+01234567890" class="info-box_link">+01 *******</a></p>
-                                    <p><a href="tel:+09876543210" class="info-box_link">+09 *******</a></p>
+                                    <p><a href="tel:+01234567890" class="info-box_link">+94 112 256 555</a></p>
+                                    <p><a href="tel:+09876543210" class="info-box_link">+94 777 143 999</a></p>
                                 </div>
                             </div>
                             <div class="info-box_text">
@@ -113,9 +113,9 @@
                                     <img src="assets/img/icon/envelope.svg" alt="img">
                                 </div>
                                 <div class="details">
-                                    <p><a href="mailto:mailinfo***.com" class="info-box_link">mailinfo***.com</a>
+                                    <p><a href="mailto:info@novaraholidays.com" class="info-box_link">info@novaraholidays.com</a>
                                     </p>
-                                    <p><a href="mailto:support***.com" class="info-box_link">support***.com</a>
+                                    <p><a href="mailto:support@novaraholidays.com" class="info-box_link">support@novaraholidays.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                                 <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
                                 </div>
                                 <div class="details">
-                                    <p>789 Inner Lane, **********</p>
+                                    <p>No 128, 18th Mile Post, Katunayake 11450, Sri Lanka</p>
                                 </div>
                             </div>
                         </div>
