@@ -488,7 +488,7 @@
 
     {{-- about us section --}}
 
-   <style>
+    <style>
         :root {
             --primary-color: #2c3e50;
             /* Dark Blue/Grey */
@@ -507,12 +507,13 @@
         /* Main Heading Wrapper for "Why Us ?" */
         .main-heading-wrapper {
             text-align: center;
-            padding: 60px 10% 10px; /* Uda idan loku gap eka */
+            padding: 60px 10% 10px;
+            /* Uda idan loku gap eka */
         }
 
         /* Gaps adu kara (padding 80px idan 40px walata adu kala) */
         .about-section {
-            padding: 40px 10%; 
+            padding: 40px 10%;
             display: flex;
             align-items: center;
             gap: 50px;
@@ -554,13 +555,15 @@
             color: var(--text-muted);
             line-height: 1.6;
             margin-bottom: 30px;
-            text-align: justify; /* Text lassanata block wenna */
+            text-align: justify;
+            /* Text lassanata block wenna */
         }
 
         /* Features Grid - Pahalata list wenna haduwa */
         .features-grid {
             display: flex;
-            flex-direction: column; /* Box thuna pahalata enna */
+            flex-direction: column;
+            /* Box thuna pahalata enna */
             gap: 20px;
         }
 
@@ -614,7 +617,8 @@
         /* Responsive */
         @media (max-width: 768px) {
             .about-section {
-                padding: 30px 5%; /* Mobile gap eka */
+                padding: 30px 5%;
+                /* Mobile gap eka */
             }
 
             .about-image,
@@ -624,8 +628,204 @@
         }
     </style>
 
+    <style>
+        /* Isolated Scoped CSS for Accordion Section */
+        .wcu-section {
+            padding: 10px;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            /* Idapatha adu kala */
+            display: flex;
+            flex-direction: column;
+            /* Title eka udata ganna */
+            align-items: center;
+            background-color: transparent;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .wcu-section *,
+        .wcu-section *::before,
+        .wcu-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* FAQ Title Styling */
+        .wcu-main-title {
+            text-align: center;
+            width: 100%;
+            color: #242D40;
+            font-size: 36px;
+            font-weight: 700;
+            /* text-transform: uppercase; */
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .wcu-container {
+            max-width: 1400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        /* Accordion Styles */
+        .wcu-accordion-wrapper {
+            flex: 1.2;
+        }
+
+        .wcu-accordion-item {
+            background-color: #4bc5e0;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .wcu-accordion-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .wcu-accordion-header:hover {
+            background-color: #3accec;
+        }
+
+        .wcu-icon-box {
+            background-color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .wcu-icon-box i {
+            color: #242D40;
+            font-size: 18px;
+        }
+
+        .wcu-header-text {
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 600;
+            flex: 1;
+            margin: 0;
+        }
+
+        .wcu-arrow-icon {
+            color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .wcu-accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #65d1e9;
+        }
+
+        .wcu-desc-text {
+            color: #000000;
+            padding: 20px 80px;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Active State */
+        .wcu-accordion-item.active .wcu-arrow-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Image Styles - Custom Mask Shape */
+        .wcu-image-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .wcu-masked-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            position: relative;
+            z-index: 2;
+            display: block;
+            transition: border-radius 1s ease-in-out;
+        }
+
+        .wcu-masked-image:hover {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .wcu-container {
+                flex-direction: column-reverse;
+                gap: 30px;
+            }
+
+            .wcu-main-title {
+                font-size: 28px;
+            }
+
+            .wcu-desc-text {
+                padding-left: 25px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const accordionItems = document.querySelectorAll(".wcu-accordion-item");
+
+            // Initialize the active item on load
+            accordionItems.forEach(item => {
+                if (item.classList.contains('active')) {
+                    let content = item.querySelector('.wcu-accordion-content');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+
+            accordionItems.forEach((item) => {
+                const header = item.querySelector(".wcu-accordion-header");
+
+                header.addEventListener("click", () => {
+                    const isActive = item.classList.contains("active");
+
+                    // Close all items first
+                    accordionItems.forEach((otherItem) => {
+                        otherItem.classList.remove("active");
+                        otherItem.querySelector(".wcu-accordion-content").style.maxHeight =
+                            0;
+                    });
+
+                    // If it wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add("active");
+                        const content = item.querySelector(".wcu-accordion-content");
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+        });
+    </script>
+
     <div class="main-heading-wrapper">
-        <span class="sub-title text-center" style="font-size: 3rem; color: #113D48; margin-bottom: 0.5rem; font-weight: 400; display: block;">
+        <span class="sub-title text-center"
+            style="font-size: 3rem; color: #113D48; margin-bottom: 0.5rem; font-weight: 400; display: block;">
             WHY US <span style="font-size: 4rem; font-weight: 400;">?</span>
         </span>
     </div>
@@ -638,19 +838,24 @@
 
         <div class="about-content">
             <h2 class="text-center">Discover Sri Lanka’s Wonders With Your Ultimate Travel Partner</h2>
-            <p>Choosing the right travel partner can make the difference between an ordinary trip and a lifetime of unforgettable memories. At Novara Holidays, we do more than simply provide transport - we create complete, worry-free travel experiences tailored to your needs.</p>
+            <p>Choosing the right travel partner can make the difference between an ordinary trip and a lifetime of
+                unforgettable memories. At Novara Holidays, we do more than simply provide transport - we create
+                complete, worry-free travel experiences tailored to your needs.</p>
         </div>
     </section>
 
     <section class="about-section">
         <div class="about-content">
             <h2 class="text-center">Unmatched Expertise & Care</h2>
-            <p>With years of experience in the tourism industry, we understand what travelers truly value: comfort, safety, reliability, and authentic experiences. Your safety and peace of mind is our top priorities. From the moment you arrive in Sri Lanka until your departure, our team is there to support and assist you throughout your journey.</p>
+            <p>With years of experience in the tourism industry, we understand what travelers truly value: comfort,
+                safety, reliability, and authentic experiences. Your safety and peace of mind is our top priorities.
+                From the moment you arrive in Sri Lanka until your departure, our team is there to support and assist
+                you throughout your journey.</p>
         </div>
 
         <div class="about-image">
-            <img src="{{ asset('assets/img/3192.jpg') }}"
-                style="height: 100%; object-fit: cover;" alt="Sri Lanka Tea Plantation">
+            <img src="{{ asset('assets/img/3192.jpg') }}" style="height: 100%; object-fit: cover;"
+                alt="Sri Lanka Tea Plantation">
         </div>
     </section>
 
@@ -662,9 +867,58 @@
 
         <div class="about-content">
             <h2 class="text-center">The Gold Standard of Service</h2>
-            <p>With years of experience in the tourism industry, we understand what travelers truly value: comfort, safety, reliability, and authentic experiences. Your safety and peace of mind is our top priorities. From the moment you arrive in Sri Lanka until your departure, our team is there to support and assist you throughout your journey.</p>
+            <p>With years of experience in the tourism industry, we understand what travelers truly value: comfort,
+                safety, reliability, and authentic experiences. Your safety and peace of mind is our top priorities.
+                From the moment you arrive in Sri Lanka until your departure, our team is there to support and assist
+                you throughout your journey.</p>
 
-            <div class="features-grid">
+            <div class="wcu-accordion-wrapper">
+                <div class="wcu-accordion">
+                    <div class="wcu-accordion-item">
+                        <div class="wcu-accordion-header">
+                            <div class="wcu-icon-box"><i class="fa-solid fa-suitcase-rolling"></i></div>
+                            <h3 class="wcu-header-text">Expert Drivers & Local Knowledge</h3>
+                            <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
+                        </div>
+                        <div class="wcu-accordion-content">
+                            <p class="wcu-desc-text">Our professional drivers are highly experienced, friendly, and
+                                knowledgeable. Beyond safe driving, they help you discover the hidden gems, culture, and
+                                beauty of Sri Lanka.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="wcu-accordion-item">
+                        <div class="wcu-accordion-header">
+                            <div class="wcu-icon-box"><i class="fa-solid fa-map-marked-alt"></i></div>
+                            <h3 class="wcu-header-text">Luxury & Comfortable Vehicles</h3>
+                            <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
+                        </div>
+                        <div class="wcu-accordion-content">
+                            <p class="wcu-desc-text">Travel in comfort and style with our carefully maintained fleet of
+                                modern vehicles, designed to provide a smooth, relaxing, and enjoyable journey.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="wcu-accordion-item">
+                        <div class="wcu-accordion-header">
+                            <div class="wcu-icon-box"><i class="fa-solid fa-shield"></i></div>
+                            <h3 class="wcu-header-text">Reliable & Hassle-Free Travel</h3>
+                            <i class="fa-solid fa-chevron-down wcu-arrow-icon"></i>
+                        </div>
+                        <div class="wcu-accordion-content">
+                            <p class="wcu-desc-text">We take full responsibility for organizing your tour with
+                                attention to every detail, allowing you to relax and enjoy your holiday stress-free.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            {{-- <div class="features-grid">
                 <div class="feature-item">
                     <i class="fa-light fa-suitcase-rolling"></i>
                     <div>
@@ -688,16 +942,16 @@
                         <p>We take full responsibility for organizing your tour with attention to every detail, allowing you to relax and enjoy your holiday stress-free.</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
-    <section class="about-section">
+    {{-- <section class="about-section">
         <div class="about-content" style="text-align: center; width: 100%;">
             <h2>Experience Sri Lanka with Confidence</h2>
             <p style="text-align: center;">Choose Novara Holidays for a memorable travel experience built on trust, comfort, and genuine Sri Lankan hospitality.</p>
         </div>
-    </section>
+    </section> --}}
     <style>
         /* Filter Bar Styles (Glassmorphism) */
         .explore-filter-bar {
