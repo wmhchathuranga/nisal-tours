@@ -257,7 +257,7 @@
                         <span class="badge bg-smoke text-dark px-3 py-2 mb-3 text-uppercase fw-bold">Our Story</span>
                         <h2 class="fw-bold mb-4 display-6" style="text-align: center;">Discover The World With Our
                             Passionate Team</h2>
-                        <p class="mb-4 text-muted" style="line-height: 1.6;">At Novara Holidays, we believe travel is
+                        <p class="mb-4" style="line-height: 1.6; text-align: justify;">At Novara Holidays, we believe travel is
                             more than simply visiting new places - it is about creating meaningful experiences,
                             unforgettable memories, and genuine connections with people and culture.Our journey began
                             with a deep passion for
@@ -265,7 +265,7 @@
                             travelers from around the world. From golden beaches and misty mountains to ancient cities
                             and wildlife adventures, we are proud to help visitors discover the true heart of Sri Lanka.
                         </p>
-                        <p class="mb-4 text-muted" style="line-height: 1.6;">Whether you are planning a relaxing beach
+                        <p class="mb-4" style="line-height: 1.6; text-align: justify;">Whether you are planning a relaxing beach
                             holiday, a scenic hill country escape, an exciting wildlife safari, or a rich cultural
                             journey, our dedicated team is committed to creating the perfect travel experience tailored
                             to your interests, comfort, and budget.From the moment you arrive at the airport
@@ -273,7 +273,7 @@
                             and stress-free. With experienced local drivers, personalised itineraries, comfortable
                             transport, and friendly support throughout your stay, we aim to make every tour memorable
                             and enjoyable.</p>
-                        <p class="mb-4 text-muted" style="line-height: 1.6;">At Novara Holidays, we don’t just organise
+                        <p class="mb-4" style="line-height: 1.6; text-align: justify;">At Novara Holidays, we don’t just organise
                             tours - we create experiences that stay with you for a lifetime.</p>
                         <div class="row mb-4">
                             <div class="col-sm-6">
