@@ -293,7 +293,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center w-100">
+                        <div class="d-flex justify-content-center align-items-center w-75">
                             <a href="{{ route('contact') }}"
                                 class="btn btn-dark px-4 py-2 mt-2 rounded-pill text-center">Contact Us Today</a>
                         </div>

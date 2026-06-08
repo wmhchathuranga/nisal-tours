@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-auto">
+                {{-- <div class="col-md-6 col-xl-auto text-center text-md-start">
                     <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">Quick Links</h3>
                         <div class="menu-all-pages-container">
@@ -95,7 +95,20 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+                <div class="col-md-6 col-xl-auto text-center text-md-start">
+    <div class="widget widget_nav_menu footer-widget">
+        <h3 class="widget_title">Quick Links</h3>
+        <div class="menu-all-pages-container">
+            <ul class="menu p-0 list-unstyled"> 
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('services') }}">Services</a></li>
+                <li><a href="{{ route('contact') }}">Contact </a></li>
+                <li><a href="{{ route('about') }}">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
                         <h3 class="widget_title">Get In Touch</h3>
@@ -196,8 +209,8 @@
     </div>
     <div class="copyright-wrap" style="background-color:#070e1a ">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-6">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-3 text-center text-md-start">
                     <p class="copyright-text">Copyright 2025 <a href="{{ route('home') }}">Bitrate.lk</a>. All Rights
                         Reserved.</p>
                 </div>

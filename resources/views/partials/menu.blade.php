@@ -265,7 +265,7 @@
                             </ul>
                         </nav>
                         <button type="button" class="th-menu-toggle d-block d-xl-none"><i
-                                class="far fa-bars"></i></button>
+                                class="fa-solid fa-bars"></i></button>
                     </div>
                     <div class="col-auto position-absolute end-0 d-flex align-items-center pe-3">
 

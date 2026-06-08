@@ -676,7 +676,7 @@
         }
 
         .wcu-accordion-item {
-            background-color: #4bc5e0;
+            background-color: #242D40;
             border-radius: 12px;
             margin-bottom: 15px;
             overflow: hidden;
@@ -693,7 +693,7 @@
         }
 
         .wcu-accordion-header:hover {
-            background-color: #3accec;
+            background-color: #1f2636;
         }
 
         .wcu-icon-box {
@@ -730,7 +730,7 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            background-color: #65d1e9;
+            background-color: #2b3447;
         }
 
         .wcu-desc-text {
