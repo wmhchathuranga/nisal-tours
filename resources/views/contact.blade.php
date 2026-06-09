@@ -366,7 +366,7 @@
                                     <form method="POST" action="{{ route('contactform.submit') }}" id="contact-form"
                                         class="contact-form style2 ajax-contact bg-smoke">
                                         @csrf
-                                        <h3 class="sec-title mb-30 text-capitalize">Book a tour</h3>
+                                        <h3 class="sec-title mb-30 ">Leave a message</h3>
                                         <div class="row">
                                             <div class="col-12 form-group">
                                                 <input type="text" class="form-control" name="name" id="name3"
@@ -409,7 +409,7 @@
                 </div>
             </div>
 
-            <div class="row gy-4 justify-content-center">
+            {{-- <div class="row gy-4 justify-content-center">
                 <div class="col-xl-4 col-lg-6">
                     <div class="about-contact-grid style2 h-100">
                         <div class="about-contact-icon">
@@ -451,6 +451,60 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+            <div class="row gy-4 justify-content-center">
+
+                <div class="col-lg-6 col-md-10">
+                    <div class="about-contact-grid style2 h-100">
+                        <div class="about-contact-icon">
+                            <img src="assets/img/icon/location-dot2.svg" alt="Location Icon">
+                        </div>
+                        <div class="about-contact-details">
+                            <h6 class="box-title">Sri Lankan Office</h6>
+                            <p class="about-contact-details-text"><strong>Olinia Airport Hotel (Pvt) Ltd.</strong></p>
+                            <p class="about-contact-details-text">No 128, 18th Mile Post, Katunayake 11450, Sri Lanka
+                            </p>
+
+                            <div style="margin-top: 20px;">
+                                <p class="about-contact-details-text">
+                                    <strong>Phone:</strong>
+                                    <a href="tel:+94777143999">+94 777 143 999</a> / <a href="tel:+94112256555">+94
+                                        112 256 555</a>
+                                </p>
+                                <p class="about-contact-details-text">
+                                    <strong>Email:</strong>
+                                    <a href="mailto:info@novaraholidays.com">info@novaraholidays.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-10">
+                    <div class="about-contact-grid h-100">
+                        <div class="about-contact-icon">
+                            <img src="assets/img/icon/location-dot2.svg" alt="Location Icon">
+                        </div>
+                        <div class="about-contact-details">
+                            <h6 class="box-title">England Office</h6>
+                            <p class="about-contact-details-text"><strong>Novara Holidays (Pvt) Ltd.</strong></p>
+                            <p class="about-contact-details-text">No. 18, Astra Court, King Georges Avenue,<br>London, Watford
+                                WD187TA</p>
+
+                            <div style="margin-top: 20px;">
+                                <p class="about-contact-details-text">
+                                    <strong>Phone:</strong>
+                                    <a href="tel:+447400443036">+44 74 00 44 30 36</a>
+                                </p>
+                                <p class="about-contact-details-text">
+                                    <strong>Email:</strong>
+                                    <a href="mailto:info@novaraholidays.com">info@novaraholidays.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

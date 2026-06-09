@@ -48,7 +48,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/galle-5115527_1280.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2421.jpg (1).jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Galle Lighthouse">
                                     </div>
@@ -64,7 +64,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-batagov-29813518.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2485.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Dutch Architecture Galle">
                                     </div>
@@ -72,7 +72,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-charithk-6624969.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2495.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Galle Fort Streets">
                                     </div>
@@ -80,7 +80,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-eslames1-32310277.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2510.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Galle Fort Ramparts">
                                     </div>
@@ -88,7 +88,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-leefinvrede-18463836.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2521.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Galle Fort Viewpoint">
                                     </div>
@@ -102,13 +102,13 @@ Documentary Details Area
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide">
+                                {{-- <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
                                         <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-30858009.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;"
                                              alt="Galle Fort Streetscape">
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:480px;">
@@ -135,7 +135,7 @@ Documentary Details Area
 
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/galle-5115527_1280.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2421.jpg (1).jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;" alt="">
                                     </div>
                                 </div>
@@ -147,25 +147,25 @@ Documentary Details Area
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-batagov-29813518.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2485.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-charithk-6624969.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2495.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-eslames1-32310277.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2510.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-leefinvrede-18463836.jpg') }}"
+                                        <img src="{{ asset('assets/img/Gallefort/IMG_2521.jpg.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;" alt="">
                                     </div>
                                 </div>
@@ -176,12 +176,12 @@ Documentary Details Area
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide">
+                                {{-- <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
                                         <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-30858009.jpg') }}"
                                              style="width:100%;height:100%;object-fit:cover;" alt="">
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="swiper-slide">
                                     <div class="tour-slider-img" style="height:200px;">
                                         <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-31032907.jpg') }}"
