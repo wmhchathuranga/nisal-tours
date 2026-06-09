@@ -4,25 +4,28 @@
     <style>
         .sidebar-gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
-            gap: 10px; /* adjust spacing if needed */
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columns */
+            gap: 10px;
+            /* adjust spacing if needed */
             width: 100%;
         }
-        
+
         .sidebar-gallery .gallery-thumb {
             position: relative;
             width: 100%;
-            aspect-ratio: 2 / 1.5; /* perfect square */
+            aspect-ratio: 2 / 1.5;
+            /* perfect square */
             overflow: hidden;
         }
-        
+
         .sidebar-gallery .gallery-thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
-        
+
         /* Instagram icon overlay (optional polish) */
         .sidebar-gallery .gallery-btn {
             position: absolute;
@@ -36,11 +39,10 @@
             opacity: 0;
             transition: 0.3s;
         }
-        
+
         .sidebar-gallery .gallery-thumb:hover .gallery-btn {
             opacity: 1;
         }
-            
     </style>
 
     <div class="widget-area" style="background: #0c1524;">
@@ -70,8 +72,8 @@
                             <div class="about-logo">
                                 <a href="{{ route('home') }}"><img src="assets/img/logo-white.svg" alt="Bitrate"></a>
                             </div>
-                            <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital
-                                model. Appropriately create interactive infrastructures</p>
+                            <p class="about-text">Your trusted partner for unforgettable travel experiences. Explore
+                                breathtaking destinations and create lifelong memories with Novara Holidays.</p>
                             <div class="th-social">
                                 <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
@@ -96,20 +98,20 @@
                         </div>
                     </div>
                 </div> --}}
-                <div class="col-md-6 col-xl-auto text-center text-md-start">
-    <div class="widget widget_nav_menu footer-widget">
-        <h3 class="widget_title">Quick Links</h3>
-        <div class="menu-all-pages-container">
-            <ul class="menu p-0 list-unstyled"> 
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('services') }}">Services</a></li>
-                <li><a href="{{ route('contact') }}">Contact </a></li>
-                <li><a href="{{ route('about') }}">About Us</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-                <div class="col-md-6 col-xl-auto">
+                {{-- <div class="col-md-6 col-xl-auto text-center text-md-start">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu p-0 list-unstyled">
+                                <li><a href="{{ route('home') }}">Home</a></li>
+                                <li><a href="{{ route('services') }}">Services</a></li>
+                                <li><a href="{{ route('contact') }}">Contact </a></li>
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> --}}
+                {{-- <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
                         <h3 class="widget_title">Get In Touch</h3>
                         <div class="th-widget-contact">
@@ -127,9 +129,11 @@
                                     <img src="assets/img/icon/envelope.svg" alt="img">
                                 </div>
                                 <div class="details">
-                                    <p><a href="mailto:info@novaraholidays.com" class="info-box_link">info@novaraholidays.com</a>
+                                    <p><a href="mailto:info@novaraholidays.com"
+                                            class="info-box_link">info@novaraholidays.com</a>
                                     </p>
-                                    <p><a href="mailto:support@novaraholidays.com" class="info-box_link">support@novaraholidays.com</a>
+                                    <p><a href="mailto:support@novaraholidays.com"
+                                            class="info-box_link">support@novaraholidays.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -141,6 +145,73 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div> --}}
+                <div class="col-lg-8 col-xl-auto">
+                    <div class="widget footer-widget">
+                        <h3 class="widget_title text-center">Get In Touch</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px;">Sri Lankan Office</h5>
+                                <div class="th-widget-contact">
+                                    <div class="info-box_text">
+                                        <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <p>Olinia Airport Hotel (Pvt) Ltd.<br>
+                                                No 128, 18th Mile Post, Katunayake 11450, Sri Lanka</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-box_text">
+                                        <div class="icon"><img src="assets/img/icon/phone.svg" alt="img"></div>
+                                        <div class="details">
+                                            <p><a href="tel:+94777143999" class="info-box_link">+94 777 143 999</a></p>
+                                            <p><a href="tel:+94112256555" class="info-box_link">+94 112 256 555</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="info-box_text">
+                                        <div class="icon"><img src="assets/img/icon/envelope.svg" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <p><a href="mailto:info@novaraholidays.com"
+                                                    class="info-box_link">info@novaraholidays.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px;">England Office</h5>
+                                <div class="th-widget-contact">
+                                    <div class="info-box_text">
+                                        <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <p>No. 18, Astra Court, King Georges Avenue,<br>
+                                                London,<br>
+                                                Watford WD187TA</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-box_text">
+                                        <div class="icon"><img src="assets/img/icon/phone.svg" alt="img"></div>
+                                        <div class="details">
+                                            <p><a href="tel:+447400443036" class="info-box_link">+44 74 00 44 30 36</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info-box_text">
+                                        <div class="icon"><img src="assets/img/icon/envelope.svg" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <p><a href="mailto:info@novaraholidays.com"
+                                                    class="info-box_link">info@novaraholidays.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">
@@ -232,7 +303,8 @@
 {{-- book now floting --}}
 <div class="book-now-floting">
     <div class="w-100 h-100 form-group text-center mt-4">
-        <a target="_blank" href="https://wa.me/+94777143999" class="th-btn-whatsapp w-100"><i class="fab fa-whatsapp text-white position-absolute"></i></a>
+        <a target="_blank" href="https://wa.me/+94777143999" class="th-btn-whatsapp w-100"><i
+                class="fab fa-whatsapp text-white position-absolute"></i></a>
     </div>
 </div>
 
