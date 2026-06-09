@@ -272,7 +272,7 @@
                     {{-- <span style="font-size: 4rem">?</span>  --}}
                 </h2>
                 <span class="sub-title">The Pearl of the Indian Ocean</span>
-                <p class="text-white mx-auto " style="text-align: center;text-indent: 250px;">
+                <p class="text-white mx-auto " style="text-align:justify;">
                     Discover a land where extraordinary diversity unfolds within a single island. Sri Lanka offers an
                     unparalleled blend of pristine beaches, lush mountains, ancient heritage, vibrant culture, and
                     unforgettable wildlife experiences making it one of the world’s most captivating travel
