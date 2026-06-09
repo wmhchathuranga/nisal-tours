@@ -18,7 +18,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/20.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">6 Days Classic Sri Lanka Tour</h1>
@@ -101,7 +101,7 @@ Tour Details Area
                         </div>
 
                         <h2 class="box-title">6 Days Classic Sri Lanka Tour</h2>
-                        <h4 class="tour-price"><span class="currency">$890.00</span> / Person</h4>
+                        {{-- <h4 class="tour-price"><span class="currency">$890.00</span> / Person</h4> --}}
 
                         <p class="box-text mb-30">
                             Discover the best of Sri Lanka on this 6-day journey covering cultural heritage,

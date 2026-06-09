@@ -355,12 +355,11 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                             data-category="mountains religion ">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-01/the-orphanage-was-founded.jpg') }}"
+                                <img class="bg-image" src="{{ asset('assets/img/documentary/doc-01/sigiriya-rock-2.jpg') }}"
                                     alt="Sigiriya Rock Fortress">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '01']) }}">Elephant Orphanage
-                                            or Safari</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '01']) }}">3 Days Kandy and Sigiriya tour</a>
                                     </h3>
                                     <p class="destination-details">
                                         Experience the cultural heart of Sri Lanka with iconic landmarks and
@@ -387,7 +386,24 @@
                             </div>
                         </div>
 
+                      
+
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                            <div class="explore-custom-card">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-04/sigiriya-rock.jpg') }}" alt="5 Days Cultural & Coastal Tour">
+                                <div class="destination-content">
+                                    <h3 class="title">
+                                        <a href="{{ route('tour-details', ['tour_id' => '04']) }}">5 Days Cultural & Coastal Tour</a>
+                                    </h3>
+                                    <p class="destination-details">
+                                        Perfect mix of Sri Lanka’s heritage, wildlife, and beautiful southern beaches.
+                                    </p>
+                                    <a href="{{ route('tour-details', ['tour_id' => '04']) }}" class="glass-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
                                 <img class="bg-image" src="{{ asset('assets/img/tour/tour-03/nuwara-eliya-tea.jpg') }}" alt="6 Days Classic Sri Lanka Tour">
                                 <div class="destination-content">
@@ -402,17 +418,17 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-04/sigiriya-rock.jpg') }}" alt="5 Days Cultural & Coastal Tour">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-06/ella-train.jpg') }}" alt="8 Days Cultural, Wildlife & Coastal Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '04']) }}">5 Days Cultural & Coastal Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '06']) }}">8 Days Cultural, Wildlife & Coastal Tour</a>
                                     </h3>
                                     <p class="destination-details">
-                                        Perfect mix of Sri Lanka’s heritage, wildlife, and beautiful southern beaches.
+                                        A perfect balance of adventure, nature, and relaxation across Sri Lanka.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '04']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '06']) }}" class="glass-btn">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -432,20 +448,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                            <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-06/ella-train.jpg') }}" alt="8 Days Cultural, Wildlife & Coastal Tour">
-                                <div class="destination-content">
-                                    <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '06']) }}">8 Days Cultural, Wildlife & Coastal Tour</a>
-                                    </h3>
-                                    <p class="destination-details">
-                                        A perfect balance of adventure, nature, and relaxation across Sri Lanka.
-                                    </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '06']) }}" class="glass-btn">View More</a>
-                                </div>
-                            </div>
-                        </div>
+                       
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">

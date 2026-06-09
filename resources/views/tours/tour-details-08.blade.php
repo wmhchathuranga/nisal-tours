@@ -18,7 +18,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/hero/wp4359143-sri-lanka-4k-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">15 Days Grand Sri Lanka Tour</h1>
@@ -176,7 +176,7 @@ Tour Details Area
                         </div>
 
                         <h2 class="box-title">15 Days Grand Sri Lanka Tour</h2>
-                        <h4 class="tour-price"><span class="currency">$2375.00</span> / Person</h4>
+                        {{-- <h4 class="tour-price"><span class="currency">$2375.00</span> / Person</h4> --}}
 
                         <p class="box-text mb-30">
                             This 15-day Sri Lanka tour offers a deep exploration of the island, from ancient

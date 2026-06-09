@@ -18,7 +18,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/g2.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">3 Days South Coast & Kandy Tour</h1>
@@ -104,7 +104,7 @@ Tour Details Area
                         </div>
 
                         <h2 class="box-title">3 Days South Coast & Kandy Tour</h2>
-                        <h4 class="tour-price"><span class="currency">$395.00</span> / Person</h4>
+                        {{-- <h4 class="tour-price"><span class="currency">$395.00</span> / Person</h4> --}}
 
                         <p class="box-text mb-30">
                             Discover the beauty of Sri Lanka’s southern coast combined with the cultural charm

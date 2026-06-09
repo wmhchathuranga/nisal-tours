@@ -151,7 +151,7 @@
                                 <span class="ratting"><i class="fa-sharp fa-solid fa-star"></i><span>4.9</span></span>
                             </div>
                             <h2 class="box-title">Wilpattu Safari Sri Lanka: The Land of the Spots and Leopards</h2>
-                            <h4 class="tour-price"><span class="currency">$95,00</span>/Person</h4>
+                            {{-- <h4 class="tour-price"><span class="currency">$95,00</span>/Person</h4> --}}
                             <p class="box-text mb-30">Embark on an unforgettable journey into Wilpattu National Park, Sri Lanka's largest and one of the oldest national parks. Famous for its natural 'villus' (sand-rimmed water basins) and high density of leopards, sloth bears, and endemic birds, Wilpattu offers a unique and authentic safari experience away from the crowds. This tour is designed for wildlife enthusiasts seeking a thrilling encounter with nature's giants.
                             </p>
                             <p class="box-text mb-50">Discover the park's rich biodiversity, from majestic elephants to playful spotted deer and various species of migratory and resident birds. Our expert safari guides will lead you through the dense jungle and open plains, maximizing your chances of sighting the elusive Sri Lankan Leopard. The park's diverse ecosystem ensures a different adventure on every game drive.</p>

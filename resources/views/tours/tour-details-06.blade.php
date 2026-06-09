@@ -18,7 +18,7 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/bala-karthikeya-pavan-guda-rfObRW_1YXE-unsplash.jpg">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">8 Days Cultural, Wildlife & Coastal Tour</h1>
@@ -101,7 +101,7 @@ Tour Details Area
                         </div>
 
                         <h2 class="box-title">8 Days Cultural, Wildlife & Coastal Tour</h2>
-                        <h4 class="tour-price"><span class="currency">$1220.00</span> / Person</h4>
+                        {{-- <h4 class="tour-price"><span class="currency">$1220.00</span> / Person</h4> --}}
 
                         <p class="box-text mb-30">
                             This 8-day Sri Lanka tour blends cultural heritage, scenic hill country,

@@ -20,10 +20,10 @@
 <!--==============================
 Breadcumb
 ==============================-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp7478286-kandy-wallpapers.jpg">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">3 Days Elephant orphanage or Safari</h1>
+            <h1 class="breadcumb-title">3 Days Kandy and Sigiriya tour</h1>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li>3 Days Tour</li>
@@ -97,8 +97,8 @@ Tour Details Area
                             </span>
                         </div>
 
-                        <h2 class="box-title">3 Days Elephant orphanage or Safari</h2>
-                        <h4 class="tour-price"><span class="currency">$395.00</span> / Person</h4>
+                        <h2 class="box-title">3 Days Kandy and Sigiriya tour</h2>
+                        {{-- <h4 class="tour-price"><span class="currency">$395.00</span> / Person</h4> --}}
 
                         <p class="box-text mb-30">
                             Experience the cultural heart of Sri Lanka on this carefully designed 3-day tour.
