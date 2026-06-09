@@ -64,136 +64,6 @@
         </div>
     </div>
 
-    <!-- ======== Fixed Puzzle Gallery ======== -->
-    {{-- <div class="safe-gallery-wrapper">
-      <div class="safe-gallery-title">
-        <span>Make Your Tour More Fun</span>
-        <h2>Recent Gallery</h2>
-      </div>
-    
-      <div class="safe-gallery-area" id="safeGallery"></div>
-    </div>
-    
-    <style>
-        /* Wrapper */
-        .safe-gallery-wrapper {
-          max-width: 1200px;
-          margin: auto;
-          padding: 20px;
-        }
-        
-        /* Title */
-        .safe-gallery-title {
-          text-align: center;
-          margin-bottom: 20px;
-        }
-        .safe-gallery-title span {
-          font-size: 14px;
-          color: #777;
-        }
-        .safe-gallery-title h2 {
-          font-size: 32px;
-          margin: 5px 0;
-        }
-        
-        /* Gallery area */
-        .safe-gallery-area {
-          width: 100%;
-          height: 600px;
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-          gap: 3px;
-        }
-        
-        /* Boxes */
-        .safe-box {
-          position: relative;
-          overflow: hidden;
-          border-radius: 4px;
-          transition: all 0.8s ease;
-        }
-        
-        .safe-box img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-          transition: transform 0.5s ease;
-        }
-        
-        .safe-box:hover img {
-          transform: scale(1.05);
-        }
-    </style>
-    
-    <script>
-        // Images
-        const images = [
-          "assets/img/gallery/g1.jpg",
-          "assets/img/gallery/g2.jpg",
-          "assets/img/gallery/g3.jpg",
-          "assets/img/gallery/g4.jpg",
-          "assets/img/gallery/g5.jpg",
-          "assets/img/gallery/g6.jpg",
-          "assets/img/gallery/g7.jpg"
-        ];
-        
-        // ✅ PRE-VALIDATED GAPLESS LAYOUTS (5x3 = 15 cells)
-        const layouts = [
-        
-          // ===== Layout 1 =====
-          [
-            [1,2,1,1], [3,1,1,2], [4,2,1,1],
-            [1,1,2,2], [2,1,2,1], [4,1,2,2], [5,1,2,1],
-            [2,2,3,1], [5,1,3,1]
-          ],
-        
-          // ===== Layout 2 =====
-          [
-            [1,1,1,2], [2,2,1,1], [4,2,1,2],
-            [2,1,2,2], [3,1,2,1],
-            [1,1,3,1], [3,2,3,1], [5,1,3,1]
-          ],
-        
-          // ===== Layout 3 =====
-          [
-            [1,2,1,2], [3,1,1,1], [4,2,1,1],
-            [3,1,2,2], [4,1,2,2], [5,1,2,1],
-            [1,1,3,1], [2,1,3,1], [5,1,3,1]
-          ]
-        
-        ];
-        
-        
-        const gallery = document.getElementById("safeGallery");
-        
-        // Shuffle helper
-        function shuffle(arr) {
-          return [...arr].sort(() => Math.random() - 0.5);
-        }
-        
-        // Render gallery
-        function renderGallery() {
-          gallery.innerHTML = "";
-          const layout = layouts[Math.floor(Math.random() * layouts.length)];
-          const imgs = shuffle(images);
-        
-          layout.forEach((l, i) => {
-            const box = document.createElement("div");
-            box.className = "safe-box overflow-hidden position-relative";
-            box.style.gridColumn = `${l[0]} / span ${l[1]}`;
-            box.style.gridRow = `${l[2]} / span ${l[3]}`;
-            box.innerHTML = `<img src="${imgs[i % imgs.length]}" />`;
-            gallery.appendChild(box);
-          });
-        }
-        
-        // Init + rotate every 5s
-        renderGallery();
-        setInterval(renderGallery, 5000);
-    </script> --}}
-
     <style>
         .feature-card {
             transition: all 0.3s ease-in-out;
@@ -240,7 +110,7 @@
             <div class="row align-items-center mb-5 pb-4">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="about-image-wrapper position-relative pe-lg-4">
-                        <img src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?auto=format&fit=crop&q=80&w=800"
+                        <img src="{{ asset('assets/img/gallery/g9.jpg') }}"
                             alt="About Our Tourism Company" class="img-fluid rounded shadow"
                             style="width: 100%; object-fit: cover; height: 450px;">
 
