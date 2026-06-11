@@ -72,9 +72,17 @@
                             <div class="about-logo">
                                 <a href="{{ route('home') }}"><img src="assets/img/logo-white.svg" alt="Bitrate"></a>
                             </div>
-                            <p class="about-text">Your trusted partner for unforgettable travel experiences. Explore
-                                breathtaking destinations and create lifelong memories with Novara Holidays.</p>
-                            <div class="th-social">
+                            <p class="about-text" style="text-align: justify; margin-bottom: 0px"> &nbsp;&nbsp;We
+                                provide you the most
+                                unforgettable
+                                travel experiences in Sri Lanka.
+                                Explore all
+                                breathtaking destinations and create lifelong memories with your trusted travel partner.
+                            </p>
+                            <p style="text-align:right; margin-top: 0px;">
+                                - Novara Holidays -
+                            </p>
+                            <div class="th-social text-center">
                                 <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
@@ -150,27 +158,28 @@
                 <div class="col-lg-8 col-xl-auto">
                     <div class="widget footer-widget">
                         <h3 class="widget_title text-center">Get In Touch</h3>
-                        
+
                         <div class="row">
                             <div class="col-md-6">
-                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px;">Sri Lankan Office</h5>
+                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px; text-align: center;">Sri
+                                    Lankan Office</h5>
                                 <div class="th-widget-contact">
                                     <div class="info-box_text">
                                         <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
                                         </div>
                                         <div class="details">
-                                            <p>Olinia Airport Hotel (Pvt) Ltd.<br>
-                                                No 128, 18th Mile Post, Katunayake 11450, Sri Lanka</p>
+                                            <p>Olinia Airport Hotel<br>
+                                                No 128,<br>18th Mile Post,<br>Katunayake 11450,<br>Sri Lanka</p>
                                         </div>
                                     </div>
-                                    <div class="info-box_text">
+                                    <div class="info-box_text d-flex align-items-center">
                                         <div class="icon"><img src="assets/img/icon/phone.svg" alt="img"></div>
                                         <div class="details">
                                             <p><a href="tel:+94777143999" class="info-box_link">+94 777 143 999</a></p>
                                             <p><a href="tel:+94112256555" class="info-box_link">+94 112 256 555</a></p>
                                         </div>
                                     </div>
-                                    <div class="info-box_text">
+                                    <div class="info-box_text d-flex align-items-center">
                                         <div class="icon"><img src="assets/img/icon/envelope.svg" alt="img">
                                         </div>
                                         <div class="details">
@@ -182,30 +191,23 @@
                             </div>
 
                             <div class="col-md-6 mt-4 mt-md-0">
-                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px;">England Office</h5>
+                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px; text-align: center;">
+                                    England Office</h5>
                                 <div class="th-widget-contact">
                                     <div class="info-box_text">
                                         <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
                                         </div>
                                         <div class="details">
-                                            <p>No. 18, Astra Court, King Georges Avenue,<br>
+                                            <p>No. 18,<br>Astra Court,<br>King Georges Avenue,<br>
                                                 London,<br>
                                                 Watford WD187TA</p>
                                         </div>
                                     </div>
-                                    <div class="info-box_text">
+                                    <div class="info-box_text d-flex align-items-center">
                                         <div class="icon"><img src="assets/img/icon/phone.svg" alt="img"></div>
                                         <div class="details">
                                             <p><a href="tel:+447400443036" class="info-box_link">+44 74 00 44 30 36</a>
                                             </p>
-                                        </div>
-                                    </div>
-                                    <div class="info-box_text">
-                                        <div class="icon"><img src="assets/img/icon/envelope.svg" alt="img">
-                                        </div>
-                                        <div class="details">
-                                            <p><a href="mailto:info@novaraholidays.com"
-                                                    class="info-box_link">info@novaraholidays.com</a></p>
                                         </div>
                                     </div>
                                 </div>
