@@ -41,7 +41,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/snorkeling/pexels-elaine-bernadine-castro-1263177-2403840.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
@@ -49,7 +49,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/snorkeling/pexels-gabriela-carrillo-611004983-18834847.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
@@ -57,14 +57,14 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/snorkeling/pexels-leticia-azevedo-95410198-13024204.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
@@ -72,7 +72,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/snorkeling/pexels-shutter-speed-4050076.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">

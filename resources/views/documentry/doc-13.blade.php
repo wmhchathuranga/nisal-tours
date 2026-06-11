@@ -42,7 +42,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/explore/Jaffna-Fort-6-768x512.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Nallur Kandaswamy Temple">
@@ -50,14 +50,14 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/eshan-malaviarachchi-Z3XO2B2Db7Q-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Jaffna Fort">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/explore/Jaffna-Fort-3.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Jaffna Public Library">
@@ -65,14 +65,14 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/explore/Jaffna-Fort-1920.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Casuarina Beach">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/explore/Jaffna-Fort-1.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Delft Island">
                                         </div>

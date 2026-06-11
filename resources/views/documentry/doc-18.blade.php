@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/documentary/doc-18/climbing-adams-peak-cloud-blanket-12.jpg') }}">
+    <div class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/documentary/doc-18/climbing-adams-peak-cloud-blanket-12.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Adams Peak (Sri Paada)</h1>
@@ -42,7 +43,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-18/adams-peak-sri-lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Trail to Sri Paada">
@@ -50,21 +51,23 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-18/climbing-adams-peak-cloud-blanket-1.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Spectacular Sunrise (Ira Sevaya)">
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Spectacular Sunrise (Ira Sevaya)">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-18/LK74630200-02-E-1280-720.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="The Sacred Footprint Shrine">
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="The Sacred Footprint Shrine">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-18/sl9.PNG.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Pilgrims climbing the steps">
@@ -72,7 +75,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-18/sri-pada-adam-s-peak-sri-lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="View from the summit of Adam's Peak">
@@ -135,15 +138,34 @@
 
                             <!-- Intro -->
                             <p class="box-text mb-30">
-                                Located in the lush central highlands of Sri Lanka, Sri Paada (Adam's Peak) is a majestic 2,243-meter tall conical mountain that stands as a profound symbol of spiritual unity and devotion. Unlike any other mountain in the world, it is deeply revered by followers of four major religions. Buddhists refer to it as 'Sri Paada', believing the giant footprint at the summit is that of Lord Buddha, left during his third historic visit to the island. Hindus know it as 'Shiva Pada', representing the creative dance of Lord Shiva. Meanwhile, Christians and Muslims believe it is the exact spot where Adam first set foot on earth after being exiled from the Garden of Eden.
+                                Located in the lush central highlands of Sri Lanka, Sri Paada (Adam's Peak) is a
+                                majestic 2,243-meter tall conical mountain that stands as a profound symbol of spiritual
+                                unity and devotion. Unlike any other mountain in the world, it is deeply revered by
+                                followers of four major religions. Buddhists refer to it as 'Sri Paada', believing the
+                                giant footprint at the summit is that of Lord Buddha, left during his third historic
+                                visit to the island. Hindus know it as 'Shiva Pada', representing the creative dance of
+                                Lord Shiva. Meanwhile, Christians and Muslims believe it is the exact spot where Adam
+                                first set foot on earth after being exiled from the Garden of Eden.
                             </p>
 
                             <p class="box-text mb-30">
-                                The mountain is completely surrounded by the magnificent Peak Wilderness Sanctuary, a vast, dense tropical rainforest that is home to incredible biodiversity, including elusive leopards, elephants, and rare endemic birds. The air here is crisp, and the imposing peak is almost always shrouded in a thick, rolling veil of mystical white mist, adding to the deeply spiritual and otherworldly atmosphere of the entire region.
+                                The mountain is completely surrounded by the magnificent Peak Wilderness Sanctuary, a
+                                vast, dense tropical rainforest that is home to incredible biodiversity, including
+                                elusive leopards, elephants, and rare endemic birds. The air here is crisp, and the
+                                imposing peak is almost always shrouded in a thick, rolling veil of mystical white mist,
+                                adding to the deeply spiritual and otherworldly atmosphere of the entire region.
                             </p>
 
                             <p class="box-text mb-40">
-                                Embarking on the journey to the summit is a deeply cultural, physically demanding, and spiritually rewarding experience. Pilgrims refer to this sacred climb as "Karunawa" (a journey of compassion), constantly exchanging blessings of "Saman Devi Pihitai" (May the God Saman protect you) with fellow climbers along the way. The grueling night climb, navigating thousands of steep stone steps, is ultimately rewarded by the spectacular 'Ira Sevaya'-a breathtaking sunrise that bathes the sky in vivid colors. Shortly after, the mountain casts a perfect, mystical triangular shadow over the surrounding misty plains, a phenomenon that defies pure geological explanation and leaves every traveler in absolute awe.
+                                Embarking on the journey to the summit is a deeply cultural, physically demanding, and
+                                spiritually rewarding experience. Pilgrims refer to this sacred climb as "Karunawa" (a
+                                journey of compassion), constantly exchanging blessings of "Saman Devi Pihitai" (May the
+                                God Saman protect you) with fellow climbers along the way. The grueling night climb,
+                                navigating thousands of steep stone steps, is ultimately rewarded by the spectacular
+                                'Ira Sevaya'-a breathtaking sunrise that bathes the sky in vivid colors. Shortly after,
+                                the mountain casts a perfect, mystical triangular shadow over the surrounding misty
+                                plains, a phenomenon that defies pure geological explanation and leaves every traveler
+                                in absolute awe.
                             </p>
 
                             <!-- Key Facts -->
@@ -173,13 +195,27 @@
                             <h3 class="box-title">Highlights & Landmarks</h3>
                             <div class="checklist mb-50">
                                 <ul>
-                                    <li><strong>The Sacred Footprint Shrine:</strong> The ultimate destination at the summit where devotees pray and ring the bell to signify the number of times they have completed the pilgrimage.</li>
-                                    <li><strong>Ira Sevaya (The Sunrise):</strong> The glorious and breathtaking sunrise viewed from the peak, often accompanied by the rhythmic chanting of Buddhist monks.</li>
-                                    <li><strong>The Triangular Shadow:</strong> A perfect, eerie geometric shadow cast by the irregular mountain onto the clouds and plains immediately after dawn.</li>
-                                    <li><strong>Makara Thorana:</strong> The grand, beautifully carved traditional dragon archway marking the beginning of the popular Hatton-Nallathanniya route.</li>
-                                    <li><strong>Seetha Gangula:</strong> An icy cold, crystal-clear mountain stream where pilgrims perform traditional ritual cleansing before continuing their ascent.</li>
-                                    <li><strong>Sama Ceitya (Japanese Peace Pagoda):</strong> A tranquil, stark white stupa built by a Japanese monk, offering a peaceful resting spot on the trail.</li>
-                                    <li><strong>Bhagava Lena:</strong> A historic cave just beneath the summit where King Nissanka Malla famously inscribed a record of his pilgrimage centuries ago.</li>
+                                    <li><strong>The Sacred Footprint Shrine:</strong> The ultimate destination at the
+                                        summit where devotees pray and ring the bell to signify the number of times they
+                                        have completed the pilgrimage.</li>
+                                    <li><strong>Ira Sevaya (The Sunrise):</strong> The glorious and breathtaking sunrise
+                                        viewed from the peak, often accompanied by the rhythmic chanting of Buddhist
+                                        monks.</li>
+                                    <li><strong>The Triangular Shadow:</strong> A perfect, eerie geometric shadow cast
+                                        by the irregular mountain onto the clouds and plains immediately after dawn.
+                                    </li>
+                                    <li><strong>Makara Thorana:</strong> The grand, beautifully carved traditional
+                                        dragon archway marking the beginning of the popular Hatton-Nallathanniya route.
+                                    </li>
+                                    <li><strong>Seetha Gangula:</strong> An icy cold, crystal-clear mountain stream
+                                        where pilgrims perform traditional ritual cleansing before continuing their
+                                        ascent.</li>
+                                    <li><strong>Sama Ceitya (Japanese Peace Pagoda):</strong> A tranquil, stark white
+                                        stupa built by a Japanese monk, offering a peaceful resting spot on the trail.
+                                    </li>
+                                    <li><strong>Bhagava Lena:</strong> A historic cave just beneath the summit where
+                                        King Nissanka Malla famously inscribed a record of his pilgrimage centuries ago.
+                                    </li>
                                 </ul>
                             </div>
 
@@ -197,7 +233,9 @@
                             <h3 class="box-title">Location Map</h3>
                             <div class="mb-10">
                                 <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                    <iframe src="https://maps.google.com/maps?q=Adam's%20Peak&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=Adam's%20Peak&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
 

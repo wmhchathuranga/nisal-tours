@@ -15,8 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper"
-        data-bg-src="{{ asset('assets/img/coral/7128-banner.jpg') }}">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/coral/7128-banner.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Coral Watching</h1>
@@ -41,7 +40,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/coral/35862889_m.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
@@ -49,7 +48,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/coral/Gemini_Generated_Image_4ltgoh4ltgoh4ltg.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
@@ -57,14 +56,14 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/coral/zHawksbill-shutterstock_1753161572.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/coral/Image-110-795x447.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
@@ -72,7 +71,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/coral/Gemini_Generated_Image_tyi9z1tyi9z1tyi9.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
@@ -133,7 +132,7 @@
                             </button>
                         </div>
 
-                       <div class="page-content">
+                        <div class="page-content">
                             <div class="page-meta mb-30">
                                 <a class="page-tag" href="#">Leisure Activity</a>
                                 <span class="ratting">
@@ -146,15 +145,26 @@
 
                             <!-- Intro -->
                             <p class="box-text mb-30">
-                                If you want to experience the breathtaking beauty of Sri Lanka's vibrant marine sanctuaries but prefer to stay completely dry, coral watching in a traditional glass-bottom boat is the absolute perfect activity. It is a fantastic, highly inclusive adventure that allows non-swimmers, young children, and elderly travelers to witness the hidden wonders of the ocean without needing to put on a snorkel or diving gear.
+                                If you want to experience the breathtaking beauty of Sri Lanka's vibrant marine
+                                sanctuaries but prefer to stay completely dry, coral watching in a traditional
+                                glass-bottom boat is the absolute perfect activity. It is a fantastic, highly inclusive
+                                adventure that allows non-swimmers, young children, and elderly travelers to witness the
+                                hidden wonders of the ocean without needing to put on a snorkel or diving gear.
                             </p>
 
                             <p class="box-text mb-30">
-                                These specially designed motorboats feature large, transparent glass panels built directly into the hull. As the boat glides gently over the shallow coastal reefs, you get a crystal-clear, magnified view of the bustling aquatic ecosystems directly beneath your feet. It literally feels like looking into a massive, natural, open-ocean aquarium safely from the comfort of your seat.
+                                These specially designed motorboats feature large, transparent glass panels built
+                                directly into the hull. As the boat glides gently over the shallow coastal reefs, you
+                                get a crystal-clear, magnified view of the bustling aquatic ecosystems directly beneath
+                                your feet. It literally feels like looking into a massive, natural, open-ocean aquarium
+                                safely from the comfort of your seat.
                             </p>
 
                             <p class="box-text mb-40">
-                                The Hikkaduwa Marine National Park on the south coast and Pigeon Island National Park on the east coast are the two most famous hotspots for this relaxing activity. Drift over massive brain corals, watch schools of neon-colored tropical fish darting around, and if you are lucky, you might even see a giant sea turtle swimming right below the glass!
+                                The Hikkaduwa Marine National Park on the south coast and Pigeon Island National Park on
+                                the east coast are the two most famous hotspots for this relaxing activity. Drift over
+                                massive brain corals, watch schools of neon-colored tropical fish darting around, and if
+                                you are lucky, you might even see a giant sea turtle swimming right below the glass!
                             </p>
 
                             <!-- Key Facts -->
@@ -182,10 +192,18 @@
                             <h3 class="box-title">Highlights & Marine Life</h3>
                             <div class="checklist mb-50">
                                 <ul>
-                                    <li><strong>Hikkaduwa Marine Sanctuary:</strong> Float over one of Sri Lanka's most famous protected coral reefs, featuring diverse coral species like brain corals and branching staghorn corals.</li>
-                                    <li><strong>Close Encounters:</strong> Spot incredibly colorful marine life including parrotfish, butterflyfish, clownfish, and friendly sea turtles swimming naturally in the wild.</li>
-                                    <li><strong>Family Friendly:</strong> Completely safe, secure, and comfortable for all ages, making it the absolute best way to introduce young kids to the magic of the ocean.</li>
-                                    <li><strong>Local Guides:</strong> The friendly boat operators often point out hidden creatures, explain the different types of corals, and know exactly where the turtles like to hang out.</li>
+                                    <li><strong>Hikkaduwa Marine Sanctuary:</strong> Float over one of Sri Lanka's most
+                                        famous protected coral reefs, featuring diverse coral species like brain corals
+                                        and branching staghorn corals.</li>
+                                    <li><strong>Close Encounters:</strong> Spot incredibly colorful marine life
+                                        including parrotfish, butterflyfish, clownfish, and friendly sea turtles
+                                        swimming naturally in the wild.</li>
+                                    <li><strong>Family Friendly:</strong> Completely safe, secure, and comfortable for
+                                        all ages, making it the absolute best way to introduce young kids to the magic
+                                        of the ocean.</li>
+                                    <li><strong>Local Guides:</strong> The friendly boat operators often point out
+                                        hidden creatures, explain the different types of corals, and know exactly where
+                                        the turtles like to hang out.</li>
                                 </ul>
                             </div>
 

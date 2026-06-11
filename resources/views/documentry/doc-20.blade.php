@@ -22,7 +22,7 @@
                 <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Documentary</li>
-                    <li>Arugam Bay Beach</li>       
+                    <li>Arugam Bay Beach</li>
                 </ul>
             </div>
         </div>
@@ -42,7 +42,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-20/djordje-djordjevic-2DsY9_JfEfE-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Surfing at Main Point">
@@ -50,29 +50,30 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-20/emily-goodhart-Ffe6eAVn6ko-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Elephant Rock View">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-20/etienne-boulanger-5e2KVwyojpc-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Kumana National Park Safari">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-20/isuru-ranasinha-aksPgTprHlo-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Pottuvil Lagoon">
+                                                alt="Elephant Rock View">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-20/etienne-boulanger-5e2KVwyojpc-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Kumana National Park Safari">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-20/isuru-ranasinha-aksPgTprHlo-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Pottuvil Lagoon">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-20/junaideen-jr-YpBQ8TyCEyU-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Relaxing on A-Bay Beach">
@@ -148,11 +149,17 @@
                             </h2>
 
                             <p class="box-text mb-30">
-                                Located on the dry, sunny East Coast of Sri Lanka, Arugam Bay (affectionately known as A-Bay) is world-renowned for its legendary surf breaks. With its bohemian atmosphere, golden sands, and vibrant cafe culture, it has transformed into a premier destination for surfers and backpackers globally.
+                                Located on the dry, sunny East Coast of Sri Lanka, Arugam Bay (affectionately known as
+                                A-Bay) is world-renowned for its legendary surf breaks. With its bohemian atmosphere,
+                                golden sands, and vibrant cafe culture, it has transformed into a premier destination
+                                for surfers and backpackers globally.
                             </p>
 
                             <p class="box-text mb-40">
-                                Beyond the spectacular waves at Main Point and Whisky Point, Arugam Bay offers an incredible blend of nature and history. It is just a stone's throw away from ancient temples hidden in the dunes and national parks teeming with wild elephants, leopards, and exotic birds.
+                                Beyond the spectacular waves at Main Point and Whisky Point, Arugam Bay offers an
+                                incredible blend of nature and history. It is just a stone's throw away from ancient
+                                temples hidden in the dunes and national parks teeming with wild elephants, leopards,
+                                and exotic birds.
                             </p>
 
                             <h3 class="box-title">Key Facts</h3>

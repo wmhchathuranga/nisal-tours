@@ -42,7 +42,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ee/0a/71/photo8jpg.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Surfing at Hikkaduwa">
@@ -50,21 +50,23 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/aa/08/07/caption.jpg?w=900&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Hikkaduwa Coral Reef">
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Hikkaduwa Coral Reef">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/0b/a3/d9/aerial-view-hikka-tranz.jpg?w=1200&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Sea Turtles in Hikkaduwa">
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Sea Turtles in Hikkaduwa">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/f4/ba/f3/neil-took-us-to-such.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Hikkaduwa Beach Bars and Nightlife">
@@ -72,7 +74,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a3/1a/4f/snorchlovani.jpg?w=1200&h=-1&s=1"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sunset at Narigama Beach">
@@ -148,11 +150,16 @@
                             </h2>
 
                             <p class="box-text mb-30">
-                                Located on the southwestern coast of Sri Lanka, Hikkaduwa is one of the island's most vibrant and famous beach towns. Known for its beautiful coral sanctuary and lively atmosphere, it offers a perfect mix of relaxation and ocean adventure.
+                                Located on the southwestern coast of Sri Lanka, Hikkaduwa is one of the island's most
+                                vibrant and famous beach towns. Known for its beautiful coral sanctuary and lively
+                                atmosphere, it offers a perfect mix of relaxation and ocean adventure.
                             </p>
 
                             <p class="box-text mb-40">
-                                Whether you want to snorkel with giant sea turtles right off the shore, catch some excellent surf breaks, or dance the night away at beachfront parties, Hikkaduwa has something for everyone. It is also renowned for its delicious seafood and bustling coastal strip.
+                                Whether you want to snorkel with giant sea turtles right off the shore, catch some
+                                excellent surf breaks, or dance the night away at beachfront parties, Hikkaduwa has
+                                something for everyone. It is also renowned for its delicious seafood and bustling
+                                coastal strip.
                             </p>
 
                             <h3 class="box-title">Key Facts</h3>
@@ -181,7 +188,8 @@
                             <div class="checklist mb-50">
                                 <ul>
                                     <li>Hikkaduwa National Park (The famous shallow-water Coral Sanctuary)</li>
-                                    <li>Narigama Beach (Wide sandy beach, perfect for surfing and spectacular sunsets)</li>
+                                    <li>Narigama Beach (Wide sandy beach, perfect for surfing and spectacular sunsets)
+                                    </li>
                                     <li>Sea Turtle Hatcheries & frequent beach turtle sightings in the shallows</li>
                                     <li>Seenigama Muhudu Viharaya (An ancient island temple just off the coast)</li>
                                     <li>Vibrant beachfront restaurants, cafes, and lively nightlife spots</li>

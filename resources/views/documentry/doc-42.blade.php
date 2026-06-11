@@ -40,7 +40,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_2eqnhw2eqnhw2eqn.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
@@ -48,7 +48,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_3wyzr33wyzr33wyz.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
@@ -56,14 +56,14 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/villageTour/Gemini_Generated_Image_4ye77a4ye77a4ye7.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/villageTour/caption.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
@@ -71,7 +71,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/villageTour/sigiriya-001.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
@@ -141,7 +141,8 @@
                                 </span>
                             </div>
 
-                            <h2 class="box-title mb-20">Traditional Village Tour – Experience the Heart of Sri Lanka</h2>
+                            <h2 class="box-title mb-20">Traditional Village Tour – Experience the Heart of Sri Lanka
+                            </h2>
 
                             <!-- Intro -->
                             <p class="box-text mb-30">

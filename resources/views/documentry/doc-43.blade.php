@@ -40,7 +40,7 @@
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://www.riversandoceans.com/wp-content/uploads/2023/02/rafting-whitewater-rapid.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
@@ -48,7 +48,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://www.teardrop-hotels.com/camellia-hills/wp-content/uploads/sites/9/2024/08/White-Water-Rafting-1920x600-1.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
@@ -56,14 +56,14 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://lakpura.com/cdn/shop/products/LK30010100-05-E-1280-720.jpg?v=1624088271&width=1445"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxV4xx7Zn71EE2OigOfapNwFTvgfL5O6FWg&s"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
@@ -71,7 +71,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="https://api.wanaka.co.nz/assets/ListingImages/Portal/399/Adobe-Express-file-12__FocusFillWzI1NjAsMTQ0MCwieSIsMTM0XQ.jpg"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">

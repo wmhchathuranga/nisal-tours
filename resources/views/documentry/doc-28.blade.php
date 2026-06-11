@@ -1,45 +1,46 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
     @include('partials.head')
 </head>
 
 <body>
 
-@include('partials.loader')
+    @include('partials.loader')
 
-@php
-    $page = 'documentary';
-@endphp
+    @php
+        $page = 'documentary';
+    @endphp
 
-@include('partials.menu')
+    @include('partials.menu')
 
-<div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Ravanacave/20190724-124751-largejpg.jpg') }}">
-    <div class="container">
-        <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Ravana Cave</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li>Documentary</li>
-                <li>Ravana Cave</li>
-            </ul>
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Ravanacave/20190724-124751-largejpg.jpg') }}">
+        <div class="container">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Ravana Cave</h1>
+                <ul class="breadcumb-menu">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Documentary</li>
+                    <li>Ravana Cave</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<section class="space">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-10">
-                <div class="tour-page-single">
+    <section class="space">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="tour-page-single">
 
-                     <div class="slider-area tour-slider1 mb-40">
+                        <div class="slider-area tour-slider1 mb-40">
                             <div class="swiper th-slider mb-4" id="tourSlider13"
                                 data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/Ravanacave/photo1jpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
@@ -47,7 +48,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/Ravanacave/20190724-124751-largejpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
@@ -55,14 +56,14 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/Ravanacave/cave-after-excavations.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/Ravanacave/cup-of-tea-on-the-way.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
@@ -70,7 +71,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:480px;">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/Ravanacave/hike-to-the-cave.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
@@ -131,7 +132,7 @@
                             </button>
                         </div>
 
-                    <div class="page-content">
+                        <div class="page-content">
 
                             <!-- Meta -->
                             <div class="page-meta mb-30">
@@ -149,15 +150,32 @@
 
                             <!-- Intro -->
                             <p class="box-text mb-30">
-                                Steeped in ancient legends and mythological intrigue, the Ravana Cave is an unmissable historical gem hidden high up in the misty cliffs of Ella. According to the grand Indian epic, the Ramayana, this dark and mysterious cave is believed to be one of the secret locations where the powerful demon-king Ravana concealed Princess Sita after abducting her from India. As you approach the massive entrance, the dense jungle and echoing silence instantly transport you back to an era of gods, legendary kings, and ancient magic.
+                                Steeped in ancient legends and mythological intrigue, the Ravana Cave is an unmissable
+                                historical gem hidden high up in the misty cliffs of Ella. According to the grand Indian
+                                epic, the Ramayana, this dark and mysterious cave is believed to be one of the secret
+                                locations where the powerful demon-king Ravana concealed Princess Sita after abducting
+                                her from India. As you approach the massive entrance, the dense jungle and echoing
+                                silence instantly transport you back to an era of gods, legendary kings, and ancient
+                                magic.
                             </p>
 
                             <p class="box-text mb-30">
-                                The cave itself is said to be just a tiny fraction of a much larger, vast network of secret underground tunnels that King Ravana used as a masterstroke of engineering to travel swiftly and undetected across his vast kingdom. Beyond the fascinating mythology, archaeological excavations have revealed that the history of this cave stretches even further back in time. Evidence of prehistoric human habitation dating back over 20,000 years has been discovered here, making it a site of immense historical and archaeological magnitude.
+                                The cave itself is said to be just a tiny fraction of a much larger, vast network of
+                                secret underground tunnels that King Ravana used as a masterstroke of engineering to
+                                travel swiftly and undetected across his vast kingdom. Beyond the fascinating mythology,
+                                archaeological excavations have revealed that the history of this cave stretches even
+                                further back in time. Evidence of prehistoric human habitation dating back over 20,000
+                                years has been discovered here, making it a site of immense historical and
+                                archaeological magnitude.
                             </p>
 
                             <p class="box-text mb-40">
-                                Today, reaching the Ravana Cave is a thrilling adventure in itself. Tucked away on the side of a steep mountain, the hike to the cave entrance is a challenging but deeply rewarding climb that offers breathtaking, panoramic views of the lush Ella valley below. Whether you are a dedicated history buff, a mythology enthusiast, or an adventure seeker craving a rugged jungle trek, exploring the dark, mysterious depths of Ravana Cave is a captivating experience that adds a deep layer of mystery to your hill country getaway.
+                                Today, reaching the Ravana Cave is a thrilling adventure in itself. Tucked away on the
+                                side of a steep mountain, the hike to the cave entrance is a challenging but deeply
+                                rewarding climb that offers breathtaking, panoramic views of the lush Ella valley below.
+                                Whether you are a dedicated history buff, a mythology enthusiast, or an adventure seeker
+                                craving a rugged jungle trek, exploring the dark, mysterious depths of Ravana Cave is a
+                                captivating experience that adds a deep layer of mystery to your hill country getaway.
                             </p>
 
                             <!-- Key Facts -->
@@ -187,11 +205,20 @@
                             <h3 class="box-title">Highlights & Landmarks</h3>
                             <div class="checklist mb-50">
                                 <ul>
-                                    <li><strong>The Mythological Connection:</strong> Experience the exact location deeply intertwined with the ancient Ramayana legend and King Ravana's empire.</li>
-                                    <li><strong>The Steep Ascent:</strong> A rugged and thrilling climb of over 600 irregular stone steps winding through dense, vibrant forest and ancient roots.</li>
-                                    <li><strong>The Cave Entrance:</strong> A towering and dramatic rock mouth that opens up into the cool, dark, and echoing chambers of the mountain.</li>
-                                    <li><strong>Underground Tunnel Network:</strong> Glimpse into the mysterious dark corners of the cave, historically believed to connect to various parts of the island.</li>
-                                    <li><strong>Spectacular Valley Views:</strong> Enjoy magnificent, sweeping viewpoints of the sprawling Ella Gap and the surrounding lush mountains from the top.</li>
+                                    <li><strong>The Mythological Connection:</strong> Experience the exact location
+                                        deeply intertwined with the ancient Ramayana legend and King Ravana's empire.
+                                    </li>
+                                    <li><strong>The Steep Ascent:</strong> A rugged and thrilling climb of over 600
+                                        irregular stone steps winding through dense, vibrant forest and ancient roots.
+                                    </li>
+                                    <li><strong>The Cave Entrance:</strong> A towering and dramatic rock mouth that
+                                        opens up into the cool, dark, and echoing chambers of the mountain.</li>
+                                    <li><strong>Underground Tunnel Network:</strong> Glimpse into the mysterious dark
+                                        corners of the cave, historically believed to connect to various parts of the
+                                        island.</li>
+                                    <li><strong>Spectacular Valley Views:</strong> Enjoy magnificent, sweeping
+                                        viewpoints of the sprawling Ella Gap and the surrounding lush mountains from the
+                                        top.</li>
                                 </ul>
                             </div>
 
@@ -209,19 +236,22 @@
                             <h3 class="box-title">Location Map</h3>
                             <div class="mb-10">
                                 <div class="ratio ratio-16x9 rounded overflow-hidden">
-                                   <iframe src="https://maps.google.com/maps?q=Ravana%20Cave%20Ella&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=Ravana%20Cave%20Ella&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
 
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-@include('partials.footer')
-@include('partials.scripts')
+    @include('partials.footer')
+    @include('partials.scripts')
 
 </body>
+
 </html>
