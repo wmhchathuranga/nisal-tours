@@ -3043,7 +3043,6 @@
                         <div class="swiper-slide">
                             <div class="nh-card">
                                 <div class="nh-avatar-wrap">
-                                    <div class="nh-curve-border"></div>
 
                                     @if ($linkedUser && $linkedUser->profile_photo)
                                         <img src="{{ Storage::disk('s3')->url($linkedUser->profile_photo) }}"
