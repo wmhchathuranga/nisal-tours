@@ -2896,9 +2896,8 @@
             min-width: 110px;
             min-height: 110px;
             border-radius: 50%;
-            object-fit: contain;
-            z-index: 2;
-            flex-shrink: 0;
+            object-fit: cover;
+            overflow: hidden;
         }
 
         .nh-avatar-wrap {
