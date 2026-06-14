@@ -193,11 +193,11 @@ Documentary Details Area
                                 </div>
                             </div>
 
-                            <button data-slider-prev="#documentarySlider" class="slider-arrow style3 slider-prev">
+                            <button data-slider-prev="#tourSlider4" class="slider-arrow style3 slider-prev">
                                 <img src="assets/img/icon/hero-arrow-left.svg" alt="">
                             </button>
 
-                            <button data-slider-next="#documentarySlider" class="slider-arrow style3 slider-next">
+                            <button data-slider-next="#tourSlider4" class="slider-arrow style3 slider-next">
                                 <img src="assets/img/icon/hero-arrow-right.svg" alt="">
                             </button>
                         </div>

@@ -114,13 +114,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Aukana/prayer-offerings.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
 
