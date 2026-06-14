@@ -2883,7 +2883,7 @@
             position: absolute;
             width: 140px;
             height: 140px;
-            /* border: 3px solid #13b5b1; */
+            border: 3px solid #13b5b1;
             border-radius: 50%;
             border-right-color: transparent;
             border-bottom-color: transparent;
@@ -2892,7 +2892,7 @@
 
         .nh-img {
             width: 110px;
-            height: 110px;
+            height: 110px !important;
             min-width: 110px;
             min-height: 110px;
             border-radius: 50%;
@@ -3045,7 +3045,6 @@
                         <div class="swiper-slide">
                             <div class="nh-card">
                                 <div class="nh-avatar-wrap">
-                                    <div class="nh-curve-border"></div>
 
                                     @if ($linkedUser && $linkedUser->profile_photo)
                                         <img src="{{ Storage::disk('s3')->url($linkedUser->profile_photo) }}"
