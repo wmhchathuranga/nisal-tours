@@ -1,6 +1,6 @@
 <!-- Jquery -->
 <!-- Jquery -->
-<script src="{{ 'js/vendor/jquery-3.6.0.min.js' }}"></script>
+
 <!-- Swiper Js -->
 <script src="{{ 'js/swiper-bundle.min.js' }}"></script>
 <!-- Bootstrap -->
