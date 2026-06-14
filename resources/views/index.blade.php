@@ -3046,10 +3046,8 @@
                             <div class="nh-card">
                                 <div class="nh-avatar-wrap">
                                     <div class="nh-curve-border"></div>
-                                    @if ($testi->profile_picture)
-                                        <img src="{{ asset('storage/' . $testi->profile_picture) }}"
-                                            alt="{{ $testi->full_name }}" class="nh-img">
-                                    @elseif ($linkedUser && $linkedUser->profile_photo)
+
+                                    @if ($linkedUser && $linkedUser->profile_photo)
                                         <img src="{{ Storage::disk('s3')->url($linkedUser->profile_photo) }}"
                                             alt="{{ $testi->full_name }}" class="nh-img">
                                     @else

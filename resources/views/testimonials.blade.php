@@ -292,8 +292,8 @@
                                             <img src="{{ asset('storage/' . $testimonial->profile_picture) }}"
                                                 alt="Profile" class="user-avatar shadow-sm"> --}}
                                         @if ($testimonial->user && $testimonial->user->profile_photo)
-                                            <img src="{{ asset('storage/' . $testimonial->user->profile_photo) }}"
-                                                alt="{{ $testimonial->full_name }}" class="user-avatar shadow-sm">
+                                            <img src="{{ Storage::disk('s3')->url($linkedUser->profile_photo) }}"
+                                                alt="{{ $testi->full_name }}" class="nh-img">
                                         @else
                                             <div class="user-avatar-placeholder shadow-sm">
                                                 <i class="fa-solid fa-user"></i>

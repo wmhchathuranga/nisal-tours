@@ -125,7 +125,9 @@
 
                             <div class="text-center mb-4">
                                 <div class="profile-preview-wrapper">
-                                    <img src="{{ $user->profile_photo ? asset('storage/' . $user->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode($user->name) }}"
+                                    <img src="{{ $user->profile_photo
+                                        ? Storage::disk('s3')->url($user->profile_photo)
+                                        : 'https://ui-avatars.com/api/?name=' . urlencode($user->name) }}"
                                         id="imgPreview">
                                 </div>
                                 <div class="d-flex justify-content-center align-content-center gap-2">

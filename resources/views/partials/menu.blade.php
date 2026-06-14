@@ -284,7 +284,9 @@
                                         <div class="position-relative">
                                             {{-- <img src="{{ auth()->user()->profile_photo ? asset(auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
                                                 alt="Profile" class="rounded-circle profile-trigger-img"> --}}
-                                            <img src="{{ auth()->user()->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
+                                            <img src="{{ auth()->user()->profile_photo
+                                                ? Storage::disk('s3')->url(auth()->user()->profile_photo)
+                                                : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
                                                 alt="Profile" class="rounded-circle profile-trigger-img">
                                             <span
                                                 class="position-absolute bottom-0 end-0 bg-success border border-2 border-white rounded-circle status-dot"></span>
@@ -298,10 +300,13 @@
                                             <div class="d-flex align-items-center justify-content-start gap-3">
                                                 {{-- <img src="{{ auth()->user()->profile_photo ? asset(auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
                                                     alt="Profile" class="rounded-circle profile-header-img me-3"> --}}
-                                                <img src="{{ auth()->user()->profile_photo ? asset('storage/' . auth()->user()->profile_photo) : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
+                                                <img src="{{ auth()->user()->profile_photo
+                                                    ? Storage::disk('s3')->url(auth()->user()->profile_photo)
+                                                    : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
                                                     alt="Profile" class="rounded-circle profile-trigger-img">
                                                 <div>
-                                                    <span class="mb-0 text-center text-dark">{{ auth()->user()->name }}</span>
+                                                    <span
+                                                        class="mb-0 text-center text-dark">{{ auth()->user()->name }}</span>
                                                 </div>
                                             </div>
                                         </li>

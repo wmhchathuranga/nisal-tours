@@ -11,11 +11,13 @@ use Illuminate\Validation\Rules\Password;
 
 class ProfileController extends Controller
 {
-    public function edit() {
+    public function edit()
+    {
         return view('profile.settings', ['user' => Auth::user()]);
     }
 
-    public function update(Request $request) {
+    public function update(Request $request)
+    {
         $user = Auth::user();
         $request->validate([
             'name' => 'required|string|max:255',
@@ -29,9 +31,10 @@ class ProfileController extends Controller
         if ($request->hasFile('profile_photo')) {
             // Parana image eka thiyenam delete karanawa
             if ($user->profile_photo) {
-                Storage::disk('public')->delete($user->profile_photo);
+                Storage::disk('s3')->delete($user->profile_photo);
             }
-            $path = $request->file('profile_photo')->store('profile_photos', 'public');
+            $path = $request->file('profile_photo')->store('profile_photos', 's3');
+            Logger($path);
             $user->profile_photo = $path;
         }
 
@@ -39,7 +42,8 @@ class ProfileController extends Controller
         return back()->with('success', 'Profile updated successfully!');
     }
 
-    public function updatePassword(Request $request) {
+    public function updatePassword(Request $request)
+    {
         $request->validate([
             'current_password' => 'required|current_password',
             'password' => ['required', 'confirmed', Password::defaults()],
@@ -52,10 +56,11 @@ class ProfileController extends Controller
         return back()->with('success', 'Password changed successfully!');
     }
 
-    public function deleteImage() {
+    public function deleteImage()
+    {
         $user = Auth::user();
         if ($user->profile_photo) {
-            Storage::disk('public')->delete($user->profile_photo);
+            Storage::disk('s3')->delete($user->profile_photo);
             $user->profile_photo = null;
             $user->save();
         }
