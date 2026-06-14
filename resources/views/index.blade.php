@@ -3049,7 +3049,7 @@
                                         <img src="{{ asset('storage/' . $testi->profile_picture) }}"
                                             alt="{{ $testi->full_name }}" class="nh-img">
                                     @elseif ($linkedUser && $linkedUser->profile_photo)
-                                        <img src="{{ Storage::disk('s3')->url($testimonial->profile_photo) }}"
+                                        <img src="{{ Storage::disk('s3')->url($testi->profile_photo) }}"
                                             alt="{{ $testi->full_name }}" class="nh-img">
                                     @else
                                         <img src="{{ asset('assets/img/testimonial/testi-img-2_1.jpg') }}"
