@@ -293,7 +293,8 @@
                                                 alt="Profile" class="user-avatar shadow-sm"> --}}
                                         @if ($testimonial->user && $testimonial->user->profile_photo)
                                             <img src="{{ Storage::disk('s3')->url($testimonial->user->profile_photo) }}"
-                                                alt="{{ $testimonial->user->full_name }}" class="user-avatar shadow-sm">
+                                                alt="{{ $testimonial->full_name }}"
+                                                class="rounded-circle profile-trigger-img">
                                         @else
                                             <div class="user-avatar-placeholder shadow-sm">
                                                 <i class="fa-solid fa-user"></i>
