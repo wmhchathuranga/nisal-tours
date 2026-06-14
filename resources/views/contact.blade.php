@@ -17,7 +17,7 @@
         }
 
         .bg-smoke {
-            background-color: #79DAF0 !important;
+            background-color: #0c1524 !important;
         }
     </style>
 
@@ -113,7 +113,7 @@
         }
 
         .wcu-accordion-item {
-            background-color: #4bc5e0;
+            background-color: #0c1524;
             border-radius: 12px;
             margin-bottom: 15px;
             overflow: hidden;
@@ -366,7 +366,7 @@
                                     <form method="POST" action="{{ route('contactform.submit') }}" id="contact-form"
                                         class="contact-form style2 ajax-contact bg-smoke">
                                         @csrf
-                                        <h3 class="sec-title mb-30 ">Leave a message</h3>
+                                        <h3 class="sec-title mb-30 text-white">Leave a message</h3>
                                         <div class="row">
                                             <div class="col-12 form-group">
                                                 <input type="text" class="form-control" name="name" id="name3"
@@ -394,7 +394,7 @@
                                                     placeholder="Your Message"></textarea>
                                                 <img src="assets/img/icon/chat.svg" alt="">
                                             </div>
-                                            <div class="form-btn col-12 mt-24">
+                                            <div class="form-btn col-12 mt-24 text-end">
                                                 <button type="submit" id="submit-btn" class="th-btn-whatsapp">
                                                     <i class="fab fa-whatsapp me-2 text-white"></i> Send message
                                                 </button>
@@ -452,7 +452,7 @@
                     </div>
                 </div>
             </div> --}}
-            <div class="row gy-4 justify-content-center">
+            {{-- <div class="row gy-4 justify-content-center">
 
                 <div class="col-lg-6 col-md-10">
                     <div class="about-contact-grid style2 h-100">
@@ -505,7 +505,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
         </div>
     </div>
 

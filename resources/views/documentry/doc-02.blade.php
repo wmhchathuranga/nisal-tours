@@ -18,7 +18,7 @@
     <!--==============================
 Breadcumb
 ==============================-->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/3007.jpg">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/Gallefort/IMG_2496.jpg">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Galle Dutch Fort</h1>
@@ -49,29 +49,29 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2421.jpg (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2421.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Galle Lighthouse">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/galle-4818526_1280.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2451.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Galle Fort Streetscape">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2434.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Galle Fort Walls">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2485.jpg.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Dutch Architecture Galle">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2495.jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2495.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Galle Fort Streets">
                                         </div>
@@ -79,7 +79,7 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2510.jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2510.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Galle Fort Ramparts">
                                         </div>
@@ -87,7 +87,7 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2521.jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2521.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Galle Fort Viewpoint">
                                         </div>
@@ -95,35 +95,14 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-27669315(1).jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2524.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Galle Fort Streetscape">
                                         </div>
                                     </div>
 
-                                    {{-- <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height:640px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-30858009.jpg') }}"
-                                             style="width:100%;height:100%;object-fit:cover;"
-                                             alt="Galle Fort Streetscape">
-                                    </div>
-                                </div> --}}
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-31032907.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Galle Fort Streetscape">
-                                        </div>
-                                    </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-31032909.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Galle Fort Streetscape">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -134,65 +113,48 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2421.jpg (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2421.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/galle-4818526_1280.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2451.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2485.jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2434.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2495.jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2495.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2510.jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2510.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Gallefort/IMG_2521.jpg.jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2521.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-27669315(1).jpg') }}"
+                                            <img src="{{ asset('assets/img/Gallefort/IMG_2524.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="">
                                         </div>
                                     </div>
 
-                                    {{-- <div class="swiper-slide">
-                                    <div class="tour-slider-img" style="height:200px;">
-                                        <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-30858009.jpg') }}"
-                                             style="width:100%;height:100%;object-fit:cover;" alt="">
-                                    </div>
-                                </div> --}}
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-31032907.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-02/pexels-thilina-alagiyawanna-3266092-31032909.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="">
-                                        </div>
-                                    </div>
+
 
                                 </div>
                             </div>

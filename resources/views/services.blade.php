@@ -73,7 +73,7 @@
                             class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100 active"
                             id="tour-packages-tab" data-bs-toggle="pill" data-bs-target="#tour-packages" type="button"
                             role="tab" aria-controls="tour-packages" aria-selected="false">
-                            <div class="icon mb-2">
+                            <div class="icon mb">
                                 <i class="fa-light fa-suitcase-rolling fa-2x text-theme"></i>
                             </div>
                             <span class="fs-5 fw-bold text-dark">Tour Packages</span>
@@ -86,49 +86,12 @@
                             class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100"
                             id="customize-tour-tab" data-bs-toggle="pill" data-bs-target="#customize-tour"
                             type="button" role="tab" aria-controls="customize-tour" aria-selected="false">
-                            <div class="icon mb-2">
+                            <div class="icon mb">
                                 <i class="fa-light fa-list-timeline fa-2x text-theme"></i>
                             </div>
                             <span class="fs-5 fw-bold text-dark">Customize Tour</span>
                         </button>
                     </li>
-
-
-                    <!-- Transport Tab -->
-                    {{-- <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-                  <button 
-                    class="nav-link active d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
-                    id="transport-tab" 
-                    data-bs-toggle="pill" 
-                    data-bs-target="#transport" 
-                    type="button" 
-                    role="tab" 
-                    aria-controls="transport" 
-                    aria-selected="true">
-                      <div class="icon mb-2">
-                        <i class="fa-light fa-route fa-2x text-theme"></i>
-                      </div>
-                      <span class="fs-5 fw-bold text-dark">Transport Services</span>
-                  </button>
-                </li> --}}
-
-                    <!-- Accommodation Tab -->
-                    {{-- <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-                  <button 
-                    class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100" 
-                    id="accommodation-tab" 
-                    data-bs-toggle="pill" 
-                    data-bs-target="#accommodation" 
-                    type="button" 
-                    role="tab" 
-                    aria-controls="accommodation" 
-                    aria-selected="false">
-                      <div class="icon mb-2">
-                        <i class="fa-light fa-hotel fa-2x text-theme"></i>
-                      </div>
-                      <span class="fs-5 fw-bold text-dark">Accommodation</span>
-                  </button>
-                </li> --}}
 
                     <!-- Arrival Departure tab -->
                     <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
@@ -136,7 +99,7 @@
                             class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100"
                             id="transport-tab" data-bs-toggle="pill" data-bs-target="#transport" type="button"
                             role="tab" aria-controls="transport" aria-selected="false">
-                            <div class="icon mb-2">
+                            <div class="icon mb">
                                 <i class="fa-light fa-plane-arrival fa-2x text-theme"></i>
                             </div>
                             <span class="fs-5 fw-bold text-dark">Arrival</span>
@@ -145,12 +108,12 @@
 
                     <!--  Departure tab -->
                     <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-                        
+
                         <button
                             class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100"
                             id="transport-tab" data-bs-toggle="pill" data-bs-target="#transport2" type="button"
                             role="tab" aria-controls="transport2" aria-selected="false">
-                            <div class="icon mb-2">
+                            <div class="icon mb">
                                 <i class="fa-light fa-plane-departure fa-2x text-theme"></i>
                             </div>
                             <span class="fs-5 fw-bold text-dark">Departure</span>
@@ -355,11 +318,13 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                             data-category="mountains religion ">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/documentary/doc-01/sigiriya-rock-2.jpg') }}"
+                                <img class="bg-image"
+                                    src="{{ asset('assets/img/documentary/doc-01/sigiriya-rock-2.jpg') }}"
                                     alt="Sigiriya Rock Fortress">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '01']) }}">3 Days Kandy and Sigiriya tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '01']) }}">3 Days Kandy and
+                                            Sigiriya tour</a>
                                     </h3>
                                     <p class="destination-details">
                                         Experience the cultural heart of Sri Lanka with iconic landmarks and
@@ -373,109 +338,134 @@
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-02/madu-river-boat-ride2.jpg') }}" alt="3 Days South Coast & Kandy Tour">
+                                <img class="bg-image"
+                                    src="{{ asset('assets/img/explore/pexels-genine-alyssa-pedreno-andrada-1263127-2932486.jpg') }}"
+                                    alt="3 Days South Coast & Kandy Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '02']) }}">3 Days South Coast & Kandy Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '02']) }}">3 Days South Coast &
+                                            Kandy Tour</a>
                                     </h3>
                                     <p class="destination-details">
                                         Discover southern coast beauty combined with cultural charm and sacred temples.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '02']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '02']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
                             </div>
                         </div>
 
-                      
+
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-04/sigiriya-rock.jpg') }}" alt="5 Days Cultural & Coastal Tour">
+                                <img class="bg-image" src="{{ asset('assets/img/Gallefort/IMG_2486.jpg') }}"
+                                    alt="5 Days Cultural & Coastal Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '04']) }}">5 Days Cultural & Coastal Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '04']) }}">5 Days Cultural &
+                                            Coastal Tour</a>
                                     </h3>
                                     <p class="destination-details">
                                         Perfect mix of Sri Lanka’s heritage, wildlife, and beautiful southern beaches.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '04']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '04']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
                             </div>
                         </div>
 
-                          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-03/nuwara-eliya-tea.jpg') }}" alt="6 Days Classic Sri Lanka Tour">
+                                <img class="bg-image"
+                                    src="{{ asset('assets/img/tour/tour-03/pinnawala-elephant-orphanage.jpg') }}"
+                                    alt="6 Days Classic Sri Lanka Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '03']) }}">6 Days Classic Sri Lanka Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '03']) }}">6 Days Classic Sri
+                                            Lanka Tour</a>
                                     </h3>
                                     <p class="destination-details">
                                         A balanced journey of culture, hill country, wildlife, and coastal destinations.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '03']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '03']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
                             </div>
                         </div>
 
-                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-06/ella-train.jpg') }}" alt="8 Days Cultural, Wildlife & Coastal Tour">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-06/ella-train.jpg') }}"
+                                    alt="8 Days Cultural, Wildlife & Coastal Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '06']) }}">8 Days Cultural, Wildlife & Coastal Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '06']) }}">8 Days Cultural,
+                                            Wildlife & Coastal Tour</a>
                                     </h3>
                                     <p class="destination-details">
                                         A perfect balance of adventure, nature, and relaxation across Sri Lanka.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '06']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '06']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-05/anuradhapura.jpg') }}" alt="10 Days Grand Sri Lanka Tour">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-05/anuradhapura.jpg') }}"
+                                    alt="10 Days Grand Sri Lanka Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '05']) }}">10 Days Grand Sri Lanka Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '05']) }}">10 Days Grand Sri
+                                            Lanka Tour</a>
                                     </h3>
                                     <p class="destination-details">
-                                        Explore ancient kingdoms, hill country, wildlife safaris, and coastal relaxation.
+                                        Explore ancient kingdoms, hill country, wildlife safaris, and coastal
+                                        relaxation.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '05']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '05']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
                             </div>
                         </div>
 
-                       
+
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-07/negombo.jpg') }}" alt="13 Days Grand Sri Lanka Tour">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-07/negombo.jpg') }}"
+                                    alt="13 Days Grand Sri Lanka Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '07']) }}">13 Days Grand Sri Lanka Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '07']) }}">13 Days Grand Sri
+                                            Lanka Tour</a>
                                     </h3>
                                     <p class="destination-details">
                                         A complete island experience with culture, wildlife, and pristine beaches.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '07']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '07']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
                             <div class="explore-custom-card">
-                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-08/pigeon-island.jpg') }}" alt="15 Days Grand Sri Lanka Tour">
+                                <img class="bg-image" src="{{ asset('assets/img/tour/tour-08/pigeon-island.jpg') }}"
+                                    alt="15 Days Grand Sri Lanka Tour">
                                 <div class="destination-content">
                                     <h3 class="title">
-                                        <a href="{{ route('tour-details', ['tour_id' => '08']) }}">15 Days Grand Sri Lanka Tour</a>
+                                        <a href="{{ route('tour-details', ['tour_id' => '08']) }}">15 Days Grand Sri
+                                            Lanka Tour</a>
                                     </h3>
                                     <p class="destination-details">
-                                        This 15-day Sri Lanka tour offers a deep exploration of the island with comfort and expert guidance.
+                                        This 15-day Sri Lanka tour offers a deep exploration of the island with comfort
+                                        and expert guidance.
                                     </p>
-                                    <a href="{{ route('tour-details', ['tour_id' => '08']) }}" class="glass-btn">View More</a>
+                                    <a href="{{ route('tour-details', ['tour_id' => '08']) }}" class="glass-btn">View
+                                        More</a>
                                 </div>
                             </div>
                         </div>
@@ -1063,7 +1053,7 @@
 
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>

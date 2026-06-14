@@ -826,7 +826,7 @@
     <div class="main-heading-wrapper">
         <span class="sub-title text-center"
             style="font-size: 3rem; color: #113D48; margin-bottom: 0.5rem; font-weight: 400; display: block;">
-            WHY US <span style="font-size: 4rem; font-weight: 400;">?</span>
+            WHY US <span style="font-size: 4rem; font-weight: 400;">...?</span>
         </span>
     </div>
 
@@ -838,19 +838,36 @@
 
         <div class="about-content">
             <h2 class="text-center">Discover Sri Lanka’s Wonders With Your Ultimate Travel Partner</h2>
-            <p>Choosing the right travel partner can make the difference between an ordinary trip and a lifetime of
-                unforgettable memories. At Novara Holidays, we do more than simply provide transport - we create
-                complete, worry-free travel experiences tailored to your needs.</p>
+            <p>Choosing the right travel partner can make the difference between an ordinary vacation and a journey
+                filled with unforgettable memories. At Novara Holidays, we go beyond simply providing transportation. we
+                create seamless, worry-free travel experiences designed around your interests, comfort, and budget.
+                From the golden beaches of the south coast and the misty tea-covered hills of the central highlands to
+                ancient cultural treasures and breathtaking wildlife encounters, we help you experience the very best of
+                Sri Lanka. Whether you’re planning a family holiday, romantic getaway, adventure tour, business trip, or
+                customized private excursion, our dedicated team ensures every detail is handled with care and
+                professionalism.
+                With reliable vehicles, experienced drivers, personalized itineraries, and local expertise, we make
+                exploring Sri Lanka safe, comfortable, and truly memorable. Let Novara Holidays be your trusted
+                companion as you discover the beauty, culture, and hospitality of this remarkable island paradise.
+                Travel with confidence. Explore with passion. Create memories that last a lifetime.</p>
         </div>
     </section>
 
     <section class="about-section">
         <div class="about-content">
             <h2 class="text-center">Unmatched Expertise & Care</h2>
-            <p>With years of experience in the tourism industry, we understand what travelers truly value: comfort,
-                safety, reliability, and authentic experiences. Your safety and peace of mind is our top priorities.
-                From the moment you arrive in Sri Lanka until your departure, our team is there to support and assist
-                you throughout your journey.</p>
+            <p>With years of experience in Sri Lanka’s tourism industry, we understand what travelers truly
+                value -comfort, safety, reliability, and authentic local experiences. Our commitment goes beyond
+                transportation and tour arrangements; we strive to provide exceptional service that allows you to relax
+                and enjoy every moment of your journey.
+                Your safety, convenience, and peace of mind remain our highest priorities. From the moment you arrive in
+                Sri Lanka until the day you depart, our dedicated team is available to assist you with personalized
+                guidance, local insights, and responsive support whenever you need it. Whether it’s recommending hidden
+                gems, adapting your itinerary, or ensuring smooth travel logistics, we are committed to making your
+                experience effortless and memorable.
+                At Novara Holidays, we treat every traveler as our valued guest, delivering professional service with
+                genuine Sri Lankan hospitality to create journeys you’ll cherish for years to come.
+                Experience Sri Lanka with confidence, comfort, and care.</p>
         </div>
 
         <div class="about-image">
@@ -2026,7 +2043,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
                     data-category="historical-religious ">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/explore/galle_fort.jpg') }}"
+                        <img class="bg-image" src="{{ asset('assets/img/Gallefort/IMG_2486.jpg') }}"
                             alt="Galle Dutch Fort">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2341,7 +2358,8 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
                             alt="Snorkeling / Diving">
                         <div class="destination-content">
                             <h3 class="title">
@@ -2358,7 +2376,8 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
                     <div class="explore-custom-card">
-                        <img class="bg-image" src="{{ asset('assets/img/coral/Gemini_Generated_Image_tyi9z1tyi9z1tyi9.png') }}"
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/coral/Gemini_Generated_Image_tyi9z1tyi9z1tyi9.png') }}"
                             alt="Coral Watching">
                         <div class="destination-content">
                             <h3 class="title">

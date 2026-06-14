@@ -47,24 +47,7 @@
 
     <div class="widget-area" style="background: #0c1524;">
         <div class="container">
-            {{-- <div class="newsletter-area">
-                    <div class="newsletter-top">
-                        <div class="row gy-4 align-items-center">
-                            <div class="col-lg-5">
-                                <h2 class="newsletter-title text-white text-capitalize mb-0">get updated the latest
-                                    newsletter</h2>
-                            </div>
-                            <div class="col-lg-7">
-                                <form class="newsletter-form style2">
-                                    <input class="form-control " type="email" placeholder="Enter Email"
-                                        required="">
-                                    <button type="submit" class="th-btn style1">Subscribe Now <img
-                                            src="assets/img/icon/plane2.svg" alt=""></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+
             <div class="row justify-content-between">
                 <div class="col-md-6 col-xl-3">
                     <div class="widget footer-widget">
@@ -92,76 +75,14 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-md-6 col-xl-auto text-center text-md-start">
-                    <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">Quick Links</h3>
-                        <div class="menu-all-pages-container">
-                            <ul class="menu">
 
-                                <li><a href="{{ route('home') }}">Home</a></li>
-                                <li><a href="{{ route('services') }}">Services</a></li>
-                                <li><a href="{{ route('contact') }}">Contact </a></li>
-                                <li><a href="{{ route('about') }}">About Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> --}}
-                {{-- <div class="col-md-6 col-xl-auto text-center text-md-start">
-                    <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">Quick Links</h3>
-                        <div class="menu-all-pages-container">
-                            <ul class="menu p-0 list-unstyled">
-                                <li><a href="{{ route('home') }}">Home</a></li>
-                                <li><a href="{{ route('services') }}">Services</a></li>
-                                <li><a href="{{ route('contact') }}">Contact </a></li>
-                                <li><a href="{{ route('about') }}">About Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> --}}
-                {{-- <div class="col-md-6 col-xl-auto">
-                    <div class="widget footer-widget">
-                        <h3 class="widget_title">Get In Touch</h3>
-                        <div class="th-widget-contact">
-                            <div class="info-box_text">
-                                <div class="icon">
-                                    <img src="assets/img/icon/phone.svg" alt="img">
-                                </div>
-                                <div class="details">
-                                    <p><a href="tel:+01234567890" class="info-box_link">+94 112 256 555</a></p>
-                                    <p><a href="tel:+09876543210" class="info-box_link">+94 777 143 999</a></p>
-                                </div>
-                            </div>
-                            <div class="info-box_text">
-                                <div class="icon">
-                                    <img src="assets/img/icon/envelope.svg" alt="img">
-                                </div>
-                                <div class="details">
-                                    <p><a href="mailto:info@novaraholidays.com"
-                                            class="info-box_link">info@novaraholidays.com</a>
-                                    </p>
-                                    <p><a href="mailto:support@novaraholidays.com"
-                                            class="info-box_link">support@novaraholidays.com</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="info-box_text">
-                                <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
-                                </div>
-                                <div class="details">
-                                    <p>No 128, 18th Mile Post, Katunayake 11450, Sri Lanka</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-                <div class="col-lg-8 col-xl-auto">
+                <div class="col-md-6 col-lg-9">
                     <div class="widget footer-widget">
                         <h3 class="widget_title text-center">Get In Touch</h3>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px; text-align: center;">Sri
+                        <div class="row justify-content-end">
+                            <div class="col-md-5">
+                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px; text-align: left;">Sri
                                     Lankan Office</h5>
                                 <div class="th-widget-contact">
                                     <div class="info-box_text">
@@ -179,19 +100,12 @@
                                             <p><a href="tel:+94112256555" class="info-box_link">+94 112 256 555</a></p>
                                         </div>
                                     </div>
-                                    <div class="info-box_text d-flex align-items-center">
-                                        <div class="icon"><img src="assets/img/icon/envelope.svg" alt="img">
-                                        </div>
-                                        <div class="details">
-                                            <p><a href="mailto:info@novaraholidays.com"
-                                                    class="info-box_link">info@novaraholidays.com</a></p>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="col-md-6 mt-4 mt-md-0">
-                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px; text-align: center;">
+                            <div class="col-md-5 mt-4 mt-md-0">
+                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px; text-align: left;">
                                     England Office</h5>
                                 <div class="th-widget-contact">
                                     <div class="info-box_text">
@@ -210,71 +124,18 @@
                                             </p>
                                         </div>
                                     </div>
+                                    <div class="info-box_text d-flex align-items-center">
+                                        <div class="icon"><img src="assets/img/icon/envelope.svg" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <p><a href="mailto:info@novaraholidays.com"
+                                                    class="info-box_link">info@novaraholidays.com</a></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-auto">
-                    <div class="widget footer-widget">
-                        {{-- <h3 class="widget_title">Instagram Post</h3> --}}
-                        <div class="sidebar-gallery">
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g1.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g2.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g3.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g4.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g5.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g6.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g7.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g8.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                            <div class="gallery-thumb">
-                                <img src="assets/img/gallery/g9.jpg" alt="Gallery Image">
-                                <a target="{{ route('home', '#safeGallery') }}" class="gallery-btn">
-                                    {{-- <i class="fab fa-instagram"></i> --}}
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

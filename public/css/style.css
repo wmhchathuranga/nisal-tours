@@ -9860,8 +9860,8 @@ heding animation  end
 .breadcumb-wrapper {
   position: relative;
   background-color: var(--title-color);
-  background-position: left top;
-  padding: 230px 0 130px 0;
+  background-position: bottom;
+  padding: 330px 0 130px 0;
   overflow: hidden;
   text-align: center;
 }
