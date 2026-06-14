@@ -3049,12 +3049,10 @@
 
                                     @if ($linkedUser && $linkedUser->profile_photo)
                                         <img src="{{ Storage::disk('s3')->url($linkedUser->profile_photo) }}"
-                                            alt="{{ $testi->full_name }}"
-                                            class="rounded-circle profile-trigger-img">
+                                            alt="{{ $testi->full_name }}" class="nh-img">
                                     @else
                                         <img src="{{ asset('assets/img/testimonial/testi-img-2_1.jpg') }}"
-                                            alt="{{ $testi->full_name }}"
-                                            class="rounded-circle profile-trigger-img">
+                                            alt="{{ $testi->full_name }}" class="nh-img">
                                     @endif
                                 </div>
 
