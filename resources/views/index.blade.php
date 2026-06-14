@@ -2892,10 +2892,10 @@
 
         .nh-avatar-wrap {
             position: relative;
-            flex: 0 0 120px;
-            width: 120px;
-            height: 120px;
-            min-width: 120px;
+            flex: 0 0 140px;
+            width: 140px;
+            height: 140px;
+            min-width: 140px;
             border-radius: 50%;
             overflow: hidden;
             flex-shrink: 0;
