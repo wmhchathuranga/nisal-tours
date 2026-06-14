@@ -2890,25 +2890,27 @@
             transform: rotate(-45deg);
         }
 
-        .nh-avatar-wrap {
-            position: relative;
-            flex: 0 0 140px;
-            width: 140px;
-            height: 140px;
-            min-width: 140px;
+        .nh-img {
+            width: 110px;
+            height: 110px;
+            min-width: 110px;
+            min-height: 110px;
             border-radius: 50%;
-            overflow: hidden;
+            object-fit: cover;
+            z-index: 2;
             flex-shrink: 0;
         }
 
-        .nh-img {
-            width: 100%;
-            height: 100%;
-            min-width: 100%;
-            min-height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
+        .nh-avatar-wrap {
+            position: relative;
+            flex: 0 0 120px;
+            width: 120px;
+            height: 120px;
+            min-width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
         }
 
         /* Content Area (Fixed for text overflow) */
@@ -3043,6 +3045,7 @@
                         <div class="swiper-slide">
                             <div class="nh-card">
                                 <div class="nh-avatar-wrap">
+                                    <div class="nh-curve-border"></div>
 
                                     @if ($linkedUser && $linkedUser->profile_photo)
                                         <img src="{{ Storage::disk('s3')->url($linkedUser->profile_photo) }}"
