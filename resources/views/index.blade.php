@@ -2890,26 +2890,25 @@
             transform: rotate(-45deg);
         }
 
-        .nh-img {
-            width: 110px;
-            height: 110px;
-            min-width: 110px;
-            min-height: 110px;
-            border-radius: 50%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-
         .nh-avatar-wrap {
             position: relative;
             flex: 0 0 120px;
             width: 120px;
             height: 120px;
             min-width: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
             flex-shrink: 0;
+        }
+
+        .nh-img {
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
         }
 
         /* Content Area (Fixed for text overflow) */
