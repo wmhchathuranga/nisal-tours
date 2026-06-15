@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/aluwihare/caption4.jpg') }}">
+    <div style="background-position: bottom;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/aluwihare/caption4.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Mathale Aluviharaya</h1>
@@ -41,22 +42,6 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (1).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Leopard resting on a tree in Yala">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}')"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/aluwihare/caption (3).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
@@ -64,7 +49,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption4.jpg') }}"
+                                            <img src="{{ asset('assets/img/aluwihare/caption (4).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -78,6 +63,14 @@
                                         </div>
                                     </div>
 
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/aluwihare/caption (6).jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Patanangala Beach inside the park">
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -85,12 +78,6 @@
                                 data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
                                 <div class="swiper-wrapper">
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/aluwihare/caption (2).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">

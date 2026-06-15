@@ -70,14 +70,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/Ravanacave/hike-to-the-cave.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Patanangala Beach inside the park">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
 
@@ -109,13 +101,6 @@
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/Ravanacave/cup-of-tea-on-the-way.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/Ravanacave/hike-to-the-cave.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
