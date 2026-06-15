@@ -19,7 +19,8 @@
 Breadcumb
 ==============================-->
     {{-- <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg"> --}}
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp6828612-sigiriya-wallpapers.jpg">
+    <div style="background-position: top;" class="breadcumb-wrapper"
+        data-bg-src="assets/img/bg/wp6828612-sigiriya-wallpapers.jpg">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Sigiriya Lion Rock</h1>

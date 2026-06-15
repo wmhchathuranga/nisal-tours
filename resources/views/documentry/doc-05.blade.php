@@ -18,7 +18,8 @@
     <!--==============================
 Breadcumb
 ==============================-->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/explore/steptodown.com923176.jpg">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/explore/steptodown.com923176.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Ella Rock</h1>
@@ -56,13 +57,6 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/dilhan-sariffodeen-fDI98ucdsTU-unsplash-1024x576.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Nine Arch Bridge">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-05/DSC9904-scaled.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Little Adam’s Peak">
@@ -85,40 +79,12 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/ella-sri-lanka-evening-rain-reflections-photo.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Nine Arch Bridge">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-05/LS_Ella-Rock_Desktop_1920x700.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Little Adam’s Peak">
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/ravana-cave-in-ella-1-1200_orig.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Ella Rock">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/ravana-falls-6.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Nine Arch Bridge">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/Ravana_waterfalls_ella.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Little Adam’s Peak">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -137,13 +103,6 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/dilhan-sariffodeen-fDI98ucdsTU-unsplash-1024x576.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Nine Arch Bridge">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/documentary/doc-05/DSC9904-scaled.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Little Adam’s Peak">
@@ -166,38 +125,7 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/ella-sri-lanka-evening-rain-reflections-photo.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Nine Arch Bridge">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/documentary/doc-05/LS_Ella-Rock_Desktop_1920x700.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Little Adam’s Peak">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/ravana-cave-in-ella-1-1200_orig.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Ella Rock">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/ravana-falls-6.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Nine Arch Bridge">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-05/Ravana_waterfalls_ella.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Little Adam’s Peak">
                                         </div>

@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper"
+    <div style="background-position: center;" class="breadcumb-wrapper"
         data-bg-src="{{ asset('assets/img/documentary/doc-14/anil-reddy-r-vUs1jhhLA-unsplash.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
