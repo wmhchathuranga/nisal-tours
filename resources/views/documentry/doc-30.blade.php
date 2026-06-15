@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/liptonseat/lupton-seat-sunrise.jpg') }}">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/liptonseat/lupton-seat-sunrise.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Lipton Seat</h1>
@@ -47,13 +48,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-now (1).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
-                                        </div>
-                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
@@ -87,7 +81,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/liptonseat/lupton-seat-now (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/liptonseat/haputale-to-lipton-seat.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

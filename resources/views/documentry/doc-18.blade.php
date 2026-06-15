@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper"
+    <div style="background-position: top;" class="breadcumb-wrapper"
         data-bg-src="{{ asset('assets/img/documentary/doc-18/climbing-adams-peak-cloud-blanket-12.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
@@ -44,6 +44,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-18/sl9.PNG.png') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Pilgrims climbing the steps">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-18/adams-peak-sri-lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Trail to Sri Paada">
@@ -66,28 +74,19 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-18/sl9.PNG.png') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Pilgrims climbing the steps">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-18/sri-pada-adam-s-peak-sri-lanka.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="View from the summit of Adam's Peak">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
 
                             <div class="swiper th-slider tour-thumb-slider"
                                 data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
                                 <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-18/sl9.PNG.png') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">

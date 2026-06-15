@@ -18,7 +18,8 @@
     <!--==============================
 Breadcumb
 ==============================-->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/sajeevan-balachandran-X57L65eg4AY-unsplash.jpg">
+    <div class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/bg/sajeevan-balachandran-X57L65eg4AY-unsplash.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Horton Plains </h1>
@@ -50,42 +51,35 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9b/6e/ff/oriental-dwarf-kingfisher.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/horton-plains-min.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/33/2b/5e/explore-sinharaja-rain.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/Horton.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e4/ef/ee/sinharaja-forest-reserve.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/horton-plains-national.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3a/40/18/poisonous-snakes.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/hoton-plains.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/b9/be/8b/caption.jpg?w=1000&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/d8/81/70/the-trails-of-sinharaja.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/3e861126-0912-45ce-bbda-67d19ad4970a.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -100,42 +94,35 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9b/6e/ff/oriental-dwarf-kingfisher.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/horton-plains-min.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/33/2b/5e/explore-sinharaja-rain.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/Horton.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e4/ef/ee/sinharaja-forest-reserve.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/horton-plains-national.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3a/40/18/poisonous-snakes.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/hoton-plains.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/b9/be/8b/caption.jpg?w=1000&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/d8/81/70/the-trails-of-sinharaja.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-10/3e861126-0912-45ce-bbda-67d19ad4970a.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
