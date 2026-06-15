@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper"
+    <div style="background-position: top;" class="breadcumb-wrapper"
         data-bg-src="{{ asset('assets/img/documentary/doc-15/vlada-XO_CWSR5bZ8-unsplash.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
@@ -52,6 +52,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-15/rathna-deepaya-bzf_fAfvwzM-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Mihintale Maha Stupa">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-15/dimath-dayananda-TYwARQzU7nc-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Ambasthala Dagoba">
@@ -66,13 +74,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-15/rathna-deepaya-bzf_fAfvwzM-unsplash.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Mihintale Maha Stupa">
-                                        </div>
-                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
@@ -105,6 +106,20 @@
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/documentary/doc-15/dimath-dayananda-TYwARQzU7nc-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-15/rathna-deepaya-9oCnYS3u2m4-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-15/vlada-nZtA78iTj9U-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

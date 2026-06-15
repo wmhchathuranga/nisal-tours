@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper"
+    <div style="background-position: top;" class="breadcumb-wrapper"
         data-bg-src="{{ asset('assets/img/documentary/doc-12/unpd-polonnaruwa-3608331_1280.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">

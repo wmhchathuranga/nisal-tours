@@ -41,6 +41,22 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-jaffnamost.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Sloth Bear sighting in the wild">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/nallur/nallur-kovil.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Patanangala Beach inside the park">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/nallur/20190727-160854-largejpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
@@ -61,21 +77,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-jaffnamost.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Sloth Bear sighting in the wild">
-                                        </div>
-                                    </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/nallur/nallur-kovil.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Patanangala Beach inside the park">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -83,6 +85,20 @@
                             <div class="swiper th-slider tour-thumb-slider"
                                 data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
                                 <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-jaffnamost.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/nallur/nallur-kovil.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
@@ -105,19 +121,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/nallur/nallur-kovil-jaffnamost.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/nallur/nallur-kovil.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>

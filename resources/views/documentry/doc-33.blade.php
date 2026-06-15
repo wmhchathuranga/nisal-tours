@@ -71,13 +71,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/koneshwaram/photo7jpg.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Patanangala Beach inside the park">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -114,12 +107,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/koneshwaram/photo7jpg.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>

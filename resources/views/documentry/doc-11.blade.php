@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper"
+    <div style="background-position: center;" class="breadcumb-wrapper"
         data-bg-src="{{ asset('assets/img/documentary/doc-11/chathura-anuradha-subasinghe-_M4yPHONK58-unsplash.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
@@ -104,17 +104,18 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-11/yashi-el-odymE0EMV1M-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-11/isuru-ranasinha-Dt1NksEP_yY-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-11/isuru-ranasinha-Dt1NksEP_yY-unsplash.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-11/vlada-RYkcNq0XaVg-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
+
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">

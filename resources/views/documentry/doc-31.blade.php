@@ -43,16 +43,7 @@
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/Aukana/avukana-buddha-statue (1).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Leopard resting on a tree in Yala">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/Aukana/avukana-buddha-statue.jpg') }}')"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
+                                                style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
