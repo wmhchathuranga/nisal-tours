@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/16713.jpg">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/bg/167133.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Minneriya National Park</h1>
@@ -47,13 +48,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/minneriya/asian-elephant-is-most.jpg') }}')"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
-                                        </div>
-                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
@@ -72,7 +66,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/minneriya/minneriya-safari.jpg') }}"
+                                            <img src="{{ asset('assets/img/minneriya/elephant-safari-jeep.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -113,12 +107,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/minneriya/minneriya-safari.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>

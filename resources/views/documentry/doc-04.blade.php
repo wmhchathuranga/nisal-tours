@@ -18,7 +18,8 @@
     <!--==============================
 Breadcumb
 ==============================-->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/wp6545035-desktop-sri-lanka-wallpapers.jpg">
+    <div style="background-position: top;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/bg/wp6545035-desktop-sri-lanka-wallpapers.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Wilpattu National Park</h1>
@@ -87,14 +88,6 @@ Documentary Details Area
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-04/asdfg.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wilpattu Wildlife">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-04/Leapords-in-Wilpattu-national-park-Sri-Lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wilpattu Wildlife">
@@ -151,12 +144,6 @@ Documentary Details Area
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-04/asdfg.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="">
-                                        </div>
-                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">

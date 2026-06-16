@@ -18,7 +18,8 @@
     <!--==============================
 Breadcumb
 ==============================-->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/16713.jpg">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/bg/16713.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Yala National Park</h1>
@@ -82,45 +83,11 @@ Documentary Details Area
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/ec.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Elephant">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/free-photo-of-majestic-leopard-in-sri-lankan-wilderness.jpeg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Birdlife">
-                                        </div>
-                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-06/Scenery_in_Yala_National_Park.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Landscape">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/thumb_16746225_cover_header.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Elephant">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/yala-main-entrance-1024x683.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Birdlife">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/yala-national-park-sri-lanka-water-buffallo.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Birdlife">
                                         </div>
                                     </div>
 
@@ -167,19 +134,6 @@ Documentary Details Area
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/ec.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Elephant">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/free-photo-of-majestic-leopard-in-sri-lankan-wilderness.jpeg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Birdlife">
-                                        </div>
-                                    </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
@@ -188,26 +142,6 @@ Documentary Details Area
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/thumb_16746225_cover_header.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Elephant">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/yala-main-entrance-1024x683.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Birdlife">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-06/yala-national-park-sri-lanka-water-buffallo.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Birdlife">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
