@@ -15,8 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper"
-        data-bg-src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1920&q=80">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/documentary/doc-39/pexels-pok-rie-33563-127264.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Pasikuda Beach</h1>
@@ -42,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/cb/d8/d8/pasikudah-beach-you-would.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/Pasikudah-Beach-East-Sri-Lanka6.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -50,7 +50,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f4/photo4jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/images.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -58,14 +58,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f3/photo3jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/pasikuda-beach-tourism.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f1/photo1jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/pasikuda-beach-900_orig.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -73,7 +73,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f0/photo0jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/IMG_9721.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -88,35 +88,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/cb/d8/d8/pasikudah-beach-you-would.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/Pasikudah-Beach-East-Sri-Lanka6.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f4/photo4jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/images.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f3/photo3jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/pasikuda-beach-tourism.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f1/photo1jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/pasikuda-beach-900_orig.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f0/photo0jpg.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-39/IMG_9721.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
