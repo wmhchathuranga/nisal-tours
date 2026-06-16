@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Aukana/Seetha-Amman-Kovil-from-outside.jpg') }}">
+    <div style="background-position: top;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/Aukana/Seetha-Amman-Kovil-from-outside.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Seetha Amman Kovil</h1>

@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/4k.png') }}">
+    <div style="background-position: top;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/explore/4k.png') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Jaffna Dutch Fort</h1>
@@ -43,26 +44,19 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-6-768x512.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Nallur Kandaswamy Temple">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/eshan-malaviarachchi-Z3XO2B2Db7Q-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Jaffna Fort">
                                         </div>
                                     </div>
 
+
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-3.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Jaffna Public Library">
+                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-1.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Delft Island">
                                         </div>
                                     </div>
+
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
@@ -73,10 +67,23 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-1.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Delft Island">
+                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-6-768x512.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Nallur Kandaswamy Temple">
                                         </div>
                                     </div>
+
+
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-3.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Jaffna Public Library">
+                                        </div>
+                                    </div>
+
+
 
                                 </div>
                             </div>
@@ -87,21 +94,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-6-768x512.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-3.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/documentary/doc-13/eshan-malaviarachchi-Z3XO2B2Db7Q-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-1.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -113,9 +113,17 @@
                                         </div>
                                     </div>
 
+
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-1.jpg') }}"
+                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-6-768x512.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/explore/Jaffna-Fort-3.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

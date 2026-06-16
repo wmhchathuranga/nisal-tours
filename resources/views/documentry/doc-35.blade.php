@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/munneswaram/budhisticka-cast-chramoveho.jpg') }}">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/munneswaram/budhisticka-cast-chramoveho.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Munneswaram Temple</h1>
@@ -41,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/munneswaram/budhisticka-cast-chramoveho.jpg') }}"
+                                            <img src="{{ asset('assets/img/munneswaram/munneswaram-kovil-temple (1).jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -64,7 +65,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/munneswaram/caption.jpg') }}"
+                                            <img src="{{ asset('assets/img/munneswaram/munneswaram-kovil-temple.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
