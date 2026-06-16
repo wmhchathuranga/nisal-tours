@@ -44,7 +44,15 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-19/medium-vecteezy_aerial-photography-of-houses-and-buildings-near-body-of-water_3276883_medium.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-19/vecteezy_waves-and-strong-sea-winds-swept-the-rocks-and-shoals-waves_5516173.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Sunset at Weligama Beach">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-19/693025471.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Surfing in Weligama Bay">
                                         </div>
@@ -67,19 +75,13 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-19/vecteezy_coconut-tree-hill-in-sri-lanka_1272159.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-19/waligama-beach.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Weligama Sandy Beach">
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-19/vecteezy_waves-and-strong-sea-winds-swept-the-rocks-and-shoals-waves_5516173.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Sunset at Weligama Beach">
-                                        </div>
-                                    </div>
+
 
                                 </div>
                             </div>
@@ -88,9 +90,17 @@
                                 data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":2},"768":{"slidesPerView":3},"992":{"slidesPerView":3}}}'>
                                 <div class="swiper-wrapper">
 
+
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-19/medium-vecteezy_aerial-photography-of-houses-and-buildings-near-body-of-water_3276883_medium.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-19/vecteezy_waves-and-strong-sea-winds-swept-the-rocks-and-shoals-waves_5516173.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-19/693025471.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
@@ -111,17 +121,11 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-19/vecteezy_coconut-tree-hill-in-sri-lanka_1272159.jpg') }}"
+                                            <img src="{{ asset('assets/img/documentary/doc-19/waligama-beach.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/documentary/doc-19/vecteezy_waves-and-strong-sea-winds-swept-the-rocks-and-shoals-waves_5516173.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>

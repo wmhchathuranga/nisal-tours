@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/explore/pexels-mnannapaneni-15792890.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Trincomalee & Nilaveli Beach</h1>
@@ -40,9 +41,18 @@
                                 data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".tour-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
                                 <div class="swiper-wrapper">
 
+
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/db/f5/2b/view-from-temple.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/TGdE9o4Sr28QjlddXskfxzCM.png') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Patanangala Beach inside the park">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-50/beach-bbq-dinning.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -50,32 +60,25 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/04/0d/97/photo8jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/01.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
                                     </div>
 
+
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e1/30/75/beautiful-arisimale-beach.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/photo3jpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/76/8c/a9/photo4jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/pexels-thilina-alagiyawanna-3266092-23234932.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/48/5d/ca/photo3jpg.jpg?w=1200&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Patanangala Beach inside the park">
                                         </div>
                                     </div>
 
@@ -88,35 +91,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/db/f5/2b/view-from-temple.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/TGdE9o4Sr28QjlddXskfxzCM.png') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/04/0d/97/photo8jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/beach-bbq-dinning.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e1/30/75/beautiful-arisimale-beach.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/01.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/76/8c/a9/photo4jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/photo3jpg.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/48/5d/ca/photo3jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-50/pexels-thilina-alagiyawanna-3266092-23234932.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

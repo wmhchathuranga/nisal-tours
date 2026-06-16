@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}">
+    <div style="background-position: top;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-70003441.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Hikkaduwa Beach</h1>
@@ -43,7 +44,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ee/0a/71/photo8jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/hikkaduwa-beach-r2qeop92lo5jas0enovjtqeljgbpdm6de1xhrxso60.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Surfing at Hikkaduwa">
                                         </div>
@@ -51,7 +52,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/aa/08/07/caption.jpg?w=900&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/hikkaduwa-beach-srilanka-r2qeoio79twj1i9yq415ua2ddr84vqg915d3f02fdk.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Hikkaduwa Coral Reef">
                                         </div>
@@ -59,7 +60,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/0b/a3/d9/aerial-view-hikka-tranz.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/Giant-Sea-Turtle-Hikkaduwa-Beach.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sea Turtles in Hikkaduwa">
                                         </div>
@@ -67,7 +68,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/f4/ba/f3/neil-took-us-to-such.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/10302266-Tourists-relaxing-at-Hikkaduwa-beach-with-signboard-around-Sri-Lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Hikkaduwa Beach Bars and Nightlife">
                                         </div>
@@ -75,7 +76,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a3/1a/4f/snorchlovani.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/10379f82-1261-11ea-82cd-148dc44829b8_image_hires_142833.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sunset at Narigama Beach">
                                         </div>
@@ -90,35 +91,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/76/8c/a9/photo4jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/hikkaduwa-beach-r2qeop92lo5jas0enovjtqeljgbpdm6de1xhrxso60.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ee/0a/71/photo8jpg.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/hikkaduwa-beach-srilanka-r2qeoio79twj1i9yq415ua2ddr84vqg915d3f02fdk.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/0b/a3/d9/aerial-view-hikka-tranz.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/Giant-Sea-Turtle-Hikkaduwa-Beach.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/f4/ba/f3/neil-took-us-to-such.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/10302266-Tourists-relaxing-at-Hikkaduwa-beach-with-signboard-around-Sri-Lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a3/1a/4f/snorchlovani.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-21/10379f82-1261-11ea-82cd-148dc44829b8_image_hires_142833.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
