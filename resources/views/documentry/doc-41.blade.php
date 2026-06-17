@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/White-Water-Rafting-1920x600-1.jpg">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/White-Water-Rafting-1920x600-1.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Madu River Safari</h1>
@@ -41,7 +41,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/81/a4/bd/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/21.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -49,7 +49,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/ef/a9/43/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/19.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -57,14 +57,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5b/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/20.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5a/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/23.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -72,7 +72,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/59/caption.jpg?w=1100&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/22.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -87,35 +87,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/81/a4/bd/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/21.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/ef/a9/43/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/19.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5b/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/20.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/5a/caption.jpg?w=1200&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/23.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/41/a0/59/caption.jpg?w=1100&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-41/22.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/21514946501.jpg">
+    <div style="background-position: center;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/21514946501.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Whale Watching</h1>
@@ -41,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137010-11-E.jpg?v=1713776621"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/31.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -49,7 +50,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137750-11-E.jpg?v=1714627490"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/32.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -57,14 +58,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://www.srilankaclassytours.com/medias/activity/big/147/1.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/33.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://flashpackatforty.com/wp-content/gallery/mirissa-whale-watching/mirissa-whale-and-boat-long.jpg?t=1553533516"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/34.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -72,7 +73,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://reefandrainforest.b-cdn.net/wp-content/uploads/2016/04/Sri-Lanka-Tours-_Blue-whale-Snorkelling-1920x1280.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/35.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -87,35 +88,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137010-11-E.jpg?v=1713776621"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/31.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://lakpura.com/cdn/shop/collections/LK66137750-11-E.jpg?v=1714627490"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/32.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.srilankaclassytours.com/medias/activity/big/147/1.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/33.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://flashpackatforty.com/wp-content/gallery/mirissa-whale-watching/mirissa-whale-and-boat-long.jpg?t=1553533516"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/34.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://reefandrainforest.b-cdn.net/wp-content/uploads/2016/04/Sri-Lanka-Tours-_Blue-whale-Snorkelling-1920x1280.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-44/35.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

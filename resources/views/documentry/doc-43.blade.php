@@ -15,7 +15,8 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/White-Water-Rafting-1920x600-1.jpg">
+    <div style="background-position: top;" class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/White-Water-Rafting-1920x600-2.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Water Rafting</h1>
@@ -41,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://www.riversandoceans.com/wp-content/uploads/2023/02/rafting-whitewater-rapid.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/27.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -49,7 +50,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://www.teardrop-hotels.com/camellia-hills/wp-content/uploads/sites/9/2024/08/White-Water-Rafting-1920x600-1.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/26.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -57,14 +58,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://lakpura.com/cdn/shop/products/LK30010100-05-E-1280-720.jpg?v=1624088271&width=1445"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/28.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxV4xx7Zn71EE2OigOfapNwFTvgfL5O6FWg&s"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/29.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -72,7 +73,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://api.wanaka.co.nz/assets/ListingImages/Portal/399/Adobe-Express-file-12__FocusFillWzI1NjAsMTQ0MCwieSIsMTM0XQ.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/30.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -87,35 +88,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.riversandoceans.com/wp-content/uploads/2023/02/rafting-whitewater-rapid.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/27.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.teardrop-hotels.com/camellia-hills/wp-content/uploads/sites/9/2024/08/White-Water-Rafting-1920x600-1.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/26.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://lakpura.com/cdn/shop/products/LK30010100-05-E-1280-720.jpg?v=1624088271&width=1445"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/28.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxV4xx7Zn71EE2OigOfapNwFTvgfL5O6FWg&s"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/29.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://api.wanaka.co.nz/assets/ListingImages/Portal/399/Adobe-Express-file-12__FocusFillWzI1NjAsMTQ0MCwieSIsMTM0XQ.jpg"
+                                            <img src="{{ asset('assets/img/documentary/doc-43/30.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
