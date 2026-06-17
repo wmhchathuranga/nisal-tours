@@ -15,7 +15,7 @@
 
     @include('partials.menu')
 
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/1353.jpg">
+    <div style="background-position: top;" class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/1353.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Surfing</h1>
@@ -41,7 +41,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://tickettoridegroup.com/blog/wp-content/uploads/2017/07/Rams-23rd-Nov-153.jpg"
+                                            <img src="{{ asset('assets/img/surfing/Surfing-Bliss-Discover-the-Best-Time-to-Ride-the-Waves-in-Sri-Lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -49,7 +49,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://www.thesrilankatravelblog.com/wp-content/uploads/2022/02/sri-lanka-a-surfers-guide-new-header.jpg"
+                                            <img src="{{ asset('assets/img/surfing/Sunshinestories-surf-travel-blog-MitchFongPhoto-Ceylon-132-XL.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -57,14 +57,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://solidsurfhouse.com/wp-content/uploads/2023/08/Exploring-the-Magnificent-10-Surf-Spots-in-Sri-Lanka-A-Surfers-Dream.jpg"
+                                            <img src="{{ asset('assets/img/surfing/pf-96a910ba--surfingsrilanka1.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://assets.roar.media/assets/kFfmyT3O5X4JRAlq_cover.jpg?w=1200"
+                                            <img src="{{ asset('assets/img/surfing/elsewhere-weligama-surf-camp-sri-lanka-learn-to-surf-guiding-south-coast-season-stoked-surf-adventures-17.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -72,7 +72,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://huckberry.imgix.net/uploads/post/image/2117/sri_lanka_surfing.jpg"
+                                            <img src="{{ asset('assets/img/surfing/-FWEBP-C1821x1366,114,0-S1920x1440.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -87,35 +87,35 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://tickettoridegroup.com/blog/wp-content/uploads/2017/07/Rams-23rd-Nov-153.jpg"
+                                            <img src="{{ asset('assets/img/surfing/Surfing-Bliss-Discover-the-Best-Time-to-Ride-the-Waves-in-Sri-Lanka.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://www.thesrilankatravelblog.com/wp-content/uploads/2022/02/sri-lanka-a-surfers-guide-new-header.jpg"
+                                            <img src="{{ asset('assets/img/surfing/Sunshinestories-surf-travel-blog-MitchFongPhoto-Ceylon-132-XL.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://solidsurfhouse.com/wp-content/uploads/2023/08/Exploring-the-Magnificent-10-Surf-Spots-in-Sri-Lanka-A-Surfers-Dream.jpg"
+                                            <img src="{{ asset('assets/img/surfing/pf-96a910ba--surfingsrilanka1.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://assets.roar.media/assets/kFfmyT3O5X4JRAlq_cover.jpg?w=1200"
+                                            <img src="{{ asset('assets/img/surfing/elsewhere-weligama-surf-camp-sri-lanka-learn-to-surf-guiding-south-coast-season-stoked-surf-adventures-17.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://huckberry.imgix.net/uploads/post/image/2117/sri_lanka_surfing.jpg"
+                                            <img src="{{ asset('assets/img/surfing/-FWEBP-C1821x1366,114,0-S1920x1440.webp') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

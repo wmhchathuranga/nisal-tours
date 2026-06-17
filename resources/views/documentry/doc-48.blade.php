@@ -16,7 +16,7 @@
     @include('partials.menu')
 
     <div class="breadcumb-wrapper"
-        data-bg-src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1920&q=80">
+        data-bg-src="{{ asset('assets/img/documentary/doc-48/pigeon-island-marine-sanctuary-1.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Pigeon Island</h1>
@@ -42,15 +42,16 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/f4/12/00/pigeon-island-national.jpg?w=1000&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Leopard resting on a tree in Yala">
+                                            <img src="{{ asset('assets/img/documentary/doc-48/IMG_20220328_164323-scaled.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
                                         </div>
                                     </div>
 
+
+
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/bc/1d/08/pigeon-island-snorkeling.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-48/snorkeling-marine-life.jpeg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Wild Elephants roaming">
                                         </div>
@@ -58,14 +59,16 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/bc/1d/01/pigeon-island-snorkeling.jpg?w=1000&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
+                                            <img src="{{ asset('assets/img/documentary/doc-48/pigeon-island01.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Leopard resting on a tree in Yala">
                                         </div>
                                     </div>
 
+
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/bc/1d/07/pigeon-island-snorkeling.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-48/pigeon-island-snorkeling.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -73,7 +76,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/9f/55/43/caption.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-48/caption.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -88,35 +91,39 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/f4/12/00/pigeon-island-national.jpg?w=1000&h=-1&s=1"
+                                            <img src="{{ asset('assets/img/documentary/doc-48/IMG_20220328_164323-scaled.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-48/snorkeling-marine-life.jpeg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-48/pigeon-island01.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-48/pigeon-island-snorkeling.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/bc/1d/08/pigeon-island-snorkeling.jpg?w=1000&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/bc/1d/01/pigeon-island-snorkeling.jpg?w=1000&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/bc/1d/07/pigeon-island-snorkeling.jpg?w=1000&h=-1&s=1"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/9f/55/43/caption.jpg?w=1000&h=-1&s=1   "
+                                            <img src="{{ asset('assets/img/documentary/doc-48/caption.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>

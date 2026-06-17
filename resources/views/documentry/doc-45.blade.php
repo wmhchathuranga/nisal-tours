@@ -16,7 +16,7 @@
     @include('partials.menu')
 
     <div class="breadcumb-wrapper"
-        data-bg-src="https://www.talesofceylon.com/wp-content/uploads/2019/10/The-Best-Diving-and-Snorkeling-Sites-in-Sri-Lanka_1920x700.jpg">
+        data-bg-src="{{ asset('assets/img/documentary/doc-45/Mirissa_Diving_and_Snorkelling_Banner_0f5a7c3071.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Snorkeling & Diving</h1>
@@ -42,7 +42,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-elaine-bernadine-castro-1263177-2403840.jpg') }}"
+                                            <img src="{{ asset('assets/img/snorkeling/snorkelers-Pigeon-Island.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Leopard resting on a tree in Yala">
                                         </div>
@@ -50,22 +50,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-gabriela-carrillo-611004983-18834847.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;"
-                                                alt="Wild Elephants roaming">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-leticia-azevedo-95410198-13024204.jpg') }}"
+                                            <img src="{{ asset('assets/img/snorkeling/Lakshadweep_20190708111445.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Sloth Bear sighting in the wild">
                                         </div>
@@ -73,7 +58,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-shutter-speed-4050076.jpg') }}"
+                                            <img src="{{ asset('assets/img/snorkeling/francesco-ungaro-P0SbmtjxsZc-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;" alt="Yala Jeep Safari">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/snorkeling/01111.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Patanangala Beach inside the park">
                                         </div>
@@ -88,35 +80,28 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-elaine-bernadine-castro-1263177-2403840.jpg') }}"
+                                            <img src="{{ asset('assets/img/snorkeling/snorkelers-Pigeon-Island.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-gabriela-carrillo-611004983-18834847.jpg') }}"
+                                            <img src="{{ asset('assets/img/snorkeling/Lakshadweep_20190708111445.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
+                                            <img src="{{ asset('assets/img/snorkeling/francesco-ungaro-P0SbmtjxsZc-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-leticia-azevedo-95410198-13024204.jpg') }}"
-                                                style="width:100%;height:100%;object-fit:cover;">
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="tour-slider-img" style="height:200px;">
-                                            <img src="{{ asset('assets/img/snorkeling/pexels-shutter-speed-4050076.jpg') }}"
+                                            <img src="{{ asset('assets/img/snorkeling/01111.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
                                     </div>
