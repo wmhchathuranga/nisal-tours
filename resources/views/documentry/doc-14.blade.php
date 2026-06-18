@@ -44,6 +44,14 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:640px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-14/anil-reddy-r-vUs1jhhLA-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;"
+                                                alt="Pidurangala Temple">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:640px;">
                                             <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-7AHS4Zpuilg-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;"
                                                 alt="Pidurangala Temple">
