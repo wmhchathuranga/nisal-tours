@@ -112,6 +112,13 @@
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img" style="height:200px;">
+                                            <img src="{{ asset('assets/img/documentary/doc-14/egle-sidaraviciute-pv-2hRmoJRU-unsplash.jpg') }}"
+                                                style="width:100%;height:100%;object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img" style="height:200px;">
                                             <img src="{{ asset('assets/img/documentary/doc-14/hashan-dharmarathna-il7CUBPzCR0-unsplash.jpg') }}"
                                                 style="width:100%;height:100%;object-fit:cover;">
                                         </div>
