@@ -113,8 +113,9 @@
                                         </div>
                                         <div class="details">
                                             <p>No. 18,<br>Astra Court,<br>King Georges Avenue,<br>
-                                                London,<br>
-                                                Watford WD187TA</p>
+                                                Watford WD187TA,<br>
+                                                London
+                                            <p>
                                         </div>
                                     </div>
                                     <div class="info-box_text d-flex align-items-center">
