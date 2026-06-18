@@ -18,7 +18,8 @@
     <!--==============================
 Breadcumb
 ==============================-->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/g2.jpg">
+    <div class="breadcumb-wrapper"
+        data-bg-src="{{ asset('assets/img/tour/tour-02/pexels-thilina-alagiyawanna-3266092-27669314.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">3 Days South Coast & Kandy Tour</h1>
@@ -57,7 +58,31 @@ Tour Details Area
 
                                     <div class="swiper-slide h-100">
                                         <div class="tour-slider-img" style="height:450px;">
+                                            <img src="{{ asset('assets/img/tour/tour-02/319-Temple-of-the-Tooth-Kandy.jpg') }}"
+                                                alt="Temple of Tooth Relic"
+                                                style="width:100%; height:100%; object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide h-100">
+                                        <div class="tour-slider-img" style="height:450px;">
                                             <img src="{{ asset('assets/img/tour/tour-02/temple-sacred-tooth-relic-kandy.jpg') }}"
+                                                alt="Temple of Tooth Relic"
+                                                style="width:100%; height:100%; object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide h-100">
+                                        <div class="tour-slider-img" style="height:450px;">
+                                            <img src="{{ asset('assets/img/tour/tour-02/1475530825.jpg') }}"
+                                                alt="Temple of Tooth Relic"
+                                                style="width:100%; height:100%; object-fit:cover;">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide h-100">
+                                        <div class="tour-slider-img" style="height:450px;">
+                                            <img src="{{ asset('assets/img/tour/tour-02/Peridenya-Gardens-kandy-sri-lanka1.jpg') }}"
                                                 alt="Temple of Tooth Relic"
                                                 style="width:100%; height:100%; object-fit:cover;">
                                         </div>
@@ -76,7 +101,22 @@ Tour Details Area
                                     </div>
 
                                     <div class="swiper-slide">
+                                        <img src="{{ asset('assets/img/tour/tour-02/319-Temple-of-the-Tooth-Kandy.jpg') }}"
+                                            style="height:100px; width:100%; object-fit:cover;">
+                                    </div>
+
+                                    <div class="swiper-slide">
                                         <img src="{{ asset('assets/img/tour/tour-02/temple-sacred-tooth-relic-kandy.jpg') }}"
+                                            style="height:100px; width:100%; object-fit:cover;">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="{{ asset('assets/img/tour/tour-02/1475530825.jpg') }}"
+                                            style="height:100px; width:100%; object-fit:cover;">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="{{ asset('assets/img/tour/tour-02/Peridenya-Gardens-kandy-sri-lanka1.jpg') }}"
                                             style="height:100px; width:100%; object-fit:cover;">
                                     </div>
 
@@ -178,10 +218,12 @@ Tour Details Area
                                         01</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day2">Day 02</button>
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day2">Day
+                                        02</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day3">Day 03</button>
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day3">Day
+                                        03</button>
                                 </li>
                             </ul>
 
