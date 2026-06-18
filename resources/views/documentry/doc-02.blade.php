@@ -18,7 +18,7 @@
     <!--==============================
 Breadcumb
 ==============================-->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/Gallefort/IMG_2496.jpg">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/Gallefort/IMG_2496.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Galle Dutch Fort</h1>
