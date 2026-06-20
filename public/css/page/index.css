@@ -16,12 +16,12 @@
 }
 
 .tab-header li button {
-    border: 1px dashed #0c1524 !important;
     border-radius: 10px !important;
     background-color: #ffff;
 }
 
 .tab-header li button.active {
+    border: 1px solid white !important;
     color: #ffff !important;
     background-color: #0c1524 !important;
 }
