@@ -3830,18 +3830,6 @@
 
 
     <script>
-        //         $(document).ready(function() {
-        //     const savedFilter = localStorage.getItem('activeTab');
-
-        //     if (savedFilter) {
-        //         $('.glass-filter-btn').removeClass('active');
-
-        //         const targetBtn = $(`.glass-filter-btn[data-filter="${savedFilter}"]`);
-        //         targetBtn.addClass('active');
-
-
-        //     }
-        // });
         document.addEventListener("DOMContentLoaded", function() {
             var swiper = new Swiper(".nh-swiper", {
                 slidesPerView: 1,
