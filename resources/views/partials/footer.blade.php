@@ -203,9 +203,11 @@
     </svg>
 </div>
 
-<div class="browser-back-btn" onclick="goBackOrHome()">
-    <i class="fas fa-arrow-left"></i>
-</div>
+@if (request()->has('tour_id') || request()->has('doc_id'))
+    <div class="browser-back-btn" onclick="goBackOrHome()">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+@endif
 
 <script>
     function goBackOrHome() {
