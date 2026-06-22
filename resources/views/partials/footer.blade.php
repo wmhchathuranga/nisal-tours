@@ -43,6 +43,29 @@
         .sidebar-gallery .gallery-thumb:hover .gallery-btn {
             opacity: 1;
         }
+
+        .browser-back-btn {
+            position: fixed;
+            left: 30px;
+            bottom: 50px;
+            width: 48px;
+            height: 48px;
+            background: #1CA8CB;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 9999;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+            transition: 0.3s ease;
+        }
+
+        .browser-back-btn:hover {
+            background: #113D48;
+            transform: translateY(-3px);
+        }
     </style>
 
     <div class="widget-area" style="background: #0c1524;">
@@ -179,3 +202,17 @@
         </path>
     </svg>
 </div>
+
+<div class="browser-back-btn" onclick="goBackOrHome()">
+    <i class="fas fa-arrow-left"></i>
+</div>
+
+<script>
+    function goBackOrHome() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = "{{ url('/') }}";
+        }
+    }
+</script>
