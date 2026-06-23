@@ -55,14 +55,13 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
-
 });
 
 Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
-Route::get('/', function () { 
-     $testimonials = Testimonial::all()->where('is_approved', true);
+Route::get('/', function () {
+    $testimonials = Testimonial::all()->where('is_approved', true);
     $countries = Country::orderBy('name', 'asc')->get();
     return view('index', compact('testimonials', 'countries'));
 })->name('home');
@@ -101,13 +100,16 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');
 
 // resorts
 // Resorts Dynamic Route
 Route::get('/resort-detail', function () {
     $resort_id = request()->query('id', '01');
 
-    $resort_blade = 'resorts.resort-details-'.$resort_id;
+    $resort_blade = 'resorts.resort-details-' . $resort_id;
 
     return view($resort_blade);
 })->name('resort-details');
@@ -134,17 +136,17 @@ Route::get('/resort-detail', function () {
 //  tours
 Route::get('/tour-detail', function () {
     $tour_id = request()->query('tour_id');
-    $tour_blade = 'tour-details-'.$tour_id;
+    $tour_blade = 'tour-details-' . $tour_id;
 
-    return view('tours/'.$tour_blade);
+    return view('tours/' . $tour_blade);
 })->name('tour-details');
 
 // documentry
 Route::get('/documentry', function () {
     $doc_id = request()->query('doc_id');
-    $doc_blade = 'doc-'.$doc_id;
+    $doc_blade = 'doc-' . $doc_id;
 
-    return view('documentry/'.$doc_blade);
+    return view('documentry/' . $doc_blade);
 })->name('documentry');
 
 // form submission
