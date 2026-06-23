@@ -9,10 +9,10 @@
 <div class="slider-drag-cursor"><i class="fas fa-angle-left me-2"></i> DRAG <i class="fas fa-angle-right ms-2"></i>
 </div>
 
-<div id="preloader" class="preloader ">
+<div id="preloader" class="preloader">
     {{-- <button class="th-btn preloaderCls">Cancel Preloader </button> --}}
     <div class="preloader-inner">
-        <img src="assets/img/logo3.svg" alt="">
+        <img src="{{ asset('assets/img/logo3.svg') }}" alt="">
     </div>
 
     <div id="loader" class="th-preloader">

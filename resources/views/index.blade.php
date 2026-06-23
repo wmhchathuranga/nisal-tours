@@ -3599,7 +3599,7 @@
     </style>
 
     <section class="nh-testimonial-section">
-        <div class="container">
+        <div class="container mb-5">
             <div class="nh-title-wrap nh-text-center">
                 <div class="nh-badge">
                     <i class="fa-solid fa-plane"></i> TESTIMONIALS
@@ -3607,7 +3607,7 @@
                 <h2 class="nh-main-title">What Our Customers Are Saying<br>About Us?</h2>
             </div>
 
-            <div class="swiper nh-swiper nh-relative-wrap">
+            <div class="swiper nh-swiper nh-relative-wrap pb-5 pt-5">
                 <div class="swiper-wrapper">
 
                     @foreach ($testimonials as $testi)
@@ -3683,22 +3683,24 @@
             <div class="swiper-button-next nh-nav-next"></div>
             <div class="swiper-button-prev nh-nav-prev"></div>
         </div>
+
+        <div class="container mt-5 pt-5">
+            <div class="col-12 text-center" style="height: 5rem">
+                @auth
+                    <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
+                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                    </button>
+                @else
+                    <button class="eco-section-btn" onclick="requireLogin()">
+                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                    </button>
+                @endauth
+
+            </div>
+        </div>
     </section>
 
-    <div class="row mt-4 mt-md-5">
-        <div class="col-12 text-center " style="height: 5rem">
-            @auth
-                <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
-                    <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
-                </button>
-            @else
-                <button class="eco-section-btn" onclick="requireLogin()">
-                    <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
-                </button>
-            @endauth
 
-        </div>
-    </div>
 
     <!--========== Testimonial form model============-->
 

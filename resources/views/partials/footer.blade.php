@@ -76,7 +76,8 @@
                     <div class="widget footer-widget">
                         <div class="th-widget-about">
                             <div class="about-logo">
-                                <a href="{{ route('home') }}"><img src="assets/img/logo-white.svg" alt="Bitrate"></a>
+                                <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo-white.svg') }}"
+                                        alt="Bitrate"></a>
                             </div>
                             <p class="about-text" style="text-align: justify; margin-bottom: 0px"> &nbsp;&nbsp;We
                                 provide you the most
@@ -109,7 +110,8 @@
                                     Lankan Office</h5>
                                 <div class="th-widget-contact">
                                     <div class="info-box_text">
-                                        <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
+                                        <div class="icon"><img src="{{ asset('assets/img/icon/location-dot.svg') }}"
+                                                alt="img">
                                         </div>
                                         <div class="details">
                                             <p>Olinia Airport Hotel<br>
@@ -117,7 +119,8 @@
                                         </div>
                                     </div>
                                     <div class="info-box_text d-flex align-items-center">
-                                        <div class="icon"><img src="assets/img/icon/phone.svg" alt="img"></div>
+                                        <div class="icon"><img src="{{ asset('assets/img/icon/phone.svg') }}"
+                                                alt="img"></div>
                                         <div class="details">
                                             <p><a href="tel:+94777143999" class="info-box_link">+94 777 143 999</a></p>
                                             <p><a href="tel:+94112256555" class="info-box_link">+94 112 256 555</a></p>
@@ -132,7 +135,8 @@
                                     England Office</h5>
                                 <div class="th-widget-contact">
                                     <div class="info-box_text">
-                                        <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
+                                        <div class="icon"><img src="{{ asset('assets/img/icon/location-dot.svg') }}"
+                                                alt="img">
                                         </div>
                                         <div class="details">
                                             <p>No. 18,<br>Astra Court,<br>King Georges Avenue,<br>
@@ -142,14 +146,16 @@
                                         </div>
                                     </div>
                                     <div class="info-box_text d-flex align-items-center">
-                                        <div class="icon"><img src="assets/img/icon/phone.svg" alt="img"></div>
+                                        <div class="icon"><img src="{{ asset('assets/img/icon/phone.svg') }}"
+                                                alt="img"></div>
                                         <div class="details">
                                             <p><a href="tel:+447400443036" class="info-box_link">+44 74 00 44 30 36</a>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="info-box_text d-flex align-items-center">
-                                        <div class="icon"><img src="assets/img/icon/envelope.svg" alt="img">
+                                        <div class="icon"><img src="{{ asset('assets/img/icon/envelope.svg') }}"
+                                                alt="img">
                                         </div>
                                         <div class="details">
                                             <p><a href="mailto:info@novaraholidays.com"
@@ -175,7 +181,7 @@
                 {{-- <div class="col-md-6 text-end d-none d-md-block">
                         <div class="footer-card">
                             <span class="title">We Accept</span>
-                            <img src="assets/img/shape/cards.png" alt="">
+                            <img src="{{ asset('assets/img/shape/cards.png')}}" alt="">
                         </div>
                     </div> --}}
             </div>
@@ -183,7 +189,7 @@
         </div>
     </div>
     <div class="shape-mockup movingX d-none d-xxl-block" data-top="24%" data-left="5%">
-        <img src="assets/img/shape/shape_8.png" alt="shape">
+        <img src="{{ asset('assets/img/shape/shape_8.png') }}" alt="shape">
     </div>
 </footer>
 

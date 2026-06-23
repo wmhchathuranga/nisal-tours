@@ -1,379 +1,606 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
     @include('partials.head')
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Overview - Manage Testimonials</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <style>
-        body {
-            background-color: #fafbfe;
-            font-family: 'Inter', sans-serif;
-            color: #333;
-        }
-
-        /* Top Header Area */
-        .page-header {
-            margin-bottom: 2rem;
-        }
-
-        .page-title {
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: #1a1d20;
-        }
-
-        .page-subtitle {
-            color: #8c9097;
-            font-size: 0.9rem;
-        }
-
-        /* Stat Cards */
-        .stat-card {
-            background: #fff;
-            border-radius: 16px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 1px solid #f0f2f5;
-            height: 100%;
-        }
-
-        .stat-title {
-            font-size: 0.85rem;
-            color: #8c9097;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-value {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #212529;
-            margin: 0;
-        }
-
-        .stat-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-
-        .icon-pink {
-            background-color: #ffeef3;
-            color: #ff4d85;
-        }
-
-        .icon-blue {
-            background-color: #eef5ff;
-            color: #3b82f6;
-        }
-
-        .icon-green {
-            background-color: #eefdf4;
-            color: #10b981;
-        }
-
-        /* Main Table Card */
-        .main-card {
-            border: none;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-            background: #fff;
-            overflow: hidden;
-        }
-
-        /* Table Styles */
-        .table-custom {
-            margin-bottom: 0;
-        }
-
-        .table-custom th {
-            font-weight: 600;
-            text-transform: capitalize;
-            font-size: 0.8rem;
-            color: #8c9097;
-            background-color: #fff;
-            border-bottom: 1px solid #f0f2f5;
-            padding: 1.2rem 1rem;
-        }
-
-        .table-custom td {
-            vertical-align: middle;
-            border-bottom: 1px solid #f9fafc;
-            padding: 1rem;
-            color: #495057;
-            font-size: 0.9rem;
-        }
-
-        .table-custom tbody tr:hover {
-            background-color: #fcfcfd;
-        }
-
-        /* Status Badges */
-        .status-badge {
-            padding: 0.35em 0.8em;
-            border-radius: 20px;
-            font-weight: 500;
-            font-size: 0.75rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .bg-success-soft {
-            background-color: #eefdf4;
-            color: #10b981;
-            border: 1px solid #d1fae5;
-        }
-
-        .bg-danger-soft {
-            background-color: #fef2f2;
-            color: #ef4444;
-            border: 1px solid #fee2e2;
-        }
-
-        /* Action Buttons */
-        .action-btn {
-            width: 32px;
-            height: 32px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            transition: all 0.2s;
-            border: none;
-            font-size: 0.85rem;
-        }
-
-        .btn-accept {
-            background-color: #eefdf4;
-            color: #10b981;
-        }
-
-        .btn-accept:hover:not(:disabled) {
-            background-color: #10b981;
-            color: #fff;
-        }
-
-        .btn-decline {
-            background-color: #fef2f2;
-            color: #ef4444;
-        }
-
-        .btn-decline:hover:not(:disabled) {
-            background-color: #ef4444;
-            color: #fff;
-        }
-
-        .action-btn:disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-        }
-
-        /* User Profile Image */
-        .user-avatar {
-            max-width: 50px;
-            max-height: 50px;
-            object-fit: cover;
-            border-radius: 50px;
-        }
-
-        .user-avatar-placeholder {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            background-color: #f3f4f6;
-            color: #9ca3af;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="container mt-5 mb-5" style="max-width: 1200px;">
 
-        <div class="d-flex justify-content-between align-items-center page-header">
+    @include('partials.loader')
+    @php
+        $page = 'testimonials';
+    @endphp
+    @include('partials.menu')
+    <style>
+        body {
+
+            background: #f6f8fb;
+
+            color: #1f2933;
+
+        }
+
+        .admin-page {
+
+            margin: 0 auto;
+
+            padding: 70px 20px;
+
+        }
+
+        .admin-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 20px;
+
+            margin-bottom: 35px;
+
+        }
+
+        .admin-header h1 {
+
+            font-size: 44px;
+
+            font-weight: 800;
+
+            margin-bottom: 8px;
+
+            color: #111827;
+
+        }
+
+        .admin-header p {
+
+            color: #8a94a6;
+
+            margin: 0;
+
+        }
+
+        .home-btn {
+
+            background: #fff;
+
+            border-radius: 50px;
+
+            padding: 10px 24px;
+
+            color: #1f2933;
+
+            text-decoration: none;
+
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+            font-weight: 600;
+
+        }
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 24px;
+
+            margin-bottom: 32px;
+
+        }
+
+        .stat-card {
+
+            background: #fff;
+
+            border-radius: 10px;
+
+            padding: 24px;
+
+            box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+
+            border: 1px solid #edf0f5;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        .stat-card span {
+
+            color: #8a94a6;
+
+            font-weight: 600;
+
+            font-size: 14px;
+
+        }
+
+        .stat-card h3 {
+
+            font-size: 34px;
+
+            font-weight: 800;
+
+            margin: 10px 0 0;
+
+        }
+
+        .stat-icon {
+
+            width: 52px;
+
+            height: 52px;
+
+            border-radius: 50%;
+
+            display: grid;
+
+            place-items: center;
+
+            font-size: 22px;
+
+        }
+
+        .bg-pink {
+            background: #ffe8f0;
+            color: #ef4b7b;
+        }
+
+        .bg-green {
+            background: #e6fbf1;
+            color: #06b981;
+        }
+
+        .bg-blue {
+            background: #eaf2ff;
+            color: #3b82f6;
+        }
+
+        .dashboard-card {
+
+            background: #fff;
+
+            border-radius: 20px;
+
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+
+            border: 1px solid #edf0f5;
+
+            overflow: hidden;
+
+        }
+
+        .table {
+
+            margin: 0;
+
+            vertical-align: middle;
+
+            text-align: center;
+        }
+
+        .table thead th {
+
+            color: #8a94a6;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            border-bottom: 1px solid #dce3ed;
+
+            background: #fff;
+
+        }
+
+        .table tbody td {
+
+            /* padding: 18px 24px; */
+
+            color: #657181;
+
+            border-bottom: 1px solid #f0f3f8;
+
+        }
+
+        .table tbody tr:last-child td {
+
+            border-bottom: 0;
+
+        }
+
+        .admin-avatar {
+            display: inline-block;
+            background-position: center;
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+        }
+
+        .name-text {
+
+            font-weight: 800;
+
+            color: #1f2933;
+
+        }
+
+        .country-text {
+
+            font-size: 13px;
+
+            color: #657181;
+
+        }
+
+        .rating-stars {
+
+            color: #ffb300;
+
+            font-size: 17px;
+
+            letter-spacing: 1px;
+
+        }
+
+        .badge-approved {
+
+            background: #dcfce7;
+
+            color: #00a86b;
+
+            border-radius: 50px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+        }
+
+        .badge-pending {
+
+            background: #fff3d6;
+
+            color: #c78100;
+
+            border-radius: 50px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+        }
+
+        .action-btn {
+
+            width: 34px;
+
+            height: 34px;
+
+            border-radius: 5px;
+
+            display: inline-grid;
+
+            place-items: center;
+
+            border: 0;
+
+            text-decoration: none;
+
+            margin-left: 6px;
+
+        }
+
+        .approve-btn {
+
+            background: #ecfdf5;
+
+            color: #10b981;
+
+        }
+
+        .reject-btn {
+
+            background: #fff1f2;
+
+            color: #ef4444;
+
+        }
+
+        @media (max-width: 900px) {
+
+            .stat-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .admin-header {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+            }
+
+            .admin-header h1 {
+
+                font-size: 34px;
+
+            }
+
+            .dashboard-card {
+
+                overflow-x: auto;
+
+            }
+
+        }
+
+        .more-btn {
+            border: 0;
+            background: transparent;
+            color: #5c767c;
+            font-weight: 500;
+            padding: 0;
+            margin-left: 6px;
+        }
+    </style>
+
+
+    <main class="admin-page">
+
+        <div class="admin-header">
+
             <div>
-                <h2 class="page-title">Dashboard Overview</h2>
-                <p class="page-subtitle mb-0">Welcome back, here's how your user experiences are performing.</p>
+
+                <h1 class="pt-5">Testimonial Rerview</h1>
+
+                <p>Welcome back, here's how your user experiences are performing.</p>
+
             </div>
-            <div>
-                <a href="{{ url('/') }}"
-                    class="btn btn-white border bg-white shadow-sm px-4 rounded-pill fw-medium text-dark"
-                    style="font-size: 0.9rem;">
-                    <i class="fa-solid fa-house me-2 text-muted"></i> Home
-                </a>
-            </div>
+
         </div>
 
-        @if (session('success'))
-            <div class="alert alert-success border-0 shadow-sm alert-dismissible fade show rounded-3" role="alert">
-                <i class="fa-solid fa-circle-check me-2"></i> {{ session('success') }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        @endif
+        @php
 
-        <div class="row mb-4 g-4">
-            <div class="col-md-4">
-                <div class="stat-card">
-                    <div>
-                        <div class="stat-title">Total Experiences</div>
-                        <h3 class="stat-value">{{ count($testimonials) }}</h3>
-                    </div>
-                    <div class="stat-icon icon-pink">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-                </div>
-            </div>
+            $total = $testimonials->count() ?? 0;
 
-            <div class="col-md-4">
-                <div class="stat-card">
-                    <div>
-                        <div class="stat-title">Approved & Live</div>
-                        <h3 class="stat-value">{{ $testimonials->where('is_approved', 1)->count() }}</h3>
-                    </div>
-                    <div class="stat-icon icon-green">
-                        <i class="fa-regular fa-circle-check"></i>
-                    </div>
+            $approved = $testimonials->where('is_approved', true)->count() ?? 0;
+
+            $pending = $total - $approved;
+
+        @endphp
+
+        <div class="stat-grid">
+
+            <div class="stat-card">
+
+                <div>
+
+                    <span>Total Experiences</span>
+
+                    <h3>{{ $total }}</h3>
+
                 </div>
+
+                <div class="stat-icon bg-pink">
+
+                    <i class="fa fa-users"></i>
+
+                </div>
+
             </div>
 
-            <div class="col-md-4">
-                <div class="stat-card">
-                    <div>
-                        <div class="stat-title">Hidden / Pending</div>
-                        <h3 class="stat-value">{{ $testimonials->where('is_approved', 0)->count() }}</h3>
-                    </div>
-                    <div class="stat-icon icon-blue">
-                        <i class="fa-regular fa-eye-slash"></i>
-                    </div>
+            <div class="stat-card">
+
+                <div>
+
+                    <span>Approved & Live</span>
+
+                    <h3>{{ $approved }}</h3>
+
                 </div>
+
+                <div class="stat-icon bg-green">
+
+                    <i class="fa fa-check-circle"></i>
+
+                </div>
+
             </div>
+
+            <div class="stat-card">
+
+                <div>
+
+                    <span>Hidden / Pending</span>
+
+                    <h3>{{ $pending }}</h3>
+
+                </div>
+
+                <div class="stat-icon bg-blue">
+
+                    <i class="fa fa-eye-slash"></i>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="main-card">
-            <div class="card-body p-0">
-                <div class="table-responsive">
-                    <table class="table table-custom mb-0">
-                        <thead>
-                            <tr>
-                                <th class="ps-4" width="5%">#</th>
-                                <th width="8%">Image</th>
-                                <th width="20%">Name & Country</th>
-                                <th width="32%">Experience</th>
-                                <th width="12%">Rating</th>
-                                <th width="13%">Status</th>
-                                <th class="text-center pe-4" width="10%">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @forelse($testimonials as $testimonial)
-                                <tr>
-                                    <td class="ps-4 fw-medium text-muted">{{ $loop->iteration }}</td>
-                                    <td>
-                                        {{-- @if ($testimonial->profile_picture)
-                                            <img src="{{ asset('storage/' . $testimonial->profile_picture) }}"
-                                                alt="Profile" class="user-avatar shadow-sm"> --}}
-                                        @if ($testimonial->user && $testimonial->user->profile_photo)
-                                            <img src="{{ Storage::disk('s3')->url($testimonial->user->profile_photo) }}"
-                                                alt="{{ $testimonial->full_name }}"
-                                                class="rounded-circle profile-trigger-img">
+        <div class="dashboard-card">
+
+            <table class="table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>#</th>
+
+                        <th>User</th>
+
+                        <th>Experience</th>
+
+                        <th>Rating</th>
+
+                        <th>Status</th>
+
+                        <th class="text-end">Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    @forelse($testimonials as $index => $testi)
+
+                        @php
+
+                            $linkedUser = \App\Models\User::where('name', $testi->full_name)->first();
+
+                            $image =
+                                $linkedUser && $linkedUser->profile_photo
+                                    ? Storage::disk('s3')->url($linkedUser->profile_photo)
+                                    : asset('assets/img/testimonial/testi-img-2_1.jpg');
+
+                        @endphp
+
+                        <div class="modal fade" id="testimonialModal{{ $testi->id }}" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0 rounded-4">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">{{ $testi->full_name }}</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p class="mb-0" style="line-height: 1.8;">
+                                            {{ $testi->experience }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr>
+
+                            <td>{{ $index + 1 }}</td>
+                            <td>
+                                <div class="admin-avatar" style="background-image: url('{{ $image }}')"></div>
+                                <div style="display: inline-block; margin-left: 10px">
+                                    <div class="name-text">{{ $testi->full_name }}</div>
+
+                                    <div class="country-text">
+
+                                        <i class="fa fa-map-marker-alt text-primary me-1"></i>
+
+                                        {{ $testi->country ?? 'Sri Lanka' }}
+
+                                    </div>
+                                </div>
+
+                            </td>
+
+                            <td class="experience-cell">
+                                {{ Str::limit($testi->experience, 90) }}
+
+                                @if (strlen($testi->experience) > 90)
+                                    <button type="button" class="more-btn" data-bs-toggle="modal"
+                                        data-bs-target="#testimonialModal{{ $testi->id }}">
+                                        more...
+                                    </button>
+                                @endif
+                            </td>
+
+                            <td>
+
+                                <div class="rating-stars">
+
+                                    @for ($i = 1; $i <= 5; $i++)
+                                        @if ($i <= $testi->rating)
+                                            ★
                                         @else
-                                            <div class="user-avatar-placeholder shadow-sm">
-                                                <i class="fa-solid fa-user"></i>
-                                            </div>
+                                            ☆
                                         @endif
-                                    </td>
-                                    <td>
-                                        <div class="fw-semibold text-dark">{{ $testimonial->full_name }}</div>
-                                        <div class="text-muted" style="font-size: 0.8rem;">
-                                            <i class="fa-solid fa-location-dot me-1 text-primary"
-                                                style="opacity: 0.7;"></i>{{ $testimonial->country }}
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="d-inline-block text-truncate text-secondary"
-                                            style="max-width: 280px;" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="{{ $testimonial->experience }}">
-                                            {{ $testimonial->experience }}
-                                        </span>
-                                    </td>
-                                    <td>
-                                        <span class="text-warning" style="font-size: 0.85rem;">
-                                            @for ($i = 1; $i <= 5; $i++)
-                                                <i
-                                                    class="fa-{{ $i <= $testimonial->rating ? 'solid' : 'regular' }} fa-star"></i>
-                                            @endfor
-                                        </span>
-                                    </td>
-                                    <td id="status-container-{{ $testimonial->id }}">
-                                        @if ($testimonial->is_approved)
-                                            <span class="status-badge bg-success-soft"><i
-                                                    class="fa-solid fa-check-circle"></i> Approved</span>
-                                        @else
-                                            <span class="status-badge bg-danger-soft"><i
-                                                    class="fa-solid fa-eye-slash"></i> Hidden</span>
-                                        @endif
-                                    </td>
-                                    <td class="text-center pe-4">
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <button type="button"
-                                                onclick="updateTestimonialStatus({{ $testimonial->id }}, 1)"
-                                                id="btn-accept-{{ $testimonial->id }}" class="action-btn btn-accept"
-                                                {{ $testimonial->is_approved ? 'disabled' : '' }}
-                                                data-bs-toggle="tooltip" title="Approve & Show">
-                                                <i class="fa-solid fa-check"></i>
-                                            </button>
+                                    @endfor
 
-                                            <button type="button"
-                                                onclick="updateTestimonialStatus({{ $testimonial->id }}, 0)"
-                                                id="btn-decline-{{ $testimonial->id }}" class="action-btn btn-decline"
-                                                {{ !$testimonial->is_approved ? 'disabled' : '' }}
-                                                data-bs-toggle="tooltip" title="Hide Experience">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            @empty
-                                <tr>
-                                    <td colspan="7" class="text-center py-5">
-                                        <div class="text-muted">
-                                            <div class="mb-3 d-inline-flex align-items-center justify-content-center"
-                                                style="width: 80px; height: 80px; background: #f3f4f6; border-radius: 50%;">
-                                                <i class="fa-regular fa-folder-open"
-                                                    style="font-size: 2rem; color: #9ca3af;"></i>
-                                            </div>
-                                            <h5 class="fw-medium text-dark">No experiences shared yet</h5>
-                                            <p class="small mb-0">When users submit testimonials, they will appear
-                                                here.</p>
-                                        </div>
-                                    </td>
-                                </tr>
-                            @endforelse
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                @if ($testi->is_approved)
+                                    <span class="badge-approved">
+
+                                        <i class="fa fa-check-circle me-1"></i> Approved
+
+                                    </span>
+                                @else
+                                    <span class="badge-pending">
+
+                                        <i class="fa fa-clock me-1"></i> Pending
+
+                                    </span>
+                                @endif
+
+                            </td>
+
+                            <td class="text-end">
+
+                                <a href="#" class="action-btn approve-btn">
+
+                                    <i class="fa fa-check"></i>
+
+                                </a>
+
+                                <a href="#" class="action-btn reject-btn">
+
+                                    <i class="fa fa-times"></i>
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                    @empty
+
+                        <tr>
+
+                            <td colspan="7" class="text-center py-5 text-muted">
+
+                                No testimonials found yet.
+
+                            </td>
+
+                        </tr>
+
+                    @endforelse
+
+                </tbody>
+
+            </table>
+
         </div>
-    </div>
+
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -441,6 +668,10 @@
                 });
         }
     </script>
+
+
+    <!--========== All Js File =========== -->
+    @include('partials.scripts')
 </body>
 
 </html>

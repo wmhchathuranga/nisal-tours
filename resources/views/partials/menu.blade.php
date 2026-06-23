@@ -3,7 +3,7 @@
 <style>
     /* Custom Auth Buttons Styling */
     .custom-auth-btn {
-        padding: 10px 24px;
+        padding: 15px 24px;
         font-size: 15px;
         /* font-weight: 600; */
         border-radius: 6px;
@@ -122,7 +122,7 @@
         <div class="widget  ">
             <div class="th-widget-about">
                 <div class="about-logo">
-                    <a href="{{ route('home') }}"><img src="assets/img/logo2.svg" alt="Bitrate"></a>
+                    <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo2.svg') }}" alt="Bitrate"></a>
                 </div>
                 <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately
                     create interactive infrastructures</p>
@@ -139,7 +139,8 @@
             <div class="recent-post-wrap">
                 <div class="recent-post">
                     <div class="media-img">
-                        <a href="#"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
+                        <a href="#"><img src="{{ asset('assets/img/blog/recent-post-1-1.jpg') }}"
+                                alt="Blog Image"></a>
                     </div>
                     <div class="media-body">
                         <div class="recent-post-meta">
@@ -151,7 +152,8 @@
                 </div>
                 <div class="recent-post">
                     <div class="media-img">
-                        <a href="#"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
+                        <a href="#"><img src="{{ asset('assets/img/blog/recent-post-1-2.jpg') }}"
+                                alt="Blog Image"></a>
                     </div>
                     <div class="media-body">
                         <div class="recent-post-meta">
@@ -168,7 +170,7 @@
             <div class="th-widget-contact">
                 <div class="info-box_text">
                     <div class="icon">
-                        <img src="assets/img/icon/phone.svg" alt="img">
+                        <img src="{{ asset('assets/img/icon/phone.svg') }}" alt="img">
                     </div>
                     <div class="details">
                         <p><a href="tel:+01234567890" class="info-box_link">+01 234 567 890</a></p>
@@ -177,7 +179,7 @@
                 </div>
                 <div class="info-box_text">
                     <div class="icon">
-                        <img src="assets/img/icon/envelope.svg" alt="img">
+                        <img src="{{ asset('assets/img/icon/envelope.svg') }}" alt="img">
                     </div>
                     <div class="details">
                         <p><a href="mailto:mailinfo00@****" class="info-box_link">mailinfo00@****</a></p>
@@ -185,7 +187,7 @@
                     </div>
                 </div>
                 <div class="info-box_text">
-                    <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img"></div>
+                    <div class="icon"><img src="{{ asset('assets/img/icon/location-dot.svg') }}" alt="img"></div>
                     <div class="details">
                         <p>789 Inner Lane, Holy park, California, USA</p>jki89
                     </div>
@@ -207,7 +209,7 @@
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-            <a href="{{ route('home') }}"><img src="assets/img/logo2.svg" alt="Bitrate"></a>
+            <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo2.svg') }}" alt="Bitrate"></a>
         </div>
         <div class="th-mobile-menu">
             <ul>
@@ -249,7 +251,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto position-absolute">
                         <div class="header-logo">
-                            <a href="{{ route('home') }}"><img src="assets/img/logo.svg" alt="Bitrate"></a>
+                            <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo.svg') }}"
+                                    alt="Bitrate"></a>
                         </div>
                     </div>
                     <div class="col-auto m-xl-auto ms-auto">
@@ -340,7 +343,7 @@
                     </div>
                 </div>
             </div>
-            <div class="logo-bg" data-mask-src="assets/img/logo_bg_mask.png"></div>
+            <div class="logo-bg" data-mask-src="{{ asset('assets/img/logo_bg_mask.png') }}"></div>
         </div>
     </div>
 </header>

@@ -4,34 +4,34 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <!-- Swiper Js -->
-<script src="{{ 'js/swiper-bundle.min.js' }}"></script>
+<script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
 <!-- Bootstrap -->
-<script src="{{ 'js/bootstrap.min.js' }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <!-- Magnific Popup -->
-<script src="{{ 'js/jquery.magnific-popup.min.js' }}"></script>
+<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
 <!-- Counter Up -->
-<script src="{{ 'js/jquery.counterup.min.js' }}"></script>
+<script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
 <!-- Range Slider -->
-<script src="{{ 'js/jquery-ui.min.js' }}"></script>
+<script src="{{ asset('js/jquery-ui.min.js') }}"></script>
 <!-- imagesloaded -->
-<script src="{{ 'js/imagesloaded.pkgd.min.js' }}"></script>
+<script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
 <!-- isotope -->
-<script src="{{ 'js/isotope.pkgd.min.js' }}"></script>
+<script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
 <!-- gsap -->
-<script src="{{ 'js/gsap.min.js' }}"></script>
+<script src="{{ asset('js/gsap.min.js') }}"></script>
 
 <!-- circle-progress -->
-<script src="{{ 'js/circle-progress.js' }}"></script>
+<script src="{{ asset('js/circle-progress.js') }}"></script>
 
-<script src="{{ 'js/matter.min.js' }}"></script>
-<script src="{{ 'js/matterjs-custom.js' }}"></script>
+<script src="{{ asset('js/matter.min.js') }}"></script>
+<script src="{{ asset('js/matterjs-custom.js') }}"></script>
 
 
 <!-- nice select -->
-<script src="{{ 'js/nice-select.min.js' }}"></script>
+<script src="{{ asset('js/nice-select.min.js') }}"></script>
 
 <!-- Main Js File -->
-<script src="{{ 'js/main.js' }}"></script>
-<script src="{{ 'js/page/index.js' }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/page/index.js') }}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
