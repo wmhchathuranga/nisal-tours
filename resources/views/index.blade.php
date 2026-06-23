@@ -2359,8 +2359,9 @@
                             <div class="col-xl-6">
                                 <div class="ps-xl-4 ms-xl-2">
                                     <div class="title-area mb-20 pe-xl-5 me-xl-5">
-                                        <span class="sub-title style1 ">How It Works</span>
-                                        <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">Plan Your Trip With us</h2>
+                                        <span class="sub-title style1 text-light">How It Works</span>
+                                        <h2 class="text-light sec-title mb-20 pe-xl-5 me-xl-5 heading">Plan Your Trip
+                                            With us</h2>
 
                                         <p class="sec-text mb-30">There are many variations of passages of available
                                             but
@@ -2503,8 +2504,10 @@
                                                     <div class="col-xl-12 transition-col">
                                                         <div class="pe-xl-5">
                                                             <div class="title-area mb-20 text-center text-xl-start">
-                                                                <span class="sub-title style1 ">How It Works</span>
-                                                                <h2 class="sec-title mb-20">Your Hassle-Free Arrival in
+                                                                <span class="text-light sub-title style1 ">How It
+                                                                    Works</span>
+                                                                <h2 class="text-light sec-title mb-20">Your Hassle-Free
+                                                                    Arrival in
                                                                     3
                                                                     Easy Steps</h2>
                                                             </div>
@@ -2853,8 +2856,10 @@
                                                     <div class="col-xl-12 transition-col">
                                                         <div class="pe-xl-5">
                                                             <div class="title-area mb-20 text-center text-xl-start">
-                                                                <span class="sub-title style1 ">How It Works</span>
-                                                                <h2 class="sec-title mb-20">Your Stress-Free Departure
+                                                                <span class="text-light sub-title style1 ">How It
+                                                                    Works</span>
+                                                                <h2 class="text-light sec-title mb-20">Your
+                                                                    Stress-Free Departure
                                                                     in 3
                                                                     Easy Steps</h2>
                                                             </div>
