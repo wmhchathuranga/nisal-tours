@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\User;
 use App\Models\Country;
 use App\Models\Testimonial;
 use Laravel\Fortify\Features;
@@ -12,10 +11,8 @@ use App\Livewire\Settings\Appearance;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
-use App\Http\Controllers\EmailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PasswordController;
-use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TestimonialController;
 
 //email verification test route
