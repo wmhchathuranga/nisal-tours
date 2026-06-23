@@ -151,6 +151,7 @@
         }
 
         .name-text {
+            text-transform: capitalize;
             font-weight: 800;
             color: #1f2933;
         }
@@ -360,8 +361,8 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content border-0 rounded-4">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">{{ $testi->full_name }}</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title" style="text-transform: capitalize;">
+                                            {{ $testi->full_name }}</h5>
                                     </div>
 
                                     <div class="modal-body">
@@ -386,6 +387,9 @@
                                         <i class="fa fa-map-marker-alt text-primary me-1"></i>
 
                                         {{ $testi->country ?? 'Sri Lanka' }}
+
+                                        <i class="fa fa-clock text-primary ms-1"></i>
+                                        {{ $testi->created_at->format('Y-m-d') }}
 
                                     </div>
                                 </div>
