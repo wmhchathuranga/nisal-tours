@@ -16,139 +16,82 @@
     @include('partials.menu')
     <style>
         body {
-
             background: #f6f8fb;
-
             color: #1f2933;
-
         }
 
         .admin-page {
-
             margin: 0 auto;
-
             padding: 70px 20px;
-
         }
 
         .admin-header {
-
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
             gap: 20px;
-
             margin-bottom: 35px;
-
         }
 
         .admin-header h1 {
-
             font-size: 44px;
-
             font-weight: 800;
-
             margin-bottom: 8px;
-
             color: #111827;
-
         }
 
         .admin-header p {
-
             color: #8a94a6;
-
             margin: 0;
-
         }
 
         .home-btn {
-
             background: #fff;
-
             border-radius: 50px;
-
             padding: 10px 24px;
-
             color: #1f2933;
-
             text-decoration: none;
-
             box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
-
             font-weight: 600;
-
         }
 
         .stat-grid {
-
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 24px;
-
             margin-bottom: 32px;
-
         }
 
         .stat-card {
-
             background: #fff;
-
             border-radius: 10px;
-
             padding: 24px;
-
             box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
-
             border: 1px solid #edf0f5;
-
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
         }
 
         .stat-card span {
-
             color: #8a94a6;
-
             font-weight: 600;
-
             font-size: 14px;
-
         }
 
         .stat-card h3 {
-
             font-size: 34px;
-
             font-weight: 800;
-
             margin: 10px 0 0;
-
         }
 
         .stat-icon {
-
             width: 52px;
-
             height: 52px;
-
             border-radius: 50%;
-
             display: grid;
-
             place-items: center;
-
             font-size: 22px;
-
         }
 
         .bg-pink {
@@ -167,56 +110,34 @@
         }
 
         .dashboard-card {
-
             background: #fff;
-
             border-radius: 20px;
-
             box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
-
             border: 1px solid #edf0f5;
-
             overflow: hidden;
-
         }
 
         .table {
-
             margin: 0;
-
             vertical-align: middle;
-
             text-align: center;
         }
 
         .table thead th {
-
             color: #8a94a6;
-
             font-size: 13px;
-
             font-weight: 700;
-
             border-bottom: 1px solid #dce3ed;
-
             background: #fff;
-
         }
 
         .table tbody td {
-
-            /* padding: 18px 24px; */
-
             color: #657181;
-
             border-bottom: 1px solid #f0f3f8;
-
         }
 
         .table tbody tr:last-child td {
-
             border-bottom: 0;
-
         }
 
         .admin-avatar {
@@ -230,121 +151,75 @@
         }
 
         .name-text {
-
             font-weight: 800;
-
             color: #1f2933;
-
         }
 
         .country-text {
-
             font-size: 13px;
-
             color: #657181;
-
         }
 
         .rating-stars {
-
             color: #ffb300;
-
             font-size: 17px;
-
             letter-spacing: 1px;
-
         }
 
         .badge-approved {
-
             background: #dcfce7;
-
             color: #00a86b;
-
             border-radius: 50px;
-
             font-size: 13px;
-
             font-weight: 700;
-
         }
 
         .badge-pending {
-
             background: #fff3d6;
-
             color: #c78100;
-
             border-radius: 50px;
-
             font-size: 13px;
-
             font-weight: 700;
-
         }
 
         .action-btn {
-
             width: 34px;
-
             height: 34px;
-
             border-radius: 5px;
-
             display: inline-grid;
-
             place-items: center;
-
             border: 0;
-
             text-decoration: none;
-
             margin-left: 6px;
-
         }
 
         .approve-btn {
-
             background: #ecfdf5;
-
             color: #10b981;
-
         }
 
         .reject-btn {
-
             background: #fff1f2;
-
             color: #ef4444;
-
         }
 
         @media (max-width: 900px) {
 
             .stat-grid {
-
                 grid-template-columns: 1fr;
-
             }
 
             .admin-header {
-
                 flex-direction: column;
-
                 align-items: flex-start;
-
             }
 
             .admin-header h1 {
-
                 font-size: 34px;
-
             }
 
             .dashboard-card {
-
                 overflow-x: auto;
-
             }
 
         }
@@ -352,7 +227,7 @@
         .more-btn {
             border: 0;
             background: transparent;
-            color: #5c767c;
+            color: #000000;
             font-weight: 500;
             padding: 0;
             margin-left: 6px;
@@ -490,7 +365,7 @@
                                     </div>
 
                                     <div class="modal-body">
-                                        <p class="mb-0" style="line-height: 1.8;">
+                                        <p class="mb-0 text-center text-dark" style="line-height: 1.8;">
                                             {{ $testi->experience }}
                                         </p>
                                     </div>
