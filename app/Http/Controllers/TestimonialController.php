@@ -12,9 +12,18 @@ class TestimonialController extends Controller
 {
     public function store(Request $request)
     {
+        $ip = $request->ip();
+
+        $alreadySubmitted = Testimonial::where('ip_address', $ip)
+            ->whereDate('created_at', today())
+            ->exists();
+
+        if ($alreadySubmitted) {
+            return back()->with('error', 'You have already submitted a testimonial today. Please try again tomorrow.');
+        }
         $request->validate([
             'country' => 'required|integer|exists:countries,id',
-            'user_rating' => 'required|integer|min:1|max:5', 
+            'user_rating' => 'required|integer|min:1|max:5',
             'experience' => 'required|string',
             'profile_picture' => 'image|mimes:jpeg,png,jpg,webp|max:2048',
         ]);
@@ -56,14 +65,15 @@ class TestimonialController extends Controller
             'full_name' => Auth::user()->name,
             'country' => $countryName,
             'code' => $request->code,
-            'phone_number' => Auth::user()->mobile_no, 
+            'phone_number' => Auth::user()->mobile_no,
             'flag' => $countryFlag,
-            'rating' => $request->user_rating, 
+            'rating' => $request->user_rating,
             'experience' => $request->experience,
             'profile_picture' => $imagePath,
             'top_pos' => $top_pos,
             'left_pos' => $left_pos,
             'is_approved' => 0,
+            'ip_address' => $ip
         ]);
 
         return response()->json([

@@ -8,9 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Testimonial extends Model
 {
-   use HasFactory;
+    use HasFactory;
 
     protected $fillable = [
+        'ip_address',
         'full_name',
         'country',
         'code',
@@ -23,9 +24,9 @@ class Testimonial extends Model
         'is_approved',
     ];
 
-public function user()
-{
-    // return $this->belongsTo(User::class, 'user_id'); 
-    return $this->belongsTo(User::class, 'full_name', 'name');
-}
+    public function user()
+    {
+        // return $this->belongsTo(User::class, 'user_id'); 
+        return $this->belongsTo(User::class, 'full_name', 'name');
+    }
 }
