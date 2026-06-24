@@ -8,198 +8,199 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <style>
-        .gallery-title {
-            color: #1ec8f5;
+        .gallery-page {
+            background-color: #0c1524;
         }
 
-        .gallery-sub-title {
-            color: #10738e;
-        }
-
-        .gallery-coming-soon {
-            position: relative;
-            min-height: 86vh;
-            padding: 90px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-size: cover;
-            background-position: center;
-            overflow: hidden;
-        }
-
-        .gallery-coming-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1120px;
-            width: 100%;
-            text-align: center;
-            color: #fff;
-        }
-
-        .gallery-main-icon svg {
-            width: 96px;
-            height: 96px;
-            margin-bottom: 20px;
-            fill: none;
-            stroke: #1ec8f5;
-            stroke-width: 3;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .gallery-main-icon .dashed-circle {
-            stroke-dasharray: 8 8;
-            opacity: .9;
-        }
-
-        .gallery-label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            color: #1ec8f5;
-            letter-spacing: 5px;
-            font-weight: 800;
-            margin-bottom: 16px;
-        }
-
-        .gallery-label span {
-            width: 90px;
-            height: 1px;
-            background: #1ec8f5;
-            opacity: .8;
-        }
-
-        .gallery-coming-content h1 {
-            font-size: clamp(52px, 8vw, 108px);
-            line-height: 1;
-            font-weight: 900;
-            margin-bottom: 24px;
-            text-shadow: 0 10px 35px rgba(0, 0, 0, .35);
-        }
-
-        .gallery-coming-content h3 {
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: 22px;
-        }
-
-        .gallery-coming-content>p {
-            max-width: 760px;
+        .gallery-container {
+            max-width: 1180px;
             margin: 0 auto;
-            font-size: 20px;
-            line-height: 1.75;
-            color: rgba(255, 255, 255, .9);
+            padding-top: 100px;
         }
 
-        .gallery-features {
-            margin-top: 60px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        .gallery-feature {
-            padding: 0 35px;
-            border-right: 1px solid rgba(255, 255, 255, .22);
-        }
-
-        .gallery-feature:last-child {
-            border-right: 0;
-        }
-
-        .gallery-feature svg {
-            width: 72px;
-            height: 72px;
-            fill: none;
-            stroke: #1ec8f5;
-            stroke-width: 3;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            margin-bottom: 22px;
-        }
-
-        .gallery-feature h4 {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 800;
-            margin-bottom: 8px;
-        }
-
-        .gallery-feature small {
-            color: rgba(255, 255, 255, .82);
-            font-size: 16px;
-        }
-
-        .explore-box {
-            max-width: 720px;
-            margin: 65px auto 0;
-            padding: 28px 36px;
-            border: 1px solid rgba(255, 255, 255, .25);
-            border-radius: 18px;
-            background: rgba(2, 13, 31, .42);
-            backdrop-filter: blur(6px);
+        .gallery-filter-bar {
             display: flex;
-            align-items: center;
-            gap: 28px;
-            text-align: left;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
         }
 
-        .explore-box svg {
-            width: 82px;
-            min-width: 82px;
-            height: 82px;
-            fill: none;
-            stroke: #1ec8f5;
-            stroke-width: 3;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+        .gallery-filter {
+            border: 1px solid #d8dee8;
+            background: #fff;
+            color: #1f2937;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 700;
         }
 
-        .explore-box h3 {
-            margin-bottom: 8px;
+        .gallery-filter.active,
+        .gallery-filter:hover {
+            background: #111827;
+            color: #fff;
         }
 
-        .explore-box p {
-            margin: 0;
-            color: rgba(255, 255, 255, .86);
-            line-height: 1.6;
+        .gallery-masonry {
+            column-count: 3;
+            column-gap: 18px;
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 18px;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #0c1524;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-radius: 14px;
+            width: 100%;
+            height: auto;
+            transition: .4s ease;
         }
 
         @media (max-width: 991px) {
-            .gallery-features {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 35px 0;
-            }
-
-            .gallery-feature:nth-child(2) {
-                border-right: 0;
+            .gallery-masonry {
+                column-count: 2;
             }
         }
 
         @media (max-width: 575px) {
-            .gallery-coming-soon {
-                padding: 70px 18px;
+            .gallery-masonry {
+                column-count: 1;
             }
+        }
 
-            .gallery-label span {
-                width: 45px;
-            }
+        .glass-filter-btn {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #b0b0b0;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-            .gallery-features {
-                grid-template-columns: 1fr;
-            }
+        .glass-filter-btn i {
+            font-size: 14px;
+        }
 
-            .gallery-feature {
-                border-right: 0;
-                padding: 20px 10px;
-            }
+        .glass-filter-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
 
-            .explore-box {
-                flex-direction: column;
-                text-align: center;
-                padding: 26px 22px;
-            }
+        /* Active State for Filter Button */
+        .glass-filter-btn.active {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: #ffffff;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-description {
+
+            color: rgba(255, 255, 255, .75);
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            max-width: 700px;
+
+            margin: 0 auto;
+
+        }
+
+        .gallery-lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .92);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+        }
+
+        .gallery-lightbox.active {
+            display: flex;
+        }
+
+        .gallery-lightbox img {
+            max-width: 90vw;
+
+            max-height: 90vh;
+
+            width: auto;
+
+            height: auto;
+
+            object-fit: contain;
+        }
+
+        .gallery-close {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, .15);
+            color: white;
+            cursor: pointer;
+        }
+
+        .gallery-nav.prev {
+            left: 30px;
+        }
+
+        .gallery-nav.next {
+            right: 30px;
+        }
+
+        .gallery-nav:hover {
+            background: rgba(255, 255, 255, .3);
+        }
+
+        .gallery-item {
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img:hover {
+            filter: brightness(1.05);
+        }
+
+        .gallery-item:hover img {
+
+            transform: scale(1.03);
+
         }
     </style>
 </head>
@@ -214,83 +215,228 @@
     @include('partials.menu')
 
 
+    <section class="gallery-page">
+        <div class="gallery-container">
 
-    <section class="gallery-coming-soon"
-        style="background:
-                linear-gradient(rgba(2, 13, 31, 0.78), rgba(2, 13, 31, 0.88)),
-                url('{{ asset('assets/img/bg/galle-dutch-fort.jpg') }}');">
-        <div class="gallery-bg-overlay"></div>
+            <div class="gallery-hero text-center">
+                <h2 class="sub-title" style="font-size: 2.5rem; color: #ffffff; padding: 20px 0;text-align: center;">
+                    Beauty of Sri Lanka...
+                </h2>
 
-        <div class="gallery-coming-content">
-            <div class="gallery-main-icon pt-5">
+                <h2 class="text-white gallery-title">
+
+                    Discover Sri Lanka Through Our Lens
+
+                </h2>
+
+                <p class="gallery-description">
+
+                    Explore breathtaking landscapes, ancient wonders, vibrant culture,
+
+                    wildlife encounters, hidden gems, and unforgettable moments captured
+
+                    across Sri Lanka. Every photograph tells a story waiting to inspire
+
+                    your next adventure.
+
+                </p>
+
             </div>
 
-            <div class="gallery-label">
-                <span></span> GALLERY <span></span>
+            <div class="explore-filter-bar my-5 text-center">
+
+                <button class="glass-filter-btn active" data-filter="landscape">
+                    <i class="fas fa-mountain-sun"></i>
+                    Landscape
+                </button>
+
+                <button class="glass-filter-btn" data-filter="religious">
+                    <i class="fas fa-place-of-worship"></i>
+                    Religious
+                </button>
+                <button class="glass-filter-btn" data-filter="architecture">
+                    <i class="fas fa-landmark"></i>
+                    Architecture
+                </button>
+                <button class="glass-filter-btn" data-filter="nature">
+                    <i class="fas fa-leaf"></i>
+                    Macro World
+                </button>
+
             </div>
 
-            <h1 class="gallery-title">Coming Soon</h1>
-            <h3 class="gallery-sub-title">We’re working on something beautiful!</h3>
-
-            <p>
-                Our gallery will showcase breathtaking destinations,
-                unforgettable travel moments, authentic Sri Lankan experiences,
-                and memories created by travelers from around the world.
-            </p>
-
-            <div class="gallery-features">
-                <div class="gallery-feature">
-                    <svg viewBox="0 0 64 64">
-                        <rect x="10" y="14" width="44" height="36" rx="5" />
-                        <circle cx="45" cy="24" r="4" />
-                        <path d="M12 46l15-16 10 10 7-7 10 13" />
-                    </svg>
-                    <h4>Stunning Landscapes</h4>
-                    <small>Breathtaking views</small>
+            <div class="gallery-masonry">
+                <div class="gallery-item" data-category="landscape">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37556019.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37546108.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37737596.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37742239.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37889469.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38034840.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38194839.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38194922.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37977000.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38034831.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38194845.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38086781.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="religious">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37153103.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37511997.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37528800.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37528986.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37587119.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37587124.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="religious">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38034830.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="religious">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37587128.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37701278.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37763041.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-37882777.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
                 </div>
 
-                <div class="gallery-feature">
-                    <svg viewBox="0 0 64 64">
-                        <path
-                            d="M20 22h7l3-4h8l3 4h7a5 5 0 0 1 5 5v19a5 5 0 0 1-5 5H20a5 5 0 0 1-5-5V27a5 5 0 0 1 5-5z" />
-                        <circle cx="34" cy="37" r="10" />
-                    </svg>
-                    <h4>Captured Moments</h4>
-                    <small>Real experiences</small>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38143955.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
                 </div>
-
-                <div class="gallery-feature">
-                    <svg viewBox="0 0 64 64">
-                        <path d="M32 56s18-20 18-34a18 18 0 0 0-36 0c0 14 18 34 18 34z" />
-                        <circle cx="32" cy="22" r="7" />
-                    </svg>
-                    <h4>Top Destinations</h4>
-                    <small>Curated places</small>
+                <div class="gallery-item" data-category="architecture">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38143965.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
                 </div>
-
-                <div class="gallery-feature">
-                    <svg viewBox="0 0 64 64">
-                        <path d="M32 52S12 39 12 24a12 12 0 0 1 20-9 12 12 0 0 1 20 9c0 15-20 28-20 28z" />
-                    </svg>
-                    <h4>Made With Passion</h4>
-                    <small>For travelers like you</small>
+                <div class="gallery-item" data-category="religious">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38194822.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="religious">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38194819.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="religious">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38199695.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="religious">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38247448.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38020427.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38086810.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38179875.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="{{ Storage::disk('s3')->url('assets/img/gallery/pexels-ceylonframes-38194923.jpg') }}"
+                        alt="https://www.pexels.com/@ceylonframes/gallery/" class="gallery-image">
                 </div>
             </div>
 
-            <div class="explore-box">
-                <svg viewBox="0 0 64 64">
-                    <path d="M54 10L8 31l18 7 7 18 21-46z" />
-                    <path d="M26 38l12-12" />
-                </svg>
-
-                <div>
-                    <p class="explore-box-title text-center">The gallery will be available soon with hundreds of
-                        beautiful Sri
-                        Lankan travel photographs.</p>
-                </div>
-            </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.glass-filter-btn');
+            const items = document.querySelectorAll('.gallery-item');
+
+            function filterGallery(filter) {
+                items.forEach(item => {
+                    const category = item.dataset.category;
+
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    filterGallery(this.dataset.filter);
+                });
+            });
+
+            const activeBtn = document.querySelector('.glass-filter-btn.active');
+            if (activeBtn) {
+                filterGallery(activeBtn.dataset.filter);
+            }
+        });
+    </script>
+
 
 
     <!--========== Footer Area ==========-->
