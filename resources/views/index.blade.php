@@ -253,7 +253,7 @@
         @media (max-width: 768px) {
             .story-slide {
                 width: 280px;
-                height: 420px;
+                /* height: 420px; */
             }
 
             .sri-lanka-story-section .sec-title {
@@ -1521,7 +1521,7 @@
 
         .wcu-desc-text {
             color: #ffffff;
-            padding: 20px 80px;
+            padding: 10px 50px;
             font-size: 15px;
             line-height: 1.6;
             margin: 0;
@@ -1570,7 +1570,6 @@
 
             .wcu-desc-text {
                 color: #ffffff;
-                padding-left: 25px;
             }
         }
     </style>
@@ -1617,7 +1616,7 @@
         </span>
     </div>
 
-    <section class="about-section">
+    <section class="d-none d-md-flex about-section">
         <div class="about-image">
             <img src="{{ asset('assets/img/bg/wp8780766-tea-estate-wallpapers.jpg') }}"
                 style="height: 100%; object-fit: cover;" alt="Sri Lanka Tea Plantation">
@@ -1664,7 +1663,7 @@
     </section>
 
     <section class="about-section">
-        <div class="about-image">
+        <div class="about-image d-none d-md-block">
             <img src="{{ asset('assets/img/Hospitality_Trends_Sri_Lanka.jpeg') }}"
                 style="height: 100%; object-fit: cover;" alt="Sri Lanka Tea Plantation">
         </div>
@@ -1880,13 +1879,10 @@
         }
     </style>
 
-    <section class="overflow-hidden space" style="background-color: #0c1524;">
-
-
-
+    <section class="overflow-hidden space" style="background-color: #0c1524; margin-top:10px">
         <div class="container">
             <!-- Tab Header -->
-            <div class="tab-header">
+            <div class="mt-2 tab-header">
                 <div class="title-area text-center">
                     <span class="sub-title" style="color: #ffffff">Seamless Journeys</span>
                     <h2 class="sec-title" style="color: #ffffff">Your Journey, Our Priority</h2>
@@ -2488,7 +2484,7 @@
                                     <div class="row transition-col block-active" id="about-block-2">
                                         <div class="col-xl-7">
                                             <div class="img-box2">
-                                                <div class="img1">
+                                                <div class="img1 d-none d-md-block">
                                                     <img style="width: 585px;"
                                                         src="{{ asset('assets/img/normal/WhatsApp-Image-2024-06-12-at-1sdfsd5.53.54_86a7873012.jpg') }}"
                                                         alt="About">
@@ -2635,11 +2631,11 @@
                                                     <div class="row">
                                                         <div class="col-6"><input type="number"
                                                                 class="form-control" name="luggage_large"
-                                                                placeholder="No. of Large Bags (L)" min="0">
+                                                                placeholder="Large" min="0">
                                                         </div>
                                                         <div class="col-6"><input type="number"
                                                                 class="form-control" name="luggage_small"
-                                                                placeholder="No. of Small Bags (S)" min="0">
+                                                                placeholder="Small" min="0">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2782,13 +2778,13 @@
                                                         class="form-control" placeholder="Special Requirements (Baby Seat, Wheelchair access, etc.)"></textarea>
                                                 </div>
 
-                                                <div class="d-flex justify-content-around gap-3">
+                                                <div class="d-md-flex justify-content-around gap-3">
                                                     <button type="button" id="hide-form-btn"
-                                                        class="th-btn style-alt w-100">
+                                                        class="th-btn style-alt w-100 mb-1">
                                                         <i class="fas fa-arrow-left me-2"></i> How It Works
                                                     </button>
                                                     <button type="submit" id="submit-btn"
-                                                        class="th-btn-whatsapp w-100">
+                                                        class="th-btn-whatsapp w-100 mb-1">
                                                         <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                                     </button>
                                                 </div>
@@ -2847,7 +2843,7 @@
                                                         src="{{ asset('assets/img/normal/byee2.png') }}"
                                                         alt="About">
                                                 </div>
-                                                <div class="img2">
+                                                <div class="img2 d-none d-md-block">
                                                     <img style="width:400px; height:300px;"
                                                         src="{{ asset('assets/img/normal/39330.jpg') }}"
                                                         alt="About">
@@ -2985,11 +2981,11 @@
                                                     <div class="row">
                                                         <div class="col-6"><input type="number"
                                                                 class="form-control" name="luggage_large"
-                                                                placeholder="No. of Large Bags (L)" min="0">
+                                                                placeholder="Large" min="0">
                                                         </div>
                                                         <div class="col-6"><input type="number"
                                                                 class="form-control" name="luggage_small"
-                                                                placeholder="No. of Small Bags (S)" min="0">
+                                                                placeholder="Small" min="0">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3121,13 +3117,13 @@
                                                         placeholder="Special Requirements..."></textarea>
                                                 </div>
 
-                                                <div class="d-flex justify-content-around gap-3">
+                                                <div class="d-md-flex justify-content-around gap-3">
                                                     <button type="button" id="hide-form-btn"
-                                                        class="th-btn style-alt w-100">
+                                                        class="th-btn style-alt w-100 mb-1">
                                                         <i class="fas fa-arrow-left me-2"></i> How It Works
                                                     </button>
                                                     <button type="submit" id="submit-btn"
-                                                        class="th-btn-whatsapp w-100">
+                                                        class="th-btn-whatsapp w-100 mb-1">
                                                         <i class="fab fa-whatsapp me-2"></i> Get Quotation
                                                     </button>
                                                 </div>
@@ -3448,15 +3444,15 @@
         /* Testimonial Card */
         .nh-card {
             background: #ffffff;
-            border-radius: 100px;
-            /* Pill shape */
+            border-radius: 34px;
             display: flex;
             align-items: center;
-            padding: 15px 30px 15px 15px;
-            gap: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            height: 100%;
-            max-height: 180px;
+            padding: 34px 42px;
+            gap: 28px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+            max-width: 900px;
+            min-height: 230px;
+            margin: 0 auto;
         }
 
         /* Avatar Wrapper (Fixed for squash issue) */
@@ -3572,23 +3568,90 @@
             right: -10px !important;
         }
 
+        .nh-swiper .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+
         /* Responsive tweaks */
         @media (max-width: 768px) {
+            .nh-testimonial-section {
+                padding: 70px 0;
+                background-attachment: scroll;
+            }
+
+            .nh-testimonial-section .container {
+                padding: 0 16px;
+            }
+
+            .nh-main-title {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
             .nh-card {
+                width: 100%;
+                max-height: none;
+                height: auto;
+                padding: 28px 22px;
+                border-radius: 28px;
                 flex-direction: column;
-                border-radius: 30px;
+                gap: 14px;
                 text-align: center;
-                padding: 30px 20px;
+            }
+
+            .nh-avatar-wrap {
+                width: 100px;
+                height: 100px;
+                min-width: 100px;
+                flex: 0 0 100px;
+                margin: 0 auto;
+            }
+
+            .nh-img {
+                width: 100px;
+                height: 100px !important;
+                min-width: 100px;
+                min-height: 100px;
+            }
+
+            .nh-content {
+                width: 100%;
+                flex: unset;
             }
 
             .nh-header {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
+                display: block;
+                margin-bottom: 10px;
             }
 
-            .nh-quote {
-                display: none;
+            .nh-name {
+                font-size: 22px;
+                margin-bottom: 6px;
+            }
+
+            .nh-desig {
+                justify-content: center;
+                font-size: 14px;
+            }
+
+            .nh-text {
+                max-height: 110px;
+                font-size: 15px;
+                line-height: 1.7;
+                padding-right: 0;
+                margin: 14px 0;
+                overflow-y: auto;
+            }
+
+            .nh-rating {
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .nh-nav-next,
+            .nh-nav-prev {
+                display: none !important;
             }
         }
 
@@ -3843,21 +3906,24 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var swiper = new Swiper(".nh-swiper", {
+            new Swiper(".nh-swiper", {
                 slidesPerView: 1,
-                spaceBetween: 30,
+                spaceBetween: 20,
                 loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
+                autoHeight: true,
+
                 navigation: {
                     nextEl: ".nh-nav-next",
                     prevEl: ".nh-nav-prev",
                 },
+
                 breakpoints: {
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                    },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 40,
                     }
                 }
