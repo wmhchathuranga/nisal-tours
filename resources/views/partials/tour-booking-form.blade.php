@@ -50,7 +50,7 @@
                         <label for="vehicle-car3" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
-                                    <img src="assets/img/vehicle/car01.jpg" alt="Car Image">
+                                    <img src="{{ asset('assets/img/vehicle/car01.jpg') }}" alt="Car Image">
                                     <div class="selection-checkmark"><i class="fa-solid fa-check"></i></div>
                                 </div>
                                 <div class="vehicle-content **professional-content**">
@@ -68,7 +68,7 @@
                         <label for="vehicle-van-small3" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
-                                    <img src="assets/img/vehicle/van01.jpg" alt="Small Van Image">
+                                    <img src="{{ asset('assets/img/vehicle/van01.jpg') }}" alt="Small Van Image">
                                     <div class="selection-checkmark"><i class="fa-solid fa-check"></i></div>
                                 </div>
                                 <div class="vehicle-content **professional-content**">
@@ -86,7 +86,7 @@
                         <label for="vehicle-van-large3" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
-                                    <img src="assets/img/vehicle/van02.jpg" alt="Large Van Image">
+                                    <img src="{{ asset('assets/img/vehicle/van02.jpg') }}" alt="Large Van Image">
                                     <div class="selection-checkmark"><i class="fa-solid fa-check"></i></div>
                                 </div>
                                 <div class="vehicle-content **professional-content**">
@@ -104,7 +104,7 @@
                         <label for="vehicle-bus-13" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
-                                    <img src="assets/img/vehicle/bus01.jpg" alt="Mini Bus Image">
+                                    <img src="{{ asset('assets/img/vehicle/bus01.jpg') }}" alt="Mini Bus Image">
                                     <div class="selection-checkmark"><i class="fa-solid fa-check"></i></div>
                                 </div>
                                 <div class="vehicle-content **professional-content**">

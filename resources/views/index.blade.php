@@ -25,7 +25,7 @@
                 <div class="swiper-slide">
                     <div class="hero-inner">
                         <div class="th-hero-bg"
-                            data-bg-src="assets/img/hero/pexels-rajee-kumar-1029496084-33130315.jpg">
+                            data-bg-src="{{ asset('assets/img/hero/pexels-rajee-kumar-1029496084-33130315.jpg') }}">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_1.jpg">
+                        <div class="th-hero-bg" data-bg-src="{{ asset('assets/img/hero/hero_bg_1_1.jpg') }}">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -63,7 +63,7 @@
                 <div class="swiper-slide">
                     <div class="hero-inner">
                         <div class="th-hero-bg"
-                            data-bg-src="assets/img/hero/sebastian-latorre-qI6aWFDs7pY-unsplash.jpg">
+                            data-bg-src="{{ asset('assets/img/hero/sebastian-latorre-qI6aWFDs7pY-unsplash.jpg') }}">
                         </div>
                         <div class="container">
                             <div class="hero-style1">
@@ -2346,13 +2346,13 @@
                             <div class="col-xl-6">
                                 <div class="img-box1">
                                     <div class="img1">
-                                        <img src="assets/img/normal/about_3_1.jpg" alt="About">
+                                        <img src="{{ asset('assets/img/normal/about_3_1.jpg') }}" alt="About">
                                     </div>
                                     <div class="img2">
-                                        <img src="assets/img/normal/about_3_2.jpg" alt="About">
+                                        <img src="{{ asset('assets/img/normal/about_3_2.jpg') }}" alt="About">
                                     </div>
                                     <div class="img3">
-                                        <img src="assets/img/normal/about_3_3.jpg" alt="About">
+                                        <img src="{{ asset('assets/img/normal/about_3_3.jpg') }}" alt="About">
                                     </div>
                                 </div>
                             </div>
@@ -2375,8 +2375,9 @@
                                     </div>
                                     <div class="about-item-wrap">
                                         <div class="about-item">
-                                            <div class="about-item_img"><img src="assets/img/icon/map3.svg"
-                                                    alt=""></div>
+                                            <div class="about-item_img"><img
+                                                    src="{{ asset('assets/img/icon/map3.svg') }}" alt="">
+                                            </div>
                                             <div class="about-item_centent">
                                                 <h5 class="box-title">Exclusive Trip</h5>
                                                 <p class="about-item_text">There are many variations of passages of
@@ -2385,8 +2386,9 @@
                                             </div>
                                         </div>
                                         <div class="about-item">
-                                            <div class="about-item_img"><img src="assets/img/icon/guide.svg"
-                                                    alt=""></div>
+                                            <div class="about-item_img"><img
+                                                    src="{{ asset('assets/img/icon/guide.svg') }}" alt="">
+                                            </div>
                                             <div class="about-item_centent">
                                                 <h5 class="box-title">Professional Guide</h5>
                                                 <p class="about-item_text">There are many variations of passages of
@@ -2488,12 +2490,13 @@
                                             <div class="img-box2">
                                                 <div class="img1">
                                                     <img style="width: 585px;"
-                                                        src="assets/img/normal/WhatsApp-Image-2024-06-12-at-1sdfsd5.53.54_86a7873012.jpg"
+                                                        src="{{ asset('assets/img/normal/WhatsApp-Image-2024-06-12-at-1sdfsd5.53.54_86a7873012.jpg') }}"
                                                         alt="About">
                                                 </div>
                                                 <div class="img2">
                                                     <img style="width:393px;"
-                                                        src="assets/img/normal/maxresdefault (1).jpg" alt="About">
+                                                        src="{{ asset('assets/img/normal/maxresdefault (1).jpg') }}"
+                                                        alt="About">
                                                     {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
                                                 </div>
                                             </div>
@@ -2519,7 +2522,7 @@
                                                             <div class="about-item-wrap">
                                                                 <div class="about-item style2">
                                                                     <div class="about-item_img"><img
-                                                                            src="assets/img/icon/about_1_11.svg"
+                                                                            src="{{ asset('assets/img/icon/about_1_11.svg') }}"
                                                                             alt="Book Icon"></div>
                                                                     <div class="about-item_centent">
                                                                         <h5 class="box-title">Book & Track</h5>
@@ -2532,7 +2535,7 @@
                                                                 </div>
                                                                 <div class="about-item style2">
                                                                     <div class="about-item_img"><img
-                                                                            src="assets/img/icon/about_1_22.svg"
+                                                                            src="{{ asset('assets/img/icon/about_1_22.svg') }}"
                                                                             alt="Meet Icon"></div>
                                                                     <div class="about-item_centent">
                                                                         <h5 class="box-title">Meet & Greet</h5>
@@ -2546,7 +2549,7 @@
                                                                 </div>
                                                                 <div class="about-item style2">
                                                                     <div class="about-item_img"><img
-                                                                            src="assets/img/icon/about_1_33.svg"
+                                                                            src="{{ asset('assets/img/icon/about_1_33.svg') }}"
                                                                             alt="Transfer Icon"></div>
                                                                     <div class="about-item_centent">
                                                                         <h5 class="box-title">Direct Transfer</h5>
@@ -2672,7 +2675,7 @@
                                                             <label for="vehicle-car" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/car01.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/car01.jpg') }}"
                                                                             alt="Car Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>
@@ -2696,7 +2699,7 @@
                                                                 class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/van01.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/van01.jpg') }}"
                                                                             alt="Small Van Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>
@@ -2720,7 +2723,7 @@
                                                                 class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/van02.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/van02.jpg') }}"
                                                                             alt="Large Van Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>
@@ -2745,7 +2748,7 @@
                                                             <label for="vehicle-bus-1" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/bus01.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/bus01.jpg') }}"
                                                                             alt="Mini Bus Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>
@@ -2840,12 +2843,14 @@
                                         <div class="col-xl-7">
                                             <div class="img-box2">
                                                 <div class="img1">
-                                                    <img style="width: 585px;" src="assets/img/normal/byee2.png"
+                                                    <img style="width: 585px;"
+                                                        src="{{ asset('assets/img/normal/byee2.png') }}"
                                                         alt="About">
                                                 </div>
                                                 <div class="img2">
                                                     <img style="width:400px; height:300px;"
-                                                        src="assets/img/normal/39330.jpg" alt="About">
+                                                        src="{{ asset('assets/img/normal/39330.jpg') }}"
+                                                        alt="About">
                                                     {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
                                                 </div>
                                             </div>
@@ -2872,7 +2877,7 @@
                                                             <div class="about-item-wrap">
                                                                 <div class="about-item style2">
                                                                     <div class="about-item_img"><img
-                                                                            src="assets/img/icon/about_1_11.svg"
+                                                                            src="{{ asset('assets/img/icon/about_1_11.svg') }}"
                                                                             alt="Book Icon"></div>
                                                                     <div class="about-item_centent">
                                                                         <h5 class="box-title">Confirm & Schedule</h5>
@@ -2887,7 +2892,7 @@
                                                                 </div>
                                                                 <div class="about-item style2">
                                                                     <div class="about-item_img"><img
-                                                                            src="assets/img/icon/about_2_22.svg"
+                                                                            src="{{ asset('assets/img/icon/about_2_22.svg') }}"
                                                                             alt="Meet Icon"></div>
                                                                     <div class="about-item_centent">
                                                                         <h5 class="box-title">Hotel Pick-up</h5>
@@ -2902,7 +2907,7 @@
                                                                 </div>
                                                                 <div class="about-item style2">
                                                                     <div class="about-item_img"><img
-                                                                            src="assets/img/icon/about_1_33.svg"
+                                                                            src="{{ asset('assets/img/icon/about_1_33.svg') }}"
                                                                             alt="Transfer Icon"></div>
                                                                     <div class="about-item_centent">
                                                                         <h5 class="box-title">Direct to Terminal</h5>
@@ -3009,7 +3014,7 @@
                                                             <label for="vehicle-car2" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/car01.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/car01.jpg') }}"
                                                                             alt="Car Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>
@@ -3033,7 +3038,7 @@
                                                                 class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/van01.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/van01.jpg') }}"
                                                                             alt="Small Van Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>
@@ -3057,7 +3062,7 @@
                                                                 class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/van02.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/van02.jpg') }}"
                                                                             alt="Large Van Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>
@@ -3082,7 +3087,7 @@
                                                             <label for="vehicle-bus-12" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="assets/img/vehicle/bus01.jpg"
+                                                                        <img src="{{ asset('assets/img/vehicle/bus01.jpg') }}"
                                                                             alt="Mini Bus Image">
                                                                         <div class="selection-checkmark"><i
                                                                                 class="fa-solid fa-check"></i></div>

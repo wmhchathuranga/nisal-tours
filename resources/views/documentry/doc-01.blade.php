@@ -20,7 +20,7 @@ Breadcumb
 ==============================-->
     {{-- <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg"> --}}
     <div style="background-position: top;" class="breadcumb-wrapper"
-        data-bg-src="assets/img/bg/wp6828612-sigiriya-wallpapers.jpg">
+        data-bg-src="{{ asset('assets/img/bg/wp6828612-sigiriya-wallpapers.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Sigiriya Lion Rock</h1>
@@ -195,11 +195,11 @@ Documentary Details Area
                             </div>
 
                             <button data-slider-prev="#tourSlider4" class="slider-arrow style3 slider-prev">
-                                <img src="assets/img/icon/hero-arrow-left.svg" alt="">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-left\.svg') }}" alt="">
                             </button>
 
                             <button data-slider-next="#tourSlider4" class="slider-arrow style3 slider-next">
-                                <img src="assets/img/icon/hero-arrow-right.svg" alt="">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-right\.svg') }}" alt="">
                             </button>
                         </div>
 
