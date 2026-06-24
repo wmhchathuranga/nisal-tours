@@ -245,20 +245,20 @@
 
             <div class="explore-filter-bar my-5 text-center">
 
-                <button class="glass-filter-btn active" data-filter="landscape">
+                <button class="mb-1 glass-filter-btn active" data-filter="landscape">
                     <i class="fas fa-mountain-sun"></i>
                     Landscape
                 </button>
 
-                <button class="glass-filter-btn" data-filter="religious">
+                <button class="mb-1 glass-filter-btn" data-filter="religious">
                     <i class="fas fa-place-of-worship"></i>
                     Religious
                 </button>
-                <button class="glass-filter-btn" data-filter="architecture">
+                <button class="mt-1 glass-filter-btn" data-filter="architecture">
                     <i class="fas fa-landmark"></i>
                     Architecture
                 </button>
-                <button class="glass-filter-btn" data-filter="nature">
+                <button class="mt-1 glass-filter-btn" data-filter="nature">
                     <i class="fas fa-leaf"></i>
                     Macro World
                 </button>
