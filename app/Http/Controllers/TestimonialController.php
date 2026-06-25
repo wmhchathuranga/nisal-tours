@@ -61,6 +61,8 @@ class TestimonialController extends Controller
         $top_pos = max(5, min(95, $top_pos));
         $left_pos = max(5, min(95, $left_pos));
 
+        $experience = htmlspecialchars($request->experience, ENT_QUOTES, 'UTF-8');
+
         $testimonial = Testimonial::create([
             'full_name' => Auth::user()->name,
             'country' => $countryName,
@@ -68,7 +70,7 @@ class TestimonialController extends Controller
             'phone_number' => Auth::user()->mobile_no,
             'flag' => $countryFlag,
             'rating' => $request->user_rating,
-            'experience' => $request->experience,
+            'experience' => $experience,
             'profile_picture' => $imagePath,
             'top_pos' => $top_pos,
             'left_pos' => $left_pos,
