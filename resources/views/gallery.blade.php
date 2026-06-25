@@ -260,7 +260,7 @@
                 </button>
                 <button class="mt-1 glass-filter-btn" data-filter="nature">
                     <i class="fas fa-leaf"></i>
-                    Macro World
+                    Nature
                 </button>
 
             </div>

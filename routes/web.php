@@ -26,11 +26,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/forgot-password', [PasswordController::class, 'requestForm'])->name('password.request');
-
 Route::post('/forgot-password', [PasswordController::class, 'sendEmail'])->name('password.email');
-
 Route::get('/reset-password/{token}', [PasswordController::class, 'resetForm'])->name('password.reset');
-
 Route::post('/reset-password', [PasswordController::class, 'updatePassword'])->name('password.update');
 
 
@@ -100,51 +97,29 @@ Route::get('/about', function () {
 Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
-
-// resorts
-// Resorts Dynamic Route
-Route::get('/resort-detail', function () {
-    $resort_id = request()->query('id', '01');
-
-    $resort_blade = 'resorts.resort-details-' . $resort_id;
-
-    return view($resort_blade);
-})->name('resort-details');
-// Route::get('/resort-detail', function () {
-//     return view('resort-details-01');
-// })->name('resort-details-01');
-
-// Route::get('/resort-detail-02', function () {
-//     return view('resort-details-02');
-// })->name('resort-details-02');
-
-// Route::get('/resort-detail-03', function () {
-//     return view('resort-details-03');
-// })->name('resort-details-03');
-
-// Route::get('/resort-detail-04', function () {
-//     return view('resort-details-04');
-// })->name('resort-details-04');
-
-// Route::get('/resort-detail-05', function () {
-//     return view('resort-details-05');
-// })->name('resort-details-05');
+Route::get('/refund-policy', function () {
+    return view('refund-policy');
+})->name('refund-policy');
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+Route::get('/terms-and-conditions', function () {
+    return view('terms-and-conditions');
+})->name('terms-and-conditions');
 
 //  tours
 Route::get('/tour-detail', function () {
     $tour_id = request()->query('tour_id');
     $tour_blade = 'tour-details-' . $tour_id;
-
     return view('tours/' . $tour_blade);
-})->name('tour-details');
+})->name('tour-details')->where('tour_id', '[0-9]+');
 
 // documentry
 Route::get('/documentry', function () {
     $doc_id = request()->query('doc_id');
     $doc_blade = 'doc-' . $doc_id;
-
     return view('documentry/' . $doc_blade);
-})->name('documentry');
+})->name('documentry')->where('doc_id', '[0-9]+');
 
 // form submission
 Route::post('/tour-booking', [FormController::class, 'handle_TourBooking'])->name('tour-booking.submit');

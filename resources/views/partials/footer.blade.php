@@ -66,6 +66,27 @@
             background: #113D48;
             transform: translateY(-3px);
         }
+
+        .footer-policy-links {
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .footer-policy-links a {
+            color: rgba(255, 255, 255, .75);
+            font-size: 14px;
+            transition: .3s;
+            text-decoration: none;
+        }
+
+        .footer-policy-links a:hover {
+            color: #1CA8CB;
+        }
+
+        .footer-policy-links span {
+            color: rgba(255, 255, 255, .4);
+            margin: 0 8px;
+        }
     </style>
 
     <div class="widget-area" style="background: #0c1524;">
@@ -174,16 +195,34 @@
     <div class="copyright-wrap" style="background-color:#070e1a ">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-3 text-center text-md-start">
-                    <p class="copyright-text">Copyright 2025 <a href="{{ route('home') }}">Bitrate.lk</a>. All Rights
+                <div class="col-md-4 text-center text-md-start">
+                    <p class="copyright-text">Copyright {{ date('Y') }} <a href="{{ route('home') }}">Novara
+                            Holidays</a>. All Rights
                         Reserved.</p>
                 </div>
+
                 {{-- <div class="col-md-6 text-end d-none d-md-block">
                         <div class="footer-card">
                             <span class="title">We Accept</span>
                             <img src="{{ asset('assets/img/shape/cards.png')}}" alt="">
                         </div>
                     </div> --}}
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="footer-policy-links mt-2 text-md-start col-md-4">
+
+                    <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="{{ route('refund-policy') }}">Refund Policy</a>
+
+                    <span>|</span>
+
+                    <a href="{{ route('terms-and-conditions') }}">Terms & Conditions</a>
+
+                </div>
             </div>
 
         </div>
