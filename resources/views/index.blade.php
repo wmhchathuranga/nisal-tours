@@ -476,7 +476,7 @@
                         </div>
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item swiper-slide story-slide"
-                            data-category="rocks-mountains historical-religious">
+                            data-category="rocks-mountains">
                             <div class="explore-custom-card">
                                 <img class="bg-image"
                                     src="{{ asset('assets/img/explore/free-photo-of-dambulla-cave-temple-complex-in-sri-lanka.jpeg') }}"
@@ -788,7 +788,7 @@
                         </div>
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item swiper-slide story-slide"
-                            data-category="historical-religious ">
+                            data-category="historical-religious">
                             <div class="explore-custom-card">
                                 <img class="bg-image" src="{{ asset('assets/img/Gallefort/IMG_2486.jpg') }}"
                                     alt="Galle Dutch Fort">
@@ -912,7 +912,7 @@
                         </div>
 
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item swiper-slide story-slide"
-                            data-category=" safari">
+                            data-category="safari">
                             <div class="explore-custom-card">
                                 <img class="bg-image" src="{{ asset('assets/img/explore/31.jpg') }}"
                                     alt="Sinharaja">
@@ -1273,61 +1273,79 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Wait for existing theme scripts to load, then initialize our custom Story Carousel
-            if (typeof Swiper !== 'undefined') {
-                var storySwiper = new Swiper(".story-swiper", {
-                    effect: "coverflow",
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: "auto",
-                    loop: true,
-                    loopedSlides: 43,
-                    coverflowEffect: {
-                        rotate: 20,
-                        stretch: 0,
-                        depth: 200,
-                        modifier: 1,
-                        slideShadows: true,
-                    },
-                    autoplay: {
-                        delay: 3500,
-                        disableOnInteraction: false,
-                    },
-                    pagination: {
-                        el: ".story-swiper-pagination",
-                        clickable: true,
-                    },
+            if (typeof Swiper === 'undefined') return;
 
-                    navigation: {
-                        nextEl: '.story-arrow-next',
-                        prevEl: '.story-arrow-prev',
-                    },
+            const filterButtons = document.querySelectorAll('.glass-filter-btn');
+
+            function setActiveButton(category) {
+                filterButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.filter === category);
                 });
             }
 
-            document.querySelectorAll('.glass-filter-btn').forEach(button => {
+            const storySwiper = new Swiper(".story-swiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                loop: true,
+                loopedSlides: 43,
 
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+
+                pagination: {
+                    el: ".story-swiper-pagination",
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.story-arrow-next',
+                    prevEl: '.story-arrow-prev',
+                },
+
+                on: {
+                    slideChange: function() {
+                        const activeSlide = this.slides[this.activeIndex];
+
+                        if (!activeSlide) return;
+
+                        const category = activeSlide.getAttribute('data-category');
+
+                        if (category) {
+                            setActiveButton(category);
+                        }
+                    }
+                }
+            });
+
+            filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
-
-                    document.querySelectorAll('.glass-filter-btn')
-                        .forEach(btn => btn.classList.remove('active'));
-
-                    this.classList.add('active');
-
                     const category = this.dataset.filter;
 
                     const slide = document.querySelector(
                         `.swiper-slide[data-category="${category}"]:not(.swiper-slide-duplicate)`
                     );
 
-                    if (slide) {
-                        storySwiper.slideToLoop(
-                            parseInt(slide.dataset.swiperSlideIndex),
-                            800
-                        );
+                    if (!slide) return;
+
+                    const realIndex = parseInt(slide.dataset.swiperSlideIndex);
+
+                    if (!isNaN(realIndex)) {
+                        storySwiper.slideToLoop(realIndex, 800);
+                        setActiveButton(category);
                     }
                 });
-
             });
         });
     </script>
