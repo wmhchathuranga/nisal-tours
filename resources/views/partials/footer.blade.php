@@ -100,12 +100,13 @@
                                 <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo-white.svg') }}"
                                         alt="Bitrate"></a>
                             </div>
-                            <p class="about-text" style="text-align: justify; margin-bottom: 0px"> &nbsp;&nbsp;We
+                            <p class="about-text" style="text-align: justify; margin-bottom: 0px">
+                                We
                                 provide you the most
-                                unforgettable
-                                travel experiences in Sri Lanka.
-                                Explore all
-                                breathtaking destinations and create lifelong memories with your trusted travel partner.
+                                hassle-free and unforgettable
+                                travel experiences in Sri Lanka. We wormly welcome you to
+                                explore all the breathtaking destinations and create lifelong memories with your trusted
+                                travel partner.
                             </p>
                             <p style="text-align:right; margin-top: 0px;">
                                 - Novara Holidays -

@@ -6,6 +6,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <style>
+        html {
+            scroll-behavior: smooth !important;
+        }
+
+        #tour-packages {
+            scroll-margin-top: 210px;
+        }
+
+        /* Custom Auth Buttons Styling */
+        .custom-auth-btn {
+            padding: 15px 24px;
+            font-size: 15px;
+            /* font-weight: 600; */
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .btn-login-custom {
+            background-color: transparent;
+            color: #1a1a1a;
+            border: 1px solid #d1d5db;
+        }
+
+        .btn-login-custom:hover {
+            background-color: #f3f4f6;
+            color: #000;
+            border-color: #9ca3af;
+        }
+
+        .btn-register-custom {
+            background-color: #0c333a;
+            color: #ffffff !important;
+            border: 1px solid #0c333a;
+            box-shadow: 0 2px 4px rgba(29, 177, 208, 0.2);
+        }
+
+        .btn-register-custom:hover {
+            background-color: #1796b0;
+            border-color: #1796b0;
+            box-shadow: 0 4px 6px rgba(29, 177, 208, 0.3);
+            transform: translateY(-1px);
+        }
+    </style>
 </head>
 
 <body>
@@ -38,6 +86,12 @@
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
                                 </div> --}}
+                                <div class="d-flex justify-content-start ps-5">
+                                    <a href="#tour-packages" class="custom-auth-btn btn-register-custom"
+                                        data-ani="slideinup" data-ani-delay="0.2s">
+                                        Explore Tour Packages
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,6 +110,12 @@
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
                                 </div> --}}
+                                <div class="d-flex justify-content-start ps-5">
+                                    <a href="#tour-packages" class="custom-auth-btn btn-register-custom"
+                                        data-ani="slideinup" data-ani-delay="0.2s">
+                                        Explore Tour Packages
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -75,18 +135,18 @@
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
                                 </div> --}}
+                                <div class="d-flex justify-content-start ps-5">
+                                    <a href="#tour-packages" class="custom-auth-btn btn-register-custom"
+                                        data-ani="slideinup" data-ani-delay="0.2s">
+                                        Explore Tour Packages
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
-            {{-- <div class="th-swiper-custom">
-                <button data-slider-prev="#heroSlide1" class="slider-arrow slider-prev"><img src="assets/img/icon/right-arrow.svg" alt=""></button>
-                <div class="slider-pagination"></div>
-                <button data-slider-next="#heroSlide1" class="slider-arrow slider-next"><img src="assets/img/icon/left-arrow.svg" alt=""></button>
-            </div> --}}
-
         </div>
     </div>
 
@@ -2505,7 +2565,8 @@
                                                             <div class="title-area mb-20 text-center text-xl-start">
                                                                 <span class="text-light sub-title style1 ">How It
                                                                     Works</span>
-                                                                <h2 class="text-light sec-title mb-20">Your Hassle-Free
+                                                                <h2 class="text-light sec-title mb-20">Your
+                                                                    Hassle-Free
                                                                     Arrival in
                                                                     3
                                                                     Easy Steps</h2>
