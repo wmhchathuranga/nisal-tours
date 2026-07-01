@@ -94,8 +94,8 @@
 
         .services-floating-btn {
             position: fixed;
-            right: 18px;
-            bottom: 18px;
+            right: 25px;
+            bottom: 115px;
 
             width: 82px;
             height: 82px;
@@ -113,7 +113,7 @@
             width: 58px;
             height: 58px;
 
-            background: #fff;
+            background: #0c1524;
             border-radius: 50%;
 
             display: flex;
@@ -121,7 +121,7 @@
             align-items: center;
             justify-content: center;
 
-            border: 3px solid #18B8FF;
+            border: 2px solid #18B8FF;
 
             box-shadow:
                 0 0 0 3px rgba(24, 184, 255, .20),
@@ -131,15 +131,6 @@
             transition: .35s ease;
         }
 
-        .services-circle::before {
-            content: "";
-            position: absolute;
-            inset: -4px;
-            border: 2px solid #18B8FF;
-            border-radius: 50%;
-            transform: rotate(-8deg);
-            opacity: .8;
-        }
 
         .services-circle::after {
             content: "";
@@ -153,11 +144,11 @@
 
         .services-circle span {
             display: block;
-            color: #18B8FF;
-            font-size: 12px;
-            font-weight: 700;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 800;
             line-height: 1.05;
-            font-family: "Comic Sans MS", cursive;
+            font-family: "Arial", cursive;
             text-align: center;
         }
 
@@ -167,35 +158,37 @@
             transform: scale(1.08) rotate(2deg);
         }
 
+        /* Dark backdrop behind everything */
+
+        .services-backdrop {
+
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #0c1524;
+            z-index: -1;
+        }
+
         /* "What we offer" */
 
-        .offer-text {
+        .offer-text-svg {
             position: absolute;
-            top: -15px;
+            width: 115px;
+            height: 115px;
             left: 50%;
-            transform: translateX(-50%) rotate(-6deg);
+            top: -30px;
+            transform: translateX(-50%);
+            overflow: visible;
+            pointer-events: none;
+        }
 
-            color: #18B8FF;
-            font-size: 11px;
+        .offer-text-svg text {
+            fill: #ffffff;
+            font-size: 13px;
             font-weight: 700;
-            font-family: "Comic Sans MS", cursive;
-
-            white-space: nowrap;
-        }
-
-        /* Arrow */
-
-        .arrow-doodle {
-            position: absolute;
-            left: -3px;
-            top: 14px;
-            width: 24px;
-            height: 24px;
-        }
-
-        .arrow-doodle svg {
-            width: 100%;
-            height: 100%;
+            font-family: Arial, sans-serif;
+            letter-spacing: .8px;
         }
 
         /* Hover animation */
@@ -207,7 +200,7 @@
 
         .book-now-floting {
             right: 28px;
-            bottom: 125px;
+            bottom: 45px;
         }
 
         /* Mobile */
@@ -217,8 +210,8 @@
             .services-floating-btn {
                 width: 78px;
                 height: 78px;
-                right: 15px;
-                bottom: 18px;
+                right: 18px;
+                bottom: 118px;
             }
 
             .services-circle {
@@ -235,17 +228,10 @@
                 top: -10px;
             }
 
-            .arrow-doodle {
-                width: 22px;
-                height: 22px;
-                left: -2px;
-                top: 13px;
-            }
-
             /* Keep WhatsApp above this button */
             .book-now-floting {
-                right: 23px;
-                bottom: 125px;
+                right: 20px;
+                bottom: 15;
             }
         }
     </style>
@@ -404,26 +390,32 @@
 
 <!-- Our Services Floating Button -->
 <a href="{{ route('services') }}" class="services-floating-btn">
-    <span class="offer-text">What we offer</span>
+
+    <!-- Dark circular backdrop -->
+    <div class="services-backdrop"></div>
+
+    <svg class="offer-text-svg" viewBox="0 0 160 160">
+
+        <defs>
+            <path id="offerPath" d="M20,105
+                   A60,60 0 0,1 140,105" />
+        </defs>
+
+        <text>
+            <textPath href="#offerPath" startOffset="50%" text-anchor="middle">
+
+                • WHAT WE OFFER •
+
+            </textPath>
+        </text>
+
+    </svg>
 
     <div class="services-circle">
         <span>Our</span>
         <span>Services</span>
     </div>
 
-    <div class="arrow-doodle">
-        <svg viewBox="0 0 120 120">
-            <path d="M95 12
-                     C55 5 25 20 15 55
-                     C10 75 22 95 40 108" fill="none" stroke="#17B8FF" stroke-width="5" stroke-linecap="round"
-                stroke-linejoin="round" />
-
-            <path d="M28 95
-                     L40 108
-                     L22 108" fill="none" stroke="#17B8FF" stroke-width="5" stroke-linecap="round"
-                stroke-linejoin="round" />
-        </svg>
-    </div>
 </a>
 
 
