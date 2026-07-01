@@ -214,6 +214,9 @@
         <div class="th-mobile-menu">
             <ul>
                 <li><a class="{{ $page == 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a></li>
+                <li><a class="{{ $page == 'services' ? 'active' : '' }}" href="{{ route('services') }}">Our
+                        Services</a>
+                </li>
                 <li><a class="{{ $page == 'gallery' ? 'active' : '' }}" href="{{ route('gallery') }}">Our Gallery</a>
                 </li>
                 <li><a class="{{ $page == 'about' ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
@@ -258,6 +261,8 @@
                             <ul>
                                 <li><a class="{{ $page == 'home' ? 'active' : '' }}"
                                         href="{{ route('home') }}">Home</a></li>
+                                <li><a class="{{ $page == 'services' ? 'active' : '' }}"
+                                        href="{{ route('services') }}">Our Services</a></li>
                                 <li><a class="{{ $page == 'gallery' ? 'active' : '' }}"
                                         href="{{ route('gallery') }}">Our Gallery</a></li>
                                 <li><a class="{{ $page == 'about' ? 'active' : '' }}"

@@ -86,12 +86,7 @@
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
                                 </div> --}}
-                                <div class="d-flex justify-content-start ps-5">
-                                    <a href="#tour-packages" class="custom-auth-btn btn-register-custom"
-                                        data-ani="slideinup" data-ani-delay="0.2s">
-                                        Explore Tour Packages
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -110,12 +105,7 @@
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
                                 </div> --}}
-                                <div class="d-flex justify-content-start ps-5">
-                                    <a href="#tour-packages" class="custom-auth-btn btn-register-custom"
-                                        data-ani="slideinup" data-ani-delay="0.2s">
-                                        Explore Tour Packages
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -135,12 +125,7 @@
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
                                 </div> --}}
-                                <div class="d-flex justify-content-start ps-5">
-                                    <a href="#tour-packages" class="custom-auth-btn btn-register-custom"
-                                        data-ani="slideinup" data-ani-delay="0.2s">
-                                        Explore Tour Packages
-                                    </a>
-                                </div>
+
                             </div>
 
                         </div>
