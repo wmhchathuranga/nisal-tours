@@ -171,7 +171,7 @@
 
         .offer-text {
             position: absolute;
-            top: -8px;
+            top: -15px;
             left: 50%;
             transform: translateX(-50%) rotate(-6deg);
 
