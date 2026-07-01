@@ -1138,1262 +1138,1378 @@
         }
     </style>
 
-    <section class="overflow-hidden space" style="background-color: #0c1524; margin-top:10px">
+    <section class="overflow-hidden space" style="background-color: #0c1524;">
         <div class="container">
-            <!-- Tab Header -->
-            <div class="mt-2 tab-header">
-                <div class="title-area text-center">
-                    <span class="sub-title" style="color: #ffffff">Seamless Journeys</span>
-                    <h2 class="sec-title" style="color: #ffffff">Your Journey, Our Priority</h2>
-                </div>
-                <ul class="nav nav-pills align-items-center h-100" id="bookingTab" role="tablist"
-                    style="scale: 0.8;">
-
-                    <!-- Tour packages tab -->
-                    <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-                        <button
-                            class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100 active"
-                            id="tour-packages-tab" data-bs-toggle="pill" data-bs-target="#tour-packages"
-                            type="button" role="tab" aria-controls="tour-packages" aria-selected="false">
-                            <div class="icon mb">
-                                <i class="fa-light fa-suitcase-rolling fa-2x text-theme"></i>
-                            </div>
-                            <span class="fs-5 fw-bold text-dark">Tour Packages</span>
-                        </button>
-                    </li>
-
-                    <!-- Customize Tour tab -->
-                    <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-                        <button
-                            class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100"
-                            id="customize-tour-tab" data-bs-toggle="pill" data-bs-target="#customize-tour"
-                            type="button" role="tab" aria-controls="customize-tour" aria-selected="false">
-                            <div class="icon mb">
-                                <i class="fa-light fa-list-timeline fa-2x text-theme"></i>
-                            </div>
-                            <span class="fs-5 fw-bold text-dark">Customize Tour</span>
-                        </button>
-                    </li>
-
-                    <!-- Arrival Departure tab -->
-                    <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-                        <button
-                            class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100"
-                            id="transport-tab" data-bs-toggle="pill" data-bs-target="#transport" type="button"
-                            role="tab" aria-controls="transport" aria-selected="false">
-                            <div class="icon mb">
-                                <i class="fa-light fa-plane-arrival fa-2x text-theme"></i>
-                            </div>
-                            <span class="fs-5 fw-bold text-dark">Arrival</span>
-                        </button>
-                    </li>
-
-                    <!--  Departure tab -->
-                    <li class="nav-item col-12 col-md-6 col-lg-3 p-2 text-center h-100" role="presentation">
-
-                        <button
-                            class="nav-link d-flex align-items-center justify-content-center gap-2 border-0 w-100 h-100"
-                            id="transport-tab" data-bs-toggle="pill" data-bs-target="#transport2" type="button"
-                            role="tab" aria-controls="transport2" aria-selected="false">
-                            <div class="icon mb">
-                                <i class="fa-light fa-plane-departure fa-2x text-theme"></i>
-                            </div>
-                            <span class="fs-5 fw-bold text-dark">Departure</span>
-                        </button>
-                    </li>
-
-                </ul>
+            <div class="title-area text-center">
+                <span class="sub-title" style="color: #ffffff">Tropical Paradise Awaits</span>
+                <h2 class="sec-title" style="color: #ffffff">Explore Sri Lanka</h2>
             </div>
-        </div>
 
-        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-center">
-                    <div class="modal-body p-5">
+            <div class="explore-filter-bar mb-5 text-center">
+                {{-- <button class="glass-filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> All</button> --}}
+                <button class="glass-filter-btn active" data-filter="rocks-mountains"><i
+                        class="fa-duotone fa-mountains"></i>
+                    Rocks & Mountains</button>
+                <button class="glass-filter-btn" data-filter="historical-religious"><i class="fas fa-church"></i>
+                    Historical & Religious Places</button>
+                <button class="glass-filter-btn" data-filter="beaches"><i class="fas fa-umbrella-beach"></i>
+                    Beaches</button>
+                <button class="glass-filter-btn" data-filter="safari"><i class="fas fa-truck-monster"></i>
+                    Safari</button>
+                <button class="glass-filter-btn" data-filter="activities"><i
+                        class="fa-duotone fa-person-walking"></i>
+                    Activities</button>
+                {{-- <button class="glass-filter-btn" data-filter="ayuruwedic"><i class="fa-duotone fa-leaf"></i>
+                    Ayuruwedic</button> --}}
+            </div>
 
-                        {{-- Success Animation --}}
-                        <div class="success-animation mb-4">
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25"
-                                    fill="none" />
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                            </svg>
+            {{-- <div class="row" id="explore-grid">
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '01']) }}">Sigiriya Rock Fortress</a>
+                            </h3>
+                            <p class="destination-details">
+                                Sigiriya Rock Fortress is an ancient palace and UNESCO World Heritage Site, famous for
+                                its frescoes and breathtaking summit views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '01']) }}" class="glass-btn">View More</a>
                         </div>
-
-                        {{-- Success Message --}}
-                        <h3 class="fw-bold mb-3">You can start conversation now!</h3>
-                        <p class="mb-0" id="success-message"></p>
-
                     </div>
                 </div>
-            </div>
-        </div>
 
-
-
-        <div class="tab-content" id="bookingTabContent">
-
-            <!-- tour-packages Tab Pane -->
-            <div class="tab-pane fade show active" id="tour-packages" role="tabpanel"
-                aria-labelledby="tour-packages-tab">
-                <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
-                    <div class="container th-container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="title-area text-center">
-                                    <span class="sub-title" style="color: #0c1524;">.</span>
-                                    <h2 class="sec-title" style="color: #0c1524;">.</h2>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '25']) }}">Pidurangala</a>
+                            </h3>
+                            <p class="destination-details">
+                                pidurangala desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '25']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="container py-4">
-                        <div class="row g-4">
-
-                            <style>
-                                .glass-filter-btn {
-                                    background: rgba(255, 255, 255, 0.08);
-                                    backdrop-filter: blur(12px);
-                                    -webkit-backdrop-filter: blur(12px);
-                                    border: 1px solid rgba(255, 255, 255, 0.2);
-                                    color: #b0b0b0;
-                                    padding: 10px 24px;
-                                    border-radius: 30px;
-                                    font-size: 15px;
-                                    font-weight: 600;
-                                    cursor: pointer;
-                                    transition: all 0.3s ease;
-                                    display: inline-flex;
-                                    align-items: center;
-                                    gap: 8px;
-                                }
-
-                                .glass-filter-btn i {
-                                    font-size: 14px;
-                                }
-
-                                .glass-filter-btn:hover {
-                                    background: rgba(255, 255, 255, 0.2);
-                                    color: #ffffff;
-                                    transform: translateY(-2px);
-                                }
-
-                                /* Active State for Filter Button */
-                                .glass-filter-btn.active {
-                                    background: rgba(255, 255, 255, 0.3);
-                                    border-color: #ffffff;
-                                    color: #ffffff;
-                                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-                                }
-
-                                /* Custom Styles for Background Image Card */
-                                .explore-custom-card {
-                                    position: relative;
-                                    border-radius: 24px;
-                                    overflow: hidden;
-                                    height: 500px;
-                                    /* Adjust height if needed */
-                                    display: flex;
-                                    align-items: end;
-                                    justify-content: center;
-                                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                                }
-
-                                .explore-custom-card:hover {
-                                    transform: translateY(-5px);
-                                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-                                }
-
-                                /* Background Image setup */
-                                .explore-custom-card .bg-image {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                    z-index: 1;
-                                    transition: transform 0.5s ease;
-                                }
-
-                                .explore-custom-card:hover .bg-image {
-                                    transform: scale(1.05);
-                                    /* Slight zoom on hover */
-                                }
-
-                                /* Dark gradient overlay so text is readable */
-                                .explore-custom-card::after {
-                                    content: '';
-                                    position: absolute;
-                                    inset: 0;
-                                    /* background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.85) 100%); */
-                                    z-index: 2;
-                                }
-
-                                /* Center Content Area */
-                                .explore-custom-card .destination-content {
-                                    position: relative;
-                                    z-index: 3;
-                                    text-align: left;
-                                    padding: 24px;
-                                    width: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: flex-start;
-                                }
-
-                                .explore-custom-card .title {
-                                    margin-bottom: 12px;
-                                }
-
-                                .explore-custom-card .title a {
-                                    color: #ffffff;
-                                    font-size: 24px;
-                                    font-weight: 700;
-                                    text-decoration: none;
-                                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                                }
-
-                                .explore-custom-card .destination-details {
-                                    color: #e6e6e6;
-                                    font-size: 15px;
-                                    line-height: 1.5;
-                                    margin-bottom: 20px;
-                                    display: -webkit-box;
-                                    -webkit-line-clamp: 3;
-                                    -webkit-box-orient: vertical;
-                                    overflow: hidden;
-                                    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-                                }
-
-                                .destination-content a {
-                                    align-self: flex-end;
-                                }
-
-                                /* Glassmorphism View More Button (Matches old badge style) */
-                                .explore-custom-card .glass-btn {
-                                    background: rgba(255, 255, 255, 0.15);
-                                    backdrop-filter: blur(10px);
-                                    -webkit-backdrop-filter: blur(10px);
-                                    border: 1px solid rgba(255, 255, 255, 0.3);
-                                    color: #ffffff;
-                                    padding: 8px 24px;
-                                    border-radius: 30px;
-                                    font-size: 14px;
-                                    font-weight: 600;
-                                    text-decoration: none;
-                                    display: inline-block;
-                                    transition: all 0.3s ease;
-                                }
-
-                                .explore-custom-card .glass-btn:hover {
-                                    background: rgba(255, 255, 255, 0.3);
-                                    border-color: #ffffff;
-                                    color: #ffffff;
-                                }
-                            </style>
-
-                            <!-- Card 01 -->
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
-                                data-category="mountains religion ">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image"
-                                        src="{{ asset('assets/img/documentary/doc-01/sigiriya-rock-2.jpg') }}"
-                                        alt="Sigiriya Rock Fortress">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '01']) }}">3 Days Kandy
-                                                and
-                                                Sigiriya tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            Experience the cultural heart of Sri Lanka with iconic landmarks and
-                                            authentic village life.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '01']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image"
-                                        src="{{ asset('assets/img/explore/pexels-genine-alyssa-pedreno-andrada-1263127-2932486.jpg') }}"
-                                        alt="3 Days South Coast & Kandy Tour">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '02']) }}">3 Days South
-                                                Coast &
-                                                Kandy Tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            Discover southern coast beauty combined with cultural charm and sacred
-                                            temples.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '02']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image" src="{{ asset('assets/img/Gallefort/IMG_2486.jpg') }}"
-                                        alt="5 Days Cultural & Coastal Tour">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '04']) }}">5 Days
-                                                Cultural &
-                                                Coastal Tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            Perfect mix of Sri Lanka’s heritage, wildlife, and beautiful southern
-                                            beaches.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '04']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image"
-                                        src="{{ asset('assets/img/tour/tour-03/pinnawala-elephant-orphanage.jpg') }}"
-                                        alt="6 Days Classic Sri Lanka Tour">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '03']) }}">6 Days Classic
-                                                Sri
-                                                Lanka Tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            A balanced journey of culture, hill country, wildlife, and coastal
-                                            destinations.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '03']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image" src="{{ asset('assets/img/tour/tour-06/ella-train.jpg') }}"
-                                        alt="8 Days Cultural, Wildlife & Coastal Tour">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '06']) }}">8 Days
-                                                Cultural,
-                                                Wildlife & Coastal Tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            A perfect balance of adventure, nature, and relaxation across Sri Lanka.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '06']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image"
-                                        src="{{ asset('assets/img/tour/tour-05/anuradhapura.jpg') }}"
-                                        alt="10 Days Grand Sri Lanka Tour">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '05']) }}">10 Days Grand
-                                                Sri
-                                                Lanka Tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            Explore ancient kingdoms, hill country, wildlife safaris, and coastal
-                                            relaxation.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '05']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image" src="{{ asset('assets/img/tour/tour-07/negombo.jpg') }}"
-                                        alt="13 Days Grand Sri Lanka Tour">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '07']) }}">13 Days Grand
-                                                Sri
-                                                Lanka Tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            A complete island experience with culture, wildlife, and pristine beaches.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '07']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="">
-                                <div class="explore-custom-card">
-                                    <img class="bg-image"
-                                        src="{{ asset('assets/img/tour/tour-08/pigeon-island.jpg') }}"
-                                        alt="15 Days Grand Sri Lanka Tour">
-                                    <div class="destination-content">
-                                        <h3 class="title">
-                                            <a href="{{ route('tour-details', ['tour_id' => '08']) }}">15 Days Grand
-                                                Sri
-                                                Lanka Tour</a>
-                                        </h3>
-                                        <p class="destination-details">
-                                            This 15-day Sri Lanka tour offers a deep exploration of the island with
-                                            comfort
-                                            and expert guidance.
-                                        </p>
-                                        <a href="{{ route('tour-details', ['tour_id' => '08']) }}"
-                                            class="glass-btn">View
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '26']) }}">Ella rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                Ella rock desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '26']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
+                </div>
 
-
-                </section>
-            </div>
-
-            <!-- customize tour Tab Pane -->
-            <div class="tab-pane fade show" id="customize-tour" role="tabpanel"
-                aria-labelledby="customize-tour-tab">
-                <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
-                    <div class="container th-container mb-5">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="title-area text-center">
-                                    <span class="sub-title" style="color: #0c1524;">.</span>
-                                    <h2 class="sec-title" style="color: #0c1524;">.</h2>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '26']) }}">Mathale aluviharaya</a>
+                            </h3>
+                            <p class="destination-details">
+                                Mathale aluviharaya desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '26']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
-                    <div class="container" style="min-height: 700px;">
+                </div>
 
-                        <div class="row transition-col block-active" id="about-block-1">
-                            <div class="col-xl-6">
-                                <div class="img-box1">
-                                    <div class="img1">
-                                        <img src="{{ asset('assets/img/normal/about_3_1.jpg') }}" alt="About">
-                                    </div>
-                                    <div class="img2">
-                                        <img src="{{ asset('assets/img/normal/about_3_2.jpg') }}" alt="About">
-                                    </div>
-                                    <div class="img3">
-                                        <img src="{{ asset('assets/img/normal/about_3_3.jpg') }}" alt="About">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="ps-xl-4 ms-xl-2">
-                                    <div class="title-area mb-20 pe-xl-5 me-xl-5">
-                                        <span class="sub-title style1 text-light">How It Works</span>
-                                        <h2 class="text-light sec-title mb-20 pe-xl-5 me-xl-5 heading">Plan Your Trip
-                                            With us</h2>
-
-                                        <p class="sec-text mb-30">There are many variations of passages of available
-                                            but
-                                            the majority
-                                            have
-                                            suffered alteration in some form, by injected hum randomised words which
-                                            don't
-                                            look even
-                                            slightly.
-                                        </p>
-                                    </div>
-                                    <div class="about-item-wrap">
-                                        <div class="about-item">
-                                            <div class="about-item_img"><img
-                                                    src="{{ asset('assets/img/icon/map3.svg') }}" alt="">
-                                            </div>
-                                            <div class="about-item_centent">
-                                                <h5 class="box-title">Exclusive Trip</h5>
-                                                <p class="about-item_text">There are many variations of passages of
-                                                    available but the
-                                                    majority.</p>
-                                            </div>
-                                        </div>
-                                        <div class="about-item">
-                                            <div class="about-item_img"><img
-                                                    src="{{ asset('assets/img/icon/guide.svg') }}" alt="">
-                                            </div>
-                                            <div class="about-item_centent">
-                                                <h5 class="box-title">Professional Guide</h5>
-                                                <p class="about-item_text">There are many variations of passages of
-                                                    available but the
-                                                    majority.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center mt-45">
-                                        <button id="show-form-btn" class="th-btn style3 th-icon">Book Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="form-block-1" class="col-xl-7 mx-auto transition-col block-collapsed d-none">
-                            <div class="booking-form-wrap style2 bg-smoke p-5">
-                                <div class="title-area text-center">
-                                    <h3 class="sec-title mb-30">Tour Plan</h3>
-                                </div>
-
-                                <form id="custom-tour-booking-form" class="th-form">
-                                    @csrf
-                                    <input type="hidden" name="form_type" value="Custom_Tour">
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="name"
-                                                placeholder="Name*" required>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="number" class="form-control" name="pax"
-                                                placeholder="Pax*" required min="1">
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="arrival_date">Arrival Date</label>
-                                            <input type="date" class="form-control" name="arrival_date"
-                                                placeholder="Arrival Date*" required>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="departure_date">Departure Date</label>
-                                            <input type="date" class="form-control" name="departure_date"
-                                                placeholder="Departure Date*" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group mb-30">
-                                        <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Message..."></textarea>
-                                    </div>
-
-                                    <div class="d-flex justify-content-around gap-3">
-                                        <button type="button" id="hide-form-btn" class="th-btn style-alt w-100">
-                                            <i class="fas fa-arrow-left me-2"></i> How It Works
-                                        </button>
-                                        <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100">
-                                            <i class="fab fa-whatsapp me-2"></i> Get Quotation
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-
-            <!-- Transport Tab Pane -->
-            <div class="tab-pane fade show" id="transport" role="tabpanel" aria-labelledby="transport-tab">
-                <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
-                    <div class="container th-container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="title-area text-center">
-                                    <span class="sub-title" style="color: #0c1524;">.</span>
-                                    <h2 class="sec-title" style="color: #0c1524;">.</h2>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '27']) }}">Dabulla cave Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                Dabulla cave Temple desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '27']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <div class="nav nav-tabs tour-tabs style3" id="nav-tab" role="tablist">
-                            {{-- <button class="nav-link th-btn active" id="nav-step-transport1-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-step-transport1" type="button">Arrival</button> --}}
-                            {{-- <button class="nav-link th-btn" id="nav-step-transport2-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-step-transport2" type="button">Departure</button> --}}
-                            {{-- <button class="nav-link th-btn" id="nav-step-transport3-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport3" type="button">Tour</button>
-                      <button class="nav-link th-btn" id="nav-step-transport4-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport4" type="button">Excision</button> --}}
-                        </div>
+                </div>
 
-                        <div class="tab-content" id="nav-tabContent">
-
-                            <div class="tab-pane fade active show" id="nav-step-transport1" role="tabpanel">
-                                <div class="container" style="min-height: 1100px;">
-
-                                    <div class="row transition-col block-active" id="about-block-2">
-                                        <div class="col-xl-7">
-                                            <div class="img-box2">
-                                                <div class="img1 d-none d-md-block">
-                                                    <img style="width: 585px;"
-                                                        src="{{ asset('assets/img/normal/WhatsApp-Image-2024-06-12-at-1sdfsd5.53.54_86a7873012.jpg') }}"
-                                                        alt="About">
-                                                </div>
-                                                <div class="img2">
-                                                    <img style="width:393px;"
-                                                        src="{{ asset('assets/img/normal/maxresdefault (1).jpg') }}"
-                                                        alt="About">
-                                                    {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-5">
-                                            <div class="row">
-                                                <div id="arrival-content-wrapper" class="row w-100 mx-auto">
-                                                    <div class="col-xl-12 transition-col">
-                                                        <div class="pe-xl-5">
-                                                            <div class="title-area mb-20 text-center text-xl-start">
-                                                                <span class="text-light sub-title style1 ">How It
-                                                                    Works</span>
-                                                                <h2 class="text-light sec-title mb-20">Your
-                                                                    Hassle-Free
-                                                                    Arrival in
-                                                                    3
-                                                                    Easy Steps</h2>
-                                                            </div>
-                                                            <p class="sec-text mb-30 text-center text-xl-start">From
-                                                                booking to boarding, we make your transfer experience
-                                                                simple
-                                                                and transparent.</p>
-
-                                                            <div class="about-item-wrap">
-                                                                <div class="about-item style2">
-                                                                    <div class="about-item_img"><img
-                                                                            src="{{ asset('assets/img/icon/about_1_11.svg') }}"
-                                                                            alt="Book Icon"></div>
-                                                                    <div class="about-item_centent">
-                                                                        <h5 class="box-title">Book & Track</h5>
-                                                                        <p class="about-item_text">Provide your flight
-                                                                            number during booking. We monitor arrivals
-                                                                            in
-                                                                            real-time, guaranteeing your driver is ready
-                                                                            when you land, regardless of delays.</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="about-item style2">
-                                                                    <div class="about-item_img"><img
-                                                                            src="{{ asset('assets/img/icon/about_1_22.svg') }}"
-                                                                            alt="Meet Icon"></div>
-                                                                    <div class="about-item_centent">
-                                                                        <h5 class="box-title">Meet & Greet</h5>
-                                                                        <p class="about-item_text">Look for your
-                                                                            dedicated
-                                                                            driver upon clearing baggage claim. They
-                                                                            will be
-                                                                            holding a personalized sign for immediate,
-                                                                            stress-free assistance.</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="about-item style2">
-                                                                    <div class="about-item_img"><img
-                                                                            src="{{ asset('assets/img/icon/about_1_33.svg') }}"
-                                                                            alt="Transfer Icon"></div>
-                                                                    <div class="about-item_centent">
-                                                                        <h5 class="box-title">Direct Transfer</h5>
-                                                                        <p class="about-item_text">Relax in a
-                                                                            high-quality
-                                                                            vehicle. Your driver handles the luggage and
-                                                                            takes you straight to your stop, ensuring
-                                                                            your
-                                                                            vacation starts instantly.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-center mt-45">
-                                                                <button id="show-form-btn"
-                                                                    class="th-btn style3 th-icon">Book Now</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="form-block-2"
-                                        class="col-xl-7 mx-auto transition-col block-collapsed d-none">
-                                        <div class="booking-form-wrap style2 bg-smoke p-5">
-                                            <div class="title-area text-center">
-                                                <h3 class="sec-title">Book Your Arrival Transfer Now</h3>
-                                            </div>
-
-                                            <form class="th-form">
-                                                @csrf
-                                                <input type="hidden" name="form_type" value="Arrival">
-                                                <div class="row">
-                                                    <div class="form-group col-md-6"><input type="text"
-                                                            class="form-control" name="name"
-                                                            placeholder="Full Name*" required></div>
-                                                    <div class="form-group col-md-6"><input type="number"
-                                                            class="form-control" name="pax"
-                                                            placeholder="No. of Passengers (Pax)*" required
-                                                            min="1"></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="form-group col-md-4"><input type="text"
-                                                            class="form-control" name="flight_no"
-                                                            placeholder="Flight No.*" required></div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="form-group col-md-6">
-                                                        <label class="form-label">Arrival Date:</label>
-                                                        <input type="date" class="form-control date-picker"
-                                                            name="date" placeholder="Arrival Date*" required>
-                                                    </div>
-                                                    <div class="form-group col-md-6">
-                                                        <label
-                                                            class="block text-sm font-medium text-gray-700 mb-1">Arrival
-                                                            Time (24h format):</label>
-                                                        <input type="time"
-                                                            class="form-control time-picker border w-full"
-                                                            name="time" placeholder="Time (24h format)*" required>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group mb-30">
-                                                    <input type="text" class="form-control" name="pickup_address"
-                                                        value="Bandaranaike International Airport (BIA)"
-                                                        placeholder="Pickup Location*" readonly>
-                                                </div>
-
-                                                <div class="form-group mb-30">
-                                                    <input type="text" class="form-control" name="drop_address"
-                                                        placeholder="Drop-off Address (Hotel Name/Location)*" required>
-                                                </div>
-
-                                                <div class="form-group mb-30">
-                                                    <label class="form-label mb-3">Luggage Details:</label>
-                                                    <div class="row">
-                                                        <div class="col-6"><input type="number"
-                                                                class="form-control" name="luggage_large"
-                                                                placeholder="Large" min="0">
-                                                        </div>
-                                                        <div class="col-6"><input type="number"
-                                                                class="form-control" name="luggage_small"
-                                                                placeholder="Small" min="0">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                {{-- <div class="form-group mb-30">
-                                                <label class="form-label mb-3">Preferred Vehicle Type:</label>
-                                                <select name="vehicle_type" class="form-select" required>
-                                                    <option value="" disabled selected>Select Vehicle...</option>
-                                                    <option value="car">Car (1-2 Pax)</option>
-                                                    <option value="van_small">Van (3-5 Pax)</option>
-                                                    <option value="van_large">Large Van (6-8 Pax)</option>
-                                                    <option value="bus">Mini Bus (9-15 Pax)</option>
-                                                </select>
-                                            </div> --}}
-
-                                                <div class="form-group mb-30 vehicle-selector">
-                                                    <label class="form-label mb-3 **professional-label**">Preferred
-                                                        Vehicle
-                                                        Type:</label>
-
-                                                    <div class="vehicle-scroller-container">
-                                                        <button type="button" class="scroll-btn scroll-left"
-                                                            id="scroll-left-btn" aria-label="Scroll left">
-                                                            <i class="fa-solid fa-chevron-left"></i>
-                                                        </button>
-
-                                                        <div class="vehicle-selection-wrapper pb-4"
-                                                            id="vehicle-scroller">
-
-                                                            <input type="radio" id="vehicle-car"
-                                                                name="vehicle_type" value="car"
-                                                                class="vehicle-radio" hidden required checked>
-                                                            <label for="vehicle-car" class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/car01.jpg') }}"
-                                                                            alt="Car Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Car</h3>
-                                                                        <p class="vehicle-subtitle">Honda Civic</p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i> 1-2
-                                                                            Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                            <input type="radio" id="vehicle-van-small"
-                                                                name="vehicle_type" value="van_small"
-                                                                class="vehicle-radio" hidden>
-                                                            <label for="vehicle-van-small" class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/van01.jpg') }}"
-                                                                            alt="Small Van Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Van</h3>
-                                                                        <p class="vehicle-subtitle">Toyota Hiace</p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i> 3-5
-                                                                            Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                            <input type="radio" id="vehicle-van-large"
-                                                                name="vehicle_type" value="van_large"
-                                                                class="vehicle-radio" hidden>
-                                                            <label for="vehicle-van-large" class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/van02.jpg') }}"
-                                                                            alt="Large Van Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Large Van
-                                                                        </h3>
-                                                                        <p class="vehicle-subtitle">Mercedes Sprinter
-                                                                        </p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i> 6-8
-                                                                            Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                            <input type="radio" id="vehicle-bus-1"
-                                                                name="vehicle_type" value="bus1"
-                                                                class="vehicle-radio" hidden>
-                                                            <label for="vehicle-bus-1" class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/bus01.jpg') }}"
-                                                                            alt="Mini Bus Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Mini Bus
-                                                                        </h3>
-                                                                        <p class="vehicle-subtitle">Mitsubishi Fuso
-                                                                        </p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i>
-                                                                            9-15 Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                        </div>
-
-                                                        <button type="button" class="scroll-btn scroll-right"
-                                                            id="scroll-right-btn" aria-label="Scroll right">
-                                                            <i class="fa-solid fa-chevron-right"></i>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group mb-4">
-                                                    <textarea name="special_requirements" id="special_requirements" cols="30" rows="3" class="form-control"
-                                                        placeholder="Special Requirements (Baby Seat, Wheelchair access, etc.)"></textarea>
-                                                </div>
-
-                                                <div class="d-md-flex justify-content-around gap-3">
-                                                    <button type="button" id="hide-form-btn"
-                                                        class="th-btn style-alt w-100 mb-1">
-                                                        <i class="fas fa-arrow-left me-2"></i> How It Works
-                                                    </button>
-                                                    <button type="submit" id="submit-btn"
-                                                        class="th-btn-whatsapp w-100 mb-1">
-                                                        <i class="fab fa-whatsapp me-2"></i> Get Quotation
-                                                    </button>
-                                                </div>
-                                                {{-- <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
-                                                 <i class="fab fa-whatsapp me-2"></i> Get Quotation
-                                            </button>
-                                                
-                                            <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
-                                                <i class="fas fa-arrow-left me-2"></i> How It Works
-                                            </button> --}}
-                                            </form>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '28']) }}">Ravena cave </a>
+                            </h3>
+                            <p class="destination-details">
+                                Ravena cave desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '28']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
 
-            <!-- departure Tab Pane -->
-            <div class="tab-pane fade show" id="transport2" role="tabpanel" aria-labelledby="transport-tab">
-                <section class="category-area2 bg-top-center position-relative overflow-hidden space-extra-bottom">
-                    <div class="container th-container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="title-area text-center">
-                                    <span class="sub-title" style="color: #0c1524;">.</span>
-                                    <h2 class="sec-title" style="color: #0c1524;">.</h2>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '29']) }}">Piduruthalagala</a>
+                            </h3>
+                            <p class="destination-details">
+                                Piduruthalagala desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '29']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <div class="nav nav-tabs tour-tabs style3" id="nav-tab" role="tablist">
-                            {{-- <button class="nav-link th-btn active" id="nav-step-transport1-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-step-transport1" type="button">Arrival</button> --}}
-                            {{-- <button class="nav-link th-btn" id="nav-step-transport2-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-step-transport2" type="button">Departure</button> --}}
-                            {{-- <button class="nav-link th-btn" id="nav-step-transport3-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport3" type="button">Tour</button>
-                      <button class="nav-link th-btn" id="nav-step-transport4-tab" data-bs-toggle="tab" data-bs-target="#nav-step-transport4" type="button">Excision</button> --}}
-                        </div>
+                </div>
 
-                        <div class="tab-content" id="nav-tabContent">
-
-                            <div class="tab-pane fade active show" id="nav-step-transport2" role="tabpanel">
-                                <div class="container" style="min-height: 1100px;">
-
-                                    <div class="row transition-col block-active" id="about-block-3">
-                                        <div class="col-xl-7">
-                                            <div class="img-box2">
-                                                <div class="img1">
-                                                    <img style="width: 585px;"
-                                                        src="{{ asset('assets/img/normal/byee2.png') }}"
-                                                        alt="About">
-                                                </div>
-                                                <div class="img2 d-none d-md-block">
-                                                    <img style="width:400px; height:300px;"
-                                                        src="{{ asset('assets/img/normal/39330.jpg') }}"
-                                                        alt="About">
-                                                    {{-- <a href="https://www.youtube.com/watch?v=cQfIUPw72Dk" class="play-btn popup-video"><i class="fa-sharp fa-solid fa-play"></i></a> --}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-5">
-                                            <div class="row">
-                                                <div id="arrival-content-wrapper" class="row w-100 mx-auto">
-                                                    <div class="col-xl-12 transition-col">
-                                                        <div class="pe-xl-5">
-                                                            <div class="title-area mb-20 text-center text-xl-start">
-                                                                <span class="text-light sub-title style1 ">How It
-                                                                    Works</span>
-                                                                <h2 class="text-light sec-title mb-20">Your
-                                                                    Stress-Free Departure
-                                                                    in 3
-                                                                    Easy Steps</h2>
-                                                            </div>
-                                                            <p class="sec-text mb-30 text-center text-xl-start">We
-                                                                ensure
-                                                                you get to the airport with plenty of time and zero
-                                                                hassle.
-                                                            </p>
-
-                                                            <div class="about-item-wrap">
-                                                                <div class="about-item style2">
-                                                                    <div class="about-item_img"><img
-                                                                            src="{{ asset('assets/img/icon/about_1_11.svg') }}"
-                                                                            alt="Book Icon"></div>
-                                                                    <div class="about-item_centent">
-                                                                        <h5 class="box-title">Confirm & Schedule</h5>
-                                                                        <p class="about-item_text">Book your transfer
-                                                                            time
-                                                                            based on your flight's departure. We factor
-                                                                            in
-                                                                            local traffic to ensure a timely arrival at
-                                                                            the
-                                                                            airport.</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="about-item style2">
-                                                                    <div class="about-item_img"><img
-                                                                            src="{{ asset('assets/img/icon/about_2_22.svg') }}"
-                                                                            alt="Meet Icon"></div>
-                                                                    <div class="about-item_centent">
-                                                                        <h5 class="box-title">Hotel Pick-up</h5>
-                                                                        <p class="about-item_text">Your driver will
-                                                                            arrive
-                                                                            at your specified location (hotel/residence)
-                                                                            at
-                                                                            the scheduled time, ready to assist with
-                                                                            your
-                                                                            luggage.</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="about-item style2">
-                                                                    <div class="about-item_img"><img
-                                                                            src="{{ asset('assets/img/icon/about_1_33.svg') }}"
-                                                                            alt="Transfer Icon"></div>
-                                                                    <div class="about-item_centent">
-                                                                        <h5 class="box-title">Direct to Terminal</h5>
-                                                                        <p class="about-item_text">Enjoy a relaxing
-                                                                            ride
-                                                                            straight to the departure terminal. We
-                                                                            handle
-                                                                            the transport so you can focus on your
-                                                                            journey
-                                                                            ahead.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-center mt-45">
-                                                                <button id="show-form-btn"
-                                                                    class="th-btn style3 th-icon">Book Now</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="form-block-3"
-                                        class="col-xl-7 mx-auto transition-col block-collapsed d-none">
-                                        <div class="booking-form-wrap style2 bg-smoke p-5">
-                                            <div class="title-area text-center">
-                                                <h3 class="sec-title mb-30">Book Your Departure Transfer Now</h3>
-                                            </div>
-
-                                            <form class="th-form">
-                                                @csrf
-                                                <input type="hidden" name="form_type" value="Departure">
-                                                <div class="row">
-                                                    <div class="form-group col-md-6"><input type="text"
-                                                            class="form-control" name="name"
-                                                            placeholder="Full Name*" required></div>
-                                                    <div class="form-group col-md-6"><input type="number"
-                                                            class="form-control" name="pax"
-                                                            placeholder="No. of Passengers (Pax)*" required
-                                                            min="1"></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="form-group col-md-4"><input type="text"
-                                                            class="form-control" name="flight_no"
-                                                            placeholder="Flight No.*" required></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="form-group col-md-6">
-                                                        <label class="form-label">Departure Date:</label>
-                                                        <input type="date" class="form-control date-picker"
-                                                            name="date" placeholder="Departure Date*" required>
-                                                    </div>
-                                                    <div class="form-group col-md-6">
-                                                        <label class="form-label">Departure Time:</label>
-                                                        <input type="time" class="form-control time-picker"
-                                                            name="time" placeholder="Time (24h format)*" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group mb-30">
-                                                    <input type="text" class="form-control" name="pickup_address"
-                                                        placeholder="Pick-up Address (Hotel Name/Location)*" required>
-                                                </div>
-                                                <div class="form-group mb-30">
-                                                    <input type="text" class="form-control" name="drop_address"
-                                                        value="Bandaranaike International Airport (BIA)"
-                                                        placeholder="Drop-off Location*" readonly>
-                                                </div>
-                                                <div class="form-group mb-30">
-                                                    <label class="form-label">Luggage Details:</label>
-                                                    <div class="row">
-                                                        <div class="col-6"><input type="number"
-                                                                class="form-control" name="luggage_large"
-                                                                placeholder="Large" min="0">
-                                                        </div>
-                                                        <div class="col-6"><input type="number"
-                                                                class="form-control" name="luggage_small"
-                                                                placeholder="Small" min="0">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group mb-30 vehicle-selector">
-                                                    <label class="form-label mb-3 **professional-label**">Preferred
-                                                        Vehicle
-                                                        Type:</label>
-
-                                                    <div class="vehicle-scroller-container">
-                                                        <button type="button" class="scroll-btn scroll-left"
-                                                            id="scroll-left-btn" aria-label="Scroll left">
-                                                            <i class="fa-solid fa-chevron-left"></i>
-                                                        </button>
-
-                                                        <div class="vehicle-selection-wrapper pb-4"
-                                                            id="vehicle-scroller">
-
-                                                            <input type="radio" id="vehicle-car2"
-                                                                name="vehicle_type" value="car"
-                                                                class="vehicle-radio" hidden required checked>
-                                                            <label for="vehicle-car2" class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/car01.jpg') }}"
-                                                                            alt="Car Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Car</h3>
-                                                                        <p class="vehicle-subtitle">Honda Civic</p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i> 1-2
-                                                                            Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                            <input type="radio" id="vehicle-van-small2"
-                                                                name="vehicle_type" value="van_small"
-                                                                class="vehicle-radio" hidden>
-                                                            <label for="vehicle-van-small2"
-                                                                class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/van01.jpg') }}"
-                                                                            alt="Small Van Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Van</h3>
-                                                                        <p class="vehicle-subtitle">Toyota Hiace</p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i> 3-5
-                                                                            Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                            <input type="radio" id="vehicle-van-large2"
-                                                                name="vehicle_type" value="van_large"
-                                                                class="vehicle-radio" hidden>
-                                                            <label for="vehicle-van-large2"
-                                                                class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/van02.jpg') }}"
-                                                                            alt="Large Van Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Large Van
-                                                                        </h3>
-                                                                        <p class="vehicle-subtitle">Mercedes Sprinter
-                                                                        </p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i> 6-8
-                                                                            Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                            <input type="radio" id="vehicle-bus-12"
-                                                                name="vehicle_type" value="bus1"
-                                                                class="vehicle-radio" hidden>
-                                                            <label for="vehicle-bus-12" class="vehicle-card-label">
-                                                                <div class="tour-box vehicle-tour-card">
-                                                                    <div class="tour-box_img vehicle-img-area">
-                                                                        <img src="{{ asset('assets/img/vehicle/bus01.jpg') }}"
-                                                                            alt="Mini Bus Image">
-                                                                        <div class="selection-checkmark"><i
-                                                                                class="fa-solid fa-check"></i></div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="vehicle-content **professional-content**">
-                                                                        <h3 class="box-title vehicle-title">Mini Bus
-                                                                        </h3>
-                                                                        <p class="vehicle-subtitle">Mitsubishi Fuso
-                                                                        </p>
-                                                                        <div class="vehicle-pax-info">
-                                                                            <i class="fa-solid fa-user-group"></i>
-                                                                            9-15 Pax
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-
-                                                        </div>
-
-                                                        <button type="button" class="scroll-btn scroll-right"
-                                                            id="scroll-right-btn" aria-label="Scroll right">
-                                                            <i class="fa-solid fa-chevron-right"></i>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group mb-4">
-                                                    <textarea name="special_requirements" cols="30" rows="3" class="form-control"
-                                                        placeholder="Special Requirements..."></textarea>
-                                                </div>
-
-                                                <div class="d-md-flex justify-content-around gap-3">
-                                                    <button type="button" id="hide-form-btn"
-                                                        class="th-btn style-alt w-100 mb-1">
-                                                        <i class="fas fa-arrow-left me-2"></i> How It Works
-                                                    </button>
-                                                    <button type="submit" id="submit-btn"
-                                                        class="th-btn-whatsapp w-100 mb-1">
-                                                        <i class="fab fa-whatsapp me-2"></i> Get Quotation
-                                                    </button>
-                                                </div>
-                                                {{-- <button type="submit" id="submit-btn" class="th-btn-whatsapp w-100" >
-                                                <i class="fab fa-whatsapp me-2"></i> Get Quotation
-                                            </button>
-                                            <button type="button" id="hide-form-btn" class="th-btn style-alt w-100 mt-2">
-                                                <i class="fas fa-arrow-left me-2"></i> How It Works
-                                            </button> --}}
-                                            </form>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Rock Fortress">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '30']) }}">Lipton Seat</a>
+                            </h3>
+                            <p class="destination-details">
+                                Lipton Seat desc
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '30']) }}" class="glass-btn">View More</a>
                         </div>
                     </div>
-                </section>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="city beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/galle_fort.jpg') }}"
+                            alt="Galle Fort">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '02']) }}">Galle Fort</a>
+                            </h3>
+                            <p class="destination-details">
+                                A beautifully preserved Dutch-era fortress with cobbled streets, ramparts, cafes, and
+                                boutique shops.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '02']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="city religion mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/kandy.jpg') }}" alt="Kandy">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '03']) }}">Kandy – The Sacred Heart</a>
+                            </h3>
+                            <p class="destination-details">
+                                Home to the Temple of the Tooth Relic, Kandy blends cool-climate hills, culture, and
+                                tradition.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '03']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}"
+                            alt="Unawatuna Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '04']) }}">Unawatuna Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Nestled on the Southern coast, Unawatuna is a picturesque beach famous for its calm
+                                turquoise waters, vibrant nightlife, and coral reefs.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '04']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="mountains city ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/Ella – Hill Country Escape.jpg') }}"
+                            alt="Ella">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '05']) }}">Ella – Hill Country Escape</a>
+                            </h3>
+                            <p class="destination-details">
+                                Surrounded by misty mountains, Ella is famous for tea plantations, waterfalls, hiking
+                                trails, and breathtaking views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '05']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}"
+                            alt="Trincomalee">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '06']) }}">Trincomalee</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for its stunning natural deep-water harbor, Trincomalee boasts pristine
+                                white-sand beaches, historic colonial forts, and whale watching.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '06']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
+                            alt="Mirissa Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '07']) }}">Mirissa Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A tropical beach paradise known for whale watching, golden sands, and stunning sunsets.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '07']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="city mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/nuwara eliya – little england.jpg') }}"
+                            alt="Nuwara Eliya">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '08']) }}">Nuwara Eliya – Little
+                                    England</a>
+                            </h3>
+                            <p class="destination-details">
+                                Known for its cool climate and colonial charm, Nuwara Eliya is surrounded by lush tea
+                                estates.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '08']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="city ayuruwedic">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/colombo-2.jpg') }}" alt="Colombo">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Colombo</a>
+                            </h3>
+                            <p class="destination-details">
+                                The heart of Sri Lanka, Colombo is a bustling city with a rich history.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="forest">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/31.jpg') }}" alt="Sinharaja">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '10']) }}">Sinharaja</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site and global biodiversity hotspot, Sinharaja Forest Reserve
+                                is the country's last major untouched tropical rainforest.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '10']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="religion city">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/ishan-kahapola-arachchi-fQe-2x2YflU-unsplash.jpg') }}"
+                            alt="Anuradhapura">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '11']) }}">Anuradhapura – Ancient
+                                    City</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site, Anuradhapura is an ancient city with well-preserved ruins
+                                of palaces, temples, and statues.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '11']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion city ayuruwedic forest">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/chathuraanuradha-buddha-7490716_1280.jpg') }}"
+                            alt="Polonnaruwa">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '12']) }}">Polonnaruwa</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site, Polonnaruwa is an ancient city with well-preserved ruins
+                                of palaces, temples, and statues.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '12']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="city beach forest">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
+                            alt="Jaffna">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '13']) }}">Jaffna</a>
+                            </h3>
+                            <p class="destination-details">
+                                Jaffna is a city in the Northern Province of Sri Lanka, known for its rich cultural
+                                heritage and historical significance.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '13']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains ayuruwedic">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-al-moatasem-alaa-el-din-445873-1139429.jpg') }}"
+                            alt="Pidurangala Rock">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '14']) }}">Pidurangala Rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                Pidurangala Rock is a prominent limestone outcrop located near the town of Kandy,
+                                offering breathtaking views of the surrounding landscape.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '14']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion forest mountains ayuruwedic">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-dimath-dayananda-245054507-17092145.jpg') }}"
+                            alt="Mihintale">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '15']) }}">Mihintale</a>
+                            </h3>
+                            <p class="destination-details">
+                                Mihintale is an ancient Buddhist site located in the Anuradhapura District, known for
+                                its historical significance and beautiful surroundings.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '15']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion forest ayuruwedic">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/pexels-kawshika-11013741.jpg') }}"
+                            alt="Katharagama">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '16']) }}">Katharagama</a>
+                            </h3>
+                            <p class="destination-details">
+                                A deeply venerated pilgrimage town, Katharagama unites multiple faiths who gather to
+                                seek blessings at the sacred Katharagama Devalaya.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '16']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="religion ayuruwedic">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/free-photo-of-dambulla-cave-temple-complex-in-sri-lanka.jpeg') }}"
+                            alt="Dambulla">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '17']) }}">Dambulla</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site, Dambulla is renowned for the magnificent Golden Temple and
+                                the largest, best-preserved ancient cave temple complex.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '17']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="mountains religion">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/1774253054527.jpeg') }}"
+                            alt="Sri Paada">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Sri Paada (Adam's Peak)</a>
+                            </h3>
+                            <p class="destination-details">
+                                A majestic, conical mountain renowned for the sacred footprint at its peak, an ancient
+                                pilgrimage site that rewards climbers with a sunrise.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '18']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-genine-alyssa-pedreno-andrada-1263127-2932486.jpg') }}"
+                            alt="Weligama">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '19']) }}">Weligama</a>
+                            </h3>
+                            <p class="destination-details">
+                                Weligama is a coastal town in the Southern Province of Sri Lanka, known for its
+                                beautiful beaches and relaxed atmosphere.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '19']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/360_F_217638969_rfRP2xj50HvZweJiRct8SWjXmG6OfydM.jpg') }}"
+                            alt="Arugam Bay">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '20']) }}">Arugam Bay</a>
+                            </h3>
+                            <p class="destination-details">
+                                Arugam Bay is a popular destination for surfers and nature lovers, known for its
+                                pristine beaches and vibrant marine life.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '20']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beach">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/10302182-Tourists-at-Hikkaduwa-beach-with-palm-trees-Sri-Lanka.jpg') }}"
+                            alt="Hikkaduwa Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '21']) }}">Hikkaduwa Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A lively coastal hub, Hikkaduwa is celebrated for its dynamic surf scene, colorful
+                                marine sanctuary, and highly energetic beachside nightlife.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '21']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="forest ayuruwedic">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/Yala National Park.jpg') }}"
+                            alt="Yala National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '22']) }}">Yala National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                One of the best places in the world to spot leopards, Yala offers thrilling safaris and
+                                rich wildlife.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '22']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="forest">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
+                            alt="Wilpattu National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '23']) }}">Wilpattu National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                Sri Lanka’s largest national park, famous for natural lakes, leopards, and untouched
+                                wilderness.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '23']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="forest mountains ayuruwedic ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/horton-plains.jpg') }}"
+                            alt="Horton Plains">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '24']) }}">Horton Plains National
+                                    Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site, Horton Plains is home to the largest wildlife reserve in
+                                Sri Lanka.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '24']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div> --}}
+            <div class="row" id="explore-grid">
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/sigiriya.jpg') }}"
+                            alt="Sigiriya Lion Rock">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '01']) }}">Sigiriya Lion Rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                Sigiriya Rock Fortress is an ancient palace and UNESCO World Heritage Site, famous for
+                                its frescoes and breathtaking summit views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '01']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-al-moatasem-alaa-el-din-445873-1139429.jpg') }}"
+                            alt="Pidurangala Rock">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '14']) }}">Pidurangala Rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                A prominent rock formation near Sigiriya offering breathtaking panoramic views of the
+                                surrounding landscape.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '14']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/steptodown.com175855.jpg') }}"
+                            alt="Ella Rock">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '05']) }}">Ella Rock</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for hiking trails and breathtaking views of the lush green hill country.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '05']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/aluwihare/caption (1).jpg') }}"
+                            alt="Mathale Aluviharaya">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '27']) }}">Mathale Aluviharaya</a>
+                            </h3>
+                            <p class="destination-details">
+                                A historic rock temple in Matale where the Pali Canon was first written down entirely on
+                                ola leaves.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '27']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="rocks-mountains historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/free-photo-of-dambulla-cave-temple-complex-in-sri-lanka.jpeg') }}"
+                            alt="Dambulla Cave Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '17']) }}">Dambulla Cave Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site renowned for its magnificent ancient cave temple complex
+                                and statues.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '17']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/Ravanacave/cave-after-excavations.jpg') }}"
+                            alt="Ravana Cave">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '28']) }}">Ravana Cave</a>
+                            </h3>
+                            <p class="destination-details">
+                                A popular historic cave located near Ella, deeply connected to the Ramayana legend.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '28']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/1774253054527.jpeg') }}"
+                            alt="Adams Peak">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '18']) }}">Adams Peak <br> (Sri
+                                    Paada)</a>
+                            </h3>
+                            <p class="destination-details">
+                                A majestic, conical mountain renowned for the sacred footprint at its peak and beautiful
+                                sunrise views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '18']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/Piduruthalagala/20160408-160954-largejpg.jpg') }}"
+                            alt="Piduruthalagala">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '29']) }}">Piduruthalagala</a>
+                            </h3>
+                            <p class="destination-details">
+                                The highest mountain in Sri Lanka, offering a cool climate and dense forest reserves.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '29']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/liptonseat/lupton-seat-sunrise.jpg') }}"
+                            alt="Lipton Seat">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '30']) }}">Lipton Seat</a>
+                            </h3>
+                            <p class="destination-details">
+                                A famous viewpoint in Haputale, overlooking endless tea estates and stunning mountain
+                                valleys.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '30']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/horton-plains.jpg') }}"
+                            alt="Horton Plains">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '10']) }}">Horton Plains</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site home to unique highland wildlife and the famous World's End
+                                drop.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '10']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/ishan-kahapola-arachchi-fQe-2x2YflU-unsplash.jpg') }}"
+                            alt="Anuradhapura">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '11']) }}">Anuradhapura</a>
+                            </h3>
+                            <p class="destination-details">
+                                An ancient city with well-preserved ruins of palaces, giant stupas, and rich Buddhist
+                                history.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '11']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/chathuraanuradha-buddha-7490716_1280.jpg') }}"
+                            alt="Polonnaruwa">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '12']) }}">Polonnaruwa</a>
+                            </h3>
+                            <p class="destination-details">
+                                The second most ancient of Sri Lanka's kingdoms, featuring majestic statues and ancient
+                                architecture.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '12']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-dimath-dayananda-245054507-17092145.jpg') }}"
+                            alt="Mihintale">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '15']) }}">Mihintale</a>
+                            </h3>
+                            <p class="destination-details">
+                                The cradle of Buddhism in Sri Lanka, offering a grand stairway and peaceful mountain
+                                setting.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '15']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/Aukana/avukana-es-una-obra-maestra.jpg') }}"
+                            alt="Aukana">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '31']) }}">Aukana</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for the magnificent Aukana Buddha statue, carved directly out of a large granite
+                                rock face.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '31']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/Gemini_Generated_Image_4et0lc4et0lc4et0.png') }}"
+                            alt="Kandy Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '03']) }}">Kandy </a>
+                            </h3>
+                            <p class="destination-details">
+                                Home to the sacred Temple of the Tooth Relic, blending cool-climate hills with deep
+                                cultural traditions.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '03']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/712dc953abbe7abbd93ccedd3c626f16.jpg') }}"
+                            alt="Nallur Temple / Kovil">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '32']) }}">Nallur Kandaswamy Kovil</a>
+                            </h3>
+                            <p class="destination-details">
+                                One of the most significant Hindu temples in Jaffna, deeply rooted in the culture of
+                                Northern Sri Lanka.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '32']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/koneshwaram/koneshwaram-temple-known.jpg') }}"
+                            alt="Koneswaram Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '33']) }}">Koneswaram Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                A classical-medieval Hindu temple complex in Trincomalee, offering stunning coastal
+                                views.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '33']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/seetha amman/Seetha-Amman-Kovil-from-outside.jpg') }}"
+                            alt="Seetha Amman Kovil Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '34']) }}">Seetha Amman Kovil</a>
+                            </h3>
+                            <p class="destination-details">
+                                A vibrant temple in Nuwara Eliya associated with the Ramayana trail and Princess Seetha.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '34']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/munneswaram/munneswaram-devasthanam.jpg') }}"
+                            alt="Munneswaram Temple">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '35']) }}">Munneswaram Temple</a>
+                            </h3>
+                            <p class="destination-details">
+                                A significant regional Hindu temple complex in Chilaw, venerated by multiple faiths.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '35']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious ">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/Gallefort/IMG_2486.jpg') }}"
+                            alt="Galle Dutch Fort">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '02']) }}">Galle Dutch Fort</a>
+                            </h3>
+                            <p class="destination-details">
+                                A beautifully preserved Dutch-era fortress by the beach with cobbled streets, ramparts,
+                                cafes, and boutique shops.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '02']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/486314011_1069794258509992_3944470451120740398_n.jpg') }}"
+                            alt="Jaffna Dutch Fort">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '13']) }}">Jaffna Dutch Fort</a>
+                            </h3>
+                            <p class="destination-details">
+                                A historical stronghold in the Northern Province showcasing rich heritage and colonial
+                                architecture.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '13']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/Yala National Park.jpg') }}"
+                            alt="Yala National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '06']) }}">Yala National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                One of the best places in the world to spot leopards, offering thrilling safaris and
+                                rich wildlife.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '06']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/udawalawe/3b.jpg') }}"
+                            alt="Udawalawe National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '36']) }}">Udawalawe National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                Renowned for its large population of majestic wild elephants and incredible jeep safari
+                                experiences.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '36']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/minneriya/elephant-safari-jeep.jpg') }}"
+                            alt="Minneriya National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '37']) }}">Minneriya National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                Famous for the "Elephant Gathering," the largest gathering of wild elephants in Asia.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '37']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/wilpattu.jpg') }}"
+                            alt="Wilpattu National Park">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '04']) }}">Wilpattu National Park</a>
+                            </h3>
+                            <p class="destination-details">
+                                Sri Lanka’s largest national park, famous for natural lakes (villus), leopards, and
+                                untouched wilderness.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '04']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/mirissa beach.jpg') }}"
+                            alt="Mirissa Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '07']) }}">Mirissa Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A tropical beach paradise known for whale watching, golden sands, and stunning sunsets.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '07']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/360_F_217638969_rfRP2xj50HvZweJiRct8SWjXmG6OfydM.jpg') }}"
+                            alt="Arugam Bay Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '20']) }}">Arugam Bay Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A popular destination for surfers and nature lovers, known for its pristine waves and
+                                beach vibe.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '20']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/Unawatuna-beaches-Sri-Lanka-8-scaled.jpg') }}"
+                            alt="Unawatuna Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '23']) }}">Unawatuna Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Nestled on the Southern coast, famous for calm turquoise waters, vibrant nightlife, and
+                                coral reefs.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '23']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                            alt="Bentota Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '38']) }}">Bentota Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Renowned for golden sands and thrilling water sports options along the Bentota River and
+                                sea.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '38']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-diego-pontes-901015-7000344.jpg') }}"
+                            alt="Trincomalee & Nilaveli Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '50']) }}">Trincomalee & Nilaveli
+                                    Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Boasts pristine white-sand beaches, clear shallow waters, and access to the stunning
+                                Pigeon Island.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '50']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/pexels-genine-alyssa-pedreno-andrada-1263127-2932486.jpg') }}"
+                            alt="Weligama Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '19']) }}">Weligama Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A coastal town known for beautiful sandy sweeps, perfect beginner surfing waves, and
+                                stilt fishermen.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '19']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/10302182-Tourists-at-Hikkaduwa-beach-with-palm-trees-Sri-Lanka.jpg') }}"
+                            alt="Hikkaduwa Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '21']) }}">Hikkaduwa Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                Celebrated for its dynamic surf scene, colorful marine sanctuary, and energetic
+                                beachside nightlife.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '21']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="beaches">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4d/fc/f3/photo3jpg.jpg?w=1000&h=-1&s=1"
+                            alt="Pasikuda Beach">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '39']) }}">Pasikuda Beach</a>
+                            </h3>
+                            <p class="destination-details">
+                                A stunning east-coast beach famous for its extremely shallow shoreline, perfect for safe
+                                sea bathing.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '39']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://campwale.com/cdn/shop/files/speedboatridepawnalakelonavala.jpg?v=1693820020"
+                            alt="Madu River Boat Ride">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '41']) }}">Madu River Safari</a>
+                            </h3>
+                            <p class="destination-details">
+                                A relaxing boat safari through mangrove forests, visiting small island villages and
+                                cinnamon plantations.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '41']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/village tour/Elephant_ride_sigiriya-768x512.jpg') }}"
+                            alt="Village Tour - Sigiriya & Habarana">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '42']) }}">Traditional Village Tour </a>
+                            </h3>
+                            <p class="destination-details">
+                                Experience traditional Sri Lankan rural life, local cooking, and bullock cart rides in
+                                the village.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '42']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/rafting/ec.jpg') }}" alt="Water Rafting">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '43']) }}">Water Rafting</a>
+                            </h3>
+                            <p class="destination-details">
+                                Thrilling white-water rafting experiences usually enjoyed on the Kelani River in
+                                Kitulgala.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '43']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/whale watching/08.jpg') }}"
+                            alt="Whale Watching">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '44']) }}">Whale Watching</a>
+                            </h3>
+                            <p class="destination-details">
+                                Head out to the deep seas off Mirissa or Trincomalee to spot majestic blue whales and
+                                dolphins.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '44']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/snorkeling/pexels-the-karimunjawa-2157624059-34839988 (1).jpg') }}"
+                            alt="Snorkeling / Diving">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '45']) }}">Snorkeling & Diving</a>
+                            </h3>
+                            <p class="destination-details">
+                                Explore vibrant underwater coral gardens and historical shipwrecks around the coastal
+                                belt.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '45']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/coral/Gemini_Generated_Image_tyi9z1tyi9z1tyi9.png') }}"
+                            alt="Coral Watching">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '46']) }}">Coral Watching</a>
+                            </h3>
+                            <p class="destination-details">
+                                Take a glass-bottom boat ride in Hikkaduwa or Pigeon Island to witness colorful coral
+                                reefs safely.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '46']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="https://images.tpn.to/sq/gi/in/fp/content.jpg" alt="Surfing">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '47']) }}">Surfing</a>
+                            </h3>
+                            <p class="destination-details">
+                                Catch some of the world's best waves at surf spots like Arugam Bay, Weligama, and
+                                Hikkaduwa.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '47']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="https://sandee.com/_next/image?url=https%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNpFEFnwggrg3IW7Ae8n0So7aprWh0EnL819w-U%3Ds1600-k-no&w=3840&q=75"
+                            alt="Pigeon Island">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '48']) }}">Pigeon Island</a>
+                            </h3>
+                            <p class="destination-details">
+                                A marine national park near Trincomalee offering some of the best snorkeling with sharks
+                                and turtles.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '48']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="activities">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/colombo-2.jpg') }}" alt="Colombo">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '09']) }}">Colombo City</a>
+                            </h3>
+                            <p class="destination-details">
+                                The heart of Sri Lanka, a bustling commercial capital with shopping, street food, and
+                                rich history.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '09']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div> --}}
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category=" safari">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/31.jpg') }}" alt="Sinharaja">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '49']) }}">Sinharaja Forest</a>
+                            </h3>
+                            <p class="destination-details">
+                                A UNESCO World Heritage Site and global biodiversity hotspot, ideal for nature treks.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '49']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item"
+                    data-category="historical-religious">
+                    <div class="explore-custom-card">
+                        <img class="bg-image" src="{{ asset('assets/img/explore/pexels-kawshika-11013741.jpg') }}"
+                            alt="Katharagama">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '16']) }}">Katharagama</a>
+                            </h3>
+                            <p class="destination-details">
+                                A deeply venerated pilgrimage town uniting multiple faiths seeking blessings at the
+                                sacred Devalaya.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '16']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div> --}}
+
+                {{-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4 explore-item" data-category="rocks-mountains">
+                    <div class="explore-custom-card">
+                        <img class="bg-image"
+                            src="{{ asset('assets/img/explore/1333687-nuwara-eliya-tea-estate.webp') }}"
+                            alt="Nuwara Eliya">
+                        <div class="destination-content">
+                            <h3 class="title">
+                                <a href="{{ route('documentry', ['doc_id' => '08']) }}">Nuwara Eliya</a>
+                            </h3>
+                            <p class="destination-details">
+                                Known as 'Little England' for its cool climate, colonial charm, and surrounding lush tea
+                                estates.
+                            </p>
+                            <a href="{{ route('documentry', ['doc_id' => '08']) }}" class="glass-btn">View More</a>
+                        </div>
+                    </div>
+                </div> --}}
+
             </div>
 
         </div>
@@ -2402,7 +2518,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const filterBtns = document.querySelectorAll('.glass-filter-btn');
-            const items = document.querySelectorAll('.explore-item swiper-slide story-slide');
+            const items = document.querySelectorAll('.explore-item');
 
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', function() {

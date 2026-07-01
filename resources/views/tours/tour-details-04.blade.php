@@ -130,10 +130,10 @@ Tour Details Area
                             </div>
 
                             <button data-slider-prev="#tourSlider5" class="slider-arrow style3 slider-prev">
-                                <img src="{{ asset('assets/img/icon/hero-arrow-left\.svg') }}" alt="">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-left.svg') }}" alt="">
                             </button>
                             <button data-slider-next="#tourSlider5" class="slider-arrow style3 slider-next">
-                                <img src="{{ asset('assets/img/icon/hero-arrow-right\.svg') }}" alt="">
+                                <img src="{{ asset('assets/img/icon/hero-arrow-right.svg') }}" alt="">
                             </button>
                         </div>
 

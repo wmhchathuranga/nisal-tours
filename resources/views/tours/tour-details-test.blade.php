@@ -159,10 +159,9 @@
                             </div>
 
                             <button data-slider-prev="#tourSlider4" class="slider-arrow style3 slider-prev"><img
-                                    src="{{ asset('assets/img/icon/hero-arrow-left\.svg') }}" alt=""></button>
+                                    src="{{ asset('assets/img/icon/hero-arrow-left.svg') }}" alt=""></button>
                             <button data-slider-next="#tourSlider4" class="slider-arrow style3 slider-next"><img
-                                    src="{{ asset('assets/img/icon/hero-arrow-right\.svg') }}"
-                                    alt=""></button>
+                                    src="{{ asset('assets/img/icon/hero-arrow-right.svg') }}" alt=""></button>
                         </div>
                         <div class="page-content">
                             <div class="page-meta mb-45">
