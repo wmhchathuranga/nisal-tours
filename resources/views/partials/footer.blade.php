@@ -87,6 +87,167 @@
             color: rgba(255, 255, 255, .4);
             margin: 0 8px;
         }
+
+        /*==============================
+   OUR SERVICES FLOATING BUTTON
+==============================*/
+
+        .services-floating-btn {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+
+            width: 82px;
+            height: 82px;
+
+            z-index: 9998;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Main Circle */
+
+        .services-circle {
+            width: 58px;
+            height: 58px;
+
+            background: #fff;
+            border-radius: 50%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            border: 3px solid #18B8FF;
+
+            box-shadow:
+                0 0 0 3px rgba(24, 184, 255, .20),
+                0 8px 16px rgba(0, 0, 0, .22);
+
+            position: relative;
+            transition: .35s ease;
+        }
+
+        .services-circle::before {
+            content: "";
+            position: absolute;
+            inset: -4px;
+            border: 2px solid #18B8FF;
+            border-radius: 50%;
+            transform: rotate(-8deg);
+            opacity: .8;
+        }
+
+        .services-circle::after {
+            content: "";
+            position: absolute;
+            inset: -8px;
+            border: 2px solid #18B8FF;
+            border-radius: 50%;
+            transform: rotate(8deg);
+            opacity: .45;
+        }
+
+        .services-circle span {
+            display: block;
+            color: #18B8FF;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.05;
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+        }
+
+        /* Hover */
+
+        .services-floating-btn:hover .services-circle {
+            transform: scale(1.08) rotate(2deg);
+        }
+
+        /* "What we offer" */
+
+        .offer-text {
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-6deg);
+
+            color: #18B8FF;
+            font-size: 11px;
+            font-weight: 700;
+            font-family: "Comic Sans MS", cursive;
+
+            white-space: nowrap;
+        }
+
+        /* Arrow */
+
+        .arrow-doodle {
+            position: absolute;
+            left: -3px;
+            top: 14px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .arrow-doodle svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Hover animation */
+
+        .services-floating-btn:hover .arrow-doodle {
+            transform: rotate(-8deg);
+            transition: .3s;
+        }
+
+        .book-now-floting {
+            right: 28px;
+            bottom: 125px;
+        }
+
+        /* Mobile */
+
+        @media (max-width:768px) {
+
+            .services-floating-btn {
+                width: 78px;
+                height: 78px;
+                right: 15px;
+                bottom: 18px;
+            }
+
+            .services-circle {
+                width: 56px;
+                height: 56px;
+            }
+
+            .services-circle span {
+                font-size: 11px;
+            }
+
+            .offer-text {
+                font-size: 10px;
+                top: -10px;
+            }
+
+            .arrow-doodle {
+                width: 22px;
+                height: 22px;
+                left: -2px;
+                top: 13px;
+            }
+
+            /* Keep WhatsApp above this button */
+            .book-now-floting {
+                right: 23px;
+                bottom: 125px;
+            }
+        }
     </style>
 
     <div class="widget-area" style="background: #0c1524;">
@@ -241,13 +402,30 @@
     </div>
 </div>
 
-<div class="scroll-top">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-            style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
-        </path>
-    </svg>
-</div>
+<!-- Our Services Floating Button -->
+<a href="{{ route('services') }}" class="services-floating-btn">
+    <span class="offer-text">What we offer</span>
+
+    <div class="services-circle">
+        <span>Our</span>
+        <span>Services</span>
+    </div>
+
+    <div class="arrow-doodle">
+        <svg viewBox="0 0 120 120">
+            <path d="M95 12
+                     C55 5 25 20 15 55
+                     C10 75 22 95 40 108" fill="none" stroke="#17B8FF" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+
+            <path d="M28 95
+                     L40 108
+                     L22 108" fill="none" stroke="#17B8FF" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+</a>
+
 
 @if (request()->has('tour_id') || request()->has('doc_id'))
     <div class="browser-back-btn" onclick="goBackOrHome()">
