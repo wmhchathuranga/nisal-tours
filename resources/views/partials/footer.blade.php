@@ -121,7 +121,7 @@
             align-items: center;
             justify-content: center;
 
-            border: 2px solid #18B8FF;
+            /* border: 2px solid #18B8FF; */
 
             box-shadow:
                 0 0 0 3px rgba(24, 184, 255, .20),
@@ -136,10 +136,10 @@
             content: "";
             position: absolute;
             inset: -8px;
-            border: 2px solid #18B8FF;
+            border: 5px solid #18B8FF;
             border-radius: 50%;
             transform: rotate(8deg);
-            opacity: .45;
+            opacity: 1;
         }
 
         .services-circle span {
@@ -163,8 +163,8 @@
         .services-backdrop {
 
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 85px;
+            height: 85px;
             border-radius: 50%;
             background: #0c1524;
             z-index: -1;
@@ -215,8 +215,18 @@
             }
 
             .services-circle {
-                width: 56px;
-                height: 56px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .services-backdrop {
+
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: #0c1524;
+                z-index: -1;
             }
 
             .services-circle span {
@@ -400,14 +410,6 @@
             <path id="offerPath" d="M20,105
                    A60,60 0 0,1 140,105" />
         </defs>
-
-        <text>
-            <textPath href="#offerPath" startOffset="50%" text-anchor="middle">
-
-                • WHAT WE OFFER •
-
-            </textPath>
-        </text>
 
     </svg>
 
