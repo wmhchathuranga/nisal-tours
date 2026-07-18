@@ -1,21 +1,23 @@
 <?php
 
-use App\Models\Country;
-use App\Models\Testimonial;
-use Laravel\Fortify\Features;
-use App\Livewire\Settings\Profile;
-use App\Livewire\Settings\Password;
-use App\Livewire\Settings\TwoFactor;
-use Illuminate\Support\Facades\Auth;
-use App\Livewire\Settings\Appearance;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\PaymentLinkController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PasswordController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TestimonialController;
+use App\Livewire\Settings\Appearance;
+use App\Livewire\Settings\Password;
+use App\Livewire\Settings\Profile;
+use App\Livewire\Settings\TwoFactor;
+use App\Models\Country;
+use App\Models\Testimonial;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use Laravel\Fortify\Features;
 
-//email verification test route
+// email verification test route
 // Route::get('/send-mail',[EmailController::class,'sendTestEmail'])->name('send-mail');
 
 Route::middleware(['auth'])->group(function () {
@@ -29,7 +31,6 @@ Route::get('/forgot-password', [PasswordController::class, 'requestForm'])->name
 Route::post('/forgot-password', [PasswordController::class, 'sendEmail'])->name('password.email');
 Route::get('/reset-password/{token}', [PasswordController::class, 'resetForm'])->name('password.reset');
 Route::post('/reset-password', [PasswordController::class, 'updatePassword'])->name('password.update');
-
 
 /* testimonial routes */
 Auth::routes(['verify' => true]);
@@ -49,7 +50,16 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
+    Route::get('/admin/payment-links', [PaymentLinkController::class, 'index'])->name('admin.payment-links.index');
+    Route::get('/admin/payment-links/create', [PaymentLinkController::class, 'create'])->name('admin.payment-links.create');
+    Route::post('/admin/payment-links', [PaymentLinkController::class, 'store'])->name('admin.payment-links.store');
 });
+
+Route::get('/pay/{token}', [PaymentController::class, 'show'])->name('payments.show');
+Route::post('/pay/{token}/checkout', [PaymentController::class, 'checkout'])->name('payments.checkout');
+Route::get('/pay/{token}/return', [PaymentController::class, 'returned'])->name('payments.return');
+Route::get('/pay/{token}/cancel', [PaymentController::class, 'cancelled'])->name('payments.cancel');
+Route::post('/payments/payhere/notify', [PaymentController::class, 'notify'])->name('payments.notify');
 
 Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
@@ -57,6 +67,7 @@ Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'
 Route::get('/', function () {
     $testimonials = Testimonial::all()->where('is_approved', true);
     $countries = Country::orderBy('name', 'asc')->get();
+
     return view('index', compact('testimonials', 'countries'));
 })->name('home');
 
@@ -110,15 +121,17 @@ Route::get('/terms-and-conditions', function () {
 //  tours
 Route::get('/tour-detail', function () {
     $tour_id = request()->query('tour_id');
-    $tour_blade = 'tour-details-' . $tour_id;
-    return view('tours/' . $tour_blade);
+    $tour_blade = 'tour-details-'.$tour_id;
+
+    return view('tours/'.$tour_blade);
 })->name('tour-details')->where('tour_id', '[0-9]+');
 
 // documentry
 Route::get('/documentry', function () {
     $doc_id = request()->query('doc_id');
-    $doc_blade = 'doc-' . $doc_id;
-    return view('documentry/' . $doc_blade);
+    $doc_blade = 'doc-'.$doc_id;
+
+    return view('documentry/'.$doc_blade);
 })->name('documentry')->where('doc_id', '[0-9]+');
 
 // form submission
