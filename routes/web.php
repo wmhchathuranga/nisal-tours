@@ -13,7 +13,6 @@ use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\TwoFactor;
 use App\Models\Country;
 use App\Models\Testimonial;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
@@ -32,8 +31,6 @@ Route::post('/forgot-password', [PasswordController::class, 'sendEmail'])->name(
 Route::get('/reset-password/{token}', [PasswordController::class, 'resetForm'])->name('password.reset');
 Route::post('/reset-password', [PasswordController::class, 'updatePassword'])->name('password.update');
 
-/* testimonial routes */
-Auth::routes(['verify' => true]);
 // Auth Routes
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
