@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
@@ -14,6 +13,11 @@ class ProfileController extends Controller
     public function edit()
     {
         return view('profile.settings', ['user' => Auth::user()]);
+    }
+
+    public function adminEdit()
+    {
+        return view('admin.profile.edit', ['user' => Auth::user()]);
     }
 
     public function update(Request $request)
@@ -39,6 +43,7 @@ class ProfileController extends Controller
         }
 
         $user->save();
+
         return back()->with('success', 'Profile updated successfully!');
     }
 
@@ -64,6 +69,7 @@ class ProfileController extends Controller
             $user->profile_photo = null;
             $user->save();
         }
+
         return back()->with('success', 'Profile photo removed!');
     }
 }

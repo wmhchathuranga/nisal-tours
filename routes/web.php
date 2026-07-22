@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\PaymentLinkController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
@@ -43,13 +44,15 @@ Route::get('/verify-email/{id}', [AuthController::class, 'verifyEmail'])
     ->middleware('signed');
 
 // IsAdmin middleware
-Route::middleware(['auth', 'is_admin'])->group(function () {
-
+Route::middleware(['auth', 'verified', 'is_admin'])->group(function () {
+    Route::get('/admin', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin/profile', [ProfileController::class, 'adminEdit'])->name('admin.profile.edit');
     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
     Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
     Route::get('/admin/payment-links', [PaymentLinkController::class, 'index'])->name('admin.payment-links.index');
     Route::get('/admin/payment-links/create', [PaymentLinkController::class, 'create'])->name('admin.payment-links.create');
     Route::post('/admin/payment-links', [PaymentLinkController::class, 'store'])->name('admin.payment-links.store');
+    Route::patch('/admin/payment-links/{paymentLink}/status', [PaymentLinkController::class, 'updateStatus'])->name('admin.payment-links.status');
 });
 
 Route::get('/pay/{token}', [PaymentController::class, 'show'])->name('payments.show');
@@ -58,7 +61,7 @@ Route::get('/pay/{token}/return', [PaymentController::class, 'returned'])->name(
 Route::get('/pay/{token}/cancel', [PaymentController::class, 'cancelled'])->name('payments.cancel');
 Route::post('/payments/payhere/notify', [PaymentController::class, 'notify'])->name('payments.notify');
 
-Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
+Route::post('/testimonials/store', [TestimonialController::class, 'store'])->middleware('auth')->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
 Route::get('/', function () {
@@ -67,8 +70,6 @@ Route::get('/', function () {
 
     return view('index', compact('testimonials', 'countries'));
 })->name('home');
-
-Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\VerifyUserEmail;
 use App\Models\User;
 use Illuminate\Http\Request;
-use App\Mail\VerifyUserEmail;
-use Illuminate\Support\Facades\URL;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
@@ -85,7 +84,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             if (Auth::user()->role === 'admin') {
-                return redirect()->route('home');
+                return redirect()->route('admin.dashboard');
             }
 
             return redirect('/');

@@ -227,7 +227,7 @@
                     <a href="{{ route('register') }}" class="custom-auth-btn btn-register-custom">Register</a>
                 @else
                     @if (auth()->user()->role === 'admin')
-                        <a href="{{ route('admin.testimonials.index') }}" target="_blank"
+                        <a href="{{ route('admin.dashboard') }}"
                             class="custom-auth-btn btn-login-custom">Dashboard</a>
                     @endif
 
@@ -279,7 +279,7 @@
                                 <a href="{{ route('login') }}" class="custom-auth-btn btn-register-custom">Login</a>
                             @else
                                 @if (auth()->user()->role === 'admin')
-                                    <a href="{{ route('admin.testimonials.index') }}" target="_blank"
+                                    <a href="{{ route('admin.dashboard') }}"
                                         class="custom-auth-btn btn-login-custom">Dashboard</a>
                                 @endif
                                 <div class="dropdown custom-profile-dropdown">

@@ -2,9 +2,8 @@
 
 namespace App\Models;
 
-use App\Models\User;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class Testimonial extends Model
 {
@@ -24,9 +23,17 @@ class Testimonial extends Model
         'is_approved',
     ];
 
+    protected function casts(): array
+    {
+        return [
+            'is_approved' => 'boolean',
+            'rating' => 'integer',
+        ];
+    }
+
     public function user()
     {
-        // return $this->belongsTo(User::class, 'user_id'); 
+        // return $this->belongsTo(User::class, 'user_id');
         return $this->belongsTo(User::class, 'full_name', 'name');
     }
 }

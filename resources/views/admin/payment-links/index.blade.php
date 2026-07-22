@@ -1,10 +1,38 @@
-<!doctype html>
-<html lang="en"><head>@include('partials.head')<style>.admin-wrap{max-width:1200px;margin:70px auto;padding:20px}.admin-card{padding:30px;border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.1)}</style></head>
-<body>@include('partials.loader')@php($page = 'admin')@include('partials.menu')<main class="admin-wrap"><div class="admin-card">
-<div class="d-flex justify-content-between align-items-center mb-4"><div><h2>Payment links</h2><p class="text-muted mb-0">Create and monitor customer payments.</p></div><a class="th-btn" href="{{ route('admin.payment-links.create') }}">New payment link</a></div>
-@if(session('success'))<div class="alert alert-success text-break">{{ session('success') }}</div>@endif
-<div class="table-responsive"><table class="table align-middle"><thead><tr><th>Reference</th><th>Customer</th><th>Package</th><th>Amount</th><th>Status</th><th>Link</th></tr></thead><tbody>
-@forelse($paymentLinks as $link)<tr><td>{{ $link->reference }}</td><td>{{ $link->customer_name ?: '—' }}<br><small>{{ $link->customer_email }}</small></td><td>{{ $link->title }}</td><td>{{ $link->currency }} {{ number_format((float)$link->amount, 2) }}</td><td><span class="badge bg-{{ $link->status === 'paid' ? 'success' : ($link->status === 'pending' ? 'warning text-dark' : 'secondary') }}">{{ ucfirst($link->status) }}</span></td><td><a href="{{ route('payments.show', $link->token) }}" target="_blank" rel="noopener">Open</a></td></tr>
-@empty<tr><td colspan="6" class="text-center text-muted">No payment links yet.</td></tr>@endforelse
-</tbody></table></div>{{ $paymentLinks->links() }}
-</div></main>@include('partials.footer')@include('partials.scripts')</body></html>
+@extends('layouts.admin')
+@section('title', 'Payment URLs')
+@section('page-title', 'Payment URLs')
+@section('top-actions')<a class="nh-btn nh-btn-primary" href="{{ route('admin.payment-links.create') }}"><i class="fa-solid fa-plus"></i><span>Create payment URL</span></a>@endsection
+@section('content')
+<section class="nh-panel">
+    <div class="nh-panel-head">
+        <div><h2>Customer payments</h2><span class="nh-subtext">Create, share and monitor secure PayHere payment URLs.</span></div>
+        <form class="nh-filters" method="GET">
+            <input class="nh-input nh-filter-search" name="search" value="{{ request('search') }}" placeholder="Search reference, customer or package">
+            <select class="nh-select" name="status" onchange="this.form.submit()"><option value="">All statuses</option>@foreach(['pending','paid','cancelled','failed','chargedback'] as $status)<option value="{{ $status }}" @selected(request('status')===$status)>{{ ucfirst($status) }}</option>@endforeach</select>
+            <button class="nh-btn nh-btn-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </form>
+    </div>
+    @if($paymentLinks->isEmpty())
+        <div class="nh-empty"><i class="fa-solid fa-link"></i><strong>No payment URLs found</strong><span>Create a URL or change your search filters.</span></div>
+    @else
+    <div class="nh-table-wrap"><table class="nh-table"><thead><tr><th>Payment</th><th>Customer</th><th>Amount</th><th>Created / expiry</th><th>Status</th><th>Actions</th></tr></thead><tbody>
+    @foreach($paymentLinks as $link)
+        @php($paymentUrl = route('payments.show', $link->token))
+        <tr>
+            <td><strong>{{ $link->reference }}</strong><span class="nh-subtext">{{ $link->title }}</span></td>
+            <td>{{ $link->customer_name }}<span class="nh-subtext">{{ $link->customer_email }}</span></td>
+            <td><strong>{{ $link->currency }} {{ number_format((float)$link->amount,2) }}</strong></td>
+            <td>{{ $link->created_at->format('d M Y') }}<span class="nh-subtext">{{ $link->expires_at ? 'Expires '.$link->expires_at->format('d M Y, H:i') : 'No expiry' }}</span></td>
+            <td><span class="nh-badge {{ $link->status }}">{{ $link->status }}</span></td>
+            <td><div class="nh-actions">
+                <button class="nh-btn nh-btn-secondary nh-btn-sm" type="button" onclick='copyPaymentUrl(@json($paymentUrl))'><i class="fa-regular fa-copy"></i> Copy</button>
+                <a class="nh-btn nh-btn-secondary nh-btn-sm" href="{{ $paymentUrl }}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                @if($link->status !== 'paid')<form method="POST" action="{{ route('admin.payment-links.status',$link) }}">@csrf @method('PATCH')<input type="hidden" name="status" value="{{ $link->status === 'cancelled' ? 'pending' : 'cancelled' }}"><button class="nh-btn {{ $link->status === 'cancelled' ? 'nh-btn-secondary' : 'nh-btn-danger' }} nh-btn-sm" type="submit">{{ $link->status === 'cancelled' ? 'Reactivate' : 'Revoke' }}</button></form>@endif
+            </div></td>
+        </tr>
+    @endforeach
+    </tbody></table></div>
+    <div class="nh-panel-body">{{ $paymentLinks->links() }}</div>
+    @endif
+</section>
+@endsection

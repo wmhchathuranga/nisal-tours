@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class AdminUserSeeder extends Seeder
 {
@@ -14,13 +13,22 @@ class AdminUserSeeder extends Seeder
      */
     public function run(): void
     {
+        $email = env('ADMIN_EMAIL');
+        $password = env('ADMIN_PASSWORD');
+
+        if (! $email || ! $password) {
+            $this->command?->warn('AdminUserSeeder skipped: set ADMIN_EMAIL and ADMIN_PASSWORD first.');
+
+            return;
+        }
+
         User::updateOrCreate(
-            ['email' => 'admin@lk'], 
+            ['email' => $email],
             [
-                'name' => 'admin',
-                'password' => Hash::make('admin123'),
-                'mobile_no' => '0771234567', 
-                'role' => 'admin', 
+                'name' => env('ADMIN_NAME', 'Novara Administrator'),
+                'password' => Hash::make($password),
+                'mobile_no' => env('ADMIN_MOBILE', '0000000000'),
+                'role' => 'admin',
                 'email_verified_at' => now(),
             ]
         );

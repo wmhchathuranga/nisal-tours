@@ -12,7 +12,24 @@ class PaymentLinkController extends Controller
 {
     public function index()
     {
-        return view('admin.payment-links.index', ['paymentLinks' => PaymentLink::latest()->paginate(20)]);
+        $query = PaymentLink::query()->latest();
+
+        if ($search = request('search')) {
+            $query->where(function ($builder) use ($search) {
+                $builder->where('reference', 'like', "%{$search}%")
+                    ->orWhere('customer_name', 'like', "%{$search}%")
+                    ->orWhere('customer_email', 'like', "%{$search}%")
+                    ->orWhere('title', 'like', "%{$search}%");
+            });
+        }
+
+        if (request('status') && in_array(request('status'), ['pending', 'paid', 'cancelled', 'failed', 'chargedback'], true)) {
+            $query->where('status', request('status'));
+        }
+
+        return view('admin.payment-links.index', [
+            'paymentLinks' => $query->paginate(15)->withQueryString(),
+        ]);
     }
 
     public function create()
@@ -44,5 +61,20 @@ class PaymentLinkController extends Controller
 
         return redirect()->route('admin.payment-links.index')
             ->with('success', 'Payment link created: '.route('payments.show', $paymentLink->token));
+    }
+
+    public function updateStatus(Request $request, PaymentLink $paymentLink)
+    {
+        $data = $request->validate([
+            'status' => ['required', Rule::in(['pending', 'cancelled'])],
+        ]);
+
+        if ($paymentLink->status === 'paid') {
+            return back()->with('error', 'A paid payment cannot be reopened or cancelled.');
+        }
+
+        $paymentLink->update(['status' => $data['status']]);
+
+        return back()->with('success', $data['status'] === 'cancelled' ? 'Payment URL revoked.' : 'Payment URL reactivated.');
     }
 }

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Country;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class TestimonialController extends Controller
@@ -75,7 +74,7 @@ class TestimonialController extends Controller
             'top_pos' => $top_pos,
             'left_pos' => $left_pos,
             'is_approved' => 0,
-            'ip_address' => $ip
+            'ip_address' => $ip,
         ]);
 
         return response()->json([
@@ -87,21 +86,23 @@ class TestimonialController extends Controller
 
     public function index()
     {
+        $testimonials = Testimonial::with('user')->latest()->paginate(15);
 
-        // $testimonials = Testimonial::latest()->get();
-        $testimonials = Testimonial::with('user')->latest()->get();
-
-        return view('testimonials', compact('testimonials'));
+        return view('admin.testimonials.index', compact('testimonials'));
     }
 
     public function updateStatus(Request $request, $id)
     {
-
+        $validated = $request->validate([
+            'status' => ['required', 'boolean'],
+        ]);
         $testimonial = Testimonial::findOrFail($id);
-
-        $testimonial->is_approved = $request->status;
-
+        $testimonial->is_approved = $validated['status'];
         $testimonial->save();
+
+        if (! $request->expectsJson()) {
+            return back()->with('success', 'Testimonial visibility updated.');
+        }
 
         return response()->json([
             'success' => true,
