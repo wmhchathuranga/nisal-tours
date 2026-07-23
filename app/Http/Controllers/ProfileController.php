@@ -25,8 +25,8 @@ class ProfileController extends Controller
         $user = Auth::user();
         $request->validate([
             'name' => 'required|string|max:255',
-            'mobile_no' => 'nullable|string|max:15',
-            'profile_photo' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'mobile_no' => ['nullable', 'string', 'max:30', 'regex:/^[0-9+\s().-]{7,30}$/'],
+            'profile_photo' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048|dimensions:max_width=4000,max_height=4000',
         ]);
 
         $user->name = $request->name;
@@ -38,7 +38,6 @@ class ProfileController extends Controller
                 Storage::disk('s3')->delete($user->profile_photo);
             }
             $path = $request->file('profile_photo')->store('profile_photos', 's3');
-            Logger($path);
             $user->profile_photo = $path;
         }
 
