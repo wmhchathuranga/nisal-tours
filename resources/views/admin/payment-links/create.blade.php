@@ -22,7 +22,16 @@
         <div class="nh-form-group"><label for="customer_city">City</label><input class="nh-input" id="customer_city" name="customer_city" value="{{ old('customer_city') }}" required></div>
         <div class="nh-form-group"><label for="customer_country">Country</label><input class="nh-input" id="customer_country" name="customer_country" value="{{ old('customer_country','Sri Lanka') }}" required></div>
     </div></div>
-    <div class="nh-form-section" style="display:flex;justify-content:flex-end;gap:10px"><a class="nh-btn nh-btn-secondary" href="{{ route('admin.payment-links.index') }}">Cancel</a><button class="nh-btn nh-btn-primary" type="submit"><i class="fa-solid fa-link"></i> Create secure payment URL</button></div>
+    <div class="nh-form-section">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap">
+            <div><strong style="display:block">Ready to share?</strong><span class="nh-subtext">You can create the URL only or email it to the customer immediately.</span></div>
+            <div style="display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap">
+                <a class="nh-btn nh-btn-secondary" href="{{ route('admin.payment-links.index') }}">Cancel</a>
+                <button class="nh-btn nh-btn-secondary" type="submit" name="submission_action" value="create"><i class="fa-solid fa-link"></i> Create URL only</button>
+                <button class="nh-btn nh-btn-primary" type="submit" name="submission_action" value="create_and_send"><i class="fa-regular fa-paper-plane"></i> Create &amp; send email</button>
+            </div>
+        </div>
+    </div>
 </section>
 </form>
 @endsection

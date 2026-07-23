@@ -10,7 +10,8 @@ class PaymentLink extends Model
         'reference', 'token', 'customer_name', 'customer_email', 'customer_phone',
         'customer_address', 'customer_city', 'customer_country',
         'title', 'description', 'amount', 'currency', 'status', 'expires_at',
-        'paid_at', 'gateway_response',
+        'paid_at', 'gateway_response', 'email_queued_at', 'email_sent_at',
+        'email_send_attempts', 'email_last_recipient', 'email_last_error',
     ];
 
     protected function casts(): array
@@ -19,14 +20,22 @@ class PaymentLink extends Model
             'amount' => 'decimal:2',
             'expires_at' => 'datetime',
             'paid_at' => 'datetime',
+            'email_queued_at' => 'datetime',
+            'email_sent_at' => 'datetime',
+            'email_send_attempts' => 'integer',
             'gateway_response' => 'array',
         ];
     }
 
     public function isPayable(): bool
     {
-        return $this->status !== 'paid'
+        return $this->status === 'pending'
             && (! $this->expires_at || $this->expires_at->isFuture());
+    }
+
+    public function canSendPaymentEmail(): bool
+    {
+        return $this->isPayable() && filled($this->customer_email);
     }
 
     public function hasCompleteCustomerDetails(): bool

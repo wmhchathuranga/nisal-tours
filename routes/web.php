@@ -63,6 +63,9 @@ Route::middleware(['auth', 'verified', 'is_admin'])->group(function () {
     Route::patch('/admin/payment-links/{paymentLink}/status', [PaymentLinkController::class, 'updateStatus'])
         ->middleware('throttle:authenticated-writes')
         ->name('admin.payment-links.status');
+    Route::post('/admin/payment-links/{paymentLink}/email', [PaymentLinkController::class, 'sendEmail'])
+        ->middleware('throttle:payment-email')
+        ->name('admin.payment-links.email');
 });
 
 Route::get('/pay/{token}', [PaymentController::class, 'show'])->name('payments.show');
