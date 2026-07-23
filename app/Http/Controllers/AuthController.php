@@ -31,7 +31,7 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'mobile_no' => 'required|numeric',
+            'mobile_no' => ['required', 'string', 'max:30', 'regex:/^[0-9+\s().-]{7,30}$/'],
             'password' => [
                 'required',
                 'confirmed',
@@ -40,12 +40,12 @@ class AuthController extends Controller
                     ->mixedCase()
                     ->symbols(),
             ],
-            'profile_photo' => 'required|max:2048',
+            'profile_photo' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048|dimensions:max_width=4000,max_height=4000',
         ]);
 
         if (request()->hasFile('profile_photo')) {
 
-            $photoPath = request()->file('profile_photo')->store('profile_photo', 'public');
+            $photoPath = request()->file('profile_photo')->store('profile_photos', 's3');
         }
 
         $user = User::create([
@@ -56,7 +56,11 @@ class AuthController extends Controller
             'profile_photo' => $photoPath,
         ]);
 
-        $url = URL::signedRoute('verify.email', ['id' => $user->id]);
+        $url = URL::temporarySignedRoute(
+            'verify.email',
+            now()->addHours(24),
+            ['id' => $user->id]
+        );
 
         Mail::to($user->email)->send(new VerifyUserEmail($url));
 

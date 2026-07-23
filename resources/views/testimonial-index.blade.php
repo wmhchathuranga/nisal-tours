@@ -338,7 +338,7 @@
 
                         @auth
                             @if (auth()->user()->profile_photo)
-                                <img src="{{ asset('storage/' . auth()->user()->profile_photo) }}" alt="Profile Picture"
+                                <img src="{{ Storage::disk('s3')->url(auth()->user()->profile_photo) }}" alt="Profile Picture"
                                     class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
                             @else
                                 <img src="{{ 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"

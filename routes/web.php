@@ -28,15 +28,19 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/forgot-password', [PasswordController::class, 'requestForm'])->name('password.request');
-Route::post('/forgot-password', [PasswordController::class, 'sendEmail'])->name('password.email');
+Route::post('/forgot-password', [PasswordController::class, 'sendEmail'])
+    ->middleware('throttle:password-email')
+    ->name('password.email');
 Route::get('/reset-password/{token}', [PasswordController::class, 'resetForm'])->name('password.reset');
-Route::post('/reset-password', [PasswordController::class, 'updatePassword'])->name('password.update');
+Route::post('/reset-password', [PasswordController::class, 'updatePassword'])
+    ->middleware('throttle:password-reset')
+    ->name('password.update');
 
 // Auth Routes
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/login', [AuthController::class, 'login'])->middleware('throttle:login');
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
-Route::post('/register', [AuthController::class, 'register']);
+Route::post('/register', [AuthController::class, 'register'])->middleware('throttle:registration');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/verify-email/{id}', [AuthController::class, 'verifyEmail'])
@@ -48,20 +52,32 @@ Route::middleware(['auth', 'verified', 'is_admin'])->group(function () {
     Route::get('/admin', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('/admin/profile', [ProfileController::class, 'adminEdit'])->name('admin.profile.edit');
     Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials.index');
-    Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])->name('admin.testimonials.status');
+    Route::post('/admin/testimonials/{id}/status', [TestimonialController::class, 'updateStatus'])
+        ->middleware('throttle:authenticated-writes')
+        ->name('admin.testimonials.status');
     Route::get('/admin/payment-links', [PaymentLinkController::class, 'index'])->name('admin.payment-links.index');
     Route::get('/admin/payment-links/create', [PaymentLinkController::class, 'create'])->name('admin.payment-links.create');
-    Route::post('/admin/payment-links', [PaymentLinkController::class, 'store'])->name('admin.payment-links.store');
-    Route::patch('/admin/payment-links/{paymentLink}/status', [PaymentLinkController::class, 'updateStatus'])->name('admin.payment-links.status');
+    Route::post('/admin/payment-links', [PaymentLinkController::class, 'store'])
+        ->middleware('throttle:authenticated-writes')
+        ->name('admin.payment-links.store');
+    Route::patch('/admin/payment-links/{paymentLink}/status', [PaymentLinkController::class, 'updateStatus'])
+        ->middleware('throttle:authenticated-writes')
+        ->name('admin.payment-links.status');
 });
 
 Route::get('/pay/{token}', [PaymentController::class, 'show'])->name('payments.show');
-Route::post('/pay/{token}/checkout', [PaymentController::class, 'checkout'])->name('payments.checkout');
+Route::post('/pay/{token}/checkout', [PaymentController::class, 'checkout'])
+    ->middleware('throttle:public-forms')
+    ->name('payments.checkout');
 Route::get('/pay/{token}/return', [PaymentController::class, 'returned'])->name('payments.return');
 Route::get('/pay/{token}/cancel', [PaymentController::class, 'cancelled'])->name('payments.cancel');
-Route::post('/payments/payhere/notify', [PaymentController::class, 'notify'])->name('payments.notify');
+Route::post('/payments/payhere/notify', [PaymentController::class, 'notify'])
+    ->middleware('throttle:payhere-callback')
+    ->name('payments.notify');
 
-Route::post('/testimonials/store', [TestimonialController::class, 'store'])->middleware('auth')->name('testimonials.store');
+Route::post('/testimonials/store', [TestimonialController::class, 'store'])
+    ->middleware(['auth', 'throttle:authenticated-writes'])
+    ->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
 Route::get('/', function () {
@@ -133,8 +149,14 @@ Route::get('/documentry', function () {
 })->name('documentry')->where('doc_id', '[0-9]+');
 
 // form submission
-Route::post('/tour-booking', [FormController::class, 'handle_TourBooking'])->name('tour-booking.submit');
-Route::post('/cotactform-submit', [FormController::class, 'handle_contactform'])->name('contactform.submit');
-Route::post('/accommodation-booking', [FormController::class, 'handle_AccommodationBooking'])->name('accommodation-booking.submit');
+Route::post('/tour-booking', [FormController::class, 'handle_TourBooking'])
+    ->middleware('throttle:public-forms')
+    ->name('tour-booking.submit');
+Route::post('/cotactform-submit', [FormController::class, 'handle_contactform'])
+    ->middleware('throttle:public-forms')
+    ->name('contactform.submit');
+Route::post('/accommodation-booking', [FormController::class, 'handle_AccommodationBooking'])
+    ->middleware('throttle:public-forms')
+    ->name('accommodation-booking.submit');
 
 // require __DIR__.'/auth.php';
