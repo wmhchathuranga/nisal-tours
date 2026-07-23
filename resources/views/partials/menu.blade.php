@@ -217,8 +217,8 @@
                 <li><a class="{{ $page == 'services' ? 'active' : '' }}" href="{{ route('services') }}">Our
                         Services</a>
                 </li>
-                <li><a class="{{ $page == 'gallery' ? 'active' : '' }}" href="{{ route('gallery') }}">Our Gallery</a>
-                </li>
+                {{-- <li><a class="{{ $page == 'gallery' ? 'active' : '' }}" href="{{ route('gallery') }}">Our Gallery</a>
+                </li> --}}
                 <li><a class="{{ $page == 'about' ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
             </ul>
             <div class="mobile-auth-wrap">
@@ -227,8 +227,7 @@
                     <a href="{{ route('register') }}" class="custom-auth-btn btn-register-custom">Register</a>
                 @else
                     @if (auth()->user()->role === 'admin')
-                        <a href="{{ route('admin.dashboard') }}"
-                            class="custom-auth-btn btn-login-custom">Dashboard</a>
+                        <a href="{{ route('admin.dashboard') }}" class="custom-auth-btn btn-login-custom">Dashboard</a>
                     @endif
 
                     <form method="POST" action="{{ route('logout') }}" style="display: flex; flex-direction: column;">
@@ -263,8 +262,8 @@
                                         href="{{ route('home') }}">Home</a></li>
                                 <li><a class="{{ $page == 'services' ? 'active' : '' }}"
                                         href="{{ route('services') }}">Our Services</a></li>
-                                <li><a class="{{ $page == 'gallery' ? 'active' : '' }}"
-                                        href="{{ route('gallery') }}">Our Gallery</a></li>
+                                {{-- <li><a class="{{ $page == 'gallery' ? 'active' : '' }}"
+                                        href="{{ route('gallery') }}">Our Gallery</a></li> --}}
                                 <li><a class="{{ $page == 'about' ? 'active' : '' }}"
                                         href="{{ route('about') }}">About Us</a></li>
                             </ul>

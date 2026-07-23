@@ -10,12 +10,31 @@
     <style>
         .gallery-page {
             background-color: #0c1524;
+            overflow: hidden;
         }
 
         .gallery-container {
-            max-width: 1180px;
+            max-width: 1420px;
             margin: 0 auto;
-            padding-top: 100px;
+            padding: 72px 28px 90px;
+        }
+
+        .gallery-hero {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .gallery-title {
+            margin-bottom: 18px;
+            font-size: clamp(34px, 4vw, 56px);
+            letter-spacing: -.03em;
+        }
+
+        .explore-filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 34px 0 38px;
         }
 
         .gallery-filter-bar {
@@ -41,37 +60,106 @@
         }
 
         .gallery-masonry {
-            column-count: 3;
-            column-gap: 18px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-auto-flow: dense;
+            grid-auto-rows: 8px;
+            gap: 22px;
+        }
+
+        .gallery-item.is-wide {
+            grid-column: span 2;
         }
 
         .gallery-item {
-            break-inside: avoid;
-            margin-bottom: 18px;
-            border-radius: 14px;
+            position: relative;
+            margin: 0;
+            border-radius: 18px;
             overflow: hidden;
             background: #0c1524;
             cursor: pointer;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .2);
         }
 
         .gallery-item img {
             width: 100%;
             display: block;
-            border-radius: 14px;
-            width: 100%;
+            border-radius: 18px;
             height: auto;
-            transition: .4s ease;
+            transition: transform .55s ease, filter .55s ease;
+        }
+
+        .gallery-item::before {
+            position: absolute;
+            inset: auto 0 0;
+            height: 42%;
+            z-index: 1;
+            background: linear-gradient(transparent, rgba(3, 12, 20, .76));
+            content: "";
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .35s ease;
+        }
+
+        .gallery-item::after {
+            position: absolute;
+            left: 18px;
+            bottom: 16px;
+            z-index: 2;
+            padding: 7px 11px;
+            border: 1px solid rgba(255, 255, 255, .22);
+            border-radius: 999px;
+            background: rgba(7, 29, 43, .62);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            content: attr(data-category);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em;
+            opacity: 0;
+            pointer-events: none;
+            text-transform: capitalize;
+            transform: translateY(8px);
+            transition: .35s ease;
         }
 
         @media (max-width: 991px) {
+            .gallery-container {
+                padding: 58px 22px 75px;
+            }
+
             .gallery-masonry {
-                column-count: 2;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
         @media (max-width: 575px) {
+            .gallery-container {
+                padding: 42px 15px 60px;
+            }
+
+            .explore-filter-bar {
+                justify-content: flex-start;
+                margin: 26px -15px 30px;
+                padding: 0 15px 8px;
+                overflow-x: auto;
+                scrollbar-width: none;
+            }
+
+            .explore-filter-bar::-webkit-scrollbar {
+                display: none;
+            }
+
+            .glass-filter-btn {
+                flex: 0 0 auto;
+            }
+
             .gallery-masonry {
-                column-count: 1;
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item.is-wide {
+                grid-column: span 1;
             }
         }
 
@@ -104,10 +192,10 @@
 
         /* Active State for Filter Button */
         .glass-filter-btn.active {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: #ffffff;
+            background: linear-gradient(135deg, #16a9bb, #087d8c);
+            border-color: #2fc4d4;
             color: #ffffff;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 22px rgba(22, 169, 187, .24);
         }
 
         .gallery-description {
@@ -198,9 +286,16 @@
         }
 
         .gallery-item:hover img {
+            transform: scale(1.045);
+        }
 
-            transform: scale(1.03);
+        .gallery-item:hover::before,
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
 
+        .gallery-item:hover::after {
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -243,22 +338,27 @@
 
             </div>
 
-            <div class="explore-filter-bar my-5 text-center">
+            <div class="explore-filter-bar text-center">
 
-                <button class="mb-1 glass-filter-btn active" data-filter="landscape">
+                <button class="glass-filter-btn active" data-filter="all">
+                    <i class="fas fa-images"></i>
+                    All photos
+                </button>
+
+                <button class="glass-filter-btn" data-filter="landscape">
                     <i class="fas fa-mountain-sun"></i>
                     Landscape
                 </button>
 
-                <button class="mb-1 glass-filter-btn" data-filter="religious">
+                <button class="glass-filter-btn" data-filter="religious">
                     <i class="fas fa-place-of-worship"></i>
                     Religious
                 </button>
-                <button class="mt-1 glass-filter-btn" data-filter="architecture">
+                <button class="glass-filter-btn" data-filter="architecture">
                     <i class="fas fa-landmark"></i>
                     Architecture
                 </button>
-                <button class="mt-1 glass-filter-btn" data-filter="nature">
+                <button class="glass-filter-btn" data-filter="nature">
                     <i class="fas fa-leaf"></i>
                     Nature
                 </button>
@@ -408,6 +508,34 @@
         document.addEventListener('DOMContentLoaded', function() {
             const buttons = document.querySelectorAll('.glass-filter-btn');
             const items = document.querySelectorAll('.gallery-item');
+            const gallery = document.querySelector('.gallery-masonry');
+
+            function sizeGalleryItem(item) {
+                if (item.style.display === 'none') {
+                    return;
+                }
+
+                const image = item.querySelector('img');
+                if (!image.naturalWidth || !image.naturalHeight) {
+                    return;
+                }
+
+                item.classList.toggle('is-wide', image.naturalWidth / image.naturalHeight >= 1.2);
+
+                requestAnimationFrame(() => {
+                    const styles = window.getComputedStyle(gallery);
+                    const rowHeight = parseFloat(styles.gridAutoRows);
+                    const rowGap = parseFloat(styles.rowGap);
+                    const imageHeight = image.getBoundingClientRect().height;
+                    const rowSpan = Math.ceil((imageHeight + rowGap) / (rowHeight + rowGap));
+
+                    item.style.gridRowEnd = `span ${rowSpan}`;
+                });
+            }
+
+            function layoutVisibleItems() {
+                items.forEach(item => sizeGalleryItem(item));
+            }
 
             function filterGallery(filter) {
                 items.forEach(item => {
@@ -419,7 +547,27 @@
                         item.style.display = 'none';
                     }
                 });
+
+                requestAnimationFrame(layoutVisibleItems);
             }
+
+            items.forEach(item => {
+                const image = item.querySelector('img');
+
+                if (image.complete) {
+                    sizeGalleryItem(item);
+                } else {
+                    image.addEventListener('load', () => sizeGalleryItem(item), {
+                        once: true
+                    });
+                }
+            });
+
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                window.clearTimeout(resizeTimer);
+                resizeTimer = window.setTimeout(layoutVisibleItems, 120);
+            });
 
             buttons.forEach(btn => {
                 btn.addEventListener('click', function() {
