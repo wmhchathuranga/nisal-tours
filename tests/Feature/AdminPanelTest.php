@@ -28,9 +28,14 @@ it('protects every admin route from guests and regular users', function () {
 
 it('renders the admin dashboard and payment URL manager', function () {
     $admin = adminUser();
+    Testimonial::create([
+        'full_name' => 'Dashboard Customer', 'country' => 'Sri Lanka', 'rating' => 5,
+        'experience' => 'A wonderful and well organized holiday experience.',
+        'top_pos' => 50, 'left_pos' => 50, 'is_approved' => true,
+    ]);
 
     $this->actingAs($admin)->get(route('admin.dashboard'))
-        ->assertOk()->assertSee('Create payment URL')->assertSee('Testimonials');
+        ->assertOk()->assertSee('Create payment URL')->assertSee('Dashboard Customer');
     $this->actingAs($admin)->get(route('admin.payment-links.index'))
         ->assertOk()->assertSee('Customer payments');
     $this->actingAs($admin)->get(route('admin.payment-links.create'))

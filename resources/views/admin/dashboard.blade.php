@@ -16,7 +16,7 @@
     </section>
     <div>
         <section class="nh-panel"><div class="nh-panel-head"><h2>Quick actions</h2></div><div class="nh-panel-body nh-quick"><a href="{{ route('admin.payment-links.create') }}"><i class="fa-solid fa-plus"></i><strong>New payment URL</strong><span>Prepare a secure customer payment</span></a><a href="{{ route('admin.testimonials.index') }}"><i class="fa-solid fa-comments"></i><strong>Review testimonials</strong><span>Approve or hide customer stories</span></a></div></section>
-        <section class="nh-panel" style="margin-top:20px"><div class="nh-panel-head"><h2>Latest testimonials</h2></div>@forelse($recentTestimonials as $item)<div class="nh-testimonial"><div class="nh-testimonial-head"><strong>{{ $item->full_name }}</strong><span class="nh-badge {{ $item->is_approved ? 'approved' : 'pending' }}">{{ $item->is_approved ? 'Approved' : 'Pending' }}</span></div><div class="nh-rating">{{ str_repeat('★', (int)$item->rating) }}</div><p>{{ IlluminateSupportStr::limit(html_entity_decode($item->experience), 90) }}</p></div>@empty<div class="nh-empty">No testimonials yet.</div>@endforelse</section>
+        <section class="nh-panel" style="margin-top:20px"><div class="nh-panel-head"><h2>Latest testimonials</h2></div>@forelse($recentTestimonials as $item)<div class="nh-testimonial"><div class="nh-testimonial-head"><strong>{{ $item->full_name }}</strong><span class="nh-badge {{ $item->is_approved ? 'approved' : 'pending' }}">{{ $item->is_approved ? 'Approved' : 'Pending' }}</span></div><div class="nh-rating">{{ str_repeat('★', (int)$item->rating) }}</div><p>{{ str(html_entity_decode($item->experience))->limit(90) }}</p></div>@empty<div class="nh-empty">No testimonials yet.</div>@endforelse</section>
     </div>
 </div>
 @endsection
