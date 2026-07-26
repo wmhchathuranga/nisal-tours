@@ -119,6 +119,41 @@ it('does not downgrade an already paid payment on a delayed callback', function 
     expect($link->fresh()->status)->toBe('paid');
 });
 
+it('renders clear responsive result states for cancelled pending and paid payments', function () {
+    $cancelledLink = paymentLink([
+        'reference' => 'NV-RESULT-CANCELLED',
+        'token' => str_repeat('c', 64),
+    ]);
+
+    $this->get(route('payments.cancel', $cancelledLink->token))
+        ->assertOk()
+        ->assertSee('Payment cancelled')
+        ->assertSee('Try payment again')
+        ->assertSee('USD 1,250.00');
+
+    $pendingLink = paymentLink([
+        'reference' => 'NV-RESULT-PENDING',
+        'token' => str_repeat('p', 64),
+    ]);
+
+    $this->get(route('payments.return', $pendingLink->token))
+        ->assertOk()
+        ->assertSee('We are confirming your payment')
+        ->assertSee('Check payment status');
+
+    $paidLink = paymentLink([
+        'reference' => 'NV-RESULT-PAID',
+        'token' => str_repeat('s', 64),
+        'status' => 'paid',
+        'paid_at' => now(),
+    ]);
+
+    $this->get(route('payments.return', $paidLink->token))
+        ->assertOk()
+        ->assertSee('Payment successful')
+        ->assertSee('Payment verified');
+});
+
 it('allows only an admin to create the authoritative payment link', function () {
     $this->get(route('admin.payment-links.create'))->assertRedirect(route('login'));
 
