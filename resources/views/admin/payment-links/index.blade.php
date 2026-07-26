@@ -35,7 +35,7 @@
                 @endif
             </td>
             <td><strong>{{ $link->currency }} {{ number_format((float)$link->amount,2) }}</strong></td>
-            <td>{{ $link->created_at->format('d M Y') }}<span class="nh-subtext">{{ $link->expires_at ? 'Expires '.$link->expires_at->format('d M Y, H:i') : 'No expiry' }}</span></td>
+            <td>{{ $link->created_at->format('d M Y') }}<span class="nh-subtext">{{ $link->expires_at ? 'Expires '.$link->expires_at->format('d M Y') : 'No expiry' }}</span></td>
             <td><span class="nh-badge {{ $link->status }}">{{ $link->status }}</span></td>
             <td><div class="nh-actions">
                 <button class="nh-btn nh-btn-secondary nh-btn-sm" type="button" onclick='copyPaymentUrl(@json($paymentUrl))'><i class="fa-regular fa-copy"></i> Copy</button>

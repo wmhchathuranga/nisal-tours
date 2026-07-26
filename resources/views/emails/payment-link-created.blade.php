@@ -85,7 +85,7 @@
                                                 <tr>
                                                     <td style="padding:11px 0 0;color:#718491;font-size:12px;">Valid until</td>
                                                     <td align="right" style="padding:11px 0 0;color:#173040;font-size:12px;font-weight:700;">
-                                                        {{ $paymentLink->expires_at->format('d M Y, h:i A') }}
+                                                        End of {{ $paymentLink->expires_at->format('d M Y') }}
                                                     </td>
                                                 </tr>
                                             @endif

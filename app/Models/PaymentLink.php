@@ -41,8 +41,7 @@ class PaymentLink extends Model
     public function hasCompleteCustomerDetails(): bool
     {
         return collect([
-            $this->customer_name, $this->customer_email, $this->customer_phone,
-            $this->customer_address, $this->customer_city, $this->customer_country,
+            $this->customer_name, $this->customer_phone, $this->customer_country,
         ])->every(fn ($value) => filled($value));
     }
 }

@@ -26,8 +26,8 @@ class PaymentController extends Controller
             'name' => $paymentLink->customer_name,
             'email' => $paymentLink->customer_email,
             'phone' => $paymentLink->customer_phone,
-            'address' => $paymentLink->customer_address,
-            'city' => $paymentLink->customer_city,
+            'address' => $paymentLink->customer_address ?? '',
+            'city' => $paymentLink->customer_city ?? '',
             'country' => $paymentLink->customer_country,
         ];
 

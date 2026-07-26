@@ -52,7 +52,7 @@
                 <div class="total">{{ $paymentLink->currency }} {{ number_format((float) $paymentLink->amount, 2) }}
                 </div>
                 @if ($paymentLink->expires_at)
-                    <small>Pay before {{ $paymentLink->expires_at->format('d M Y, h:i A') }}</small>
+                    <small>Pay before the end of {{ $paymentLink->expires_at->format('d M Y') }}</small>
                 @endif
             </div>
 
@@ -66,8 +66,8 @@
                     <h5>Customer details</h5>
                     <div class="detail mb-3">
                         <strong>{{ $paymentLink->customer_name }}</strong><br>{{ $paymentLink->customer_email }} ·
-                        {{ $paymentLink->customer_phone }}<br>{{ $paymentLink->customer_address }},
-                        {{ $paymentLink->customer_city }}, {{ $paymentLink->customer_country }}
+                        @if($paymentLink->customer_email){{ $paymentLink->customer_email }} · @endif{{ $paymentLink->customer_phone }}<br>
+                        {{ collect([$paymentLink->customer_address, $paymentLink->customer_city, $paymentLink->customer_country])->filter()->join(', ') }}
                     </div>
                     @if ($paymentLink->hasCompleteCustomerDetails())
                         <button class="th-btn" type="submit">Pay securely with PayHere</button>

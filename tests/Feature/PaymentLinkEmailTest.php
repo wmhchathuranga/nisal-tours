@@ -44,12 +44,10 @@ it('lets an admin create a payment URL and queue the branded email', function ()
         'description' => 'Hotels, transport and excursions.',
         'amount' => '250000.00',
         'currency' => 'LKR',
-        'expires_at' => now()->addDays(3)->format('Y-m-d\TH:i'),
+        'expires_at' => now()->addDays(3)->format('Y-m-d'),
         'customer_name' => 'Test Customer',
         'customer_email' => 'customer@example.com',
         'customer_phone' => '+94770000000',
-        'customer_address' => '1 Main Street',
-        'customer_city' => 'Colombo',
         'customer_country' => 'Sri Lanka',
         'submission_action' => 'create_and_send',
     ])->assertRedirect(route('admin.payment-links.index'));
@@ -64,6 +62,50 @@ it('lets an admin create a payment URL and queue the branded email', function ()
         fn (SendPaymentLinkEmail $job) => $job->paymentLink->is($link)
             && $job->recipient === 'customer@example.com'
     );
+});
+
+it('creates a URL without an email address or postal address', function () {
+    Queue::fake();
+    $expiryDate = now()->addDays(2);
+
+    $this->actingAs(paymentEmailAdmin())->post(route('admin.payment-links.store'), [
+        'reference' => 'NV-URL-ONLY',
+        'title' => 'Custom Sri Lanka tour',
+        'amount' => '125000.00',
+        'currency' => 'LKR',
+        'expires_at' => $expiryDate->format('Y-m-d'),
+        'customer_name' => 'Walk-in Customer',
+        'customer_phone' => '+94771111111',
+        'customer_country' => 'Sri Lanka',
+        'submission_action' => 'create',
+    ])->assertRedirect(route('admin.payment-links.index'));
+
+    $link = PaymentLink::where('reference', 'NV-URL-ONLY')->firstOrFail();
+
+    expect($link->customer_email)->toBeNull()
+        ->and($link->customer_address)->toBeNull()
+        ->and($link->customer_city)->toBeNull()
+        ->and($link->expires_at->format('Y-m-d H:i:s'))->toBe($expiryDate->format('Y-m-d').' 23:59:59');
+
+    Queue::assertNothingPushed();
+});
+
+it('requires an email address only when creating and sending an email', function () {
+    Queue::fake();
+
+    $this->actingAs(paymentEmailAdmin())->post(route('admin.payment-links.store'), [
+        'reference' => 'NV-EMAIL-REQUIRED',
+        'title' => 'Custom Sri Lanka tour',
+        'amount' => '125000.00',
+        'currency' => 'LKR',
+        'customer_name' => 'Email Customer',
+        'customer_phone' => '+94772222222',
+        'customer_country' => 'Sri Lanka',
+        'submission_action' => 'create_and_send',
+    ])->assertSessionHasErrors('customer_email');
+
+    $this->assertDatabaseMissing('payment_links', ['reference' => 'NV-EMAIL-REQUIRED']);
+    Queue::assertNothingPushed();
 });
 
 it('sends the branded email and records successful delivery', function () {

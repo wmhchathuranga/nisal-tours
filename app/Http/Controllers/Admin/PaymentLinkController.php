@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Jobs\SendPaymentLinkEmail;
 use App\Models\PaymentLink;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
@@ -43,21 +44,23 @@ class PaymentLinkController extends Controller
         $data = $request->validate([
             'reference' => ['required', 'string', 'max:100', 'unique:payment_links,reference'],
             'customer_name' => ['required', 'string', 'max:255'],
-            'customer_email' => ['required', 'email', 'max:255'],
+            'customer_email' => ['nullable', 'required_if:submission_action,create_and_send', 'email', 'max:255'],
             'customer_phone' => ['required', 'string', 'max:30'],
-            'customer_address' => ['required', 'string', 'max:255'],
-            'customer_city' => ['required', 'string', 'max:100'],
             'customer_country' => ['required', 'string', 'max:100'],
             'title' => ['required', 'string', 'max:255'],
             'description' => ['nullable', 'string', 'max:2000'],
             'amount' => ['required', 'numeric', 'min:0.01', 'max:99999999.99'],
             'currency' => ['required', Rule::in(['LKR', 'USD'])],
-            'expires_at' => ['nullable', 'date', 'after:now'],
+            'expires_at' => ['nullable', 'date_format:Y-m-d', 'after_or_equal:today'],
             'submission_action' => ['nullable', Rule::in(['create', 'create_and_send'])],
         ]);
 
         $submissionAction = $data['submission_action'] ?? 'create';
         unset($data['submission_action']);
+
+        $data['expires_at'] = isset($data['expires_at'])
+            ? Carbon::createFromFormat('Y-m-d', $data['expires_at'])->endOfDay()
+            : null;
 
         $paymentLink = PaymentLink::create($data + [
             'token' => Str::random(64),
