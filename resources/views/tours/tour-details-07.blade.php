@@ -192,6 +192,7 @@ Tour Details Area
                                         <li>Comfortable A/C vehicle</li>
                                         <li>3 star hotels (bed & breakfast)</li>
                                         <li>Parking & highway charges</li>
+                                        <li>Site entrance tickets</li>
                                         <li>Driver accommodation & meals</li>
                                     </ul>
                                 </div>
@@ -199,7 +200,7 @@ Tour Details Area
                                     <ul>
                                         <li>International air tickets</li>
                                         <li>Visa fees</li>
-                                        <li>Site entrance tickets</li>
+
                                         <li>Personal expenses & tips</li>
                                     </ul>
                                 </div>

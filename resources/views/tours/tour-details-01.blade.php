@@ -225,6 +225,7 @@ Tour Details Area
                                         <li>Comfortable A/C Vehicle</li>
                                         <li>3 Star Hotels (Bed & Breakfast)</li>
                                         <li>Parking & Highway Charges</li>
+                                        <li>Site Entrance Tickets</li>
                                         <li>Driver Accommodation & Meals</li>
                                     </ul>
                                 </div>
@@ -232,7 +233,7 @@ Tour Details Area
                                     <ul>
                                         <li>Air Tickets</li>
                                         <li>Visa Fees</li>
-                                        <li>Site Entrance Tickets</li>
+
                                         <li>Personal Expenses</li>
                                         <li>Tips & Gratuities</li>
                                     </ul>
