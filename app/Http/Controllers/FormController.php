@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class FormController extends Controller
 {
@@ -14,6 +15,7 @@ class FormController extends Controller
         $form_type = $request->input('form_type');
         $messageText = '';
         $validatedData = [];
+        $minimumTransferDate = today()->addDays(2)->toDateString();
 
         // --- Dynamic Validation and Message Generation based on Form Type ---
         switch ($form_type) {
@@ -22,17 +24,20 @@ class FormController extends Controller
                 // 1. Validation for Arrival/Transport Booking
                 $validatedData = $request->validate([
                     'name' => 'required|string|max:255',
-                    'pax' => 'required|integer|min:1|max:100',
+                    'pax' => 'required|integer|min:1|max:15',
                     'flight_no' => 'required|string|max:50',
-                    'date' => 'required|date',
+                    'date' => 'required|date|after_or_equal:'.$minimumTransferDate,
                     'time' => 'required|date_format:H:i',
                     'pickup_address' => 'required|string|max:255',
                     'drop_address' => 'required|string|max:255',
                     'luggage_large' => 'nullable|integer|min:0|max:100',
                     'luggage_small' => 'nullable|integer|min:0|max:100',
-                    'vehicle_type' => 'required|string|max:50',
+                    'vehicle_type' => 'required|in:car,van_small,van_large,bus1',
                     'special_requirements' => 'nullable|string|max:2000',
+                ], [
+                    'date.after_or_equal' => 'Please select an arrival date at least two days from today.',
                 ]);
+                $this->ensureVehicleCapacity($validatedData);
 
                 // 2. Message generation for Arrival/Booking
                 $messageText = "*NEW ARRIVAL TRANSPORT BOOKING* \n\n".
@@ -44,7 +49,7 @@ class FormController extends Controller
                     '*Drop-off:* '.$validatedData['drop_address']."\n\n".
                     '*Vehicle Type:* '.ucfirst(str_replace('_', ' ', $validatedData['vehicle_type']))."\n".
                     '*Bags:* Large ('.($validatedData['luggage_large'] ?? 0).'), Small ('.($validatedData['luggage_small'] ?? 0).")\n\n".
-                    "*Special Requirements:*\n".($validatedData['special_requirements'] ?: 'None');
+                    "*Special Requirements:*\n".($validatedData['special_requirements'] ?? 'None');
                 break;
 
             case 'Departure': // Case for the Departure Transfer form
@@ -52,17 +57,20 @@ class FormController extends Controller
                 // 1. Validation for Departure Transfer Booking
                 $validatedData = $request->validate([
                     'name' => 'required|string|max:255',
-                    'pax' => 'required|integer|min:1|max:100',
+                    'pax' => 'required|integer|min:1|max:15',
                     'flight_no' => 'required|string|max:50',
-                    'date' => 'required|date',
+                    'date' => 'required|date|after_or_equal:'.$minimumTransferDate,
                     'time' => 'required|date_format:H:i',
                     'pickup_address' => 'required|string|max:255',
                     'drop_address' => 'required|string|max:255',
                     'luggage_large' => 'nullable|integer|min:0|max:100',
                     'luggage_small' => 'nullable|integer|min:0|max:100',
-                    'vehicle_type' => 'required|string|max:50',
+                    'vehicle_type' => 'required|in:car,van_small,van_large,bus1',
                     'special_requirements' => 'nullable|string|max:2000',
+                ], [
+                    'date.after_or_equal' => 'Please select a departure date at least two days from today.',
                 ]);
+                $this->ensureVehicleCapacity($validatedData);
 
                 // 2. Message generation for Departure Transfer Booking
                 $messageText = "*NEW DEPARTURE TRANSPORT BOOKING* \n\n".
@@ -74,7 +82,7 @@ class FormController extends Controller
                     '*Drop-off:* '.$validatedData['drop_address']."\n\n".
                     '*Vehicle Type:* '.ucfirst(str_replace('_', ' ', $validatedData['vehicle_type']))."\n".
                     '*Bags:* Large ('.($validatedData['luggage_large'] ?? 0).'), Small ('.($validatedData['luggage_small'] ?? 0).")\n\n".
-                    "*Special Requirements:*\n".($validatedData['special_requirements'] ?: 'None');
+                    "*Special Requirements:*\n".($validatedData['special_requirements'] ?? 'None');
                 break;
 
             case 'Tour': // Matches the hidden field value in your first form (Quotation/Excursion)
@@ -231,5 +239,23 @@ class FormController extends Controller
             'message' => 'Your contact request has been submitted!',
             'whatsapp_link' => $whatsappLink,
         ]);
+    }
+
+    private function ensureVehicleCapacity(array $booking): void
+    {
+        $capacities = [
+            'car' => 2,
+            'van_small' => 5,
+            'van_large' => 8,
+            'bus1' => 15,
+        ];
+
+        $capacity = $capacities[$booking['vehicle_type']];
+
+        if ($booking['pax'] > $capacity) {
+            throw ValidationException::withMessages([
+                'vehicle_type' => "The selected vehicle can carry up to {$capacity} passengers. Please choose a larger vehicle.",
+            ]);
+        }
     }
 }

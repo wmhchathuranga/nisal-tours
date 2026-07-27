@@ -42,6 +42,19 @@
         .bg-smoke {
             background-color: #79DAF0 !important;
         }
+
+        .vehicle-radio:disabled + .vehicle-card-label {
+            cursor: not-allowed;
+            filter: grayscale(1);
+            opacity: 0.45;
+            pointer-events: none;
+        }
+
+        .vehicle-capacity-help {
+            color: #315366;
+            display: block;
+            margin-top: 8px;
+        }
     </style>
 
 
@@ -856,10 +869,14 @@
                                                     <div class="form-group col-md-6"><input type="text"
                                                             class="form-control" name="name"
                                                             placeholder="Full Name*" required></div>
-                                                    <div class="form-group col-md-6"><input type="number"
-                                                            class="form-control" name="pax"
-                                                            placeholder="No. of Passengers (Pax)*" required
-                                                            min="1"></div>
+                                                    <div class="form-group col-md-6"><input type="text"
+                                                            class="form-control pax-input" name="pax"
+                                                            inputmode="numeric" pattern="[0-9]*" maxlength="2"
+                                                            aria-describedby="arrival-pax-help"
+                                                            placeholder="No. of Passengers (Pax)*" required>
+                                                        <small id="arrival-pax-help" class="form-text">Enter 1 to 15
+                                                            passengers.</small>
+                                                    </div>
                                                 </div>
 
                                                 <div class="row">
@@ -872,7 +889,10 @@
                                                     <div class="form-group col-md-6">
                                                         <label class="form-label">Arrival Date:</label>
                                                         <input type="date" class="form-control date-picker"
-                                                            name="date" placeholder="Arrival Date*" required>
+                                                            name="date" min="{{ today()->addDays(2)->toDateString() }}"
+                                                            placeholder="Arrival Date*" required>
+                                                        <small class="form-text">Please book at least 2 days in
+                                                            advance.</small>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label
@@ -936,7 +956,8 @@
 
                                                             <input type="radio" id="vehicle-car"
                                                                 name="vehicle_type" value="car"
-                                                                class="vehicle-radio" hidden required checked>
+                                                                class="vehicle-radio" data-capacity="2" hidden required
+                                                                checked>
                                                             <label for="vehicle-car" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -959,7 +980,7 @@
 
                                                             <input type="radio" id="vehicle-van-small"
                                                                 name="vehicle_type" value="van_small"
-                                                                class="vehicle-radio" hidden>
+                                                                class="vehicle-radio" data-capacity="5" hidden>
                                                             <label for="vehicle-van-small" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -982,7 +1003,7 @@
 
                                                             <input type="radio" id="vehicle-van-large"
                                                                 name="vehicle_type" value="van_large"
-                                                                class="vehicle-radio" hidden>
+                                                                class="vehicle-radio" data-capacity="8" hidden>
                                                             <label for="vehicle-van-large" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -1007,7 +1028,7 @@
 
                                                             <input type="radio" id="vehicle-bus-1"
                                                                 name="vehicle_type" value="bus1"
-                                                                class="vehicle-radio" hidden>
+                                                                class="vehicle-radio" data-capacity="15" hidden>
                                                             <label for="vehicle-bus-1" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -1038,6 +1059,8 @@
                                                         </button>
 
                                                     </div>
+                                                    <small class="vehicle-capacity-help">Vehicle options update
+                                                        automatically for the passenger count.</small>
                                                 </div>
 
                                                 <div class="form-group mb-4">
@@ -1210,10 +1233,14 @@
                                                     <div class="form-group col-md-6"><input type="text"
                                                             class="form-control" name="name"
                                                             placeholder="Full Name*" required></div>
-                                                    <div class="form-group col-md-6"><input type="number"
-                                                            class="form-control" name="pax"
-                                                            placeholder="No. of Passengers (Pax)*" required
-                                                            min="1"></div>
+                                                    <div class="form-group col-md-6"><input type="text"
+                                                            class="form-control pax-input" name="pax"
+                                                            inputmode="numeric" pattern="[0-9]*" maxlength="2"
+                                                            aria-describedby="departure-pax-help"
+                                                            placeholder="No. of Passengers (Pax)*" required>
+                                                        <small id="departure-pax-help" class="form-text">Enter 1 to 15
+                                                            passengers.</small>
+                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="form-group col-md-4"><input type="text"
@@ -1224,7 +1251,10 @@
                                                     <div class="form-group col-md-6">
                                                         <label class="form-label">Departure Date:</label>
                                                         <input type="date" class="form-control date-picker"
-                                                            name="date" placeholder="Departure Date*" required>
+                                                            name="date" min="{{ today()->addDays(2)->toDateString() }}"
+                                                            placeholder="Departure Date*" required>
+                                                        <small class="form-text">Please book at least 2 days in
+                                                            advance.</small>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label class="form-label">Departure Time:</label>
@@ -1271,7 +1301,8 @@
 
                                                             <input type="radio" id="vehicle-car2"
                                                                 name="vehicle_type" value="car"
-                                                                class="vehicle-radio" hidden required checked>
+                                                                class="vehicle-radio" data-capacity="2" hidden required
+                                                                checked>
                                                             <label for="vehicle-car2" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -1294,7 +1325,7 @@
 
                                                             <input type="radio" id="vehicle-van-small2"
                                                                 name="vehicle_type" value="van_small"
-                                                                class="vehicle-radio" hidden>
+                                                                class="vehicle-radio" data-capacity="5" hidden>
                                                             <label for="vehicle-van-small2"
                                                                 class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
@@ -1318,7 +1349,7 @@
 
                                                             <input type="radio" id="vehicle-van-large2"
                                                                 name="vehicle_type" value="van_large"
-                                                                class="vehicle-radio" hidden>
+                                                                class="vehicle-radio" data-capacity="8" hidden>
                                                             <label for="vehicle-van-large2"
                                                                 class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
@@ -1344,7 +1375,7 @@
 
                                                             <input type="radio" id="vehicle-bus-12"
                                                                 name="vehicle_type" value="bus1"
-                                                                class="vehicle-radio" hidden>
+                                                                class="vehicle-radio" data-capacity="15" hidden>
                                                             <label for="vehicle-bus-12" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -1375,6 +1406,8 @@
                                                         </button>
 
                                                     </div>
+                                                    <small class="vehicle-capacity-help">Vehicle options update
+                                                        automatically for the passenger count.</small>
                                                 </div>
 
                                                 <div class="form-group mb-4">
@@ -1471,6 +1504,39 @@
         let bookingForms = document.querySelectorAll('.th-form');
 
         bookingForms.forEach(bookingForm => {
+            const paxInput = bookingForm.querySelector('.pax-input');
+            const vehicleOptions = [...bookingForm.querySelectorAll('.vehicle-radio[data-capacity]')];
+
+            if (paxInput && vehicleOptions.length) {
+                const updateVehicleOptions = () => {
+                    paxInput.value = paxInput.value.replace(/\D/g, '').slice(0, 2);
+                    const passengers = Number.parseInt(paxInput.value, 10) || 0;
+                    const hasValue = paxInput.value !== '';
+
+                    paxInput.setCustomValidity(
+                        hasValue && (passengers < 1 || passengers > 15)
+                            ? 'Please enter between 1 and 15 passengers.'
+                            : ''
+                    );
+
+                    vehicleOptions.forEach((option) => {
+                        const unavailable = passengers > Number(option.dataset.capacity);
+                        option.disabled = unavailable;
+                        option.nextElementSibling?.setAttribute('aria-disabled', unavailable ? 'true' : 'false');
+                    });
+
+                    const selected = vehicleOptions.find((option) => option.checked);
+                    if (selected?.disabled) {
+                        const smallestAvailable = vehicleOptions.find((option) => !option.disabled);
+                        if (smallestAvailable) {
+                            smallestAvailable.checked = true;
+                        }
+                    }
+                };
+
+                paxInput.addEventListener('input', updateVehicleOptions);
+                updateVehicleOptions();
+            }
 
             // let bookingForm = document.getElementById('custom-tour-booking-form');
             bookingForm.addEventListener('submit', function(e) {
