@@ -224,7 +224,7 @@
             <div class="nh-badge">
                 <i class="fa-solid fa-plane"></i> TESTIMONIALS
             </div>
-            <h2 class="nh-main-title">What Our Customers Are Saying<br>About Us?</h2>
+            <h2 class="nh-main-title">What Customers Say About Us</h2>
         </div>
 
         <div class="swiper nh-swiper nh-relative-wrap">

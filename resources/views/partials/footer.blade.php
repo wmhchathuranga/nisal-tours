@@ -253,19 +253,16 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="widget footer-widget">
                         <div class="th-widget-about">
-                            <div class="about-logo">
+                            <div class="about-logo ps-5">
                                 <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo-white.svg') }}"
                                         alt="Bitrate"></a>
                             </div>
-                            <p class="about-text" style="text-align: justify; margin-bottom: 0px">
-                                We
-                                provide you the most
-                                hassle-free and unforgettable
-                                travel experiences in Sri Lanka. We wormly welcome you to
-                                explore all the breathtaking destinations and create lifelong memories with your trusted
-                                travel partner.
+                            <p class="about-text" style="text-align: center; margin-bottom: 0px;">
+                                We provide the most hassle free and unforgettable travel experience in Sri Lanka. We
+                                warmly invite you to discover Sri Lanka’s breathtaking destinations and create lifelong
+                                memories with your trusted travel partner.
                             </p>
-                            <p style="text-align:right; margin-top: 0px;">
+                            <p style="text-align:center; margin-top: 10px;">
                                 - Novara Holidays -
                             </p>
                             <div class="th-social text-center">
@@ -311,7 +308,7 @@
 
                             <div class="col-md-5 mt-4 mt-md-0">
                                 <h5 style="color: #fff; margin-bottom: 15px; font-size: 18px; text-align: left;">
-                                    England Office</h5>
+                                    UK Office</h5>
                                 <div class="th-widget-contact">
                                     <div class="info-box_text">
                                         <div class="icon"><img src="{{ asset('assets/img/icon/location-dot.svg') }}"
@@ -319,8 +316,7 @@
                                         </div>
                                         <div class="details">
                                             <p>No. 18,<br>Astra Court,<br>King Georges Avenue,<br>
-                                                Watford WD187TA,<br>
-                                                London
+                                                Watford WD187TA
                                             <p>
                                         </div>
                                     </div>

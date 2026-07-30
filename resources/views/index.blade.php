@@ -78,10 +78,10 @@
                         <div class="container">
                             <div class="hero-style1">
                                 {{-- <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Get unforgetable pleasure with us</span> --}}
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make
-                                    unforgetable memories with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Create
+                                    unforgettable memories with us.</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                    Let’s make your best trip with us </h1>
+                                    Let’s create your perfect journey together.</h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
@@ -97,8 +97,8 @@
                         </div>
                         <div class="container">
                             <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make
-                                    unforgetable memories with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Create
+                                    unforgettable memories with us.</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Natural Wonder of the world </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -117,8 +117,8 @@
                         </div>
                         <div class="container">
                             <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Make
-                                    unforgetable memories with us</span>
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Create
+                                    unforgettable memories with us.</span>
                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
                                     Explore beauty of the whole world </h1>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
@@ -871,7 +871,7 @@
     <div class="main-heading-wrapper">
         <span class="sub-title text-center"
             style="font-size: 3rem; color: #113D48; margin-bottom: 0.5rem; font-weight: 400; display: block;">
-            WHY US <span style="font-size: 4rem; font-weight: 400;">...?</span>
+            WHY CHOOSE NOVARA HOLIDAYS?
         </span>
     </div>
 
@@ -3045,7 +3045,7 @@
                 <div class="nh-badge">
                     <i class="fa-solid fa-plane"></i> TESTIMONIALS
                 </div>
-                <h2 class="nh-main-title">What Our Customers Are Saying<br>About Us?</h2>
+                <h2 class="nh-main-title">What Customers Say About Us</h2>
             </div>
 
             <div class="swiper nh-swiper nh-relative-wrap pb-5 pt-5">

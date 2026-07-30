@@ -486,9 +486,9 @@
                             <img src="assets/img/icon/location-dot2.svg" alt="Location Icon">
                         </div>
                         <div class="about-contact-details">
-                            <h6 class="box-title">England Office</h6>
+                            <h6 class="box-title">UK Office</h6>
                             <p class="about-contact-details-text"><strong>Novara Holidays (Pvt) Ltd.</strong></p>
-                            <p class="about-contact-details-text">No. 18, Astra Court, King Georges Avenue,<br>London, Watford
+                            <p class="about-contact-details-text">No. 18, Astra Court, King Georges Avenue,<br>Watford
                                 WD187TA</p>
 
                             <div style="margin-top: 20px;">

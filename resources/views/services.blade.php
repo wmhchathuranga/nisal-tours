@@ -643,15 +643,7 @@
                                         <h2 class="text-light sec-title mb-20 pe-xl-5 me-xl-5 heading">Plan Your Trip
                                             With us</h2>
 
-                                        <p class="sec-text mb-30">There are many variations of passages of available
-                                            but
-                                            the majority
-                                            have
-                                            suffered alteration in some form, by injected hum randomised words which
-                                            don't
-                                            look even
-                                            slightly.
-                                        </p>
+                                        <p class="sec-text mb-30">There are many variations of packages available.</p>
                                     </div>
                                     <div class="about-item-wrap">
                                         <div class="about-item">
@@ -660,9 +652,8 @@
                                             </div>
                                             <div class="about-item_centent">
                                                 <h5 class="box-title">Exclusive Trip</h5>
-                                                <p class="about-item_text">There are many variations of passages of
-                                                    available but the
-                                                    majority.</p>
+                                                <p class="about-item_text">There are many variations of packages
+                                                    available.</p>
                                             </div>
                                         </div>
                                         <div class="about-item">
@@ -671,9 +662,8 @@
                                             </div>
                                             <div class="about-item_centent">
                                                 <h5 class="box-title">Professional Guide</h5>
-                                                <p class="about-item_text">There are many variations of passages of
-                                                    available but the
-                                                    majority.</p>
+                                                <p class="about-item_text">There are many variations of packages
+                                                    available.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -699,8 +689,9 @@
                                                 placeholder="Name*" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="number" class="form-control" name="pax"
-                                                placeholder="Pax*" required min="1">
+                                            <input type="text" class="form-control pax-input" name="pax"
+                                                inputmode="numeric" pattern="[0-9]*" maxlength="3" data-max-pax="100"
+                                                placeholder="Pax*" required>
                                         </div>
                                     </div>
 
@@ -872,6 +863,7 @@
                                                     <div class="form-group col-md-6"><input type="text"
                                                             class="form-control pax-input" name="pax"
                                                             inputmode="numeric" pattern="[0-9]*" maxlength="2"
+                                                            data-max-pax="15"
                                                             aria-describedby="arrival-pax-help"
                                                             placeholder="No. of Passengers (Pax)*" required>
                                                         <small id="arrival-pax-help" class="form-text">Enter 1 to 15
@@ -1236,6 +1228,7 @@
                                                     <div class="form-group col-md-6"><input type="text"
                                                             class="form-control pax-input" name="pax"
                                                             inputmode="numeric" pattern="[0-9]*" maxlength="2"
+                                                            data-max-pax="15"
                                                             aria-describedby="departure-pax-help"
                                                             placeholder="No. of Passengers (Pax)*" required>
                                                         <small id="departure-pax-help" class="form-text">Enter 1 to 15
@@ -1507,15 +1500,18 @@
             const paxInput = bookingForm.querySelector('.pax-input');
             const vehicleOptions = [...bookingForm.querySelectorAll('.vehicle-radio[data-capacity]')];
 
-            if (paxInput && vehicleOptions.length) {
+            if (paxInput) {
                 const updateVehicleOptions = () => {
-                    paxInput.value = paxInput.value.replace(/\D/g, '').slice(0, 2);
+                    const maximumPassengers = Number(paxInput.dataset.maxPax || 100);
+                    const maximumLength = String(maximumPassengers).length;
+
+                    paxInput.value = paxInput.value.replace(/\D/g, '').slice(0, maximumLength);
                     const passengers = Number.parseInt(paxInput.value, 10) || 0;
                     const hasValue = paxInput.value !== '';
 
                     paxInput.setCustomValidity(
-                        hasValue && (passengers < 1 || passengers > 15)
-                            ? 'Please enter between 1 and 15 passengers.'
+                        hasValue && (passengers < 1 || passengers > maximumPassengers)
+                            ? `Please enter between 1 and ${maximumPassengers} passengers.`
                             : ''
                     );
 
