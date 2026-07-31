@@ -15,6 +15,24 @@
             scroll-margin-top: 210px;
         }
 
+        /* Keep every fading hero slide at the same height so an inactive image cannot show underneath. */
+        #hero,
+        #heroSlide1 {
+            overflow: hidden;
+        }
+
+        #heroSlide1 .swiper-wrapper {
+            align-items: stretch;
+        }
+
+        #heroSlide1 .swiper-slide {
+            height: auto;
+        }
+
+        #heroSlide1 .hero-inner {
+            height: 100%;
+        }
+
         /* Custom Auth Buttons Styling */
         .custom-auth-btn {
             padding: 15px 24px;
