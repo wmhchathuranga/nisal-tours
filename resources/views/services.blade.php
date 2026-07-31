@@ -43,7 +43,7 @@
             background-color: #79DAF0 !important;
         }
 
-        .vehicle-radio:disabled + .vehicle-card-label {
+        .vehicle-radio:disabled+.vehicle-card-label {
             cursor: not-allowed;
             filter: grayscale(1);
             opacity: 0.45;
@@ -690,8 +690,8 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <input type="text" class="form-control pax-input" name="pax"
-                                                inputmode="numeric" pattern="[0-9]*" maxlength="3" data-max-pax="100"
-                                                placeholder="Pax*" required>
+                                                inputmode="numeric" pattern="[0-9]*" maxlength="3"
+                                                data-max-pax="100" placeholder="Pax*" required>
                                         </div>
                                     </div>
 
@@ -828,7 +828,8 @@
                                                                         <p class="about-item_text">Relax in a
                                                                             high-quality
                                                                             vehicle. Your driver handles the luggage and
-                                                                            takes you straight to your stop, ensuring
+                                                                            takes you straight to your destination,
+                                                                            ensuring
                                                                             your
                                                                             vacation starts instantly.</p>
                                                                     </div>
@@ -863,8 +864,7 @@
                                                     <div class="form-group col-md-6"><input type="text"
                                                             class="form-control pax-input" name="pax"
                                                             inputmode="numeric" pattern="[0-9]*" maxlength="2"
-                                                            data-max-pax="15"
-                                                            aria-describedby="arrival-pax-help"
+                                                            data-max-pax="15" aria-describedby="arrival-pax-help"
                                                             placeholder="No. of Passengers (Pax)*" required>
                                                         <small id="arrival-pax-help" class="form-text">Enter 1 to 15
                                                             passengers.</small>
@@ -881,7 +881,8 @@
                                                     <div class="form-group col-md-6">
                                                         <label class="form-label">Arrival Date:</label>
                                                         <input type="date" class="form-control date-picker"
-                                                            name="date" min="{{ today()->addDays(2)->toDateString() }}"
+                                                            name="date"
+                                                            min="{{ today()->addDays(2)->toDateString() }}"
                                                             placeholder="Arrival Date*" required>
                                                         <small class="form-text">Please book at least 2 days in
                                                             advance.</small>
@@ -948,8 +949,8 @@
 
                                                             <input type="radio" id="vehicle-car"
                                                                 name="vehicle_type" value="car"
-                                                                class="vehicle-radio" data-capacity="2" hidden required
-                                                                checked>
+                                                                class="vehicle-radio" data-capacity="2" hidden
+                                                                required checked>
                                                             <label for="vehicle-car" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -1228,8 +1229,7 @@
                                                     <div class="form-group col-md-6"><input type="text"
                                                             class="form-control pax-input" name="pax"
                                                             inputmode="numeric" pattern="[0-9]*" maxlength="2"
-                                                            data-max-pax="15"
-                                                            aria-describedby="departure-pax-help"
+                                                            data-max-pax="15" aria-describedby="departure-pax-help"
                                                             placeholder="No. of Passengers (Pax)*" required>
                                                         <small id="departure-pax-help" class="form-text">Enter 1 to 15
                                                             passengers.</small>
@@ -1244,7 +1244,8 @@
                                                     <div class="form-group col-md-6">
                                                         <label class="form-label">Departure Date:</label>
                                                         <input type="date" class="form-control date-picker"
-                                                            name="date" min="{{ today()->addDays(2)->toDateString() }}"
+                                                            name="date"
+                                                            min="{{ today()->addDays(2)->toDateString() }}"
                                                             placeholder="Departure Date*" required>
                                                         <small class="form-text">Please book at least 2 days in
                                                             advance.</small>
@@ -1294,8 +1295,8 @@
 
                                                             <input type="radio" id="vehicle-car2"
                                                                 name="vehicle_type" value="car"
-                                                                class="vehicle-radio" data-capacity="2" hidden required
-                                                                checked>
+                                                                class="vehicle-radio" data-capacity="2" hidden
+                                                                required checked>
                                                             <label for="vehicle-car2" class="vehicle-card-label">
                                                                 <div class="tour-box vehicle-tour-card">
                                                                     <div class="tour-box_img vehicle-img-area">
@@ -1510,15 +1511,16 @@
                     const hasValue = paxInput.value !== '';
 
                     paxInput.setCustomValidity(
-                        hasValue && (passengers < 1 || passengers > maximumPassengers)
-                            ? `Please enter between 1 and ${maximumPassengers} passengers.`
-                            : ''
+                        hasValue && (passengers < 1 || passengers > maximumPassengers) ?
+                        `Please enter between 1 and ${maximumPassengers} passengers.` :
+                        ''
                     );
 
                     vehicleOptions.forEach((option) => {
                         const unavailable = passengers > Number(option.dataset.capacity);
                         option.disabled = unavailable;
-                        option.nextElementSibling?.setAttribute('aria-disabled', unavailable ? 'true' : 'false');
+                        option.nextElementSibling?.setAttribute('aria-disabled', unavailable ? 'true' :
+                            'false');
                     });
 
                     const selected = vehicleOptions.find((option) => option.checked);
