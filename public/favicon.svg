@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Novara Holidays">
-    <rect width="256" height="256" rx="58" fill="#18abc3"/>
-    <ellipse cx="128" cy="128" rx="91" ry="57" fill="none" stroke="#ffffff" stroke-width="13" transform="rotate(-18 128 128)" opacity=".92"/>
-    <path d="M72 179V77h27l58 62V77h27v102h-25l-60-64v64H72z" fill="#ffffff"/>
-    <path d="M184 47l34-17-16 35-10-8-16 18-9-8 17-17-8-10 8 7z" fill="#ffffff"/>
-</svg>
