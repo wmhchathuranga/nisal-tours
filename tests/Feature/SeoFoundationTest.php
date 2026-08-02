@@ -28,6 +28,9 @@ it('keeps authentication pages out of search results', function () {
 it('publishes travel agency structured data on the homepage', function () {
     $this->get(route('home'))
         ->assertOk()
+        ->assertSee('<title>Novara Holidays | Sri Lanka Tours</title>', false)
+        ->assertSee('<link rel="icon" href="'.url('/favicon.ico').'" sizes="any">', false)
+        ->assertSee('<link rel="icon" type="image/svg+xml" href="'.url('/favicon.svg').'">', false)
         ->assertSee('application/ld+json', false)
         ->assertSee('"@type":"TravelAgency"', false)
         ->assertSee('"name":"Novara Holidays"', false);
