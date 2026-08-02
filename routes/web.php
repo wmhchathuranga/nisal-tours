@@ -90,6 +90,20 @@ Route::get('/', function () {
     return view('index', compact('testimonials', 'countries'));
 })->name('home');
 
+Route::get('/sitemap.xml', function () {
+    $urls = collect([
+        ['loc' => route('home'), 'priority' => '1.0', 'changefreq' => 'weekly'],
+        ['loc' => route('services'), 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['loc' => route('about'), 'priority' => '0.7', 'changefreq' => 'monthly'],
+        ['loc' => route('gallery'), 'priority' => '0.7', 'changefreq' => 'weekly'],
+        ['loc' => route('contact'), 'priority' => '0.6', 'changefreq' => 'yearly'],
+    ]);
+
+    return response()
+        ->view('sitemap', compact('urls'))
+        ->header('Content-Type', 'application/xml; charset=UTF-8');
+})->name('sitemap');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
