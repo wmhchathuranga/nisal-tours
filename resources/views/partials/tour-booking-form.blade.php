@@ -25,13 +25,15 @@
             </div>
 
             <div class="row">
-                <div class="form-group col-md-6">
+                <div class="form-group">
                     <input type="number" class="form-control" name="pax" placeholder="Pax*" required
                         min="1">
                 </div>
 
-                <div class="form-group col-md-6">
-                    <input type="date" class="form-control" name="date" placeholder="Date*" required>
+                <div class="form-group">
+                    <input type="date" class="form-control" name="date"
+                        min="{{ today()->addDays(7)->toDateString() }}" placeholder="Date*" required>
+                    <small class="form-text text-muted">- Minimum 7 days in advance -</small>
                 </div>
             </div>
 

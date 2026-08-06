@@ -16,6 +16,7 @@ class FormController extends Controller
         $messageText = '';
         $validatedData = [];
         $minimumTransferDate = today()->addDays(2)->toDateString();
+        $minimumTourDate = today()->addDays(7)->toDateString();
 
         // --- Dynamic Validation and Message Generation based on Form Type ---
         switch ($form_type) {
@@ -93,9 +94,11 @@ class FormController extends Controller
                     'tour' => 'required|string|max:255',
                     'name' => 'required|string|max:255',
                     'pax' => 'required|integer|min:1|max:100',
-                    'date' => 'required|date',
+                    'date' => 'required|date|after_or_equal:'.$minimumTourDate,
                     'vehicle_type' => 'required|string|max:50',
                     'message' => 'nullable|string|max:2000',
+                ], [
+                    'date.after_or_equal' => 'Please select a tour date at least seven days from today.',
                 ]);
 
                 // 2. Message generation for Excursion/Quotation
@@ -115,9 +118,11 @@ class FormController extends Controller
                 $validatedData = $request->validate([
                     'name' => 'required|string|max:255',
                     'pax' => 'required|integer|min:1|max:100',
-                    'arrival_date' => 'required|date',
+                    'arrival_date' => 'required|date|after_or_equal:'.$minimumTourDate,
                     'departure_date' => 'required|date|after_or_equal:arrival_date', // Added validation for dates
                     'message' => 'nullable|string|max:2000',
+                ], [
+                    'arrival_date.after_or_equal' => 'Please select an arrival date at least seven days from today.',
                 ]);
 
                 // 2. Message generation for Tour Quotation

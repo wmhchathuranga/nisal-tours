@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Carbon;
+use Illuminate\Foundation\Http\Middleware\ValidateCsrfToken;
 
 function transferBookingData(string $type, string $date): array
 {
@@ -23,6 +24,7 @@ function transferBookingData(string $type, string $date): array
 
 beforeEach(function () {
     Carbon::setTestNow('2026-07-27 10:00:00');
+    $this->withoutMiddleware(ValidateCsrfToken::class);
 });
 
 afterEach(function () {
@@ -59,6 +61,59 @@ it('rejects a non-numeric passenger count for a custom tour', function () {
         'departure_date' => '2026-08-15',
     ])->assertSessionHasErrors('pax');
 });
+
+it('rejects package tours and custom tours booked less than seven days ahead', function (string $type) {
+    $booking = $type === 'Tour'
+        ? [
+            'form_type' => 'Tour',
+            'source_page' => 'https://example.com/tour-details?tour_id=01',
+            'tour' => 'Sri Lanka Highlights',
+            'name' => 'Test Traveller',
+            'pax' => 2,
+            'date' => '2026-08-02',
+            'vehicle_type' => 'car',
+            'message' => '',
+        ]
+        : [
+            'form_type' => 'Custom_Tour',
+            'name' => 'Test Traveller',
+            'pax' => 2,
+            'arrival_date' => '2026-08-02',
+            'departure_date' => '2026-08-10',
+            'message' => '',
+        ];
+
+    $field = $type === 'Tour' ? 'date' : 'arrival_date';
+
+    $this->post(route('tour-booking.submit'), $booking)
+        ->assertSessionHasErrors($field);
+})->with(['Tour', 'Custom_Tour']);
+
+it('accepts package tours and custom tours from the seven-day boundary', function (string $type) {
+    $booking = $type === 'Tour'
+        ? [
+            'form_type' => 'Tour',
+            'source_page' => 'https://example.com/tour-details?tour_id=01',
+            'tour' => 'Sri Lanka Highlights',
+            'name' => 'Test Traveller',
+            'pax' => 2,
+            'date' => '2026-08-03',
+            'vehicle_type' => 'car',
+            'message' => '',
+        ]
+        : [
+            'form_type' => 'Custom_Tour',
+            'name' => 'Test Traveller',
+            'pax' => 2,
+            'arrival_date' => '2026-08-03',
+            'departure_date' => '2026-08-10',
+            'message' => '',
+        ];
+
+    $this->postJson(route('tour-booking.submit'), $booking)
+        ->assertOk()
+        ->assertJson(['success' => true]);
+})->with(['Tour', 'Custom_Tour']);
 
 it('rejects passenger groups larger than the available vehicles', function (string $type) {
     $booking = transferBookingData($type, '2026-07-29');
@@ -110,4 +165,22 @@ it('sets the two-day minimum on both transfer calendars', function () {
         ->and(substr_count($response->getContent(), 'data-capacity="5"'))->toBe(2)
         ->and(substr_count($response->getContent(), 'data-capacity="8"'))->toBe(2)
         ->and(substr_count($response->getContent(), 'data-capacity="15"'))->toBe(2);
+});
+
+it('sets the seven-day minimum on the custom tour calendars', function () {
+    $response = $this->get(route('services'))->assertOk();
+
+    expect(substr_count($response->getContent(), 'min="2026-08-03"'))->toBe(2)
+        ->and($response->getContent())->toContain('- Minimum 7 days in advance -');
+});
+
+it('sets the seven-day minimum on every package tour through the shared booking form', function () {
+    foreach (range(1, 8) as $tourId) {
+        $response = $this->get(route('tour-details', ['tour_id' => str_pad((string) $tourId, 2, '0', STR_PAD_LEFT)]))
+            ->assertOk();
+
+        expect($response->getContent())
+            ->toContain('min="2026-08-03"')
+            ->toContain('- Minimum 7 days in advance -');
+    }
 });

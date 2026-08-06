@@ -699,11 +699,14 @@
                                         <div class="form-group col-md-6">
                                             <label for="arrival_date">Arrival Date</label>
                                             <input type="date" class="form-control" name="arrival_date"
+                                                min="{{ today()->addDays(7)->toDateString() }}"
                                                 placeholder="Arrival Date*" required>
+                                            <small class="form-text text-muted">- Minimum 7 days in advance -</small>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="departure_date">Departure Date</label>
                                             <input type="date" class="form-control" name="departure_date"
+                                                min="{{ today()->addDays(7)->toDateString() }}"
                                                 placeholder="Departure Date*" required>
                                         </div>
                                     </div>
@@ -884,8 +887,8 @@
                                                             name="date"
                                                             min="{{ today()->addDays(2)->toDateString() }}"
                                                             placeholder="Arrival Date*" required>
-                                                        <small class="form-text">Please book at least 2 days in
-                                                            advance.</small>
+                                                        <small class="form-text">- Minimum 2 days in
+                                                            advance -</small>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label
@@ -1247,8 +1250,8 @@
                                                             name="date"
                                                             min="{{ today()->addDays(2)->toDateString() }}"
                                                             placeholder="Departure Date*" required>
-                                                        <small class="form-text">Please book at least 2 days in
-                                                            advance.</small>
+                                                        <small class="form-text">- Minimum 2 days in
+                                                            advance -</small>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label class="form-label">Departure Time:</label>
