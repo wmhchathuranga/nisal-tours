@@ -115,6 +115,45 @@ it('accepts package tours and custom tours from the seven-day boundary', functio
         ->assertJson(['success' => true]);
 })->with(['Tour', 'Custom_Tour']);
 
+it('rejects an undersized vehicle on a package tour', function () {
+    $this->post(route('tour-booking.submit'), [
+        'form_type' => 'Tour',
+        'source_page' => 'https://example.com/tour-details?tour_id=01',
+        'tour' => 'Sri Lanka Highlights',
+        'name' => 'Test Traveller',
+        'pax' => 4,
+        'date' => '2026-08-03',
+        'vehicle_type' => 'car',
+        'message' => '',
+    ])->assertSessionHasErrors('vehicle_type');
+});
+
+it('accepts a suitable vehicle on a package tour', function () {
+    $this->postJson(route('tour-booking.submit'), [
+        'form_type' => 'Tour',
+        'source_page' => 'https://example.com/tour-details?tour_id=01',
+        'tour' => 'Sri Lanka Highlights',
+        'name' => 'Test Traveller',
+        'pax' => 4,
+        'date' => '2026-08-03',
+        'vehicle_type' => 'van_small',
+        'message' => '',
+    ])->assertOk()->assertJson(['success' => true]);
+});
+
+it('rejects more than fifteen passengers on a package tour', function () {
+    $this->post(route('tour-booking.submit'), [
+        'form_type' => 'Tour',
+        'source_page' => 'https://example.com/tour-details?tour_id=01',
+        'tour' => 'Sri Lanka Highlights',
+        'name' => 'Test Traveller',
+        'pax' => 16,
+        'date' => '2026-08-03',
+        'vehicle_type' => 'bus1',
+        'message' => '',
+    ])->assertSessionHasErrors('pax');
+});
+
 it('rejects passenger groups larger than the available vehicles', function (string $type) {
     $booking = transferBookingData($type, '2026-07-29');
     $booking['pax'] = 16;
@@ -155,7 +194,7 @@ it('sets the two-day minimum on both transfer calendars', function () {
     $response = $this->get(route('services'))->assertOk();
 
     expect(substr_count($response->getContent(), 'min="2026-07-29"'))->toBe(2)
-        ->and(substr_count($response->getContent(), 'Please book at least 2 days in'))->toBe(2)
+        ->and(substr_count($response->getContent(), 'Minimum 2 days in'))->toBe(2)
         ->and(substr_count($response->getContent(), 'class="form-control pax-input"'))->toBe(3)
         ->and(substr_count($response->getContent(), 'inputmode="numeric"'))->toBe(3)
         ->and(substr_count($response->getContent(), 'data-max-pax="100"'))->toBe(1)
@@ -181,6 +220,12 @@ it('sets the seven-day minimum on every package tour through the shared booking 
 
         expect($response->getContent())
             ->toContain('min="2026-08-03"')
-            ->toContain('- Minimum 7 days in advance -');
+            ->toContain('- Minimum 7 days in advance -')
+            ->toContain('data-max-pax="15"')
+            ->toContain('data-capacity="2"')
+            ->toContain('data-capacity="5"')
+            ->toContain('data-capacity="8"')
+            ->toContain('data-capacity="15"')
+            ->toContain('Vehicle options update automatically');
     }
 });

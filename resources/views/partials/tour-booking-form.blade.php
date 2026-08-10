@@ -26,8 +26,10 @@
 
             <div class="row">
                 <div class="form-group">
-                    <input type="number" class="form-control" name="pax" placeholder="Pax*" required
-                        min="1">
+                    <input type="text" class="form-control pax-input" name="pax"
+                        inputmode="numeric" pattern="[0-9]*" maxlength="2" data-max-pax="15"
+                        aria-describedby="tour-pax-help" placeholder="Pax*" required>
+                    <small id="tour-pax-help" class="form-text">Enter 1 to 15 passengers.</small>
                 </div>
 
                 <div class="form-group">
@@ -47,8 +49,8 @@
 
                     <div class="vehicle-selection-wrapper pb-4" id="vehicle-scroller">
 
-                        <input type="radio" id="vehicle-car3" name="vehicle_type" value="car" class="vehicle-radio"
-                            hidden required checked>
+                        <input type="radio" id="vehicle-car3" name="vehicle_type" value="car"
+                            class="vehicle-radio" data-capacity="2" hidden required checked>
                         <label for="vehicle-car3" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
@@ -66,7 +68,7 @@
                         </label>
 
                         <input type="radio" id="vehicle-van-small3" name="vehicle_type" value="van_small"
-                            class="vehicle-radio" hidden>
+                            class="vehicle-radio" data-capacity="5" hidden>
                         <label for="vehicle-van-small3" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
@@ -84,7 +86,7 @@
                         </label>
 
                         <input type="radio" id="vehicle-van-large3" name="vehicle_type" value="van_large"
-                            class="vehicle-radio" hidden>
+                            class="vehicle-radio" data-capacity="8" hidden>
                         <label for="vehicle-van-large3" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
@@ -102,7 +104,7 @@
                         </label>
 
                         <input type="radio" id="vehicle-bus-13" name="vehicle_type" value="bus1"
-                            class="vehicle-radio" hidden>
+                            class="vehicle-radio" data-capacity="15" hidden>
                         <label for="vehicle-bus-13" class="vehicle-card-label">
                             <div class="tour-box vehicle-tour-card">
                                 <div class="tour-box_img vehicle-img-area">
@@ -127,6 +129,7 @@
                     </button>
 
                 </div>
+                <small class="vehicle-capacity-help">Vehicle options update automatically based on the passenger count.</small>
             </div>
 
             <div class="form-group mb-30">
@@ -164,6 +167,39 @@
 
 <script>
     let tourBookingForm = document.getElementById('tour-booking-form');
+    const tourPaxInput = tourBookingForm.querySelector('.pax-input');
+    const tourVehicleOptions = [...tourBookingForm.querySelectorAll('.vehicle-radio[data-capacity]')];
+
+    const updateTourVehicleOptions = () => {
+        tourPaxInput.value = tourPaxInput.value.replace(/\D/g, '').slice(0, 2);
+
+        const passengers = Number.parseInt(tourPaxInput.value, 10) || 0;
+        const hasValue = tourPaxInput.value !== '';
+
+        tourPaxInput.setCustomValidity(
+            hasValue && (passengers < 1 || passengers > 15)
+                ? 'Please enter between 1 and 15 passengers.'
+                : ''
+        );
+
+        tourVehicleOptions.forEach((option) => {
+            const unavailable = passengers > Number(option.dataset.capacity);
+            option.disabled = unavailable;
+            option.nextElementSibling?.setAttribute('aria-disabled', unavailable ? 'true' : 'false');
+        });
+
+        const selected = tourVehicleOptions.find((option) => option.checked);
+        if (selected?.disabled) {
+            const smallestAvailable = tourVehicleOptions.find((option) => !option.disabled);
+            if (smallestAvailable) {
+                smallestAvailable.checked = true;
+            }
+        }
+    };
+
+    tourPaxInput.addEventListener('input', updateTourVehicleOptions);
+    updateTourVehicleOptions();
+
     tourBookingForm.addEventListener('submit', function(e) {
         e.preventDefault();
         let modal = document.getElementById('successModal');

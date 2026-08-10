@@ -93,13 +93,14 @@ class FormController extends Controller
                     'source_page' => 'required|url|max:2048',
                     'tour' => 'required|string|max:255',
                     'name' => 'required|string|max:255',
-                    'pax' => 'required|integer|min:1|max:100',
+                    'pax' => 'required|integer|min:1|max:15',
                     'date' => 'required|date|after_or_equal:'.$minimumTourDate,
-                    'vehicle_type' => 'required|string|max:50',
+                    'vehicle_type' => 'required|in:car,van_small,van_large,bus1',
                     'message' => 'nullable|string|max:2000',
                 ], [
                     'date.after_or_equal' => 'Please select a tour date at least seven days from today.',
                 ]);
+                $this->ensureVehicleCapacity($validatedData);
 
                 // 2. Message generation for Excursion/Quotation
                 $messageText = $validatedData['source_page']."\n".
