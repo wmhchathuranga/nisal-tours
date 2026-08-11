@@ -22,6 +22,9 @@
                 <a href="{{ route('admin.payment-links.index') }}"
                     class="{{ request()->routeIs('admin.payment-links.*') ? 'active' : '' }}"><i
                         class="fa-solid fa-link"></i><span>Payment URLs</span></a>
+                <a href="{{ route('admin.traveller-details.index') }}"
+                    class="{{ request()->routeIs('admin.traveller-details.*') ? 'active' : '' }}"><i
+                        class="fa-solid fa-users"></i><span>Traveller details</span></a>
                 <a href="{{ route('admin.testimonials.index') }}"
                     class="{{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}"><i
                         class="fa-solid fa-comments"></i><span>Testimonials</span></a>

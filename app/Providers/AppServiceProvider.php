@@ -68,6 +68,12 @@ class AppServiceProvider extends ServiceProvider
             ];
         });
 
+        RateLimiter::for('traveller-details', function (Request $request) {
+            return Limit::perHour(10)->by(
+                'traveller-details|'.$request->route('token').'|'.$request->ip()
+            );
+        });
+
         ResetPassword::toMailUsing(function (object $notifiable, string $token) {
 
             $url = url(route('password.reset', [

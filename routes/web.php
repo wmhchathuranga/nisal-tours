@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\PaymentLinkController;
+use App\Http\Controllers\Admin\TravellerDetailRequestController as AdminTravellerDetailRequestController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\TravellerDetailController;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -66,7 +68,25 @@ Route::middleware(['auth', 'verified', 'is_admin'])->group(function () {
     Route::post('/admin/payment-links/{paymentLink}/email', [PaymentLinkController::class, 'sendEmail'])
         ->middleware('throttle:payment-email')
         ->name('admin.payment-links.email');
+    Route::get('/admin/traveller-details', [AdminTravellerDetailRequestController::class, 'index'])
+        ->name('admin.traveller-details.index');
+    Route::get('/admin/traveller-details/create', [AdminTravellerDetailRequestController::class, 'create'])
+        ->name('admin.traveller-details.create');
+    Route::post('/admin/traveller-details', [AdminTravellerDetailRequestController::class, 'store'])
+        ->middleware('throttle:authenticated-writes')
+        ->name('admin.traveller-details.store');
+    Route::get('/admin/traveller-details/{travellerDetailRequest}', [AdminTravellerDetailRequestController::class, 'show'])
+        ->name('admin.traveller-details.show');
+    Route::patch('/admin/traveller-details/{travellerDetailRequest}/status', [AdminTravellerDetailRequestController::class, 'updateStatus'])
+        ->middleware('throttle:authenticated-writes')
+        ->name('admin.traveller-details.status');
 });
+
+Route::get('/traveller-details/{token}', [TravellerDetailController::class, 'show'])
+    ->name('traveller-details.show');
+Route::post('/traveller-details/{token}', [TravellerDetailController::class, 'store'])
+    ->middleware('throttle:traveller-details')
+    ->name('traveller-details.store');
 
 Route::get('/pay/{token}', [PaymentController::class, 'show'])->name('payments.show');
 Route::post('/pay/{token}/checkout', [PaymentController::class, 'checkout'])
