@@ -117,8 +117,8 @@
                             <div class="hero-style1">
                                 <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Create
                                     unforgettable memories with us.</span>
-                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                    Natural Wonder of the world </h1>
+                                <h2 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
+                                    Natural Wonder of the world </h2>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
@@ -137,8 +137,8 @@
                             <div class="hero-style1">
                                 <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">Create
                                     unforgettable memories with us.</span>
-                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                    Explore beauty of the whole world </h1>
+                                <h2 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
+                                    Explore beauty of the whole world </h2>
                                 {{-- <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
                                     <a href="tour.html" class="th-btn th-icon">Transport Services</a>
                                     <a href="service.html" class="th-btn style2 th-icon">Accomodation</a>
