@@ -49,6 +49,13 @@ class AppServiceProvider extends ServiceProvider
             return Limit::perHour(10)->by($request->ip());
         });
 
+        RateLimiter::for('testimonials', function (Request $request) {
+            return [
+                Limit::perMinute(2)->by('testimonials-minute|'.$request->ip()),
+                Limit::perDay(5)->by('testimonials-day|'.$request->ip()),
+            ];
+        });
+
         RateLimiter::for('payhere-callback', function (Request $request) {
             return Limit::perMinute(120)->by($request->ip());
         });

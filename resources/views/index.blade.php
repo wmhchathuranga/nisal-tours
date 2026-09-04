@@ -3077,7 +3077,10 @@
                             <div class="nh-card">
                                 <div class="nh-avatar-wrap">
 
-                                    @if ($linkedUser && $linkedUser->profile_photo)
+                                    @if ($testi->profile_picture)
+                                        <img src="{{ Storage::disk('s3')->url($testi->profile_picture) }}"
+                                            alt="{{ $testi->full_name }}" class="nh-img">
+                                    @elseif ($linkedUser && $linkedUser->profile_photo)
                                         <img src="{{ Storage::disk('s3')->url($linkedUser->profile_photo) }}"
                                             alt="{{ $testi->full_name }}" class="nh-img">
                                     @else
@@ -3145,16 +3148,9 @@
 
         <div class="container mt-5 pt-5">
             <div class="col-12 text-center" style="height: 5rem">
-                @auth
-                    <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
-                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
-                    </button>
-                @else
-                    <button class="eco-section-btn" onclick="requireLogin()">
-                        <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
-                    </button>
-                @endauth
-
+                <button class="eco-section-btn" data-bs-toggle="modal" data-bs-target="#ecoTestimonialModal">
+                    <i class="fa-solid fa-pen-to-square"></i> Share Your Experience
+                </button>
             </div>
         </div>
     </section>
@@ -3176,58 +3172,62 @@
 
                         <div class="eco-img-upload-wrapper text-center mb-3">
                             <input type="file" id="ecoProfileUpload" name="profile_picture" class="d-none"
-                                value="{{ old('profile_photo') }}" accept="image/*">
+                                accept="image/jpeg,image/png,image/webp">
 
-                            @auth
-                                @if (auth()->user()->profile_photo)
-                                    <img src="{{ Storage::disk('s3')->url(auth()->user()->profile_photo) }}"
-                                        alt="Profile Picture" class="rounded-circle"
-                                        style="width: 150px; height: 150px; object-fit: cover;">
-                                @else
-                                    <img src="{{ 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) . '&background=random' }}"
-                                        class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-                                @endif
-                            @endauth
+                            @php
+                                $testimonialAvatar = auth()->user()?->profile_photo
+                                    ? Storage::disk('s3')->url(auth()->user()->profile_photo)
+                                    : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()?->name ?? 'Guest') . '&background=18aebd&color=fff';
+                            @endphp
+                            <label for="ecoProfileUpload" style="cursor: pointer;">
+                                <img id="ecoPreviewImg" src="{{ $testimonialAvatar }}"
+                                    data-default-src="{{ $testimonialAvatar }}" alt="Profile photo preview"
+                                    class="rounded-circle"
+                                    style="width: 120px; height: 120px; object-fit: cover; display: block; margin: 0 auto 10px;">
+                                <span class="btn btn-outline-secondary btn-sm">
+                                    <i class="fa-solid fa-camera me-1"></i> Add photo <span class="text-muted">(optional)</span>
+                                </span>
+                            </label>
                         </div>
 
                         <div class="row">
+                            <div class="col-md-6 eco-custom-form-group mb-3">
+                                <label for="full_name" class="eco-custom-label">Full Name</label>
+                                <input type="text" id="full_name" name="full_name"
+                                    value="{{ auth()->user()?->name ?? '' }}" class="form-control eco-custom-input"
+                                    placeholder="e.g. Michel Carlos" minlength="2" maxlength="100" required>
+                                <span class="text-danger small error-text" id="error-full_name"></span>
+                            </div>
 
+                            <div class="col-md-6 eco-custom-form-group mb-3">
+                                <label for="phone_number" class="eco-custom-label">Phone Number <span class="text-muted">(optional)</span></label>
+                                <input type="tel" id="phone_number" name="phone_number"
+                                    value="{{ auth()->user()?->mobile_no ?? '' }}" inputmode="tel" maxlength="30"
+                                    class="form-control eco-custom-input" placeholder="e.g. +94 77 123 4567">
+                                <span class="text-danger small error-text" id="error-phone_number"></span>
+                            </div>
 
-                            @auth
-                                <div class="col-md-6 eco-custom-form-group mb-3">
-                                    <label class="eco-custom-label">Full Name</label>
-                                    <input type="text" id="full_name" name="full_name"
-                                        value="{{ auth()->user()->name }}" class="form-control eco-custom-input"
-                                        placeholder="e.g. Michel Carlos" disabled>
-                                    <span class="text-danger small error-text" id="error-full_name"></span>
-                                </div>
-                            @endauth
-
-                            @auth
-                                <div class="col-md-6 eco-custom-form-group mb-3">
-                                    <label class="eco-custom-label">Phone Number</label>
-                                    <input type="number" id="phone_number" name="phone_number"
-                                        value="{{ auth()->user()->mobile_no }}" style=""
-                                        class="form-control eco-custom-input" disabled>
-                                    <span class="text-danger small error-text" id="error-phone_number"></span>
-                                </div>
-                            @endauth
+                            <div aria-hidden="true" style="position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;">
+                                <label for="testimonial_website">Website</label>
+                                <input type="text" id="testimonial_website" name="website" value="" tabindex="-1" autocomplete="off">
+                            </div>
 
 
                             <div class="col-md-12 eco-custom-form-group mb-3" style="position: relative;">
-                                <label class="eco-custom-label">Country</label>
+                                <label for="country_search" class="eco-custom-label">Country</label>
 
                                 <input type="hidden" id="country_id" name="country" value="">
                                 <input type="hidden" id="country_code_input" name="code" value="">
 
                                 <div id="country_custom_select" class="form-control eco-custom-input"
-                                    style="cursor: pointer; display: flex; align-items: center; justify-content: space-between; height: auto; min-height: 45px;"
-                                    onclick="toggleCountryDropdown()">
-                                    <span id="country_selected_text"
-                                        style="display: flex; align-items: center; color: #6c757d;">
-                                        Select Country
-                                    </span>
-                                    <span style="font-size: 12px; color: #6c757d;">▼</span>
+                                    style="display: flex; align-items: center; gap: 10px; height: auto; min-height: 45px; padding-top: 0; padding-bottom: 0;">
+                                    <img id="country_selected_flag" src="" alt="" aria-hidden="true"
+                                        style="display: none; width: 24px; flex: 0 0 24px; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                    <input type="text" id="country_search" placeholder="Type to search countries..."
+                                        autocomplete="off" role="combobox" aria-autocomplete="list"
+                                        aria-controls="country_dropdown_list" aria-expanded="false" aria-required="true"
+                                        style="width: 100%; min-width: 0; height: 43px; border: 0; outline: 0; background: transparent; color: #495057;">
+                                    <span aria-hidden="true" style="font-size: 12px; color: #6c757d;">▼</span>
                                 </div>
 
                                 <ul id="country_dropdown_list"
@@ -3237,10 +3237,11 @@
                                             $flagCode = strtolower($country->code);
                                         @endphp
 
-                                        <li style="padding: 10px 15px; cursor: pointer; display: flex; align-items: center; border-bottom: 1px solid #eee;"
-                                            onclick="selectCountryItem('{{ $country->id }}', '{{ $country->name }}', '{{ $flagCode }}', '{{ $country->latitude }}', '{{ $country->longitude }}')"
-                                            onmouseover="this.style.backgroundColor='#f3f4f6'"
-                                            onmouseout="this.style.backgroundColor='transparent'">
+                                        <li class="country-dropdown-option" role="option" tabindex="-1"
+                                            data-country-id="{{ $country->id }}" data-country-name="{{ $country->name }}"
+                                            data-country-code="{{ $flagCode }}" data-country-lat="{{ $country->latitude }}"
+                                            data-country-lng="{{ $country->longitude }}"
+                                            style="padding: 10px 15px; cursor: pointer; display: flex; align-items: center; border-bottom: 1px solid #eee;">
 
                                             <img src="https://flagcdn.com/w40/{{ $flagCode }}.png"
                                                 alt="flag"
@@ -3249,6 +3250,10 @@
                                             <span style="color: #333;">{{ $country->name }}</span>
                                         </li>
                                     @endforeach
+                                    <li id="country_no_results" aria-live="polite"
+                                        style="display: none; padding: 12px 15px; color: #6c757d; text-align: center;">
+                                        No countries found
+                                    </li>
                                 </ul>
 
                                 <span class="text-danger small error-text" id="error-country"></span>
@@ -3319,73 +3324,115 @@
 
 
     <script>
-        function toggleCountryDropdown() {
-            const list = document.getElementById("country_dropdown_list");
-            list.style.display = list.style.display === "none" ? "block" : "none";
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const picker = document.getElementById('country_custom_select');
+            const search = document.getElementById('country_search');
+            const list = document.getElementById('country_dropdown_list');
+            const options = Array.from(list.querySelectorAll('.country-dropdown-option'));
+            const noResults = document.getElementById('country_no_results');
+            const countryId = document.getElementById('country_id');
+            const countryCode = document.getElementById('country_code_input');
+            const selectedFlag = document.getElementById('country_selected_flag');
+            let highlightedIndex = -1;
 
+            const visibleOptions = () => options.filter(option => option.style.display !== 'none');
 
-        function selectCountryItem(id, name, flagCode, lat, lng) {
-            const input = document.getElementById("country_id");
-            input.value = id;
-            input.setAttribute('data-lat', lat);
-            input.setAttribute('data-lng', lng);
-            input.dispatchEvent(new Event('change'));
-
-            document.getElementById("country_code_input").value = flagCode.toUpperCase();
-
-            const btnText = document.getElementById("country_selected_text");
-            btnText.innerHTML = `
-            <img src="https://flagcdn.com/w40/${flagCode}.png" style="width: 24px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);"> 
-            <span style="color: #495057;">${name}</span>
-        `;
-
-            document.getElementById("country_dropdown_list").style.display = "none";
-        }
-
-        document.addEventListener('click', function(event) {
-            const customSelect = document.getElementById("country_custom_select");
-            const list = document.getElementById("country_dropdown_list");
-
-            if (customSelect && list && !customSelect.contains(event.target) && !list.contains(event.target)) {
-                list.style.display = "none";
+            function openCountryDropdown() {
+                list.style.display = 'block';
+                search.setAttribute('aria-expanded', 'true');
             }
-        });
-    </script>
 
-    <script>
-        $(document).ready(function() {
-            // Country eka format karana function eka
-            function formatCountry(country) {
-                // "Select Country" option eka nam, ehemama pennanna
-                if (!country.id) {
-                    return country.text;
-                }
+            function closeCountryDropdown() {
+                list.style.display = 'none';
+                search.setAttribute('aria-expanded', 'false');
+                options.forEach(option => option.style.backgroundColor = 'transparent');
+                highlightedIndex = -1;
+            }
 
-                // Option eken data-flag attribute eka ganna
-                var flagCode = $(country.element).data('flag');
+            function filterCountries() {
+                const query = search.value.trim().toLocaleLowerCase();
+                let matches = 0;
+                options.forEach(option => {
+                    const isMatch = option.dataset.countryName.toLocaleLowerCase().includes(query) ||
+                        option.dataset.countryCode.toLocaleLowerCase().includes(query);
+                    option.style.display = isMatch ? 'flex' : 'none';
+                    option.setAttribute('aria-hidden', isMatch ? 'false' : 'true');
+                    if (isMatch) matches++;
+                });
+                noResults.style.display = matches ? 'none' : 'block';
+                highlightedIndex = -1;
+                openCountryDropdown();
+            }
 
-                // Flag eka nathnam namawath pennanna
-                if (!flagCode) {
-                    return country.text;
-                }
+            function selectCountryItem(option) {
+                countryId.value = option.dataset.countryId;
+                countryId.dataset.lat = option.dataset.countryLat;
+                countryId.dataset.lng = option.dataset.countryLng;
+                countryId.dispatchEvent(new Event('change'));
+                countryCode.value = option.dataset.countryCode.toUpperCase();
+                search.value = option.dataset.countryName;
+                selectedFlag.src = `https://flagcdn.com/w40/${option.dataset.countryCode}.png`;
+                selectedFlag.alt = `${option.dataset.countryName} flag`;
+                selectedFlag.style.display = 'block';
+                document.getElementById('error-country').innerText = '';
+                closeCountryDropdown();
+            }
 
-                // FlagCDN eken image eka load karala text eka ekka return karanna
-                var $countryHtml = $(
-                    '<span><img src="https://flagcdn.com/w20/' + flagCode +
-                    '.png" style="width: 20px; margin-right: 8px; vertical-align: middle;"/> ' + country.text +
-                    '</span>'
-                );
-
-                return $countryHtml;
-            };
-
-            // Select2 eka initialize karanna
-            $('#country_id').select2({
-                templateResult: formatCountry, // Dropdown list eke pennana widiha
-                templateSelection: formatCountry, // Select karaata passe pennana widiha
-                width: '100%' // Responsive wenna
+            search.addEventListener('focus', filterCountries);
+            search.addEventListener('click', filterCountries);
+            search.addEventListener('input', function() {
+                countryId.value = '';
+                countryCode.value = '';
+                selectedFlag.style.display = 'none';
+                filterCountries();
             });
+
+            search.addEventListener('keydown', function(event) {
+                const matches = visibleOptions();
+                if (event.key === 'Escape') {
+                    closeCountryDropdown();
+                    return;
+                }
+                if (!['ArrowDown', 'ArrowUp', 'Enter'].includes(event.key) || !matches.length) return;
+                event.preventDefault();
+                if (event.key === 'Enter' && highlightedIndex >= 0) {
+                    selectCountryItem(matches[highlightedIndex]);
+                    return;
+                }
+                highlightedIndex = event.key === 'ArrowDown'
+                    ? (highlightedIndex + 1) % matches.length
+                    : (highlightedIndex <= 0 ? matches.length - 1 : highlightedIndex - 1);
+                matches.forEach((option, index) => {
+                    option.style.backgroundColor = index === highlightedIndex ? '#f3f4f6' : 'transparent';
+                    option.setAttribute('aria-selected', index === highlightedIndex ? 'true' : 'false');
+                });
+                matches[highlightedIndex].scrollIntoView({ block: 'nearest' });
+            });
+
+            options.forEach(option => {
+                option.addEventListener('mouseenter', () => option.style.backgroundColor = '#f3f4f6');
+                option.addEventListener('mouseleave', () => option.style.backgroundColor = 'transparent');
+                option.addEventListener('click', () => selectCountryItem(option));
+            });
+
+            picker.addEventListener('click', function(event) {
+                if (event.target !== search) search.focus();
+            });
+            document.addEventListener('click', function(event) {
+                if (!picker.contains(event.target) && !list.contains(event.target)) closeCountryDropdown();
+            });
+
+            window.resetCountryPicker = function() {
+                search.value = '';
+                countryId.value = '';
+                countryCode.value = '';
+                selectedFlag.src = '';
+                selectedFlag.alt = '';
+                selectedFlag.style.display = 'none';
+                options.forEach(option => option.style.display = 'flex');
+                noResults.style.display = 'none';
+                closeCountryDropdown();
+            };
         });
     </script>
 
@@ -3395,25 +3442,6 @@
             var currentLength = this.value.length;
             document.getElementById('char-count').innerText = currentLength + '/' + maxLength;
         });
-        //require login
-        function requireLogin() {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Login Required!',
-                text: 'Login first to share your experience.',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Login Now',
-                cancelButtonText: 'Cancel'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    // Oyage login page eke link ekata meka wenas karanna
-                    window.location.href = "{{ route('login') }}";
-                }
-            });
-        }
-
         // --- Image Preview Logic ---
         document.getElementById('ecoProfileUpload').addEventListener('change', function(event) {
             const file = event.target.files[0];
@@ -3462,6 +3490,12 @@
         document.getElementById('ecoTestimonialForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
+            if (!document.getElementById('country_id').value) {
+                document.getElementById('error-country').innerText = 'Please select a country from the list.';
+                document.getElementById('country_search').focus();
+                return;
+            }
+
             let submitBtn = document.getElementById('submitBtn');
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'Submitting... <i class="fa-solid fa-spinner fa-spin ms-2"></i>';
@@ -3488,7 +3522,10 @@
                             let errors = data.errors;
                             for (const key in errors) {
                                 if (errors.hasOwnProperty(key)) {
-                                    document.getElementById(`error-${key}`).innerText = errors[key][0];
+                                    const errorElement = document.getElementById(`error-${key}`);
+                                    if (errorElement) {
+                                        errorElement.innerText = errors[key][0];
+                                    }
                                 }
                             }
                         } else {
@@ -3511,10 +3548,11 @@
 
                         // 2. Form Reset kirima
                         document.getElementById('ecoTestimonialForm').reset();
+                        if (window.resetCountryPicker) window.resetCountryPicker();
 
                         // 3. Image & Stars Reset kirima
-                        document.getElementById('ecoPreviewImg').style.display = 'none';
-                        document.getElementById('ecoPreviewImg').src = '';
+                        const previewImg = document.getElementById('ecoPreviewImg');
+                        previewImg.src = previewImg.dataset.defaultSrc;
                         ratingInput.value = 0;
                         highlightEcoStars(0);
 
@@ -3522,7 +3560,7 @@
                         Swal.fire({
                             icon: 'success',
                             title: 'Thank You!',
-                            text: 'Your testimonial has been added successfully.',
+                            text: 'Your testimonial was received and will appear after review.',
                             confirmButtonColor: '#3085d6'
                         });
                     }

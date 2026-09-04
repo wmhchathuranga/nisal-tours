@@ -6,10 +6,24 @@
     <div class="nh-panel-head"><div><h2>Customer stories</h2><span class="nh-subtext">Approve testimonials before they appear publicly.</span></div><span class="nh-badge pending">{{ $testimonials->where('is_approved', false)->count() }} on this page pending</span></div>
     @forelse($testimonials as $item)
     <article class="nh-testimonial">
-        <div class="nh-testimonial-head"><div><strong>{{ $item->full_name }}</strong><span class="nh-subtext">{{ $item->country }} · {{ $item->created_at->format('d M Y, H:i') }}</span></div><span class="nh-badge {{ $item->is_approved ? 'approved' : 'pending' }}">{{ $item->is_approved ? 'Approved' : 'Pending' }}</span></div>
-        <div class="nh-rating">{{ str_repeat('★',(int)$item->rating) }}{{ str_repeat('☆',max(0,5-(int)$item->rating)) }}</div>
-        <p>{{ html_entity_decode($item->experience) }}</p>
-        <div class="nh-actions"><form method="POST" action="{{ route('admin.testimonials.status',$item->id) }}">@csrf<input type="hidden" name="status" value="{{ $item->is_approved ? 0 : 1 }}"><button class="nh-btn {{ $item->is_approved ? 'nh-btn-danger' : 'nh-btn-primary' }} nh-btn-sm" type="submit"><i class="fa-solid {{ $item->is_approved ? 'fa-eye-slash' : 'fa-check' }}"></i>{{ $item->is_approved ? 'Hide testimonial' : 'Approve testimonial' }}</button></form></div>
+        @php
+            $profilePhoto = $item->profile_picture
+                ? Storage::disk('s3')->url($item->profile_picture)
+                : ($item->user?->profile_photo
+                    ? Storage::disk('s3')->url($item->user->profile_photo)
+                    : 'https://ui-avatars.com/api/?name=' . urlencode($item->full_name) . '&background=20afd0&color=fff&bold=true');
+        @endphp
+        <div class="nh-testimonial-content">
+            <img class="nh-testimonial-photo" src="{{ $profilePhoto }}" alt="Profile photo of {{ $item->full_name }}"
+                width="64" height="64" loading="lazy"
+                style="width:64px;height:64px;max-width:64px;max-height:64px;object-fit:cover;border-radius:50%;flex:none;">
+            <div class="nh-testimonial-details">
+                <div class="nh-testimonial-head"><div><strong>{{ $item->full_name }}</strong><span class="nh-subtext">{{ $item->country }} · {{ $item->created_at->format('d M Y, H:i') }}</span></div><span class="nh-badge {{ $item->is_approved ? 'approved' : 'pending' }}">{{ $item->is_approved ? 'Approved' : 'Pending' }}</span></div>
+                <div class="nh-rating">{{ str_repeat('★',(int)$item->rating) }}{{ str_repeat('☆',max(0,5-(int)$item->rating)) }}</div>
+                <p>{{ html_entity_decode($item->experience) }}</p>
+                <div class="nh-actions"><form method="POST" action="{{ route('admin.testimonials.status',$item->id) }}">@csrf<input type="hidden" name="status" value="{{ $item->is_approved ? 0 : 1 }}"><button class="nh-btn {{ $item->is_approved ? 'nh-btn-danger' : 'nh-btn-primary' }} nh-btn-sm" type="submit"><i class="fa-solid {{ $item->is_approved ? 'fa-eye-slash' : 'fa-check' }}"></i>{{ $item->is_approved ? 'Hide testimonial' : 'Approve testimonial' }}</button></form></div>
+            </div>
+        </div>
     </article>
     @empty<div class="nh-empty"><i class="fa-solid fa-comments"></i><strong>No testimonials yet</strong></div>@endforelse
     <div class="nh-panel-body">{{ $testimonials->links() }}</div>

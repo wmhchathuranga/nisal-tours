@@ -99,7 +99,7 @@ Route::post('/payments/payhere/notify', [PaymentController::class, 'notify'])
     ->name('payments.notify');
 
 Route::post('/testimonials/store', [TestimonialController::class, 'store'])
-    ->middleware(['auth', 'throttle:authenticated-writes'])
+    ->middleware('throttle:testimonials')
     ->name('testimonials.store');
 Route::get('/testimonials/map-data', [TestimonialController::class, 'getMapData'])->name('testimonials.map');
 
