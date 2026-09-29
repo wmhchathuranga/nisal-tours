@@ -476,6 +476,7 @@
                             class="@error('profile_photo') is-invalid @enderror" hidden>
                     </div>
                 </div>
+                <small class="d-block text-center text-muted mt-2">JPG, PNG or WebP · Maximum 8 MB</small>
                 @error('profile_photo')
                     <div class="error-msg text-center mt-2">{{ $message }}</div>
                 @enderror

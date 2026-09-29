@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewTestimonialSubmitted;
 use App\Models\Country;
 use App\Models\Testimonial;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
+use Throwable;
 
 class TestimonialController extends Controller
 {
@@ -73,6 +78,21 @@ class TestimonialController extends Controller
             'is_approved' => 0,
             'ip_address' => $ip,
         ]);
+
+        User::query()
+            ->where('role', 'admin')
+            ->whereNotNull('email_verified_at')
+            ->each(function (User $admin) use ($testimonial): void {
+                try {
+                    Mail::to($admin)->send(new NewTestimonialSubmitted($testimonial));
+                } catch (Throwable $exception) {
+                    Log::warning('Unable to send the new testimonial notification email.', [
+                        'admin_id' => $admin->id,
+                        'testimonial_id' => $testimonial->id,
+                        'exception' => $exception->getMessage(),
+                    ]);
+                }
+            });
 
         return response()->json([
             'success' => true,

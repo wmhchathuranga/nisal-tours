@@ -221,11 +221,8 @@
                 </li> --}}
                 <li><a class="{{ $page == 'about' ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
             </ul>
-            <div class="mobile-auth-wrap">
-                @guest
-                    <a href="{{ route('login') }}" class="custom-auth-btn btn-login-custom">Login</a>
-                    <a href="{{ route('register') }}" class="custom-auth-btn btn-register-custom">Register</a>
-                @else
+            @auth
+                <div class="mobile-auth-wrap">
                     @if (auth()->user()->role === 'admin')
                         <a href="{{ route('admin.dashboard') }}" class="custom-auth-btn btn-login-custom">Dashboard</a>
                     @endif
@@ -234,8 +231,8 @@
                         @csrf
                         <button type="submit" class="custom-auth-btn btn-register-custom w-100">Logout</button>
                     </form>
-                @endguest
-            </div>
+                </div>
+            @endauth
         </div>
     </div>
 </div>
@@ -273,10 +270,8 @@
                     </div>
                     <div class="col-auto position-absolute end-0 d-flex align-items-center pe-3">
 
-                        <div class="desktop-auth-wrap d-none d-xl-flex gap-3">
-                            @guest
-                                <a href="{{ route('login') }}" class="custom-auth-btn btn-register-custom">Login</a>
-                            @else
+                        @auth
+                            <div class="desktop-auth-wrap d-none d-xl-flex gap-3">
                                 @if (auth()->user()->role === 'admin')
                                     <a href="{{ route('admin.dashboard') }}"
                                         class="custom-auth-btn btn-login-custom">Dashboard</a>
@@ -339,8 +334,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                            @endguest
-                        </div>
+                            </div>
+                        @endauth
 
                     </div>
                 </div>

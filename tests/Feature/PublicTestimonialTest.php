@@ -1,8 +1,11 @@
 <?php
 
+use App\Mail\NewTestimonialSubmitted;
 use App\Models\Country;
 use App\Models\Testimonial;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Mail;
 
 uses(RefreshDatabase::class);
 
@@ -66,4 +69,28 @@ test('the testimonial honeypot rejects automated spam', function () {
         ->assertJsonValidationErrors('website');
 
     expect(Testimonial::count())->toBe(0);
+});
+
+test('verified administrators receive a new testimonial email', function () {
+    Mail::fake();
+
+    $admin = User::factory()->create(['role' => 'admin']);
+    $regularUser = User::factory()->create(['role' => 'user']);
+    $country = testimonialCountry();
+
+    $this->postJson(route('testimonials.store'), [
+        'full_name' => 'Email Test Traveller',
+        'country' => $country->id,
+        'code' => 'LK',
+        'user_rating' => 4,
+        'experience' => 'A memorable and carefully planned holiday from beginning to end.',
+        'website' => '',
+    ])->assertOk();
+
+    Mail::assertSent(NewTestimonialSubmitted::class, function (NewTestimonialSubmitted $mail) use ($admin) {
+        return $mail->hasTo($admin->email)
+            && $mail->testimonial->full_name === 'Email Test Traveller';
+    });
+    Mail::assertNotSent(NewTestimonialSubmitted::class, fn (NewTestimonialSubmitted $mail) => $mail->hasTo($regularUser->email));
+    Mail::assertSentCount(1);
 });
