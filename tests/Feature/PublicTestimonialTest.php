@@ -94,3 +94,14 @@ test('verified administrators receive a new testimonial email', function () {
     Mail::assertNotSent(NewTestimonialSubmitted::class, fn (NewTestimonialSubmitted $mail) => $mail->hasTo($regularUser->email));
     Mail::assertSentCount(1);
 });
+
+test('the homepage loads testimonial controls after their required libraries', function () {
+    $content = $this->get(route('home'))
+        ->assertOk()
+        ->assertSee('aria-label="Rate 5 out of 5"', false)
+        ->assertSee('data-cfasync="false"', false)
+        ->getContent();
+
+    expect(substr_count($content, 'class="eco-star"'))->toBe(5)
+        ->and(strpos($content, 'jquery.min.js'))->toBeLessThan(strpos($content, 'Star Rating Logic'));
+});

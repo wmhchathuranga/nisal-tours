@@ -2752,6 +2752,10 @@
         .eco-star-rating-container .eco-star {
             font-size: 24px;
             color: #dce1e6;
+            background: transparent;
+            border: 0;
+            padding: 4px;
+            line-height: 1;
             /* Default gray color */
             cursor: pointer;
             transition: color 0.2s ease-in-out, transform 0.2s ease;
@@ -3264,11 +3268,12 @@
                             <div class="col-md-12 eco-custom-form-group d-flex flex-column align-items-center mb-3">
                                 <label class="eco-custom-label">Rate Your Experience</label>
                                 <div class="eco-star-rating-container">
-                                    <i class="fa-solid fa-star eco-star" data-rating="1"></i>
-                                    <i class="fa-solid fa-star eco-star" data-rating="2"></i>
-                                    <i class="fa-solid fa-star eco-star" data-rating="3"></i>
-                                    <i class="fa-solid fa-star eco-star" data-rating="4"></i>
-                                    <i class="fa-solid fa-star eco-star" data-rating="5"></i>
+                                    @for ($rating = 1; $rating <= 5; $rating++)
+                                        <button type="button" class="eco-star" data-rating="{{ $rating }}"
+                                            aria-label="Rate {{ $rating }} out of 5" aria-pressed="false">
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        </button>
+                                    @endfor
                                     <input type="hidden" name="user_rating" id="ecoRatingInput" value="0">
                                 </div>
                                 <span class="text-danger small error-text" id="error-user_rating"></span>
@@ -3294,6 +3299,11 @@
         </div>
     </div>
 
+    <!--========== Footer Area ==========-->
+    @include('partials.footer')
+
+    <!-- Shared libraries must load before the page-specific inline scripts. -->
+    @include('partials.scripts')
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -3437,6 +3447,7 @@
     </script>
 
     <script>
+        function initializeTestimonialForm() {
         document.getElementById('experience').addEventListener('input', function() {
             var maxLength = this.getAttribute('maxlength');
             var currentLength = this.value.length;
@@ -3479,9 +3490,11 @@
         function highlightEcoStars(rating) {
             stars.forEach(star => {
                 if (star.getAttribute('data-rating') <= rating) {
-                    star.style.color = '#ffc107'; // Add active star color
+                    star.classList.add('active');
+                    star.setAttribute('aria-pressed', 'true');
                 } else {
-                    star.style.color = '#ccc'; // Add inactive star color
+                    star.classList.remove('active');
+                    star.setAttribute('aria-pressed', 'false');
                 }
             });
         }
@@ -3574,6 +3587,13 @@
                     submitBtn.innerHTML = 'Submit Testimonial <i class="fa-solid fa-paper-plane ms-2"></i>';
                 });
         });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeTestimonialForm, { once: true });
+        } else {
+            initializeTestimonialForm();
+        }
     </script>
 
     <script>
@@ -3643,13 +3663,6 @@
             }
         });
     </script>
-
-    <!--========== Footer Area ==========-->
-    @include('partials.footer')
-
-    <!--========== All Js File =========== -->
-    @include('partials.scripts')
-
 
 </body>
 
